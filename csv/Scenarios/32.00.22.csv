@@ -1,0 +1,9 @@
+e41a,<X0e>が入っていました。<RETN>
+e42e,"<CALLe458>不思議な<CALLe45d>
+
+<JUMPe470><LOCe440><CALLe458>不思議な<CALLe45d>
+
+<CALLe470> また<RET_IL>"
+e458,<X0b>は <RET_IL>
+e45d,宝箱を開けました。<RETN>
+e470,宝箱の中には<RET_IL>
