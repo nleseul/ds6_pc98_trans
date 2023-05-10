@@ -7,19 +7,36 @@
 <X1e>フォルス<X04>
 なんじゃと !! それは 本当かね？
 みんな 聞いたか 町は救われたぞ。
-さあ 上にあがろう。"
+さあ 上にあがろう。","<X1e>Foless<X04>
+The monsters captured you too,
+I guess?
+
+<LEADERe2fd,e34f,e2fd,e3a6,e2fd>
+
+<X1e>Foless<X04>
+What? Really? Did you hear that, 
+everyone? The town is safe! We
+should head back to the surface."
 "e2fd","町長さん、ご無事でしたか。
 モンスターたちは アクダムと一緒に
-逃げてしまいました。<RET_IL>"
+逃げてしまいました。<RET_IL>","Mayor Foless! Are you all right?
+We got rid of the monsters, along
+with Achdam.<RET_IL>"
 "e34f","おお、町長殿 無事で何よりです。
 モンスターたちは アクダムと一緒に
-逃げてしまいました。<RET_IL>"
+逃げてしまいました。<RET_IL>","Ah, Mayor Foless. I'm glad to see
+you're unharmed. We've driven off
+the monsters and Achdam.<RET_IL>"
 "e3a6","じいさん、大丈夫か。
 モンスターどもは アクダムと一緒に
-逃げちまったぜ。<RET_IL>"
+逃げちまったぜ。<RET_IL>","You all right down here?
+The monsters are gone now. And
+so's Achdam.<RET_IL>"
 "e3ee","<CH3>
 おい、あそこに 倒れているのは
-ローじゃないか !!"
+ローじゃないか !!","<CH3>
+Hey, isn't that Roh on the ground
+over there?"
 "e421","<X1e>フォルス<X04>
 お知り合いでしたか。
 この方は アクダムに ひどい
@@ -83,6 +100,61 @@
 
 <X1e>フォルス<X04>
 さあ みなさん 上にあがって
-この方の 傷の手当てを しましょう。"
+この方の 傷の手当てを しましょう。","<X1e>Foless<X04>
+Is that a friend of yours?
+Achdam subjected him to quite
+brutal torture.
+
+<CH3>
+Ugh... He's covered in wounds!!
+
+<X1e>Roh<X04>
+Ughh... Runan? Gail? Highness?
+
+<CH0>
+Roh... my pendant?
+
+<X1e>Roh<X04>
+Your pendant... Achdam took it.
+
+<CH1>
+But why did you do it, Roh?
+
+<X1e>Roh<X04>
+You were looking for the spell of
+Sylis, weren't you?
+
+Try to understand. Sylis is a
+spell that stops people from usingspells.
+
+If you used it, what would I do incombat? Without spells... I'm
+useless.
+
+Remember what happened in Farleyn!We fought that Commandant... I...
+I couldn't do a thing.
+
+Besides, I got tired of traveling
+around and fighting monsters!
+
+When I knew you were getting that
+key made in Fort Larfa, I made up
+my mind. I was going to leave.
+
+I stole the pendant so I could
+sell it for cash. I destroyed
+Sylis. And I headed for Riezel.
+
+Buut, I came through Maschun,
+and Achdam captured me.
+And here I am.
+
+If I'd known, I'd've stayed
+in Farleyn. Lived in leisure...
+
+<X1e>Foless<X04>
+Come on. Let's head upstairs
+and treat his wounds."
 "e892","マスクーンの町を モンスターから
-解放し、再び 平和を 取り戻しました。<X0d>"
+解放し、再び 平和を 取り戻しました。<X0d>","The town of Maschun has been
+liberated from monsters. Peace
+has been restored!<X0d>"

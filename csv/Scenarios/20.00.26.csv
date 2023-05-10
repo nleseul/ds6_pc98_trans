@@ -1,31 +1,50 @@
 "e1dd","<X1e>道具屋<X04>
 いらっしぇーまし、
-ここは道具屋ですけんど？<RETN>"
-"e212","あんりがとう ごぜーました。"
+ここは道具屋ですけんど？<RETN>","<X1e>Tool merchant<X04>
+How ya doin'?
+This yere's a tool shop.<RETN><LOC0001>King Flart<RET_IL>"
+"e212","あんりがとう ごぜーました。","Thankees muchly!<END>
+<LOC0002>Prince Aerion<RET_IL>"
 "e239","これ以上持てないようですけんど。
+
+<RET_IL>","Ya cain't carry na more!
 
 <RET_IL>"
 "e25b","どれを買うだか？
+<RETN>","Whatcha buyin'?
 <RETN>"
 "e26d","<X0e>だね。
 あんりがとう。
 
+<RET_IL>","That thar <X0e>?
+Thankees!
+
 <RET_IL>"
 "e28d","どれを売るだ？
+<RETN>","Whatcha sellin'?
 <RETN>"
 "e29d"," Gold になるけんど
 それでも ええか？
+<RETN>","golds.
+How's about it?
 <RETN>"
 "e2c3","そんか しかたあんめぇ。
 
+<RETN>","Welp, that's too bad, then.
+
 <RETN>"
 "e2dc","あんりがとう。
+<RETN>","Thankees!
 <RETN>"
 "e3fb","<X1e>海賊<X04>
 <IF0408><JUMPe450><IF0409><JUMPe450>やあ 客人 元気そうだな？
 疲れたら 遠慮せずに
 いつでも来てくれよ。<END>
-<LOCe450><SET0400>さあ ゆっくり休んでくんな。"
+<LOCe450><SET0400>さあ ゆっくり休んでくんな。","<X1e>Pirate<X04>
+<IF0408><JUMPe450><IF0409><JUMPe450>Looks like you're doing well!
+When you get tired, don't
+hesitate to come back here.<END>
+<LOCe450><SET0400>Okay, have a good rest!"
 "e46f","<X1e>海賊<X04>
 よう、兄弟。元気か？
 
@@ -34,7 +53,16 @@
 気をつけろよ。
 
 <ASMe52e>ここが スエルのアジトだ。
-こいつが いろいろと 世話をするから疲れたときには 寄ってくれ。"
+こいつが いろいろと 世話をするから疲れたときには 寄ってくれ。","<X1e>Pirate<X04>
+How's it goin', bro?
+
+Take good care o' these people.
+Honored guests of the cap'n, so
+don't let nothin' happen to 'em!
+
+<ASMe52e>This here's our hideout in Suil.
+My bro here'll keep an eye on ya,
+so come back when ya get tired."
 "e549","<X1e>漁師<X04>
 <IF_NOT00d4><JUMPe55c><IF0106><JUMPe7a4><LOCe55c><IF0112><JUMPe68b>おれは漁師だ。船はねえけど漁師だ。聞いてくれよ、おれの話。
 
@@ -79,7 +107,54 @@
 
 もうちょっと 早く行っていれば
 あのシーラスは おれのものに
-なっていたのになぁ。"
+なっていたのになぁ。","<X1e>Fisherman<X04>
+<IF_NOT00d4><JUMPe55c><IF0106><JUMPe7a4><LOCe55c><IF0112><JUMPe68b>I'm a fisherman. Boat or not,
+I'm still a fisherman.
+Let me tell you...
+
+Last year, I couldn't pay the tax.So Prince Jelman, acting as 
+minister of internal affairs,
+confiscates my boat!
+
+How's a fisherman supposed
+to make a living with his
+boat confiscated, I ask you?
+
+Seriously, ever since those
+two took charge of the kingdom,
+it's all been going downhill...<END>
+<LOCe68b>Oh, hello again! Listen,
+listen! My boat's back!
+
+Prince Jelman just showed up
+and gave it back!
+Plus, he's lowering this year's
+taxes too!
+
+I didn't think he gave a damn
+about folks like me, but maybe
+he hasn't turned his back on
+us after all.<END>
+<LOCe7a4><SET0107>Hello again! I've been
+celebrating the return of my
+boat by going out fishing.
+
+Not much worth fishing for 'round
+here, so I've been up in the sea
+near Yold. Even saw one of the
+Yold folk fishing up a shillath.
+
+Big bastard, that was! Haven't
+seen one that big in a long while.He'll get a good 7 coins for
+that one, he will.
+
+And that shillath's stomach was
+poking out pretty funny too. Like
+it'd eaten some kinda stick.
+
+If only I'd gotten there a bit
+earlier! That shillath would've
+been my catch!"
 "e98a","<X1e>情報屋 トミー<X04>
 なあ<IF00d5><JUMPedc4><IF0100><JUMPeb7f><IF0112><JUMPea6f><CALLee43>あのフラート国王は 自分のことしか
 考えていないんだぜ。
@@ -127,8 +202,60 @@
 大けがを したそうだ。
 
 どうだ 情報屋 トミーの 情報網は
-すごいだろ。"
-"ee43"," 聞いてくれよ。<RETN>"
+すごいだろ。","<X1e>Tommy, information broker<X04>
+Hey! <IF00d5><JUMPedc4><IF0100><JUMPeb7f><IF0112><JUMPea6f><CALLee43><CALL0001> doesn't care about
+anyone except himself!
+
+The moment the monsters invaded,
+he fled the castle! He's
+abandoning us and escaping over
+the border into to Soldythe!<END>
+<LOCea6f>Hey! <CALLee43><CALL0002> has been seen in
+Nashieu!
+
+And people are saying he gave
+Prince Jelman a scolding, and
+told him to give back everything
+he took in lieu of taxes!
+
+I wish I could meet <CALL0002>
+too, just once! But he'd never
+visit a nowhere town like this.<END>
+<LOCeb7f>Hey! Hey! <CALLee43><CALL0002> has saved
+Yold Harbor!
+
+He's stopped the monsters from
+gathering at the Sanctum there!
+Isn't he amazing?!
+
+Oh, and I guess <CALL0001>'s
+still around too.
+
+They say he tried and failed to
+escape to Wonliech, and then he
+was hiding out in Amda.
+
+But! But, but, but!
+Bump-ba-da-bum!!
+
+He got kidnapped by the monsters
+occupying Selis Castle!!
+Can you believe it?!
+
+Ha ha ha! Serves him right,
+after trying to abandon his own
+people! I'm sure you agree!<IF00f1><JUMPedc3>
+
+<CH1>
+W-what?!
+I'd better hurry to Amda.<LOCedc3><END>
+<LOCedc4>This is still just a rumor. But I
+hear that a pirate got beaten up
+badly by Captain Buald.
+
+Hey, isn't the Tommy Information
+Network incredible?"
+"ee43"," 聞いてくれよ。<RETN>","Listen!<RETN>"
 "ee53","<X1e>老人<X04>
 <IF0112><JUMPef09>フラート国王は この国を捨てて
 逃げ出して しまったそうです。
@@ -141,7 +268,21 @@
 いらしたそうじゃ。
 
 あの方さえ 戻ってきてくだされば
-この国も 救われたような ものじゃ。"
+この国も 救われたような ものじゃ。","<X1e>Old man<X04>
+<IF0112><JUMPef09>They're saying <CALL0001> has
+run away and abandoned his own
+kingdom.
+
+He's such a self-centered arse
+of a king! If only <CALL0002>
+were still here...<END>
+<LOCef09>They say <CALL0002> was in
+Nashieu!
+
+His Highness is the only hope
+our kingdom has now..."
 "ef7a","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."

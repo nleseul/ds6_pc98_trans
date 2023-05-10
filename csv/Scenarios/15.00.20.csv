@@ -1,26 +1,40 @@
 "e0f6","<X1e>道具屋<X04>
 おや 王子さま いらっしゃいませ。
 ここは道具の店ですが
-どんな ご用ですか？<RETN>"
-"e149","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome, your Highness!
+This is a tool shop.
+What would you like?<RETN>"
+"e149","また来てくださいね。","Come again!"
 "e16e","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e192","どれを 買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e1ad","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e1ca","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e1e5"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e211","それは 残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e22b","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e4e3","<IF0031><JUMPe71b><X1e>遊び人<X04>
 <SET0031>よう、リュナン。
@@ -110,7 +124,93 @@
 あ、それから おれの所持金
 500 Goldは 一応 王子さまに
 預けておくぜ。<WAIT>
-<CH2><X1c>が 仲間になりました。<X0c0301><X04><ASMeaf2>"
+<CH2><X1c>が 仲間になりました。<X0c0301><X04><ASMeaf2>","<X123100><JUMPe71b><X1e>Layabout<X04>
+<X143100>Heya, Runan. I hear you brought
+us the Prince. Is that kid there
+him?
+
+<CH0>
+Runan, who is this person?
+
+<CH1>
+That's <CH2>, the local layabout.
+No one your Highness needs to be
+involved with.
+
+<CH2>
+C'mon, what's your gripe?<X123b00><JUMPe691>
+
+Hey, Highness. I'm not one to
+brag, but I am level 7, and I've
+got some pretty nice spells.
+
+Buut, no point in bringing that upwhen you're such a low level. Get
+yourself up to level 6, and we'll
+talk.<END>
+<LOCe691>
+
+... ...
+
+Well, I thought you'd be wimpier,
+seeing as how you're a Prince,
+but you're a pretty tough guy.
+
+<JUMPe8d1><LOCe71b><X123b00><JUMPe842><X123c00><JUMPe7b2><CH2>
+Huh? You're saying you wanna join
+my party?
+<PAGE>
+When you're only level <ASMeae8>?
+Oh, you're a riot, Highness!
+<PAGE>
+<X1c>Roh wandered off, chuckling
+to himself.<X04><ASMeb0e><END>
+<LOCe7b2><CH2>
+Heya, Prince. Still wanna join
+my party?
+
+... ...
+
+We-ell, I'll think about it
+whenever I have some free time.<ASMeb0e><END>
+<LOCe842><CH2>
+Heya, Highness. You've gotten
+pretty tough since the last time
+I saw you.
+
+I was pretty sure you would,
+seeing as how you're a Prince.
+<LOCe8d1>Could I maybe tag along with your
+Highness for a bit?
+
+<CH0>
+You want to join our party?!
+What do you think, Runan?
+
+<CH1>
+Roh, what are you playing at?
+
+<CH2>
+I'll play at whatever you ask
+me to!
+
+Your Highness, I wanna fight
+beside you. I have absolutely
+nothing to hide. So can I please
+join up with you?
+
+<CH0>
+Oh, so you're on your own right
+now, and trying to find friends?
+Okay, we can fight together!
+
+<CH2>
+Thanks so much, Prince!
+I'll do my very very best!
+
+Oh, now that we're traveling
+together, you can hold on to this
+500 gold I'm carrying.<WAIT>
+<CH2><X1c> joined the party!<X0c0301><X04><ASMeaf2>"
 "eaf1","<RET_IL>"
 "eb20","<X1e>神父<X04>
 <IF_NOT0033><JUMPeba7><IF_NOT003a><JUMPeba7><IF0035><JUMPeba7><SET0034><SET0400>王子さま、アロンさまが
@@ -119,28 +219,53 @@
 何やら お伝えしたいことが
 あるそうで ございます。<END>
 <LOCeba7><CLEAR0400>お困りの時には いつでも
-私の所へ 来てくださいませ。"
+私の所へ 来てくださいませ。","<X1e>Priest<X04>
+<X113300><JUMPeba7><X113a00><JUMPeba7><X123500><JUMPeba7><X143400><X140004>Your Highness, Alon is waiting foryou downstairs.
+
+I believe he has something to tellyou.<END>
+<LOCeba7><X130004>When you are troubled, you may
+always come to me."
 "ec00","<X1e>レジスタンスの男<X04>
 <IF0035><JUMPec1f><IF0034><JUMPec5d><LOCec1f>１日も早く アクダムを倒して
 この国に 平和を取り戻しましょう。<END>
 <LOCec5d><X1e>レジスタンスの男<X04>
-さあ 王子さま 早くお入りください。"
+さあ 王子さま 早くお入りください。","<X1e>Resistance member<X04>
+<X123500><JUMPec1f><X123400><JUMPec5d><LOCec1f>We'll defeat Achdam and restore
+peace to our kingdom! The sooner,
+the better!<END>
+<LOCec5d><X1e>Resistance member<X04>
+Please come in, your Highness!"
 "ec93","<X1e>女<X04>
 ベルガの鉱山の まわりには
 この辺よりも 強いモンスターが
-いるそうで ございます。"
+いるそうで ございます。","<X1e>Woman<X04>
+I've heard that the monsters
+around Belga Mine are stronger
+than the ones around here."
 "ece8","<X1e>女<X04>
-私の夫は アクダムに 逆らったためにベルガの鉱山へ 連れていかれました。"
+私の夫は アクダムに 逆らったためにベルガの鉱山へ 連れていかれました。","<X1e>Woman<X04>
+My husband was sent to Belga Mine
+for opposing Achdam."
 "ed33","<X1e>農夫<X04>
 王子さま、おらと 一緒に 畑仕事が
-してえだか？"
+してえだか？","<X1e>Farmer<X04>
+Did yeh want ta join me in the
+fields, yer Highness?"
 "ed68","<X1e>男<X04>
 やあ、ルディアの城に 行って
 きましたよ。
 
 たいかん式は 無事に 終わって
-お城には 誰でも 入れてくれましたよ。"
+お城には 誰でも 入れてくれましたよ。","<X1e>Man<X04>
+I've just come back from Rudia
+Castle.
+
+The coronation ceremony was
+completed without any problems,
+so everyone can enter the castle."
 "edd8","<X1e>やぎ<X04>
-めえぇぇぇぇ。"
+めえぇぇぇぇ。","<X1e>Goat<X04>
+Me-e-e-e-e..."
 "edee","<X1e>にわとり<X04>
-こけっ〜 !?"
+こけっ〜 !?","<X1e>Chicken<X04>
+Bok! Bokaaw!"

@@ -1,4 +1,5 @@
-"dc30","ボイルガードＡ<RET_IL>"
-"dc70","ボイルガードＢ<RET_IL>"
-"dda4","ボイルガードの群れが現れた。<RETN>"
-"ddc1","<X02>が武器を振り上げると稲妻が襲ってきた !!<X0a>"
+"dc30","ボイルガードＡ<RET_IL>","Boilguard A<RET_IL>"
+"dc70","ボイルガードＢ<RET_IL>","Boilguard B<RET_IL>"
+"dda4","ボイルガードの群れが現れた。<RETN>","A squad of boilguards appears.<RET_IL>"
+"ddc1","<X02>が武器を振り上げると稲妻が襲ってきた !!<X0a>","<X02> raises its weapon
+and bombards you with lightning!<X0a>"

@@ -14,20 +14,44 @@
 セリオス ･ ･ 王子 !?
 <IF0007><JUMPe3dc>ばかなことを 言うな さっさと
 出てゆけ 今日は 城には入れん。<END>
-<LOCe3dc><SET0012><ASMe411>し、しばらく ここでお待ちを ･ ･ ･"
+<LOCe3dc><SET0012><ASMe411>し、しばらく ここでお待ちを ･ ･ ･","<X1e>Soldier<X04>
+Halt! You don't look like you're
+from around here. Where did you
+come from? What's your name?
+
+<ASMe404><X1e>Selios<X04>
+My name is Selios. I've come a
+long way from the town of Eluasta.<X120700><JUMPe35f>
+Let me pass.<JUMPe37d><LOCe35f>
+
+Let me pass. I need to see Achdam.<LOCe37d>
+
+<X1e>Soldier<X04>
+Selios... the Prince?!
+<X120700><JUMPe3dc>Stop making stupid jokes and run
+along. The castle is closed today.<END>
+<LOCe3dc><X141200><ASMe411>J-just wait here a moment,
+please..."
 "e417","<X1e>兵士<X04>
 まもなく 迎えの者が まいります。
 
 それまで
-ここで お待ちになっていてください。"
+ここで お待ちになっていてください。","<X1e>Soldier<X04>
+Someone will be here to receive
+you shortly, your Highness. Pleasewait here."
 "e46c","<X1e>兵士<X04>
 なんだ、お前は !
 私は 忙しいのだ。
-さっさと あっちへ行け !!"
+さっさと あっちへ行け !!","<X1e>Soldier<X04>
+What is it?! I'm busy.
+Move along."
 "e4af","<X1e>兵士<X04>
 これは 王子さま。
 <IF0400><JUMPe4e7>お出かけでございますか？<END>
-<LOCe4e7>お帰りなさいませ。"
+<LOCe4e7>お帰りなさいませ。","<X1e>Soldier<X04>
+Your Highness!
+<X120004><JUMPe4e7>Are you leaving the city?<END>
+<LOCe4e7>Welcome back!"
 "e4fa","<X1e>兵士の隊長<X04>
 セリオス王子ですな？
 お待ちして おりましたぞ
@@ -46,4 +70,18 @@
 
 <X1e>兵士の隊長<X04>
 ささ、そのようなことを
-おっしゃらずに 早くこちらへ。"
+おっしゃらずに 早くこちらへ。","<X1e>Captain<X04>
+I suppose you're Prince Selios?
+We've been expecting you.
+
+Lord Achdam is eager to meet you.
+He is in the audience chamber. We
+should not keep him waiting.
+
+<X1e>Selios<X04>
+The audience chamber? Why isn't
+Achdam here himself to meet me?
+
+<X1e>Captain<X04>
+This way, please. There will be
+time for those questions later."

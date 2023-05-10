@@ -1,38 +1,66 @@
 "e3d3","<X1e>兵士<X04>
-ここは、リーゼル城の入口でＲ。"
+ここは、リーゼル城の入口でＲ。","<X1e>Soldier<X04>
+These Ｒ the gates of Riezel
+Castle."
 "e3f9","<X1e>兵士<X04>
 今、城の中は たてこんでおる。
 誰であろうと 入れることは出来ん。
-立ち去るがよい。"
+立ち去るがよい。","<X1e>Soldier<X04>
+No matter who you are, I can't
+let you disturb the work inside.
+Please take your leave."
 "e451","<IF_NOT0089><JUMPe6c2><LEADERe4d5,e508,e4d5,e53f,e4d5>
 
 <X1e>男<X04>
 あれ、知らなかったのかい？
 
 地下牢に 捕えられていた 兵士たちが脱走して モンスターを 追い払って
-くれたんだよ。"
-"e4d5","この町は モンスターに 占領されたと聞いたけど ･ ･ ･<RET_IL>"
-"e508","この町は モンスターに 占領されたと聞いたのですが ･ ･ ･<RET_IL>"
-"e53f","この町は モンスターに 占領されたと聞いたんだけどよ ･ ･ ･<RET_IL>"
+くれたんだよ。","<IF_NOT0089><JUMPe6c2><LEADERe4d5,e508,e4d5,e53f,e4d5>
+
+<X1e>Man<X04>
+What, you didn't know?
+
+The captured soldiers escaped
+from the castle dungeon and
+drove off the monsters."
+"e4d5","この町は モンスターに 占領されたと聞いたけど ･ ･ ･<RET_IL>","We heard that monsters had
+taken over this town...<RET_IL>"
+"e508","この町は モンスターに 占領されたと聞いたのですが ･ ･ ･<RET_IL>","We had heard that this town was
+occupied by monsters...<RET_IL>"
+"e53f","この町は モンスターに 占領されたと聞いたんだけどよ ･ ･ ･<RET_IL>","We heard this town was crawlin'
+with monsters...<RET_IL>"
 "e578","<X1e>女<X04>
 この町を モンスターから 解放する
 ために 大勢の兵士さんたちが
-死んでしまったわ。"
+死んでしまったわ。","<X1e>Woman<X04>
+A lot of soldiers died to free
+our town from monsters."
 "e5cd","<X1e>神父<X04>
 ようこそ 我が教会へ。
-私に 何か ご用でしょうか？"
+私に 何か ご用でしょうか？","<X1e>Priest<X04>
+Welcome to my church.
+Is there something I can do
+for you?"
 "e605","<X1e>武器屋<X04>
 ああ、なんてこった。
 店の品物を 全部 モンスターどもに
-うばわれてしまうなんて ･ ･ ･"
+うばわれてしまうなんて ･ ･ ･","<X1e>Tool merchant<X04>
+Ugh, what a mess...
+All my stock's been stolen
+by the monsters."
 "e661","<X1e>道具屋<X04>
 モンスターに 店の中を 荒らされて
 商売どころじゃ ないんだ。
-また 日を改めて 来ておくれ。"
+また 日を改めて 来ておくれ。","<X1e>Weapon merchant<X04>
+My shop's been trashed by
+monsters, so it's not really a
+good time. Come again later."
 "e6c2","<X1e>男<X04>
 ここの城主 ジェストンさまは
 モンスターとの戦いで 傷を負われて
-しまったそうだ。"
+しまったそうだ。","<X1e>Man<X04>
+Duke Jestonn was wounded during
+the battle with the monsters."
 "e716","<IF0090><JUMPea16><X1e>老人<X04>
 なんだね、あんたがたは？
 この わしに 何か用かね？<IF0089><JUMPe75b><END>
@@ -48,36 +76,73 @@
 
 そ、そうであった。
 わしには 兄が いたんじゃった。
-わしは 無事だから 心配はいらないと兄に 伝えてくだされ。"
+わしは 無事だから 心配はいらないと兄に 伝えてくだされ。","<IF0090><JUMPea16><X1e>Old man<X04>
+Who are you people?
+What do you want?<IF0089><JUMPe75b><END>
+<LOCe75b><SET0090>
+
+<LEADERe821,e8b6,e821,e95a,e821>
+
+<X1e>Erich<X04>
+What? My brother?
+
+...
+...
+...
+
+Oh, r-right. 
+I had a brother.
+Tell him I'm fine and he
+doesn't need to worry about me.
+"
 "e821","人を 探しているんだ。
 エリックという人なんだけど
 知らないかな？<CALLe9f0><CH0>
 実は あなたの お兄さんから
 あなたが 無事か どうか
-見てくるように 頼まれたんだ。<RET_IL>"
+見てくるように 頼まれたんだ。<RET_IL>","We're looking for someone.
+Do you know a man named Erich?<CALLe9f0><CH0>
+Well, your brother asked us
+to come and check if you're
+safe or not.<RET_IL>"
 "e8b6","人を 探しているんです。
 エリックさんという方なんですが
 ご存知ありませんか？<CALLe9f0><CH1>
 実は あなたの お兄さんから
 あなたが 無事か どうか
 見てくるように 頼まれたのです。
-<RET_IL>"
+<RET_IL>","We are here to find a person
+by the name of Erich. Do you
+happen to know him?<CALLe9f0><CH1>
+We came on behalf of your
+brother. He asked us to check
+if you are safe or not.<RET_IL>"
 "e95a","人を 探しているんだ。
 エリックっていう奴なんだが
 知らねえかな？<CALLe9f0><CH3>
 実は あんたの 兄さんから
 あんたが 無事か どうか
 見てくるように 言われたんだよ。
-<RET_IL>"
+<RET_IL>","You know a guy named Erich?
+We're lookin' for 'im.<CALLe9f0><CH3>
+Your brother asked us to come
+check if you're okay or not.<RET_IL>"
 "e9f0","
 
 <X1e>老人<X04>
 エリックは、わしじゃが ･ ･ ･
 
+<RET_IL>","
+
+<X1e>Old man<X04>
+Erich? I guess that's me...
+
 <RET_IL>"
 "ea16","<X1e>エリック<X04>
 わしは 間違いなく エリックじゃ
-兄には 無事じゃと 伝えてくだされ。"
+兄には 無事じゃと 伝えてくだされ。","<X1e>Erich<X04>
+I am Erich. Yup, I sure am.
+Tell my brother I'm fine."
 "ea63","<X1e>エリック<X04>
 なんじゃ、また 来たのかね。
 今度は いったい なんの用じゃ？
@@ -87,7 +152,16 @@
 <X1e>エリック<X04>
 クックックッ、見破られたからには
 生きて ここから帰すわけにはいかぬ
-この場で 死んでもらうぞ。"
+この場で 死んでもらうぞ。","<X1e>Erich<X04>
+You again? What do you want
+this time?
+
+<LEADEReb1d,ebe5,eb1d,ecb7,eb1d>
+
+<X1e>Erich<X04>
+Heh heh heh... Well, now that you
+know, we can't let you leave here
+alive!"
 "eb1d","たびたび 申し訳ないんだけど
 ちょっと あなたの 右手を見せて
 もらえないかな？<CALLed63><CH0>
@@ -96,7 +170,15 @@
 傷あとがあると 言っていた。
 
 きさま、エリックじゃ ないな。
-いったい 何者だ？<RET_IL>"
+いったい 何者だ？<RET_IL>","Sorry to bother you again. But
+could you just show me your
+right hand for a second?<CALLed63><CH0>
+No scar. Your brother said that
+you have a scar on your right
+hand.
+
+You're not Erich!
+Who are you?!<RET_IL>"
 "ebe5","たびたび 申し訳ありません。
 ちょっと あなたの右手を見せて
 もらえませんか？<CALLed63><CH1>
@@ -104,7 +186,15 @@
 あなたの兄さんは その右手に
 傷あとがあると 言っていました。
 
-あなた、エリックじゃ ありませんね。いったい 何者です？<RET_IL>"
+あなた、エリックじゃ ありませんね。いったい 何者です？<RET_IL>","I apologize for disturbing you
+again. But if you don't mind,
+could I see your right hand?<CALLed63><CH1>
+There's no scar. According to
+your brother, you should have
+a scar on your right hand.
+
+You must not be Erich. So who
+are you?<RET_IL>"
 "ecb7","ちょっと あんたの 右手を見せて
 ほしいんだよ。<CALLed63><CH3>
 傷あとがねえ。
@@ -112,11 +202,23 @@
 傷あとがあると 言っていたぞ。
 
 きさま、エリックじゃ ねえな。
-いったい 何者だ？<RET_IL>"
+いったい 何者だ？<RET_IL>","Could I just see your right
+hand for a sec?<CALLed63><CH3>
+No scar. Your brother says you
+got a scar on your right hand.
+
+You ain't Erich! Who the hell
+are you?!"
 "ed63","
 
 <X1e>エリック<X04>
 右手？
 この右手が どうしたと いうのだ？
+
+<RET_IL>","
+
+<X1e>Erich<X04>
+My right hand?
+You mean this one?
 
 <RET_IL>"

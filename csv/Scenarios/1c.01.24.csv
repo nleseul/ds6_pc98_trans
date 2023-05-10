@@ -1,14 +1,25 @@
 "e0fa","<X08>誰の呪文の書にレスの呪文を
-書き込むのじゃな？<RETN>"
-"e129","どこに 書き込むのじゃな？<RETN>"
-"e143","どれどれ 書き込むとするか。<RETN>"
-"e15f","必要になったらいつでも 来なされ。"
+書き込むのじゃな？<RETN>","<X08>Shall I scribe the Res spell for
+you?<RETN>"
+"e129","どこに 書き込むのじゃな？<RETN>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e143","どれどれ 書き込むとするか。<RETN>","Where shall I scribe it?<RETN>"
+"e15f","必要になったらいつでも 来なされ。","Come back whenever you need it."
 "e1ed","<X1e>老人<X04>
 <IF00c5><JUMPe27c><IF0089><JUMPe206><IF00c4><JUMPe23f><LOCe206>こんな 人気のない所に 来るとは
 あんたらも 物好きじゃな。<END>
 <LOCe23f>あんな、親不孝者の息子など
 のたれ死んでしまえば いいのじゃ。<END>
 <LOCe27c>レスの呪文が 必要なのかね。
+
+<SET0400><RET_IL>","<X1e>Old man<X04>
+<IF00c5><JUMPe27c><IF0089><JUMPe206><IF00c4><JUMPe23f><LOCe206>You must be the inquisitive sort,
+to come to an out-of-the-way spot
+like this.<END>
+<LOCe23f>Miserable excuse for a son!
+He'll end up dead in a ditch
+somewhere, and good riddance!<END>
+<LOCe27c>Do you need any Res spells?
 
 <SET0400><RET_IL>"
 "e29c","<X1e>おばあさん<X04>
@@ -26,7 +37,23 @@
 
 今ごろ どこで どうしているのやら。<LOCe3d1><END>
 <LOCe3d2>一日も早く お父さまの かたきが
-討てますよう、お祈りしております。"
+討てますよう、お祈りしております。","<X1e>Old woman<X04>
+<IF00c5><JUMPe3d2>Oh, my! You've come quite far
+from the beaten path! And you're
+all so young!<IF0089><JUMPe3d1><SET00c4>
+
+He would have been so happy to
+have guests like yourselves...
+
+Our son would have been about
+your age. But a few years ago,
+he said he wanted to find some
+spell or other, and took off.
+
+I haven't the foggiest where
+he is now, or what he's doing...<LOCe3d1><END>
+<LOCe3d2>I hope you'll be able to avenge
+your father soon."
 "e414","<X1e>ポム<X04>
 <IF00c5><JUMPe9dc><SET00c5>やあ、あんたたち。
 よく ここが わかったねえ。
@@ -113,4 +140,93 @@
 おお、そんなことは
 おやすい ご用じゃ
 
-<SET0400><RET_IL><LOCe9dc>また 遊びに 来てくれよ。"
+<SET0400><RET_IL><LOCe9dc>また 遊びに 来てくれよ。","<X1e>Pomm<X04>
+<IF00c5><JUMPe9dc><SET00c5>Oh, hello again!
+I'm surprised you found
+this place.
+
+I was just telling them about
+you. Father, mother, these
+are the ones.
+
+<X1e>Old woman<X04>
+Oh, my! Please, come in!
+<X1e>Old man<X04>
+Hmph! No-gooders just like him!
+
+<X1e>Pomm<X04>
+Don't tell me you're still
+sulking, father. At your age?
+
+<X1e>Old man<X04>
+Oh, bugger off!! Speaking like
+that to your own father...
+
+Kids these days!! Never a thought
+for your parents! Not a one!
+
+<X1e>Old woman<X04>
+Oh, don't you mind your old Dad.
+I know he's truly happy to have
+you back home, Pomm.
+
+He's always been like that. He
+doesn't like to admit his real
+feelings, so he just makes like
+he's grumpy.
+
+<X1e>Old man<X04>
+Nonsense! I could never be happy
+to have such a stupid son back!
+
+<X1e>Old woman<X04>
+Oh? What about that Res spell
+you've got tucked away there,
+then? Hmm?
+
+You went all the way to Yold
+for it, and said you were going
+to give it to Pomm when he came
+home!
+
+<X1e>Old man<X04>
+I never said that!
+You must be hard of hearing!
+
+<X1e>Pomm<X04>
+...Even after I left like that, 
+you still...
+F-father... I'm so sorry.
+
+<X1e>Old man<X04>
+... ...
+
+...Welcome home, Pomm.
+I'm... I'm glad you're safe.
+
+<X1e>Pomm<X04>
+Father...
+I'm not going to travel any more.
+I'm staying home with my family.
+
+By the way, father, what level
+of Res was it?
+
+<X1e>Old man<X04>
+Level 3. Enough to restore
+around 500 HP.
+
+<X1e>Pomm<X04>
+Do you suppose you could scribe
+that spell into my friends' 
+spellbooks?
+
+They're traveling to avenge his
+father. I think that spell
+would be very helpful to them.
+
+<X1e>Old man<X04>
+I suppose that wouldn't be
+any trouble.
+
+<SET0400><RET_IL><LOCe9dc>Please come see us again!"

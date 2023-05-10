@@ -1,29 +1,46 @@
 "e189","<X1e>武器屋<X04>
 いらっしゃいませ。
-ここは武器と防具の店ですが<RETN>"
-"e1c0","また来てくださいね。"
+ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
+Welcome! Can I interest you in
+an iron spear?
+
+<RET_IL>"
+"e1c0","また来てくださいね。","Come again!"
 "e1ff","<X1e>道具屋<X04>
 いらっしゃいませ。
-洞窟に行くなら たいまつとワプの羽、この辺の人は みんな持ってますよ。<RETN>"
-"e260","また来てくださいね。"
+洞窟に行くなら たいまつとワプの羽、この辺の人は みんな持ってますよ。<RETN>","<X1e>Tool merchant<X04>
+Welcome! People around here alwayscarry torches and warp feathers
+whenever they go into caves.<RETN>"
+"e260","また来てくださいね。","Come again!"
 "e281","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e2a5","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e2bf","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e2e4","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e2ff"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e32b","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e344","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e3f0","<X1e>男<X04>
 あんたたち 聞いたかい。
@@ -39,7 +56,21 @@
 もし、王子さまに 会われたら、
 ウォンリークの国民は みんな
 王子さまに感謝していたと
-伝えてくれよな。"
+伝えてくれよな。","<X1e>Man<X04>
+Have you heard?
+<PAGE>
+The Prince of Farleyn somehow
+drove all the monsters out of
+Wonliech.
+
+Weren't you also from Farleyn?
+You are blessed to have such
+a fine Prince.
+
+If you ever chance to meet his
+Highness, please convey the 
+gratitude of the people of
+Wonliech."
 "e527","<X1e>老人<X04>
 ファーレーンの セリオス王子さまは
 お父上のかたきを 追っておられる
@@ -47,10 +78,17 @@
 
 なんでもアクダムとかいう男らしいぞあんたらも その男を見かけたら
 すぐに、ファーレーンに
-連絡するのじゃぞ。"
+連絡するのじゃぞ。","<X1e>Old man<X04>
+I understand that Prince Selios ofFarleyn is pursuing his father's
+killer.
+
+The killer was a man named Achdam.If you ever spot him, you should
+inform Farleyn."
 "e5e5","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
 "e61d","<X1e>男<X04>
 <IF0408><JUMPe6bd><IF0409><JUMPe6bd>子供を 助けていただいて 本当に
 ありがとうございました。
@@ -63,8 +101,21 @@
 
 ずいぶんと お疲れのようですね。
 狭い家では ございますが、
-ゆっくり お休みくださいませ。<SET0401>"
+ゆっくり お休みくださいませ。<SET0401>","<X1e>Man<X04>
+<IF0408><JUMPe6bd><IF0409><JUMPe6bd>Thank you so much for saving
+the children.
+<PAGE>
+My son will be happy to see that
+you're here. Please come any time!<END>
+<LOCe6bd>Oh, welcome! Come in,
+come in!
+
+You seem quite tired. This isn't
+a big house, but please make
+yourself at home.<SET0401>"
 "e746","<X1e>子供<X04>
 <IF0402><JUMPe777>あっ、お兄ちゃんだ !
 いらっしゃい。<END>
-<LOCe777>お兄ちゃん また来てね。"
+<LOCe777>お兄ちゃん また来てね。","<X1e>Child<X04>
+<IF0402><JUMPe777>Oh, hi! Come in!<END>
+<LOCe777>Come back soon!"

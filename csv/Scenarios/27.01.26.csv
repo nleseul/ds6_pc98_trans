@@ -2,45 +2,70 @@
 おや お客さん プラチナのたては
 おすすめ品だよ。
 
+<RET_IL>","<X1e>Weapon merchant<X04>
+Welcome, my friends! Get your
+Platinum Shields here!
+
 <RET_IL>"
-"e106","また来てくださいね。"
+"e106","また来てくださいね。","Come again!"
 "e145","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは 道具の店ですが
-どんな ご用ですか？<RETN>"
-"e18b","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e18b","また来てくださいね。","Come again!"
 "e1ab","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e1cf","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e1e9","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e20e","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e229"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e255","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e26e","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e349","<X1e>奴隷商人<X04>
 さあ いらっしゃい いらっしゃい !!
 若くて よく働く子ばかり だから
-お買いどくだよ。"
+お買いどくだよ。","<X1e>Slave merchant<X04>
+Step right up! Fresh, young girls!Get 'em all right here!"
 "e3a6","<X1e>ラヌーラの娘<X04>
 私には 弟がいるの。
-今ごろ どうしてるかしら？"
+今ごろ どうしてるかしら？","<X1e>Lanouran girl<X04>
+I have a little brother.
+I wonder what he's doing now?"
 "e3e3","<X1e>ラヌーラの娘<X04>
 なんで 私は ラヌーラなんかに
 生まれてきたのかしら ･ ･ ･ 。
 
 今度 生まれてくるときは もっと
-豊かな国に 生まれてきたいわ。"
+豊かな国に 生まれてきたいわ。","<X1e>Lanouran girl<X04>
+Why did I have to be born in a
+place like Lanoura...?
+
+I hope someday I'll be born again
+in a more prosperous land."
 "e46a","<X1e>ねあかの娘<X04>
 ３番、自己紹介します。
 
@@ -50,13 +75,27 @@
 好き嫌いは ほとんど ありません。
 食べられないのは、
 魚介類と野菜、それから お肉です。
-ね、たった３つしか ないでしょ。"
+ね、たった３つしか ないでしょ。","<X1e>Cheerful girl<X04>
+Hello! I'm #3. Let me introduce
+myself!
+
+Everyone says that I'm a lively
+and graceful girl.
+
+I'm not a picky eater. I don't 
+care for seafood, vegetables, or
+meat, but apart from that, I'll
+eat anything!"
 "e53e","<X1e>男<X04>
 おれはよぉ あの一番左にいる 娘が
-気に入っただよ。"
+気に入っただよ。","<X1e>Man<X04>
+Me, I've got my eye on the girl onthe left."
 "e575","<X1e>男<X04>
 ワタシ ルドラの港から来た。
-かわいい 召し使い 欲しいあるよ。"
+かわいい 召し使い 欲しいあるよ。","<X1e>Man<X04>
+I've come from Rudra Harbor. I
+hope I can find a pretty girl to
+cook for me."
 "e5b7","<X1e>男<X04>
 <IF0180><JUMPe943><SET0180>わりーな おれの連れてきた奴隷は
 みんな 売れちまったんだ。
@@ -110,7 +149,64 @@
 
 <X1e>男<X04>
 <LOCe943>まいったなぁ。
-奴隷が手に入らないんじゃ、これからどーやって 稼げば いいんだ。"
+奴隷が手に入らないんじゃ、これからどーやって 稼げば いいんだ。","<X1e>Man<X04>
+<IF0180><JUMPe943><SET0180>You're outta luck. All the slaves
+I brought with me have sold
+already.
+
+There's this old geezer from over
+in Moreston, y'see, and he buys
+'em all up as fast as I can bring
+'em.
+
+Guess I should head back to
+Lanoura to buy more, huh?
+
+<CH1>
+Unfortunately for you, you will
+not find any more slaves to buy
+in Lanoura.
+
+<X1e>Man<X04>
+W-What are you talking about?
+No more slaves?!
+What kinda moron are you?
+
+I give that Liston 10% of the 
+profit as long as he keeps the
+slaves flowing!
+
+<CH3>
+That greedy piece of shit!!
+That's low, even for him!
+
+<CH0>
+That's so awful!
+
+<CH1>
+I cannot believe that someone likehim was put in charge of our
+domestic policy.
+
+<X1e>Man<X04>
+... ...
+
+W-Who the hell are you people?!
+
+<CH3>
+None o' your damn business!
+
+<CH1>
+Suffice to say, Lanouran tax rateshave been lowered. The standard ofliving there should improve.
+
+So you will no longer find anyone
+there to enslave.
+
+<X1e>Man<X04>
+<LOCe943>
+Fine, fine. So, no more slaves?
+How'm I gonna make a living now?"
 "e991","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."

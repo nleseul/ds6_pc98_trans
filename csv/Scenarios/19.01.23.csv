@@ -8,16 +8,30 @@
 えっ、あんたたちを 運んできた
 奴のことを 知りたいって？
 そう 言われても、名前も 言わずに
-どこかへ 行っちまったからなあ。"
+どこかへ 行っちまったからなあ。","<X1e>Soldier<X04>
+<IF007d><JUMPe3e0>As much as I want to help
+Maschun... What would happen to
+this fort without our protection?<END>
+<LOCe3e0>Oh, hey there. Feeling better now?
+
+Huh? The guy who brought you here?He just left immediately. Didn't
+give a name even when I asked."
 "e48a","<X1e>兵士<X04>
 ついに マスクーンも モンスターに
-襲われたか ･ ･"
+襲われたか ･ ･","Even Maschun's under attack by
+monsters now..."
 "e4c1","<X1e>隊長<X04>
 <IF009b><JUMPe4da><IF0408><JUMPe4da><IF_NOT0409><JUMPe525><LOCe4da>んっ おお、お前たちか。
 いいとも いいとも 好きなだけ
 休んでいくがいい。<SET0400><END>
 <LOCe525>マスクーンの町には 行きたいが
-ここの 警備も しなければならないし困ったものだ ･ ･ ･<CLEAR0400>"
+ここの 警備も しなければならないし困ったものだ ･ ･ ･<CLEAR0400>","<X1e>Captain<X04>
+<IF0009b><JUMPe4da><IF0408><JUMPe4da><IF_NOT0409><JUMPe525><LOCe4da>Hm? Oh, it's you guys. 
+Of course, you can stay here
+as long as you like.<SET0400><END>
+<LOCe525>I want to go to Maschun, but I
+have to protect the fort. What 
+to do...?<CLEAR0400>"
 "e57b","<X1e>兵士<X04>
 ここは ヨルドの港への 定期船の
 乗り場なんだが ･ ･ ･
@@ -27,10 +41,20 @@
 戻ってこないんだ。
 
 まさか ヨルドの港も モンスターに
-襲われて しまったのだろうか？"
+襲われて しまったのだろうか？","<X1e>Soldier<X04>
+The ship to Yold Harbor departs
+from here...
+
+But the ship hasn't returned sincethe last set of passengers from
+Yold boarded.
+
+I wonder if Yold was attacked by
+monsters too."
 "e63d","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
 "e675","<X1e>老人<X04>
 <IF007d><JUMPe737>お願いじゃ 隊長さん。
 マスクーンを ･ ･ ･ 町を ･ ･ ･
@@ -47,7 +71,21 @@
 
 隊長さん、あんたがたは いったい
 いつになったら わしらの町を救って
-くれるのかね？"
+くれるのかね？","<X1e>Old man<X04>
+<IF007d><JUMPe737>Please, Captain!
+Maschun... Our town... save us!
+
+<X1e>Captain<X04>
+If we go to Maschun now, then
+the monsters may strike at this
+fort next.
+
+What to do...?<END>
+<LOCe737>These people put their lives on
+the line for Maschun!
+
+How long are you going to wait to
+help us, Captain?"
 "e7c7","<X1e>神父<X04>
 隊長さん、息を吹き返しました。
 もう 大丈夫です。しばらくすれば
@@ -55,7 +93,14 @@
 
 <X1e>隊長<X04>
 そうか、ご苦労だった。
-帰っていいぞ。"
+帰っていいぞ。","<X1e>Priest<X04>
+He's breathing more easily now,
+Captain. I think the worst is
+past. He should awaken soon.
+
+<X1e>Captain<X04>
+Very well. Thanks for your help.
+I'll handle things from here."
 "e854","<X1e>セリオス<X04>
 う、ううん ･ ･ ･ ここは？
 
@@ -79,13 +124,41 @@
 
 <X1e>隊長<X04>
 門の兵士に 聞いてみるといい。
-何か 知っているかもしれん。"
+何か 知っているかもしれん。","<X1e>Selios<X04>
+U... ugh...
+Where... am I...?
+
+<X1e>Captain?<X04>
+Back with us? You're in Fort
+Larfa. Looks like you bit off morethan you could chew in Maschun.
+
+<X1e>Selios<X04>
+That's right... Achdam.
+I fought him... and I lost.
+
+<X1e>Captain<X04>
+Took us by surprise here. When youwere found collapsed outside, I
+mean.
+
+<X1e>Runan<X04>
+So someone must have brought us
+here. Who?
+
+<X1e>Captain<X04>
+The guards at the gate may have
+seen something. You should check
+with them."
 "e9e8","<CH2>
 うわっ !! かっ 身体中が痛え !!
 
 <X1e>隊長<X04>
 まだ だめだ。
-もう少し 休んでいたほうがいい。"
+もう少し 休んでいたほうがいい。","<CH2>
+Ow! Ow ow! Everything hurts!!
+
+<X1e>Captain<X04>
+Not yet!
+You need to rest a little more."
 "ea3f","<X1e>道具屋<X04>
 <IF00c3><JUMPed74><IF007e><JUMPed41>おや いらっしゃいませ。
 <IF_NOT0081><JUMPeb18>先ほどは マスクーンで 命を助けて
@@ -141,5 +214,64 @@
 
 正直な話、このカギは 難しいですよ。でも、明日の 朝までには 必ず
 作ってみせますので それまで
-お待ちください。"
-"ef37","<X08><X0e>を渡されました。<RETN>"
+お待ちください。","<X1e>Tool merchant<X04>
+<IF00c3><JUMPed74><IF007e><JUMPed41>Oh, welcome!
+<IF_NOT0081><JUMPeb18>I can't thank you enough for
+saving my life in Maschun.
+
+I owe you something... but I don'treally have much. If there's
+anything I can do for you, don't
+hesitate to ask.<JUMPeb9c><LOCeb18>Hey, remember me? I was being
+hounded by monsters in Maschun!
+
+It sure was nice of you, just 
+acting like you didn't notice.<LOCeb9c>
+
+I've decided to open a key
+duplication service now. But
+you probably wouldn't have any
+need of duplicate keys.
+
+<CH0>
+Actually, that's perfect! We
+need a key made for the lock in
+the Tower of Guenn.
+
+<X1e>Tool merchant<X04>
+Certainly! I'll take care of it
+right away.
+
+That said... I can't make a key 
+without a template. I'm afraid
+you'll have to go press this clay
+into the keyhole first.<IF0081><JUMPed40>
+
+And because of what you did in
+Maschun, I'll give you a special
+price of 5000 Gold.<LOCed40><END>
+<LOCed41><CALL0001>
+Be sure to press the clay in
+firmly.<END>
+<LOCed74><IF009b><JUMPeea9><CALL0001>
+
+<CH0>
+Yeah, here it is.
+<X1e>Tool merchant<X04>
+Yes, that will do nicely.
+
+You seem to be in a hurry, so I'llwork on it tonight and have it
+ready tomorrow morning. Please
+come back then.
+
+<IF0081><JUMPee87>And your payment for the key will
+be due upon receipt.
+
+<LOCee87><X1c>Handed over the clay template.<X0c0301><X04><ASMef32><SET009b><END>
+<LOCeea9>Was there anything else?
+
+This is a very difficult key, to
+be honest. But I'll do my best to
+have it ready in the morning.
+Please come back then.<END>
+<LOC0001>Were you able to make a template?<RET_IL>"
+"ef37","<X08><X0e>を渡されました。<RETN>","<X08>He hands you some <X0e>.<RETN>"

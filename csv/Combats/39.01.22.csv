@@ -1,10 +1,14 @@
-"dc30","ブロウコング<RET_IL>"
-"dc70","ヂガバチＡ<RET_IL>"
-"dcb0","ヂガバチＢ<RET_IL>"
+"dc30","ブロウコング<RET_IL>","Whacky Kong<RET_IL>"
+"dc70","ヂガバチＡ<RET_IL>","Gigabee A<RET_IL>"
+"dcb0","ヂガバチＢ<RET_IL>","Gigabee B<RET_IL>"
 "de09","ブロウコングとヂガバチの群れが
-現れた。<RETN>"
+現れた。<RETN>","A whacky kong and a swarm of
+gigabees appear.<RETN>"
 "de31","は<X02>を刺した。<X0a>
-<CONT><X02>は毒におかされた！<X0a>"
-"de53","しかし <X02>は 針が抜けたので死んでしまった。<X0a>"
+<CONT><X02>は毒におかされた！<X0a>"," stings <X02>.<X0a>
+<CONT><X02> is poisoned!<X0a>"
+"de53","しかし <X02>は 針が抜けたので死んでしまった。<X0a>","But <X02>'s stinger falls
+out, and it dies.<X0a>"
 "de7d","は ＨＰの一番低い
-<X02>に 殴りかかった !!<X0a>"
+<X02>に 殴りかかった !!<X0a>"," whacks <X02>, who
+has the lowest HP!!<X0a>"

@@ -1,33 +1,41 @@
-"e104","<X08>どの 呪文が 欲しいのじゃな？<RETN>"
-"e122","誰の 呪文の書に 書き込むのじゃな？<RET_IL>"
-"e145","どこに 書き込むのじゃな？<RETN>"
-"e15f","どれどれ、書き込むとしようか。<X0a>"
+"e104","<X08>どの 呪文が 欲しいのじゃな？<RETN>","<X08>Which spell do you wish?<RETN>"
+"e122","誰の 呪文の書に 書き込むのじゃな？<RET_IL>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e145","どこに 書き込むのじゃな？<RETN>","Where shall I scribe it?<RETN>"
+"e15f","どれどれ、書き込むとしようか。<X0a>","Do you wish me to scribe anything
+more?<X0a>"
 "e194","また、必要になったら
-いつでも 来るがよい。"
-"e55b","ハッハッハ、作戦どうりじゃ。<X0a>"
+いつでも 来るがよい。","Should you have any further needs,you may always come to me."
+"e55b","ハッハッハ、作戦どうりじゃ。<X0a>","Ha! Exactly as planned!<X0a>"
 "e5d6","おぬし、なかなか 間抜けじゃのう。
-この角は いたたぐぞ。<X0a>"
+この角は いたたぐぞ。<X0a>","You aren't too bright, are you?
+I'll take this corner!<X0a>"
 "e60e","おっと、この角は取っておかないと
-取られてしまうな。<X0a>"
-"e642","おっと、そう簡単に角は渡さんぞ。<X0a>"
+取られてしまうな。<X0a>","Oh, I'd better take this corner
+before you do!<X0a>"
+"e642","おっと、そう簡単に角は渡さんぞ。<X0a>","No easy corners for you!<X0a>"
 "e6b0","ゲゲッ、まずいぞ !!
 この角は取っておかないと
-取れなくされてしまうな。<X0a>"
+取れなくされてしまうな。<X0a>","Ugh! I'll never get this corner
+if I don't take it now!<X0a>"
 "e72a","おっと、そんな所に打って、
 このわしが 見落とすとでも
-思っているのかな。<X0a>"
-"e7ae","ヒヒヒ、これが わかるかな。<X0a>"
+思っているのかな。<X0a>","Did you really think I wouldn't
+see that one coming?<X0a>"
+"e7ae","ヒヒヒ、これが わかるかな。<X0a>","Heh, okay...<X0a>"
 "e7fd","おっと、なかなか おいしい
-ところが あるじゃないか。<X0a>"
+ところが あるじゃないか。<X0a>","Aha! That's a pretty nice spot,
+ain't it?<X0a>"
 "e85a","フッフフ
-ここでは どうかな？<X0a>"
+ここでは どうかな？<X0a>","Heh heh... how about this?<X0a>"
 "e88c","フーム、これは難しいのう。
 とりあえず このへんにでも
-打っておくかのう。<X0a>"
+打っておくかのう。<X0a>","Hmm, this is a tough one.
+How about if I just go here?<X0a>"
 "e8de","ウムムムム、
-なかなか やるではないか。<X0a>"
+なかなか やるではないか。<X0a>","Hmmm... Not too bad.<X0a>"
 "e91d","ウムム、こんな所にしか
-打てないとは なさけない。<X0a>"
+打てないとは なさけない。<X0a>","Hmm. Well, I'm stuck going here.<X0a>"
 "ed5c","<X1e>頑固そうな老人<X04>
 これは、これは。
 こんな 寂しい所に よく来て
@@ -53,7 +61,29 @@
 <LOCef51>そうか つきあいが悪いのう。
 <IF_NOT004b><JUMPef9d><SET0401>仕方がない、
 呪文を 教えてしんぜよう。<END>
-<LOCef9d>気が変わったら いつでも 来なされ。"
+<LOCef9d>気が変わったら いつでも 来なされ。","<X1e>Stubborn old man<X04>
+Oh, hello! Thank you for coming
+to this out-of-the-way place.
+
+<X124a00><JUMPee66><X144a00>I know some combat spells, and
+it's my duty to teach them to
+people...
+<PAGE>
+But not for free!!
+So, shall we play a game?
+If you win, I'll teach you.
+
+<LOCee66>Ready to play?
+<ASMefc0><X120004><JUMPef51>Very well, then.
+<X124b00><JUMPef3a><X144b00>The rules are simple.
+<PAGE>
+<CALL0001><PAGE>
+<LOCef3a>Now, shall we begin?<END>
+<LOCef51>Hmm. Not too sociable, are we?
+<X114b00><JUMPef9d><X140104>Very well. I'll just teach you
+your spells, then.<END>
+<LOCef9d>If you change your mind, feel
+free to come any time."
 "efca","では、コマの数を 数えてみるかな。<WAIT>
 白のコマが <ASMf157>個じゃ。<WAIT>
 黒のコマが <ASMf188>個じゃ。
@@ -73,19 +103,54 @@
 たいしたものじゃ。<LOCf12c>
 
 おおまけに まけて、
-<LOCf141>呪文を 教えてやろう。<X0d>"
+<LOCf141>呪文を 教えてやろう。<X0d>","Now, let's see what the count is.<WAIT>
+White has <ASMf157> pieces.<WAIT>
+Black has <ASMf188> pieces.
+
+<X1e>Stubborn old man<X04>
+<X120104><JUMPf0d9><X110004><JUMPf07a>
+Hmm. Not too bad, are you?
+<PAGE>
+As I promised,<JUMPf141><LOCf07a>Ha ha ha! Impressed by my skill?
+
+But I'd feel awfully bad sending
+you home empty-handed.
+<JUMPf12c><LOCf0d9>Well, you managed to tie me.
+That's awfully rare!<LOCf12c>
+
+Guess I'll give you this one for
+free. <LOCf141>I'll teach you some spells.<X0d>
+"
 "f191","<RET_IL>"
 "f192","<X1e>やさしそうな おばあさん<X04>
 おやおや 珍しい。
 こんな人里離れた いおりに
-お客さんが お見えになるなんて。"
+お客さんが お見えになるなんて。","<X1e>Kindly old woman<X04>
+Oh my! Now there's a rare sight!
+We don't get many visitors so
+far from civilization."
 "f1f8","<X08>あんたの番じゃよ。
-どこに 打つのじゃな？<RETN>"
+どこに 打つのじゃな？<RETN>","<X08>It's your turn.
+Where are you going to go?<RETN>"
 "f222","そこには 打てんぞ !!
-相手のコマを 挟むように 打つのじゃ。<X0d>"
+相手のコマを 挟むように 打つのじゃ。<X0d>","You can't go there!!
+You have to place each piece so
+it flanks some of my pieces.<X0d>"
 "f25c","はっはっはっ、打てる場所が
-なくなった ようじゃのう。<RETN>"
+なくなった ようじゃのう。<RETN>","Ha ha! It doesn't look like there
+are any more spots for you to go.<X0d>"
 "f291","はて、困った。
 わしの 打てる場所が 一つも ないわ。
 
-<RET_IL>"
+<RET_IL>","Well, there's not a single spot
+where I can go now.
+
+<RET_IL><LOC0001>You're white; I'm black. We each
+place a piece so that two of our
+pieces flank a line of opposing
+pieces.
+
+The pieces that are flanked will
+change colors. Whoever has the
+most pieces at the end of the gameis the winner.<RET_IL>
+"

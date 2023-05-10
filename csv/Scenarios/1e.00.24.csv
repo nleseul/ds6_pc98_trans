@@ -55,7 +55,71 @@
 そんなことでは
 ファーレーンの 国王になるどころか
 父の かたき討ちすら できぬぞ。
-早く ルディアの城に戻れ !!"
+早く ルディアの城に戻れ !!","<X1e>Jestonn<X04>
+<IF00ad><JUMPe53c><IF00a1><JUMPe505><SET00a1>Selios, Runan, and Gail.
+You have my heartfelt thanks.
+
+You are the heroes of Wonliech.
+If there is anything I can do
+for you, please make it known
+to me.
+<PAGE>
+<CH0>
+Well... it was just the right
+thing to do. Please, don't
+go to any trouble.
+
+<X1e>Jestonn<X04>
+No, I cannot simply do nothing.
+...I assume you will be pursuing
+your father's killer?
+
+Before my castle was captured,
+I had heard that the castle of
+Lanoura has been occupied.
+
+<CH1>
+What? Lanoura?!
+
+<X1e>Jestonn<X04>
+Indeed. It is possible that the
+man you seek has fled to Lanoura
+to join the monsters there.
+
+The shipping routes to Lanoura
+are closed now because the ports
+are held by monsters.
+
+Let me send you to Lanoura
+on my ship. This is far too
+little, but I hope it will
+suffice.
+
+... ...
+
+By the way... Runan?
+I feel as though you and I
+have crossed paths before.
+
+<CH1>
+No, this is the first time
+we have met.
+
+<X1e>Jestonn<X04>
+Hmm. I see.
+I must have been mistaken.
+
+<X1e>Jestonn<X04>
+<LOCe505>I will pray for your
+quick success.<END>
+<LOCe53c><SET00ae>Selios, you vanished from Larfa
+without informing anyone! Where
+were you?
+
+How will you ever be able to
+become king of Farleyn, or 
+avenge your father like that?
+Hurry back to Rudia!!"
 "e5fb","<X1e>側近<X04>
 <IF00ae><JUMPe6ce><IF00ad><JUMPeca5>王子さま、本当に ありがとう
 ございました。
@@ -75,7 +139,29 @@
 
 わが国の船は ジェストンさまが
 ルディアの城に 向かわせました。
-そこで 王子さまを お待ちしています。早く ルディアに お向かいください。"
+そこで 王子さまを お待ちしています。早く ルディアに お向かいください。","<X1e>Aide<X04>
+<IF00ae><JUMPe6ce><IF00ad><JUMPeca5>Thank you for everything,
+your Highness.
+
+The ruler of Lanoura is
+King Flart.
+
+I believe that King Flart fled
+from the castle of Selis when
+it was attacked by monsters.<END>
+<LOCe6ce>Although it may seem that his
+Excellency is angry with your
+Highness...
+
+He was quite deeply worried when
+we were told your Highness had
+unexpectedly disappeared from
+Larfa.
+
+His Excellency sent our state
+ship to Rudia Castle. They will
+be awaiting your Highness there.
+Please hasten to Rudia."
 "e7f5","<X1e>兵士<X04>
 <IF00ad><JUMPeca5>セリオス王子さま、このたびは
 本当に ありがとうございました。
@@ -83,11 +169,20 @@
 この城の城下町には なかなかよい
 武器や防具が そろっております。
 ラヌーラ王国に 行かれる前に
-寄ってみては いかがですか。"
+寄ってみては いかがですか。","<X1e>Soldier<X04>
+<IF00ad><JUMPeca5>Thank you for all you've done,
+your Highness.
+
+The merchants in town have some
+excellent equipment. Perhaps it
+would be a good idea to shop
+before heading to Lanoura?"
 "e8b7","<X1e>兵士<X04>
 <IF00ad><JUMPeca5>セリオス王子さま、１日も早く
 お父上のかたきが 討てますよう
-祈っております。"
+祈っております。","<X1e>Soldier<X04>
+<IF00ad><JUMPeca5>I hope you are able to avenge
+your father soon, your Highness."
 "e910","<X1e>兵士<X04>
 <IF00ad><JUMPeca5>セリオス王子さま
 私は ラヌーラについて 変わった話を聞いたことが あるのです。
@@ -102,7 +197,21 @@
 
 でも あの竜の卵は ツルっとしていてどこにも 出入口のようなものは
 無いでしょう。
-誰も信じなかったんですけどね。"
+誰も信じなかったんですけどね。","<X1e>Soldier<X04>
+<IF00ad><JUMPeca5>There's a story I've heard about
+Lanoura, your Highness.
+
+A long time ago, there was a
+merchant who came from Lanoura
+to sell shillath fish.
+
+According to the merchant,
+there's someone in Lanoura who
+goes inside the dragonseggs.
+
+But there's no way in or out of
+a dragonsegg! No one believed
+that story."
 "ea7f","<X1e>兵士<X04>
 <IF00ad><JUMPeca5>竜の卵に 出入りするなんて 話は
 信用できないですよね。
@@ -118,15 +227,39 @@
 この世界が 暗黒に 包まれたとき
 真紅の竜が 卵から かえり
 邪悪なものを その炎で
-焼き尽くしてくれるんだって。"
+焼き尽くしてくれるんだって。","<X1e>Soldier<X04>
+<IF00ad><JUMPeca5>There's no way I can believe
+stories about going inside a
+dragonsegg. They're alive!
+
+That's what my gran told me.
+You should never try to touch
+a dragonsegg.
+
+They were sent by the Goddess
+Freya to protect our world.
+
+When the world is veiled in
+darkness, the Crimson Dragon shallbe reborn from the eggs, and its
+flame shall consume all evil."
 "ebef","<X1e>兵士<X04>
 <IF00ad><JUMPeca5>ラヌーラ王家には 何か すごい宝が
 あるそうですよ。
 
 ふーむ、その王家の宝って
-いったい なんなんだろう ･ ･ ･。"
+いったい なんなんだろう ･ ･ ･。","<X1e>Soldier<X04>
+<IF00ad><JUMPeca5>The royal family of Lanoura is
+supposed to hold an amazing
+treasure.
+
+I wonder what that treasure
+could be..."
 "ec67","<X1e>兵士<X04>
 <IF00ad><JUMPeca5>セリオス王子さま、旅の ご幸運を
 祈っております。<END>
 <LOCeca5>セリオス王子さま、どちらに行かれていたのですか？ ジェストンさまが
-心配しておりますぞ。"
+心配しておりますぞ。","<X1e>Soldier<X04>
+<IF00ad><JUMPeca5>I pray that good fortune comes
+to your Highness' journey.<END>
+<LOCeca5>Where has your Highness been?
+Duke Jestonn has been worried."

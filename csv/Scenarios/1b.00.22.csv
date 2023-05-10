@@ -1,9 +1,14 @@
 "e2a4","<X08>誰の呪文の書にサイレスの呪文を
-書き込みますか？<RETN>"
-"e2d5","どこに 書き込みますか？<RETN>"
+書き込みますか？<RETN>","<X08>In whose spellbook will Sylis
+be scribed?<RETN>"
+"e2d5","どこに 書き込みますか？<RETN>","Where should it be scribed?<RETN>"
 "e2ed","<X02>の呪文の書に
-サイレスの呪文を書き込みました。"
+サイレスの呪文を書き込みました。","Sylis has been scribed into
+<X02>'s spellbook."
 "e331","石碑には サイレスの呪文が
 刻まれています。
 
-<RET_IL>"
+<RET_IL>","The spell of Sylis is carved
+into the monument.
+
+<X04><RET_IL>"

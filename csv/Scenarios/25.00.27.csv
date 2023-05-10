@@ -68,5 +68,75 @@
 <LOCe5f8>
 
 <X0e><X1c>を渡しました。<X0c0301><WAIT>
-ミラルダは ワプの翼を 使いました。<X04><SET00d7><ASMe64c>"
-"e660","<X1e>ミラルダ<X04><RETN>"
+ミラルダは ワプの翼を 使いました。<X04><SET00d7><ASMe64c>","<CALLe660>What do you folks want?
+<IF00da><JUMPe529><IF00d6><JUMPe191>If you don't need nothin',
+go away.<END>
+<LOCe191><SET00da><CH0>
+Is your name Miralda?
+
+<CALLe660>Yeah, that's right.
+
+<CH0>
+We wanted to talk to you about
+Captain Buald.
+
+<CALLe660>About Buald?
+
+Why? What'd that good-for-nothin'
+kid do this time?
+
+<X1c>Selios explains the situation to
+Miralda.<X04>
+
+<CALLe660>Well, then.
+
+Nothin' wrong with a pirate
+sneakin' into the castle and
+stealin'. And sometimes keys do
+get thrown away by mistake.
+
+But I won't put up with 'im
+lyin' and playin' dumb. If he
+won't give your gem back, he
+needs to man up and say so!
+
+So you want me to go have a talk
+with 'im, right?
+
+But you don't mean to make a poor
+ol' lady walk all that way, now
+do ya?
+
+<CH0>
+Huh?!
+<PAGE>
+<CALLe660>You know about Warp Wings?
+
+They'll fly you straight to any
+place you've ever been before.
+
+Just bring me one 'o them. Do
+that, and I'll get you your
+gem back.<ASMe637><IF_NOT0400><JUMPe5f7>
+
+<CH0>
+Well, we do have one here. Will
+this do?
+
+<CALLe660>What? You've got one already?
+Well, hurry up and hand it over!<JUMPe5f8><LOCe529>You get my Warp Wing yet?
+
+<CH0>
+<ASMe637><IF_NOT0400><JUMPe5a0>Yeah. Will this do?
+
+<CALLe660>Yeah, that's the one. Hurry up
+and hand it over!<JUMPe5f8><LOCe5a0>N-No, not yet.
+
+<CALLe660>Well, what've you been doing?!
+Ugh, I hate dawdlers and
+no-gooders!<LOCe5f7><END>
+<LOCe5f8>
+
+<X1c>Handed over the <X0e><X1c>.<X0c0301><WAIT>
+Miralda uses the Warp Wing.<X04><SET00d7><ASMe64c>"
+"e660","<X1e>ミラルダ<X04><RETN>","<X1e>Miralda<X04><RETN>"

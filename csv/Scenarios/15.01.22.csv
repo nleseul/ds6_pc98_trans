@@ -162,7 +162,176 @@
 <LOCedc5><CH2>
 その前に ちょっと 寝かせてくれ。
 王子さまは 人使いが 荒くて 荒くて
-身がもたねえよ。<SET0400>"
+身がもたねえよ。<SET0400>","<X123a00><JUMPe9e2><X123000><JUMPe8f7><X1e>Lyas<X04>
+Welcome back, Runan!
+What was the situation in Rudia?
+
+<CH0>
+Lyas!! You're okay!
+
+<X1e>Lyas<X04>
+Ah, Prince Selios! How were you
+able to find him, Runan?
+
+<CH1>
+I rescued him from the castle's
+dungeon.
+
+<X1e>Lyas<X04>
+I see. So Achdam...
+
+But at least the Prince is safe.
+You've grown a great deal in the
+years since I saw you last, your
+Highness.
+
+<CH0>
+...Lyas?! What do you mean?
+
+<X1e>Strong-willed woman<X04>
+He's probably mistaken you for
+old Lyas.
+
+<CH1>
+Your Highness, this is Alon, the
+leader of the Resistance. And his
+granddaughter, Sonia.
+
+<X1e>Alon<X04>
+Yes, my name is Alon.
+
+In years past, I served your
+father, King Asuel. 
+Lyas is my brother.
+
+<CH0>
+Lyas's brother? You look so much
+like him...
+
+I owe old Lyas a lot. He stood
+between me and the monsters so I
+could escape from Eluasta.
+
+It's because of him that I
+survived. I owe him my life.
+
+<X1e>Alon<X04>
+Thank you. I'm sure my brother
+would be pleased to hear that fromyou.
+
+<X1e>Sonia<X04>
+It's a pleasure to meet you, your
+Highness. Welcome to Crus.
+
+We feared the worst when we heard
+that Eluasta had been attacked by
+monsters and annihilated.
+
+Your Highness. We believe that
+you, as the rightful heir to the
+throne, will surely defeat Achdam
+and reclaim the kingdom.
+
+We are prepared to sacrifice
+whatever we must to see that it
+happens.
+<PAGE>
+If the people learn that your
+Highness is alive, overthrowing
+Achdam will be straightforward.
+
+But we don't have enough soldiers
+to get past the army in Rudia and
+defeat him.
+
+There's a mining town called Belgasouthwest of Rudia. Many people
+who oppose Achdam have been
+imprisoned there.
+
+If we can free them and join with
+them, then Achdam won't be a
+problem.
+
+<CH0>
+All right! Runan, let's hurry
+to this Belga place.
+
+<CH1>
+A moment, your Highness.
+
+Your pardon, but neither you nor Iis high enough in level to fight
+the Commandant in Belga. At 
+minimum, we should be level 8.
+
+<X1e>Alon<X04>
+Starting tomorrow, you'll need to
+gain battle experience and
+strengthen yourselves.
+
+For today, please rest.
+<X140004><END>
+<LOCe8f7><X1e>Alon<X04>
+<X120804><JUMPe980><X120904><JUMPe980>We await the day when your
+Highness becomes our king.
+
+<X1e>Sonia<X04>
+So, please become a great hero
+as soon as you can!<END>
+<LOCe980>You must be quite tired, your
+Highness. For today, please rest.<X140004><END>
+<LOCe9e2><X123500><JUMPecaa><X143500><X1e>Alon<X04>
+I have some news, your Highness.
+A messenger has come from Belga.
+
+From what the messenger says, 
+there has been an accident in the
+mines, and many prisoners and
+soldiers are injured.
+
+They asked us to come and bring
+a severely injured person from
+Crus back to the village.
+
+<CH2>
+That stinker! Why can't the
+soldiers in Belga bring 'em?
+
+<CH1>
+Their defenses are already
+weakened. They wouldn't want to
+spare any more soldiers.
+
+<CH0>
+We'll go there for the injured.
+Once we're inside Belga, we might
+be able to rescue the prisoners.
+
+<X1e>Sonia<X04>
+The Commandant in Belga is rumoredto be a formidable opponent.
+
+<CH0>
+If we just defeat that Commandant,the rest'll be easy. With three ofus, it should be no problem.
+
+<LOCecaa><X1e>Alon<X04>
+You've grown into a fine hero,
+your Highness. Much like your
+father, when he was young.
+
+You are quite right, of course.
+Take care of yourself, your
+Highness. And Runan, Roh...
+keep the Prince safe.
+
+<X120804><JUMPedc5><X120904><JUMPedc5><CH2>
+You got it!
+
+<CH1>
+We'll spare no effort.<END>
+
+<LOCedc5><CH2>
+Can't we turn in for a bit? The
+Prince has us grinding and
+grinding. It's too much for me!<X140004>"
 "ee1f","<CH1>
 <SET0030><IF0414><JUMPee8e><ASMeecc>王子さま、これからは 王子さまが
 リーダーを お務めください。
@@ -171,4 +340,11 @@
 
 <CH1>
 <LOCee8e>さあ それでは さっそく 戦いの
-経験をつみに まいりましょうか。"
+経験をつみに まいりましょうか。","<CH1>
+<X143000><X121404><JUMPee8e><ASMeecc>I will follow your Highness's leadnow.
+
+<ASMeed4><CH0><X1c> became the leader.<X04>
+
+<CH1>
+<LOCee8e>Now, shall we go gain some battle
+experience?"

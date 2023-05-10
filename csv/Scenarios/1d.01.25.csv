@@ -1,9 +1,12 @@
 "e190","        第２章　沈黙の呪文<N>
 
 　　　　　　　　完
-"
+","Chapter II: The Spell of Silence<N>
+
+               FIN"
 "e1c0","ウォンリーク公国はモンスターから
-解放されました。<X0d>"
+解放されました。<X0d>","The Duchy of Wonliech has
+been liberated from monsters.<X0d>"
 "e344","<X1e>ヘルニルド<X04>
 なんだ、きさまたちは !!
 いったい 何者だ？
@@ -24,7 +27,25 @@
 じゃが、この わしの城を 同胞の
 血で 汚した罪は 重いぞ。
 今すぐ この場で 処刑してやる。
-覚悟せい !!"
+覚悟せい !!","<X1e>Helnild<X04>
+What?! Who are you?
+
+<X1e>Achdam<X04>
+S-Selios...
+I'm impressed that you chased
+me all this way.
+
+<X1e>Helnild<X04>
+I am Helnild!
+Ruler of Wonliech!
+
+I do not know how you reached
+my throne room, but I salute you.
+
+However, you have stained my
+castle with the blood of my
+people. The penalty is execution.
+Make yourselves ready!"
 "e4c0","<X1e>アクダム<X04>
 くっ、なんという ことだ。
 ヘルニルドめ 口ほどにもない奴よ。
@@ -41,10 +62,31 @@
 
 いずれ また どこかで そなたと
 出会うことも あろう。
-それまで さらばだ。"
+それまで さらばだ。","<X1e>Achdam<X04>
+Urrgh, what a pain!
+That Helnild... Nothing but a
+big mouth!
+
+<LEADERe5f8,e5f8,e5f8,e648,e5f8>
+
+<X1e>Achdam<X04>
+Running? Not exactly.
+I'm traveling, in order to
+grow more powerful.
+
+Even Helnild was only a means
+to acquiring power.
+
+Well, I'm sure I'll run into you
+again eventually.
+Until then... see ya!"
 "e5f8","アクダム、今度は お前の番だ。
 いさぎよく 勝負しろ !!
-それとも また 逃げる気か？<RET_IL>"
+それとも また 逃げる気か？<RET_IL>","It's your turn next, Achdam.
+Stand and fight honorably!
+Or do you plan to keep running?<RET_IL>"
 "e648","アクダム、今度は てめえの番だ。
 いさぎよく 勝負しやがれ !!
-それとも また 逃げる気か？<RET_IL>"
+それとも また 逃げる気か？<RET_IL>","You're up next, Achdam!
+Stand and fight like a man!
+Or are you gonna keep runnin'?<RET_IL>"

@@ -1,12 +1,16 @@
 "e275","<X1e>賢者<X04>
 わしは この国一の賢者じゃ。
-そなたたちに 呪文を授けよう。<X0d>"
-"e2b6","<X08>どの 呪文が 欲しいのじゃな？<RETN>"
-"e2d4","誰の 呪文の書に 書き込むのじゃな？<RET_IL>"
-"e2f7","どこに 書き込むのじゃな？<RETN>"
-"e311","どれどれ、書き込むとしようか。<X0a>"
+そなたたちに 呪文を授けよう。<X0d>","<X1e>Sage<X04>
+I am the wisest sage in Farleyn.
+Shall I teach you any spells?<X0d>"
+"e2b6","<X08>どの 呪文が 欲しいのじゃな？<RETN>","<X08>Which spell do you wish?<RETN>"
+"e2d4","誰の 呪文の書に 書き込むのじゃな？<RET_IL>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e2f7","どこに 書き込むのじゃな？<RETN>","Where shall I scribe it?<RETN>"
+"e311","どれどれ、書き込むとしようか。<X0a>","Do you wish me to scribe anything
+more?<X0a>"
 "e346","また、必要になったら
-いつでも 来るがよい。"
+いつでも 来るがよい。","Should you have any further needs,you may always come to me."
 "e4c7","<X1e>女<X04>
 <IF0020><JUMPe500>今、料理中なんです。
 話しかけないでください。<END>
@@ -15,54 +19,93 @@
 ビーフシチューです。
 
 王子さまのために 腕に
-よりをかけて 料理いたします。"
+よりをかけて 料理いたします。","<X1e>Woman<X04>
+<X122000><JUMPe500>I'm in the middle of cooking rightnow. Please don't bother me.<END>
+<LOCe500>This is the kitchen. I'm making
+your Highness's favorite beef
+stew for lunch.
+
+For my Prince's sake, I'll work
+as hard as I can!"
 "e577","<X1e>女<X04>
 <IF0020><JUMPe598>ああ、忙しい 忙しい。<END>
 <LOCe598>階段の下は 食料の倉庫に
-なっております。"
+なっております。","<X1e>Woman<X04>
+<X122000><JUMPe598>Busy, busy, busy...<END>
+<LOCe598>Below here is the food
+storehouse."
 "e5c1","<X1e>兵士<X04>
 <IF0020><JUMPe613>城の２階や 地下は
 立ち入ることが 禁じられているので
 注意するように。<END>
 <LOCe613>おや、セリオス王子。
-町へ お出かけですか？"
+町へ お出かけですか？","<X1e>Soldier<X04>
+<X122000><JUMPe613>Admittance to the upper floor and
+the basement is prohibited. Watch
+where you go.<END>
+<LOCe613>Your Highness! Are you leaving?"
 "e63e","<X1e>兵士<X04>
 <IF0020><JUMPe682>用がすんだら さっさと城から
 出ていくように。
 いいな !!<END>
 <LOCe682>王子の おかげで ベルガの鉱山も
-活気を 取り戻してきたそうです。"
+活気を 取り戻してきたそうです。","<X1e>Soldier<X04>
+<X122000><JUMPe682>When you're done with your
+business, leave immediately.
+Got it?<END>
+<LOCe682>Thanks to your Highness, Belga
+Mine is thriving again."
 "e6c1","<X1e>兵士<X04>
 <IF0020><JUMPe701>この下は 牢屋だ。
 お前も 牢屋の中に 入りたいのか？<END>
 <LOCe701>ここは 地下牢への入口です。
 中に入られても おもしろいものは
-何も ございませんよ。"
+何も ございませんよ。","<X1e>Soldier<X04>
+<X122000><JUMPe701>The dungeon is through here.
+Do you want to be put in there?<END>
+<LOCe701>This is the entrance to the
+dungeon. It's probably nothing
+of interest to your Highness."
 "e753","<IF_NOT0020><JUMPe8cd><X1e>兵士<X04>
 これは、王子さま。
-この 財宝室に 何か ご用ですか？"
+この 財宝室に 何か ご用ですか？","<X112000><JUMPe8cd><X1e>Soldier<X04>
+Does your Highness need something
+from the treasure room?"
 "e793","<IF_NOT0020><JUMPe8cd><X1e>兵士<X04>
 これは セリオス王子。
-お元気そうで 何よりです。"
+お元気そうで 何よりです。","<X112000><JUMPe8cd><X1e>Soldier<X04>
+I'm pleased to see that your
+Highness is well."
 "e7d0","<IF_NOT0020><JUMPe912><X1e>兵士<X04>
 アクダムが 逃げてしまったら
 あのモンスターどもも
-姿を 消してしまったようです。"
+姿を 消してしまったようです。","<X112000><JUMPe912><X1e>Soldier<X04>
+When Achdam fled the kingdom,
+all the monsters seemed to
+disappear too."
 "e82c","<IF_NOT0020><JUMPe912><X1e>兵士<X04>
 かつて アクダムのもとにいた
 兵士たちは すべて農民に
-なったそうです。"
+なったそうです。","<X112000><JUMPe912><X1e>Soldier<X04>
+All the soldiers who were with
+Achdam have taken up farming now."
 "e87e","<X1e>兵士<X04>
 この上は 国王さまの お部屋に
 なっておる。
-お前たちを 通すことはできん。"
+お前たちを 通すことはできん。","<X1e>Soldier<X04>
+His Majesty's chambers are above
+here. You may not enter."
 "e8cd","<X1e>兵士<X04>
 なんだ お前たちは？
 こっちに 来るんじゃない。
-あっちへ行け !!"
+あっちへ行け !!","<X1e>Soldier<X04>
+What do you want? Don't stand
+around here. Go away!"
 "e912","<X1e>兵士<X04>
 なんだ お前は !?
-仕事のじゃまをするんじゃない。"
+仕事のじゃまをするんじゃない。","<X1e>Soldier<X04>
+What do you want? Don't bother me
+when I'm working!"
 "e949","<X1e>老人<X04>
 <IF0020><JUMPe9cf>んっ、おお あの船か。
 
@@ -75,4 +118,14 @@
 あれはのう アクダムたちが
 乗っていってしまったのじゃ。
 わしは ここで かくれてのう
-ずっと見ておったのじゃ。"
+ずっと見ておったのじゃ。","<X1e>Old man<X04>
+<X122000><JUMPe9cf>Hmm... That boat?
+
+That boat belongs to King Achdam,
+y'see. Just like every other boat
+in the kingdom.<END>
+<LOCe9cf>Hmm... That boat?
+
+Achdam's people left aboard it.
+I've been hiding here, y'see, and
+I saw it all."

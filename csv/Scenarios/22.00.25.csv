@@ -3,45 +3,73 @@
 うちの銀製品は 評判いいですよ。
 特におすすめは 銀の杖ですね。
 
+<RET_IL>","<X1e>Weapon merchant<X04>
+Welcome! Our silver products are
+famous. I especially recommend
+the Silver Staff.
+
 <RET_IL>"
-"e20e","また来てくださいね。"
+"e20e","また来てくださいね。","Come again!"
 "e25c","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは道具の店です
-どんな ご用ですか？<RETN>"
-"e29f","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e29f","また来てくださいね。","Come again!"
 "e2c0","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e2e4","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e2fe","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e323","どれを売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e33d"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e369","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e382","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e442","<X1e>兵士<X04>
 ここは リストン伯爵さまの
-お館への 入口だ。"
+お館への 入口だ。","<X1e>Soldier<X04>
+This is the entrance to Count
+Liston's manor."
 "e475","<X1e>兵士<X04>
 おれは 本当は漁師なんだ。
 リストンさまが むりやり 門番に
-したんだ。"
+したんだ。","<X1e>Soldier<X04>
+I'm actually a fisherman.
+But Count Liston forced me into
+guard duty."
 "e4c0","<X1e>兵士<X04>
 <IF0112><JUMPe4fd>お前たち あのバケモノの
 手下では ないだろうな？<END>
 <LOCe4fd>リストン伯爵さまは
 兵士たちを連れて 今まで取り立てた
-税や品物を返しに 行かれました。"
+税や品物を返しに 行かれました。","<X1e>Soldier<X04>
+<IF0112><JUMPe4fd>You're not working with those
+monsters, are you?<END>
+<LOCe4fd>Count Liston has taken a squad
+out to return the tax money and
+items he seized."
 "e552","<X1e>兵士<X04>
 <IF0112><JUMPe5f1>おれたちは あのバケモノどもが
 この町に 入らないように 門番を
@@ -54,13 +82,28 @@
 返すんだって言って出ていったんだ。
 
 しかし、あの 欲ばりが
-なんで急に返す気になったんだろう？"
+なんで急に返す気になったんだろう？","<X1e>Soldier<X04>
+<IF0112><JUMPe5f1>We're guarding the gate so
+monsters can't get into town.
+
+It's the worst! It makes me wish
+I'd never become a guard.<END>
+<LOCe5f1>Count Liston said he was on his
+way to return everyone's taxes.
+
+How could he have stopped being
+greedy so suddenly?"
 "e66a","<X1e>女<X04>
 私の妹は ヨルドの港の 漁師と
 結婚したの。
 
 でも私は 漁師の お嫁さんなんかにはなりたくないわ。
-だって 私 魚が 嫌いなんだもの。"
+だって 私 魚が 嫌いなんだもの。","<X1e>Woman<X04>
+My sister married a fisherman
+in Yold Harbor.
+
+I hope I never marry a fisherman.
+I can't stand fish!"
 "e6ec","<X1e>男<X04>
 <IF0112><JUMPe7c3>あんたたち この国の人じゃないね？
 大きな声じゃ 言えないけど
@@ -76,7 +119,22 @@
 
 兵士たちが 言うには これからは
 税を軽くしてくれるんだって。
-どうしたんだろうな？"
+どうしたんだろうな？","<X1e>Man<X04>
+<IF0112><JUMPe7c3>You're not Lanouran, are you?
+I shouldn't say so too loudly,
+but the taxes here are awful.
+
+Take a look around my house!
+
+There's nothing here! Liston's
+taken everything I owned!<END>
+<LOCe7c3>I don't know what's going on,
+but Count Liston's soldiers
+showed up here.
+
+According to them, the taxes
+are going to be lower from
+now on. What happened?"
 "e850","<X1e>老人<X04>
 <IF0112><JUMPe8eb>この町で ベッドが あるのは
 わしの家だけじゃ。
@@ -92,20 +150,49 @@
 <IF0408><JUMPe9a9><IF0409><JUMPe9a9><LOCe975>疲れたら いつでも いらしてください。歓迎しますよ。
 <END>
 <LOCe9a9><SET0400><SET0401>どうぞ ゆっくりと お休みください。この家に ベッドが あるのも
-あなたがたの おかげですから。"
+あなたがたの おかげですから。","<X1e>Old man<X04>
+<IF0112><JUMPe8eb>This's the only house in town
+with a bed.
+<PAGE>
+Maybe by this time next year, evenmy bed'll be gone.
+Ohh, my aching back...<END>
+<LOCe8eb><IF0401><JUMPe975>
+Thanks to you, I got my backbrace back!
+
+Look at how I can walk around
+now!
+
+<IF0408><JUMPe9a9><IF0409><JUMPe9a9><LOCe975>You're always welcome here. Stop
+by any time you're tired!<END>
+<LOCe9a9><SET0400><SET0401>Please, make yourselves at home!
+It's thanks to you that I've stillgot a bed at all!"
 "ea0a","<X1e>武器屋<X04>
 いらっしゃいませ。
 ここは 武器と防具の店ですが ･ ･ ･
 
 うちの商品は リストンさまが
 兵士のためだと 言って
-全部 持っていってしまいました。"
+全部 持っていってしまいました。","<X1e>Weapon merchant<X04>
+Welcome! This shop sells weapons
+and armor...
+
+But Count Liston said he needed
+my wares for his soldiers,
+and took everything."
 "ea9a","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは 道具の店ですが ･ ･ ･
 
 今は 商品が 無いんです。
-税が 高くて高くて ･ ･ ･"
+税が 高くて高くて ･ ･ ･","<X1e>Tool merchant<X04>
+Welcome!
+This is a tool shop...
+
+But I don't have anything to
+sell right now. The taxes just
+keep getting higher and higher..."
 "eb03","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."

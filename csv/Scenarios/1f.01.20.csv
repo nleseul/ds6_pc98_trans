@@ -1,6 +1,9 @@
 "e348","<CALLef73><IF00d7><JUMPe388>用がねーなら、さっさと出てってくれおれは、忙しーんだ。<END>
 <LOCe388>お、お前ら !!
-おぼえてろ !!"
+おぼえてろ !!","<CALLef73><IF00d7><JUMPe388>If ya don't need anything, get
+out. I'm busy.<END>
+<LOCe388>Y-you!!
+I'll get ya for this!!"
 "e3a4","<CALLef89>シーラスは どうだった？
 
 あの魚は 光るものを見ると
@@ -8,38 +11,70 @@
 
 まあ、おれたちにゃ
 いい 小づかい稼ぎに なるけどな。
-また 捕まえたら 食わしてやるよ。"
+また 捕まえたら 食わしてやるよ。","<CALLef89>How was yer shilleth?
+
+Whenever those guys see somethin'
+shiny, they gulp it down whole.
+So their bellies're full o'
+spoons an' coins.
+
+Good way to earn some spare
+change, yeah? I'll serve ya
+the next one we catch."
 "e481","<CALLef89>とうとう ここにある酒も
 無くなっちまった。
 
 最近 船長のきげんが悪くて
 すぐに怒り出すんだ。
 酒があれば きげんが よくて
-なんでも してくれるんだけどな。"
+なんでも してくれるんだけどな。","<CALLef89>We finally used up all our rum.
+
+The cap'n's been in a bad mood,
+and he lashes out. If ya just had
+some rum, he'd cheer right up an'
+do whatever ya ask 'im."
 "e519","<CALLef89><CALLe589>
 
 ほら 向こうに ひとり寝込んでる奴がいるんだけど、船長に 思いっきり
 殴られたんだぜ。
-ほんとに ひでーよな。"
+ほんとに ひでーよな。","<CALLef89><CALLe589>
+
+And look at that poor bastard
+over there! Thrashed within an
+inch o' his life by the cap'n!
+Cruel, I tell ya!"
 "e589","船長が突然 バクチをやっちゃ
 いけないって 言い出したんだ。<WAIT>
-ひでーよなー。<RET_IL>"
+ひでーよなー。<RET_IL>","The cap'n suddenly declared that
+we gotta stop gamblin'.<WAIT>
+He's so cruel!<RET_IL>"
 "e5d2","<CALLef89>よう 客人、ここには 武器とか
 爆薬が 沢山あるから 気をつけて
-くれよ。"
+くれよ。","<CALLef89>Be careful in here, guests! It's
+packed with arms and gunpowder."
 "e61a","<CALLef89><IF0408><JUMPe65c><IF0409><JUMPe65c>やあ 客人 元気そうだな？
 疲れたら いつでも来なよ。<END>
-<LOCe65c><SET0400>さあ ゆっくり休んでくんな。"
+<LOCe65c><SET0400>さあ ゆっくり休んでくんな。","<CALLef89><IF0408><JUMPe65c><IF0409><JUMPe65c>How ya feelin', guests?
+If yer tired, ya can always take
+a rest here.<END>
+<LOCe65c><SET0400>Okay, rest well!"
 "e67b","<CALLef89>よう、あんたたちか、ここには
 変わった宝石が 沢山あるんだぜ。<IF00d2><JUMPe713>
 
 え、赤い宝石？
 ここにゃ そんな物 ゴロゴロあるが
-船長の許可がなけりゃ見せられねーよ<LOCe713>"
+船長の許可がなけりゃ見せられねーよ<LOCe713>","<CALLef89>Welcome! This room is full of
+rare jewels.<IF00d2><JUMPe713>
+
+A red jewel? Yeah, there's mounds
+of 'em here. But ya can't see 'em
+without the the cap'n's say-so!
+<LOCe713>"
 "e714","<CALLef89>セリスの町の酒場が 開いてれば
-船長のきげんも なおるんだが ･ ･ ･"
+船長のきげんも なおるんだが ･ ･ ･","<CALLef89>If the bar in Selis'd open, the
+cap'n'd cheer up..."
 "e757","<CALLef89>スエルの村にも おれたちのアジトが
-あるんだぜ。"
+あるんだぜ。","<CALLef89>We've got a base in Suil too."
 "e789","<CALLef89><IF_NOT00d7><JUMPe796><CALLe589><END>
 <LOCe796>やあ、あんたたちか ･ ･ ･。
 
@@ -95,16 +130,83 @@
 
 <CH2>
 どうも ありがとう。
-それじゃ、お大事にね。<SET00d6>"
+それじゃ、お大事にね。<SET00d6>","<CALLef89><IF_NOT00d7><JUMPe796><CALLe589><END>
+<LOCe796>Oh, it's you guys...
+
+Yer the ones as been gettin'
+the cap'n all worked up.
+On top o' the rum bein' gone...
+
+And then 'e took it all out
+on me! An' here I am!
+Ow... ow...<WAIT>
+<ASMebef><CH2>
+I'm so sorry that such terrible
+things have happened to you
+because of us!
+
+<X1c>Sonia would never have spoken
+in that motherly tone in normal
+circumstances.<X04>
+
+<CALLef89>I-It's okay!
+Hee hee...
+
+Oh, do ya wanna hear something
+funny?
+
+That cap'n... he keeps tellin'
+me there's nothin' 'e's scared of.But there is! Guess what it is!
+
+Heh! It's 'is mommy!
+Doesn't act so big whene'er mom
+comes ta visit! 'E suddenly gets
+all flustered!
+
+Not once has 'e e'er talked back
+to 'er!
+
+<CH2>
+Oh, really? Do you think you couldtell me more about the captain's
+mother, please?
+
+<CALLef89>O-Of course!
+Hee hee...
+
+'Er name's Miralda. She was in
+charge 'ere before the cap'n
+took o'er. An incredible pirate
+she was, too!
+
+Stronger'n any man, y'know!
+Had folks askin' if she was
+really e'en a woman, sometimes!
+
+But then, 'bout ten years ago,
+she sudd'nly went into retirement.An' now she lives alone in some
+l'il house up north o' Amda.
+
+<CH2>
+Thank you so much!
+I hope you feel better soon!<SET00d6>"
 "ebff","<X1e>神父<X04>
-なんだ 用がねえのに 話しかけるな !"
+なんだ 用がねえのに 話しかけるな !","<X1e>Priest<X04>
+If ya don't need anything,
+don't bug me!"
 "ec29","<CALLec94>ボアード、あーんたって子は !!
 <PAGE>
 <CALLec94>何度 言ったら わかるんだい !!
 <PAGE>
 <CALLec94>か、かあちゃん。ゆ、許してくれー。
-"
+","<CALLec94>Buald, you good-for-nothin'...!
+<PAGE>
+<CALLec94>How many times've I told you...!
+<PAGE>
+<CALLec94>M-Ma... I-I'm sorry..."
 "ec94","ビシッ !! バシッ !!<N>
+
+<PAGE>
+<RET_IL>","Whap! Bam!<N>
 
 <PAGE>
 <RET_IL>"
@@ -142,7 +244,39 @@
 <ASMef5b><IF_NOT00d2><JUMPef01><X1c>太陽の石をもらいました。<X0c0301><X04><END>
 <LOCef01>なんだね、あんたたち。
 それ以上持てないじゃないか。<END>
-<LOCef35><CALLef7e>なんだね、まだ何か用があるのかい。"
-"ef73","<X1e>ボアード<X04><RETN>"
-"ef7e","<X1e>ミラルダ<X04><RETN>"
-"ef89","<X1e>海賊<X04><RETN>"
+<LOCef35><CALLef7e>なんだね、まだ何か用があるのかい。","<IF00d2><JUMPef35><IF00d9><JUMPeea1><IF0401><JUMPee2a><CALLef7e>You took your sweet time gettin'
+here. I've had a looong talk with
+this kid here.
+
+Honestly, will he ever grow up?
+
+Buald, go get these people their
+gem!
+
+<CALLef73>B-But, Ma...
+
+<CALLef7e>Have I still not gotten through
+to you?!
+<X1c>Miralda raises her right hand.<X04>
+
+<CALLef73>Aiee!!!
+A-All right! All right!
+
+<CALLef7e>No dawdling!
+Get over there! Now!!<SET0401><END>
+<LOCee2a><SET00d9><CLEAR0401><CALLef73>Here it is, Ma.
+
+<CALLef7e>Well, well. That's the Sunstone.
+
+No wonder the kid was so desperateto keep it.
+
+<JUMPeea4><LOCeea1><CALLef7e><LOCeea4>Well, you got your gem back. Take
+it and run along.
+
+<ASMef5b><IF_NOT00d2><JUMPef01><X1c>Received the Sunstone.<X0c0301><X04><END>
+<LOCef01>You're carrying too much stuff
+right now, though.<END>
+<LOCef35><CALLef7e>Don't need anything else, do you?"
+"ef73","<X1e>ボアード<X04><RETN>","<X1e>Buald<X04><RETN>"
+"ef7e","<X1e>ミラルダ<X04><RETN>","<X1e>Miralda<X04><RETN>"
+"ef89","<X1e>海賊<X04><RETN>","<X1e>Pirate<X04><RETN>"

@@ -2,7 +2,13 @@
 <CH3>
 お、カギか、おれにまかしてみな。
 
-<ASMe2ec>なんだ、こんな子供だましのカギなら簡単に開くぜ。"
+<ASMe2ec>なんだ、こんな子供だましのカギなら簡単に開くぜ。","<X0c0301><X1c>The door is locked.<X04><WAIT>
+<CH3>
+A lock? Leave it to me!
+
+<ASMe2ec>Like a toy lock for babies!
+No problem!"
 "e3b8","<X0b>は 宝箱を開けました。
-宝箱の中には<RET_IL>"
-"e3dc","<X0e>が入っていました。<RETN>"
+宝箱の中には<RET_IL>","<X0b> opened the chest.
+There was a <RET_IL>"
+"e3dc","<X0e>が入っていました。<RETN>","<X0e> inside.<RETN>"

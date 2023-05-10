@@ -1,10 +1,14 @@
 "e0b3","<X0b>は 宝箱を開けました。
-宝箱の中には<RET_IL>"
-"e0d7","<X0e>が入っていました。<RETN>"
+宝箱の中には<RET_IL>","<X0b> opened the treasure chest.
+There was a <RET_IL>"
+"e0d7","<X0e>が入っていました。<RETN>","<X0e> inside.<RETN>"
 "e0eb","<X0b>は 宝箱を もう一度
 調べてみました。
 
-やっぱり 何も見つかりませんでした。"
+やっぱり 何も見つかりませんでした。","<X0b> checked inside the
+treasure chest again.
+
+But it was still empty."
 "e24c","<X1e>兵士<X04>
 <IF0400><JUMPe378><IF002c><JUMPe290><SET002c>おや、王子さま。
 ここは 財宝室で ございます。
@@ -18,8 +22,24 @@
 か、かまいませんが
 <LOCe378>わ、私は これから
 この 財宝室で いったい 何を
-守ったら いいのでしょう !?"
+守ったら いいのでしょう !?","<X1e>Soldier<X04>
+<IF0400><JUMPe378><IF002c><JUMPe290><SET002c>Oh, your Highness!
+This is the treasure room.
+
+<LOCe290><IF_NOT0058><JUMPe2c0><IF_NOT0059><JUMPe2c0><IF_NOT005a><JUMPe2c0><IF_NOT005b><JUMPe2c0><IF_NOT005c><JUMPe2c0><IF_NOT005d><JUMPe2c0><IF_NOT005e><JUMPe2c0><IF005f><JUMPe333><LOCe2c0>Everything in this room is now
+yours, your Highness.
+<PAGE>
+Please take whatever you may need.<END>
+<LOCe333>Y-your Highness?
+You've taken... e-everything?!
+<PAGE>
+N-not that it's a problem, but...
+W-what am I supposed to guard
+now??"
 "e3c1","<X1e>兵士<X04>
 おや、王子さま。
 ここは 武器庫で ございますが
-青銅の剣なんか いりませんよね。"
+青銅の剣なんか いりませんよね。","<X1e>Soldier<X04>
+Oh, your Highness! This is the
+armory. But I expect you don't
+need any copper swords."

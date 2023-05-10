@@ -1,29 +1,45 @@
 "e0b8","<X1e>道具屋<X04>
 これは 王子さま いらっしゃいませ。ここは道具屋ですが
-どんな ご用ですか？<RETN>"
-"e10a","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool merchant<X04>
+Your Highness! Welcome!
+This is a tool shop.
+What would you like?"
+"e10a","また来てくださいね。","Come again!"
 "e13b","<X1e>武器屋<X04>
 いらっしゃいませ セリオスさま。
-ここは武器と防具の店ですが<RETN>"
-"e17f","また来てくださいね。"
+ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
+Welcome, Prince Selios!
+My shop sells weapons and armor."
+"e17f","また来てくださいね。","Come again!"
 "e1a0","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e1c4","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e1de","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e203","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e21e"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e24a","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e263","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e2f0","<X1e>神父<X04>
 <IF0046><JUMPe3ad><SET0046>まさか 王子さまが この町へ
@@ -35,7 +51,16 @@
 さすがは この国の王に なられる方でございますね。<END>
 <LOCe3ad>何か お困りのことが
 ございましたら 何なりと
-私に 話してくださいませ。"
+私に 話してくださいませ。","<X1e>Priest<X04>
+<X124600><JUMPe3ad><X144600>Could the Prince truly have come
+to this town? I'd never have
+believed it.
+
+You fought well against the
+Commandant. Just as befits our
+future king.<END>
+<LOCe3ad>No matter what may trouble you,
+you may always speak with me."
 "e3f3","<X1e>男<X04>
 <IF0045><JUMPe4e7><SET0045>いや〜、見ましたよ 見ましたよ
 司令官を 倒すところを !!
@@ -50,18 +75,42 @@
 そのうえ ･ ･ ･
 
 <LOCe4e7>あんたねー
-人の話 ちゃんと 聞いてる？"
+人の話 ちゃんと 聞いてる？","<X1e>Man<X04>
+<X124500><JUMPe4e7><X144500>Wowww!! I saw it, I saw it!
+That fight with the Commandant!
+
+That Commandant! He was nothing
+but terrible! Listen!
+
+When he first came here...<WAIT>
+And he made the prisoners...<WAIT>
+Plus, his drinking...<WAIT>
+And on top of that...
+
+<LOCe4e7>Hey, don't you pay attention
+when people are talking?
+"
 "e50d","<X1e>男<X04>
 やれやれ、ようやく
 平和になったと 思ったら 鉱山が
 だめに なっているんだもんなあ。
 
 人を たくさん 集めて
-新しい 鉱山を 掘らなきゃ。"
+新しい 鉱山を 掘らなきゃ。","<X1e>Man<X04>
+Just when I thought everything
+would be back to normal, it turns
+out the mine's no good.
+
+We'd better get some people
+together and dig a new mine."
 "e594","<X1e>老人<X04>
 王子さまの おかげで
 この町も 再び 活気を
-取り戻すように なりました。"
+取り戻すように なりました。","<X1e>Old man<X04>
+This town's coming alive again,
+thanks to your Highness."
 "e5e0","<X1e>ピート<X04>
 やあ おれは クルスに戻らないで
-鉱山で 働くことにしたんだ。"
+鉱山で 働くことにしたんだ。","<X1e>Pete<X04>
+Hey, I think I'm gonna work in themine instead of going back to
+Crus."

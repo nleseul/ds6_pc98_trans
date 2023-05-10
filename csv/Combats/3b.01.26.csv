@@ -1,5 +1,6 @@
-"dc30","カミナリグイＡ<RET_IL>"
-"dc70","カミナリグイＢ<RET_IL>"
-"dd8a","カミナリグイの群れが現れた。<RETN>"
+"dc30","カミナリグイＡ<RET_IL>","Thunder Eater A<RET_IL>"
+"dc70","カミナリグイＢ<RET_IL>","Thunder Eater B<RET_IL>"
+"dd8a","カミナリグイの群れが現れた。<RETN>","A horde of thunder eaters appears.<RETN>"
 "dda7","<X02>の体から電撃が
-ほとばしる !!<X0a>"
+ほとばしる !!<X0a>","Lightning surges from
+<X02>'s body!<X0a>"

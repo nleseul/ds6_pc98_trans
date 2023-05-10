@@ -1,11 +1,15 @@
-"dc30","毒大ガエルＡ<RET_IL>"
-"dc70","毒大ガエルＢ<RET_IL>"
-"dcb0","毒大ガエルＣ<RET_IL>"
-"dcf0","毒大ガエルＡ<RET_IL>"
-"ddf3","毒大ガエルの群れが現れた。<RETN>"
+"dc30","毒大ガエルＡ<RET_IL>","Venomous Frog A<RET_IL>"
+"dc70","毒大ガエルＢ<RET_IL>","Venomous Frog B<RET_IL>"
+"dcb0","毒大ガエルＣ<RET_IL>","Venomous Frog C<RET_IL>"
+"dcf0","毒大ガエルＡ<RET_IL>","Venomous Frog A<RET_IL>"
+"ddf3","毒大ガエルの群れが現れた。<RETN>","A band of huge venomous frogs
+appears!<RETN>"
 "de0e","は 背中のイボから
 混乱の毒を出した。<X0a>
-<CONT><X02>は混乱してしまった !!<X0a>"
-"de4a","は仲間を呼んだ。<X0a>"
-"de5b","<X02>が現れた。<X0a>"
-"de67","しかし 誰も現れなかった。<X0a>"
+<CONT><X02>は混乱してしまった !!<X0a>"," secretes
+intoxicating venom from the
+warts on its back.<X0a>
+<CONT><X02> is confused!<X0a>"
+"de4a","は仲間を呼んだ。<X0a>"," calls for help.<X0a>"
+"de5b","<X02>が現れた。<X0a>","<X02> appears.<X0a>"
+"de67","しかし 誰も現れなかった。<X0a>","But no one comes.<X0a>"

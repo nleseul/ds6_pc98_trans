@@ -1,9 +1,11 @@
-"dc30","ｷｬﾘｵﾝ ｸﾛｰﾗｰA<RET_IL>"
-"dc70","ｷｬﾘｵﾝ ｸﾛｰﾗｰB<RET_IL>"
-"dcb0","ｷｬﾘｵﾝ ｸﾛｰﾗｰC<RET_IL>"
-"dcf0","ｷｬﾘｵﾝ ｸﾛｰﾗｰD<RET_IL>"
-"ddbb","ｷｬﾘｵﾝ ｸﾛｰﾗｰの群れが現れた。<RETN>"
-"ddd7","ｷｬﾘｵﾝ ｸﾛｰﾗｰが現れた。<RETN>"
+"dc30","ｷｬﾘｵﾝ ｸﾛｰﾗｰA<RET_IL>","<CALL0001> A<RET_IL>"
+"dc70","ｷｬﾘｵﾝ ｸﾛｰﾗｰB<RET_IL>","<CALL0001> B<RET_IL>"
+"dcb0","ｷｬﾘｵﾝ ｸﾛｰﾗｰC<RET_IL>","<CALL0001> C<RET_IL>"
+"dcf0","ｷｬﾘｵﾝ ｸﾛｰﾗｰD<RET_IL>","<CALL0001> D<RET_IL>"
+"ddbb","ｷｬﾘｵﾝ ｸﾛｰﾗｰの群れが現れた。<RETN>","A nest of <CALL0002>s appears!<RETN>"
+"ddd7","ｷｬﾘｵﾝ ｸﾛｰﾗｰが現れた。<RETN>","A <CALL0002> appears!<RETN>"
 "dded","は 毒を吐いた｡<X0a>
-<CONT><X02>は 毒におかされた！<X0a>"
-"de11","は触手を伸ばした。<X0a>"
+<CONT><X02>は 毒におかされた！<X0a>"," spits poison!<X0a>
+<CONT><X02> is afflicted by poison.<X0a>"
+"de11","は触手を伸ばした。<X0a>"," extends a
+tentacle.<X0a><LOC0001>Carrion Crawler<RET_IL><LOC0002>carrion crawler<RET_IL>"

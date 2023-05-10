@@ -1,6 +1,8 @@
 "e36a","<X1e>修道士<X04>
 <SET001a>セリオス王子。
-ここから 逃げましょう。"
+ここから 逃げましょう。","<X1e>Mendicant<X04>
+<X141a00>You can escape through here, your
+Highness."
 "e39d","<CH0>
 何者だ、お前は？
 
@@ -40,11 +42,53 @@
 お守りいたします。
 なにとぞ よろしく。
 
-<CH1><X1c>が 仲間になりました。<X0c0301><X04>"
-"e606","<X1c>兵士は 気絶しているようです。<X04>"
+<CH1><X1c>が 仲間になりました。<X0c0301><X04>","<CH0>
+Who's there?
+
+<X1e>Mendicant<X04>
+I'm no one unusual. My name is
+<CH1>. And I am your Highness's
+ally.
+
+<CH0>
+My... ally?? What do you mean
+by that?
+
+<CH1>
+Not now. There will be time
+enough for explanations later.
+
+We should make our escape before
+the guards arrive.
+
+<CH0>
+Hold on!!
+
+Achdam took my sword away. Don't
+you have weapons or anything?
+
+<CH1>
+Then, take this knife.
+<WAIT>
+<X1c>Equipped the <X04><X1e>Knife<X04><X1c>.<X04>
+
+And I will entrust my 400 gold
+in spending money to your
+Highness as well.
+
+If it pleases your Highness,
+I shall act as a royal bodyguard
+henceforth.
+
+<CH1><X1c> joined the party.<X0c0301><X04>"
+"e606","<X1c>兵士は 気絶しているようです。<X04>","<X1c>The soldier seems to be
+unconscious.<X04>"
 "e626","<X1e>兵士<X04>
 王子さま、ここは 地下牢で
-ございます。あなたさまのような方がいらっしゃる所では ございません。"
+ございます。あなたさまのような方がいらっしゃる所では ございません。","<X1e>Soldier<X04>
+This is a dungeon, your Highness.
+Surely there is nothing here to
+interest one such as yourself."
 "e68b","<CH1>
 王子 !!
 １階へ 行けば 見張りの兵士たちに
@@ -52,10 +96,22 @@
 
 通路の奥に 私が入ってきた
 抜け道があります。
-そこから 脱出いたしましょう。"
+そこから 脱出いたしましょう。","<CH1>
+Your Highness!!
+We will be spotted by the guards
+if we go upstairs.
+
+The passage I came through is
+further up the tunnel. We should
+escape through there."
 "e719","<X1e>男<X04>
 地下牢に 捕われていた 囚人たちは
 解放しました。
 
 皆 アクダムに はむかったために
-この牢屋に 入れられた そうです。"
+この牢屋に 入れられた そうです。","<X1e>Man<X04>
+We've released the prisoners
+from the dungeon.
+
+They all seemed to have been
+imprisoned for opposing Achdam."

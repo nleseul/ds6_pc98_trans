@@ -1,39 +1,63 @@
 "e12c","<X1e>道具屋<X04>
 おや 王子さま いらっしゃいませ。
 ここは道具の店ですが
-どんな ごようですか？<RETN>"
-"e19d","また来てくださいね。"
+どんな ごようですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome, your Highness!
+This is a tool shop.
+What would you like?<RETN>"
+"e19d","また来てくださいね。","Come again!"
 "e1c2","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e1e6","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e200","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e21d","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e238"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e264","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e27d","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e466","<X1e>神父<X04>
 おや、セリオス王子さま。
 お久しぶりで ございます。
 
 お困りのときには いつでも
-私の所へ 来てくださいませ。"
+私の所へ 来てくださいませ。","<X1e>Priest<X04>
+Oh, Prince Selios!
+It has been a while.
+
+When you are troubled, you may
+always come to me."
 "e4d6","<X1e>農夫<X04>
 なんか 知らねえが
 畑を耕すのを 手伝いたいって
 奴らが いっぱい 来ただ。
 
-なんなんだべな？"
+なんなんだべな？","<X1e>Farmer<X04>
+I couldn't tell ya why, but 
+there's lots o' people a-wantin'
+ta help plow the fields now.
+
+Guess I can't go complainin'..."
 "e535","<X1e>農夫<X04>
 あっ、これは王子さま。
 
@@ -44,18 +68,32 @@
 
 これからは 心を入れ替えて
 ここで一生 畑を耕す
-つもりで ございます。"
+つもりで ございます。","<X1e>Farmer<X04>
+Oh, your Highness! I used to be
+one of Achdam's soldiers. I'm verysorry for my rudeness.
+
+I've had a change of heart, and
+I plan to spend my life farming
+in this village."
 "e5f6","<X1e>男<X04>
 これは これは、王子さま。
-いらっしゃいませ。"
+いらっしゃいませ。","<X1e>Man<X04>
+Welcome, your Highness."
 "e628","<X1e>女<X04>
 まあ、王子さま !! お城に
 お戻りに なられた そうですね。
-おめでとうございます。"
+おめでとうございます。","<X1e>Woman<X04>
+Oh, your Highness! I've heard
+about your return to the castle.
+Congratulations!"
 "e67c","<X1e>女<X04>
 何も おもてなし できませんが
-ごゆっくりしていって ください。"
+ごゆっくりしていって ください。","<X1e>Woman<X04>
+We don't have much to offer your
+Highness, but please make yourselfat home."
 "e6be","<X1e>やぎ<X04>
-めえぇぇぇぇ。"
+めえぇぇぇぇ。","<X1e>Goat<X04>
+Me-e-e-e-e..."
 "e6d4","<X1e>にわとり<X04>
-こけっ〜 !?"
+こけっ〜 !?","<X1e>Chicken<X04>
+Bok! Bokaaw!"

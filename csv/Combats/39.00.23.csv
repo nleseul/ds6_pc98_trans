@@ -1,7 +1,9 @@
-"dc30","アジンＡ<RET_IL>"
-"dc70","アジンＢ<RET_IL>"
-"dcb0","アジンＣ<RET_IL>"
+"dc30","アジンＡ<RET_IL>","Ajin A<RET_IL>"
+"dc70","アジンＢ<RET_IL>","Ajin B<RET_IL>"
+"dcb0","アジンＣ<RET_IL>","Ajin C<RET_IL>"
 "de21","<X08>ラルファを襲っていたアジンを倒し
-砦をモンスターから解放しました。<X0d>"
-"de64","アジンたちが現れた。<RETN>"
-"de79","は様子を見ている。<X0a>"
+砦をモンスターから解放しました。<X0d>","<X08>The ajin attacking Fort Larfa are
+defeated, and the fort is free
+from monsters!<X0d>"
+"de64","アジンたちが現れた。<RETN>","A group of ajin appear.<RETN>"
+"de79","は様子を見ている。<X0a>"," watches and waits.<X0a>"

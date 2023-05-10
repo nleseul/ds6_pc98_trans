@@ -1,7 +1,10 @@
-"dc30","デスクラブＡ<RET_IL>"
-"dc70","デスクラブＢ<RET_IL>"
-"dcb0","タルコス<RET_IL>"
+"dc30","デスクラブＡ<RET_IL>","Death Crab A<RET_IL>"
+"dc70","デスクラブＢ<RET_IL>","Death Crab B<RET_IL>"
+"dcb0","タルコス<RET_IL>","Talcoth<RET_IL>"
 "dd77","しかし<X02>は<RETN>
-<CONT>の攻撃をハサミで受け止めた。<X0a>"
-"de4e","デスクラブとタルコスが現れた。<RETN>"
-"de6d","はハサミを振り上げた !!<X0a>"
+<CONT>の攻撃をハサミで受け止めた。<X0a>","But <X02> blocks<RETN>
+<CONT>'s attack with its pincers!<X0a>
+<CONT><X02> takes no damage.<X0a>"
+"de4e","デスクラブとタルコスが現れた。<RETN>","A nest of death crabs and a
+talcoth appear.<RETN>"
+"de6d","はハサミを振り上げた !!<X0a>","lifts its pincers!<X0a>"

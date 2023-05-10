@@ -1,47 +1,73 @@
 "e086","<X1e>道具屋<X04>
 おや 王子さま いらっしゃいませ。
 ここは道具屋ですが
-どんな ご用ですか？<RETN>"
-"e0d7","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome, your Highness!
+This is a tool shop.
+What would you like?<RETN>"
+"e0d7","また来てくださいね。","Come again!"
 "e104","<X1e>武器屋<X04>
 おや 王子さま いらっしゃいませ。
-ここは武器と防具の店ですが<RETN>"
-"e149","また来てくださいね。"
+ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
+Welcome, your Highness!
+My shop sells weapons and armor."
+"e149","また来てくださいね。","Come again!"
 "e16c","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e190","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e1aa","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e1cf","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e1ea"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e216","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e22f","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e38b","あっ、これは 王子さま。
-ごきげん うるわしゅうございます。"
+ごきげん うるわしゅうございます。","Your Highness!
+It's a pleasure to meet you."
 "e3c5","<X1e>老人<X04>
 アクダムが この国から逃げたあと
 ネリアの港から 再び船が
-出るようになりました。"
+出るようになりました。","<X1e>Old man<X04>
+After Achdam fled the kingdom,
+ships began departing from Neria
+Harbor again."
 "e41b","<X1e>男<X04>
 王子さま、絶対に アクダムの野郎を
-めっためたに やっつけてくださいよ。"
+めっためたに やっつけてくださいよ。","<X1e>Man<X04>
+I hope you give that Achdam
+bastard what's coming to him,
+your Highness!"
 "e466","<X1e>男<X04>
 セリオスさまが 一日も早く 国王に
 なられる日を たのしみに
-待っております。"
+待っております。","<X1e>Man<X04>
+I'm looking forward to the day youbecome our king, Prince Selios!"
 "e4b5","<X1e>兵士<X04>
 王子、必ずや 国王のかたきを
-討ってくださいませ。"
+討ってくださいませ。","<X1e>Soldier<X04>
+Please avenge our king, your
+Highness!"
 "e4ed","<X1e>ラウエル<X04>
 セリオス王子さま、一日も早く
 国王のかたきを 討ってください。<IF_NOT0080><JUMPe5df><IF0087><JUMPe5df>
@@ -50,4 +76,17 @@
 ああっ そういえば ここの机の下には抜け穴があったんだ。
 
 マスクーンの町長の家にも 確か
-意味のない部屋の中に 机があったな。あの部屋は 調べてみる必要があるな。<LOCe5df>"
+意味のない部屋の中に 机があったな。あの部屋は 調べてみる必要があるな。<LOCe5df>","<X1e>Rauel<X04>
+Please avenge our king, Prince
+Selios!
+<X118000><JUMPe5df><X128700><JUMPe5df>
+
+<CH0>
+Oh, now that I think about it,
+there was a secret passage under
+this desk.
+
+Didn't the mayor of Maschun have
+a desk in an empty room of
+his house too? We ought to try
+checking that room.<LOCe5df>"

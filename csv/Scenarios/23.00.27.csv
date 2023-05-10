@@ -15,12 +15,31 @@
 見せたら イーグどもの えじき
 だからな !!
 
-行け !!"
+行け !!","<X1e>Orchorn<X04>
+Did you bring the Gilmoran Star?
+
+<IF0144><JUMPe3fc><LEADERe495,e495,e495,e495,e4bc>
+
+<X1e>Orchorn<X04>
+He'll get eaten if you don't hurryup!!<END>
+<LOCe3fc><LEADERe4e5,e4e5,e4e5,e4e5,e50e>
+
+<SET0120><X1e>Orchorn<X04>
+Good! Keep it in sight, and come
+through.
+
+Any funny business, even a little,and you're Ygg chow!
+
+Get moving!!"
 "e495","まだだ !!
-フラート王は 無事だろうな !!<RET_IL>"
+フラート王は 無事だろうな !!<RET_IL>","Not yet!
+Is King Flart all right?<RET_IL>"
 "e4bc","まだよ !!
-フラート王は 無事でしょうね !!<RET_IL>"
+フラート王は 無事でしょうね !!<RET_IL>","Not yet!
+Is King Flart safe?<RET_IL>"
 "e4e5","持ってきたぞ !!
-フラート王に 会わせろ !!<RET_IL>"
+フラート王に 会わせろ !!<RET_IL>","It's right here!
+Now take us to King Flart!<RET_IL>"
 "e50e","持ってきたわ !!
-フラート王に 会わせて !!<RET_IL>"
+フラート王に 会わせて !!<RET_IL>","Here it is!
+Take us to King Flart!<RET_IL>"

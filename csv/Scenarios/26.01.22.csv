@@ -229,4 +229,236 @@
 何を 二人で こそこそ話してるんだ？
 
 <CH2>
-なんでもない !!"
+なんでもない !!","<SET0172><CH0>
+Are you the Queen?
+
+<X1e>クレア王妃<X04>
+Who might you be?
+
+<CH0>
+I'm Prince Selios of Farleyn.
+
+<X1e>Queen Claire<X04>
+Oh, my! Prince Selios?
+Yes, I suppose you do look a
+little like the child I remember.
+
+Welcome to Soldythe! I wonder
+where Princess Dina has gone
+off to...
+
+She should be here to greet her
+future husband.
+
+<CH0>
+F-Future... husband?
+
+<X1e>Queen Claire<X04>
+Oh, did your mother never tell
+you?
+
+You were promised to each other onyour fifth birthday. King Arthos
+and your father were very close.
+
+<CH0>
+What's happened outside? All the
+people we saw in the city were
+women.
+
+<X1e>Queen Claire<X04>
+Something's happened to all the
+men. Soldiers, tradesmen... and
+even His Majesty.
+
+A while ago, a dancer named
+Sylphie arrived in the city. She
+became very famous there.
+
+His Majesty soon heard the rumors.
+
+He usually has no time for
+frivolity. But for some reason,
+he called this dancer to the
+castle.
+
+He was charmed by her dance, and
+they've kept on dancing ever sincethen.
+
+Oh! Oh, my!<WAIT>
+Could that be Prince Aerion with
+you?
+<PAGE>
+<CH1>
+Your Majesty. It has been a while.
+
+<X1e>Queen Claire<X04>
+Indeed, it has.
+I'm glad to see you are well.
+
+Oh, didn't I hear something about
+monsters attacking Lanoura? I'm
+surprised to see you here at such
+a time.
+
+<CH3>
+Hah! Don't mean to brag, but we
+cleared 'em outta Lanoura already.
+
+<X1e>Queen Claire<X04>
+Oh my! I should have known,
+Prince Aerion.
+
+<CH1>
+Prince Selios, as well as Gail andSonia, deserve most of the credit.
+
+<X1e>Queen Claire<X04>
+Is that so? Prince Selios...
+I've only ever known him as a
+troublemaker.
+
+You seem to have matured a great
+deal, Selios. I am sure your
+departed father would be proud
+to see you now.
+
+But what could have brought all
+of you to Soldythe?
+
+<CH0>
+Finding Achdam! And avenging my
+father!
+
+<X1e>Queen Claire<X04>
+Achdam? ...Avenge?!<WAIT>
+Surely you can't mean your
+father's regent?
+
+<CH1>
+The very same.
+He had a scheme to usurp the
+throne of Farleyn.
+
+He assassinated King Aswel, and
+tried to do the same to Prince
+Selios.
+
+<X1e>Queen Claire<X04>
+Oh, my goodness!
+That is most distressing...
+
+Achdam...
+He's here, in the castle!
+
+<CH3>
+W-What?!
+So that bastard did come to
+Soldythe!
+
+We can't let him get away again!
+Let's go get 'im, Prince!
+
+<CH0>
+R-Right!
+Your Majesty, where is he?
+
+<X1e>Queen Claire<X04>
+On the second floor... but...
+
+<CH3>
+But nothin'!
+C'mon, we gotta go!
+
+<CH1>
+Wait, Gail!
+Your Majesty, what did you wish
+to say?
+
+<X1e>Queen Claire<X04>
+I don't believe there's any way
+to get into that room.
+
+The king and his soldiers are
+being controlled by that Sylphie
+woman, and they won't let anyone
+past.
+
+We can't risk His Majesty being
+harmed!
+
+<CH3>
+What's the big deal?
+Just give 'em one good slap, and
+they'll come to!
+
+<CH2>
+But how can you be sure of that?
+What if something even worse
+happens to the king then?
+
+<CH3>
+... ...
+
+<CH1>
+Your Majesty. I don't suppose
+there is any other way into that
+room?
+
+<X1e>Queen Claire<X04>
+There are only two entrances.
+One from the front, and one more
+that connects to the roof.
+
+<CH1>
+The roof? Is there a stairway
+somewhere that leads up there?
+
+<X1e>Queen Claire<X04>
+No, nothing.
+いいえ、ありません。
+
+<CH0>
+We're going to have to think of
+some way to get on the roof.
+
+<CH1>
+But if Achdam is here, that likelymeans that this Sylphie is anotherminion of Agnija.
+
+<X1e>Queen Claire<X04>
+...Agnija?
+
+<CH1>
+You know the name? Agnija?
+
+<X1e>Queen Claire<X04>
+I heard it a long time ago. From
+my old nursemaid Cynthia, in the
+village of Caur.
+
+When I was very young, she told mea story about a terrible god of
+destruction.
+
+I was so frightened that I
+couldn't sleep alone that night.
+And I do believe the name she gaveit was Agnija.
+
+You should go meet Cynthia and
+tell her about this. I am sure
+she will help you.
+
+<CH2>
+Hey, Gail.
+This Princess Dina... is she
+pretty?
+
+<CH3>
+Gotta be, if she's a princess,
+I s'pose.
+
+What's the matter? You look kinda
+funny all o' a sudden.
+
+<CH1>
+What are you two whispering about?
+
+<CH2>
+Nothing!"

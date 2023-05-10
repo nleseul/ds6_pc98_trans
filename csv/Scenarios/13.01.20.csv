@@ -1,14 +1,17 @@
 "e621","<CH1>
 王子。
-アクダムは すぐそこです !!"
-"e646","<LEADERe652,e684,e69e,e6c5,e652>"
+アクダムは すぐそこです !!","<CH1>
+Achdam is right here, your
+Highness!"
+"e646","<LEADERe652,e684,e69e,e6c5,e652>","<LEADERe652,e684,e69e,e6c5,e652>"
 "e652","はっ !? 急がなければ。
-アクダムが 逃げてしまう !!<RET_IL>"
-"e684","アクダム !! 逃がさんぞ !!<RET_IL>"
+アクダムが 逃げてしまう !!<RET_IL>","Wait... if I don't hurry, Achdam'sgoing to get away!<RET_IL>"
+"e684","アクダム !! 逃がさんぞ !!<RET_IL>","Achdam!! I won't let you escape!<RET_IL>"
 "e69e","ハッ !?
-アクダムを追いかけるんだった。<RET_IL>"
+アクダムを追いかけるんだった。<RET_IL>","Oh! I was going to follow Achdam.<RET_IL>"
 "e6c5","おれは 何をやってるんだ !!
-早くアクダムを追いかけねば !!<RET_IL>"
+早くアクダムを追いかけねば !!<RET_IL>","What'm I doin'?! I'd better get
+after Achdam.<RET_IL>"
 "e6fe","<X1e>フェリシア<X04>
 ああ、セリオス。
 あなたと 再び会うことが
@@ -47,25 +50,74 @@
 
 わかりました。
 あなたが それほどまで 言うのなら
-自分の 納得がいくようになさい。"
+自分の 納得がいくようになさい。","<X1e>Felicia<X04>
+Oh, Selios. Just being able 
+to see you again...
+
+You've become a fine young man.
+All thanks to Lyas and the people
+of Eluasta.
+
+We should see you enthroned as
+soon as possible. It's what they
+gave their lives for.
+
+<CH0>
+I can't, Mother. I intend to
+go after Achdam.
+
+How can my father, or Lyas, or
+any of them rest peacefully if
+I take the throne without avengingthem?
+
+So I'm not going to take the
+throne until I've dealt with
+Achdam.
+
+<X1e>Felicia<X04>
+That's... nothing you need to...
+
+<CH0>
+Yes, it is. I want us to be the
+ones who take him down. I can't
+leave that to anyone else.
+
+<X1e>Felicia<X04>
+Selios...
+
+Very well. If you insist on this,
+then do as you think best."
 "e9b9","<X1e>フェリシア<X04>
 つらく 長い旅に なるでしょうが
 くれぐれも 体には 気をつけて。
 
 ご一緒の方々 ･ ･ ･
 どうか セリオスのことを
-よろしく お願いします。"
+よろしく お願いします。","<X1e>Felicia<X04>
+I expect it will be a long and
+grueling journey. Please, take
+care of yourself.
+
+The rest of you... please look
+after Selios."
 "ea47","<X1e>フェリシア<X04>
 セリオス。お待ちなさい !
-あなたに 渡したいものがあります。"
+あなたに 渡したいものがあります。","<X1e>Felicia<X04>
+Wait a moment, Selios! There's
+something I want you to have."
 "ea8f","<X1e>フェリシア<X04>
 セリオス。
 あなたに ペンダントを 渡したいの。
 
+<RET_IL>","<X1e>Felicia<X04>
+Selios. I want you to have
+this pendant.
+
 <RET_IL>"
 "eacb","でも、あなたは いろいろな物を
 持っているみたいだから
-やめたほうが いいかしら？"
+やめたほうが いいかしら？","But you seem to be carrying quite
+a lot. Maybe you should reconsiderthat?"
 "eb1a","このペンダントには ギルモアの涙と
 呼ばれる宝石がはめ込まれています。
 
@@ -75,22 +127,41 @@
 
 <X0e><X1c>を もらいました。<X0c0301><X04>
 
+<RET_IL>","This pendant is set with a jewel
+called the Gilmoran Tear. 
+
+The Tear is said to hold the powerto destroy the world. Please keep
+it with you as a protective
+talisman.
+
+<X1c>Received <X04><X0e><X1c>.<X0c0301><X04>
+
 <RET_IL>"
 "ebe9","<X1e>アロン<X04>
 フェリシアさまは 私たちが お守り
 いたします。
 <PAGE>
 心おきなく かたき討ちを
-はたしてきて くださいませ。"
+はたしてきて くださいませ。","<X1e>Alon<X04>
+We will protect Queen Felicia.
+<PAGE>
+You may devote yourself fully 
+to delivering vengeance."
 "ec55","<X1e>ソニア<X04>
 私も 王子さまと一緒に 行きたいけどここで王妃さまを お守りすることに
-します。"
+します。","<X1e>Sonia<X04>
+I wish I could go with your
+Highness, but I'll be protecting
+her Majesty here."
 "ecab","<X1e>兵士の隊長<X04>
 待て !!
 お前たちの かなう相手ではない。
-おれが相手に なってやる !!"
+おれが相手に なってやる !!","<X1e>Guard captain<X04>
+Stop!! You're no match for them.
+Let me take care of this!"
 "ecfb","<X1e>兵士<X04>
-アクダムさま !!"
+アクダムさま !!","<X1e>Guard<X04>
+King Achdam!!"
 "ed12","<X1e>アクダム<X04>
 うううっ !! よくも、よくも、
 こうなっては 仕方がない。
@@ -99,19 +170,37 @@
 勝ったと 思うなよ !!
 必ずや世界を 我が物にしてみせる !!
 
-ものども 引け !!"
+ものども 引け !!","<X1e>Achdam<X04>
+Urghhh!! There's no way I'll let
+you do this to me!
+
+I may be withdrawing for now, but
+don't think you've won here!
+Make no mistake; the world will
+still be mine!!
+
+Pull back, you worthless rabble!!"
 "edbf","<X1e><IF0029><JUMPedcb>男<JUMPedcf><LOCedcb>兵士<LOCedcf><X04>
 アクダムは うらで モンスターと
-つながっていたようで ございます。"
+つながっていたようで ございます。","<X1e><X122900><JUMPedcb>Man<JUMPedcf><LOCedcb>Soldier<LOCedcf><X04>
+Achdam seems to have had some
+hidden connection with the
+monsters."
 "ee12","<X1e><IF0029><JUMPee1e>男<JUMPee22><LOCee1e>兵士<LOCee22><X04>
 ネリアの港には 強い武器を売る
 やみの商人が 住んでいるという
-うわさで ございます。"
+うわさで ございます。","<X1e><X122900><JUMPee1e>Man<JUMPee22><LOCee1e>Soldier<LOCee22><X04>
+Supposedly, there's a shady
+merchant who lives in Neria Harborand sells powerful weapons."
 "ee76","<X1e><IF0029><JUMPee82>男<JUMPee86><LOCee82>兵士<LOCee86><X04>
 王妃さまのことなら ご心配なく。
 私どもが 命にかえても
-お守り いたします。"
+お守り いたします。","<X1e><X122900><JUMPee82>Man<JUMPee86><LOCee82>Soldier<LOCee86><X04>
+Don't worry about her Majesty. We
+will lay down our lives to protecther."
 "eed2","<X1e>フェリシア<X04>
 セリオス !!
 おぎょうぎの 悪いことは
-おやめなさい !!"
+おやめなさい !!","<X1e>Felicia<X04>
+Selios!! Please don't be
+so ill-mannered!"

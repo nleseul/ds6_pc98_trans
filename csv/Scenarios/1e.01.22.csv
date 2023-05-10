@@ -47,25 +47,101 @@
 鉄製の装備品を はずしてみなされ。
 ２階へ 行けるように なるじゃろう。
 
-<SET00a5>さあ、行くがよい。"
+<SET00a5>さあ、行くがよい。","<X1e>Loell<X04>
+<IF00a0><JUMPeac7><IF00a5><JUMPe3ed>And who might you be? What
+brings you to a desolate
+place like this?<IF00a3><JUMPe0ef><END>
+<LOCe0ef>
+
+<LEADERe462,e4e2,e462,e570,e462>
+
+<X1e>Loell<X04>
+W-what?!
+
+I thought there were an awful
+lot of monsters outside lately,
+but occupying Riezel...
+
+<LEADERe600,e79b,e600,e933,e600>
+
+<X1e>Loell<X04>
+Hmm. An invisible barrier,
+you say?
+
+Well, it sounds like that
+Helnild probably used some
+special ability to block
+off the staircase.
+
+There're too many differences
+between you and the monsters to
+find many clues there. 
+
+So let's start off by thinking
+about what you and the soldiers
+have in common, and what's
+different about the Duke.
+
+Aha!! What you and the soldiers
+have in common is your equipment!
+And the Duke and his aide
+haven't got any!
+
+Of course! I know I've heard
+a story about something like
+that somewhere! Now, what was
+it...?
+
+Of course!! The repulsive
+lodestone! At Gilmore! There
+was a stone found during the
+excavations that repelled iron!
+
+Helnild must've brought that
+stone here! 
+Knowing that, the solution
+is simple.
+
+<LOCe3ed>When you go to the impassible
+place, remove your metallic
+eqiupment. Then, you should be
+able to reach the stairs.
+
+<SET00a5>Go on! Give it a try now!"
 "e462","ジェストン公爵の使いで来ました。
 <PAGE>
 今、リーゼルの城は モンスターに
 占領され、ジェストン公爵は
-地下牢に捕えられてしまっています。<RET_IL>"
+地下牢に捕えられてしまっています。<RET_IL>","I'm here on behalf of
+Duke Jestonn.
+<PAGE>
+There are monsters in control of
+Riezel, and he's imprisoned in
+the castle dungeon.<RET_IL>"
 "e4e2","私は ジェストン卿の 使いで
 ここへ やってまいりました。
 
 今、リーゼルの城は モンスターに
 占領され、ジェストン卿は 地下牢に
-捕えられております。<RET_IL>"
+捕えられております。<RET_IL>","I was sent here by his
+Excellency the Duke.
+
+Riezel has been occupied by
+monsters, and his Excellency
+is imprisoned in the castle
+dungeon.<RET_IL>"
 "e570","おれは ここの王さまの
 ジェストンって奴に 言われて
 来たんだ。
 
 今、リーゼルの城は モンスターに
 占領され、ジェストンは 地下牢に
-捕えられているぜ。<RET_IL>"
+捕えられているぜ。<RET_IL>","Your king or duke or whatever
+said we oughta talk to you.
+
+Monsters've taken over Riezel,
+and he's locked up in the
+dungeon.<RET_IL>"
 "e600","ヘルニルドというモンスターのボスを倒せば、ジェストン公爵を
 助けることが 出来るんだけど ･ ･ ･
 
@@ -79,7 +155,24 @@
 岩男たちは平気で出入りしています。
 
 しかも、ジェストン公爵やその側近もあそこを通れたらしいのです。
-その辺りに謎を解くカギがあるのではないかと 思うのですが ･ ･ ･<RET_IL>"
+その辺りに謎を解くカギがあるのではないかと 思うのですが ･ ･ ･<RET_IL>","We have to defeat a monster
+called Helnild to save the
+Duke.
+
+But Helnild is in the throne
+room, and there's an invisible
+barrier around the stairs that
+we can't get through.
+
+It's a weird barrier, though.
+It blocks us and the soldiers,
+but the rock monsters can go
+right through it.
+
+And Duke Jestonn and his
+aide were also able to go
+through. He thought that might
+be some kind of clue.<RET_IL>"
 "e79b","ヘルニルドというモンスターのボスを倒せば、ジェストン卿を助けることが出来るのですが ･ ･ ･
 
 そやつがいる 謁見の間への階段は
@@ -93,7 +186,24 @@
 
 しかも、ジェストン卿や その側近も
 あそこを 通れたらしいのです。
-その辺りに謎を解くカギがあるのではないかと 思うのですが ･ ･ ･<RET_IL>"
+その辺りに謎を解くカギがあるのではないかと 思うのですが ･ ･ ･<RET_IL>","There is a monster called
+Helnild who we must defeat
+to save his Excellency.
+
+But that monster is protected
+by an invisible barrier that
+surrounds the stairs leading
+to the throne room.
+
+Strangely, the barrier blocks
+the soldiers and ourselves,
+but does not inhibit the
+rock monsters.
+
+His Excellency and his aide
+were also able to pass through,
+however. He believed this to
+be a clue to a solution.<RET_IL>"
 "e933","ヘルニルドとかいう モンスターの
 ボスを倒せば、ここの王さまを助けることが 出来るんだが ･ ･ ･
 
@@ -108,7 +218,24 @@
 
 しかも、王さまやその側近も
 あそこを 通れたらしいんだ。
-その辺りに謎を解くカギがあるんじゃねえかと にらんでるんだが ･ ･ ･<RET_IL>"
+その辺りに謎を解くカギがあるんじゃねえかと にらんでるんだが ･ ･ ･<RET_IL>","We've gotta take down some
+monster called Helnild to
+get 'im out.
+
+But there's some kinda
+invisible barrier around the
+stairs that go to the throne
+room, so we can't get to him.
+
+Funny thing is, us and the
+soldiers can't get through it,
+but the rock monsters can
+just fine.
+
+And so could that duke and his
+lackey. So, the duke figured
+that we might be able to work
+out a way through, knowing that.<RET_IL>"
 "eac7","<IF00a5><JUMPecd4>おお、ひょっとして お前たちか？
 ヘルニルドを倒したと 国中で
 評判になっている者たちは。
@@ -136,4 +263,35 @@
 
 ともかく、よかった。
 ウォンリークが 救われたのは
-お前たちの おかげじゃ。"
+お前たちの おかげじゃ。","<IF00a5><JUMPecd4>Hmm? Might you be the folks who
+defeated Helnild and brought
+peace throughout the land?
+
+You did a great job breaking
+through Helnild's barrier.
+
+I tell you, kids these days!
+So many of 'em just go around
+willy-nilly asking other folks
+to solve their problems.
+
+And then when no one can just
+hand them a solution, they
+get all frustrated and give up.
+
+Putting in the work to solve
+the hard problems on your own,
+without relying on other people--
+that's the mark of a real hero!
+
+I bet you folks'll run into
+plenty of hard problems from
+here on. But you just hold to
+that, and you'll get through 'em!<END>
+<LOCecd4>Welcome back! I heard that you
+broke through that barrier and
+defeated Helnild.
+
+Well done, well done!
+Wonliech is saved thanks
+to you!"

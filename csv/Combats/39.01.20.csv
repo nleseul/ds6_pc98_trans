@@ -1,5 +1,7 @@
-"dc30","アクダムの手下<RET_IL>"
-"ddf1","アクダムの手下が現れた。<RETN>"
+"dc30","アクダムの手下<RET_IL>","Henchman<RET_IL>"
+"ddf1","アクダムの手下が現れた。<RETN>","One of Achdam's henchmen appears!<RETN>"
 "de0a","は 防御力が一番低い
 <X02>めがけ グラディウスを
-振りおろした !!<X0a>"
+振りおろした !!<X0a>"," swings a gladius at
+<X02>, who has the lowest
+defense!<X0a>"

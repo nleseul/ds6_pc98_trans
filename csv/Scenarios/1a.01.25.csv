@@ -3,22 +3,42 @@
 
 <IF_NOT00c3><JUMPe1a7><LEADERe284,e2b7,e2ec,e284,e284>
 
-<LOCe1a7><LEADERe1b6,e1f6,e23c,e1b6,e1b6><SET00c3><LOCe1b5>"
+<LOCe1a7><LEADERe1b6,e1f6,e23c,e1b6,e1b6><SET00c3><LOCe1b5>","<X14c000><X1c>The door is locked.
+<X04><X110004><JUMPe1b5>
+
+<X11c300><JUMPe1a7><LEADERe284,e2b7,e2ec,e284,e284>
+
+<LOCe1a7><LEADERe1b6,e1f6,e23c,e1b6,e1b6><X14c300><LOCe1b5>"
 "e1b6","ええと、
 このカギ穴に 粘土を押し込んでと。
 
-よし、型が取れたぞ。<RET_IL>"
+よし、型が取れたぞ。<RET_IL>","Hmm.
+So we just push the clay into
+the keyhole?
+
+Okay, we've got our template!<RET_IL>"
 "e1f6","どれどれ、
 このカギ穴に 粘土を押し込んでと
 
-おお、きれいに型が取れた。<RET_IL>"
+おお、きれいに型が取れた。<RET_IL>","Now, we just to push this clay
+into the keyhole.
+
+There! The template came out
+well.<RET_IL>"
 "e23c","なになに、
 このカギ穴に 粘土を押し込んでと
 
-おっ、型が取れたじゃないか。<RET_IL>"
+おっ、型が取れたじゃないか。<RET_IL>","Now what? Just push this clay
+into the keyhole?
+
+And I guess that gives us
+a template?<RET_IL>"
 "e284","どうも不安だなあ。
-もう一度 型を取り直しておこう。<RET_IL>"
+もう一度 型を取り直しておこう。<RET_IL>","I'm not too sure about this.
+Maybe we should redo the template.<RET_IL>"
 "e2b7","なんとなく 不安ですな。
-型を取り直しておきましょう。<RET_IL>"
+型を取り直しておきましょう。<RET_IL>","That doesn't seem quite right.
+We should do it once more.<RET_IL>"
 "e2ec","どうも不安だ。
-もう一度 型を取り直しておくか。<RET_IL>"
+もう一度 型を取り直しておくか。<RET_IL>","I'm not really sure. I guess I'll
+do it over?<RET_IL>"

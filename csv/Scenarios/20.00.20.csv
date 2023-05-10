@@ -1,5 +1,5 @@
-"e373","セリオス<RET_IL>"
-"e383","海賊<RET_IL>"
+"e373","セリオス<RET_IL>","Selios<RET_IL>"
+"e383","海賊<RET_IL>","Crew<RET_IL>"
 "e39f","<X08>ルールは簡単だぜ。
 持ち点は１００点、この１００点を
 ＨＰ、攻撃力、防御力、すばやさの
@@ -12,37 +12,64 @@
 一度でも負けたら 最初からだ。
 どこでやめるかも よく考えてな。
 
-じゃあ はじめようぜ。<RETN>"
+じゃあ はじめようぜ。<RETN>","<X08>The rules're simple. You get 100
+points, and ya gotta spread 'em
+out between HP, attack, defense,
+and speed.
+
+And when you're done, we fight it
+out. Whoever goes down to 0 HP
+first loses.
+
+You get prizes based on how many
+times ya win. But one loss'll sendya right back to nothin'. So thinkhard about how far ya wanna go.
+
+Now let's do it!<RETN>"
 "e4c1","<X08>振り分け方は 【２】【８】で選んで
 【６】でプラス、【４】でマイナス
-【RETURN】で 決定だぜ。<RETN>"
+【RETURN】で 決定だぜ。<RETN>","<X08>Use [2] and [8] to pick somethin'.[6] adds to it, [4] decreases it.
+When you're done, hit [RETURN].<RETN>"
 "e51d","<X08>よし、じゃあ はじめるぞ。
 
+<RET_IL>","<X08>All right, here we go!
+
 <RET_IL>"
-"e539","の攻撃<X0a>"
+"e539","の攻撃<X0a>","'s attack!<X0a>"
 "e55b","に<X1e><RET_IL>
-<CONT><X04>のダメージ !!<X0a>"
-"e56e","会心<JUMPe579><LOCe575>痛恨<LOCe579>の 一撃 !!<RETN>"
-"e584","あんたの勝ちだ。<X0d>"
-"e595","あんたの負けだ。<X0d>"
-"e5a6","<X08>ええと、今のところ <RET_IL>"
+<CONT><X04>のダメージ !!<X0a>"," takes <X1e><RET_IL>
+<CONT><X04> damage!<X0a>"
+"e56e","会心<JUMPe579><LOCe575>痛恨<LOCe579>の 一撃 !!<RETN>","A critical hit<JUMPe579><LOCe575>A dire blow<LOCe579>!<RETN>"
+"e584","あんたの勝ちだ。<X0d>","Ya got me!<X0d>"
+"e595","あんたの負けだ。<X0d>","Got ya!<X0d>"
+"e5a6","<X08>ええと、今のところ <RET_IL>","<X08>Well, after <RET_IL>"
 "e5bb","だけど
-賞品をもらわずに ガンバルかい？<RETN>"
+賞品をもらわずに ガンバルかい？<RETN>",". Do ya wanna leave
+it and keep goin'?<RETN>"
 "e5e2","<X08>続けるんだな。
 ヨーシ そうこなくっちゃな。
 じゃあ 続けていくぞ。
 
+<LOCe624><RET_IL>","<X08>Yer gonna keep goin'?
+Great! That's the way to play!
+All right, let's go!
+
 <LOCe624><RET_IL>"
-"e625","なんだ いらねーのか。<RETN>"
+"e625","なんだ いらねーのか。<RETN>","What? Ya don't even need it?<RETN>"
 "e63b","１<RET_IL>
 <CONT>連勝だから
-賞品は <X0e><RET_IL>"
-"e652","もう一度やるかい。<RETN>"
+賞品は <X0e><RET_IL>","9 win<RET_IL>
+<CONT>s, ye've won the
+<X0e><RET_IL>"
+"e652","もう一度やるかい。<RETN>","Wanna go again?<RETN>"
 "e665","いやー まいった まいった
 あんたには とてもかなわねーや。
 
-<LOCe69e>ええと、<RET_IL>"
-"e6a7","だぜ。<RETN>"
-"e6ae","なんだ、いらねーのか。<RETN>"
+<LOCe69e>ええと、<RET_IL>","Arrgh!! I yield, I yield!
+Yer way too good at this!
+
+<LOCe69e>Hmm. <RET_IL>"
+"e6a7","だぜ。<RETN>","!<RETN>"
+"e6ae","なんだ、いらねーのか。<RETN>","What? Ya don't even need it?<RETN>"
 "e6c5","遊びたくなったら いつでも来なよ
-相手になってやるぜ。"
+相手になってやるぜ。","Come back whenever ya wanna play.
+I'll take you on anytime!"

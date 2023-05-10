@@ -1,13 +1,18 @@
-"dc30","ヨロイグモ<RET_IL>"
-"dc70","毒大ガエルＡ<RET_IL>"
-"dcb0","毒大ガエルＢ<RET_IL>"
-"dcf0","蜒KエルＡ<RET_IL>"
-"de4e","毒大ガエルとヨロイグモが現れた。<RETN>"
+"dc30","ヨロイグモ<RET_IL>","Armorantula<RET_IL>"
+"dc70","毒大ガエルＡ<RET_IL>","Venomous Frog A<RET_IL>"
+"dcb0","毒大ガエルＢ<RET_IL>","Venomous Frog B<RET_IL>"
+"dcf0","蜒KエルＡ<RET_IL>","<RET_IL>"
+"de4e","毒大ガエルとヨロイグモが現れた。<RETN>","A band of huge venomous frogs
+and an armorantula appear!<RETN>"
 "de6f","は 背中のイボから
 混乱の毒を出した。<X0a>
-<CONT><X02>は混乱してしまった !!<X0a>"
-"deab","は仲間を呼んだ。<X0a>"
-"debc","<X02>が現れた。<X0a>"
-"dec8","しかし 誰も現れなかった。<X0a>"
+<CONT><X02>は混乱してしまった !!<X0a>"," secretes
+intoxicating venom from the
+warts on its back.<X0a>
+<CONT><X02> is confused!<X0a>"
+"deab","は仲間を呼んだ。<X0a>"," calls for help.<X0a>"
+"debc","<X02>が現れた。<X0a>","<X02> appears.<X0a>"
+"dec8","しかし 誰も現れなかった。<X0a>","But no one comes.<X0a>"
 "dee2","は 糸を吐いた。<X0a>
-<CONT><X02>のすばやさが <RET_IL>"
+<CONT><X02>のすばやさが <RET_IL>"," shoots webbing.<X0a>
+<CONT><X02>'s speed is reduced by <RET_IL>"

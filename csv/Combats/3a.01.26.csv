@@ -1,5 +1,7 @@
-"dc30","ﾄｰﾀｽ ﾅｲﾄＡ<RET_IL>"
-"dc70","ﾄｰﾀｽ ﾅｲﾄＢ<RET_IL>"
-"dcb0","ﾄｰﾀｽ ﾅｲﾄＣ<RET_IL>"
-"dd64","ﾄｰﾀｽ ﾅｲﾄの群れが現れた。<RETN>"
-"dd7d","は斬りかかった !!<X0a>"
+"dc30","ﾄｰﾀｽ ﾅｲﾄＡ<RET_IL>","T<CALL0001> K<CALL0002> A<RET_IL>"
+"dc70","ﾄｰﾀｽ ﾅｲﾄＢ<RET_IL>","T<CALL0001> K<CALL0002> B<RET_IL>"
+"dcb0","ﾄｰﾀｽ ﾅｲﾄＣ<RET_IL>","T<CALL0001> K<CALL0002> C<RET_IL>"
+"dd64","ﾄｰﾀｽ ﾅｲﾄの群れが現れた。<RETN>","A squad of t<CALL0001> k<CALL0002>s
+appears.<RET_IL><LOC0001>ortoise<RET_IL><LOC0002>night<RET_IL>"
+"dd7d","は斬りかかった !!<X0a>"," slashes
+violently!<X0a>"

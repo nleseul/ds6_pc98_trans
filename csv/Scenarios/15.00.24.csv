@@ -1,26 +1,40 @@
 "e14a","<X1e>道具屋<X04>
 おや 王子さま いらっしゃいませ。
 ここは道具の店ですが
-どんな ご用ですか？<RETN>"
-"e19d","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome, your Highness!
+This is a tool shop.
+What would you like?<RETN>"
+"e19d","また来てくださいね。","Come again!"
 "e1c2","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e1e6","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e200","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e21d","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e238"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e264","それは残念です ･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e27e","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e4b2","<X1e>神父<X04>
 <IF0020><JUMPe4f6>先ほどから 下で アロンさまが
@@ -29,7 +43,14 @@
 お久しぶりでございます。
 
 お困りのときには いつでも
-私の所へ 来てくださいませ。"
+私の所へ 来てくださいませ。","<X1e>Priest<X04>
+<X122000><JUMPe4f6>Alon has been waiting for you
+downstairs.<END>
+<LOCe4f6>Oh, Prince Selios!
+It has been a while.
+
+When you are troubled, you may
+always come to me."
 "e580","<X1e>農夫<X04>
 <IF0020><JUMPe5ca>なんか最近 急に 人が増えちまって
 おら 目が回っちまっただよ。<END>
@@ -37,7 +58,15 @@
 畑を耕すのを 手伝いたいって
 奴らが いっぱい来ただ。
 
-なんなんだべな？"
+なんなんだべな？","<X1e>Farmer<X04>
+<X122000><JUMPe5ca>There's suddenly so many people
+around. It's got my head 
+a-spinnin'...<END>
+<LOCe5ca>I couldn't tell ya why, but 
+there's lots o' people a-wantin'
+ta help plow the fields now.
+
+Guess I can't go complainin'..."
 "e621","<X1e>農夫<X04>
 <IF0020><JUMPe672>畑仕事は、今日で おしまい。
 そろそろ 戦いの したくを
@@ -51,34 +80,62 @@
 
 これからは 心をいれかえて
 ここで一生 畑を耕す
-つもりで ございます。"
+つもりで ございます。","<X1e>Farmer<X04>
+<X122000><JUMPe672>That's the last of today's farm
+work. Guess I'd better get ready
+for the battle now...<END>
+<LOCe672>Oh, your Highness! I used to be
+one of Achdam's soldiers. I'm verysorry for my rudeness.
+
+I've had a change of heart, and
+I plan to spend my life farming
+in this village."
 "e72b","<X1e>レジスタンスの男<X04>
 <IF0036><JUMPe785>王子さま いよいよです。
 アクダムから
 この国を 取り戻しましょう。<END>
-<LOCe785>さあ王子さま 早くお入りください。"
+<LOCe785>さあ王子さま 早くお入りください。","<X1e>Resistance member<X04>
+<X123600><JUMPe785>Your Highness! At last!
+We're ready to take the kingdom
+back from Achdam!<END>
+<LOCe785>Please go on in, your Highness."
 "e7a7","<X1e>男<X04>
 <IF0020><JUMPe7f2>これは 王子さま。
 おかげさまで
 妻と くらせるように なりました。<END>
 <LOCe7f2>これはこれは、王子さま。
-いらっしゃいませ。"
+いらっしゃいませ。","<X1e>Man<X04>
+<X122000><JUMPe7f2>Your Highness! Thanks to you, I
+can live with my wife again.<END>
+<LOCe7f2>Oh, your Highness! Welcome!"
 "e81e","<X1e>もと囚人<X04>
 ありがとうございました。
-このご恩は、一生 忘れません。"
+このご恩は、一生 忘れません。","<X1e>Former prisoner<X04>
+Thank you so much. I'll never
+forget what you've done for me."
 "e860","<X1e>女<X04>
 <IF0020><JUMPe8a9>いよいよ
 ルディアに 攻め入るそうですね。
 がんばってください。<END>
 <LOCe8a9>まあ、王子さま !! お城に
 お戻りに なられた そうですね。
-おめでとうございます。"
+おめでとうございます。","<X1e>Woman<X04>
+<X122000><JUMPe8a9>I've heard that you're finally
+going to storm Rudia. Good luck!<END>
+<LOCe8a9>Oh, your Highness! I've heard
+about your return to the castle.
+Congratulations!"
 "e8f8","<X1e>女<X04>
 <IF0020><JUMPe93b>王子さま、夫を助け出してくれて
 ありがとうございました。<END>
 <LOCe93b>何も おもてなし出来ませんが
-ごゆっくりして いってください。"
+ごゆっくりして いってください。","<X1e>Woman<X04>
+<X122000><JUMPe93b>Thank you for rescuing my husband,your Highness.<END>
+<LOCe93b>We don't have much to offer your
+Highness, but please make yourselfat home."
 "e977","<X1e>やぎ<X04>
-めえぇぇぇぇ。"
+めえぇぇぇぇ。","<X1e>Goat<X04>
+Me-e-e-e-e..."
 "e98d","<X1e>にわとり<X04>
-こけっ〜 !?"
+こけっ〜 !?","<X1e>Chicken<X04>
+Bok! Bokaaw!"

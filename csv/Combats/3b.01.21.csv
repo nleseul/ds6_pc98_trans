@@ -1,8 +1,10 @@
-"dc30","キラーベア<RET_IL>"
-"dc70","ワーラット<RET_IL>"
-"ddab","キラーベアとワーラットが現れた。<RETN>"
+"dc30","キラーベア<RET_IL>","Killer Bear<RET_IL>"
+"dc70","ワーラット<RET_IL>","Wererat<RET_IL>"
+"ddab","キラーベアとワーラットが現れた。<RETN>","A killer bear and a wererat
+appear.<RETN>"
 "ddcc","しかし、<X02>は
-すばやく身をかわした !!<X0a>"
-"ddf0","は太い腕を振り上げた !!<X0a>"
+すばやく身をかわした !!<X0a>","But <X02> dodges nimbly!<X0a>"
+"ddf0","は太い腕を振り上げた !!<X0a>"," raises its
+burly arms!<X0a>"
 "de08","は尾をムチのように
-振り上げた !!<X0a>"
+振り上げた !!<X0a>"," whips with its tail!<X0a>"

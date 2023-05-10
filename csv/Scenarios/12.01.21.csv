@@ -1,46 +1,74 @@
 "e085","<X1e>道具屋<X04>
 おや 王子さま いらっしゃいませ。
 ここは道具屋ですが
-どんな ご用ですか？<RETN>"
-"e0d6","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome, your Highness!
+This is a tool shop.
+What would you like?<RETN>"
+"e0d6","また来てくださいね。","Come again!"
 "e103","<X1e>武器屋<X04>
 おや 王子さま いらっしゃいませ。
-ここは武器と防具の店ですが<RETN>"
-"e148","また来てくださいね。"
+ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
+Welcome, your Highness!
+My shop sells weapons and armor."
+"e148","また来てくださいね。","Come again!"
 "e16b","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e18f","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e1a9","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e1ce","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e1e9"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e215","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e22e","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e38a","あっ、これは 王子さま。
-ごきげん うるわしゅう ございます。"
+ごきげん うるわしゅう ございます。","Your Highness!
+It's a pleasure to meet you."
 "e3c5","<X1e>老人<X04>
 アクダムが この国から 逃げたあと
-ネリアの港から 再び船が 出るようになりました。"
+ネリアの港から 再び船が 出るようになりました。","<X1e>Old man<X04>
+After Achdam fled the kingdom,
+ships began departing from Neria
+Harbor again."
 "e41c","<X1e>男<X04>
 王子さま、絶対に アクダムの野郎を
-めっためたに やっつけてくださいよ。"
+めっためたに やっつけてくださいよ。","<X1e>Man<X04>
+I hope you give that Achdam
+bastard what's coming to him,
+your Highness!"
 "e467","<X1e>男<X04>
 セリオスさまが 一日も早く 国王に
 なられる日を たのしみに
-待っております。"
+待っております。","<X1e>Man<X04>
+I'm looking forward to the day youbecome our king, Prince Selios!"
 "e4b6","<X1e>兵士<X04>
 王子、必ずや 国王のかたきを
-討ってくださいませ。"
+討ってくださいませ。","<X1e>Soldier<X04>
+Please avenge our king, your
+Highness!"
 "e4ee","<X1e>ラウエル<X04>
 セリオス王子さま、一日も早く
-国王のかたきを 討ってください。"
+国王のかたきを 討ってください。","<X1e>Rauel<X04>
+Please avenge our king, Prince
+Selios!"

@@ -1,26 +1,39 @@
 "e1b2","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは 道具のお店よ
-どんな ご用なの？<RETN>"
-"e1f4","また来てね。"
+どんな ご用なの？<RETN>","<X1e>Tool merchant<X04>
+Welcome! This is a tool shop.
+What do you need?<RETN>"
+"e1f4","また来てね。","Come again!"
 "e20c","あら？これ以上持てないみたいよ。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e22e","どれを買ってくれるの？
+<RETN>","What would you like to buy?
 <RETN>"
 "e246","<X0e>ね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e269","どれを 売ってくれるの？
+<RETN>","What would you like to sell?
 <RETN>"
 "e282"," Gold になるけど
 それでも よろしくて？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e2aa","それは残念だわ･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e2c3","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e34f","<X1e>商人<X04>
 <IF0160><JUMPe4af><SET0160><SET0401>おや？ あんたがたは 賞金稼ぎだね？
@@ -42,7 +55,35 @@
 <LOCe4ea><IF0408><JUMPe54c><IF0409><JUMPe54c><LOCe4f6>早く 怪物のボスを倒してくださいね。そうそう 分けまえも お忘れなく。
 へっ へっへ ･ ･ ･<END>
 <LOCe54c><SET0400>あっ これは気がつきませんでした。
-ささっ どうぞ お休みください。"
+ささっ どうぞ お休みください。","<X1e>Merchant<X04>
+<IF0160><JUMPe4af><SET0160><SET0401>Oh, you must be here for the
+bounty!
+
+You've heard, right? The king is
+awarding a bounty to any hero
+who can chase the monsters out
+of the kingdom.
+
+I know the feeling! The call of
+a bounty!
+Why don't we try working together?
+
+I'll let you have a place to stay,
+and when you get the bounty, I'll
+take a 3% cut.
+There we go! It's a deal!
+
+<JUMPe4ea><LOCe4af><IF0401><JUMPe4f6><SET0401>Hey, how's the bounty hunting
+going? Did you find the leader of
+the monsters yet?
+
+<LOCe4ea><IF0408><JUMPe54c><IF0409><JUMPe54c><LOCe4f6>Hurry up and beat the head 
+monster! And don't forget about
+my cut! Heh heh heh...<END>
+<LOCe54c><SET0400>
+Oh, sorry! I wasn't paying
+attention. Please, please! Rest
+all you like."
 "e590","<X1e>女<X04>
 ルドラの港に ハリーさんていう
 発明家が いるの。
@@ -53,13 +94,27 @@
 
 壊れた凧を 引きずって この町から
 ルドラの港まで 帰るところを
-よく見かけるわ。"
+よく見かけるわ。","<X1e>Woman<X04>
+There's an inventor named Harry
+who lives in Port Rudra.
+
+He's trying to build a huge kite
+and fly through the air with it.
+But it never works properly.
+
+I see him dragging his broken kitethrough here back home to Rudra
+pretty often."
 "e662","<X1e>女<X04>
 あら あなたがたは まともみたいね。あのシルフィとかいう女の踊りを
 見ちゃだめよ。
 
 あの踊りを見ると 男の人は みんな
-おかしくなってしまうの。"
+おかしくなってしまうの。","<X1e>Woman<X04>
+You seem like decent folk. You'd
+better stay away from that Sylphiewoman.
+
+Men who watch her dancing all end
+up going funny."
 "e6f1","<X1e>女<X04>
 あなたたち どこから来たのか
 知らないけど、お城の 踊り子には
@@ -77,16 +132,42 @@
 クレア王妃も おかわいそうに
 国中に わけのわからない怪物が
 現れたと いうのに、国王さまが
-あの踊り子に 夢中になっているとは。"
+あの踊り子に 夢中になっているとは。","<X1e>Woman<X04>
+I'm not sure where you're from,
+but you should probably avoid
+the dancer in the castle.
+
+Ever since she came here, all the
+men in town have been completely
+fixated on her.
+
+My husband's always had an eye
+for women, of course. But even
+King Arthos is obsessed!
+
+I feel so bad for Queen Claire!
+Monsters pop up from gods-know-
+where, and all the king can do
+is ogle some dancer!"
 "e880","<X1e>女<X04>
 うちのひとは たまたま エメの町に
 行っていたから 踊り子のことは
-知らないの。黙っていてね。"
+知らないの。黙っていてね。","<X1e>Woman<X04>
+My guy's been away in E'me, so he
+doesn't know about that dancer.
+I'm not saying a word!"
 "e8df","<X1e>女<X04>
 あなたたち 知ってる？
 ディーナ姫は もうすぐ どこかの国の王子さまと 結婚するんですって。
 
 でも その結婚は 国王さま同士で
-決めたこと なんですって。"
+決めたこと なんですって。","<X1e>Woman<X04>
+Have you heard? Princess Dina is
+supposed to be marrying some
+Prince or other soon.
+
+But the whole thing was set up by
+the kings."
 "e975","<X1e>神父<X04>
-私は 女性に興味など ございません。"
+私は 女性に興味など ございません。","<X1e>Priest<X04>
+I have no interest in women."

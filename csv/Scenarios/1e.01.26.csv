@@ -1,4 +1,4 @@
-"e0cf","抵抗してもムダだ。<RET_IL>"
+"e0cf","抵抗してもムダだ。<RET_IL>","Yer not gettin' away!<RET_IL>"
 "e0e2","しつこい奴だな !!
 <JUMPe0cf><LOCe0f7>強情な奴だな !!
 <JUMPe0cf><LOCe10a>しぶとい奴だな !!
@@ -6,16 +6,32 @@
 <JUMPe0cf><LOCe144>なんて強情な奴なんだ !!
 <JUMPe0cf><LOCe15f>お、お願いしますよ。
 <LOCe174>降伏してくれないと、
-親分に殴られちまうんですよ。<RETN>"
+親分に殴られちまうんですよ。<RETN>","Pig-headed bastard!!
+<JUMPe0cf><LOCe0f7>Obstinate bastard!!
+<JUMPe0cf><LOCe10a>Contumacious bastard!!
+<JUMPe0cf><LOCe11f>C'mon, stop wastin' time!!
+<JUMPe0cf><LOCe144>You're too bloody stubborn!!
+<JUMPe0cf><LOCe15f>C'mon!! Please?
+<LOCe174>If ya don't yield, the
+boss's gonna hit us!<RETN>"
 "e1a6","<X1e>海賊<X04>
 そうですか、降伏してくれますか。
 あ、ありがとうございます。
 ん !?
 <PAGE>
 なんで、おれが 礼を言わなくちゃ
-なんねえんだ？"
-"e485","<X08><X1e>海賊<X04><RETN>"
+なんねえんだ？","<X1e>Pirate<X04>
+Oh, yer yieldin'?
+T-Thanks a bunch!
+...
+<PAGE>
+Wait, what'm I doin',
+thankin' ya?!"
+"e485","<X08><X1e>海賊<X04><RETN>","<X08><X1e>Pirate<X04><RETN>"
 "e48d","
 
 
-降伏しますか？<RETN>"
+降伏しますか？<RETN>","
+
+
+You gonna yield?<RETN>"

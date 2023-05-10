@@ -1,10 +1,13 @@
 "e31a","<CALLe3c2>おはようございます 王子さま。
-お目覚めの時間でございますよ。"
+お目覚めの時間でございますよ。","<CALLe3c2>Good morning, your Highness!
+Rise and shine!"
 "e35a","<CALLe3c2>お出かけですか、王子さま？
-いってらっしゃいませ。"
+いってらっしゃいませ。","<CALLe3c2>Going out, Your Highness?
+Stay safe!"
 "e38f","<CALLe3c2>あら、王子さま。
-お勉強は もう すんだのですか？"
-"e3c2","<X1e>侍女<X04><RETN>"
+お勉強は もう すんだのですか？","<CALLe3c2>Your Highness! Have you finished
+your studies already?"
+"e3c2","<X1e>侍女<X04><RETN>","<X1e>Maid<X04><RETN>"
 "e3c9","<X1e>ライアス<X04>
 セリオスさま。あなたさまが 王位に
 つかれる日まで あと２ヶ月あまりと
@@ -20,31 +23,60 @@
 していただきますぞ。
 
 ちょっと 本を取ってまいります。
-しばらく お待ちくださいませ。"
+しばらく お待ちくださいませ。","<X1e>Lyas<X04>
+Prince Selios. It is only two
+months until the day you take the
+throne.
+
+Soon, you will put aside slime-
+chasing and other foolish games.
+
+Above all else, it is study that
+makes a good king! So, today, you
+and I will be studying magic.
+
+Now, please wait here for a momentwhile I go fetch some books."
 "e51b","<X1e>ライアス<X04>
 王子、ちゃんと いすに 座って
 待っていて くだされ。
-すぐに まいりますから ･ ･ ･"
+すぐに まいりますから ･ ･ ･","<X1e>Lyas<X04>
+Please remain in your seat, your
+Highness. I will be with you
+shortly."
 "e575","<X1e>侍女<X04>
 今日の 夕食は 王子さまの 大好きな
-ビーフシチューですよ。"
+ビーフシチューですよ。","<X1e>Maid<X04>
+Tonight's dinner is your favorite
+beef stew, your Highness!"
 "e5b5","<CALLe72e>お出かけですか、王子さま？
-暗くならないうちに お帰りください。"
+暗くならないうちに お帰りください。","<CALLe72e>Going out, your Highness?
+Please be back before dark."
 "e5f7","<CALLe72e>お待ちください、王子さま。
 ライアスじいから 王子を 外に
 出すなと 言われて おるのです。
 
 <CH0>
-そうか、じゃあ しょうがないな。"
+そうか、じゃあ しょうがないな。","<CALLe72e>A moment, your Highness.
+I've been informed by Lyas that
+you are not to leave town.
+
+<CH0>
+Oh, okay. I won't, then."
 "e674","<CALLe72e>王子、町の外は モンスターが
-たくさんいて 危険で ございます。"
+たくさんいて 危険で ございます。","<CALLe72e>It's dangerous outside because of
+all the monsters, your Highness."
 "e6b4","<CALLe72e>おい、今日は妙に素直に
 引き下がったな。
 
 <CALLe72e>そういえば妙だな。
 いつもは さんざん押し問答して
-結局出ていっちまうのにな。"
-"e72e","<X1e>兵士<X04><RETN>"
+結局出ていっちまうのにな。","<CALLe72e>Well, that was unusually
+straightforward.
+
+<CALLe72e>Definitely unusual. Most of the
+time, he makes a huge fuss and
+gets out anyway."
+"e72e","<X1e>兵士<X04><RETN>","<X1e>Soldier<X04><RETN>"
 "e735","<X1e>パン屋<X04>
 <IF0001><JUMPe89b><SET0001>これは、セリオス王子さま。
 ちょうど今、パンが焼きあがった
@@ -62,18 +94,41 @@
 何を 考えているんでしょうね？<END>
 <LOCe89b>王子さま、王さまに なられたら
 私に 前の仕事を やることを
-お許しくださいね。"
+お許しくださいね。","<X1e>Baker<X04>
+<X120100><JUMPe89b><X140100>Oh, Prince Selios! I've just takensome bread out of the oven. Pleasehelp yourself.
+
+Making and selling bread is my
+livelihood now, but I used to run
+a weapon shop.
+
+I have no idea why, but I was
+suddenly instructed by that
+Achdam fellow to close up shop.
+
+What do you suppose he could
+have been thinking?<END>
+<LOCe89b>Perhaps, when your Highness
+becomes king, I might be permittedto return to my old occupation."
 "e8e7","<X1e>男<X04>
 あ、王子さま いらっしゃい。
 体を鍛えるためには 町の外に出て
 スライムいじめも いいですけど、
 
 岬の洞窟には入らないでくださいね。あそこには たいそう強い
-モンスターが おりますから。"
+モンスターが おりますから。","<X1e>Man<X04>
+Good morning, your Highness!
+If you need exercise, chasing the
+slimes outside town is fine.
+
+But please stay away from the 
+Headland Cave. There are very
+dangerous monsters in there."
 "e99e","<X1e>ファーガソン<X04>
 お、王子さま !!
 おらの 大事な 畑を 荒らさねーで
-くだせーまし。"
+くだせーまし。","<X1e>Ferguson<X04>
+Ahh, yer Highness!! Don't go
+a-trompin' through my fields, now!"
 "e9ec","<CH0>
 やあ、ファーガソン。
 この前 頼んでおいた 抜け道は
@@ -89,31 +144,61 @@
 
 <CH0>
 大丈夫、大丈夫。
-そんなことより 早く案内して。"
+そんなことより 早く案内して。","<CH0>
+Hey, Ferguson. Is that secret
+exit I asked you about ready?
+
+<X1e>Ferguson<X04>
+Yep. She's a-rightly done, yer
+Highness.
+
+But ya can't go a-lettin' ol'
+Lyas catch ya, y'hear?
+
+<CH0>
+Don't worry about it! Just show
+me where it is. Hurry!"
 "eae0","<X1e>ファーガソン<X04>
 王子さま ここで ごぜーます。
 ちょこっと お待ちになって
-くだせーまし。"
+くだせーまし。","<X1e>Ferguson<X04>
+Right, there's the spot. Beggin'
+yer Highness' pardon; she'll just
+be a min."
 "eb35","<X1e>ファーガソン<X04>
 王子さま さあどうぞ。
 このことは ライアスじいには
-内緒で ごぜーますよ。"
+内緒で ごぜーますよ。","<X1e>Ferguson<X04>
+There ya are, yer Highness!
+But, nary a whisper to ol' Lyas,
+if ya please."
 "eb8c","<CH0>
 ありがとう ファーガソン。
 
 <X1e>ファーガソン<X04>
 なんの、王子さまのためだったら
-おら なんでも しますだ。"
+おら なんでも しますだ。","<CH0>
+Thank you, Ferguson!
+
+<X1e>Ferguson<X04>
+None o' that! Can't go a-lettin'
+my Prince down, now can I?"
 "ebf0","<X1e>道具屋<X04>
 王子さま、こんな所で 遊んでいると
 そのうち ライアスじいが
-やって来ますよ。"
+やって来ますよ。","<X1e>Tool Merchant<X04>
+It won't take old Lyas long to
+find you hanging around here,
+your Highness."
 "ec44","<X1e>母親<X04>
 ま、王子さま。
-ごきげん うるわしゅうございます。"
+ごきげん うるわしゅうございます。","<X1e>Mother<X04>
+Prince Selios! How do you do?"
 "ec7c","<X1e>子供<X04>
 王子さま、ぼく 大きくなったら
-絶対に 王子さまの家来に なるからね。"
+絶対に 王子さまの家来に なるからね。","<X1e>Child<X04>
+I'll be your retainer when I
+grow up, your Highness!"
 "ecc6","<X1e>神父<X04>
 これは これは セリオス王子。
 ようこそ 我が教会へ。
@@ -126,4 +211,16 @@
 できません。
 
 お困りの時はいつでもご相談ください。ただし、お話を お聞きするだけで
-ございます。"
+ございます。","<X1e>Priest<X04>
+Oh, Prince Selios! Welcome to my
+church.
+
+We of the clergy act as confidantsto people through their worries
+and troubles.
+
+But, we can only be of help to
+those who speak with us.
+
+Come to us whenever you are
+troubled. And we will simply
+listen."

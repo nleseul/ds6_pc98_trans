@@ -1,21 +1,21 @@
-"f4da","エルアスタの町<RETN>"
-"f4e9"," ルディアの町 <RETN>"
-"f4f8","  クルスの村  <RETN>"
-"f507"," ベルガの鉱山 <RETN>"
-"f516","  ネリアの港  <RETN>"
-"f525","  ロンドの港  <RETN>"
-"f534"," ラルファの砦 <RETN>"
-"f543","マスクーンの町<RETN>"
-"f552"," リーゼルの町 <RETN>"
-"f561","  スエルの村  <RETN>"
-"f570","  アムダの村  <RETN>"
-"f57f","  ヨルドの港  <RETN>"
-"f58e"," ナッシュの町 <RETN>"
-"f59d","  セリスの町  <RETN>"
-"f5ac","バズヌーンの町<RETN>"
-"f5bb","   エメの町   <RETN>"
-"f5ca","  ルドラの港  <RETN>"
-"f5d9","  カウルの村  <RETN>"
+"f4da","エルアスタの町<RETN>","   Eluasta<RETN>"
+"f4e9"," ルディアの町 <RETN>","    Rudia<RETN>"
+"f4f8","  クルスの村  <RETN>"," Crus Village<RETN>"
+"f507"," ベルガの鉱山 <RETN>","  Belga Mine<RETN>"
+"f516","  ネリアの港  <RETN>"," Neria Harbor<RETN>"
+"f525","  ロンドの港  <RETN>"," Rondo Harbor<RETN>"
+"f534"," ラルファの砦 <RETN>"," Fort Larfa<RETN>"
+"f543","マスクーンの町<RETN>","   Maschun<RETN>"
+"f552"," リーゼルの町 <RETN>","    Riezel<RETN>"
+"f561","  スエルの村  <RETN>"," Suil Village<RETN>"
+"f570","  アムダの村  <RETN>"," Amda Village<RETN>"
+"f57f","  ヨルドの港  <RETN>"," Yold Harbor<RETN>"
+"f58e"," ナッシュの町 <RETN>","   Nashieu<RETN>"
+"f59d","  セリスの町  <RETN>","    Selis<RETN>"
+"f5ac","バズヌーンの町<RETN>","  Vasnune<RETN>"
+"f5bb","   エメの町   <RETN>","    E'me<RETN>"
+"f5ca","  ルドラの港  <RETN>","Rudra Harbor<RETN>"
+"f5d9","  カウルの村  <RETN>","Caur Village<RETN>"
 "f5e8","リシェールの港<RETN>"
 "f5f7"," ナスールの町 <RETN>"
 "f606","ファンガスの町<RETN>"
@@ -25,24 +25,24 @@
 "f642"," ギルモアの里 <RETN>"
 "f651"," ニルギドの城 <RETN>"
 "f660","  ラスタバン  <RETN>"
-"f66f"," ルディアの城 <RETN>"
-"f67e","   岬の洞窟   <RETN>"
-"f68d","  流血の洞窟  <RETN>"
-"f69c","  グエンの塔  <RETN>"
-"f6ab","  試練の洞窟  <RETN>"
-"f6ba","   王家の墓   <RETN>"
-"f6c9","  国境の洞窟  <RETN>"
-"f6e7","  カザミの塔  <RETN>"
-"f6f6","  風よけの穴  <RETN>"
+"f66f"," ルディアの城 <RETN>"," Rudia Castle<RETN>"
+"f67e","   岬の洞窟   <RETN>","Headland Cave<RETN>"
+"f68d","  流血の洞窟  <RETN>"," Bloody Cave<RETN>"
+"f69c","  グエンの塔  <RETN>","Tower of Guenn<RETN>"
+"f6ab","  試練の洞窟  <RETN>","Cave of Trials<RETN>"
+"f6ba","   王家の墓   <RETN>","  Royal Tomb<RETN>"
+"f6c9","  国境の洞窟  <RETN>"," Border Cave<RETN>"
+"f6e7","  カザミの塔  <RETN>"," Vane Tower<RETN>"
+"f6f6","  風よけの穴  <RETN>"," Lee Grotto<RETN>"
 "f705","    狼の口    <RETN>"
 "f714","   水晶の塔   <RETN>"
 "f723","ジャグリの廃坑<RETN>"
-"f732","  老夫婦の家  <RETN>"
-"f741","  オレアの家  <RETN>"
-"f750","  森の一軒家  <RETN>"
-"f75f","  ロエルの家  <RETN>"
-"f76e"," ミラルダの家 <RETN>"
-"f77d"," バーバラの家 <RETN>"
+"f732","  老夫婦の家  <RETN>"," Couple's Hut <RETN>"
+"f741","  オレアの家  <RETN>"," Orea's House <RETN>"
+"f750","  森の一軒家  <RETN>","  Forest Hut  <RETN>"
+"f75f","  ロエルの家  <RETN>"," Loell's Hut<RETN>"
+"f76e"," ミラルダの家 <RETN>","Miralda's Hut<RETN>"
+"f77d"," バーバラの家 <RETN>","Barbara's Hut<RETN>"
 "f78c","
 セリオスは ライアスたちを 助けに
 町へ 戻ろうとした。
@@ -57,4 +57,17 @@
 <X1e>セリオス<X04>
 そうだ !!
 一刻も早く ルディアの城に 行き
-兵士たちを 連れて 助けに戻ろう !!"
+兵士たちを 連れて 助けに戻ろう !!","Selios thought about going back
+to help Lyas and the others.
+
+But then he remembered Lyas's
+words.
+
+""A prince who will one day take
+the throne must think first of
+his own safety.""
+
+<X1e>Selios<X04>
+Okay! I'll get to Rudia as fast
+as I can, and then come back
+with soldiers to save them!"

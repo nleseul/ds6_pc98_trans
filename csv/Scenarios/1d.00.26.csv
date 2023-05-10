@@ -3,59 +3,98 @@
 はがねシリーズを そろえてみては
 いかがでしょうか？
 
+<RET_IL>","<X1e>Weapon merchant<X04>
+Welcome, Prince Selios!
+Can I interest you in a full
+set of steel equipment?
+
 <RET_IL>"
-"e17a","また来てくださいね。"
+"e17a","また来てくださいね。","Come again!"
 "e1ba","<X1e>道具屋<X04>
 これは セリオス王子さま。
 
 ワプの翼は いかがですか？
 気付けぐすりも いくつかあると
-心強いですよ。<RETN>"
-"e224","また来てくださいね。"
+心強いですよ。<RETN>","<X1e>Tool merchant<X04>
+Prince Selios! Welcome!
+
+Would you like any warp wings?
+Or a few smelling salts, for
+peace of mind?"
+"e224","また来てくださいね。","Come again!"
 "e246","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e26a","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e284","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e2a9","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e2c4"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e2f0","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e309","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e3a0","<X1e>兵士<X04>
 セリオス王子さまの おかげで
 この国も 救われました。
-どうも ありがとうございました。"
+どうも ありがとうございました。","<X1e>Soldier<X04>
+Our kingdom is saved, thanks to
+your Highness!"
 "e3fb","<X1e>女<X04>
 町に 戻ることが 出来て 本当に
 よかったわ。王子さま、あなたには
-心から 感謝いたします。"
+心から 感謝いたします。","<X1e>Woman<X04>
+I'm so glad we were able to come
+back to this town. Thank you so
+much, your Highness!"
 "e457","<X1e>男<X04>
 あなたたちが ヘルニルドを
 倒してくれた おかげで、外の
-モンスターも いなくなりました。"
+モンスターも いなくなりました。","<X1e>Man<X04>
+Ever since Helnild was defeated,
+the monsters outside town have
+disappeared."
 "e4b2","<X1e>男<X04>
 これは いらっしゃいませ。
 セリオス王子さま。
 
 あなたがたの おかげで この国も
 平和に なりました。
-本当に ありがとうございました。"
+本当に ありがとうございました。","<X1e>Man<X04>
+Prince Selios! Welcome!
+
+Wonliech is at peace again,
+thanks to your Highness!"
 "e537","<X1e>エリック<X04>
 おお、これは セリオス王子さま。
 
 この国を 救ってくださった
 英雄殿が わしの家に 来なさるとは
-いったい どうしたことじゃ？"
+いったい どうしたことじゃ？","<X1e>Erich<X04>
+Oh, Prince Selios! Welome!
+
+Whatever brings the savior
+of Wonliech to my house?"
 "e5b9","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."

@@ -39,10 +39,59 @@
 住んでいる。彼の所へ 行くがいい。
 彼なら なんらかの方法を 見いだしてくれるかも しれん。<END>
 <LOCe622><X1e>ジェストン<X04>
-この国を救えるのは、そなたたちしかおらん。頼むぞ。"
+この国を救えるのは、そなたたちしかおらん。頼むぞ。","<IF00a3><JUMPe622><SET00a3><X1e>Jestonn<X04>
+Selios... Felicia's son?
+My name is Jestonn.
+Felicia is my sister.
+
+<CH0>
+Oh, so you must be my uncle!
+I'm happy to see you're safe.
+Let me open this cell.
+
+<X1e>Jestonn<X04>
+It's no use. There's a powerful
+force that makes it impossible to
+unlocking it.
+
+The only way to open it is to
+defeat a monster called Helnild
+in the throne room upstairs.
+
+But the way upstairs is blocked
+by an invisible barrier.
+We can't do anything unless we
+deal with that.
+
+There is something strange about
+the barrier, though.
+
+My soldiers were thrown back by
+it no matter what they did, but
+nothing happened when I or my
+aide passed through it.
+
+And, of course, those stonemen
+can pass through freely.
+
+Some difference between us and
+the soldiers must hold the key
+to solving this puzzle.
+
+A sage named Loell lives
+northwest of the castle. If you
+seek him out, he may be able to
+see the answer.<END>
+<LOCe622><X1e>Jestonn<X04>
+Please do what you can.
+You are our only hope."
 "e71a","<X1e>兵士<X04>
 <SET00a4>むっ、お前は 何者だ？
 
 <CH0>
 ぼくは ファーレーン王国の
-セリオス王子です。"
+セリオス王子です。","<X1e>Soldier<X04>
+<SET00a4>Huh? Who's there?
+
+<CH0>
+I'm Prince Selios of Farleyn."

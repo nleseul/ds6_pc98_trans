@@ -1,19 +1,32 @@
-"dc30","アクダム<RET_IL>"
+"dc30","アクダム<RET_IL>","Achdam<RET_IL>"
 "ddac","<CH4>
 フッフッフッ、
 わしの力を 思い知るがよい !!
 
-<RET_IL>"
+<RET_IL>","<CH4>
+<CALL0001>
+Now, witness my power!!
+
+<RET_IL>
+<LOC0001>Heh heh heh...<RET_IL>"
 "dddc","<CH4>
 さてと、次はどいつの番だ !!
+
+<RET_IL>","<CH4>
+Who's next??
 
 <RET_IL>"
 "ddfc","<CH4>
 いよいよ、きさま一人になったな。
 すぐに、仲間のもとに送ってやる !!
 
+<RET_IL>","<CH4>
+Just you and me now!
+But you'll rejoin your friends
+soon enough!!
+
 <RET_IL>"
-"de43","<X02>はレスの根を使った。<X0a>"
+"de43","<X02>はレスの根を使った。<X0a>","<X02> uses a Res Root.<X0a>"
 "de59","<CH4>
 ウググ !!
 き、きさまら
@@ -21,15 +34,26 @@
 
 こうなっては しかたがない !!
 次は そう簡単には ゆかんぞ !!
-おぼえておれ !!<X0d>"
-"dedd","<X08>アクダムは逃げ出した。<RET_IL>"
-"def5","<X0a>"
+おぼえておれ !!<X0d>","<CH4>
+Urrgh!!
+Where did you find that spell?!
+
+Fine! You win this round!
+But it won't be so easy next time!Mark my words!!<X0d>"
+"dedd","<X08>アクダムは逃げ出した。<RET_IL>","<X08><CALLdc30> runs away.<RET_IL>"
+"def5","<X0a>","<X0a>"
 "df5e","<CH0>は戦いに敗れました。
-"
+","<CH0> was defeated."
 "df80","<X1e>アクダム<X04>
 フッフッフッ、愚か者め
 このわしから 逃げられるとでも
 思っているのか !!
 
-<RET_IL>"
-"dfd4","父のかたき アクダムとの対決だ !!<RET_IL>"
+<RET_IL>","<X1e><CALLdc30><X04>
+<CALL0001> idiot!
+You think I'd just let you run?!
+
+<RET_IL>
+<LOC0002>man who
+murdered your father<RET_IL>"
+"dfd4","父のかたき アクダムとの対決だ !!<RET_IL>","You confront <CALLdc30>, the <CALL0002>!!<RET_IL>"

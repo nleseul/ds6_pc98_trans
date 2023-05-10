@@ -10,40 +10,79 @@
 <X1e>兵士<X04>
 ここは ウォンリーク公国の砦だ。
 他国の者を入れるわけには ゆかん。
-帰れ !!"
-"e400","おーい、ここを開けてくれ。<RET_IL>"
-"e41b","ここを開けていただけませんか。<RET_IL>"
-"e43a","ファーレーンから 来ました。<RET_IL>"
-"e456","ファーレーンから まいりました。<RET_IL>"
+帰れ !!","<X116000><JUMPe376><X1e>Soldier<X04>
+Watch out!! It's dangerous
+out there!<END>
+
+<LOCe376><LEADERe400,e41b,e400,e400,e400>
+
+<X1e>Soldier<X04>
+Where're you people from?
+<PAGE>
+<LEADERe43a,e456,e476,e4b1,e43a>
+
+<X1e>Soldier<X04>
+This fort belongs to the Duchy of
+Wonliech! Foreigners aren't 
+allowed here. Go away!"
+"e400","おーい、ここを開けてくれ。<RET_IL>","Hey! Could you open the gate?<RET_IL>"
+"e41b","ここを開けていただけませんか。<RET_IL>","Do you suppose you could open
+this gate?<RET_IL>"
+"e43a","ファーレーンから 来ました。<RET_IL>","We're from Farleyn.<RET_IL>"
+"e456","ファーレーンから まいりました。<RET_IL>","We've come from Farleyn.<RET_IL>"
 "e476","はるばる ファーレーンから
-やって来たんだぜ、早く開けろよ。<RET_IL>"
-"e4b1","ファーレーンからだよ。<RET_IL>"
+やって来たんだぜ、早く開けろよ。<RET_IL>","We came all the way from Farleyn!
+So d'ya suppose you could hurry
+it up?<RET_IL>"
+"e4b1","ファーレーンからだよ。<RET_IL>","Farleyn!<RET_IL>"
 "e4c8","<X1e>兵士<X04>
 すごいなあ あんたたちは。
 あいつらを 倒してしまうとは ･ ･
 
 今、門を 開けるから ちょっと
-待ってくれ。"
+待ってくれ。","<X1e>Soldier<X04>
+Wow! That was amazing!
+You got all of them!
+
+We're opening the gate now! Just
+a second."
 "e533","<X1e>兵士<X04>
 <IF0077><JUMPe5bc><SET0077>奴らには 困っていたんだ。
 突然 襲ってきて この町の中に
 入ってこようとしたんだ。
 
 でも、もう大丈夫だ。
-ありがとう。"
+ありがとう。","<X1e>Soldier<X04>
+<X127700><JUMPe5bc><X147700>Those things were a real pain.
+They attacked suddenly and tried
+to force their way into the town.
+
+We shouldn't have any more 
+trouble now, though. Thanks
+to you!"
 "e5b5","<X1e>兵士<X04>
 <LOCe5bc>ラルファの砦へ ようこそ。
-歓迎するよ。"
+歓迎するよ。","<X1e>Soldier<X04>
+<LOCe5bc>Welcome to Fort Larfa!
+Make yourselves at home."
 "e5e3","<X1e>兵士<X04>
 あんたたちが 外のモンスターを
 倒してくれた人たちだな。
-ようこそ、ラルファの砦へ。"
+ようこそ、ラルファの砦へ。","<X1e>Soldier<X04>
+Aren't you the ones who took care
+of those monsters outside?
+Welcome to Fort Larfa!"
 "e63c","<X1e>兵士<X04>
 ここから 西へ行った所に
 マスクーンという町がある。
 
 あの町は まだモンスターには
-襲われて いないという話だ。"
+襲われて いないという話だ。","<X1e>Soldier<X04>
+If you go west of here, you'll
+find a town called Maschun.
+
+I haven't heard of any monster
+attacks there yet."
 "e6ae","<X1e>隊長<X04>
 <IF0099><JUMPe76e><SET0099><ASMe811>おお、お前たちか。
 外の モンスターどもを けちらして
@@ -58,10 +97,24 @@
 <LOCe76e><IF0408><JUMPe781><IF0408><JUMPe781><CLEAR0400><CALLe7c9><END>
 <LOCe781><SET0400>おお、
 ずいぶんと 疲れているようだな。
-ゆっくりと 休んでいくがいい。"
+ゆっくりと 休んでいくがいい。","<X1e>Captain<X04>
+<X129900><JUMPe76e><X149900><ASMe811>Oh, you must be the ones who
+dispersed the monsters outside.
+
+We were really in a pinch there.
+I'm grateful to you.
+
+I should do something to thank
+you. <CALLe7c9><X120804><JUMPe76a><X120804><JUMPe76a><X130004><END>
+<LOCe76a><X140004><END>
+<LOCe76e><X120804><JUMPe781><X120804><JUMPe781><X130004><CALLe7c9><END>
+<LOCe781><X140004>Oh, you look exhausted!
+Please, make yourselves at home."
 "e7c9","戦いに 疲れたときは いつでも
 来てくれ。
-ここを 宿屋代わりに使うといい。<RET_IL>"
+ここを 宿屋代わりに使うといい。<RET_IL>","Please come back whenever
+you're tired from battle. You can
+use this place as an inn.<RET_IL>"
 "e817","<X1e>兵士<X04>
 ここは ヨルドの港への 定期船の
 乗り場なんだが ･ ･ ･
@@ -71,15 +124,29 @@
 戻ってこないんだ。
 
 まさか ヨルドの港も モンスターに
-襲われて しまったのだろうか？"
+襲われて しまったのだろうか？","<X1e>Soldier<X04>
+The ship to Yold Harbor departs
+from here...
+
+But the ship hasn't returned sincethe last set of passengers from
+Yold boarded.
+
+I wonder if Yold was attacked by
+monsters too."
 "e8d9","<IF0099><JUMPe93a><X1e>道具屋<X04>
 いらっしゃいませ。
 ここは 道具の店ですが しばらく
 閉店しようと 思っているんです。<END>
-<LOCe93a>道具屋は 留守のようです。"
+<LOCe93a>道具屋は 留守のようです。","<X129900><JUMPe93a><X1e>Tool merchant<X04>
+Welcome! This is a tool shop.
+But I think I might close up soon.<END>
+<LOCe93a>The merchant doesn't seem to be
+here."
 "e954","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
 "e98c","<X1e>ポム<X04>
 <SET007c>やあ、あんたたち 砦を襲ってきた
 モンスターをやっつけたんだって、
@@ -105,16 +172,45 @@
 グエンの塔とは ここから北に行った
 マクネル島にあるんだ。
 まったく 灯台もと暗しとは
-このことだよ。"
+このことだよ。","<X1e>Pomm<X04>
+<X147c00>Hey, I hear you took care of thosemonsters attacking the fort.
+That's pretty amazing!
+
+My name's Pomm. I'm an adventurer
+from up north of Maschun.
+<PAGE>
+Have any of you ever heard of
+the spell called Sylis?
+<PAGE>
+<LEADEReb74,ebb5,ebf8,eb74,eb74>
+
+<X1e>Pomm<X04>
+I've been traveling all over the
+world looking for that spell.
+
+I was in Lanoura recently, and I
+heard from a traveling sage that
+it's in the Tower of Guenn.
+
+The Tower of Guenn is on the
+island of Machnel just north of
+here. Guess the spell was under mynose this whole time!"
 "eb74","ああ、いやという程ね。
 ちょっと前にサイレスを使う奴と
-戦ったよ。<RET_IL>"
+戦ったよ。<RET_IL>","I wish we hadn't!
+We fought a guy who used it not
+too long ago.<RET_IL>"
 "ebb5","ええ、ファーレーン王国で
 サイレスの呪文を使う悪人と
-戦いましたよ。<RET_IL>"
+戦いましたよ。<RET_IL>","Yes. We fought a villain who
+used the Sylis spell in Farleyn.<RET_IL>"
 "ebf8","ああ、ちょっと前に サイレスを
 使う奴と戦ったぜ。
 <PAGE>
 あの呪文を 使われたら、
 おれさまのフラムも まったく
-役たたずに なっちまったよ。<RET_IL>"
+役たたずに なっちまったよ。<RET_IL>","Yeah, we fought someone who
+used it not too long ago.
+<PAGE>
+When he used it, even my Flam
+spells were no more than a load offlim-flam!<RET_IL>"

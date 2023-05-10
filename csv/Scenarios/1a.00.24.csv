@@ -1,12 +1,16 @@
-"e1b8","<X0e>をもらいました。<RETN>"
+"e1b8","<X0e>をもらいました。<RETN>","Received the <X0e>.<RETN>"
 "e363","<X1e>兵士<X04>
 <IF00ad><JUMPe6c0>セリオス王子さまの おかげで
 このウォンリークは 救われました。
-ありがとう ございました。"
+ありがとう ございました。","<X1e>Soldier<X04>
+<IF00ad><JUMPe6c0>Thank you for saving Wonliech,
+Prince Selios!"
 "e3c8","<X1e>兵士<X04>
 <IF00ad><JUMPe6c0>セリオス王子さまの おかげで
 このウォンリークは 救われました。
-ありがとう ございました。"
+ありがとう ございました。","<X1e>Soldier<X04>
+<IF00ad><JUMPe6c0>Thank you for saving Wonliech,
+Prince Selios!"
 "e490","<X1e>隊長<X04>
 <IF00ad><JUMPe6c0><IF0408><JUMPe584><IF0409><JUMPe584><CLEAR0401>やあ、よく 戻ってこられましたな
 セリオス王子さま。
@@ -17,7 +21,19 @@
 
 知らぬこととはいえ ご無礼の数々
 お許しください。<END>
-<LOCe584>だいぶ お疲れのようで ございますねゆっくり お休みください。<SET0401>"
+<LOCe584>だいぶ お疲れのようで ございますねゆっくり お休みください。<SET0401>","<X1e>Captain<X04>
+<IF00ad><JUMPe6c0><IF0408><JUMPe584><IF0409><JUMPe584><CLEAR0401>
+Oh! Welcome back, Prince Selios!
+
+I received word from Riezel.
+I wish your Highness had informed
+me of your station earlier.
+
+Please forgive the many untoward
+things I must have said in my
+ignorance.<END>
+<LOCe584>You must be exhausted. Please
+rest here as long as you like.<SET0401>"
 "e5c3","<X1e>兵士<X04>
 <IF00ad><JUMPe6c0>これは これは セリオス王子さま
 <IF0102><JUMPe62f>ヨルドの港も モンスターに
@@ -31,10 +47,28 @@
 <LOCe6c0>セリオス王子さま、どちらに行かれていたのですか？
 
 王子が いなくなられたと、
-船では 大騒ぎだったんですよ。"
+船では 大騒ぎだったんですよ。","<X1e>Soldier<X04>
+<IF00ad><JUMPe6c0>Welcome, Prince Selios!
+<IF0102><JUMPe62f>I understand that Yold Harbor
+has been attacked by monsters?<END>
+<LOCe62f>The ship from Yold has
+finally returned.
+
+According to the captain,
+the monsters in Yold are gone
+thanks to someone in the
+Lanouran royal family.<END>
+<LOCe6c0>Where have you been, Prince
+Selios?
+
+Your Highness' disappearance
+caused a great deal of 
+commotion on the ship."
 "e729","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に お話しください。"
+私に お話しください。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
 "e765","<X1e>ソニア<X04>
 <IF0402><JUMPe7a8>王子 遅かったじゃない !!
 ずっと 待っていたのよ。
@@ -101,7 +135,72 @@
 
 <CH0>
 よーし、また ４人そろったところで
-ラヌーラに出発するか。"
+ラヌーラに出発するか。","<X1e>Sonia<X04>
+<IF0402><JUMPe7a8>You're late, Selios!
+I've been waiting a long time!
+<JUMPe7c0><LOCe7a8>Hello again, your Highness.<LOCe7c0>
+
+<CH0>
+S-Sonia?!
+What are you doing here?
+
+<X1e>Sonia<X04>
+I came to travel with you!
+You're chasing Achdam after
+he ran from Riezel, right?
+
+Duke Jestonn made contact with
+Queen Felicia after you saved
+Wonliech.
+
+He was concerned that he hadn't
+done enough to reward you yet.
+
+He thought your journey would
+be hard with only three people,
+so he wanted to send some
+soldiers with you.
+
+But, with Wonliech's manpower
+depleted, that seemed to be
+an unreasonable request.
+
+So he told Felicia that he'd
+like Farleyn to send someone
+skilled to join you.
+
+So, yours truly voluteered
+for the assignment. And I 
+came to Larfa to meet up
+with you.
+
+By the way, did something
+happen to Roh?
+
+<CH0>
+Traveling turned out to be too
+hard on him.
+<PAGE>
+<X1e>Sonia<X04>
+Well, I won't be wimping out like
+that. I may not be his equal with
+magic, but I can hold my own.
+
+<CH0>
+But... traveling with a girl...?
+
+<X1e>Sonia<X04>
+Are you complaining?
+<PAGE>
+...Didn't think so!
+Glad to be with you again.
+Now let's go get that jerk!
+
+<X1e>Sonia<X04><X1c> joins the party.<X0c0301><X04>
+
+<CH0>
+All right! Now that we're all
+here, we'll head to Lanoura!"
 "ec1b","<X1e>宝くじ屋<X04>
 <IF009f><JUMPed7f><IF0097><JUMPec95><SET0097>おや いらっしゃいませ。
 
@@ -119,4 +218,23 @@
 この宝くじは
 必ず当ると 評判なのですが ･ ･ ･。<END>
 <LOCed7f><SET0400>当選の発表まで、
-大切に 持っていてくださいね。"
+大切に 持っていてくださいね。","<X1e>Lottery merchant<X04>
+<IF009f><JUMPed7f><IF0097><JUMPec95><SET0097>Welcome, welcome!
+
+There wasn't much profit in
+the duplicate key business,
+so I decided to start a
+lottery.
+
+<LOCec95>Would you like a lottery ticket?
+<ASMedb1><IF0400><JUMPed31><X08>Thank you very much! The usual
+price would be 300 Gold, but I'll
+give you one for free to make up
+for the misunderstanding earlier.
+
+<RET_IL><LOCed31>I'm sorry to hear that.
+Our tickets are reputed to be
+certain winners...<END>
+<LOCed7f><SET0400>Make sure you hold on to your
+ticket until the results are
+announced!"

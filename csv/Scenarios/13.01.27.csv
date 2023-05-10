@@ -1,43 +1,70 @@
 "e229","<X1e>賢者<X04>
 わしは この国一の賢者じゃ。
-そなたたちに 呪文を授けよう。<X0d>"
-"e26a","<X08>どの 呪文が 欲しいのじゃな？<RETN>"
-"e288","誰の 呪文の書に 書き込むのじゃな？<RET_IL>"
-"e2ab","どこに 書き込むのじゃな？<RETN>"
-"e2c5","どれどれ、書き込むとしようか。<X0a>"
+そなたたちに 呪文を授けよう。<X0d>","<X1e>Sage<X04>
+I am the wisest sage in Farleyn.
+Shall I teach you any spells?<X0d>"
+"e26a","<X08>どの 呪文が 欲しいのじゃな？<RETN>","<X08>Which spell do you wish?<RETN>"
+"e288","誰の 呪文の書に 書き込むのじゃな？<RET_IL>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e2ab","どこに 書き込むのじゃな？<RETN>","Where shall I scribe it?<RETN>"
+"e2c5","どれどれ、書き込むとしようか。<X0a>","Do you wish me to scribe anything
+more?<X0a>"
 "e2fa","また、必要になったら
-いつでも 来るがよい。"
+いつでも 来るがよい。","Should you have any further needs,you may always come to me."
 "e3f2","<X1e>女<X04>
 ここは 調理場です。
 昼食は 王子さまの 大好きな
 ビーフシチューです。
 
 王子さまのために 腕に
-よりをかけて 料理いたします。"
+よりをかけて 料理いたします。","<X1e>Woman<X04>
+This is the kitchen. I'm making
+your Highness's favorite beef
+stew for lunch.
+
+For my Prince's sake, I'll work
+as hard as I can!"
 "e46f","<X1e>女<X04>
 階段の下は 食料の倉庫に
-なっております。"
+なっております。","<X1e>Woman<X04>
+Below here is the food
+storehouse."
 "e49d","<X1e>兵士<X04>
 おや、セリオス王子。
-町へ お出かけですか？"
+町へ お出かけですか？","<X1e>Soldier<X04>
+Your Highness! Are you leaving?"
 "e4cf","<X1e>兵士<X04>
 王子の おかげで ベルガの鉱山も
-活気を 取り戻してきたそうです。"
+活気を 取り戻してきたそうです。","<X1e>Soldier<X04>
+Thanks to your Highness, Belga
+Mine is thriving again."
 "e515","<X1e>兵士<X04>
 ここは 地下牢への 入口です。
 中に入られても おもしろいものは
-何も ございませんよ。"
+何も ございませんよ。","<X1e>Soldier<X04>
+This is the entrance to the
+dungeon. It's probably nothing
+of interest to your Highness."
 "e56f","<X1e>兵士<X04>
 これは、王子さま。
-この 財宝室に 何か ご用ですか？"
+この 財宝室に 何か ご用ですか？","<X1e>Soldier<X04>
+Does your Highness need something
+from the treasure room?"
 "e5a9","<X1e>兵士<X04>
 これは セリオス王子。
-お元気そうで 何よりです。"
+お元気そうで 何よりです。","<X1e>Soldier<X04>
+I'm pleased to see that your
+Highness is well."
 "e5e0","<X1e>兵士<X04>
 アクダムが 逃げてしまったら
 あのモンスターどもも
-姿を 消してしまったようです。"
+姿を 消してしまったようです。","<X1e>Soldier<X04>
+When Achdam fled the kingdom,
+all the monsters seemed to
+disappear too."
 "e636","<X1e>兵士<X04>
 かつて アクダムのもとに いた
 兵士たちは すべて 農民に
-なったそうです。"
+なったそうです。","<X1e>Soldier<X04>
+All the soldiers who were with
+Achdam have taken up farming now."

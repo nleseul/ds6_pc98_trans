@@ -1,9 +1,11 @@
-"dc30","バラムＡ<RET_IL>"
-"dc70","バラムＢ<RET_IL>"
-"dcb0","バラムＣ<RET_IL>"
-"ddd8","幸運の女神に見放されたバラムたちが現れた。<RETN>"
-"de03","は幅広の剣で斬りかかった !!<X0a>"
-"de1f","<X08><X02>は逃げ出した。<RET_IL>"
-"de30","<X0a>"
+"dc30","バラムＡ<RET_IL>","Baram A<RET_IL>"
+"dc70","バラムＢ<RET_IL>","Baram B<RET_IL>"
+"dcb0","バラムＣ<RET_IL>","Baram C<RET_IL>"
+"ddd8","幸運の女神に見放されたバラムたちが現れた。<RETN>","Lady Luck has forsaken the
+barams who stand before you.<RETN>"
+"de03","は幅広の剣で斬りかかった !!<X0a>"," slices with its broadsword!<X0a>"
+"de1f","<X08><X02>は逃げ出した。<RET_IL>","<X08><X02> runs away.<RET_IL>"
+"de30","<X0a>","<X0a>"
 "de31","<X02>はＨＰを回復させて
-戻ってきた !!<X0a>"
+戻ってきた !!<X0a>","<X02> returns, with its HP
+restored!<X0a>"

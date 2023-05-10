@@ -1,19 +1,30 @@
 "e258","<X1e>男<X04>
 ここは 我々に 任せて
-早く アクダムの もとへ !"
+早く アクダムの もとへ !","<X1e>Man<X04>
+We'll take care of things here.
+Get to Achdam!"
 "e28b","<X1e>リュナン<X04>
 王子 !
-アクダムの 所へ 急ぎましょう !!"
+アクダムの 所へ 急ぎましょう !!","<X1e>Runan<X04>
+We should find Achdam quickly,
+your Highness!"
 "e2bd","<X1e>ロー<X04>
 てめぇが もたもた してるから
 ビリに なっちまっただろ !!
-グズ !!"
+グズ !!","<X1e>Roh<X04>
+You'll be the rotten egg if you
+dilly-dally here! C'mon!"
 "e304","<X1e>兵士<X04>
 うるさい !
-１対１で 戦わせろ !!"
+１対１で 戦わせろ !!","<X1e>Soldier<X04>
+Outta the way! This is a
+1-on-1 fight!"
 "e32b","<X1e>兵士<X04>
- ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･"
+ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･","<X1e>Soldier<X04>
+... ... ..."
 "e355","<X1e>ソニア<X04>
 ここは 私たちに 任せて
 早く アクダムの 所へ
-行ってください。<SET0400>"
+行ってください。<SET0400>","<X1e>Sonia<X04>
+We'll take care of things out
+here. You need to find Achdam!<X140004>"

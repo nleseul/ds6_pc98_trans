@@ -1,10 +1,13 @@
-"dc30","フクロウＡ<RET_IL>"
-"dc70","フクロウＢ<RET_IL>"
-"dcb0","ｷｬﾘｵﾝ ｸﾛｰﾗｰA<RET_IL>"
-"dcf0","ｷｬﾘｵﾝ ｸﾛｰﾗｰB<RET_IL>"
-"ddb5","フクロウが現れた。<RETN>"
+"dc30","フクロウＡ<RET_IL>","Owl A<RET_IL>"
+"dc70","フクロウＢ<RET_IL>","Owl B<RET_IL>"
+"dcb0","ｷｬﾘｵﾝ ｸﾛｰﾗｰA<RET_IL>","<CALL0001> A<RET_IL>"
+"dcf0","ｷｬﾘｵﾝ ｸﾛｰﾗｰB<RET_IL>","<CALL0001> B<RET_IL>"
+"ddb5","フクロウが現れた。<RETN>","An owl appears!<RETN>"
 "ddc8","フクロウの群れが現れた。
-ｷｬﾘｵﾝ ｸﾛｰﾗｰの群れが現れた。<RETN>"
+ｷｬﾘｵﾝ ｸﾛｰﾗｰの群れが現れた。<RETN>","A flock of owls and a nest of
+carrion crawlers appear!<RETN>"
 "ddfd","は 毒を吐いた｡<X0a>
-<CONT><X02>は 毒におかされた！<X0a>"
-"de21","は触手を伸ばした。<X0a>"
+<CONT><X02>は 毒におかされた！<X0a>"," spits poison!<X0a>
+<CONT><X02> is afflicted by poison.<X0a>"
+"de21","は触手を伸ばした。<X0a>"," extends a
+tentacle.<X0a><LOC0001>Carrion Crawler<RET_IL>"

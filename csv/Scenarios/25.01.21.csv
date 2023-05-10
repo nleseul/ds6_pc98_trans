@@ -90,7 +90,105 @@
 ばばの力を お見せしましょうぞ。
 
 <X1c>バーバラはワプ２の呪文を唱えました。<X04><WAIT>
-<ASM_NORETe887>"
+<ASM_NORETe887>","<IF0101><JUMPe11e><X1e>Barbara<X04>
+What business do you have here?
+Run along, before you incur the
+wrath of the Dragon!<END>
+<LOCe11e><IF0148><JUMPe627><SET0148><LEADERea54,eae1,ea54,ec3b,ebc2>
+
+<X1e>Barbara<X04>
+M-Monsters? G-Gathering in the
+Sanctum?!
+A truly dreadful omen.
+
+The Sanctum is the source of
+Freya's power. The world is Her
+creation, and all blessings
+we have received come from Her.
+
+The Goddess' servant, the Lord
+Joshua, sends the cosmic power
+from the heavens above us
+unto Her.
+
+And it is at the Sanctum where
+Freya receives that cosmic power.
+
+Those monsters must have gathered
+there to take that power! If they
+obtain it, it would mean the end
+of the world!
+
+I-If only I could enter the
+Dragonsegg, inform Lord Joshua of
+the danger, and entreat him to
+stop sending the cosmic power...
+
+<LEADERecaa,ecc6,ecaa,ecdf,ecfb>
+
+<X1e>Barbara<X04>
+Yes, every year I enter the
+Dragonsegg during Dragonsfete.
+But now, I cannot.
+
+<LEADERed49,ed67,ed49,ed88,edc6>
+
+<X1e>Barbara<X04>
+Sigh... This is something you mustnot tell anyone. It is a secret myfamily has kept for generations.
+
+To enter a Dragonsegg requires a
+jewel called the <CALL0001>.
+
+But because I could not pay last
+year's taxes, that damned fool
+Liston confiscated the Dragon
+Tear from me.
+
+Only when the <CALL0001> is
+returned to me can I enter
+the Dragonsegg.
+
+<LEADERede6,ee52,ede6,eebf,ef3d>
+
+<X1e>Barbara<X04>
+Liston is usually in Selis Castle.
+
+With monsters occupying Selis,
+I expect he has returned to
+his own manor in Nashieu.<END>
+<LOCe627><X1e>Barbara<X04>
+<IF0408><JUMPe63e><IF_NOT0409><JUMPe6a6><LOCe63e>Oh, you seem quite tired. Let
+me take care of that.
+
+<X1c>Barbara casts the spell of Res5.<X0c0901><X04>
+
+<ASM70c5><LOCe6a6><IF0149><JUMPe890><IF0112><JUMPe6e2>Now get my <CALL0001> back
+as soon as possible!<END>
+<LOCe6e2>A while ago, one of Liston's men
+came here with the <CALL0001>. 
+Now we can enter the Dragonsegg.
+
+Shall we go?
+
+<CH1>
+B-Barbara... As much as you wish
+to go, with all the monsters...
+I-It's quite dangerous outside.
+
+So I'm not sure it's such a
+good idea for you to come...
+
+<X1e>Barbara<X04>
+Oh, Prince Aerion. Looking out
+for a poor old lady, are you?
+
+But getting to the Dragonsegg is
+a trifling matter.
+Let me show you the strength
+that comes with age!
+
+<X1c>Barbara casts the spell of Warp2.<X04><WAIT>
+<ASM_NORETe887><LOC0001>Dragon Tear<RET_IL>"
 "e890","エリオンさま、このばばから
 ひとつ、お願いが ございます。
 
@@ -108,13 +206,37 @@
 お怒りに触れ 世界は滅亡して
 しまうやも しれませぬ。
 
-くれぐれも お忘れなきよう。"
+くれぐれも お忘れなきよう。","I have only one request for
+you, Prince Aerion.
+
+Never reveal the secret of the
+Dragon Tear, or the way of
+entering a Dragonsegg.
+
+The Dragonseggs are sacred
+places where Lord Joshua's
+will is revealed.
+
+If it were known that anyone can
+enter with only the Dragon Tear,
+then they might be beset by
+any miscreant.
+
+If that should happen, then the
+Goddess or Lord Joshua might
+destroy our world in rage.
+
+Never, ever forget this."
 "ea54","あなたが バーバラさん？
 
 ヨルドにいる バケモノのことだけど
 あなただったら 奴らが あの聖域と
 いう所に 集まるわけを 知ってると
-聞いたんだけど。<RET_IL>"
+聞いたんだけど。<RET_IL>","Are you Barbara?
+
+We've heard that you might know
+why monsters are gathering in
+a place called the Sanctum.<RET_IL>"
 "eae1","バーバラ、お久しぶりです。
 
 <X1e>バーバラ<X04>
@@ -126,44 +248,82 @@
 
 あなたでしたら 奴らが あの聖域に
 集まるわけを ご存じと 思いまして
-やってまいりました。<RET_IL>"
+やってまいりました。<RET_IL>","Hello again, Barbara.
+
+<X1e>Barbara<X04>
+By the gods! If it isn't Prince
+Aerion! What brings your Highness
+here?
+
+<CH1>
+I've come about the monsters in
+Yold.
+
+We came to see if you might know
+why they would be gathering in
+the Sanctum.<RET_IL>"
 "ebc2","あなたが バーバラさんね？
 
 ヨルドにいる バケモノのことだけど
 なぜ 奴らは あの聖域という所に
-集まるのか 知ってるんでしょ？<RET_IL>"
+集まるのか 知ってるんでしょ？<RET_IL>","<JUMPea54>"
 "ec3b","あんたが バーバラか？
 
 ヨルドにいる バケモノだけどよ
 なんで 奴らが 聖域って所に
-集まるのか 知ってるんだってな？<RET_IL>"
-"ecaa","<CALLed14>いるそうじゃないですか。<RET_IL>"
+集まるのか 知ってるんだってな？<RET_IL>","You Barbara?
+
+We heard you might know somethin'
+about the monsters in Yold
+messin' around in some place
+called the Sanctum.<RET_IL>"
+"ecaa","<CALLed14>いるそうじゃないですか。<RET_IL>","<CALLed14>I thought you entered it every
+year during Dragonsfete.<RET_IL>"
 "ecc6","<CALLed14>いるじゃ
-ないですか。<RET_IL>"
-"ecdf","<CALLed14>いるそうじゃないですか。<RET_IL>"
+ないですか。<RET_IL>","<CALLed14>But surely you enter the
+Dragonsegg each Dragonsfete.<RET_IL>"
+"ecdf","<CALLed14>いるそうじゃないですか。<RET_IL>","<CALLed14>I thought you entered it every
+year during Dragonsfete.<RET_IL>"
 "ecfb","<CALLed14>るって
-話じゃねえか。<RET_IL>"
+話じゃねえか。<RET_IL>","<CALLed14>Thought you went in there
+every single year.<RET_IL>"
 "ed14","入れれば？ 毎年 竜の祭の時に
-お告げをもらいに 入って<RET_IL>"
-"ed49","なぜ、今は 入れないんですか？<RET_IL>"
-"ed67","いったい どうしたと いうんです？<RET_IL>"
+お告げをもらいに 入って<RET_IL>","""Could enter""?<RETN>"
+"ed49","なぜ、今は 入れないんですか？<RET_IL>","So why can't you do it now?<RET_IL>"
+"ed67","いったい どうしたと いうんです？<RET_IL>","And why might that be?<RET_IL>"
 "ed88","なんで、今は だめなんだ。
-まさか、いんちきじゃ ねえだろうな。<RET_IL>"
-"edc6","なぜ、今は 入れないのでしょう？<RET_IL>"
+まさか、いんちきじゃ ねえだろうな。<RET_IL>","So why not now? There somethin'
+you ain't tellin' us?<RET_IL>"
+"edc6","なぜ、今は 入れないのでしょう？<RET_IL>","<JUMPed49>"
 "ede6","わかりました。
 なんとか、取り戻してきましょう。
 
-ところで そのリストンと いう人にはどこに行けば 会えますか？<RET_IL>"
+ところで そのリストンと いう人にはどこに行けば 会えますか？<RET_IL>","All right. We'll get it back
+somehow.
+
+So where can we find this Liston
+person?<RET_IL>"
 "ee52","わかりました。では、私が
 リストン伯爵と 話してみましょう。
 
 ところで、リストン伯爵は
-今 どこに いるのですか？<RET_IL>"
+今 どこに いるのですか？<RET_IL>","Very well. I will speak with
+Count Liston, then.
+
+Where might we find the Count
+nowadays?<RET_IL>"
 "eebf","わかった このおれさまが
 そのリストンとか いう奴から
 取り戻してきてやるぜ。
 
-ところで そのリストンとか いう奴はどこにいるんだ？<RET_IL>"
+ところで そのリストンとか いう奴はどこにいるんだ？<RET_IL>","Right. I'll go get it back from
+that Liston guy for you.
+
+So where can I find 'im?<RET_IL>"
 "ef3d","おばあさん、私にまかせてください。必ず 取り戻してみせますわ。
 
-ところで、そのリストンとおっしゃる方には、どこに 行けば 会えますか？<RET_IL>"
+ところで、そのリストンとおっしゃる方には、どこに 行けば 会えますか？<RET_IL>","Okay, leave it to me! I'm sure we
+can get it back for you.
+
+Where can we go to find this
+Liston?<RET_IL>"

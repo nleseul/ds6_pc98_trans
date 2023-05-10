@@ -1,9 +1,11 @@
-"e1d9","<X08>どの 呪文が 欲しいのじゃ？<RETN>"
-"e1f5","誰の 呪文の書に 書き込むのじゃな？<RET_IL>"
-"e218","どこに 書き込むのじゃな？<RETN>"
-"e232","どれどれ、書き込むとしようか。<X0a>"
+"e1d9","<X08>どの 呪文が 欲しいのじゃ？<RETN>","<X08>Which spell do you wish?<RETN>"
+"e1f5","誰の 呪文の書に 書き込むのじゃな？<RET_IL>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e218","どこに 書き込むのじゃな？<RETN>","Where shall I scribe it?<RETN>"
+"e232","どれどれ、書き込むとしようか。<X0a>","Do you wish me to scribe anything
+more?<X0a>"
 "e267","また、必要になったら
-いつでも 来るがよい。"
+いつでも 来るがよい。","Should you have any further needs,you may always come to me."
 "e3a8","<IF0112><JUMPe84d><IF0110><JUMPe5c6><SET0110><CH1>
 ジェルマン兄さん !!
 <PAGE>
@@ -35,6 +37,40 @@
 リストン、人々から 取り上げた物を
 返してこい。<WAIT>
 今すぐだ、早くしろ !!
+
+<ASMe5bb><RET_IL>","<IF0112><JUMPe84d><IF0110><JUMPe5c6><SET0110><CH1>
+Jelman!
+<PAGE>
+<X1e>Jelman<X04>
+Aerion?! Is that you?
+When did you come back to
+Lanoura?
+
+<CH1>
+I've just arrived.
+But more importantly, Jelman,
+what have you been doing?
+
+I understand you've been levying
+heavy taxes, and seizing property
+from those unable to pay?
+
+<X1e>Jelman<X04>
+W-What?
+I had no idea!!
+
+O-Of course! Liston must
+have done that on his own!
+
+<X1e>Liston<X04>
+I-I... Your Highness...
+<X1e>Jelman<X04>
+Ahem... Liston!
+
+Don't disgrace yourself with
+excuses! Go return all the
+property you've seized!<WAIT>
+Go, Liston! Immediately!
 
 <ASMe5bb><RET_IL>"
 "e5c6","<SET0112><X1e>ジェルマン<X04>
@@ -71,10 +107,49 @@
 あのバケモノどもは どうすれば
 いなくなるのだろう？
 このままでは ラヌーラ王国は
-滅びてしまう。"
+滅びてしまう。","<SET0112><X1e>Jelman<X04>
+I knew the Count was trouble!
+
+<CH1>
+I'm your little brother, Jelman.
+Please don't lie to me.
+
+Even with the taxes so high,
+I haven't seen any changes in the
+kingdom. So what was the money
+used for?
+
+Even I can see that there was
+no cause for it except your
+own avarice.
+
+It all went to Count Liston's
+coffers, and yours. For example,
+this manor seems to have grown
+a great deal since I saw it last.
+
+<X1c>From there, Runan launched into
+a lecture.<X04>
+
+So are you ready to make amends
+now?
+
+<X1e>Jelman<X04>
+Uhh...
+
+I'll give Liston's wealth, and
+mine, to the kingdom, to apologizeto the people. But there is still
+one problem left.
+
+What are we going to do about
+those monsters? There's not going
+to be any kingdom left at this
+rate!"
 "e84d","<X1e>ジェルマン<X04>
 いつになったら バケモノが
-いなくなるのだろう？"
+いなくなるのだろう？","<X1e>Jelman<X04>
+How long is it going to be until
+the monsters are gone?"
 "e889","<X1e>リストン<X04>
 <IF0400><JUMPe968><SET0400>お前たち、いくら 税を負けてくれ
 と言っても 無駄じゃぞ。
@@ -91,36 +166,75 @@
 <X1e>リストン<X04>
 <LOCe968>エ、エリオンさま。
 わ、私に ･ ･ ･
-や、やましいことなど ･ ･ ･ 。"
+や、やましいことなど ･ ･ ･ 。","<X1e>Liston<X04>
+<IF0400><JUMPe968><SET0400>I can't give you a tax exemption,
+no matter how much you ask.
+...Huh?!
+
+It can't be...
+Prince Aerion?!
+
+<CH1>
+Indeed.
+You seem flustered, Count Liston.
+Guilty conscience, perhaps?
+
+<X1e>Liston<X04>
+<LOCe968>P-Prince Aerion...
+G-Guilty...?
+I... I..."
 "e9a8","<X1e>リストン<X04>
 お、お前たちも 一緒に来い。
 
 <X1e>兵士たち<X04>
-は、はい。"
+は、はい。","<X1e>Liston<X04>
+You two! Come with me!
+
+<X1e>Soldiers<X04>
+Y-Yes, sir!"
 "e9e5","<X1e>兵士<X04>
 あちらに いらっしゃるのが
 ジェルマンさまだ。
-決して 礼を失しては ならんぞ。"
+決して 礼を失しては ならんぞ。","<X1e>Soldier<X04>
+You are in the presence of
+his Highness, Prince Jelman.
+So mind your manners."
 "ea38","<X1e>兵士<X04>
 ジェルマンさまと お話をするときは
 決して 顔を上げては ならんぞ。
-必ず うつむいて 話すのだ。"
+必ず うつむいて 話すのだ。","<X1e>Soldier<X04>
+You are not to look Prince Jelman
+in the eyes when he addresses you.Keep your eyes downcast."
 "ea9b","<X1e>兵士<X04>
 税の代わりに 取られた物を
-返してほしいのか？"
+返してほしいのか？","<X1e>Soldier<X04>
+Are you here to reclaim an
+impounded item?"
 "eacf","<X1e>兵士<X04>
 この間 バーバラばあさんの家から
 いろいろな物を 取り上げたんだ。
-バチが当らなければ いいけど ･ ･ ･"
+バチが当らなければ いいけど ･ ･ ･","<X1e>Soldier<X04>
+We've seized a number of things
+from old Barbara's house lately.
+I hope the gods won't be angry..."
 "eb38","<X1e>兵士<X04>
 <LOCeb3f>リストンさまは 今 接客中だ。
-税の話なら また今度にしてくれ。"
+税の話なら また今度にしてくれ。","<X1e>Soldier<X04>
+<LOCeb3f>Count Liston is currently with
+a guest. If it's about taxes,
+come back later."
 "eb7c","<X1e>兵士<X04>
 <IF0111><JUMPebf2><IF_NOT00f0><JUMPeb3f><IF_NOT0148><JUMPeb3f><IF_NOT0108><JUMPeb3f><IF_NOT0109><JUMPeb3f><SET0111>なに？ バーバラばあさんの使い？
 そうか リストンさまは この中に
 いらっしゃる。<END>
 <LOCebf2>いちいち 言わなくても 知ってるよ
-バーバラばあさんの使いだろ。"
+バーバラばあさんの使いだろ。","<X1e>Soldier<X04>
+<IF0111><JUMPebf2><IF_NOT00f0><JUMPeb3f><IF_NOT0148><JUMPeb3f><IF_NOT0108><JUMPeb3f><IF_NOT0109><JUMPeb3f><SET0111>What? Old Barbara sent you?
+Very well. Count Liston is
+inside.<END>
+<LOCebf2>You don't have to say any more
+about it. It's a message from
+Barbara, right?"
 "ec30","<X1e>兵士<X04>
 あんたたち 竜の卵に 近づくと
 竜の怒りに 触れるということは
@@ -129,7 +243,15 @@
 ヨルドの港の 聖域に近づいても
 竜の怒りに 触れるんだ。
 町の人の話だと 稲妻が走って
-黒こげに なってしまうんだと。"
+黒こげに なってしまうんだと。","<X1e>Soldier<X04>
+Have you heard that if you go
+near a Dragonsegg, you'll 
+provoke the wrath of the Dragon?
+
+It's true of the Sanctum in Yold
+Harbor too. According to the
+townspeople, you get hit by
+lightning and fried there."
 "ecef","<X1e>兵士<X04>
 あんたたち 竜の卵を 知ってるか？
 
@@ -142,12 +264,28 @@
 
 見回りが 終わったら
 バーバラばあさんの所に 行って
-相談してみよう。"
+相談してみよう。","<X1e>Soldier<X04>
+Have you heard of Dragonseggs?
+
+You should stay away from them,
+or you'll provoke the wrath of
+the Dragon.
+
+Hmm. I wonder if there are so
+many monsters now because someone
+angered the Dragon?
+
+I should go ask Barbara about it
+when my watch ends."
 "eddb","<X1e>兵士<X04>
 なんだ お前たちは？
 <PAGE>
 そうか 税が払えなくて
-兵士になりに 来たのだな？"
+兵士になりに 来たのだな？","<X1e>Soldier<X04>
+What do you want?
+<PAGE>
+You're not here to pay taxes?
+So you came to enlist, then?"
 "ee27","<X1e>兵士<X04>
 この町の南には 竜の祭の司祭である
 バーバラばあさんの家があるんだ。
@@ -157,17 +295,38 @@
 触れてしまうらしい。
 
 でも バーバラばあさんだけは
-大丈夫なんだ。"
+大丈夫なんだ。","<X1e>Soldier<X04>
+An old woman named Barbara, who
+leads the Dragonsfete ceremony,
+lives in a house south of here.
+
+According to Barbara, you'll
+provoke the wrath of the Dragon
+if you get close too a Dragonsegg.
+
+But Barbara herself seems to be
+safe."
 "eeea","<X1e>兵士<X04>
 この国では 年に一度 竜の祭という
 お祭りがあるんだ。
 
 その時に バーバラばあさんという
 司祭さまが 竜の卵に入っていって
-竜のお告げを 聞いてくるんだ。"
+竜のお告げを 聞いてくるんだ。","<X1e>Soldier<X04>
+Our kingdom has a festival called
+the Dragonsfete once a year.
+
+During the festival, an old
+priestess named Barbara enters
+the Dragonsegg and hears the
+voice of the Dragon."
 "ef83","<X1e>賢者<X04>
 わしは リストンさまに呼ばれて
 来ておるのじゃ。
 あなたがたにも 呪文を授けよう。
+
+<RET_IL>","<X1e>Sage<X04>
+I was called here by Count Liston.But I can teach spells to you as
+well.
 
 <RET_IL>"

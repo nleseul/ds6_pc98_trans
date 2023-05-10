@@ -1,14 +1,22 @@
 "e180","       第３章　国王のあかし<N>
 
                 完
-"
+","  Chapter III: The Mark of Kings<N>
+
+               FIN"
 "e1b1","ラヌーラ王国の モンスターは すべて逃げ出した。
-ラヌーラ王国を解放しました。<X0d>"
+ラヌーラ王国を解放しました。<X0d>","The monsters have all fled, and
+the Kingdom of Lanoura is
+liberated!<X0d>"
 "e341","<X1e>フラート<X04>
 <IF0405><JUMPe36d><SET0405>うわっ<WAIT>
 びっくりしたな。
 
-<LOCe36d>エリオン この下は バケモノだらけでわしには とても 逃げられん。"
+<LOCe36d>エリオン この下は バケモノだらけでわしには とても 逃げられん。","<X1e>Flart<X04>
+<IF0405><JUMPe36d><SET0405>Yipes!!<WAIT>
+You startled me!
+
+<LOCe36d>Aerion, there're too many monstersout there! I couldn't get away!"
 "e3ac","<LEADERe5ff,e62b,e5ff,e660,e685>
 
 <CALLeb84>はっ はっ はっ
@@ -49,48 +57,111 @@
 <LEADERe7f4,e809,e7f4,e828,e83d>
 <X0e><X1c>を 投げつけた !!<X04>
 
+<RET_IL>","<LEADERe5ff,e62b,e5ff,e660,e685>
+
+<CALLeb84>Ha ha ha!
+My name is Guliges.
+
+Have you children brought me
+the Gilmoran Star?
+
+<LEADERe6bc,e6ed,e6bc,e723,e754>
+
+<CALLeb84>No!! First, the Star!
+
+<LEADERe780,e780,e780,e780,e780>
+... ... ...
+<PAGE>
+<CALLeb84>What is it?! Do it, now!
+
+<CALLeb91>Don't give it to him!!
+It's an artifact from ancient
+times!
+
+It's said that whoever holds the
+Star can utterly destroy
+everything!!
+
+I-I think he knows how to use it!!
+
+<CALLeb84>A man of far too many words!
+I'll close your mouth
+permanently!!
+
+<LEADERe781,e79d,e781,e7ba,e7d8>
+
+<CALLeb84>Then you had best do so quickly.
+
+Now, throw the Star to me!
+
+<LEADERe7f4,e809,e7f4,e828,e83d>
+<X1c>Hurled the <X0e><X1c>!!<X04>
+
 <RET_IL>"
 "e5ff","お前だな !!
-ここの バケモノどもの ボスは !!<RET_IL>"
+ここの バケモノどもの ボスは !!<RET_IL>","You're the one in charge of these
+monsters!<RET_IL>"
 "e62b","き、きさまだな !!
-この国を荒らす 怪物どものボスは !!<RET_IL>"
+この国を荒らす 怪物どものボスは !!<RET_IL>","You must be the one controlling
+the monsters ravaging this
+kingdom.<RET_IL>"
 "e660","てめーか !!
-バケモノどもの 親玉は !!<RET_IL>"
+バケモノどもの 親玉は !!<RET_IL>","You're the big boss here, huh?<RET_IL>"
 "e685","あなたね !! この美しい国を
-荒らす 怪物たちの ボスは !!<RET_IL>"
+荒らす 怪物たちの ボスは !!<RET_IL>","You! You're the one letting the
+monsters destroy this beautiful
+kingdom!<RET_IL>"
 "e6bc","持ってきたとも !!
-さあ、フラート王を 解放しろ !!<RET_IL>"
+さあ、フラート王を 解放しろ !!<RET_IL>","Of course!
+Now release King Flart!!<RET_IL>"
 "e6ed","もちろん 持ってきた。
-フラート王を 解放してもらおう。<RET_IL>"
+フラート王を 解放してもらおう。<RET_IL>","Yes. Here it is.
+Now release King Flart!<RET_IL>"
 "e723","ったりめーだ !!
-早くフラート王を 解放しやがれ !!<RET_IL>"
+早くフラート王を 解放しやがれ !!<RET_IL>","Right here!
+So you'd better let that King go!<RET_IL>"
 "e754","持ってきたわ !!
-フラート王を 解放しなさい !!<LOCe780><RET_IL>"
-"e781","ま、待ってくれ !! 今 渡す。<RET_IL>"
-"e79d","お待ちなさい。渡しましょう。<RET_IL>"
-"e7ba","ま、待て !! い、今 渡すから。<RET_IL>"
-"e7d8","ま、待って !! 今 渡します。<RET_IL>"
-"e7f4","わかった、受け取れ。<RET_IL>"
-"e809","わかりました。受け取りなさい。<RET_IL>"
-"e828","ほらよ、受け取りな。<RET_IL>"
-"e83d","わかったわ、受け取りなさい。<RET_IL>"
+フラート王を 解放しなさい !!<LOCe780><RET_IL>","We have it!
+Let King Flart go!<LOCe780><RET_IL>"
+"e781","ま、待ってくれ !! 今 渡す。<RET_IL>","W-Wait! We'll give it to you.<RET_IL>"
+"e79d","お待ちなさい。渡しましょう。<RET_IL>","Don't! We'll give you the Star.<RET_IL>"
+"e7ba","ま、待て !! い、今 渡すから。<RET_IL>","W-Wait! We'll hand it over.<RET_IL>"
+"e7d8","ま、待って !! 今 渡します。<RET_IL>","W-Wait! We'll let you have it.<RET_IL>"
+"e7f4","わかった、受け取れ。<RET_IL>","Okay. Catch!<RET_IL>"
+"e809","わかりました。受け取りなさい。<RET_IL>","Very well. Take it!<RET_IL>"
+"e828","ほらよ、受け取りな。<RET_IL>","Right. Here it comes!!<RET_IL>"
+"e83d","わかったわ、受け取りなさい。<RET_IL>","All right. Here it is!<RET_IL>"
 "e85a","<CALLeb84>ウォー !! ひ、卑怯な !!
 
 <LEADERe895,e8db,e895,e91b,e95c>
 
 <CALLeb91>す、すまない !!
 
+<RET_IL>","<CALLeb84>Arrghh!! C-Cowards!
+
+<LEADERe895,e8db,e895,e91b,e95c>
+
+<CALLeb91>S-See you!
+
 <RET_IL>"
 "e895","卑怯なのは お前のほうだ !!
 フラート王 !!
-このすきに 逃げてください !!<RET_IL>"
+このすきに 逃げてください !!<RET_IL>","You're the coward!
+Your Majesty! Now's your chance!
+Run!!<RET_IL>"
 "e8db","卑怯なのは きさまのほうだ !!
-兄さん このすきに逃げてください !!<RET_IL>"
+兄さん このすきに逃げてください !!<RET_IL>","The only coward here is you!
+Brother! Take this opportunity
+and run!!<RET_IL>"
 "e91b","卑怯なのは てめーのほうだろ !!
-おっさん このすきに 逃げてくれ !!<RET_IL>"
+おっさん このすきに 逃げてくれ !!<RET_IL>","Look who's callin' who a coward!
+Yo, pops! Now's your chance to
+run!!<RET_IL>"
 "e95c","卑怯なのは そっちの方よ !!
 さあフラート王 !!
-このすきに お逃げください !!<RET_IL>"
+このすきに お逃げください !!<RET_IL>","You're the real coward here!
+Now, your Majesty! This is your
+chance to escape!!<RET_IL>"
 "e9a6","<CALLeb84>ク、クソ !!
 ま、マテ !!
 
@@ -100,19 +171,35 @@
 小僧どもが 笑わしてくれるわ !!
 
 ヨーシ 望みどおり
-始末してくれよう !!"
+始末してくれよう !!","<CALLeb84>D-Damn you!!
+Wait!!
+
+<LEADERea25,ea71,ea25,eaba,eb07>
+
+<CALLeb84>Gah ha ha ha!!
+You children amuse me.
+
+As you wish. I shall dispose
+of you now!!"
 "ea25","オット、そうは いかないぞ !!
 お前の相手は こっちだ !!
-正々堂々と勝負しろ !!<RET_IL>"
+正々堂々と勝負しろ !!<RET_IL>","No! You'll have to get through us
+first! In a fair fight!<RET_IL>"
 "ea71","そうは いきません。
 人質も いなくなりました。
-正々堂々と勝負しましょう。<RET_IL>"
+正々堂々と勝負しましょう。<RET_IL>","We can't allow that. Now that yourhostage is gone, we can fight
+fairly!<RET_IL>"
 "eaba","オット、そうは いかねぇーぜ。
 人質さえ いなければ お前なんか
-ひとひねりだ !!<RET_IL>"
+ひとひねりだ !!<RET_IL>","Nope, ain't gonna happen. Now that
+ya got no hostage, we'll stomp ya!<RET_IL>"
 "eb07","そうはいかないわよ !!
-人質さえ いなければ こっちのもんよ勝負しなさい !!<RET_IL>"
+人質さえ いなければ こっちのもんよ勝負しなさい !!<RET_IL>","No! Without any hostages, you'll
+have to deal with us! Now fight!<RET_IL><RET_IL>"
 "eb4f","<CALLeb84>ガッハッハッ !!
-小僧ども 何度 来ても 同じことだ。"
-"eb84","<X1e>ギュリゲス<X04><RETN>"
-"eb91","<X1e>フラート<X04><RETN>"
+小僧ども 何度 来ても 同じことだ。","<CALLeb84>
+Gah ha ha ha!!
+Keep trying, children! Nothing
+will change."
+"eb84","<X1e>ギュリゲス<X04><RETN>","<X1e>Guliges<X04><RETN>"
+"eb91","<X1e>フラート<X04><RETN>","<X1e>Flart<X04><RETN>"

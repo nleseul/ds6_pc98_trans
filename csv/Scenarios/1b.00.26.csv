@@ -1,7 +1,10 @@
 "e3e9","<X1e>ラルファの道具屋<X04>
 <IF0081><JUMPe423><SET0401>うわあぁ、た、助けてくれー !!<END>
 <LOCe423>ありがとうございます。
-おかげさまで 命拾いが 出来ました。"
+おかげさまで 命拾いが 出来ました。","<X1e>Larfa tool merchant<X04>
+<IF0081><JUMPe423><SET0401>Ahhh! H-help me!!<END>
+<LOCe423>Thank you so much! That was a
+close call."
 "e45d","<CH0>
 ア、アクダム !!
 きさまが マスクーンを 襲った
@@ -29,4 +32,29 @@
 <X1e>アクダム<X04>
 ふん、こしゃくな。
 このわしを倒そうなど 笑止じゃ !!
-返り討ちにしてくれる。"
+返り討ちにしてくれる。","<CH0>
+A-Achdam!!
+You were behind the attack
+on Maschun?!
+
+Joining up with monsters to attacktownspeople... Is there no
+sense of humanity left in you?!
+
+<X1e>Achdam<X04>
+Heh, call it whatever you want.
+
+When you aspire to rule the entireworld, you can't be too choosy
+about the details.
+
+<CH0>
+My father... and old Lyas...
+So many people are dead because
+of your stupid ambition!
+
+But you're going to pay for it
+now! Draw your sword!!
+
+<X1e>Achdam<X04>
+Hah! You have the nerve to
+challenge me? Pathetic!!
+I set the terms of payment here!"

@@ -84,7 +84,95 @@
 <CALLeeb4>なんのことだか、
 おれには さっぱり わからねーな。
 
-<LOCe8d3>用がねーなら、さっさと出てってくれおれは 忙しーんだ。"
+<LOCe8d3>用がねーなら、さっさと出てってくれおれは 忙しーんだ。","<CALLeeb4><IF0103><JUMPe795><IF00f1><JUMPe4af><IF00d0><JUMPe493><SET00d0>Mm-hmm, I see, I see.
+
+But, ya shouldn't be dockin'
+at Yold Harbor. It's crawlin'
+with monsters there.
+
+If yer set on Lanoura, head to
+the village of Suil. The ship
+below can take ya to my 
+base there.
+
+Oh! But ya gotta try this fish
+first! Don't it look amazin'?!
+
+This 'ere's a shillath fish!
+Ya can only catch 'em in these
+isles!
+
+Funny lil' fish. You'll often
+find their bellies full o'
+coins an' spoons an' such.
+Flavor's incredible, though!<END>
+<LOCe493>Take yer time!<END>
+<LOCe4af><IF00d4><JUMPe740><SET00d4>Gail! Still thrivin'?
+
+What? Ya wanna know if we
+looted Selis Castle?
+
+Yeah, we've been in there. How'd
+ya know? That king takes an'
+takes from those less fortunate.
+He had it comin'!
+
+There were probably some keys,
+sure, but jewels is all I'm
+after. So I just toss 'em
+overboard!
+
+<CH1>
+What the hell were you thinking?!
+<CALLeeb4>Aieee!!
+
+<X1c>The normally stoic Runan grabs
+Buald in a rare fit of rage!!<X04>
+
+<CH3>
+R-Runan! Cut it out!
+<CH0>
+Calm down, Runan!!
+
+<X1c>Gail and Selios hold Runan back,
+and he comes back to his senses.<X04>
+
+<CH1>
+F-Forgive me.
+His rapacious attitude was
+difficult to tolerate.
+
+<CH3>
+Where'd you toss out that key,
+Buald?
+
+<CALLeeb4><LOCe740>T-The key I tossed out... 
+P-Probably somewhere around Yold,
+I think?<END>
+<LOCe795><IF00d5><JUMPe8d3><SET00d5><SET0404>Gail! Ya find yer key yet?
+
+<CH3>
+Ain't ya forgettin' about
+somethin', Buald?
+
+<CALLeeb4>W-Whaddaya mean?
+
+<CH3>
+That golden key had a jewel
+stuck on it!
+
+<CALLeeb4>I-I had no idea!!
+
+<CH3>
+Think ya can play dumb??
+You grabbed that jewel offa
+the golden key!!
+
+<CALLeeb4>What're ya talkin' about??
+I am completely innocent!
+
+<LOCe8d3>If that's all yer wantin',
+get out. I'm busy."
 "e909","<CALLeebf>シーラスは どうだった？
 
 あの魚は 光るものを見ると
@@ -92,7 +180,16 @@
 
 まあ、おれたちにゃ
 いい 小づかい稼ぎに なるけどな。
-また 捕まえたら 食わしてやるよ。"
+また 捕まえたら 食わしてやるよ。","<CALLeebf>How was yer shilleth?
+
+Whenever those guys see somethin'
+shiny, they gulp it down whole.
+So their bellies're full o'
+spoons an' coins.
+
+Good way to earn some spare
+change, yeah? I'll serve ya
+the next one we catch."
 "e9e6","<CALLeebf><IF0103><JUMPeaa2>よう あんたたちも 一杯やるか？
 
 セリスの町に バケモノが 現れてから酒が 手に入らなくなっちまってよ。
@@ -106,22 +203,43 @@
 最近 船長のきげんが悪くて
 すぐに怒り出すんだ。
 酒があれば きげんが よくて
-なんでも してくれるんだけどな。"
+なんでも してくれるんだけどな。","<CALLeebf><IF0103><JUMPeaa2>Can I pour ya one?
+
+Since monsters appeared in Selis,
+we haven't been able to get any
+rum.
+
+The cap'n loves his rum. If we
+run out, he's gonna lose it...<END>
+<LOCeaa2>We finally used up all our rum.
+
+The cap'n's been in a bad mood,
+and he lashes out. If ya just had
+some rum, he'd cheer right up an'
+do whatever ya ask 'im."
 "eb37","<CALLeebf>ふっふっふ 今度も 勝たせて
-もらうぞ。"
+もらうぞ。","<CALLeebf>Heh heh... I'll let you win
+this time too!"
 "eb60","<CALLeebf>くっそー、今日は ツイてねえぜ。
-"
+","<CALLeebf>What the hell?! Where's my
+damn luck today?!"
 "eb84","<CALLeebf>よう 客人、
-おれと ゲームで 勝負しねーか。<RETN>"
+おれと ゲームで 勝負しねーか。<RETN>","<CALLeebf>Welcome, guests!
+Care to play a game?<RETN>"
 "ebb2","<X08>そうか、じゃあ しょうがねえな。
-いつでも来なよ 相手になってやるぜ。"
-"ebf7","<CALLeebf>さあさあ、どんどん かけてくれ !!"
+いつでも来なよ 相手になってやるぜ。","<X08>No prob! Come back and play
+any time!"
+"ebf7","<CALLeebf>さあさあ、どんどん かけてくれ !!","<CALLeebf>C'mon, c'mon! Just a l'il more!"
 "ec1b","<CALLeebf>よう 客人、ここには 武器とか
 爆薬が 沢山あるから 気をつけて
-くれよ。"
+くれよ。","<CALLeebf>Be careful in here, guests! It's
+packed with arms and gunpowder."
 "ec63","<CALLeebf><IF0408><JUMPeca4><IF0409><JUMPeca4>やあ客人 元気そうだな？
 疲れたら いつでも来なよ。<END>
-<LOCeca4><SET0400>さあ ゆっくり休んでくんな。"
+<LOCeca4><SET0400>さあ ゆっくり休んでくんな。","<CALLeebf><IF0408><JUMPeca4><IF0409><JUMPeca4>How ya feelin', guests?
+If yer tired, ya can always take
+a rest here.<END>
+<LOCeca4><SET0400>Okay, rest well!"
 "ecc3","<CALLeebf>よう、あんたたちか、ここには
 変わった宝石が 沢山あるんだぜ。
 
@@ -130,15 +248,31 @@
 ここに あるな。<END>
 <LOCed6b>え、赤い宝石？
 ここにゃ そんな物 ゴロゴロあるが
-船長の許可がなけりゃ見せられねーよ"
+船長の許可がなけりゃ見せられねーよ","<CALLeebf>Welcome! This room is full of
+rare jewels.
+
+<IF00d5><JUMPed6b>Collectin' the world's rarest
+jewels is the cap'n's hobby.
+Nearly all the famous jewels're
+in here.<END>
+<LOCed6b>
+A red jewel? Yeah, there's mounds
+of 'em here. But I can't show 'em
+to ya without the the cap'n's
+say-so!"
 "edbe","<CALLeebf><IF0103><JUMPee18>ここにある酒も もうすぐ
 無くなっちまう、セリスの町の
 酒場が 開いてればなあ ･ ･ ･<END>
 <LOCee18>セリスの町の酒場が 開いてれば
-船長のきげんも なおるんだが ･ ･ ･"
+船長のきげんも なおるんだが ･ ･ ･","<CALLeebf><IF0103><JUMPee18>The rum's nearly gone! If the
+bar in Selis doesn't open...<END>
+<LOCee18>If the bar in Selis'd open, the
+cap'n'd cheer up..."
 "ee58","<CALLeebf>スエルの村にも おれたちのアジトが
-あるんだぜ。"
+あるんだぜ。","<CALLeebf>We've got a base in Suil too."
 "ee8a","<X1e>神父<X04>
-なんだ 用がねえのに 話しかけるな !"
-"eeb4","<X1e>ボアード<X04><RETN>"
-"eebf","<X1e>海賊<X04><RETN>"
+なんだ 用がねえのに 話しかけるな !","<X1e>Priest<X04>
+If ya don't need anything,
+don't bug me!"
+"eeb4","<X1e>ボアード<X04><RETN>","<X1e>Buald<X04><RETN>"
+"eebf","<X1e>海賊<X04><RETN>","<X1e>Pirate<X04><RETN>"

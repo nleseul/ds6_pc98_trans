@@ -1,6 +1,7 @@
-"e08a","<X0e><X1c>をもらいました。<X04><RETN>"
+"e08a","<X0e><X1c>をもらいました。<X04><RETN>","<X1c>Received <X04><X0e><X1c>.<X04><RETN>"
 "e351","アクダムさま ばんざーい !
-新しい 国王さま ばんざーい !"
+新しい 国王さま ばんざーい !","Long live Achdam!
+Long live the new King!"
 "e388","<X1e>老人<X04>
 アクダムが この国の王に
 なろうとは ･ ･ ･
@@ -8,28 +9,51 @@
 セリオスさまが この国を
 お治めに なる日だけを 楽しみに
 今まで 生きながらえてきたと
-いうのに ･ ･ ･"
+いうのに ･ ･ ･","<X1e>Old man<X04>
+Achdam, becoming King...
+
+After I've spent my whole life
+waiting for the day Prince Selios
+would take the throne..."
 "e41a","<X1e>男<X04>
 どうも あのアクダムって野郎は
 うさんくさくて いまいち
-信用ならねえな。"
+信用ならねえな。","<X1e>Man<X04>
+I've always thought that Achdam
+was up to no good. How'm I
+supposed to trust him?"
 "e466","<X1e>男<X04>
 前の国王、アスエルさまが
 生きていらしたころは、よかった。
-何もかもが 平和だった。"
+何もかもが 平和だった。","<X1e>Man<X04>
+Times were good while King Aswel
+was still with us. One peaceful
+day after another...
+"
 "e4bd","<X1e>男<X04>
 私は 城の賢者に 呪文を教えて
 もらおうと はるばるやって来たのに
 かんじんの城の中に入れないなんて。
 
 しょうがないから 今日はあきらめて
-また 出直してくる ことにするよ。"
+また 出直してくる ことにするよ。","<X1e>Man<X04>
+I came a long way to learn spells
+from the castle's sage, but I
+couldn't get inside.
+
+Nothing for it but to give up for
+today and try again later."
 "e567","<X1e>女<X04>
 ねえ、ちょっと あなたたち
 あの話 聞いた？
 
 なんでも お城に セリオス王子さまの名をかたる 不届き者が
-やって来たんですって。"
+やって来たんですって。","<X1e>Woman<X04>
+Have you heard the news yet?
+
+Sounds like some scoundrel
+pretending to be Prince Selios
+turned up at the castle."
 "e5e5","<X1e>道具屋<X04>
 ここは道具屋なんだが
 今日は 休みなんだ ･ ･ ･
@@ -39,7 +63,15 @@
 
 私は 今まで 一度も
 店を 休んだことが ないんだ。
-それだけが 自慢だったのに ･ ･ ･"
+それだけが 自慢だったのに ･ ･ ･","<X1e>Tool Merchant<X04>
+This is a tool shop... but today
+is a holiday.
+
+But I'm not sure it's really a dayto celebrate.
+
+I've never taken a single holiday
+before. That was all I had to be
+proud of..."
 "e699","<X1e>武器屋<X04>
 今日は 新しい国王さまを 祝う
 めでたい日だ。
@@ -47,7 +79,13 @@
 だから、
 今日は お店を開いていないんだ。
 悪いけれど、日を改めて
-また来ておくれ。"
+また来ておくれ。","<X1e>Weapon Merchant<X04>
+Today is a celebration in honor
+of our new King.
+
+So the shop is closed today. I'm
+afraid you'll have to come back
+another day."
 "e71f","<X1e>道具屋<X04>
 <IF002f><JUMPe8a9>ここは道具屋ですが なんと
 今日は 休みなのです。エヘヘ
@@ -68,14 +106,38 @@
 聞かなかったことに してくださいね。
 
 <RET_IL><LOCe8a9>私の言ったことは 兵士には絶対に
-内緒にしてくださいね。"
+内緒にしてくださいね。","<X1e>Tool Merchant<X04>
+<X122f00><JUMPe8a9>This is a tool shop, but it turns
+out that this is a holiday!
+Ahahaha!
+
+It's great! King Achdam takes the
+throne, so I can't open the store!Ha ha!
+
+I actually hate working, so I'm
+happy with that arrangement.
+I wish we could have a new king
+every day!
+
+Oh... that would sound pretty bad
+to the soldiers. I'll give you
+this if you just act like you
+didn't hear anything, okay?
+
+<RET_IL><LOCe8a9>
+Just don't let the soldiers find
+out about that stuff I said, okay?"
 "e8e0","<X1e>兵士<X04>
 今日は アクダムさまの
 たいかん式が 行われるため
-お城の中へ 入ることはできん。"
+お城の中へ 入ることはできん。","<X1e>Soldier<X04>
+Entry is prohibited today due to
+King Achdam's coronation ceremony."
 "e935","<X1e>兵士<X04>
 アクダムさま ばんざーい !
-新しい 国王さま ばんざーい !"
+新しい 国王さま ばんざーい !","<X1e>Soldier<X04>
+Long live Achdam!
+Long live the new King!"
 "e973","<X1e>兵士<X04>
 <IF0414><JUMPe9e2>おい お前たち。
 この辺で あやしげな子供を
@@ -85,9 +147,18 @@
 子供なんだが ･ ･ ･<END>
 <LOCe9e2>あっ !! きさまだな !!
 セリオス王子の名をかたる
-不届き者と いうのは !!<SET0400>"
+不届き者と いうのは !!<SET0400>","<X1e>Soldier<X04>
+<X121404><JUMPe9e2>Hey, you there. Have you seen a
+suspicious-looking kid hanging
+around near here?
+
+He looked... quite a bit like...!<END>
+<LOCe9e2>Hey!! You're that rascal who was
+pretending to be Prince Selios!<X140004>"
 "ea2b","<X1e>兵士<X04>
-逃げられるとでも 思っているのか !!"
+逃げられるとでも 思っているのか !!","<X1e>Soldier<X04>
+Don't even think about trying
+to run!!"
 "ea55","<X1e>ラウエル<X04>
 <IF001e><JUMPeeb0>おお、リュナン。待っていたぞ。
 ご苦労だった。
@@ -153,4 +224,65 @@
 では、王子。
 クルスの村へ 急ぎましょう。<END>
 <LOCeeb0>さあ、早く クルスの村へ
-お向かいください。"
+お向かいください。","<X1e>Rauel<X04>
+<X121e00><JUMPeeb0>Ah, Runan! At last! Well done.
+
+...And this must be Prince Selios?
+
+I am pleased to see you safe, YourHighness.
+
+My name is Rauel. I am a member ofthe Resistance that is opposing
+Achdam.
+
+You should be safe now. The castlepeople don't seem to have realizedthat your Highness has escaped
+yet.
+
+But they will undoubtedly begin
+searching this area eventually.
+
+I would advise that your Highness
+escape Rudia as soon as possible,
+and make for the village of Crus.
+
+<X1e>Selios<X04>
+The village of Crus?
+
+<X1e>Rauel<X04>
+Yes. A small village to the east
+of here, directly north of the
+Headland Cave. 
+
+The leader of the Resistance,
+Alon, is there. He was once a
+retainer to the royal family.
+
+I have no doubt that he will
+lend your Highness his aid.
+
+Fortunately, because your Highnesswas sent to Eluasta at such a
+young age, there is little chance
+you will be recognized.
+
+<X1e>Selios<X04>
+... ... ...
+... ... ...
+
+<X1e>Runan<X04>
+Is there a problem, your
+Highness?
+
+<X1e>Selios<X04>
+My mother...
+
+<X1e>Rauel<X04>
+There is no need to be concerned.
+Later, I will see what can be
+learned at the castle.
+
+<X1e>Runan<X04>
+Your Highness. We should hurry
+to Crus.<END>
+<LOCeeb0>Please make your way to the
+village of Crus as soon as
+possible.
+"

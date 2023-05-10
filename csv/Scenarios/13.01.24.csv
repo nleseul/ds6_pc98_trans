@@ -1,10 +1,14 @@
 "e0c3","<X0b>は 宝箱を開けました。
-宝箱の中には<RET_IL>"
-"e0e7","<X0e>が入っていました。<RETN>"
+宝箱の中には<RET_IL>","<X0b> opened the treasure chest.
+There was a <RET_IL>"
+"e0e7","<X0e>が入っていました。<RETN>","<X0e> inside.<RETN>"
 "e0fb","<X0b>は 宝箱を もう一度
 調べてみました。
 
-やっぱり 何も見つかりませんでした。"
+やっぱり 何も見つかりませんでした。","<X0b> checked inside the
+treasure chest again.
+
+But it was still empty."
 "e348","<X1e>兵士<X04>
 <IF0401><JUMPe5f5><IF0400><JUMPe51c><IF002c><JUMPe3ed><SET002c>おや、王子さま。
 ここは 財宝室で ございます。
@@ -40,10 +44,51 @@
 
 <LOCe5f5>以後 十分注意いたしますので 今日のところは お許しくださいませ。<END>
 <LOCe635>また、寝ているのか ･ ･ ･
-まったく しょうがない奴だな。"
+まったく しょうがない奴だな。","<X1e>Soldier<X04>
+<X120104><JUMPe5f5><X120004><JUMPe51c><X122c00><JUMPe3ed><X142c00>Oh, your Highness!
+This is the treasure room.
+
+But Achdam seems to have taken
+everything of value, so there's
+nothing important left.
+
+<LOCe3ed><X115800><JUMPe41d><X115900><JUMPe41d><X115a00><JUMPe41d><X115b00><JUMPe41d><X115c00><JUMPe41d><X115d00><JUMPe41d><X115e00><JUMPe41d><X125f00><JUMPe48f><LOCe41d>Everything in this room is now
+yours, your Highness.
+<PAGE>
+Please take whatever you may need.<END>
+<LOCe48f>Y-your Highness?
+You've taken... e-everything?!
+<PAGE>
+N-not that it's a problem, but...
+W-what am I supposed to guard
+now??<END>
+<LOCe51c>... ... ...
+
+<CH0>
+<X122d00><JUMPe635><X142d00><X140104><X130004>Hey, what are you doing?
+
+<X1e>Soldier<X04>
+Yaaawn...<WAIT>
+Ahh!! Y-your Highness!!
+
+<ASMe66c><X1e>Soldier<X04>
+F-forgive me. With nothing here
+to guard anymore, I suppose I
+must have dozed off.
+
+<LOCe5f5>I shall be more attentive in the
+future. So could you please
+overlook what happened today?<END>
+<LOCe635>Is he asleep again...?
+I guess he just can't help it."
 "e681","<X1e>兵士<X04>
 おや、王子さま。
 ここは 武器庫で ございますが
 
 なにせ あのアクダムに みんな持っていかれて しまった ものですから
-何も 残っておりません。"
+何も 残っておりません。","<X1e>Soldier<X04>
+Oh, your Highness! This is 
+the armory.
+
+But Achdam seems to have taken
+everything that was here."

@@ -1,6 +1,8 @@
 "e2d6","<X0b>は 宝箱を開けました。
-宝箱の中には<RET_IL>"
-"e2fa","<X0e>が入っていました。<RETN>"
-"e30e","岩は 全然動きません。"
+宝箱の中には<RET_IL>","<X0b> opened the chest.
+There was a <RET_IL>"
+"e2fa","<X0e>が入っていました。<RETN>","<X0e> inside.<RETN>"
+"e30e","岩は 全然動きません。","There's no way to move the rock."
 "e324","<X0b>は 爆薬を
-大岩にセットしました。<X0c0501>"
+大岩にセットしました。<X0c0501>","<X0b> sets the dynamite in front
+of the huge rock.<X0c0501>"

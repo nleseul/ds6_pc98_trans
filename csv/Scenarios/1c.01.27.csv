@@ -1,16 +1,25 @@
 "e293","<X0c0301><X1c>扉には カギが かかっています。
-<X04><X0d>"
-"e2b8","<LEADERe2c4,e2fc,e338,e2c4,e2c4>"
+<X04><X0d>","<X0c0301><X1c>The door is locked.<X04><X0d>"
+"e2b8","<LEADERe2c4,e2fc,e338,e2c4,e2c4>","<LEADERe2c4,e2fc,e338,e2c4,e2c4>"
 "e2c4","うーん、僕にはこのカギは
-とても開けられそうもないなあ。<RET_IL>"
+とても開けられそうもないなあ。<RET_IL>","Hmm. This lock looks really hard
+to open.<RET_IL>"
 "e2fc","うーむ、とても 私には このカギは
-開けられそうにありません。<RET_IL>"
+開けられそうにありません。<RET_IL>","Well, there appears to be no way
+for me to open this lock.<RET_IL>"
 "e338","おれは、盗人じゃねえから、
-カギは開けられねえよ。<RET_IL>"
+カギは開けられねえよ。<RET_IL>","It's not like I'm a thief!
+What'm I s'possed to do about
+this lock?!<RET_IL>"
 "e36a","<CH3>
 お、カギか、おれにまかしてみな。
 
-<ASMe3c2>なんだ、こんな子供だましのカギなら簡単に開くぜ。"
+<ASMe3c2>なんだ、こんな子供だましのカギなら簡単に開くぜ。","<CH3>
+A lock? Leave it to me!
+
+<ASMe3c2>Like a toy lock for babies!
+No problem!"
 "e626","<X0b>は 宝箱を開けました。
-宝箱の中には<RET_IL>"
-"e64a","<X0e>が入っていました。<RETN>"
+宝箱の中には<RET_IL>","<X0b> opened the chest.
+There was a <RET_IL>"
+"e64a","<X0e>が入っていました。<RETN>","<X0e> inside.<RETN>"

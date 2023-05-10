@@ -69,6 +69,81 @@
 <X1e>フラート<X04>
 エリオン しかたあるまい。
 あきらめて わしを手伝ってくれ。<END>
+<LOCe653><CALLe657>","<X1e>Flart<X04>
+<IF0135><JUMPe653><SET0135>Aerion.
+Because of you, the kingdom is
+saved.
+
+I'll let you hold on to scary
+things like this from now on.
+I can't even bear to look at it!
+
+<ASMe6fa><X1c>Received the <X0e><X1c>.<X0c0301><X04>
+
+<CH1>
+I see. Then it should be safe
+for you to hold on to this.
+
+<ASMe6ff><X1c>Handed over the <X0e><X1c>.<X0c0301><X04>
+
+<X1e>Flart<X04>
+<CALLe657>
+
+<X1e>Flart<X04>
+W-What do you mean, Aerion?
+You're just going to go off
+and leave me here?
+
+All the commoners hate me! If you
+go off and leave now, how am I
+ever going to rule this kingdom?
+
+Forget ruling! Some of them are
+probably even after my head!
+
+P-Please!
+Can't you rule the kingdom for
+me, somehow?
+
+<CH1>
+That is not the way of things, my
+brother. You abandoned your own
+people, and this is the result.
+
+Think hard on what you might do
+to restore the people's trust
+in you.
+<PAGE>
+No matter what I might say to
+reassure them, it would merely
+postpone the issue.
+
+You can never address the people's
+wishes or complaints by simply
+telling them what to think.
+
+<X1e>Flart<X04>
+So I can't talk you out of
+leaving...
+But where do you plan to go?
+
+<CH1>
+To our neighboring kingdom of
+Soldythe.
+
+<X1e>Flart<X04>
+Soldythe... !!<WAIT>
+But what about the Border Cave?
+It's blocked off!
+
+<CH1>
+That's right! You weren't able 
+to pass through there because of
+the cave-in.
+
+<X1e>Flart<X04>
+It's hopeless, Aerion. Just
+forget it and help me here!<END>
 <LOCe653><CALLe657>"
 "e657","これからは 兄弟３人 力を 合わせて
 この ラヌーラ王国を
@@ -77,72 +152,130 @@
 <CH1>
 兄上、残念ですが 私には まだ
 やらなくては ならないことが
-残っています。<RET_IL>"
+残っています。<RET_IL>","From now on, we three brothers can
+work together and make Lanoura a
+nice, comfortable kingdom.
+
+<CH1>
+I'm sorry, brother. I still have
+things I need to do.<RET_IL>"
 "e70e","<X1e>パウエル<X04>
 <CALLedda>
 私からも お願い申し上げます。
-どうか お城にお戻りくださいませ。"
+どうか お城にお戻りくださいませ。","<X1e>Powell<X04>
+<CALLedda>, I make the same
+request. Please return to the
+castle."
 "e77d","<CALLedda>、内乱が 起きます前に
-戻ってきてくださいませ。"
+戻ってきてくださいませ。","<CALLedda>, please come back
+before civil war breaks out."
 "e7af","もし 内乱が起こったら
 私どもには フラートさまを お守り
 するのが せいいっぱいです。
 
 はたして ジェルマンさまのほうまで
-手が まわるか どうか。"
+手が まわるか どうか。","If there is an insurrection, I
+will lay down my life to protect
+King Flart.
+
+But I don't know if I could do thesame for Prince Jelman."
 "e83b","<CALLedda>、国民は 新しい王を
 求めております。一日も早く
-お戻りに なってくださいませ。"
+お戻りに なってくださいませ。","The people want a new king,
+<CALLedda>. Please return as
+soon as you can."
 "e88b","<CALLedda>が 王位を継がれる時
 初めて このラヌーラは 真の平和を
 迎えることと なりましょう。
 
 私は その時が来るのを 心から
-お待ちいたします。"
+お待ちいたします。","True peace may come to Lanoura
+when your Highness takes the
+throne.
+
+I await that day."
 "e90f","一応 国は平和になりましたが
 側近のパウエルさまの 気苦労は
 絶えることが ないでしょう。
 
 王さまと国民の間に立って
 互いに 気を配らなくては
-ならないのですから。"
+ならないのですから。","The kingdom may be at peace for
+now, but Chancellor Powell's
+troubles are only beginning.
+
+He's in between His Majesty and
+the people, trying to keep an eye
+on both sides."
 "e9ab","王さまに 早く 国民の納得のいく
 処置をしていただかねば この国は
-滅びますぞ。"
+滅びますぞ。","If His Majesty can't do something
+to reassure the people, this
+kingdom will be destroyed."
 "e9f7","<CALLedda>、どうか ご無事な
-お姿で お戻りに なってください。"
+お姿で お戻りに なってください。","Please come back safely,
+<CALLedda>."
 "ea2d","ちまたでは リストン伯爵に対する
 不満の声が 高まっておるようです。
-あの方も 救われませんな。"
+あの方も 救われませんな。","More people are speaking against
+Count Liston now. There may be
+no hope for him."
 "ea89","バーバラに ひどい仕打ちをした
 リストン伯爵には いつか竜の怒りが
-落ちるだろうと 皆うわさしてます。"
+落ちるだろうと 皆うわさしてます。","People are saying that the Dragon
+will punish Count Liston for
+treating Barbara so poorly."
 "eaeb","たった４人で ソルディスへ
 向かわれると いうのですか？
-神の ご加護があることを祈ります。"
+神の ご加護があることを祈ります。","The four of you are going to
+Soldythe on your own? I pray
+that the gods keep you safe."
 "eb43","国境の洞窟には かつて何かに
 使われていたと 思われる 古代の
-水門が あるそうです。"
+水門が あるそうです。","There's an old watergate in the
+Border Cave. It must have been
+used for something once."
 "eb94","怪物どもが いなくなってから
 城下町の酒場は さっそく 人で
-いっぱいに なったそうです。"
+いっぱいに なったそうです。","Now that the monsters are gone,
+people are already crowding into
+the bar in the city."
 "ebe9","<CALLedda>、ソルディスには
 奴隷市場が あるそうで ございます。
 
-奴隷商人に売られてしまった娘たちは多分 その市場にいると思われます。"
+奴隷商人に売られてしまった娘たちは多分 その市場にいると思われます。","I have heard that there is a
+slave market in Soldythe, your
+Highness.
+
+The women who were sold into
+slavery may be there."
 "ec64","<CALLedda>、ソルディスには
 変わった物ばかり 発明している男が
-いるそうです。"
+いるそうです。","Your Highness, I understand that
+there is a man in Soldythe who is
+constantly inventing odd things."
 "eca9","ジェルマンさまが リストンの館に
 隠してあった金を 城に持ち帰って
 きてくれました。
 
 あれだけ たくさんの お金が あれば
-きっと この国も豊かになるでしょう。でも あの兄弟の ことだから ･ ･ ･"
+きっと この国も豊かになるでしょう。でも あの兄弟の ことだから ･ ･ ･","Prince Jelman has returned the
+money he hid in Liston's manor
+to the castle.
+
+That should be enough to make
+Lanoura prosper. But what to do
+about those two...?"
 "ed60","<CALLedda>、聞いてくださいませ。
 
 なんでも あのジェルマンさまが
 年がいもなく ソルディスの姫君に
-思いをよせておるそうです。"
-"edd3","<X1e>兵士<X04><RETN>"
-"edda","エリオンさま<RET_IL>"
+思いをよせておるそうです。","I believe this is important,
+<CALLedda>.
+
+I understand that Prince Jelman 
+may be harboring feelings for the
+princess of Soldythe. Given her
+age, that is most inappropriate."
+"edd3","<X1e>兵士<X04><RETN>","<X1e>Soldier<X04><RETN>"
+"edda","エリオンさま<RET_IL>","Prince Aerion<RET_IL>"

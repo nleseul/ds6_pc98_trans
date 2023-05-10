@@ -1,4 +1,5 @@
-"dc30","眼力魔Ａ<RET_IL>"
-"dc70","眼力魔Ｂ<RET_IL>"
-"ddf0","眼力魔の群れが現れた。<RETN>"
-"de07","は <X02>を 見つめた !!<X0a>"
+"dc30","眼力魔Ａ<RET_IL>","Gazer A<RET_IL>"
+"dc70","眼力魔Ｂ<RET_IL>","Gazer B<RET_IL>"
+"ddf0","眼力魔の群れが現れた。<RETN>","A pair of gazers appear.<RETN>"
+"de07","は <X02>を 見つめた !!<X0a>"," stares straight
+at <X02>!!<X0a>"

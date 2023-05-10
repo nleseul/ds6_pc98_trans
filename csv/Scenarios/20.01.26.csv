@@ -1,26 +1,39 @@
 "e1ca","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは道具の店ですが
-どんな ご用ですか？<RETN>"
-"e20f","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e20f","また来てくださいね。","Come again!"
 "e22f","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e253","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e26d","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e292","どれを売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e2ac"," Gold になるけど
 よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e2cf","そうですか ･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e2e5","どうも ありがとう。
+<RETN>","Thank you very much.
 <RETN>"
 "e4ba","<X1e>フラート<X04>
 <IF00f0><JUMPea79><SET00f0>エリオンでは ないか !!
@@ -105,7 +118,92 @@
 私がお姫さまのわけがないじゃない。<END>
 <LOCea79>国王としての命令だ。
 まずは ヨルドの港から バケモノを
-追い出してくれ。"
+追い出してくれ。","<CALL0001><IF00f0><JUMPea79><SET00f0>Aerion?!
+How long have you been back
+in Lanoura?
+
+<CH1>
+I've just arrived.
+More importantly, what are you
+doing all the way out here?
+
+<CALL0001>Seris Castle was attacked by
+monsters!
+
+I tried to escape to Wonliech
+via Yold Harbor, but Yold was
+full of monsters too.
+
+Since I couldn't get to Wonliech,
+I went to the Border Cave, hoping
+I could reach Soldythe.
+
+But it looks like there was a
+cave-in, and it's blocked off
+by a huge boulder. So I came
+back here.
+
+<CH1>
+Flart...
+Why not fight the enemy?
+And, fleeing the kingdom...!
+
+<CALL0001>What good is a kingdom full of
+monsters to me?!
+
+I just want to live comfortably
+in Wonliech! I can afford to
+spend the rest of my life in
+luxury there!
+
+What difference does it make
+what the people think? What
+matters is that I'll be safe!
+
+<CH1>
+As my eldest brother, you are
+the King, and you should not be
+harboring such thoughts.
+
+You need to make more of an effortto become the sort of King who
+considers the people.
+
+<X1c>Runan's lecture went on and on.<X04>
+
+<CALL0001>All right! All right! I was wrong!I'll try to think of the kingdom
+from now on!
+
+Right now, Yold and Seris are
+both full of monsters. So could
+you hurry up and do something
+about that?
+
+<CH3>
+Wow. Slick old bugger, ain't he?
+
+But, you were also a Prince this
+whole time, Runan? How come you
+never mentioned that?
+<PAGE>
+<CH1>
+I wasn't particularly trying to
+hide anything. It just never
+seemed necessary to mention it.
+
+<CH3>
+Oh, I get it. Actin' all cool
+now. Fine.
+
+How 'bout you, Sonia? Where're
+you the Princess of?
+
+<CH2>
+What are you talking about?
+I'm absolutely nothing like
+a Princess!<END>
+<LOCea79>These are your King's orders.
+First of all, get those monsters
+out of Yold Harbor!"
 "eac0","<CH1>
 お前たち、セリス城の兵士だな？<WAIT>
 なぜ、このような所に いる？<WAIT>
@@ -113,10 +211,18 @@
 
 <X1e>兵士<X04>
 下賎の者には 関係のないことだ。
-早く 立ち去れ !!"
+早く 立ち去れ !!","<CH1>
+Are you soldiers from Selis?<WAIT>
+Why would you be here?<WAIT>
+And who exactly is in that house?
+
+<CALL0002>It's nothing for the likes of you
+to be concerned with. Move along!"
 "eb58","<X1e>兵士<X04>
 あなたさまが エリオンさまでしたか
-お目にかかれて 光栄でございます。"
+お目にかかれて 光栄でございます。","<CALL0002>It is an honor to have met
+your Highness.<END>
+<LOC0001><X1e>Flart<X04><RETN><LOC0002><X1e>Soldier<X04><RETN><LOC0003><X1e>Old man<X04><RETN><LOC0004><X1e>Powell<X04><RETN><LOC0005>Prince Aerion<RET_IL>"
 "eba3","<IF0401><JUMPebe4><IF0402><JUMPec08><IF0403><JUMPec6b><X1e>パウエル<X04>
 エリオンさま。
 申し訳ございません。<END>
@@ -134,7 +240,20 @@
 いつ こちらに 戻られたのですか？
 よく ここが わかりましたな
 さあさあ 中の方へ。フラート国王が
-おいでです。"
+おいでです。","<IF0401><JUMPebe4><IF0402><JUMPec08><IF0403><JUMPec6b><CALL0004>I am very sorry, your Highness.<END>
+<LOCebe4><CLEAR0401><CALL0003>What's going on? Why all the
+commotion?<END>
+<LOCec08><CLEAR0402><CALL0002>I-I apologize.
+There were just some strangers
+outside nosing around...<END>
+<LOCec6b><CLEAR0403><CALL0004>T-that's...!!
+<CALL0005>?! Is that you?
+It's been such a long time!
+
+When did you get back?
+Well, I assume you know what's
+happening here. Come on in. His
+Majesty is inside."
 "ed34","<X1e>老人<X04>
 大きな声では 言えないが
 村長の家には たいそう えらい人が
@@ -144,10 +263,23 @@
 出されていて 今日は にわとりの
 丸焼きに するんじゃと。
 
-あーあ、うらやましいかぎりじゃ。"
+あーあ、うらやましいかぎりじゃ。","<CALL0003>I shouldn't say this too loudly,
+but I think there may be someone
+really important at the mayor's.
+
+Day after day, they serve the
+most amazing food at that house.
+It's whole roasted chickens today.
+
+<JUMP0010>"
 "edff","<X1e>村長<X04>
 エリオンさま
-お久しぶりで ございます。"
+お久しぶりで ございます。","<X1e>Mayor<X04>
+Welcome back, <CALL0005>."
 "ee2d","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に お話しください。"
+私に お話しください。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled.<END>
+<LOC0010>Ugh, I am so jealous of whoever's
+staying there!"

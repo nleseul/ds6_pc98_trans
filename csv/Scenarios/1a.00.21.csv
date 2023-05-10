@@ -3,10 +3,15 @@
 今朝早くに 出ていったよ。<END>
 <LOCe247>やあ、あんた。
 あんただよな、マスクーンから
-この人たちを運んできたのは。"
+この人たちを運んできたのは。","<X1e>Captain<X04>
+<IF009c><JUMPe247>That ill-mannered guy? He left
+early this morning.<END>
+<LOCe247>Welcome back! I see you found thatguy who brought you here from
+Maschun."
 "e290","<X1e>兵士<X04>
 ついに マスクーンも モンスターに
-襲われたか ･ ･"
+襲われたか ･ ･","Even Maschun's under attack by
+monsters now..."
 "e2c7","<X1e>隊長<X04>
 <IF0402><JUMPe381><IF0408><JUMPe2e0><IF_NOT0409><JUMPe32b><LOCe2e0>んっ おお、お前たちか。
 いいとも いいとも 好きなだけ
@@ -25,7 +30,26 @@
 朝早く 道具屋の方へ行ったぞ。
 
 <CH0>
-あ、ありがとうございます。"
+あ、ありがとうございます。","<X1e>Captain<X04>
+<IF0402><JUMPe381><IF0408><JUMPe2e0><IF_NOT0409><JUMPe32b><LOCe2e0>Hm? Oh, it's you guys. 
+Of course, you can stay here
+as long as you like.<SET0400><END>
+<LOCe32b>I want to go to Maschun, but I
+have to protect the fort. What 
+to do...?<CLEAR0400><END>
+<LOCe381>Oh, you're finally awake!
+
+<CH0>
+Do you happen know where our
+friend Roh went?!
+
+<X1e>Captain<X04>
+What's got you all excited? That
+shabby-looking guy went towards
+the tool shop early this morning.
+
+<CH0>
+T-thank you."
 "e456","<X1e>兵士<X04>
 ここは ヨルドの港への 定期船の
 乗り場なんだが ･ ･ ･
@@ -35,10 +59,20 @@
 戻ってこないんだ。
 
 まさか ヨルドの港も モンスターに
-襲われて しまったのだろうか？"
+襲われて しまったのだろうか？","<X1e>Soldier<X04>
+The ship to Yold Harbor departs
+from here...
+
+But the ship hasn't returned sincethe last set of passengers from
+Yold boarded.
+
+I wonder if Yold was attacked by
+monsters too."
 "e518","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
 "e550","<X1e>老人<X04>
 <IF007d><JUMPe612>お願いじゃ 隊長さん。
 マスクーンを ･ ･ ･ 町を ･ ･ ･
@@ -55,7 +89,21 @@
 
 隊長さん、あんたがたは いったい
 いつになったら わしらの町を救って
-くれるのかね？"
+くれるのかね？","<X1e>Old man<X04>
+<IF007d><JUMPe612>Please, Captain!
+Maschun... Our town... save us!
+
+<X1e>Captain<X04>
+If we go to Maschun now, then
+the monsters may strike at this
+fort next.
+
+What to do...?<END>
+<LOCe612>These people put their lives on
+the line for Maschun!
+
+How long are you going to wait to
+help us, Captain?"
 "e6a2","<IF_NOT0402><JUMPe919><CH0>
 す、すみません。
 ローが来ませんでしたか !!
@@ -101,7 +149,50 @@
 いや、なんでもないです。<LOCe915><CLEAR0402><END>
 <LOCe919><X1e>道具屋<X04>
 私のせいで とんだことに なって
-しまったみたいで 申し訳ありません。"
+しまったみたいで 申し訳ありません。","<IF_NOT0402><JUMPe919><CH0>
+E-excuse me!
+Roh hasn't been here, has he?
+
+<X1e>Tool merchant<X04>
+Roh? That would be the man in the
+cloak, correct?
+
+I saw him this morning. I gave
+him the key when he asked...
+
+<CH0>
+You gave him the key?!
+
+<X1e>Tool merchant<X04>
+Y-yes...
+Should I not have done that?
+
+<CH1>
+More importantly, where was
+he going?
+
+<X1e>Tool merchant<X04>
+Well, he was leaving the fort
+in a hurry...
+I don't really know any more.
+
+<CH1>
+Thank you for your help.
+
+Your Highness, I expect he is
+heading to the Tower of Guenn.
+We may still have time to catch
+him. Let us hurry.
+
+<CH0>
+You're right. Let's go!!<IF0081><JUMPe915>
+
+<X1e>Tool merchant<X04>
+Um... the bill...
+Oh, never mind.<LOCe915><CLEAR0402><END>
+<LOCe919><X1e>Tool merchant<X04>
+It seems I've made a terrible
+mistake. I'm very sorry."
 "e965","<CH1>
 王子、起きてください。
 ローが いなくなってしまいました !!
@@ -117,4 +208,21 @@
 <CH0>
 ああっ !!
 ギルモアの涙が無くなっている !!
-リュナン、ローを探すんだ !!"
+リュナン、ローを探すんだ !!","<CH1>
+Your Highness, you need to wake
+up.
+Roh is gone!
+
+<CH0>
+...Roh? Gone?
+Where did he go?!
+
+<CH1>
+I don't know. When I woke up, he
+had already disappeared. I've
+looked everywhere.
+
+<CH0>
+Oh no!!
+The Gilmoran Tear is gone!!
+Runan, we need to find Roh!"

@@ -1,10 +1,10 @@
-"dc30","ｻﾝﾀﾞｰﾊｳﾝﾄﾞＡ<RET_IL>"
-"dc70","ギュリゲス<RET_IL>"
-"dcb0","ｻﾝﾀﾞｰﾊｳﾝﾄﾞＢ<RET_IL>"
-"dcc1","<X08><X02>は逃げ出した。<RET_IL>"
-"dcd2","<X0a>"
+"dc30","ｻﾝﾀﾞｰﾊｳﾝﾄﾞＡ<RET_IL>","Thunder Hound A<RET_IL>"
+"dc70","ギュリゲス<RET_IL>","Guliges<RET_IL>"
+"dcb0","ｻﾝﾀﾞｰﾊｳﾝﾄﾞＢ<RET_IL>","Thunder Hound B<RET_IL>"
+"dcc1","<X08><X02>は逃げ出した。<RET_IL>","<X08><X02> runs away.<RET_IL>"
+"dcd2","<X0a>","<X0a>"
 "dcd3","<X02>は タテとなって
-<CH5>を守った !!<X0a>"
+<CH5>を守った !!<X0a>","<X02> shields <CH5>!!<X0a>"
 "de25","<X1e>ギュリゲス<X04>
 グオオオォォォ !!
 お、おのれ !! し、しかし これで
@@ -13,16 +13,29 @@
 今に アグニージャさまの恐ろしさを
 思い知る時が来るだろう ･ ･ ･
 
+<RET_IL>","<X1e>Guliges<X04>
+Gwaaaaaahhhh!!
+Fools! Do not think this is over!!
+
+Soon, you will know the terror
+of our master Agnija...
+
 <RET_IL>"
 "df25","<X1e>ギュリゲス<X04>
 逃すものか !!
 身のほどを知らず このわしに 戦いを挑んだ報いを受けるがよい。
 
+<RET_IL>","<X1e>Guliges<X04>
+You expect to flee?!
+See what becomes of those who 
+challenge me in vain!!
+
 <RET_IL>"
-"df7e","ギュリゲスとの対決だ !!<RETN>"
+"df7e","ギュリゲスとの対決だ !!<RETN>","You confront Guliges!!<RETN>"
 "df96","<X02>の体から稲妻が
-ほとばしる !!<X0a>"
+ほとばしる !!<X0a>","Lightning surges from <X02>'s
+body!<X0a>"
 "dfc5","はサンダーハウンドを
-呼んだ !!<X0a>"
-"dfe4","<X02>が現れた。<X0a>"
-"dff0","は噛みついた !!<X0a>"
+呼んだ !!<X0a>"," calls for thunder hounds!<X0a>"
+"dfe4","<X02>が現れた。<X0a>","<X02> appears.<X0a>"
+"dff0","は噛みついた !!<X0a>"," bites!<X0a>"

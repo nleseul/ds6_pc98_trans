@@ -1,7 +1,10 @@
-"dc30","山賊鳥Ａ<RET_IL>"
-"dc70","山賊鳥Ｂ<RET_IL>"
-"de37","山賊鳥が Ｇｏｌｄをねらって 現れた。<RET_IL>"
-"de5c","<X02>は すきを うかがっている。<X0a>"
+"dc30","山賊鳥Ａ<RET_IL>","Bandit Bird A<RET_IL>"
+"dc70","山賊鳥Ｂ<RET_IL>","Bandit Bird B<RET_IL>"
+"de37","山賊鳥が Ｇｏｌｄをねらって 現れた。<RET_IL>","A bandit bird appears, its eyes
+on your gold!<RET_IL>"
+"de5c","<X02>は すきを うかがっている。<X0a>","<X02> waits for an
+opening.<X0a>"
 "de78","<X02>は Ｇｏｌｄが 重くて
-うごけない。<X0a>"
-"de9b","<X02>は 50 Gold 盗んだ。<X0c0b02><X0a>"
+うごけない。<X0a>","<X02> can't move under the weight
+of the gold.<X0a>"
+"de9b","<X02>は 50 Gold 盗んだ。<X0c0b02><X0a>","<X02> steals 50 gold.<X0c0b02><X0a>"

@@ -1,7 +1,9 @@
-"dc30","ヤマネコ<RET_IL>"
-"dc70","スライムバブＡ<RET_IL>"
-"dcb0","スライムバブＢ<RET_IL>"
-"dcf0","スライムバブＣ<RET_IL>"
+"dc30","ヤマネコ<RET_IL>","Wildcat<RET_IL>"
+"dc70","スライムバブＡ<RET_IL>","Slimebub A<RET_IL>"
+"dcb0","スライムバブＢ<RET_IL>","Slimebub B<RET_IL>"
+"dcf0","スライムバブＣ<RET_IL>","Slimebub C<RET_IL>"
 "dd63","ヤマネコが現れた。
-スライムバブの群れも 一緒だ。<RETN>"
-"dd94","は鋭い爪でひっかいた !!<X0a>"
+スライムバブの群れも 一緒だ。<RETN>","A wildcat appears, along with a
+herd of slimebubs!<RETN>"
+"dd94","は鋭い爪でひっかいた !!<X0a>"," scratches with its
+sharp claws!<X0a>"

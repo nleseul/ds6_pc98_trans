@@ -1,5 +1,6 @@
-"dc30","ヨロイグモＡ<RET_IL>"
-"dc70","ヨロイグモＢ<RET_IL>"
-"ddaa","ヨロイグモの群れが現れた。<RETN>"
+"dc30","ヨロイグモＡ<RET_IL>","Armorantula A<RET_IL>"
+"dc70","ヨロイグモＢ<RET_IL>","Armorantula B<RET_IL>"
+"ddaa","ヨロイグモの群れが現れた。<RETN>","A swarm of armorantulas appears.<RETN>"
 "ddc5","は 糸を吐いた。<X0a>
-<CONT><X02>のすばやさが <RET_IL>"
+<CONT><X02>のすばやさが <RET_IL>"," shoots webbing.<X0a>
+<CONT><X02>'s speed is reduced by <RET_IL>"

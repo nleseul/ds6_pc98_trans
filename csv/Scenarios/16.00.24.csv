@@ -3,7 +3,12 @@
 この町に 用もない者を
 入れるわけには いかん。
 
-<IF0035><JUMPe21c>帰れ !! 帰れ !!<ASMe056><LOCe21c><SET0041><ASMe33d><LEADERe22e,e22e,e22e,e22e,e22e>"
+<IF0035><JUMPe21c>帰れ !! 帰れ !!<ASMe056><LOCe21c><SET0041><ASMe33d><LEADERe22e,e22e,e22e,e22e,e22e>","<X1e>Gate guard<X04>
+<X124100><JUMPe316>Huh? What do you want?
+People who don't have business
+in this town aren't allowed in.
+
+<X123500><JUMPe21c>Go away! Go away!!<ASMe056><LOCe21c><X144100><ASMe33d><LEADERe22e,e22e,e22e,e22e,e22e>"
 "e22e","ままま、待ってください。
 あやしい者では ありません。
 私どもは クルスの村の者です。
@@ -14,19 +19,36 @@
 <X1e>門の兵士<X04>
 けが人は 奥の 飯場にいる。
 それ以外の所、とくに 鉱山の入口に
-近よってはならん。<RET_IL>"
+近よってはならん。<RET_IL>","Wait a minute! We're not here to
+cause trouble. We're here from
+Crus.
+
+We came to transport someone
+who was injured in the accident.
+
+<X1e>Gate guard<X04>
+In the barracks back there. Don't
+wander around anywhere else,
+especially not the mine entrance.<RET_IL>"
 "e316","何を グズグズしておる？
-さっさと行け。"
+さっさと行け。","Why are you waiting around?
+Go on!"
 "e364","<X1e>兵士<X04>
 お前たち、クルスの村の者だな？
-さっきから 何を ウロウロしておる。"
+さっきから 何を ウロウロしておる。","<X1e>Soldier<X04>
+You're the ones from Crus? Why
+have you been wandering around?"
 "e3ad","<X1e>神父<X04>
 あなたがたは クルスの村の
 人たちですね？
 <PAGE>
 けが人は この右手の 建物の中に
 おります。早く 村に 連れていって
-やってください。"
+やってください。","<X1e>Priest<X04>
+You must be the people from Crus.
+<PAGE>
+The injured person is in the
+building to the right. Please takehim back to your village quickly."
 "e42f","<CH2>
 やあ、ピートじゃないか。
 けが人ってのは あんたのことか？
@@ -45,7 +67,27 @@
 
 <CH2>
 まあ、見てなって。
-王子、早く 司令官の所に 行こうぜ。"
+王子、早く 司令官の所に 行こうぜ。","<CH2>
+That you, Pete? Are you the
+injured guy they're talking about?
+
+<X1e>Pete<X04>
+If it isn't Roh! Have you come to
+bring me to Crus? Be quick about
+it, okay?
+
+<CH2>
+Well, that's the idea, but we're
+gonna pay a visit to the
+Commandant first.
+
+<X1e>Pete<X04>
+Pay him a visit?! You nuts?
+
+<CH2>
+We'll see, we'll see. Prince,
+let's head on to the
+Commandant."
 "e56f","<X1e>男<X04>
 <IF0045><JUMPe63d><SET0045>あんたがた クルスから来たのかい？
 いやー この前の事故は すごいもん
@@ -66,23 +108,49 @@
 
 <X1e>男<X04>
 なんだ もう行っちゃうのかい？
-また 話相手に なってくれよ。"
+また 話相手に なってくれよ。","<X1e>Man<X04>
+<X124500><JUMPe63d><X144500>You came from Crus?
+Whoa, that accident... that was 
+crazy!
+
+I thought it was an earthquake!<WAIT>
+And then, even the houses...<WAIT>
+And after that...<WAIT>
+Wow! But then...
+
+<LEADERe6d7,e71a,e76a,e6d7,e6d7>
+
+<LOCe63d>Oh, the injured! Over in the big
+building further in.<WAIT>
+I'm telling you, that building...
+
+<LEADERe7ba,e7ba,e7de,e7ba,e7ba>
+
+<X1e>Man<X04>
+What, you're leaving already?
+Let's talk again sometime!"
 "e6d7","あのー
-話の途中で申し訳ありませんが ･ ･ ･けが人は どこでしょうか？<RET_IL>"
+話の途中で申し訳ありませんが ･ ･ ･けが人は どこでしょうか？<RET_IL>","Um. I'm sorry to interrupt, but wewere looking for someone who's
+been hurt.<RET_IL>"
 "e71a","オッホン。お話の 途中で まことに
 申し訳ないのですが、
-けが人は どこでしょうか？<RET_IL>"
+けが人は どこでしょうか？<RET_IL>","Ahem. I apologize for the
+interruption, but where are the
+injured?<RET_IL>"
 "e76a","おい おい おい おい、
 長話も いいけどよぅ、けが人は 
-いったい どこに いるんだ？<RET_IL>"
+いったい どこに いるんだ？<RET_IL>","Hold on, hold on. Long stories aregreat and all, but where can we
+find those injured people?<RET_IL>"
 "e7ba","あっ、どうも
-ありがとうございます。<RET_IL>"
+ありがとうございます。<RET_IL>","Thank you very much!<RET_IL>"
 "e7de","はい はい はい はい。
 また、後で 暇な時にでも
-ゆっくり 聞きますからね。<RET_IL>"
+ゆっくり 聞きますからね。<RET_IL>","Gotcha, gotcha! I'll come chat
+again when I'm not so busy, okay?<RET_IL>"
 "e826","<X1e>入口の兵士<X04>
 なんだ お前たちは？
-さっさと 向こうへ行け !!"
+さっさと 向こうへ行け !!","<X1e>Mine guard<X04>
+Who are you? Get away from here!"
 "e860","<X1e>司令官<X04>
 <IF0401><JUMPe975>むっ、なんだ きさまたちは？
 
@@ -101,4 +169,23 @@
 ふん、こざかしい。
 この場で 始末してくれるわ。<END>
 <LOCe975>愚か者 !! このわしから
-逃げられるとでも 思っているのか !!"
+逃げられるとでも 思っているのか !!","<X1e>Commandant<X04>
+<X120104><JUMPe975>Huh? What do you people want?
+
+<CH0>
+I'm Selios, Prince of Farleyn.
+You are to release your
+prisoners, Commandant!
+
+<X1e>Commandant<X04>
+What, Prince Selios? You?
+
+I heard about you from the King,
+but you're still just an ordinary
+brat!
+
+Acting like you're something
+special... Hah!
+I'll finish you off here!<END>
+<LOCe975>Are you stupid?! Don't try to run
+from me!"

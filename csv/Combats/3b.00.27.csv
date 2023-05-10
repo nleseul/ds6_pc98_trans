@@ -1,7 +1,7 @@
-"dc30","ワーラットＡ<RET_IL>"
-"dc70","ワーラットＢ<RET_IL>"
-"dd88","ワーラットの群れが現れた。<RETN>"
+"dc30","ワーラットＡ<RET_IL>","Wererat A<RET_IL>"
+"dc70","ワーラットＢ<RET_IL>","Wererat B<RET_IL>"
+"dd88","ワーラットの群れが現れた。<RETN>","A swarm of wererats appears.<RETN>"
 "dda3","しかし、<X02>は
-すばやく身をかわした !!<X0a>"
+すばやく身をかわした !!<X0a>","But <X02> dodges nimbly!<X0a>"
 "ddc7","は尾をムチのように
-振り上げた !!<X0a>"
+振り上げた !!<X0a>"," whips with its tail!<X0a>"

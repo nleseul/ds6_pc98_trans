@@ -2,11 +2,19 @@
 かけられています。
 
 <IF_NOT0145><CALLe1ff><IF_NOT0146><CALLe251><X0b>は あきらめるしか
-なかった。"
+なかった。","The door is firmly locked.
+
+<IF_NOT0145><CALLe1ff><IF_NOT0146><CALLe251><X0b> has no way to
+open it."
 "e1ff","<SET0145><CH1>
 ここは、王家の墓がある場所です。
 この扉を 開くには 黄金のカギが
 必要です。
+
+<RET_IL>","<SET0145><CH1>
+This is known as the Royal Tomb.
+The door cannot be opened without
+the Golden Key.
 
 <RET_IL>"
 "e251","<SET0146><CH3>
@@ -17,9 +25,17 @@
 <PAGE>
 だめだ !! とっても開きそうもねえ。
 
+<RET_IL>","<SET0146><CH3>
+All right, I'll take care of this.
+
+... ...
+<PAGE>
+Damn it!! No way this'll open.
+
 <RET_IL>"
 "e2bd","<X0b>は<X0e>を使って
-扉を開けました。<SET0143>"
+扉を開けました。<SET0143>","<X0b> used the <X0e>to open the door.<SET0143>"
 "e523","<X0b>は 宝箱を開けました。
-宝箱の中には<RET_IL>"
-"e547","<X0e>が入っていました。<RETN>"
+宝箱の中には<RET_IL>","<X0b> opened the chest.
+There was a <RET_IL>"
+"e547","<X0e>が入っていました。<RETN>","<X0e> inside.<RETN>"

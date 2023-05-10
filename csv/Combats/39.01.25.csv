@@ -1,8 +1,10 @@
-"dc30","猛毒ガメＡ<RET_IL>"
-"dc70","猛毒ガメＢ<RET_IL>"
-"dcb0","猛毒ガメＣ<RET_IL>"
-"de54","猛毒ガメの群れが現れた。<RETN>"
+"dc30","猛毒ガメＡ<RET_IL>","T<CALL0001>T<CALL0002> A<RET_IL>"
+"dc70","猛毒ガメＢ<RET_IL>","T<CALL0001>T<CALL0002> B<RET_IL>"
+"dcb0","猛毒ガメＣ<RET_IL>","T<CALL0001>T<CALL0002> C<RET_IL>"
+"de54","猛毒ガメの群れが現れた。<RETN>","A herd of t<CALL0001>t<CALL0002>s
+appear.<RETN>"
 "de6d","は 毒を吐いた｡<X0a>
-<CONT><X02>は 毒におかされた！<X0a>"
-"de91","はコインを投げてきた。<X0a>"
-"dea8","<X02>は<X1e> 10 Gold <X04>手に入れました。<X0c0301><X0a>"
+<CONT><X02>は 毒におかされた！<X0a>"," breathes poison.<X0a>
+<CONT><X02> is poisoned!"
+"de91","はコインを投げてきた。<X0a>"," tosses a coin.<X0a>"
+"dea8","<X02>は<X1e> 10 Gold <X04>手に入れました。<X0c0301><X0a>","<X02> obtains <X1e>10 Gold<X04>.<X0c0301><X0a><LOC0001>oxic <RET_IL><LOC0002>ortoise<RET_IL>"

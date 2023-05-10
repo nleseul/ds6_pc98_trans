@@ -1,9 +1,11 @@
-"e0de","<X08>どの 呪文が 欲しいのじゃな？<RETN>"
-"e0fc","誰の 呪文の書に 書き込むのじゃな？<RET_IL>"
-"e11f","どこに 書き込むのじゃな？<RETN>"
-"e139","どれどれ、書き込むとしようか。<X0a>"
+"e0de","<X08>どの 呪文が 欲しいのじゃな？<RETN>","<X08>Which spell do you wish?<RETN>"
+"e0fc","誰の 呪文の書に 書き込むのじゃな？<RET_IL>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e11f","どこに 書き込むのじゃな？<RETN>","Where shall I scribe it?<RETN>"
+"e139","どれどれ、書き込むとしようか。<X0a>","Do you wish me to scribe anything
+more?<X0a>"
 "e16e","また、必要になったら
-いつでも 来るがよい。"
+いつでも 来るがよい。","Should you have any further needs,you may always come to me."
 "e1de","<X1e>頑固そうな老人<X04>
 これは、これは。
 こんな 寂しい所に よく来て
@@ -27,8 +29,31 @@
 教えてあげなさいよ おじいさん。
 <PAGE>
 <X1e>頑固そうな老人<X04>
-仕方がない、呪文を教えてしんぜよう。<X0d>"
+仕方がない、呪文を教えてしんぜよう。<X0d>","<X1e>Stubborn old man<X04>
+Oh, hello! Thank you for coming
+to this out-of-the-way place.
+
+I know some combat spells, and
+it's my duty to teach them to
+people.
+
+Used to make people play games
+against me before I'd teach 'em...
+<PAGE>
+But Duke Jestonn found out, and
+got mad at me for ""behavior 
+unbecoming of a sage""..
+<PAGE>
+<X1e>Kindly old woman<X04>
+Oh, don't go on like that, dear!
+Just teach them their spells.
+<PAGE>
+<X1e>Stubborn old man<X04>
+Fine, fine. I'll teach 'em.<X0d>"
 "e3c9","<X1e>やさしそうな おばあさん<X04>
 おやおや 珍しい。
 こんな人里離れた いおりに
-お客さんが お見えになるなんて。"
+お客さんが お見えになるなんて。","<X1e>Kindly old woman<X04>
+Oh my! Now there's a rare sight!
+We don't get many visitors so
+far from civilization."

@@ -8,7 +8,17 @@
 奥の牢屋に ほうり込んでおけ。
 
 <X1e>海賊<X04>
-へい わかりました。"
+へい わかりました。","<X1e>Pirate<X04>
+We got another batch of 'em!
+Even a woman this time!
+
+<X1e>Pirate boss<X04>
+Really? That's great!
+Throw 'em in the cell back there.
+I'll deal with 'em after my game.
+
+<X1e>Pirate<X04>
+Aye, boss!"
 "e48a","<X1e>海賊の親分<X04>
 おい そこの女 こっちに来い 。
 残りの男どもは 甲板掃除だ。
@@ -34,4 +44,32 @@
 
 <X1e>海賊の親分<X04>
 よし ゲイル こっちに来いよ
-パーッと やろうぜ パーッと。"
+パーッと やろうぜ パーッと。","<X1e>Pirate boss<X04>
+You! Woman! Come with me!
+The rest of 'em are on deck
+cleanin' duty. Bring 'em above!
+
+Huh? Hold up, hold up!
+That you, Gail?
+What're you doin' here?<WAIT>
+<ASMe66f><CH3>
+What does it look like?!
+Your boys brought me here!
+
+And those three're with me, so
+keep your paws off 'em!
+
+<X1e>Pirate boss<X04>
+Gah ha ha ha!!
+Sorry... sorry!
+
+Break open the rum!!
+These here are my honored guests!
+Got it?
+
+<X1e>Pirate<X04>
+Aye, boss... c-cap'n!
+
+<X1e>Pirate boss<X04>
+C'mon, Gail! Let's go have
+a drink!"

@@ -1,6 +1,7 @@
-"dc30","ヘルニルド<RET_IL>"
+"dc30","ヘルニルド<RET_IL>","Helnild<RET_IL>"
 "de16","ウォンリークのボス
-ヘルニルドとの対決だ !!<RETN>"
+ヘルニルドとの対決だ !!<RETN>","You confront Helnild, the boss
+of the monsters in Wonliech!!<RETN>"
 "de41","
 
 <X1e>ヘルニルド<X04>
@@ -10,8 +11,20 @@
 きさまの おかげで ますます力が
 わいてきたわ !! グワッハッハ !!
 
+<RET_IL>","
+
+<X1e>Helnild<X04>
+Fool! I am the flame!!
+Did you think a Flam spell would
+affect me?
+
+Because of you, my power grows
+even greater! Guwahahaha!!
+
 <RET_IL>"
 "dedf","<X1e>ヘルニルド<X04>
-そ、その呪文は !!<X0a>"
+そ、その呪文は !!<X0a>","<X1e>Helnild<X04>
+T-that spell...!"
 "defe","は炎の杖を<X02>に
-ふりかざした。<X0a>"
+ふりかざした。<X0a>"," brandishes the Flame
+Staff at <X02>.<X0a>"

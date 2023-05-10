@@ -1,31 +1,49 @@
 "e1c4","ファーレーン王国はモンスターから
-解放されました。<X0d>"
+解放されました。<X0d>","The Kingdom of Farleyn has been
+liberated from monsters.<X0d>"
 "e1f6","<X08>       第１章　王子の旅立ち<N>
 
                 完
-"
+","Chapter I: The Prince's Departure<N>
+
+               FIN"
 "e4f4","<X1e>男<X04>
 ここは 我々に 任せて
-早く アクダムの もとへ !"
+早く アクダムの もとへ !","<X1e>Man<X04>
+We'll take care of things here.
+Get to Achdam!"
 "e527","<X1e>男<X04>
 王子さま どうやら アクダムは
 お城の 水路から 船で
-逃げたようでございます。"
+逃げたようでございます。","<X1e>Man<X04>
+Your Highness. Achdam managed to
+flee on a boat through the
+castle's waterways."
 "e577","<X1e>男<X04>
 捕えた兵士から 聞きましたら
 アクダムは 西へ 向かうと
-言っていたそうで ございます。"
+言っていたそうで ございます。","<X1e>Man<X04>
+According to the captured
+soldiers, Achdam intended to
+head to the west."
 "e5cf","<X1e>リュナン<X04>
 王子 !
-アクダムの 所へ 急ぎましょう !!"
+アクダムの 所へ 急ぎましょう !!","<X1e>Runan<X04>
+We should get to Achdam quickly,
+your Highness."
 "e601","<X1e>兵士<X04>
 うるさい !
-１対１で 戦わせろ !!"
+１対１で 戦わせろ !!","<X1e>Soldier<X04>
+Outta the way! This is a
+1-on-1 fight!"
 "e628","<X1e>兵士<X04>
- ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･"
+ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･","<X1e>Soldier<X04>
+... ... ..."
 "e652","<X1e>アロン<X04>
 王子、早く !
-アクダムは まだ２階にいます !!"
+アクダムは まだ２階にいます !!","<X1e>Alon<X04>
+Quickly, your Highness! Achdam
+is still upstairs!"
 "e687","<CH0>
 しまった !!
 <PAGE>
@@ -39,4 +57,18 @@
 
 <CH1>
 仕方が ありません。
-謁見の間に 戻りましょう。"
+謁見の間に 戻りましょう。","<CH0>
+Damn!!
+<PAGE>
+<CH2>
+That slimy Achdam! He knew this
+was coming, so he had a boat
+ready!
+
+<CH3>
+Ugh! Clever bastard!
+
+<CH1>
+There's nothing we can do now.
+Let's return to the audience
+chamber."

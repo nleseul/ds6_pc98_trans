@@ -1,38 +1,63 @@
 "e2cf","<X1e>賢者<X04>
 これは、これはエリオンどの。
-呪文が 必要なのかな？<X0d>"
-"e309","<X08>どの 呪文を 書き込むかね？<RETN>"
-"e325","誰の 呪文の書に 書き込むかね？<RETN>"
-"e344","どこに 書き込むかね？<RETN>"
-"e35a","では、書き込むとしよう。<X0a>"
-"e381","必要になったら いつでも 来なさい。"
+呪文が 必要なのかな？<X0d>","<X1e>Sage<X04>
+Ah, <CALLee99>!
+Are you needing any spells?<X0d>"
+"e309","<X08>どの 呪文を 書き込むかね？<RETN>","<X08>Which spell do you want?<RETN>"
+"e325","誰の 呪文の書に 書き込むかね？<RETN>","Whose spellbook should I
+scribe it in?<RETN>"
+"e344","どこに 書き込むかね？<RETN>","Where should I scribe it?<RETN>"
+"e35a","では、書き込むとしよう。<X0a>","Want me to scribe anything else?<X0a><LOC0001><X1e>Fisherman<X04><RETN><LOC0002> shillath<RET_IL><LOC0003> Golden Key<RET_IL><LOC0004><X1e>Woman<X04><RETN><LOC0012>You know about<CALL0002>, right?
+The flavor's great, and you'll
+find valuables in their stomachs.
+
+So I opened 'er up, all excited,
+and out pops a silver spoon
+and six coins.<RET_IL>"
+"e381","必要になったら いつでも 来なさい。","Come see me anytime you need to."
 "e3c3","<X1e>武器屋<X04>
 いらっしゃい 水晶の杖なんか
 いかがでしょうか？
 
+<RET_IL>","<X1e>Weapon merchant<X04>
+Welcome! Need a Crystal Staff?
+
 <RET_IL>"
-"e3fc","また来てくれよ。"
+"e3fc","また来てくれよ。","Come again!"
 "e439","<X1e>道具屋<X04>
 らっしゃい、道具の店だぜ。
-どんな用だい？<RETN>"
-"e46c","またどうぞ。"
+どんな用だい？<RETN>","<X1e>Tool merchant<X04>
+Come in! I've got your tools.
+Whatcha need?<RETN>"
+"e46c","またどうぞ。","Come back, y'hear?"
 "e484","なんだ 持てねえじゃん。
+
+<RET_IL>","You can't hold no more!
 
 <RET_IL>"
 "e49d","どれを買うね？
+<RETN>","Whatcha buyin'?
 <RETN>"
 "e4ad","<X0e>だね。
 まいどあり。
 
+<RET_IL>","The <X0e>?
+Thanks a bunch!
+
 <RET_IL>"
 "e4cb","どれを売るね？
+<RETN>","Whatcha sellin'?
 <RETN>"
 "e4db"," Gold になるけど？
-<RETN>"
+<RETN>"," gold.
+How's that?"
 "e4ef","そうか。
+
+<RETN>","Okay.
 
 <RETN>"
 "e4f9","まいどあり。
+<RETN>","Thanks!
 <RETN>"
 "e608","<X1e>漁師<X04>
 <IF0107><JUMPe693><SET0105><CALLec62><CALLefd1>の おかげで 町に
@@ -120,8 +145,53 @@
 どうぞ お持ちください。
 
 <X0e><X1c>を もらいました。<X0c0301><X04><END>
-<LOCec3f>それにしても惜しいことをしたなぁ。"
-"ec62","これは これは<CALLefd1>。<RETN>"
+<LOCec3f>それにしても惜しいことをしたなぁ。","<CALL0001><IF0107><JUMPe693><SET0105>Y<CALLec62>!! It's all thanks
+to you that we're back in town.
+
+And I finally got my boat back
+too! I can go fishing again!<END>
+<LOCe693><IF0104><JUMPec3f><IF00d2><JUMP0010><IF0103><JUMPea01><SET0103>Y<CALLec62>!!
+I caught a<CALL0002> while I
+was out at sea!
+
+<CALL0012>
+
+Plus, this gold key!
+
+<CH1>
+Could that be the<CALL0003>?
+May I see it for a moment, please?
+
+<CALL0001>Sure, here you go.
+<PAGE>
+<CH1>
+This is it!
+
+The<CALL0003> belongs to the
+Lanouran royal family. Would you
+be willing to return it?
+
+<CALL0001>W-What?! No way! Whatever comes
+outta a<CALL0002> goes to him as
+fished it up! That's the code!
+
+Especially when you don't got
+any proof it ever belonged to
+the royals! Sorry, y<CALLec62>,
+but I can't. Not even for you.
+
+<CH1>
+...!?
+The Sunstone isn't on the key!
+
+Was there a red jewel attached to
+the key when you found it?
+
+<CALL0001>Nope. I never saw any such thing.
+
+<LOCea01><JUMPefd1>
+<LOCec3f>I feel awful bad for all that."
+"ec62","これは これは<CALLefd1>。<RETN>","Prince Aerion<RET_IL>"
 "ec82","<X1e>女<X04>
 <IF0103><JUMPee5f><IF0107><JUMPedc7><IF0106><JUMPed32><SET0105><CALLee99><CALLefd1>の おかげで
 町に戻れましたわ。
@@ -140,11 +210,52 @@
 近くにしか いないはずなのに
 港の沖で うちの人が 釣り上げたの。<END>
 <LOCee5f><CALLefd1>申し訳ございません。
-まったく うちの亭主ときたら ･ ･ ･"
-"ee99","これは これは<CALLefd1>。<RETN>"
+まったく うちの亭主ときたら ･ ･ ･","<CALL0004><IF0103><JUMPee5f><IF0107><JUMPedc7><IF0106><JUMPed32><SET0105>It's thanks to y<CALLec62> that
+we've come back to town.
+
+And our seized boat is back too!
+Now my husband can finally go
+out fishing again.<END>
+<LOCed32><CALLee99>! My husband is out
+fishing right now. I hope he
+catches us a big one.
+
+But ever since the monsters came
+to Lanoura, the fish just don't
+seem to be biting...<END>
+<LOCedc7><CALLee99>! My husband's home
+from fishing. It's incredible!
+
+Shillath fish are only found in
+the archipelago, but he caught us
+one out in the open sea.<END>
+<LOCee5f>I'm so sorry, y<CALLec62>.
+He's like that sometimes."
+"ee99","これは これは<CALLefd1>。<RETN>","Prince Aerion<RET_IL>"
 "eeac","<X1e>女<X04>
 私の夫は 船長ですの
-また 船の運航が 出来るようになってとても 喜んでいますわ。"
+また 船の運航が 出来るようになってとても 喜んでいますわ。","<CALL0004>My husband is a ship captain.
+I'm so glad he can sail again.<END>
+<LOC0010>Y<CALLec62>!
+
+<CH1>
+Would you mind attempting to fit
+this stone into your key?
+
+<CALL0001>Wow! It went right in!
+And, that sigil...!
+
+Well, I'll be damned. That's the
+royal sigil, all right. I saw it
+in the castle once.
+
+So I guess it really does belong
+to the royals after all.
+
+<ASMec75><SET0104>Should've taken y<CALLec62> at
+your word. Sorry for all the fuss.Here you go.
+
+<X1c>Received the <X04><X1c>.<X0c0301><X04>"
 "eeff","<X1e>老人<X04>
 <CALLefd1>たちの おかげで
 また港に 戻ることができました。
@@ -152,5 +263,24 @@
 
 お疲れの時は いつでも
 おこしください。<END>
-<LOCef6d><SET0400>どうぞ お好きなだけ お休みください。"
-"efd1","エリオンさま<RET_IL>"
+<LOCef6d><SET0400>どうぞ お好きなだけ お休みください。","<X1e>Old man<X04>
+I am home again because of you!
+<IF0408><JUMPef6d><IF0409><JUMPef6d>
+
+Please, come here whenever
+you are weary.<END>
+<LOCef6d><SET0400>Please, rest as long as you
+wish."
+"efd1","エリオンさま<RET_IL>","Look, I can't just hand it over,
+not even to y<CALLec62>.
+
+Excepting maybe if you had some
+proof it was royal property.
+
+<CH1>
+The Sunstone is engraved with the
+sigil of the royal family.
+<PAGE>
+If it were to be fitted into
+the<CALL0003>, I trust that you
+would then return it."

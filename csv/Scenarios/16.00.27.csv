@@ -1,5 +1,6 @@
 "e414","<X1e>門番<X04>
-しっ 司令官さま !!"
+しっ 司令官さま !!","<X1e>Gate guards<X04>
+C-Commandant!!"
 "e42e","<X1e>入口の兵士<X04>
 なんだ お前たちは？
 さっさと 向こうへ行け !!
@@ -9,23 +10,43 @@
 <X1e>入口の兵士<X04>
 な、なんだと !?
 
+<LEADERe4fc,e525,e562,e4fc,e4fc>","<X1e>Mine guard<X04>
+Who are you? Get away from here!
+
+<LEADERe49d,e4ba,e4dd,e49d,e49d>
+
+<X1e>Mine guard<X04>
+W-what?!
+
 <LEADERe4fc,e525,e562,e4fc,e4fc>"
-"e49d","お前たちの 司令官は 倒した。<RET_IL>"
-"e4ba","あなたたちの 司令官は 倒しました。<RET_IL>"
-"e4dd","おめえらの 司令官を 倒したぜ。<RET_IL>"
+"e49d","お前たちの 司令官は 倒した。<RET_IL>","We've beaten your Commandant.<RET_IL>"
+"e4ba","あなたたちの 司令官は 倒しました。<RET_IL>","Your Commandant has been
+defeated.<RET_IL>"
+"e4dd","おめえらの 司令官を 倒したぜ。<RET_IL>","We just took down your
+Commandant.<RET_IL>"
 "e4fc","命が 惜しければ、
-さっさと 道を開けろ !!<RET_IL>"
+さっさと 道を開けろ !!<RET_IL>","If you value your lives, open the
+mines now!<RET_IL>"
 "e525","無用な 殺生は したくありません。
-どこへなりと お逃げなさい。<RET_IL>"
+どこへなりと お逃げなさい。<RET_IL>","We don't want any unnecessary
+bloodshed. Please make yourselves
+scarce.<RET_IL>"
 "e562","そこを どかねえと
 おめえらも 司令官みてえに
-しちまうぞ !<RET_IL>"
+しちまうぞ !<RET_IL>","And if you don't make way, we'll
+have to give you the same
+treatment.<RET_IL>"
 "e59b","<CH0>
 おーい 司令官を 倒したぞー !
 早く 出てこーい。
 
 みんな、クルスの村が 安全だ
-クルスに 向かってくれ !!"
+クルスに 向かってくれ !!","<CH0>
+Everyone! The Commandant is gone!
+Come on out!!
+
+You'll all be safe in the village
+of Crus! Head to Crus!! "
 "e602","<X1e>囚人<X04>
 なあ、おれたちを 助けてくれたのは
 あんたたちか？
@@ -93,10 +114,76 @@
 ローさん よろしくな。
 
 
-<CH3><X1c>が 仲間になりました。<X0c0301><X04>"
+<CH3><X1c>が 仲間になりました。<X0c0301><X04>","<X1e>Prisoner<X04>
+You the guys who rescued us?
+
+<CH0>
+Yeah. And we're going to work witheveryone to take this kingdom
+back from Achdam.
+
+<X1e>Prisoner<X04>
+So who exactly're you supposed
+to be, then?
+
+<CH2>
+Oh, you don't know? This right
+here is none other than his
+Royal Highness, Prince Selios!
+
+<X1e>Prisoner<X04>
+Yeah? So you're the Prince of
+this place?
+
+The name's <CH3>. Any way I could
+go with y'all, and give that
+Achdam bastard what's comin'
+to 'im?
+
+<CH1>
+You're Gail? The infamous
+Great Thief Gail?
+
+<CH3>
+W-what?! That's a hell of a
+mistake to make!
+
+These parts're full of Gails!
+
+<CH2>
+Highness, can't we just forget
+this weirdo and move on?
+
+<CH3>
+What the hell?! I'm talkin' to
+the Prince here! So butt out!!
+
+Well, your Highness? Think you cantake me along? I'll be able to
+make myself useful.
+
+<CH2>
+What sort of use are you supposed
+to be? Aren't you just some
+nobody?
+
+<CH3>
+Zip it!! I don't gotta take that
+crap from you!
+
+<CH0>
+If it's that important to you, I
+don't mind. Just try to get along
+with Roh.
+
+<CH3>
+Got it.
+Hey, Roh. Nice to meet you.
+
+<CH3><X1c> joined the party.<X0c0301><X04>"
 "ea21","<CH3>
 おいおい
-もう鉱山なんか こりごりだぜ。"
+もう鉱山なんか こりごりだぜ。","<CH3>
+I've had enough of these mines
+already."
 "ea4b","<X1e>神父<X04>
 <IF0046><JUMPeb08><SET0046>まさか 王子さまが この町へ
 おこしに なっていたとは
@@ -107,12 +194,25 @@
 さすがは この国の王に なられる方でございますね。<END>
 <LOCeb08>何か お困りのことが
 ございましたら なんなりと
-私に 話してくださいませ。"
+私に 話してくださいませ。","<X1e>Priest<X04>
+<X124600><JUMPeb08><X144600>Could the Prince truly have come
+to this town? I'd never have
+believed it.
+
+You fought well against the
+Commandant. Just as befits our
+future king.<END>
+<LOCeb08>No matter what may trouble you,
+you may always speak with me."
 "eb50","<X1e>ピート<X04>
 実は、けがを したというのは 仕事をサボるための うそだったんだ。
-だましたりして 悪かった。"
+だましたりして 悪かった。","<X1e>Pete<X04>
+Really, I pretended to be injured
+just so I could get out of work.
+Sorry I tricked you."
 "ebb3","<X1e>囚人<X04>
-クルスに 向かえば いいんですね？"
+クルスに 向かえば いいんですね？","<X1e>Prisoner<X04>
+Should we head to Crus?"
 "ebdb","<X1e>男<X04>
 <IF0045><JUMPeccf><SET0045>いや〜、見ましたよ 見ましたよ
 司令官を 倒すところを !!
@@ -127,4 +227,18 @@
 そのうえ ･ ･ ･
 
 <LOCeccf>あんたねー
-人の話 ちゃんと 聞いてる？"
+人の話 ちゃんと 聞いてる？","<X1e>Man<X04>
+<X124500><JUMPeccf><X144500>Wowww!! I saw it, I saw it!
+That fight with the Commandant!
+
+That Commandant! He was nothing
+but terrible! Listen!
+
+When he first came here...<WAIT>
+And he made the prisoners...<WAIT>
+Plus, his drinking...<WAIT>
+And on top of that...
+
+<LOCeccf>Hey, don't you pay attention
+when people are talking?
+"

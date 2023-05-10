@@ -2,10 +2,17 @@
 いらっしゃい。はがねのやりは
 いりませんか？ この辺では けっこう評判がいいんですよ。
 
+<RET_IL>","<X1e>Weapon merchant<X04>
+Welcome! Do you need any
+steel spears? They're quite
+popular around here.
+
 <RET_IL>"
-"e1bb","また来てくださいね。"
+"e1bb","また来てくださいね。","Come again!"
 "e1df","<X1e>道具屋<X04>
-いらっしゃい たいまつと ワプの羽はいかがですか？<RETN>"
+いらっしゃい たいまつと ワプの羽はいかがですか？<RETN>","<X1e>Tool merchant<X04>
+Welcome! Looking for torches and
+warp feathers?<RETN>"
 "e221","<X1e>道具屋<X04>
 いらっしゃいませ。
 あらわしの鈴は いかがでしょうか？
@@ -19,26 +26,51 @@
 
 でも こいつは習慣性が ありますから気をつけてください。
 一度 使ったら やめられなく
-なってしまいますよ。<RETN>"
-"e385","また来てくださいね。"
+なってしまいますよ。<RETN>","<X1e>Tool merchant<X04>
+Welcome!
+Do you need any Reveal Chimes?
+
+If you use several of them at
+once, the effects last longer. So
+people around here like to buy
+a whole year's worth at once.
+
+At minimum, I think I'd recommend
+that you use at least 10 of them.
+
+But be careful; they can be
+addictive. You might not be able
+to stop using them once you start!<RETN>"
+"e385","また来てくださいね。","Come again!"
 "e3a2","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e3c6","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e3e0","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e405","どれを売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e41f"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e44b","それは残念です ･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e465","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e599","<CLEAR0401><IF0090><JUMPe5e4><X1e>フォルス<X04>
 リーゼルの町にいる 弟のエリックは
@@ -91,31 +123,101 @@
 <X1e>フォルス<X04>
 だいぶ お疲れのようですね。
 今夜は ここに お泊まりに
-なっていってください。<SET0401>"
+なっていってください。<SET0401>","<CLEAR0401><IF0090><JUMPe5e4><X1e>Foless<X04>
+My brother Erich, in Riezel...
+Is he all right?<JUMPe8f1><LOCe5e4><IF008b><JUMPe81e><SET008b><X1e>Foless<X04>
+Oh, welcome back! How are things
+in Riezel? Is my brother
+all right?
+
+<CH0>
+Yeah, he seemed fine.
+But... something didn't seem
+quite right.
+
+The town seemed peaceful.
+I didn't see any signs of
+an occupation or anything.
+
+<X1e>Foless<X04>
+What?
+Does that mean the Duchy has
+been liberated from monsters?
+
+<CH3>
+We don't know yet.
+
+Your bro seemed kinda funny
+too.
+
+Like he was kinda confused,
+and didn't really get why
+you were askin' about 'im.
+
+<CALLe959>
+Did you see that?
+
+<CH0>
+I didn't really notice. Maybe
+we should go back and look
+again.<JUMPe8f1><LOCe81e><IF0093><JUMPe865><CALLe959>
+
+If you don't mind, could you
+go back and look again, please?<JUMPe8f1><LOCe865><X1e>Foless<X04>
+Oh, welcome back! Were you able
+to look for my brother's scar?
+
+<LEADERe993,e9fe,e993,ea65,e993>
+
+<X1e>Foless<X04>
+W-What?!
+Then... where's my brother?!<LOCe8f1><IF0408><JUMPe8fe><IF0409><JUMPe8fe><END>
+<LOCe8fe>
+
+<X1e>Foless<X04>
+You seem very tired. Please
+rest here for the night.<SET0401>"
 "e959","<X1e>フォルス<X04>
-弟の右手には 刃物で切った 傷あとがあるはずです<RET_IL>"
+弟の右手には 刃物で切った 傷あとがあるはずです<RET_IL>","<X1e>Foless<X04>
+My brother should have a scar
+from a knife on his right hand.<RET_IL>"
 "e993","ああ ･ ･ ･ だけど、そいつは
 弟さんじゃ なかったよ。
 
 町の人々は みんな モンスターが
-化けたもの だったんだ。<RET_IL>"
+化けたもの だったんだ。<RET_IL>","Yeah... and that guy wasn't
+really your brother.
+
+Him and all the people in town
+were monsters in disguise.<RET_IL>"
 "e9fe","ええ ･ ･ ･ でも 弟さんでは
 ありませんでした。
 
 町の人々は みんな モンスターが
-化けたもの だったのです。<RET_IL>"
+化けたもの だったのです。<RET_IL>","Yes... he was not your brother.
+
+Everyone in town was a disguised
+monster.<RET_IL>"
 "ea65","ああ、見たぜ。だけど、傷なんて
 どこにも なかった。
 
 町の奴らは みんな モンスターが
-化けたもの だったんだ。<RET_IL>"
+化けたもの だったんだ。<RET_IL>","Yeah, we looked. No scar.
+
+Those people in the town were
+all fakes. Monsters.<RET_IL>"
 "eacf","<X1e>老人<X04>
 この町の すぐ そばにある 白くて
 大きなものを 見なさったか？
 
 あれは 竜の卵と 呼ばれるもので
 中に 神さまが お使いになられた
-魔法の品が 入っておるそうな。"
+魔法の品が 入っておるそうな。","<X1e>Old man<X04>
+Did you happen to see that big
+white thing just outside of town?
+
+It's called a Dragonsegg. It's
+supposed to be a vessel for relicsused by the gods."
 "eb6e","<X1e>老人<X04>
 ここから北の リーゼルの東に
 試練の洞窟と呼ばれる
@@ -127,7 +229,18 @@
 しまい 誰も近づくことが出来ません。
 
 あの武器や防具があれば リーゼルの
-周りの怪物も怖くはないのですが ･ ･"
+周りの怪物も怖くはないのですが ･ ･","<X1e>Old man<X04>
+If you go north to Riezel and theneast, there's a place called the
+Cave of Trials.
+
+Powerful weapons and armor are
+stored in there, but some monsterscalled Gazers have moved in and
+no one can get near it.
+
+If only we had that equipment,
+we wouldn't need to be frightened
+of monsters... not even the ones
+around Riezel."
 "ec77","<X1e>女<X04>
 この国の君主 ジェストンさまの妹君
 フェリシアさまは ファーレーンに
@@ -135,10 +248,19 @@
 
 ファーレーンは モンスターから
 解放されたと 聞いたけれど、いかが
-おすごしなのかしらね？"
+おすごしなのかしらね？","<X1e>Woman<X04>
+Duke Jestonn's sister Felicia
+married into the royal family
+of Farleyn.
+
+I wonder how she's doing, now
+that Farleyn has been liberated
+from monsters."
 "ed28","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
 "ed60","<X1e>ロー<X04>
 冗談じゃねえよ。
 いくら さそっても あんたたちには
@@ -150,4 +272,18 @@
 
 <X0e><X1c>を もらいました。<X0c0301><X04><END>
 <LOCee10>いい物を あげるから 持ち物を
-減らしてこいよ。"
+減らしてこいよ。","<X1e>Roh<X04>
+I'm not playing around!
+I can't come with you, no mattter
+how much you beg.<IF008e><JUMPedb6><END>
+<LOCedb6>
+
+Hey, Highness...
+<ASMee3e><IF008e><JUMPe310>I don't need stuff like this
+anymore, so I'll let you have
+it, 'kay?
+
+<X0e>Received <X1c>.<X0c0301><X04><END>
+<LOCe310>I've got something to give you,
+so get rid of some of your junk,
+all right?"

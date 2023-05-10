@@ -57,4 +57,65 @@
 この国の中央にあるセレの湖の
 東にあります。
 
-さっそく、まいりましょう。"
+さっそく、まいりましょう。","<X1e>Old man<X04>
+<IF0101><JUMPe679><SET0101>P-Prince Aerion?!
+
+We are evacuating on this ship.
+Please, your Highness, get aboard
+quickly!
+
+The monsters have all gathered
+in the Sanctum outside town
+for some reason.
+
+If anyone approaches the Sanctum,
+they get burned to a crisp. But
+it's not keeping the monsters fromdoing whatever they're doing!
+
+Once everyone's evacuated, I'm
+going to Barbara's house to
+discuss the matter.
+
+Please hurry and board, your
+Highness!
+
+<CH1>
+That's too risky! You need
+to get aboard and escape
+as well.
+
+We will go consult with Barbara.
+
+<X1e>Old man<X04>
+Thank you, your Highness!
+I know the matter is in wise
+hands now.
+
+<LOCe679>Barbara must know something about
+this! She can't have lived so longwithout learning a few things.
+
+Please, your Highness, find out
+what you can.
+
+<CH2>
+Runan, who is this Barbara person?
+
+<CH1>
+Forgive me.
+In Lanoura, there is a yearly
+celebration called Dragonsfete.
+
+People thank Freya for one year's
+harvest and pray for abundance in
+the next year. Barbara is the 
+priestess who leads the ceremony.
+
+She has mysterious powers. During
+Dragonsfete, she enters the
+Dragonsegg near Selis and receivesmessages from the gods.
+
+She lives in seclusion east of
+Lake Sele, near the center
+of the kingdom.
+
+We should make haste."

@@ -1,11 +1,16 @@
 "e541","<CALLe5f7>では 王子さま。
 お休みの 時間でございます。
-寝室に まいりましょう。"
+寝室に まいりましょう。","<CALLe5f7>Well, your Highness,
+it's time for bed now. Shall we
+head for the bedchamber?"
 "e588","<CALLe5f7>王子さま よい 夢を
-ごらんになって くださいませ。"
+ごらんになって くださいませ。","<CALLe5f7>Pleasant dreams, your
+Highness!"
 "e5bc","<CALLe5f7>王子さま 大変でございます !!
-お目覚めになってください。"
-"e5f7","<X1e>侍女<X04><RETN>"
+お目覚めになってください。","<CALLe5f7>Your Highness... 
+Please, you have to wake up
+right now!"
+"e5f7","<X1e>侍女<X04><RETN>","<X1e>Maid<X04><RETN>"
 "e5fe","<X08><X1e>ライアス<X04>
 たくさんの モンスターどもが
 この町へ 押しよせて まいりました。
@@ -16,7 +21,16 @@
 
 <X1e>王家のつるぎ<X04><X1c>を 装備しました。<X0c0301><X04><WAIT>
 <X1e>王家のヨロイ<X04><X1c>を 装備しました。<X0c0301><X04><WAIT>
-<X1e>王家のたて<X04><X1c>を 装備しました。<X0c0301><X04>"
+<X1e>王家のたて<X04><X1c>を 装備しました。<X0c0301><X04>","<X08><X1e>Lyas<X04>
+A horde of monsters is advancing
+upon this town.
+
+Quickly! Gird yourself in this
+armor. Then go. Flee this town!
+
+<X1c>Equipped the <X04><X1e>Royal Sword<X04><X1c>.<X0c0301><WAIT>
+Equipped the <X04><X1e>Royal Armor<X04><X1c>.<X0c0301><WAIT>
+Equipped the <X04><X1e>Royal Shield<X04><X1c>.<X0c0301><X04>"
 "e6fc","<X1e>ライアス<X04>
 セリオスさま、あなたさまが王位に
 つかれる日まで あと２ヶ月あまり<RETN>
@@ -31,7 +45,23 @@
 
 今日という今日は もはや 勘弁
 なりません。おやかたへお戻りになりじいの話を 聞いていただきます。
-さあ、まいりましょう。"
+さあ、まいりましょう。","<X1e>Lyas<X04>
+Prince Selios. It is only two
+months until the day you take the
+throne<RET_IL>
+<CONT>, and yet...
+
+You are spending all your time on
+nonsense! If His Majesty, your
+dear departed father were here...
+how could I tell him...?
+
+... ...
+
+This ends today. We will return
+to the manor, and we will discuss
+the matter at length. Come,
+Prince Selios."
 "e866"," ･ ･ ･ ･ ･ ･
 
 <X1c>それから ライアスの お小言は
@@ -48,7 +78,24 @@
 くれぐれも お約束ですぞ。
 
 今日は もう おそうございます。
-呪文の 勉強は また明日ということにいたしましょう。"
+呪文の 勉強は また明日ということにいたしましょう。","... ... ...
+
+<X1c>The scolding from Lyas went
+on and on.<X04>
+
+<X1e>Selios<X04>
+Yawn... I know, I know! I won't
+do it again. So can you let up
+for today?
+
+<X1e>Lyas<X04>
+So long as you understand, I
+am satisfied. I will take you
+at your word.
+
+But it has grown late. We shall
+take up your magical studies
+tomorrow."
 "e9b7","<X1e>ライアス<X04>
 さあ セリオスさま
 この 秘密の 抜け道から
@@ -60,7 +107,17 @@
 <X1e>ライアス<X04>
 もちろん ご一緒にまいります。
 ささ 早く !!
-一刻の 猶予も なりませぬ !!"
+一刻の 猶予も なりませぬ !!","<X1e>Lyas<X04>
+Prince Selios! Make your escape
+through this secret path!
+
+<X1e>Selios<X04>
+But what about you?
+
+<X1e>Lyas<X04>
+Naturally, I shall follow you!
+Quickly, quickly!! We haven't
+a moment to dally!"
 "ea7b","<X1e>セリオス<X04>
 じい、これは いったい
 どういうことだ !!
@@ -97,4 +154,37 @@
  ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･ ･
 
 
-わかった。じい 死ぬなよ !"
+わかった。じい 死ぬなよ !","<X1e>Selios<X04>
+Lyas!! What are you doing?!
+
+<X1e>Lyas<X04>
+There are a mere three soldiers
+stationed here.
+
+We no longer have the option 
+of escape.
+
+But, if we make our stand here,
+we can buy the time needed for
+your Highness to flee!
+
+So go! Hurry!!
+
+<X1e>Selios<X04>
+No!! I'm going to fight beside
+you, Lyas!
+Open this door!!
+
+<X1e>Lyas<X04>
+Prince Selios. You are being
+unreasonable.
+
+A prince who will one day take
+the throne must think first of
+his own safety.
+
+<X1e>Selios<X04>
+... ...
+
+All right.
+Don't die on me, Lyas!"

@@ -1,30 +1,45 @@
 "e086","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは道具屋ですが
-どんな ご用ですか？<RETN>"
-"e0c9","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e0c9","また来てくださいね。","Come again!"
 "e103","<X1e>武器屋<X04>
 いらっしゃいませ。
-ここは武器と防具の店ですが<RETN>"
-"e13a","また来てくださいね。"
+ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
+Welcome! My shop sells weapons
+and armor."
+"e13a","また来てくださいね。","Come again!"
 "e15d","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e181","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e19b","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e1c0","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e1db"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e207","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e220","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e37c","<X1e>老人<X04>
 アクダムさまは 国王になったら
@@ -34,7 +49,15 @@
 なのに モンスターは いまだに
 町の外を うろついておる。
 いったい いつに なったら
-モンスターは いなくなるのじゃ？"
+モンスターは いなくなるのじゃ？","<X1e>Old man<X04>
+When King Achdam was crowned, he
+said he would clear the monsters
+from the kingdom.
+
+But there are still monsters
+wandering around outside of town.
+How long will it be before the
+monsters are gone?"
 "e443","<X1e>老人<X04>
 <IF0048><JUMPe492>ネリアの港の定期航路が
 アクダムさまの 命令で
@@ -45,19 +68,35 @@
 
 城の兵士の動きが 慌ただしいのは
 そのせいじゃないかと わしは
-にらんでおる。"
+にらんでおる。","<X1e>Old man<X04>
+<X124800><JUMPe492>All regular sea traffic into NeriaHarbor has been suspended on
+King Achdam's orders.<END>
+<LOCe492>According to rumor, the Resistancemay have attacked Belga Mine and
+finished off the Commandant.
+
+I'm thinking that could be why thecastle soldiers are running aroundso frantically."
 "e534","<X1e>男<X04>
 フェリシアさまは、すっかり
 やつれてしまわれたそうだ。
 
 王子さまが お亡くなりに
-なったのだから 無理もないけど ･ ･"
+なったのだから 無理もないけど ･ ･","<X1e>Man<X04>
+Lady Felicia has been looking
+quite drawn.
+
+I suppose that's to be expected,
+after the Prince's passing..."
 "e5a9","<X1e>男<X04>
 <IF0048><JUMPe5f2>ネリアの港には となりの国の
 珍しい品物が 売られているそうだ。<END>
 <LOCe5f2>いよいよ、レジスタンスが決起して
 アクダムと戦うんじゃないかな。
-そうなったら、おれも一緒に戦うぞ!!"
+そうなったら、おれも一緒に戦うぞ!!","<X1e>Man<X04>
+<X124800><JUMPe5f2>Exotic goods from other lands are
+sold in Neria Harbor.<END>
+<LOCe5f2>Could the Resistance be rising
+against Achdam at last? I'm
+ready to fight beside them!"
 "e655","<X1e>男<X04>
 あんたたち よそ者みたいだが
 アクダムさまには 逆らわないほうが
@@ -65,17 +104,29 @@
 
 逆らったら さいご。
 地下牢に 入れられるか ベルガの
-鉱山で 働かされるからな。"
+鉱山で 働かされるからな。","<X1e>Man<X04>
+Since you're not from around here,I'd advise you not to defy King
+Achdam.
+
+You'd end up in the dungeons, or
+working in Belga Mine."
 "e6ee","<X1e>女<X04>
 <IF0048><JUMPe73c>セリオス王子さまの
 名をかたった 不届き者は
 どこかへ 逃げたそうよ。<END>
 <LOCe73c>セリオス王子さまが 生きて
 いらっしゃるって うわさだけど、
-本当かしら？"
+本当かしら？","<X1e>Woman<X04>
+<X124800><JUMPe73c>Whoever that kid pretending to be
+Prince Selios was, I guess he ran
+off somewhere.<END>
+<LOCe73c>I heard a rumor that Prince Seliosmight have survived. Could it be
+true...?"
 "e783","<X1e>兵士<X04>
 なんだ、お前は？
-おれに 何か用でも あるのか？"
+おれに 何か用でも あるのか？","<X1e>Soldier<X04>
+What? Do you want something
+from me?"
 "e7b8","<X1e>ラウエル<X04>
 <IF0048><JUMPe9b6><IF001d><JUMPe967><SET001d>おや、セリオス王子さま !!
 
@@ -133,7 +184,67 @@
 
 <X1e>ラウエル<X04>
 わかりました。王子さまも
-お気をつけてください。"
+お気をつけてください。","<X1e>Rauel<X04>
+<X124800><JUMPe9b6><X121d00><JUMPe967><X141d00>Oh! Prince Selios!!
+
+<X1e>Selios<X04>
+Shh! Keep your voice down!
+
+<X1e>Rauel<X04>
+I-I'm sorry. I'm just pleased to
+see that your Highness is well.
+
+I do have some information,
+in fact.
+
+I understand that Lady Felicia
+has refused to become Achdam's
+wife.
+
+<X1e>Selios<X04>
+Are you sure?
+
+<X1e>Rauel<X04>
+I'm certain of it.
+
+<X1e>Selios<X04>
+That's a relief...
+We need to defeat Achdam soon,
+for Mother's sake as well.<END>
+<LOCe967>Your Highness, please be careful
+not to let the soldiers learn of
+your station.<END>
+<LOCe9b6>I understand that your Highness
+has finally freed the prisoners
+in Belga Mine? 
+
+The rumors are spreading through
+town. The castle soldiers are
+frantic, not knowing if an attack
+might be coming.
+
+I advise you to strike before
+Achdam can arrange his defenses.
+Please hurry back to Crus.
+
+<CH0>
+All right! We'll do that. Rauel,
+please take care of things here
+in Rudia.
+
+Tell the women and children to
+stay indoors, and tell the men
+to have any weapons in their
+homes ready.
+
+<CH1>
+Most importantly, be careful not
+to let the soldiers realize that
+anything is happening.
+
+<X1e>Rauel<X04>
+Understood. Your Highness, please
+take care of yourself."
 "ebd4","<X1e>武器屋<X04>
 お客さん、申し訳ないんだけど、
 武器や防具は売れないんだ。
@@ -144,4 +255,15 @@
 いけないと言われたんですよ。
 
 仕方がないから、パン屋でも はじめ
-ようかと 思っているところです。"
+ようかと 思っているところです。","<X1e>Weapon merchant<X04>
+I'm sorry, but I can't sell you
+any weapons or armor.
+
+The Resistance opposing King
+Achdam may become a dangerous
+threat, so I was told not 
+to sell any weapons.
+
+I'm not sure what to do now. I
+wonder if I'll have to start
+selling bread..."

@@ -1,9 +1,12 @@
 "e217","<X1e>兵士<X04>
 おや、どうしたんだ。
-そんなに うかない顔をして。"
+そんなに うかない顔をして。","<X1e>Soldier<X04>
+Why the long faces? What happened?"
 "e24f","<X1e>兵士<X04>
 マスクーンの町を 解放したって？
-本当かい、それは。"
+本当かい、それは。","<X1e>Soldier<X04>
+Maschun has been liberated?
+That's incredible!"
 "e289","<X1e>隊長<X04>
 <IF009e><JUMPe2ea><SET009e><IF0408><JUMPe2a5><IF_NOT0409><JUMPe341><LOCe2a5>マスクーンを 解放したんだって？
 だいぶ疲れているようだな ゆっくり
@@ -11,7 +14,13 @@
 いいとも いいとも 好きなだけ
 <LOCe32b>休んでいくがいい。<SET0400><END>
 <LOCe341>マスクーンを 解放したんだってな。
-ともかく、無事で 何よりだった。<CLEAR0400>"
+ともかく、無事で 何よりだった。<CLEAR0400>","<X1e>Captain<X04>
+<IF009e><JUMPe2ea><SET009e><IF0408><JUMPe2a5><IF_NOT0409><JUMPe341><LOCe2a5>You've liberated Maschun? You
+must be exhausted. Please
+<JUMPe32b><LOCe2ea><IF0408><JUMPe2f6><IF_NOT0409><JUMPe341><LOCe2f6>Oh, welcome back! As always,
+please <LOCe32b>rest as long as you like.<SET0400><END>
+<LOCe341>I understand you've liberated
+Maschun. I'm glad you're safe.<CLEAR0400>"
 "e386","<X1e>兵士<X04>
 ここは ヨルドの港への 定期船の
 乗り場なんだが ･ ･ ･
@@ -21,13 +30,27 @@
 戻ってこないんだ。
 
 まさか ヨルドの港も モンスターに
-襲われて しまったのだろうか？"
+襲われて しまったのだろうか？","<X1e>Soldier<X04>
+The ship to Yold Harbor departs
+from here...
+
+But the ship hasn't returned sincethe last set of passengers from
+Yold boarded.
+
+I wonder if Yold was attacked by
+monsters too."
 "e448","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
 "e480","<X1e>老人<X04>
 わしらの町を お救いくださいまして
-どうも ありがとうございました。"
+どうも ありがとうございました。","<X1e>Old man<X04>
+Thank you so much for saving
+our town!"
 "e4c9","<X1e>道具屋<X04>
 私のせいで とんだことに なって
-しまったみたいで 申し訳ありません。"
+しまったみたいで 申し訳ありません。","<X1e>Tool merchant<X04>
+It seems I've made a terrible
+mistake. I'm very sorry."

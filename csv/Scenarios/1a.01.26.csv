@@ -1,8 +1,10 @@
 "e0e1","<X08>誰の呪文の書にサイレスの呪文を
-書き込みますか？<RETN>"
-"e112","どこに 書き込みますか？<RETN>"
+書き込みますか？<RETN>","<X08>In whose spellbook will Sylis
+be scribed?<RETN>"
+"e112","どこに 書き込みますか？<RETN>","Where should it be scribed?<RETN>"
 "e12a","<X02>の呪文の書に
-サイレスの呪文を書き込みました。"
+サイレスの呪文を書き込みました。","Sylis has been scribed into
+<X02>'s spellbook."
 "e27d","<IF009c><JUMPe2fa><X1c>石碑があります。何やら 文字が
 刻まれていますが 中央部は 鋭い
 刃物のような物で えぐられていて
@@ -12,6 +14,17 @@
 サイレスの呪文が 完成しました。<X0c0301><PAGE>
 <X04><RET_IL><LOCe34d>石碑には サイレスの呪文が
 刻まれています。
+
+<X04><RET_IL>","<IF009c><JUMPe2fa><X1c>There is some kind of writing
+carved into the tablet, but the
+middle of it has been gouged out
+with a knife. It's unreadable.<X04>
+
+<RET_IL><LOCe2fa><X1c><IF009d><JUMPe34d><SET009d>You try to fit the piece of
+broken stone into the tablet.<X0c1001><PAGE>
+The spell of Sylis is complete.<X0c0301><PAGE>
+<X04><RET_IL><LOCe34d>The spell of Sylis is carved
+into the monument.
 
 <X04><RET_IL>"
 "e37a","<IF00c2><JUMPe599><SET00c2><LEADERe62e,e671,e62e,e62e,e62e>
@@ -49,31 +62,81 @@
 してきたんだろう ･ ･ ･。<END>
 <LOCe5de>ありがとう、
 おれの 長い旅も これで終わりだ。
-さーて 次は何を探しに行こうかな。"
+さーて 次は何を探しに行こうかな。","<IF00c2><JUMPe599><SET00c2><LEADERe62e,e671,e62e,e62e,e62e>
+
+<X1e>Pomm<X04>
+Oh, you guys are here too?
+I'd like to know that as well.
+
+I heard the tool shop in Larfa
+was making duplicate keys, so I
+came here to take a template. It
+was like this when I got here.
+
+Look there, on the tablet. Doesn'tit look like that spell, Sylis,
+is written there?
+
+But the key part has been gouged
+out, and it's unreadable. So
+someone must have erased it.
+<PAGE>
+<LEADERe6b2,e6bb,e6b2,e6b2,e6b2>
+
+<X1e>Pomm<X04>
+Roh? Oh, that unpleasant guy?
+
+Now that you mention it, where
+is he?
+
+<LEADERe6c4,e745,e6c4,e6c4,e6c4><SET0400><END>
+<LOCe599><X1e>Pomm<X04>
+<IF009d><JUMPe5de>Have I been traveling for nothing
+all this time...?<END>
+<LOCe5de>Thank you. My long journey is
+finally over. Now, what should
+I search for next?"
 "e62e","あれ、君は ポム君じゃないか。
-これは いったい どういうことなんだ。<RET_IL>"
+これは いったい どういうことなんだ。<RET_IL>","Hey... Pomm? Is that you?
+What happened up here?<RET_IL>"
 "e671","あなたは ポムさんでしたね。
-これは いったい どうしたことですか。<RET_IL>"
-"e6b2","うーん。<RET_IL>"
-"e6bb","うーむ。<RET_IL>"
+これは いったい どうしたことですか。<RET_IL>","You're Pomm, right?
+What happened here?<RET_IL>"
+"e6b2","うーん。<RET_IL>","Yeah. Must've been Roh's work.<RET_IL>"
+"e6bb","うーむ。<RET_IL>","Indeed. This must have been
+Roh's work.<RET_IL>"
 "e6c4","それを 今 探しているんだ。
 
 クソー、サイレスの呪文さえ あれば
 アクダムを倒せると 思ったのに !!
-この先 どうすれば いいんだ ･ ･ ･。<RET_IL>"
+この先 どうすれば いいんだ ･ ･ ･。<RET_IL>","We're here looking for him.
+
+Damn it!! If we'd just gotten
+that Sylis spell, I know we could
+have taken on Achdam! What are we
+going to do now...?<RET_IL>"
 "e745","それを 今 探しているんです。
 
 ウムム、無念、
 サイレスの呪文さえ あれば
-アクダムを倒せると 思っていたのに。この先 どうすれば いいやら ･ ･ ･。<RET_IL>"
+アクダムを倒せると 思っていたのに。この先 どうすれば いいやら ･ ･ ･。<RET_IL>","We came here looking for him.
+
+This is unfortunate. I think
+we could have defeated Achdam if
+we had the Sylis spell.
+Well, then. What now?<RET_IL>"
 "e7d1","<LEADERe7ec,e80a,e7ec,e7ec,e7ec>
 
 <X1e>ゲイル<X04>
-あ !!"
+あ !!","<LEADERe7ec,e80a,e7ec,e7ec,e7ec>
+
+<X1e>Gail<X04>
+Ack!!"
 "e7ec","ん !?
-ゲ、ゲイルじゃないか !!<RET_IL>"
+ゲ、ゲイルじゃないか !!<RET_IL>","Huh?
+Is that... Gail?!<RET_IL>"
 "e80a","お !?
-ゲ、ゲイルじゃないか !!<RET_IL>"
+ゲ、ゲイルじゃないか !!<RET_IL>","Oh!
+Could that be... Gail?<RET_IL>"
 "e828","<LEADERec91,ec9f,ec91,ec91,ec91>どうしたんだ、こんな所で。
 
 <X1e>ゲイル<X04>
@@ -130,9 +193,64 @@
 何言ってんだ もともと そのつもりさ。また よろしく 頼むぜ。
 
 
-<X1e>ゲイル<X04><X1c>が仲間に加わりました。<X0c0301><X04><SET009c><CLEAR0400>"
-"ec91","ゲ、ゲイル !!<RETN>"
-"ec9f","おお、ゲイル !!<RETN>"
+<X1e>ゲイル<X04><X1c>が仲間に加わりました。<X0c0301><X04><SET009c><CLEAR0400>","<LEADERec91,ec9f,ec91,ec91,ec91>Why are you here?
+
+<X1e>Gail<X04>
+Hey again, Prince.
+Couldn't stand watching you
+bumble around...
+
+<LEADERecaf,ed5e,ecaf,ecaf,ecaf>
+
+<X1e>Gail<X04>
+C-cut it out! Don't make this
+awkward! I don't give a damn aboutany of it, okay?
+
+More importantly, I think you'll
+be wantin' this.
+
+<LEADERee07,ee0e,ee07,ee07,ee07>The missing piece of
+the tablet?! Where did you...?
+
+<X1e>Gail<X04>
+I've actually been thinkin' a lot
+on my own, since I left.
+
+It was just the heat of the momentwhen I ran off. But when I really
+thought about it, I started
+wonderin' if maybe Roh was right.
+
+So I was trailin' ya, thinkin'
+maybe I'd clear the air and ask tojoin up again.
+
+<LEADERee0f,ee0f,ee0f,ee0f,ee0f>After we fought Achdam... Was
+that you who helped us?
+
+<X1e>Gail<X04>
+Yeah... that was a real shock.
+Seein' y'all get thrashed like
+that.
+
+Anyway, that's how I spotted Roh
+sneakin' off on his own this
+morning. 
+
+So I tracked him here. Just like
+you said, he dug out a chunk of
+that tablet and tossed it outta
+the tower. And I picked it up.
+
+<LEADERee10,eea6,ee10,ee10,ee10>
+
+<X1e>Gail<X04>
+What're you talkin' about? Wasn't
+that the plan all along?
+It's good to see y'all again.
+
+
+<X1e>Gail<X04><X1c> joined the party.<X0c0301><X04><SET009c><CLEAR0400>"
+"ec91","ゲ、ゲイル !!<RETN>","G-Gail!!<RETN>"
+"ec9f","おお、ゲイル !!<RETN>","Gail!<RETN>"
 "ecaf","ゲイル、すまなかった。
 泥棒の犯人は どうやら ローだった
 らしいんだ。
@@ -140,26 +258,49 @@
 ぼくたちは 決して君のことを
 疑わなかったとは 言いきれない。
 わずかでも 疑ったことを 心から
-あやまりたい。<RET_IL>"
+あやまりたい。<RET_IL>","I'm so sorry, Gail! Roh was the
+thief all along!
+
+We should never have doubted you.
+Not even for a second. I wish withall my heart that we could take
+those doubts back!<RET_IL>"
 "ed5e","ゲイル、おわびの しようも ない。
 あの泥棒さわぎの犯人は どうやら
 ローだったらしい。
 
 たとえ わずかでも 君のことを疑った自分を 私は 恥ずかしく思う。
-心から おわびしたい。<RET_IL>"
-"ee07","え !? <RET_IL>"
-"ee0e","<RET_IL>"
-"ee0f","<RET_IL>"
+心から おわびしたい。<RET_IL>","Gail, I can't apologize enough.
+It seems that our burglar was
+Roh all along.
+
+I'm deeply embarassed that I ever
+doubted you, even for a second.
+From the bottom of my heart,
+I apologize.<RET_IL>"
+"ee07","え !? <RET_IL>","T-that's...! <RET_IL>"
+"ee0e","<RET_IL>","<RET_IL>"
+"ee0f","<RET_IL>","<RET_IL>"
 "ee10","そうか、ゲイル ありがとう。
 これで、アクダムを倒し
 父さんや じいの かたきを討てるよ。
 
 ところで、ゲイル。
 もう一度 ぼくらの仲間になって
-くれないかい？<RET_IL>"
+くれないかい？<RET_IL>","Thank you, Gail!
+With this, we can beat Achdam
+and avenge Lyas and my father!
+
+Gail... are you still willing
+to travel with us?<RET_IL>"
 "eea6","そうか、ゲイル ありがとう。
 これで、アクダムを倒し 国王や
 ライアス殿の かたきが討てる。
 
 ところで、ゲイル。
-もう一度仲間になってはくれまいか？<RET_IL>"
+もう一度仲間になってはくれまいか？<RET_IL>","I see. Gail, thank you.
+This will allow us to defeat
+Achdam, and avenge Lyas and the
+king.
+
+Would you still be willing to
+travel with us?<RET_IL>"

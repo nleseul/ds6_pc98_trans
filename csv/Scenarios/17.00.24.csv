@@ -1,20 +1,31 @@
 "e238","<X1e>賢者<X04>
 わしは この国の人々に
-呪文を授けるのが 役目じゃ。<X0d>"
-"e271","<X08>どの 呪文が 欲しいのじゃな？<RETN>"
-"e28f","誰の 呪文の書に 書き込むのじゃな？<RET_IL>"
-"e2b2","どこに 書き込むのじゃな？<RETN>"
-"e2cc","どれどれ、書き込むとしようか。<X0a>"
+呪文を授けるのが 役目じゃ。<X0d>","<X1e>Sage<X04>
+It is my duty to teach spells
+to the people of this kingdom.<X0d>"
+"e271","<X08>どの 呪文が 欲しいのじゃな？<RETN>","<X08>Which spell do you wish?<RETN>"
+"e28f","誰の 呪文の書に 書き込むのじゃな？<RET_IL>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e2b2","どこに 書き込むのじゃな？<RETN>","Where shall I scribe it?<RETN>"
+"e2cc","どれどれ、書き込むとしようか。<X0a>","Do you wish me to scribe anything
+more?<X0a>"
 "e301","また、必要になったら
-いつでも 来るがよい。"
+いつでも 来るがよい。","Should you have any further needs,you may always come to me."
 "e3c2","<X1e>やみの商人<X04>
 へっへっへ、いらっしゃい。
 今日は こんな物が ありますぜ。
 
+<RET_IL>","<X1e>Shady merchant<X04>
+Heh heh heh... welcome!
+Here's what I have today.
+
 <RET_IL>"
 "e40a","<X1e>やみの商人<X04>
-おや、また来たのかい。<RETN>"
+おや、また来たのかい。<RETN>","<X1e>Shady merchant<X04>
+Back again, are you?<RETN>"
 "e436","おっと、これ以上持てないようだぜ。<JUMPe554><LOCe45b>何が欲しいんですかい？
+<RETN>","Ah, but you can't carry any more!
+<JUMPe554><LOCe45b>See anything you like?
 <RETN>"
 "e473","<X0e>ですかい。
 <PAGE>
@@ -23,45 +34,79 @@
 
 どんな奴が 買っていったかって？
 確か、黒いマントをきた男だったな。マントが青白く光っていて、
-どことなく うさんくさい 奴だった。"
+どことなく うさんくさい 奴だった。","Ah, the <X0e>?
+<PAGE>
+But, I'm afraid that's already
+sold.
+
+Who bought it? I suppose it was
+the man in the black cloak.
+His cloak had a pale glow, and
+he seemed rather shady."
 "e532","わりーな、今日は何もないんだ。
-<JUMPe554><LOCe554>また、来てくれよな。"
+<JUMPe554><LOCe554>また、来てくれよな。","Ah, I'm afraid I haven't got
+anything today!
+<JUMPe4de><LOCe4de>Do come again!"
 "e581","<X1e>武器屋<X04>
 これは セリオス王子 ロンドへの
 航路が復活したので 武器は ロンドで買ったほうがいいですよ。
 
+<RET_IL>","<X1e>Weapon merchant<X04>
+Your Highness! With the shipping
+lanes to Rondo restored, it might
+be best to arm yourself there.
+
 <RET_IL>"
-"e5e5","また来てくださいね。"
+"e5e5","また来てくださいね。","Come again!"
 "e625","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは道具の店ですが
-どんな ご用ですか？<RETN>"
-"e66a","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e66a","また来てくださいね。","Come again!"
 "e68a","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e6ae","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e6c8","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e6ed","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e708"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e734","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e74d","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e7e4","<X1e>女<X04>
 <IF0052><JUMPe82d><SET0052>これは これは セリオス王子さま !
 ようこそ ネリアの港町へ。
 
 <LOCe82d>王子さまの おかげで この町も
-もとの 平和な 港町に戻りましたわ。本当にありがとうございます。"
+もとの 平和な 港町に戻りましたわ。本当にありがとうございます。","<X1e>Woman<X04>
+<X125200><JUMPe82d><X145200>Prince Selios!!
+Welcome to Neria Harbor!
+
+<LOCe82d>Because of your Highness, this
+is a peaceful port town again.
+Thank you so much!"
 "e889","<X1e>男<X04>
 <IF0051><JUMPe8e0>王子さま、
 町のはずれに なかなか いい物を
@@ -74,7 +119,21 @@
 
 しかも、お金を貯めて 買いに行くと
 「今日は 何もない」と言って
-売ってくれないそうです。"
+売ってくれないそうです。","<X1e>Man<X04>
+<X125100><JUMPe8e0>There's someone selling really
+good items on the outskirts of
+town.
+<END>
+<LOCe8e0>I don't trust that shady merchant
+outside town at all.
+
+He always has says he has amazing
+goods, but they're too expensive
+to buy.
+
+But when I save my money, he just
+says ""I haven't got anything"" and
+won't sell me anything."
 "e9b5","<X1e>船長<X04>
 <IF0054><JUMPea58><SET0054>これは これは、王子さま。
 私は ネリアと ロンドを 結ぶ
@@ -90,14 +149,36 @@
 
 その修理に 今日いっぱい かかりそうなのです。
 申し訳ございませんが、
-明日の朝まで お待ちください。"
+明日の朝まで お待ちください。","<X1e>Captain<X04>
+<X125400><JUMPea58><X145400>Welcome, your Highness. I captain
+the ship that sails between
+Neria and Rondo.
+
+<CH0>
+That's great! Can you take us
+to Rondo?
+
+<X1e>Captain<X04>
+<LOCea58>I'd be happy to transport your
+Highness, but Achdam has
+destroyed my ship's sails.
+
+I expect it will take all day to
+repair them. I'm sorry, but you'llhave to wait until dawn tomorrow."
 "eafa","<X1e>宿の主人<X04>
 <IF0055><JUMPeb5d><SET0055>これは 王子さま。
 私どもの宿に お泊まりくださるとは
 うれしゅう ございます。
 
 <JUMPeb75><LOCeb5d>今晩も お泊まりですか？
-<LOCeb75>どうぞ ごゆっくり お休みください。"
+<LOCeb75>どうぞ ごゆっくり お休みください。","<X1e>Innkeeper<X04>
+<X125500><JUMPeb5d><X145500>Welcome, your Highness! It would
+be my honor to offer you lodging
+for the night.
+
+<JUMPeb75><LOCeb5d>Will your Highness be staying
+tonight?
+<LOCeb75>Please enjoy your stay."
 "eb98","<CH1>
 王子、セリオス王子。
 起きて くださいませ。
@@ -146,4 +227,51 @@
 <CH0>
  ･ ･ わかった。
 <CH2>
-あとで後悔しても 知らねぇぜ。"
+あとで後悔しても 知らねぇぜ。","<CH1>
+Your Highness? Prince Selios?
+Please wake up.
+
+<CH0>
+Uhhh... What is it? Is it morning
+already?
+
+<CH1>
+Your pardon. But there is
+something I need to tell you.
+
+<X110004><JUMPec70>A bit of our money seems to be
+missing.<JUMPec7f>
+<LOCec70>Someone seems to have rifled
+through our bags.
+<LOCec7f>
+I assume someone must have sneakedin somehow.
+
+<CH0>
+What? You mean a robber's been
+in here?
+
+<CH1>
+So it seems.
+
+<CH2>
+Hey, d'ya think it could've been
+that Gail guy, maybe?
+
+<CH1>
+R-Roh? You're awake?
+
+<CH2>
+What d'ya think? Should we wake
+that rascal up and see what we canget outta him?
+
+<CH1>
+...No. I wouldn't want to trouble
+Gail with baseless accusations.
+
+Your Highness, please keep this
+matter between us.
+
+<CH0>
+...All right.
+<CH2>
+Don't come crying to me next time!"

@@ -1,8 +1,9 @@
-"dc30","ガルゴ<RET_IL>"
+"dc30","ガルゴ<RET_IL>","Galgo<RET_IL>"
 "ddbf","<X08>ロンドの人々を 苦しめていた
 ガルゴを倒しました。
 流血の洞窟の モンスターは すべて
-逃げ出しました。<X0d>"
-"de23","<X08><X02>は<RET_IL>"
-"de28","<X0e>を持っていた。<X0a>"
-"de38","ガルゴが現れた。<RETN>"
+逃げ出しました。<X0d>","<X08>Galgo will torment the people of
+Rondo no more. All the monsters inthe Bloody Cave are driven off!<X0d>"
+"de23","<X08><X02>は<RET_IL>","<X08><X02> was carrying an <RET_IL>"
+"de28","<X0e>を持っていた。<X0a>","<X0e>.<X0a>"
+"de38","ガルゴが現れた。<RETN>","Galgo appears.<RETN>"

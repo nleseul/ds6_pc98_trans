@@ -29,10 +29,43 @@
 <LOCe610><X1e>アクダム<X04>
 懲りずに また 来おったか。
 何度 来ても この わしを倒すことは
-出来ん。"
+出来ん。","<IF0083><JUMPe610><CH0>
+A-Achdam!!
+You were behind the attack
+on Maschun?!
+
+Joining up with monsters to attacktownspeople... Is there no
+sense of humanity left in you?!
+
+<X1e>Achdam<X04>
+Heh, call it whatever you want.
+
+When you aspire to rule the entireworld, you can't be too choosy
+about the details.
+
+<CH0>
+My father... and old Lyas...
+So many people are dead because
+of your stupid ambition!
+
+But you're going to pay for it
+now! Draw your sword!!
+
+<X1e>Achdam<X04>
+Hah! You have the nerve to
+challenge me? Pathetic!!
+I set the terms of payment here!<END>
+<LOCe610><X1e>Achdam<X04>
+Haven't you given up yet, boy?
+You're never going to beat me!"
 "e661","<X1e>老人<X04>
 みんな いったい どこに 行って
 しまったんじゃろう？
 
 たぶん、この町のどこかに
-閉じ込められて おるのでは ないかと思うんじゃが ･ ･ ･"
+閉じ込められて おるのでは ないかと思うんじゃが ･ ･ ･","<X1e>Old man<X04>
+Where did everybody go?
+
+I wonder if there could be
+somewhere in town where they're
+still imprisoned..."

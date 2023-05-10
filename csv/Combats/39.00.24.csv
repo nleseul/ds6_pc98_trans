@@ -1,6 +1,7 @@
-"dc30","カメルンＡ<RET_IL>"
-"dc70","カメルンＢ<RET_IL>"
-"dcb0","アジン<RET_IL>"
+"dc30","カメルンＡ<RET_IL>","Kamern A<RET_IL>"
+"dc70","カメルンＢ<RET_IL>","Kamern B<RET_IL>"
+"dcb0","アジン<RET_IL>","Ajin<RET_IL>"
 "ddc3","カメルンがペアで現れた。
-アジンが現れた。<RETN>"
-"dded","は様子を見ている。<X0a>"
+アジンが現れた。<RETN>","A pair of kamern and an ajin
+appear.<RETN>"
+"dded","は様子を見ている。<X0a>"," watches and waits.<X0a>"

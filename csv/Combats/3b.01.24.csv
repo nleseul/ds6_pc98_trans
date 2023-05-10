@@ -1,8 +1,10 @@
-"dc30","ツノコブラＡ<RET_IL>"
-"dc70","ツノコブラＢ<RET_IL>"
-"dcb0","ツノコブラＣ<RET_IL>"
-"ddc8","ツノコブラの群れが現れた<RETN>"
+"dc30","ツノコブラＡ<RET_IL>","Horned Cobra C<RET_IL>"
+"dc70","ツノコブラＢ<RET_IL>","Horned Cobra B<RET_IL>"
+"dcb0","ツノコブラＣ<RET_IL>","Horned Cobra C<RET_IL>"
+"ddc8","ツノコブラの群れが現れた<RETN>","A nest of horned cobras appears.<RETN>"
 "dde1","は 毒牙でかみついた !!<X0a>
-<CONT><X02>は毒におかされた !!<X0a>"
+<CONT><X02>は毒におかされた !!<X0a>"," bites with its
+venomous fangs!<X0a>
+<CONT><X02> is poisoned!<X0a>"
 "de0d","しかし、<X02>は
-すばやく身をかわした !!<X0a>"
+すばやく身をかわした !!<X0a>","But <X02> dodges nimbly!<X0a>"

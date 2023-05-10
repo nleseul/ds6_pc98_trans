@@ -1,38 +1,58 @@
 "e113","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは道具屋ですが
-どんな ご用ですか？<RETN>"
-"e156","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e156","また来てくださいね。","Come again!"
 "e17b","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e19f","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e1b9","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e1d6","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e1f1"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e21d","それは残念です ･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e237","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e499","<X1e>レジスタンスの男<X04>
-<IF_NOT0032><JUMPe4d7>さあ リュナン、早く入ってくれ。"
+<IF_NOT0032><JUMPe4d7>さあ リュナン、早く入ってくれ。","<X1e>Resistance member<X04>
+<X113200><JUMPe4d7>Go on in, Runan!"
 "e4d2","<X1e>男<X04>
 <LOCe4d7>やあ、リュナン。
-久しぶりだね。元気だったかい？"
+久しぶりだね。元気だったかい？","<X1e>Man<X04>
+<LOCe4d7>Hey, Runan! It's been a while.
+How've you been?"
 "e507","<X1e>女<X04>
 あら、リュナン。
-久しぶりね。元気だった？"
+久しぶりね。元気だった？","<X1e>Woman<X04>
+Oh, Runan! It's been a while.
+Are you well?"
 "e536","<X1e>遊び人<X04>
 よう、リュナン。
-久しぶりだな。元気だったか？"
+久しぶりだな。元気だったか？","<X1e>Layabout<X04>
+Heya, Runan. Been a while.
+How's it goin'?"
 "e56d","<X1e>神父<X04>
 おお、リュナン。
 リュナンでは ないか !!
@@ -51,11 +71,29 @@
 <X1e>神父<X04>
 セリオス王子さまだと !?
 わかった。おい、お前たち
-そこを どいてやりなさい。"
+そこを どいてやりなさい。","<X1e>Priest<X04>
+Oh! Runan! Is that you?
+
+I heard you'd gone to Rudia...
+Hm?
+
+May I ask where that child with
+you came from?
+
+<X1e>Runan<X04>
+This is his Highness, Prince
+Selios. We would like to enter thecellar and meet with Alon.
+
+<X1e>Priest<X04>
+That's Prince Selios?! Of course,
+of course! Hey, you two! Let
+them through!"
 "e6a9","<X1e>やぎ<X04>
-めえぇぇぇぇ。"
+めえぇぇぇぇ。","<X1e>Goat<X04>
+Me-e-e-e-e..."
 "e6bf","<X1e>にわとり<X04>
-こけっ〜 !?"
+こけっ〜 !?","<X1e>Chicken<X04>
+Bok! Bokaaw!"
 "e6d6","<X1e>男<X04>
 <SET0039><IF001f><JUMPe749>私は 城の賢者に 呪文を教えて
 もらおうと はるばる やって来たのにかんじんの城の中に入れないなんて。
@@ -64,4 +102,15 @@
 
 <LOCe7a3>明日になれば ルディアの城に
 入れるそうだから 今日は この村に
-泊まっていくことに したんだ。"
+泊まっていくことに したんだ。","<X1e>Man<X04>
+<X143900><X121f00><JUMPe749>I came a long way to learn spells
+from the castle's sage, but I
+couldn't get inside.
+
+<JUMPe7a3><LOCe749>Oh, you came to this village too?
+It's me, the guy who was turned
+away from the castle in Rudia.
+
+<LOCe7a3>I suppose they'll let people into
+the castle tomorrow, so I'm
+staying the night in this village."

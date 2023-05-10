@@ -1,8 +1,12 @@
-"dc30","山賊鳥<RET_IL>"
-"dc70","オオバサミＡ<RET_IL>"
-"dcb0","オオバサミＢ<RET_IL>"
-"dddd","山賊鳥が Ｇｏｌｄをねらって 現れた。オオバサミの群れまで 飛んできた。<RETN>"
-"de23","<X02>は すきを うかがっている。<X0a>"
+"dc30","山賊鳥<RET_IL>","Bandit Bird<RET_IL>"
+"dc70","オオバサミＡ<RET_IL>","Cutter A<RET_IL>"
+"dcb0","オオバサミＢ<RET_IL>","Cutter B<RET_IL>"
+"dddd","山賊鳥が Ｇｏｌｄをねらって 現れた。オオバサミの群れまで 飛んできた。<RETN>","A bandit bird appears, its eyes
+on your gold! A swarm of cutters
+fly in alongside it.<RETN>"
+"de23","<X02>は すきを うかがっている。<X0a>","<X02> waits for an
+opening.<X0a>"
 "de3f","<X02>は Ｇｏｌｄが 重くて
-うごけない。<X0a>"
-"de62","<X02>は 50 Gold 盗んだ。<X0c0b02><X0a>"
+うごけない。<X0a>","<X02> can't move under the weight
+of the gold.<X0a>"
+"de62","<X02>は 50 Gold 盗んだ。<X0c0b02><X0a>","<X02> steals 50 gold.<X0c0b02><X0a>"

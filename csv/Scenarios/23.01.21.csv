@@ -1,38 +1,63 @@
 "e117","<X1e>武器屋<X04>
 いらっしゃいませ。
-ここは武器と防具の店ですが<RETN>"
-"e14e","また来てくださいね。"
+ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
+Welcome! My shop sells weapons
+and armor."
+"e14e","また来てくださいね。","You don't have any room for it.
+
+<RET_IL>"
 "e18f","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは道具の店ですが
-どんなご用ですか？<RETN>"
-"e1d3","また来てくださいね。"
+どんなご用ですか？<RETN>","What would you like to buy?
+<RETN>"
+"e1d3","また来てくださいね。","You don't have any room for it.
+
+<RET_IL>"
 "e1f3","おや？これ以上持てないようですね。
+
+<RET_IL>","The <X0e>?
+Thank you very much!
 
 <RET_IL>"
 "e217","どれを買ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e231","<X0e>だね。
 どうも ありがとう。
 
-<RET_IL>"
+<RET_IL>"," gold.
+Will that be okay?"
 "e256","どれを売ってくれますか？
+<RETN>","That's too bad...
+
 <RETN>"
 "e270"," Gold になるけど
 それでも よろしいですか？
+<RETN>","Thank you very much.
 <RETN>"
 "e29c","それは残念です･･･ ･･･。
 
-<RETN>"
+<RETN>","<X1e>Weapon merchant<X04>
+Welcome! My shop sells weapons
+and armor."
 "e2b5","どうも ありがとうございます。
-<RETN>"
+<RETN>","You don't have any room for it.
+
+<RET_IL>"
 "e369","<X1e>男<X04>
 これは これは エリオンさま。
 去年 税が払えなくて 娘を奴隷商人に売ってしまいました。
 
 これからは 税金を 安くしてくれる
 そうですが 娘は もう帰ってこない
-でしょう ･ ･ ･。"
+でしょう ･ ･ ･。","<X1e>Man<X04>
+Oh, Prince Aerion! When I couldn't
+pay my taxes last year, I sold my
+daughter to a slave merchant.
+
+The taxes may be lower now, but I
+doubt she'll ever come home..."
 "e415","<X1e>男<X04>
 いらっしゃいませ エリオンさま。
 このたびの ご活躍 さすがは
@@ -41,7 +66,13 @@
 ところで エリオンさまは
 いつ 王位に つかれるんですか？
 町の者は もう 一日も 待てない
-気持ちです。"
+気持ちです。","<X1e>Man<X04>
+Welcome, Prince Aerion! I was
+just saying that your Highness hasdone everything we hoped for.
+
+When will your Highness be taking
+the throne soon? The townsfolk
+seem quite eager for it."
 "e4dc","<X1e>女<X04>
 この町の娘たちは みんな奴隷商人に
 売られてしまいましたわ ･ ･ ･。
@@ -52,7 +83,16 @@
 
 一日も早く あの二人を追い出して
 エリオンさまが 王位に おつきに
-なってください。"
+なってください。","<X1e>Woman<X04>
+All the girls in town ended up
+sold into slavery...
+
+And it's all because of Flart and
+Jelman!
+
+Please, your Highness! Get rid of
+those two and take the throne!
+It can't happen soon enough!"
 "e5b9","<X1e>男<X04>
 ほれたひは 夫婦ら。文句あふか？
 ん !?
@@ -64,7 +104,18 @@
 ヘリホンはまの おかげで 女房を
 奴隷商人に売らずに すみまひた。<WAIT>
 もう おれは うれしくてうれしくて<WAIT>
-ウッ、ウッ、ウワーン。シクシク。"
+ウッ、ウッ、ウワーン。シクシク。","<X1e>Man<X04>
+Yeah, we'sh married. Ya got 
+shomethin' ta shay aba'it?
+...Wha?!
+
+P-Prinsh Harryon! Shorry...
+I mushta drank too mush...
+
+Shanks ta your Shinesh, I di'nt 
+had'a shell my mishus to into
+shlaverery... I'sho happy...
+Sob... sob... waaaaah!!"
 "e6bd","<X1e>男<X04>
 フィー、やっぱり酒は うめえなあ。
 <IF_NOT0150><JUMPe6ff>いくらでも飲めるぜ !<END>
@@ -77,10 +128,24 @@
 なんでも、酒を見つけてくるまで
 飯も 食わしてもらえないって
 泣いてたっけ。
-あいつ、どうしちまったんだろう。"
+あいつ、どうしちまったんだろう。","<X1e>Man<X04>
+Woo! The rum's as good as ever!
+<IF_NOT0150><JUMPe6ff>I can drink as much as I want!<END>
+<LOCe6ff>
+
+You know, there was some sailor
+with a bump on 'is head in here
+the other day, desperate for
+some rum.
+
+Crying that he couldn't eat until
+he found some, I hear.
+Wonder what happened to 'im."
 "e7be","<X1e>男<X04>
 あ、エリオンさま。エリオンさまも
-お酒を 召し上がるんですか？"
+お酒を 召し上がるんですか？","<X1e>Man<X04>
+Your Highness! Did you come for a
+drink too?"
 "e800","<X1e>男<X04>
 あ、エリオンさま。
 私は 国境の洞窟を 見てきたんです。
@@ -95,11 +160,27 @@
 通れませんね。
 
 あの 岩をどけるには 爆薬でも
-使わなきゃ とても無理ですよ。"
+使わなきゃ とても無理ですよ。","<X1e>Man<X04>
+Oh, Prince Aerion! I've been to
+have a look at the Border Cave.
+
+<IF_NOT0150><JUMPe8a8>
+A rock thaaaaat big, blasted into
+dust! Someone musta used some
+dynamite or something.<END>
+<LOCe8a8>It's a mess! There's a rock
+thiiiiis big blocking it up, and
+it's completely impossible to get
+through.
+
+There's no way at all to move it
+short of dynamite."
 "e946","<X1e>子供<X04>
 ねぇ、おねえちゃん 見なかった？
 おねえちゃんがね、いつのまにか
-いなくなっちゃったんだよ。"
+いなくなっちゃったんだよ。","<X1e>Child<X04>
+Have you seen my sister?
+She's been gone a long time."
 "e9a7","<X1e>女<X04>
 エリオンさま !!
 ありがとうございます。
@@ -110,7 +191,15 @@
 
 でも、エリオンさまの おかげで
 売られずに すみました。
-本当に ありがとうございます。"
+本当に ありがとうございます。","<X1e>Woman<X04>
+Prince Aerion!!
+Thank you so much!
+
+I would have been sold the next
+time the slave merchant came!
+
+But thanks to your Highness, I canlive without fear of that! Thank
+you again!!"
 "ea70","<X1e>酒場の主人<X04>
 エリオンさまも 一杯いかがですか？
 <ASMeccb><IF_NOT0400><JUMPebe7><IF0121><JUMPeb8b>
@@ -134,14 +223,42 @@
 <LOCebe7>でも お荷物が 重そうですね。<END>
 <LOCec04>
 
+<LEADERec11,ec3f,ec11,ec8d,ec6e>","<X1e>Barkeep<X04>
+Care for a drink, your Highness?
+<ASMeccb><IF_NOT0400><JUMPebe7><IF0121><JUMPeb8b>
+
+<CH3>
+Hey, how 'bout we bring Buald
+somethin' to drink? He ain't
+such a bad guy.
+
+<CH0>
+Yeah, he did let us stay at his
+hideout in Suil. He's been pretty
+generous.
+
+<CH1>
+Excuse me. We'll take one.
+
+<X1e>Barkeep<X04>
+<LOCeb8b>That will be 1000 Gold per bottle.Is that okay?
+<ASMecdb><IF_NOT0400><JUMPec04><ASMecf2><IF_NOT0400><JUMPecaf><SET0121><ASMed02><X1c>Bought <X0e><X1c>.<X0c0301><X04><END>
+<LOCebe7>Your bags look pretty full.<END>
+<LOCec04>
+
 <LEADERec11,ec3f,ec11,ec8d,ec6e>"
 "ec11","やっぱり お金が もったいないから
-いらないや。<RET_IL>"
+いらないや。<RET_IL>","Our money's pretty tight. I guess
+we don't really need it.<RET_IL>"
 "ec3f","いや お金が 少々 足りないので
-やめておきます。<RET_IL>"
-"ec6e","お金が 無いから やめておくわ。<RET_IL>"
-"ec8d","高すぎるぞ そんなの 買えねえよ !!<RET_IL>"
-"ecaf","そうですか それは残念です。"
+やめておきます。<RET_IL>","We're short on money. We had
+best not.<RET_IL>"
+"ec6e","お金が 無いから やめておくわ。<RET_IL>","We're low on money. We'd better
+not.<RET_IL>"
+"ec8d","高すぎるぞ そんなの 買えねえよ !!<RET_IL>","At that price?! No way!<RET_IL>"
+"ecaf","そうですか それは残念です。","Really? Well, your loss."
 "ed13","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."

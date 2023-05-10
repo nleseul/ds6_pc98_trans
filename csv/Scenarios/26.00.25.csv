@@ -1,18 +1,28 @@
 "e182","<X1e>賢者<X04>
 わしは この国一の賢者じゃ。
-そなたたちに 呪文を授けよう。<X0d>"
-"e1c3","<X08>どの 呪文を 書き込むかね？<RETN>"
-"e1df","誰の 呪文の書に 書き込むかね？<RETN>"
-"e1fe","どこに 書き込むかね？<RETN>"
-"e214","では、書き込むとしよう。<X0a>"
+そなたたちに 呪文を授けよう。<X0d>","<X1e>Sage<X04>
+I am the wisest sage in Soldythe.
+Shall I teach you any spells?<X0d>"
+"e1c3","<X08>どの 呪文を 書き込むかね？<RETN>","<X08>Which spell do you wish?<RETN>"
+"e1df","誰の 呪文の書に 書き込むかね？<RETN>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e1fe","どこに 書き込むかね？<RETN>","Where shall I scribe it?<RETN>"
+"e214","では、書き込むとしよう。<X0a>","Do you wish me to scribe anything
+more?<X0a>"
 "e23b","また、必要になったら
-いつでも 来なさい。"
+いつでも 来なさい。","Should you have any further needs,you may always come to me."
 "e2b1","<IF_NOT0172><JUMPe346><X1e>クレア王妃<X04>
 カウルの村に 私の乳母を務めた
 シンシアという老婆が おります。
 
 会って 私のことを伝えてください。
 きっと力になって くれるでしょう。<END>
+<LOCe346><SET0401><RET_IL>","<IF_NOT0172><JUMPe346><X1e>Queen Claire<X04>
+My old nursemaid Cynthia lives in
+the village of Caur.
+
+If you meet her and tell her about
+this, I am sure she will help you.<END>
 <LOCe346><SET0401><RET_IL>"
 "e34a","<X1e>侍女<X04>
 ちょっと あなたたち クレアさまを
@@ -26,4 +36,16 @@
 
 間違っても おなぐさめしよう
 なんて 考えちゃ だめよ。
-いい わかった？"
+いい わかった？","<X1e>Maid<X04>
+Please don't bother Queen Claire.
+
+The king's never done anything
+like inviting dancers into the
+castle before, but he's suddenly
+capering about like a lunatic.
+
+And she's fretting that it's all
+because she hasn't done enough.
+
+Don't you start thinking that you
+need to go console her! All right?"

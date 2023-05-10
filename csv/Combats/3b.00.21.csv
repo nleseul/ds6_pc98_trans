@@ -1,6 +1,7 @@
-"dc30","マドマンＡ<RET_IL>"
-"dc70","マドマンＢ<RET_IL>"
-"dcb0","マドマンＣ<RET_IL>"
-"ddad","マドマンの群れが現れた。<RETN>"
+"dc30","マドマンＡ<RET_IL>","Mudman A<RET_IL>"
+"dc70","マドマンＢ<RET_IL>","Mudman B<RET_IL>"
+"dcb0","マドマンＣ<RET_IL>","Mudman C<RET_IL>"
+"ddad","マドマンの群れが現れた。<RETN>","A crowd of mudmen appears.<RETN>"
 "ddc6","は 毒ガスを吐いた。<X0a>
-<CONT><X02>は毒におかされた !!<X0a>"
+<CONT><X02>は毒におかされた !!<X0a>"," breathes poison gas.<X0a>
+<CONT><X02> is poisoned!<X0a>"

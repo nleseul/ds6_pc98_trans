@@ -1,20 +1,31 @@
 "e1c2","<X1e>賢者<X04>
 わしは この国の人々に
-呪文を授けるのが 役目じゃ。<X0d>"
-"e1fb","<X08>どの 呪文が 欲しいのじゃな？<RETN>"
-"e219","誰の 呪文の書に 書き込むのじゃな？<RET_IL>"
-"e23c","どこに 書き込むのじゃな？<RETN>"
-"e256","どれどれ、書き込むとしようか。<X0a>"
+呪文を授けるのが 役目じゃ。<X0d>","<X1e>Sage<X04>
+It is my duty to teach spells
+to the people of this kingdom.<X0d>"
+"e1fb","<X08>どの 呪文が 欲しいのじゃな？<RETN>","<X08>Which spell do you wish?<RETN>"
+"e219","誰の 呪文の書に 書き込むのじゃな？<RET_IL>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e23c","どこに 書き込むのじゃな？<RETN>","Where shall I scribe it?<RETN>"
+"e256","どれどれ、書き込むとしようか。<X0a>","Do you wish me to scribe anything
+more?<X0a>"
 "e28b","また、必要になったら
-いつでも 来るがよい。"
+いつでも 来るがよい。","Should you have any further needs,you may always come to me."
 "e34c","<X1e>やみの商人<X04>
 へっへっへ、いらっしゃい。
 今日は こんな物が ありますぜ。
 
+<RET_IL>","<X1e>Shady merchant<X04>
+Heh heh heh... welcome!
+Here's what I have today.
+
 <RET_IL>"
 "e394","<X1e>やみの商人<X04>
-おや、また来たのかい。<RETN>"
+おや、また来たのかい。<RETN>","<X1e>Shady merchant<X04>
+Back again, are you?<RETN>"
 "e3c0","おっと、これ以上持てないようだぜ。<JUMPe4de><LOCe3e5>何が欲しいんですかい？
+<RETN>","Ah, but you can't carry any more!
+<JUMPe4de><LOCe3e5>See anything you like?
 <RETN>"
 "e3fd","<X0e>ですかい。
 <PAGE>
@@ -23,46 +34,80 @@
 
 どんな奴が 買っていったかって？
 確か、黒いマントをきた男だったな。マントが青白く光っていて、
-どことなく うさんくさい 奴だった。"
+どことなく うさんくさい 奴だった。","Ah, the <X0e>?
+<PAGE>
+But, I'm afraid that's already
+sold.
+
+Who bought it? I suppose it was
+the man in the black cloak.
+His cloak had a pale glow, and
+he seemed rather shady."
 "e4bc","わりーな、今日は何もないんだ。
-<JUMPe4de><LOCe4de>また、来てくれよな。"
+<JUMPe4de><LOCe4de>また、来てくれよな。","Ah, I'm afraid I haven't got
+anything today!
+<JUMPe4de><LOCe4de>Do come again!"
 "e50b","<X1e>武器屋<X04>
 いらっしゃい。 青銅シリーズは
 いかがでしょうか？ これさえあれば
 カザスも怖くはないですよ。
 
+<RET_IL>","<X1e>Weapon merchant<X04>
+Welcome! Can I interest you in
+copper equipment? With that, even
+kazasi won't be a danger!
+
 <RET_IL>"
-"e570","また来てくださいね。"
+"e570","また来てくださいね。","Come again!"
 "e5b0","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは道具の店ですが
-どんな ご用ですか？<RETN>"
-"e5f5","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e5f5","また来てくださいね。","Come again!"
 "e615","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e639","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e653","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e678","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e693"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e6bf","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e6d8","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e77f","<X1e>兵士<X04>
 むっ、何者だ、お前たちは？
 
 アクダムさまの お許しが無い限り
 船に乗ることは 許されん。
-用が無いのなら さっさと 帰れ !!"
+用が無いのなら さっさと 帰れ !!","<X1e>Soldier<X04>
+Huh? What do you want?
+
+I can't let you board a ship
+without His Majesty's approval.
+So if you don't have his
+permission, go away!"
 "e7fb","<X1e>女<X04>
 セリオスさまが お亡くなりになり
 アクダムさまが 王位につかれた
@@ -70,23 +115,41 @@
 
 これで、この国のモンスターが
 少しでも 減ってくれれば
-いいのだけど ･ ･ ･。"
+いいのだけど ･ ･ ･。","<X1e>Woman<X04>
+Prince Selios has passed, and LordAchdam has taken the throne.
+
+I hope there'll at least be
+slightly fewer monsters now..."
 "e891","<X1e>男<X04>
 これは 単なる ウワサなんですがね
-ベルガの鉱山の 司令官は レベル１１だって もっぱらの評判ですよ。"
+ベルガの鉱山の 司令官は レベル１１だって もっぱらの評判ですよ。","<X1e>Man<X04>
+This is only rumor, of course. TheCommandant of Belga Mine being
+level 11 is sheer speculation."
 "e8f7","<X1e>船長<X04>
 なんだね、あんたたちは。
 私の所に来たって 船は出ないよ !!
 
 アクダムさまの 許可無しに
 船を出すと 重いバツを受けるんだ。
-この歳で 鉱山送りは御免だからな !!"
+この歳で 鉱山送りは御免だからな !!","<X1e>Captain<X04>
+What is it? You can't make the
+boat sail by coming to me.
+
+Departing without approval from
+His Majesty carries a heavy
+penalty. I'm not going to be sent
+to the mines at my age!"
 "e997","<X1e>宿屋の主人<X04>
 ようこそ 旅人の宿へ。
 一晩 10 Gold になりますが、
-よろしいですか ？<RETN>"
+よろしいですか ？<RETN>","<X1e>Innkeeper<X04>
+Welcome to the travelers' inn!
+One night is 10 gold. Is that
+acceptable?<RETN>"
 "e9e8","<X08>そうですか、では またの おこしを
-お待ちしております。"
+お待ちしております。","<X08>Very well. I look forward to
+your next visit.
+"
 "ea1f","<X08>おや お客さん、お金が 足りない
 みたいですね。
 
@@ -95,5 +158,14 @@
 いうことで。次からは ちゃんと
 頂きますからね。
 
-<RET_IL>"
-"eab1","<X08>では、ごゆっくりお休みください。"
+<RET_IL>","<X08>But it doesn't appear that
+you can afford it.
+
+Well, you may stay here tonight
+nonetheless. I will take your
+payment on your next visit.
+
+<RET_IL>
+"
+"eab1","<X08>では、ごゆっくりお休みください。","<X08>Have a pleasant stay!
+"

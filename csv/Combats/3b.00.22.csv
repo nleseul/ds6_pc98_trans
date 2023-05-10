@@ -1,7 +1,9 @@
-"dc30","マドマンＡ<RET_IL>"
-"dc70","アロマ<RET_IL>"
-"dcb0","マドマンＢ<RET_IL>"
-"de2e","マドマンとアロマの群れが現れた。<RETN>"
-"de4f","<X02>は逃げ出した。<X0a>"
+"dc30","マドマンＡ<RET_IL>","Mudman A<RET_IL>"
+"dc70","アロマ<RET_IL>","Aloma<RET_IL>"
+"dcb0","マドマンＢ<RET_IL>","Mudman B<RET_IL>"
+"de2e","マドマンとアロマの群れが現れた。<RETN>","A crowd of mudmen and alomas
+appears.<RETN>"
+"de4f","<X02>は逃げ出した。<X0a>","<X02> runs away.<X0a>"
 "de5f","は 毒ガスを吐いた。<X0a>
-<CONT><X02>は毒におかされた !!<X0a>"
+<CONT><X02>は毒におかされた !!<X0a>"," breathes poison gas.<X0a>
+<CONT><X02> is poisoned!<X0a>"

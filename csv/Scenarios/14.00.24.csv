@@ -44,11 +44,57 @@
 おわびを しておきましたから
 また 船に 乗せてくれるでしょう。
 
-いいわね セリオス もう勝手なことをするんじゃ ありませんよ。"
+いいわね セリオス もう勝手なことをするんじゃ ありませんよ。","<X1e>Felicia<X04>
+<IF00ae><JUMPe3b4>I'm glad to see you safe, Selios.
+I heard about what you've been
+doing from Jestonn.
+
+I hear that you drove all the
+monsters out of Wonliech?
+
+<IF0098><JUMPe37e>By the way, where is Sonia?
+
+<CH0>
+S-Sonia?
+What do you mean, mother?
+
+<X1e>Felicia<X04>
+How strange. I asked Sonia to helpyou pursue Achdam.
+
+She was going to meet you in
+Fort Larfa, since Jestonn was
+sending you there by boat.
+
+That poor girl, waiting by herselffor so long!
+Please make your way there soon.<END>
+<LOCe37e>For you to be doing the work of
+the gods...!<END>
+<LOCe3b4><SET002e>Selios!! Where did you wander off
+to?!
+
+The stir you caused when you 
+vanished from the boat from
+Wonliech while it was resupplying
+at Larfa...!
+
+You will be the ruler of Farleyn
+soon! You have to stop causing
+such trouble for those around you!
+
+Do you understand me?
+
+Your ship must have returned to
+Wonliech by now. Go apologize to
+my brother, and get aboard it.
+
+And, Selios, you mustn't run off
+on your own anymore!"
 "e59a","<X1e>フェリシア<X04>
 セリオス !!
 あなたは まだ その悪いくせが
-なおらないのですか？"
+なおらないのですか？","<X1e>Felicia<X04>
+Selios!! Haven't you grown out
+of those bad habits yet?"
 "e5e5","<X1e>アロン<X04>
 <IF00ad><JUMPe6be>王子さま、また 一段と ご立派な
 勇者に 成長なさいましたな。
@@ -59,19 +105,37 @@
 <LOCe68d>ソニア、王子さまの 足手まといに
 ならぬようにな。<END>
 <LOCe6be>ソニア !! お前は なんということを
-しでかしたのじゃ？"
+しでかしたのじゃ？","<X1e>Alon<X04>
+<IF00ad><JUMPe6be>I look forward to seeing your
+Highness grow into a great hero.
+
+<IF0098><JUMPe68d>Please look after Sonia. Even
+though she knows a few spells, I
+still worry about that girl.<END>
+<LOCe68d>Sonia, please try not to be in
+his Highness' way too much.<END>
+<LOCe6be>Sonia!! What on earth were you
+thinking?"
 "e6f3","<X1e>兵士<X04>
 王子さま お帰りなさい。
 王子さまは ファーレーンの 誇りで
-ございます。"
+ございます。","<X1e>Soldier<X04>
+Hail Prince Selios, the pride
+of Farleyn! Welcome home!"
 "e740","<X1e>兵士<X04>
 さすが 王子さまですね。
 ウォンリークの モンスターまでも
-倒してしまったとは。"
+倒してしまったとは。","<X1e>Soldier<X04>
+The monsters in Wonliech, too!
+I knew your Highness would do
+great things!"
 "e794","<X1e>兵士<X04>
 王子さま、お帰りなさいませ。
 ウォンリークでの ご活躍を
-聞きましたよ。"
+聞きましたよ。","<X1e>Soldier<X04>
+Welcome back, your Highness. I've
+heard of your deeds in Wonliech."
 "e7e1","<X1e>兵士<X04>
 王子さま、また一段と 成長された
-ようですね。"
+ようですね。","<X1e>Soldier<X04>
+Your Highness seems to have grown."

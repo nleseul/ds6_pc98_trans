@@ -1,27 +1,41 @@
 "e145","<X1e>賢者<X04>
 これは、これはエリオン殿。
-呪文が 必要なのかな？<X0d>"
-"e17d","<X08>どの 呪文を 書き込むかね？<RETN>"
-"e199","誰の 呪文の書に 書き込むかね？<RETN>"
-"e1b8","どこに 書き込むかね？<RETN>"
-"e1ce","では、書き込むとしよう。<X0a>"
+呪文が 必要なのかな？<X0d>","<X1e>Sage<X04>
+Ah, <CALLee99>!
+Are you needing any spells?<X0d>"
+"e17d","<X08>どの 呪文を 書き込むかね？<RETN>","<X08>Which spell do you want?<RETN>"
+"e199","誰の 呪文の書に 書き込むかね？<RETN>","Whose spellbook should I
+scribe it in?<RETN>"
+"e1b8","どこに 書き込むかね？<RETN>","Where should I scribe it?<RETN>"
+"e1ce","では、書き込むとしよう。<X0a>","Okay, I'll scribe it.<X0a>"
 "e1f5","また、必要になったら
-いつでも 来なさい。"
+いつでも 来なさい。","Should you have any further needs,you may always come to me."
 "e290","<X1e>ジェルマン<X04>
 おお エリオン、
 ソルディスに 行くつもりらしいな。
 
-ソルディスに 行ったら ディーナ姫に『私は決してあきらめませんぞ。』と伝えてくれ。"
+ソルディスに 行ったら ディーナ姫に『私は決してあきらめませんぞ。』と伝えてくれ。","<X1e>Jelman<X04>
+Hello, Aerion. I understand you'regoing to Soldythe?
+
+If so, please give Princess Dina
+a message for me.
+""I will never give up."""
 "e320","<X1e>侍女<X04>
 あら エリオンさま。
 今日は エリオンさまの 大好きな
-ビーフカレーで ございます。"
+ビーフカレーで ございます。","<X1e>Maid<X04>
+Why, Prince Aerion! I'm making
+your favorite beef curry tonight."
 "e376","<CALLe6ac>ソルディスには 珍しいドラゴンが
 いるそうです。
 
 しかも そのドラゴンを
 飼っている者まで いるとか
-どうなってるんでしょうね。"
+どうなってるんでしょうね。","<CALLe6ac>Dragons are rare, but I hear thereare some in Soldythe.
+
+There's even supposed to be
+someone with a dragon farm! How
+could they have managed that?"
 "e3f3","<CALLe6ac>城下町の酒場が 開いたんですよ。
 早く 仕事を終えて 酒場に行きたいな
 
@@ -30,13 +44,26 @@
 手に 入らなかったんですから。
 
 あっ そうだ、他の町の奴らにも
-早く教えてやらなくちゃ。"
+早く教えてやらなくちゃ。","<CALLe6ac>The bar in the city is open! I
+hope my shift ends soon so I can
+go get a drink.
+
+There's been no way to get a drinkin this kingdom ever since that
+Guliges attacked.
+
+Oh, I guess we should let people
+elsewhere in the kingdom know."
 "e4d0","<CALLe6ac>ソルディス王国に 行かれるそうで
 ございますね。
 
 ソルディスは 砂漠の国、
 砂漠には 危険な生き物がおります。
-くれぐれも お気をつけください。"
+くれぐれも お気をつけください。","<CALLe6ac>I understand you are en route to
+Soldythe?
+
+Soldythe is a desert kingdom, and
+the desert is full of dangerous
+creatures. Please take care."
 "e55c","<CALLe6ac>ところで ソルディスに 行かれる
 そうで ございますね。
 
@@ -49,9 +76,27 @@
 ボスが 見当たらないそうなのです。
 
 ただ、国中のいたる所で 怪しげな
-生き物が 人々を 襲っているそうです。"
+生き物が 人々を 襲っているそうです。","<CALLe6ac>You are heading to Soldythe, are
+you not?
+
+The slave merchants from Soldythe
+have been telling strange stories
+lately. It seems monsters have
+appeared there too.
+
+From what they say, they didn't
+attack at the same time as in
+Lanoura, and no one knows who is
+leading them.
+
+But people are still being
+attacked by strange creatures
+everywhere they go."
 "e6ac","<X1e>兵士<X04>
 エリオンさま、
 ありがとうございました。
+
+<RET_IL>","<X1e>Soldier<X04>
+Thank you, Prince Aerion!
 
 <RET_IL>"

@@ -1,5 +1,6 @@
-"dc30","眼力魔Ａ<RET_IL>"
-"dc70","眼力魔Ｂ<RET_IL>"
-"dcb0","眼力魔Ｃ<RET_IL>"
-"ddf0","眼力魔が３匹も現れた !!<RETN>"
-"de08","は <X02>を 見つめた !!<X0a>"
+"dc30","眼力魔Ａ<RET_IL>","Gazer A<RET_IL>"
+"dc70","眼力魔Ｂ<RET_IL>","Gazer B<RET_IL>"
+"dcb0","眼力魔Ｃ<RET_IL>","Gazer C<RET_IL>"
+"ddf0","眼力魔が３匹も現れた !!<RETN>","A trio of gazers appear!!<RETN>"
+"de08","は <X02>を 見つめた !!<X0a>"," stares straight
+at <X02>!!<X0a>"
