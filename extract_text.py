@@ -5,8 +5,8 @@ from ds6_util import *
 
 
 def import_data_table(disk, filename, start_disk_addr, entry_count, text_length, entry_stride):
-    with open(filename, 'w+', encoding='shift-jis') as out_file:
-        csv_writer = csv.writer(out_file)
+    with open(filename, 'w+', encoding='utf8', newline='') as out_file:
+        csv_writer = csv.writer(out_file, quoting=csv.QUOTE_ALL)
 
         disk.seek(start_disk_addr)
         for index in range(entry_count):
@@ -35,8 +35,8 @@ if __name__ == '__main__':
             if len(scenario_events) == 0:
                 continue
 
-            with open(f"csv/Scenarios/{format_sector_key(scenario_key)}.csv", 'w+', encoding='shift-jis') as csv_out:
-                csv_writer = csv.writer(csv_out)
+            with open(f"csv/Scenarios/{format_sector_key(scenario_key)}.csv", 'w+', encoding='utf8', newline='') as csv_out:
+                csv_writer = csv.writer(csv_out, quoting=csv.QUOTE_ALL)
                 for start_addr, event_info in scenario_events.items():
                     csv_writer.writerow([f"{start_addr:04x}", event_info['text']])
         print()
@@ -53,8 +53,8 @@ if __name__ == '__main__':
             if len(combat_events) == 0:
                 continue
 
-            with open(f"csv/Combats/{format_sector_key(combat_key)}.csv", 'w+', encoding='shift-jis') as csv_out:
-                csv_writer = csv.writer(csv_out)
+            with open(f"csv/Combats/{format_sector_key(combat_key)}.csv", 'w+', encoding='utf8', newline='') as csv_out:
+                csv_writer = csv.writer(csv_out, quoting=csv.QUOTE_ALL)
                 for start_addr, event_info in combat_events.items():
                     csv_writer.writerow([f"{start_addr:04x}", event_info['text']])
         print()
@@ -68,8 +68,8 @@ if __name__ == '__main__':
     with open(config['OriginalEventDisk'], 'rb') as event_disk:
     
         print("Extracting opening text...")
-        with open("csv/Opening.csv", 'w+', encoding='shift_jis') as csv_out:
-            csv_writer = csv.writer(csv_out)
+        with open("csv/Opening.csv", 'w+', encoding='utf8', newline='') as csv_out:
+            csv_writer = csv.writer(csv_out, quoting=csv.QUOTE_ALL)
 
             opening_string = ""
             opening_string_count = 0

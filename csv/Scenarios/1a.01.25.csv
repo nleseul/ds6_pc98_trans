@@ -1,24 +1,24 @@
-e16a,"<SET00c0><X1c>���ɂ� �J�M�� �������Ă��܂��B
+"e16a","<SET00c0><X1c>扉には カギが かかっています。
 <X04><IF_NOT0400><JUMPe1b5>
 
 <IF_NOT00c3><JUMPe1a7><LEADERe284,e2b7,e2ec,e284,e284>
 
-<LOCe1a7><LEADERe1b6,e1f6,e23c,e1b6,e1b6><SET00c3><LOCe1b5>"
-e1b6,"�����ƁA
-���̃J�M���� �S�y����������łƁB
+<LOCe1a7><LEADERe1b6,e1f6,e23c,e1b6,e1b6><SET00c3><LOCe1b5>"
+"e1b6","ええと、
+このカギ穴に 粘土を押し込んでと。
 
-�悵�A�^����ꂽ���B<RET_IL>"
-e1f6,"�ǂ�ǂ�A
-���̃J�M���� �S�y����������ł�
+よし、型が取れたぞ。<RET_IL>"
+"e1f6","どれどれ、
+このカギ穴に 粘土を押し込んでと
 
-�����A���ꂢ�Ɍ^����ꂽ�B<RET_IL>"
-e23c,"�ȂɂȂɁA
-���̃J�M���� �S�y����������ł�
+おお、きれいに型が取れた。<RET_IL>"
+"e23c","なになに、
+このカギ穴に 粘土を押し込んでと
 
-�����A�^����ꂽ����Ȃ����B<RET_IL>"
-e284,"�ǂ����s�����Ȃ��B
-������x �^����蒼���Ă������B<RET_IL>"
-e2b7,"�Ȃ�ƂȂ� �s���ł��ȁB
-�^����蒼���Ă����܂��傤�B<RET_IL>"
-e2ec,"�ǂ����s�����B
-������x �^����蒼���Ă������B<RET_IL>"
+おっ、型が取れたじゃないか。<RET_IL>"
+"e284","どうも不安だなあ。
+もう一度 型を取り直しておこう。<RET_IL>"
+"e2b7","なんとなく 不安ですな。
+型を取り直しておきましょう。<RET_IL>"
+"e2ec","どうも不安だ。
+もう一度 型を取り直しておくか。<RET_IL>"

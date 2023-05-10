@@ -1,21 +1,21 @@
-e0cf,��R���Ă����_���B<RET_IL>
-e0e2,"�������z���� !!
-<JUMPe0cf><LOCe0f7>����ȓz���� !!
-<JUMPe0cf><LOCe10a>���ԂƂ��z���� !!
-<JUMPe0cf><LOCe11f>���A���O�ȁ[�A����������ɂ��� !!
-<JUMPe0cf><LOCe144>�Ȃ�ċ���ȓz�Ȃ� !!
-<JUMPe0cf><LOCe15f>���A���肢���܂���B
-<LOCe174>�~�����Ă���Ȃ��ƁA
-�e���ɉ���ꂿ�܂���ł���B<RETN>"
-e1a6,"<X1e>�C��<X04>
-�����ł����A�~�����Ă���܂����B
-���A���肪�Ƃ��������܂��B
-�� !?
+"e0cf","抵抗してもムダだ。<RET_IL>"
+"e0e2","しつこい奴だな !!
+<JUMPe0cf><LOCe0f7>強情な奴だな !!
+<JUMPe0cf><LOCe10a>しぶとい奴だな !!
+<JUMPe0cf><LOCe11f>お、お前なー、いいかげんにしろ !!
+<JUMPe0cf><LOCe144>なんて強情な奴なんだ !!
+<JUMPe0cf><LOCe15f>お、お願いしますよ。
+<LOCe174>降伏してくれないと、
+親分に殴られちまうんですよ。<RETN>"
+"e1a6","<X1e>海賊<X04>
+そうですか、降伏してくれますか。
+あ、ありがとうございます。
+ん !?
 <PAGE>
-�Ȃ�ŁA���ꂪ �������Ȃ�����
-�Ȃ�˂��񂾁H"
-e485,<X08><X1e>�C��<X04><RETN>
-e48d,"
+なんで、おれが 礼を言わなくちゃ
+なんねえんだ？"
+"e485","<X08><X1e>海賊<X04><RETN>"
+"e48d","
 
 
-�~�����܂����H<RETN>"
+降伏しますか？<RETN>"

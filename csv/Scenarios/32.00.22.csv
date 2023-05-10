@@ -1,9 +1,9 @@
-e41a,<X0e>�������Ă��܂����B<RETN>
-e42e,"<CALLe458>�s�v�c��<CALLe45d>
+"e41a","<X0e>が入っていました。<RETN>"
+"e42e","<CALLe458>不思議な<CALLe45d>
 
-<JUMPe470><LOCe440><CALLe458>�s�v�c��<CALLe45d>
+<JUMPe470><LOCe440><CALLe458>不思議な<CALLe45d>
 
-<CALLe470> �܂�<RET_IL>"
-e458,<X0b>�� <RET_IL>
-e45d,�󔠂��J���܂����B<RETN>
-e470,�󔠂̒��ɂ�<RET_IL>
+<CALLe470> また<RET_IL>"
+"e458","<X0b>は <RET_IL>"
+"e45d","宝箱を開けました。<RETN>"
+"e470","宝箱の中には<RET_IL>"

@@ -1,40 +1,40 @@
-dc30,Žè‰º‚`<RET_IL>
-dc70,ƒAƒNƒ_ƒ€<RET_IL>
-dcb0,Žè‰º‚a<RET_IL>
-dcc1,<X08><X02>‚Í“¦‚°o‚µ‚½B<RET_IL>
-dcd2,<X0a>
-dcd3,"‚µ‚©‚µA“üŒû‚Í‚Ó‚³‚ª‚ê
-“¦‚°“¹‚Í‚È‚©‚Á‚½ !!
+"dc30","æ‰‹ä¸‹ï¼¡<RET_IL>"
+"dc70","ã‚¢ã‚¯ãƒ€ãƒ <RET_IL>"
+"dcb0","æ‰‹ä¸‹ï¼¢<RET_IL>"
+"dcc1","<X08><X02>ã¯é€ƒã’å‡ºã—ãŸã€‚<RET_IL>"
+"dcd2","<X0a>"
+"dcd3","ã—ã‹ã—ã€å…¥å£ã¯ãµã•ãŒã‚Œ
+é€ƒã’é“ã¯ãªã‹ã£ãŸ !!
 
-<RET_IL>"
-ddd0,"ƒAƒNƒ_ƒ€‚Æ‚Ì‘ÎŒˆ‚¾B
-‚ÆA‚»‚ÌŽž ƒZƒŠƒIƒX‚Ì”wŒã‚©‚ç
-‰ö‚µ‚¢ ‚à‚â‚ª —¬‚êž‚ñ‚Å‚«‚½B
-‘S‚Ä‚Ì Žô•¶‚Í ••‚¶‚ç‚ê‚½ !!<RETN>"
-de3e,"<CALLdfe7>‚¢A‚¢‚Á‚½‚¢ ‰½‚ª‹N‚±‚Á‚½‚Ì‚¾ !!
-‚¶‚ãAŽô•¶‚ª••‚¶‚ç‚ê‚Ä‚¢‚é‚Æ‚Í !!
+<RET_IL>"
+"ddd0","ã‚¢ã‚¯ãƒ€ãƒ ã¨ã®å¯¾æ±ºã ã€‚
+ã¨ã€ãã®æ™‚ ã‚»ãƒªã‚ªã‚¹ã®èƒŒå¾Œã‹ã‚‰
+æ€ªã—ã„ ã‚‚ã‚„ãŒ æµã‚Œè¾¼ã‚“ã§ããŸã€‚
+å…¨ã¦ã® å‘ªæ–‡ã¯ å°ã˜ã‚‰ã‚ŒãŸ !!<RETN>"
+"de3e","<CALLdfe7>ã„ã€ã„ã£ãŸã„ ä½•ãŒèµ·ã“ã£ãŸã®ã  !!
+ã˜ã‚…ã€å‘ªæ–‡ãŒå°ã˜ã‚‰ã‚Œã¦ã„ã‚‹ã¨ã¯ !!
 
-<X02>‚Í“¦‚°o‚µ‚½ !!<WAIT>
-<CALLdcd3><X02>‚Í ƒƒv‚Ì‚Â‚Î‚³‚ðŽg‚Á‚½B<WAIT>
-<X02>‚Í “´ŒA“à‚Å‚Í Œø‰Ê‚ª‚È‚¢
-‚±‚Æ‚É ‹C‚ª•t‚©‚È‚¢B
+<X02>ã¯é€ƒã’å‡ºã—ãŸ !!<WAIT>
+<CALLdcd3><X02>ã¯ ãƒ¯ãƒ—ã®ã¤ã°ã•ã‚’ä½¿ã£ãŸã€‚<WAIT>
+<X02>ã¯ æ´žçªŸå†…ã§ã¯ åŠ¹æžœãŒãªã„
+ã“ã¨ã« æ°—ãŒä»˜ã‹ãªã„ã€‚
 
-<CALLdfe7>ƒEƒEƒEƒEƒE !!
-‚±‚¤‚È‚Á‚Ä‚Í ‚µ‚©‚½‚ª‚È‚¢B
-Žô•¶‚È‚µ‚ÅŸ•‰‚¾ !!
+<CALLdfe7>ã‚¦ã‚¦ã‚¦ã‚¦ã‚¦ !!
+ã“ã†ãªã£ã¦ã¯ ã—ã‹ãŸãŒãªã„ã€‚
+å‘ªæ–‡ãªã—ã§å‹è² ã  !!
 
-<RET_IL>"
-df25,"<CALLdfe7>ƒZAƒZƒŠƒIƒXB<WAIT>
-‚ÂA‹­‚­‚È‚Á‚½‚ÈB
+<RET_IL>"
+"df25","<CALLdfe7>ã‚»ã€ã‚»ãƒªã‚ªã‚¹ã€‚<WAIT>
+ã¤ã€å¼·ããªã£ãŸãªã€‚
 
-‚¾‚ª ¥ ¥ ¥<WAIT>
-‚í‚µ‚ð“|‚µ‚½‚Æ‚Ä ¥ ¥ ¥<WAIT>
-‚±‚Ì¢ŠE‚É ¥ ¥ ¥<WAIT>
-•½˜a‚ª–K‚ê‚é‚±‚Æ‚Í‚È‚¢B
+ã ãŒ ï½¥ ï½¥ ï½¥<WAIT>
+ã‚ã—ã‚’å€’ã—ãŸã¨ã¦ ï½¥ ï½¥ ï½¥<WAIT>
+ã“ã®ä¸–ç•Œã« ï½¥ ï½¥ ï½¥<WAIT>
+å¹³å’ŒãŒè¨ªã‚Œã‚‹ã“ã¨ã¯ãªã„ã€‚
 
-ƒZ ¥ ƒŠ ¥ ƒI ¥ ƒX ¥ ¥ ¥<WAIT>
-ƒAƒOƒj[ƒWƒƒ‚É‚Í  ¥ ¥ ¥<WAIT>
-‹C ¥ ‚ð ¥ •t ¥ ‚¯ ¥ ‚ë ¥ ¥ ¥<CLEAR0401>
+ã‚» ï½¥ ãƒª ï½¥ ã‚ª ï½¥ ã‚¹ ï½¥ ï½¥ ï½¥<WAIT>
+ã‚¢ã‚°ãƒ‹ãƒ¼ã‚¸ãƒ£ã«ã¯  ï½¥ ï½¥ ï½¥<WAIT>
+æ°— ï½¥ ã‚’ ï½¥ ä»˜ ï½¥ ã‘ ï½¥ ã‚ ï½¥ ï½¥ ï½¥<CLEAR0401>
 
-<RET_IL>"
-dfe7,<X1e>ƒAƒNƒ_ƒ€<X04><RETN>
+<RET_IL>"
+"dfe7","<X1e>ã‚¢ã‚¯ãƒ€ãƒ <X04><RETN>"

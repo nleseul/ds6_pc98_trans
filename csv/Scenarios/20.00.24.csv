@@ -1,28 +1,28 @@
-e235,"<CALLe4de><IF00dd><JUMPe2bc><ASMe31b><IF_NOT0401><JUMPe289>‚È‚ñ‚¾ ‚Ü‚¾ ”š–ò‚ª —~‚µ‚¢‚Ì‚©H
-<ASMe32d><X08><IF_NOT00dd><JUMPe289><X0e><X1c>‚ð“n‚µ‚Ü‚µ‚½B<X0c0301><X04>
+"e235","<CALLe4de><IF00dd><JUMPe2bc><ASMe31b><IF_NOT0401><JUMPe289>ãªã‚“ã  ã¾ã  çˆ†è–¬ãŒ æ¬²ã—ã„ã®ã‹ï¼Ÿ
+<ASMe32d><X08><IF_NOT00dd><JUMPe289><X0e><X1c>ã‚’æ¸¡ã—ã¾ã—ãŸã€‚<X0c0301><X04>
 
-<JUMPe2bc><LOCe289>‚Ü‚½ ”š–ò‚ª —~‚µ‚©‚Á‚½‚ç
-Žð‚Æ ŒðŠ·‚µ‚Ä‚â‚é‚©‚ç‚ÈB<END>
-<LOCe2bc>‰E‰œ‚Ì•ŠíŒÉ‚©‚ç Ž‚Á‚Ä‚¢‚Á‚Ä‚­‚êB
+<JUMPe2bc><LOCe289>ã¾ãŸ çˆ†è–¬ãŒ æ¬²ã—ã‹ã£ãŸã‚‰
+é…’ã¨ äº¤æ›ã—ã¦ã‚„ã‚‹ã‹ã‚‰ãªã€‚<END>
+<LOCe2bc>å³å¥¥ã®æ­¦å™¨åº«ã‹ã‚‰ æŒã£ã¦ã„ã£ã¦ãã‚Œã€‚
 
 <CH2>
-ƒ{ƒA[ƒh‚³‚ñA‚ ‚è‚ª‚Æ‚¤B
+ãƒœã‚¢ãƒ¼ãƒ‰ã•ã‚“ã€ã‚ã‚ŠãŒã¨ã†ã€‚
 
-<CALLe4de>ƒiƒ“ƒm ‚È‚ñ‚ÌB ƒ|ƒŠ ƒ|ƒŠ"
-e33f,"<X1e>ŠC‘¯<X04>
-‚¢‚â[A‘D’·‚Ì‚«‚°‚ñ‚ª ‚È‚¨‚Á‚Ä
-•‚©‚Á‚½‚æB"
-e373,"<IF_NOT00dd><JUMPe33f><X1e>ŠC‘¯<X04>
-‘D’·‚Ì‹–‰Â‚ð‚à‚ç‚Á‚Ä‚«‚½‚Á‚Ä H
-<ASMe423><IF0401><JUMPe3e3><CLEAR00dd>‚í‚©‚Á‚½A‚Ù‚ç‚æ Ž‚Á‚Ä‚¢‚«‚ÈB<WAIT>
-<X0e><X1c>‚ð‚à‚ç‚¢‚Ü‚µ‚½B<X0c0301><X04><END>
-<LOCe3e3>‚¢‚­‚ç ‹–‰Â‚ð‚à‚ç‚Á‚Ä‚«‚½‚Á‚Ä
-Ž‚Ä‚Ë[‚à‚ñ‚Í ‚µ‚å‚¤‚ª‚Ë[‚æ‚ÈB"
-e43b,"<X1e>ŠC‘¯<X04>
-<IF0408><JUMPe467><IF0409><JUMPe467>‚â‚  ‹ql Œ³‹C‚»‚¤‚¾‚ÈH<END>
-<LOCe467><SET0400>‚³‚  ‚ä‚Á‚­‚è‹x‚ñ‚Å‚­‚ñ‚ÈB"
-e486,"<X1e>ƒ~ƒ‰ƒ‹ƒ_<X04>
-‚È‚ñ‚¾‚ËA‚Ü‚¾‰½‚©—p‚ª‚ ‚é‚Ì‚©‚¢B"
-e4b4,"<X1e>_•ƒ<X04>
-‚È‚ñ‚¾ —p‚ª‚Ë‚¦‚Ì‚É ˜b‚µ‚©‚¯‚é‚È !"
-e4de,<X1e>ƒ{ƒA[ƒh<X04><RETN>
+<CALLe4de>ãƒŠãƒ³ãƒŽ ãªã‚“ã®ã€‚ ãƒãƒª ãƒãƒª"
+"e33f","<X1e>æµ·è³Š<X04>
+ã„ã‚„ãƒ¼ã€èˆ¹é•·ã®ãã’ã‚“ãŒ ãªãŠã£ã¦
+åŠ©ã‹ã£ãŸã‚ˆã€‚"
+"e373","<IF_NOT00dd><JUMPe33f><X1e>æµ·è³Š<X04>
+èˆ¹é•·ã®è¨±å¯ã‚’ã‚‚ã‚‰ã£ã¦ããŸã£ã¦ ï¼Ÿ
+<ASMe423><IF0401><JUMPe3e3><CLEAR00dd>ã‚ã‹ã£ãŸã€ã»ã‚‰ã‚ˆ æŒã£ã¦ã„ããªã€‚<WAIT>
+<X0e><X1c>ã‚’ã‚‚ã‚‰ã„ã¾ã—ãŸã€‚<X0c0301><X04><END>
+<LOCe3e3>ã„ãã‚‰ è¨±å¯ã‚’ã‚‚ã‚‰ã£ã¦ããŸã£ã¦
+æŒã¦ã­ãƒ¼ã‚‚ã‚“ã¯ ã—ã‚‡ã†ãŒã­ãƒ¼ã‚ˆãªã€‚"
+"e43b","<X1e>æµ·è³Š<X04>
+<IF0408><JUMPe467><IF0409><JUMPe467>ã‚„ã‚ å®¢äºº å…ƒæ°—ãã†ã ãªï¼Ÿ<END>
+<LOCe467><SET0400>ã•ã‚ ã‚†ã£ãã‚Šä¼‘ã‚“ã§ãã‚“ãªã€‚"
+"e486","<X1e>ãƒŸãƒ©ãƒ«ãƒ€<X04>
+ãªã‚“ã ã­ã€ã¾ã ä½•ã‹ç”¨ãŒã‚ã‚‹ã®ã‹ã„ã€‚"
+"e4b4","<X1e>ç¥žçˆ¶<X04>
+ãªã‚“ã  ç”¨ãŒã­ãˆã®ã« è©±ã—ã‹ã‘ã‚‹ãª !"
+"e4de","<X1e>ãƒœã‚¢ãƒ¼ãƒ‰<X04><RETN>"
