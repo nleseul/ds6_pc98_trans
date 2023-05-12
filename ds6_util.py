@@ -1,3 +1,4 @@
+import csv
 
 from capstone import *
 from capstone.x86 import *
@@ -39,6 +40,18 @@ def get_sector_info_nfd0(disk_image):
         data_block_index += 1
         
     return sector_list
+
+
+def load_translations_csv(filename):
+    trans = {}
+    with open(filename, 'r', encoding='utf8', newline='') as csv_in:
+        for row in csv.reader(csv_in, quoting=csv.QUOTE_ALL):
+            data = { 'original': row[1] }
+            if len(row) > 2:
+                data['translation'] = row[2]
+            trans[row[0]] = data
+    return trans
+
     
 EVENT_CODE_INFO = {
     0x00: { 'length': 1, 'terminator': True }, # Terminator
