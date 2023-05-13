@@ -149,6 +149,154 @@ def disassemble_event(scenario_data, base_addr, start_addr, continuation_extent_
     return instructions
 
 
+def encode_event(text, max_length = None):
+    encoded = bytearray()
+    references = []
+    locators = {}
+    
+    terminated = False
+    
+    while len(text) > 0:
+    
+        terminated = False
+        
+        if text.startswith("\n<CONT>"):
+            current_encoded_bytes = b''
+            text = text[7:]
+            continue
+            
+        current_encoded_bytes = None
+    
+        if text.startswith("<X"):
+            hex_bytes = ""
+            text = text[2:]
+            while text[0] != ">":
+                hex_bytes += text[0]
+                text = text[1:]
+            text = text[1:]
+            
+            current_encoded_bytes = bytes.fromhex(hex_bytes)
+            if current_encoded_bytes[0] == 0x06 or current_encoded_bytes[0] == 0x0a or current_encoded_bytes[0] == 0x0d:
+                terminated = True
+            
+        elif text.startswith("<JUMP"):
+            call_addr = int(text[5:9], base=16)
+            text = text[10:]
+            references.append((len(encoded) + 1, call_addr))
+            current_encoded_bytes = b'\x0f' + int.to_bytes(call_addr, length=2, byteorder='little')
+            
+            if len(text) == 0:
+                terminated = True
+        
+        elif text.startswith("<CALL"):
+            call_addr = int(text[5:9], base=16)
+            text = text[10:]
+            references.append((len(encoded) + 1, call_addr))
+            current_encoded_bytes = b'\x10' + int.to_bytes(call_addr, length=2, byteorder='little')
+            
+        elif text.startswith("<ASM"):
+            text = text[4:]
+            if text.startswith("_NORET"):
+                text = text[6:]
+                terminated = True
+            asm_addr = int(text[:4], base=16)
+            text = text[5:]
+            current_encoded_bytes = b'\x15' + int.to_bytes(asm_addr, length=2, byteorder='little')
+            
+        elif text.startswith("<LEADER"):
+            text = text[7:]
+            current_encoded_bytes = b'\x16'
+            for ref_index in range(5):
+                call_addr = int(text[0:4], base=16)
+                references.append((len(encoded) + ref_index*2 + 1, call_addr))
+                current_encoded_bytes += int.to_bytes(call_addr, 2, 'little')
+                text = text[5:]
+                
+        elif text.startswith("<IF_NOT"):
+            flag = int(text[7:11], base=16)
+            text = text[12:]
+            current_encoded_bytes = b'\x11' + int.to_bytes(flag, length=2, byteorder='little')
+            
+        elif text.startswith("<IF"):
+            flag = int(text[3:7], base=16)
+            text = text[8:]
+            current_encoded_bytes = b'\x12' + int.to_bytes(flag, length=2, byteorder='little')
+        
+        elif text.startswith("<CLEAR"):
+            flag = int(text[6:10], base=16)
+            text = text[11:]
+            current_encoded_bytes = b'\x13' + int.to_bytes(flag, length=2, byteorder='little')
+            
+        elif text.startswith("<SET"):
+            flag = int(text[4:8], base=16)
+            text = text[9:]
+            current_encoded_bytes = b'\x14' + int.to_bytes(flag, length=2, byteorder='little')
+            
+        elif text.startswith("<RET_IL>"):
+            text = text[8:]
+            current_encoded_bytes = b'\x06'
+            terminated = True
+            
+        elif text.startswith("<RETN>"):
+            text = text[6:]
+            current_encoded_bytes = b'\x07'
+            terminated = True
+            
+        elif text.startswith("<CH"):
+            current_encoded_bytes = b'\x09' + int.to_bytes(int(text[3:4]), length=1, byteorder='little')
+            text = text[5:]
+            
+        elif text.startswith("<LOC"):
+            loc_addr = int(text[4:8], base=16)
+            loc_offset = len(encoded)
+            locators[loc_addr] = loc_offset
+            current_encoded_bytes = b''
+            text = text[9:]
+            
+        elif text.startswith("<N>\n"):
+            current_encoded_bytes = b'\x01'
+            text = text[4:]
+            
+        elif text.startswith("<WAIT>\n"):
+            current_encoded_bytes = b'\x03'
+            text = text[7:]
+
+        elif text.startswith("<PAGE>\n"):
+            current_encoded_bytes = b'\x05'
+            text = text[7:]
+            
+        elif text.startswith("<END>\n"):
+            current_encoded_bytes = b'\x00'
+            text = text[6:]
+            
+        elif text.startswith("<"):
+            raise Exception("Unknown tag " + text[:10] + "!")
+            
+        
+        elif text.startswith("\n\n"):
+            current_encoded_bytes = b'\x05'
+            text = text[2:]
+        elif text.startswith("\n"):
+            current_encoded_bytes = b'\x01'
+            text = text[1:]
+        else:
+            current_encoded_bytes = text[0].encode(encoding='shift-jis')
+            text = text[1:]
+        
+        if not terminated and max_length is not None and len(encoded) + len(current_encoded_bytes) > max_length - 1:
+            print("Text is too long! Truncating.")
+            break
+        elif terminated and max_length is not None and len(encoded) + len(current_encoded_bytes) > max_length:
+            raise Exception("Terminated text is too long!")
+        else:
+            encoded += current_encoded_bytes
+            
+    if not terminated:
+        encoded += b'\x00'
+    
+    return encoded, references, locators
+
+
 class CodeHook:
     def should_handle(self, instruction):
         raise NotImplementedError("Handle this in a subclass")
