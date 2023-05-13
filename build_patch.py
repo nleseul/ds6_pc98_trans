@@ -158,6 +158,9 @@ def event_disk_patch_opening(event_disk_patch):
             elif text.startswith("\n"):
                 encoded_opening += b'\x00'
                 text = text[1:]
+            elif text.startswith("\r"):
+                # Ignore carriage returns.
+                text = text[1:]
             else:
                 encoded_opening += text[0:1].encode('shift-jis')
                 text = text[1:]
