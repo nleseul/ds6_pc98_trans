@@ -155,6 +155,8 @@ def encode_event(text, max_length = None):
     locators = {}
     
     terminated = False
+
+    text = text.replace("\r", "")
     
     while len(text) > 0:
     
@@ -1228,6 +1230,21 @@ def get_scenario_directory(scenario_disk):
         for _ in range(chunk_count):
             scenario_info['sector_addresses'].append(disk_sectors[sector_index]['start_addr'])
             sector_index += 1
+
+        space_at_end_length = 0
+        for sector_addr in scenario_info['sector_addresses'][::-1]:
+            scenario_disk.seek(sector_addr)
+            sector_data = scenario_disk.read(scenario_info['sector_length'])
+            sector_loc = len(sector_data) - 1
+            while sector_loc >= 0 and sector_data[sector_loc] == 0:
+                sector_loc -= 1
+                space_at_end_length += 1
+            if sector_loc >= 0:
+                break
+            
+        scenario_info['space_at_end_length'] = space_at_end_length
+
+
         
         scenario_directory[scenario_key] = scenario_info
     
@@ -1369,7 +1386,22 @@ def extract_scenario_events(scenario_disk, scenario_key, scenario_info):
 
     for block in blocks:
         if isinstance(block, EventBlock):
-            events[block.start_addr] = { 'text': block.format_string(scenario_data), 'length': block.length }
+            event_info = { 
+                'text': block.format_string(scenario_data), 
+                'length': block.length,
+                'is_relocatable': block.is_relocatable,
+                'references': []
+            }
+
+            for link in block.get_incoming_links():
+                event_info['references'].append( { 'source_addr': link.source_addr, 'target_addr': link.target_addr, } )
+                if link.source_block is None:
+                    raise Exception("Does this happen?")
+                elif isinstance(link.source_block, EventBlock):
+                    event_info['references'][-1]['source_event_addr'] = link.source_block.start_addr
+                    
+
+            events[block.start_addr] = event_info
 
     return events
 

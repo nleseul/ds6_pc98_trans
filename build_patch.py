@@ -140,6 +140,96 @@ def patch_asm(patch, nasm_path, base_addr, max_length, asm_code):
     patch.add_record(base_addr - 0x4000 + 0x13e10, encoded.ljust(max_length, b'\x90'))
 
 
+def encode_translations(event_list, translated_text):
+
+    encoded_translations = {}
+
+    for event_addr, event_info in event_list.items():
+        context = f"{event_addr:04x}"
+        original_encoded, original_references, original_locators = encode_event(event_info['text'])
+            
+        if context in translated_text and 'translation' in translated_text[context]:
+            translation_encoded, translation_references, translation_locators = encode_event(translated_text[context]['translation'])
+            encoded_translations[event_addr] = { 'encoded': translation_encoded, 'references': translation_references, 'locators': translation_locators }
+        else:
+            encoded_translations[event_addr] = { 'encoded': original_encoded, 'references': original_references, 'locators': original_locators }
+
+    return encoded_translations
+
+
+def relocate_events(event_list, encoded_translations, empty_space, packing_strategy='first'):
+
+    relocations = {}
+
+    space_pool = SpacePool()
+
+    for event_addr, event_info in event_list.items():
+        if event_info['is_relocatable']:
+            space_pool.add_space(event_addr, event_addr + event_info['length'] - 1)
+        
+    space_pool.add_space(empty_space[0], empty_space[1])
+
+    total_space_required = sum([len(encoded_translations[event_addr]['encoded']) for event_addr in event_list])
+    print(f"Requires {total_space_required}/{space_pool.total_available_space} bytes available")
+
+    for event_addr, event_info in event_list.items():
+        translation_info = encoded_translations[event_addr]
+
+        if not event_info['is_relocatable']:
+            if event_addr in [0xdc30, 0xdc70, 0xdcb0, 0xdcf0]:
+                if len(translation_info['encoded']) > 0x10:
+                    raise Exception(f"Encoded text for enemy name at {event_addr:04x} is too long! original={event_info['length']} bytes; new={len(translation_info['encoded'])} bytes")
+            elif len(translation_info['encoded']) > event_info['length']:
+                raise Exception(f"Encoded text for non-relocatable event at {event_addr:04x} is too long! original={event_info['length']} bytes; new={len(translation_info['encoded'])} bytes")
+            continue
+
+        try:
+            space_addr = space_pool.take_space(len(translation_info['encoded']), packing_strategy)
+            relocations[event_addr] = space_addr
+        except Exception:            
+            raise Exception(f"No space found to relocate event {event_addr:04x}")
+
+        for locator_orig_addr, locator_new_offset in translation_info['locators'].items():
+            locator_new_addr = relocations[event_addr] + locator_new_offset
+            relocations[locator_orig_addr] = locator_new_addr
+
+    print()
+            
+    return relocations
+
+
+def update_references(event_list, relocations, encoded_translations):
+
+    reference_changes = {}
+
+    for event_addr, event_info in event_list.items():
+        for ref_info in event_info['references']:
+            if ref_info['target_addr'] in relocations:
+                if 'source_event_addr' in ref_info:
+                    if ref_info['source_event_addr'] in encoded_translations:
+                        translation_info = encoded_translations[ref_info['source_event_addr']]
+                        for offset, target_addr in translation_info['references']:
+                            if target_addr in relocations:
+                                translation_info['encoded'][offset:offset+2] = int.to_bytes(relocations[target_addr], length=2, byteorder='little')
+                else:
+                    reference_changes[ref_info['source_addr']] = relocations[ref_info['target_addr']]
+                    
+    return reference_changes
+
+
+def patch_sector(patch, sector_addresses, addr, base_addr, data):
+    chunk_index = (addr - base_addr) // 0x400
+    chunk_offset = (addr - base_addr) % 0x400
+    disk_addr = sector_addresses[chunk_index] + chunk_offset
+            
+    while len(data) > 0:
+        current_end_addr = min(disk_addr + len(data), sector_addresses[chunk_index] + 0x400)
+        patch.add_record(disk_addr, data[:current_end_addr - disk_addr])
+        data = data[current_end_addr - disk_addr:]
+        chunk_index += 1
+        disk_addr = None if chunk_index >= len(sector_addresses) else sector_addresses[chunk_index]
+
+
 def event_disk_patch_opening(event_disk_patch):
     # Opening text
     opening_trans = load_translations_csv("csv/Opening.csv")
@@ -647,6 +737,38 @@ def scenario_disk_patch_misc(scenario_disk_patch):
     scenario_disk_patch.add_record(0x90d19, b" HP\x00 Attack\x00 Defense\x00 Speed\x00 Left\x00\x00\x00\x00\x00")
 
 
+def scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk):
+    scenario_directory = get_scenario_directory(scenario_disk)
+    for scenario_key, scenario_info in scenario_directory.items():
+        scenario_events = extract_scenario_events(scenario_disk, scenario_key, scenario_info)
+
+        if len(scenario_events) == 0:
+            continue
+
+        print(f"Translating {format_sector_key(scenario_key)}...")
+        
+        if scenario_key in [(0x21, 0x01, 0x24), (0x24, 0x00, 0x24)]:
+            packing_strategy = 'smallest'
+        else:
+            packing_strategy = 'first'
+        
+        trans = load_translations_csv(f"csv/Scenarios/{format_sector_key(scenario_key)}.csv")
+        encoded_translations = encode_translations(scenario_events, trans)
+
+        data_length = scenario_info['sector_length'] * len(scenario_info['sector_addresses'])
+        relocations = relocate_events(scenario_events, encoded_translations, (0xe000 + data_length - scenario_info['space_at_end_length'] + 1, 0xe000 + data_length - 1), packing_strategy)
+        reference_changes = update_references(scenario_events, relocations, encoded_translations)
+
+        for translation_addr, translation in encoded_translations.items():
+            if translation_addr in relocations:
+                patch_sector(scenario_disk_patch, scenario_info['sector_addresses'], relocations[translation_addr], 0xe000, translation['encoded'])
+            else:
+                patch_sector(scenario_disk_patch, scenario_info['sector_addresses'], translation_addr, 0xe000, translation['encoded'])
+
+        for ref_addr, new_value in reference_changes.items():
+            patch_sector(scenario_disk_patch, scenario_info['sector_addresses'], ref_addr, 0xe000, int.to_bytes(new_value, length=2, byteorder='little'))
+
+
 if __name__ == '__main__':
     # Setup
     configfile = configparser.ConfigParser(interpolation=configparser.ExtendedInterpolation())
@@ -672,6 +794,10 @@ if __name__ == '__main__':
 
     # Build the scenario disk
     scenario_disk_patch_misc(scenario_disk_patch)
+
+    with open(config['OriginalScenarioDisk'], 'rb') as scenario_disk:
+        scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk)
+
 
     # Create patch files
     print("Creating patches...")
