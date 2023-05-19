@@ -1409,6 +1409,9 @@ def extract_scenario_events(scenario_disk, scenario_key, scenario_info):
                 if link.source_block is not None and isinstance(link.source_block, EventBlock):
                     event_info['references'][-1]['source_event_addr'] = link.source_block.start_addr
             
+            for internal_ref in block.get_internal_references():
+                event_info['references'].append( { 'source_addr': internal_ref['source_addr'], 'target_addr': internal_ref['dest_addr'], 'source_event_addr': block.start_addr } )
+
             events[block.start_addr] = event_info
 
     return events
@@ -1481,6 +1484,9 @@ def extract_combat_events(scenario_disk, combat_key, combat_info):
                 event_info['references'].append( { 'source_addr': link.source_addr, 'target_addr': link.target_addr, } )
                 if link.source_block is not None and isinstance(link.source_block, EventBlock):
                     event_info['references'][-1]['source_event_addr'] = link.source_block.start_addr
+
+            for internal_ref in block.get_internal_references():
+                event_info['references'].append( { 'source_addr': internal_ref['source_addr'], 'target_addr': internal_ref['dest_addr'], 'source_event_addr': block.start_addr } )
 
             events[block.start_addr] = event_info
             
