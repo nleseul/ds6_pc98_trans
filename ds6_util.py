@@ -1243,8 +1243,6 @@ def get_scenario_directory(scenario_disk):
                 break
             
         scenario_info['space_at_end_length'] = space_at_end_length
-
-
         
         scenario_directory[scenario_key] = scenario_info
     
@@ -1262,8 +1260,21 @@ def get_combat_directory(scenario_disk):
         sector_info = disk_sectors[sector_index]
         
         combat_key = (sector_info['cylinder'], sector_info['head'], sector_info['sector'])
-        combat_directory[combat_key] = { 'sector_length': sector_info['size'], 'sector_addresses' : [ sector_info['start_addr'] ] }
 
+        space_at_end_length = 0
+        scenario_disk.seek(sector_info['start_addr'])
+        sector_data = scenario_disk.read(sector_info['size'])
+        sector_loc = len(sector_data) - 1
+        while sector_loc >= 0 and sector_data[sector_loc] == 0:
+            sector_loc -= 1
+            space_at_end_length += 1
+        
+        combat_directory[combat_key] = { 
+            'sector_length': sector_info['size'], 
+            'sector_addresses': [ sector_info['start_addr'] ],
+            'space_at_end_length': space_at_end_length
+        }
+        
         sector_index += 1
     
     return combat_directory
@@ -1395,12 +1406,9 @@ def extract_scenario_events(scenario_disk, scenario_key, scenario_info):
 
             for link in block.get_incoming_links():
                 event_info['references'].append( { 'source_addr': link.source_addr, 'target_addr': link.target_addr, } )
-                if link.source_block is None:
-                    raise Exception("Does this happen?")
-                elif isinstance(link.source_block, EventBlock):
+                if link.source_block is not None and isinstance(link.source_block, EventBlock):
                     event_info['references'][-1]['source_event_addr'] = link.source_block.start_addr
-                    
-
+            
             events[block.start_addr] = event_info
 
     return events
@@ -1462,6 +1470,18 @@ def extract_combat_events(scenario_disk, combat_key, combat_info):
 
     for block in blocks:
         if isinstance(block, EventBlock):
-            events[block.start_addr] = { 'text': block.format_string(combat_data), 'length': block.length }
+            event_info = { 
+                'text': block.format_string(combat_data), 
+                'length': block.length,
+                'is_relocatable': block.is_relocatable,
+                'references': []
+            }
 
+            for link in block.get_incoming_links():
+                event_info['references'].append( { 'source_addr': link.source_addr, 'target_addr': link.target_addr, } )
+                if link.source_block is not None and isinstance(link.source_block, EventBlock):
+                    event_info['references'][-1]['source_event_addr'] = link.source_block.start_addr
+
+            events[block.start_addr] = event_info
+            
     return events

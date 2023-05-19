@@ -745,7 +745,7 @@ def scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk):
         if len(scenario_events) == 0:
             continue
 
-        print(f"Translating {format_sector_key(scenario_key)}...")
+        print(f"Translating scenario {format_sector_key(scenario_key)}...")
         
         if scenario_key in [(0x21, 0x01, 0x24), (0x24, 0x00, 0x24)]:
             packing_strategy = 'smallest'
@@ -767,6 +767,33 @@ def scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk):
 
         for ref_addr, new_value in reference_changes.items():
             patch_sector(scenario_disk_patch, scenario_info['sector_addresses'], ref_addr, 0xe000, int.to_bytes(new_value, length=2, byteorder='little'))
+
+
+def scenario_disk_patch_combats(scenario_disk_patch, scenario_disk):
+    combat_directory = get_combat_directory(scenario_disk)
+    for combat_key, combat_info in combat_directory.items():
+        combat_events = extract_combat_events(scenario_disk, combat_key, combat_info)
+
+        if len(combat_events) == 0:
+            continue
+
+        print(f"Translating combat {format_sector_key(combat_key)}...")
+        
+        trans = load_translations_csv(f"csv/Combats/{format_sector_key(combat_key)}.csv")
+        encoded_translations = encode_translations(combat_events, trans)
+
+        data_length = combat_info['sector_length'] * len(combat_info['sector_addresses'])
+        relocations = relocate_events(combat_events, encoded_translations, (0xdc00 + data_length - combat_info['space_at_end_length'] + 1, 0xe000 + data_length - 1))
+        reference_changes = update_references(combat_events, relocations, encoded_translations)
+
+        for translation_addr, translation in encoded_translations.items():
+            if translation_addr in relocations:
+                patch_sector(scenario_disk_patch, combat_info['sector_addresses'], relocations[translation_addr], 0xdc00, translation['encoded'])
+            else:
+                patch_sector(scenario_disk_patch, combat_info['sector_addresses'], translation_addr, 0xdc00, translation['encoded'])
+
+        for ref_addr, new_value in reference_changes.items():
+            patch_sector(scenario_disk_patch, combat_info['sector_addresses'], ref_addr, 0xdc00, int.to_bytes(new_value, length=2, byteorder='little'))
 
 
 if __name__ == '__main__':
@@ -797,6 +824,7 @@ if __name__ == '__main__':
 
     with open(config['OriginalScenarioDisk'], 'rb') as scenario_disk:
         scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk)
+        scenario_disk_patch_combats(scenario_disk_patch, scenario_disk)
 
 
     # Create patch files
