@@ -26,7 +26,7 @@ if __name__ == '__main__':
             base_addr = 0xe000
         elif sector_key in combat_directory:
             print(f"Reading combat {format_sector_key(sector_key)}...")
-            sector_info = scenario_directory[sector_key]
+            sector_info = combat_directory[sector_key]
             event_list = extract_combat_events(scenario_disk, sector_key, sector_info)
             trans = load_translations_csv(f"csv/Combats/{format_sector_key(sector_key)}.csv")
             base_addr = 0xdc00
@@ -42,9 +42,17 @@ if __name__ == '__main__':
         reference_changes = update_references(event_list, relocations, encoded_translations)
 
         for event_addr, event_info in event_list.items():
-            print(f"Event {event_addr:04x} relocated to {relocations[event_addr]:04x}")
-            for locator_addr, locator_offset in encoded_translations[event_addr]['locators'].items():
-                print(f"  Locator at {locator_addr:04x} relocated to {relocations[locator_addr]:04x}")
-            for ref_info in event_info['references']:
-                if 'source_event_addr' not in ref_info:
-                    print(f"  Fixed reference to {ref_info['target_addr']:04x} at {ref_info['source_addr']:04x} updated to {reference_changes[ref_info['source_addr']]:04x}")
+            if event_addr in relocations:
+                print(f"Event {event_addr:04x} relocated to {relocations[event_addr]:04x}")
+                for locator_addr, locator_offset in encoded_translations[event_addr]['locators'].items():
+                    print(f"  Locator at {locator_addr:04x} relocated to {relocations[locator_addr]:04x}")
+                for ref_info in event_info['references']:
+                    if 'source_event_addr' not in ref_info:
+                        print(f"  Fixed reference to {ref_info['target_addr']:04x} at {ref_info['source_addr']:04x} updated to {reference_changes[ref_info['source_addr']]:04x}")
+            else:
+                print(f"Event {event_addr:04x} was not relocated.")
+
+            if event_addr in encoded_translations:
+                translation_info = encoded_translations[event_addr]
+                for offset, target_addr in translation_info['references']:
+                    print(f"  Reference to {target_addr:04x} at offset {offset:x} updated to {relocations[target_addr]:04x}")

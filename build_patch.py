@@ -199,20 +199,21 @@ def relocate_events(event_list, encoded_translations, empty_space, packing_strat
 
 
 def update_references(event_list, relocations, encoded_translations):
-
     reference_changes = {}
 
+    # This follows the outgoing references from the encoded event and fills them in directly in the encoded byte array.
+    for event_addr, translation_info in encoded_translations.items():
+        translation_info = encoded_translations[event_addr]
+        for offset, target_addr in translation_info['references']:
+            if target_addr in relocations:
+                translation_info['encoded'][offset:offset+2] = int.to_bytes(relocations[target_addr], length=2, byteorder='little')
+
+    # This follows the incoming references to this event and records the relocate address for each.
+    # These are returned to the caller so that they can be populated in the patch later.
     for event_addr, event_info in event_list.items():
         for ref_info in event_info['references']:
-            if ref_info['target_addr'] in relocations:
-                if 'source_event_addr' in ref_info:
-                    if ref_info['source_event_addr'] in encoded_translations:
-                        translation_info = encoded_translations[ref_info['source_event_addr']]
-                        for offset, target_addr in translation_info['references']:
-                            if target_addr in relocations:
-                                translation_info['encoded'][offset:offset+2] = int.to_bytes(relocations[target_addr], length=2, byteorder='little')
-                else:
-                    reference_changes[ref_info['source_addr']] = relocations[ref_info['target_addr']]
+            if ref_info['target_addr'] in relocations and 'source_event_addr' not in ref_info:
+                reference_changes[ref_info['source_addr']] = relocations[ref_info['target_addr']]
                     
     return reference_changes
 
