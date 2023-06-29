@@ -1,25 +1,38 @@
 "e16f","<X1e>道具屋<X04>
 いらっしゃい。
-どんな 用だね？<RETN>"
-"e197","また来てくれよ。"
+どんな 用だね？<RETN>","<X1e>Tool merchant<X04>
+Welcome!
+What are you here for?<RETN>"
+"e197","また来てくれよ。","Come again!"
 "e1b3","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e1d7","どれを買うんだね？
+<RETN>","What are you buyin'?
 <RETN>"
 "e1eb","<X0e>だね。
 ありがとう。
 
+<RET_IL>","The <X0e>?
+Thanks.
+
 <RET_IL>"
 "e209","どれを 売るんだね？
+<RETN>","What're you sellin'?
 <RETN>"
 "e21e"," Gold になるけど
 それでも いいかい？
-<RETN>"
+<RETN>"," gold.
+That okay?"
 "e244","そうか ･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e256","ありがとう。
+<RETN>","Thanks.
 <RETN>"
 "e414","<X1e>ボイル<X04>
 <IF01a3><JUMPe917><IF01a2><JUMPe487>ドラゴンの卵は 見つかったかい？
@@ -87,15 +100,90 @@
 寄ってくれよ。
 
 なんせ あんたがたは ドラゴンの親
-なんだからな。 ハッハッハッ。"
+なんだからな。 ハッハッハッ。","<X1e>Boyle<X04>
+<IF01a3><JUMPe917><IF01a2><JUMPe487>Did you find my dragon egg yet?
+I've been looking everywhere, but
+there's no sign of it.<END>
+<LOCe487><SET01a3>What's going on? You look like
+you're in a hurry. 
+Oh! Did you find my egg?!
+
+<CH0>
+Well... we...<WAIT>
+<CH3>
+We dropped it, an' it cracked!
+
+<X1e>Boyle<X04>
+... ... Ghuh...
+<CH2>
+Boyle! Are you okay?!
+
+<X1c>It appeared that Boyle was about
+to pass out from the shock.<X04>
+
+<X1e>Boyle<X04>
+Y-You... What have you...
+
+How will my family survive the
+next 100 years?! My children's
+children's children's children's
+children are crying out...!
+
+<CH1>
+Do not be alarmed.
+The egg may have cracked, but
+the dragon chick is safe.
+
+<X1e>Boyle<X04>
+R-Really? I-I'm saved!
+
+Oh! There it is, in the doorway!
+It looks like it followed you
+in here.
+
+It must think you're its parents,
+since you're the first thing it
+saw when it hatched.
+
+Wow, that's some luck! Dragons
+are usually too proud to show
+affection to humans.
+
+But it's different when they
+learn by imprinting. They'll
+think of you like parents.
+
+Eventually, when it gets bigger,
+it'll let people ride on its back.You truly are lucky!
+
+<CH0>
+That's great, but could we have
+the dragon cloth you promised?
+
+<X1e>Boyle<X04>
+Oh! Sorry, sorry!
+My last dragon cloth is in that
+treasure chest.
+
+Go ahead and take it.<END>
+<LOCe917>Whenever you have the chance, be
+sure to come visit.
+
+A dragon should see its parents
+once in a while! Ha ha!"
 "e981","<X1e>シンシア<X04>
 早く この国から バケモノどもを
-追い払ってくだされ。"
+追い払ってくだされ。","<X1e>Cynthia<X04>
+I hope you can rid the kingdom
+of those monsters soon."
 "e9c0","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
 "e9f8","<X1e>トッド<X04>
-Ｚ ｚ ｚ ･ ･ ･"
+Ｚ ｚ ｚ ･ ･ ･","<X1e>Todd<X04>
+Zzz..."
 "ea10","<CH3>
 ちょっと待て !!
 <CH0>
@@ -123,7 +211,38 @@
 
 <CH0>
 ゲイル !! 押すなよ !!<WAIT>
-あ !!"
+あ !!","<CH3>
+Hey, hold up a sec.
+<CH0>
+What is it, Gail?
+
+<CH3>
+Doesn't the ground look kinda
+raised up here?
+
+<CH0>
+You're right!
+
+<CH2>
+Oh! Isn't this where Cynthia's
+dog Todd was sleeping?
+
+<CH1>
+Now that you mention it, didn't
+Cynthia say that Todd loves
+round objects?
+
+<CH0>
+Okay, let's try digging here.
+
+<ASMeb7d><CH0>
+That's it! That's the dragon egg!
+<CH3>
+Really? Lemme have a look!
+
+<CH0>
+Gail! Not too hard...!<WAIT>
+Oh no!!"
 "eba2","<CH0>
 た、卵が かえっちゃった !!
 ゲイル、お前が 押すから 手が
@@ -140,7 +259,23 @@
 <CH2>
 でも、かわいい。
 <CH0>
-さあ、急いでボイルさんに知らせよう"
+さあ、急いでボイルさんに知らせよう","<CH0>
+I-It hatched!!
+Gail, was it because your hands
+slipped when you pushed on it?
+
+<CH3>
+But it's fine, right? What Boyle
+was after was a baby dragon, not
+an egg, after all.
+
+And just look at that goofy l'il
+face!
+
+<CH2>
+It's kind of cute!
+<CH0>
+Well, we'd better let Boyle know."
 "ecb4","<CH0>
 あれ !?
 こいつ ついてくるぞ。
@@ -158,7 +293,24 @@
 
 <CH3>
 めんどくせーことに ならねーうちに
-さっさと 渡しちまおーぜ。"
+さっさと 渡しちまおーぜ。","<CH0>
+Huh? Is it following us?
+
+<CH2>
+You know, baby birds think of the
+first living thing they see after
+they hatch as their mother.
+
+Do you think that might have
+happened with us?
+
+<CH1>
+Imprinting, you mean?
+It is a possibility.
+
+<CH3>
+Better give it back before it
+gets too annoying."
 "eddd","<CH1>
 王子 !! 約束も はたさずに
 ドラゴンの布を 盗む気では
@@ -174,7 +326,21 @@
 
 <CH0>
 ま、まさか。そんな気は ないよ。
-ほ、ほんとだよ。さあ 行こう。"
+ほ、ほんとだよ。さあ 行こう。","<CH1>
+Your Highness! Surely you are not
+considering breaking our agreementand stealing the dragon cloth?
+
+<CH3>
+We're gonna have to rethink thingsif ya do stuff like that, Prince.
+
+<CH2>
+I'm sure the Prince wouldn't...
+
+<CH0>
+O-Of course not! It never even
+crossed my mind. 
+Come on, let's go."
 "eed8","<X0b>は 宝箱を開けました。
-宝箱の中には<RET_IL>"
-"eefc","<X0e>が入っていました。<RETN>"
+宝箱の中には<RET_IL>","<X0b> opened the chest.
+There was a <RET_IL>"
+"eefc","<X0e>が入っていました。<RETN>","<X0e> inside.<RETN>"

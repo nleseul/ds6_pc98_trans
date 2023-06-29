@@ -95,7 +95,7 @@ gets out anyway."
 <LOCe89b>王子さま、王さまに なられたら
 私に 前の仕事を やることを
 お許しくださいね。","<X1e>Baker<X04>
-<X120100><JUMPe89b><X140100>Oh, Prince Selios! I've just takensome bread out of the oven. Pleasehelp yourself.
+<IF0001><JUMPe89b><SET0001>Oh, Prince Selios! I've just takensome bread out of the oven. Pleasehelp yourself.
 
 Making and selling bread is my
 livelihood now, but I used to run

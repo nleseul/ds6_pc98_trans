@@ -1,25 +1,38 @@
 "e118","<X1e>道具屋<X04>
 いらっしゃい。
-どんな 用だね？<RETN>"
-"e140","また来てくれよ。"
+どんな 用だね？<RETN>","<X1e>Tool merchant<X04>
+Welcome!
+What are you here for?<RETN>"
+"e140","また来てくれよ。","Come again!"
 "e15c","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e180","どれを買うんだね？
+<RETN>","What are you buyin'?
 <RETN>"
 "e194","<X0e>だね。
 ありがとう。
 
+<RET_IL>","The <X0e>?
+Thanks.
+
 <RET_IL>"
 "e1b2","どれを 売るんだね？
+<RETN>","What're you sellin'?
 <RETN>"
 "e1c7"," Gold になるけど
 それでも いいかい？
-<RETN>"
+<RETN>"," gold.
+That okay?"
 "e1ed","そうか ･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e1ff","ありがとう。
+<RETN>","Thanks.
 <RETN>"
 "e429","<X1e>ボイル<X04>
 <IF01a4><JUMPe953><IF01ab><JUMPe6db><IF0194><JUMPe444><LOCe444>なに !! ドラゴンの布を 分けてくれ
@@ -101,15 +114,95 @@
 卵を見つけ出してくれたら あいつを
 あんたたちに やるからさ。
 た、頼んだぜ。必ず ドラゴンの卵を
-見つけ出してくれよ !!"
+見つけ出してくれよ !!","<X1e>Boyle<X04>
+<IF01a4><JUMPe953><IF01ab><JUMPe6db><IF0194><JUMPe444><LOCe444>What?! You want some of my
+dragon cloth?! You're joking!
+Don't you know what it's worth?
+
+<IF0195><JUMPe510>Fifteen million gold!
+Fifteen million!!
+
+<CH3>
+F-Fifteen... million?!
+
+<X1e>Boyle<X04>
+I sure hope you all are rich!<JUMPe5b0><LOCe510><CH3>
+Somethin' like 10 mil?
+
+<X1e>Boyle<X04>
+Nope! It's 15 million! But at
+least you know it's valuable.
+Maybe we can do business.
+
+But I sure hope you're rich!<LOCe5b0>
+
+<CH1>
+We certainly can't afford such a
+high price. But we need it for thegood of the kingdom.
+
+<X1e>Boyle<X04>
+Ha! Some kind of heroes, are you?
+Well, that's not my line of work.
+
+No money, no cloth!
+But, maybe you'd like to go check
+on the egg with me? I won't chargeyou just to look!<SET0404><END>
+<LOCe6db><SET01a4>W-What?! No way!<WAIT>
+The dragon egg! It's gone!!
+
+<CH3>
+W-What?!
+That sleaze Achdam musta been
+here!
+
+<CH0>
+Achdam! He'll stop at nothing to
+avoid a fair fight!
+
+<CH1>
+Your Highness. I suspect that thismay not have been Achdam's work.
+
+<CH2>
+Yeah, I don't think so either.
+
+<CH3>
+What're y'all on about?! Who else
+would stoop to this?!
+
+<CH1>
+Difficult to say, but it still
+seems unlikely to me.
+
+<CH2>
+Right.
+
+<X1e>Boyle<X04>
+You have to help me!!
+I mean... please! Help me!
+
+Please find my dragon egg.
+Just find the egg, and I'll make
+you all the dragon cloth you want!
+
+Or... even better!
+<LOCe953>The last of my leftover dragon
+cloth is in that box back there.
+
+Find my egg, and you can have it!
+P-Please. You have to find it!!"
 "ea08","<X1e>シンシア<X04>
 早く この国から バケモノどもを
-追い払ってくだされ。"
+追い払ってくだされ。","<X1e>Cynthia<X04>
+I hope you can rid the kingdom
+of those monsters soon."
 "ea47","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
 "ea7f","<X1e>トッド<X04>
-Ｚ ｚ ｚ ･ ･ ･"
+Ｚ ｚ ｚ ･ ･ ･","<X1e>Todd<X04>
+Zzz..."
 "ea97","<CH1>
 <IF01a4><JUMPead4>王子 !! 他人のものを 盗む気では
 ないでしょうね !!<JUMPeb18><LOCead4>王子 !! 約束も はたさずに
@@ -126,4 +219,19 @@
 
 <CH0>
 ま、まさか。そんな気は ないよ。
-ほ、ほんとだよ。さあ 行こう。"
+ほ、ほんとだよ。さあ 行こう。","<CH1>
+<IF01a4><JUMPead4>Your Highness! Surely you are not
+considering stealing other
+people's belongings?<JUMPeb18><LOCead4>Your Highness! Surely you are not
+considering breaking our agreementand stealing the dragon cloth?<LOCeb18>
+
+<CH3>
+We're gonna have to rethink thingsif ya do stuff like that, Prince.
+
+<CH2>
+I'm sure the Prince wouldn't...
+
+<CH0>
+O-Of course not! It never even
+crossed my mind. 
+Come on, let's go."

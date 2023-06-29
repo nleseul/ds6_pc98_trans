@@ -15,9 +15,9 @@ scribe it in?<RETN>"
 この光具合を 見てみなよ。
 
 <RET_IL>","<X1e>Weapon merchant<X04>
-Platinum Swords are great!
+Platinum Swords are amazing!
 Just look at how the light hits
-these!"
+them!"
 "e28a","まいど。","Thanks."
 "e2bd","<X1e>道具屋<X04>
 へい、らっしゃい。道具屋だよ。
@@ -91,8 +91,7 @@ How's that?
 
 <CALLf003>だから 完成したらの話だって
 言ってるじゃないか。<LOCe7ec>","<CALLf003><IF0406><JUMPeaa9><IF01aa><JUMPe7fc><LOCe4d0><CALLee15>I'm Harry the inventor.
-<IF_NOT0172><JUMPe7ec><SET0193>
-I've been working on a big kite
+<IF_NOT0172><JUMPe7ec><SET0193>I've been working on a big kite
 that people can ride and control.
 
 I want to fly it west from the
@@ -180,8 +179,7 @@ But once a dragon is born, new
 cloth can be produced quickly, andthe price drops to around 100
 gold.
 
-So even if he can make this cloth,
-I don't think he'll share it
+So even if he can make this cloth,I don't think he'll share it
 readily."
 "ea7f","多分 分けては もらえないと
 思いますよ。","I really don't think he's likely
@@ -228,8 +226,7 @@ to share that cloth."
 おれたちが 行ってきてやるよ。
 
 こんな所で グヂグヂしてたって
-どうにもなりゃ しねぇよ。","<CLEAR0405><CLEAR0406><SET0407><SET0194>
-Here it is! Here it is! It's
+どうにもなりゃ しねぇよ。","<CLEAR0405><CLEAR0406><SET0407><SET0194>Here it is! Here it is! It's
 in here!
 Hmm... now, let me see...
 

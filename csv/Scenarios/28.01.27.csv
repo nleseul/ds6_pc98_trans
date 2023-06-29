@@ -1,25 +1,38 @@
 "e0d7","<X1e>道具屋<X04>
 いらっしゃい。
-どんな 用だね？<RETN>"
-"e0ff","また来てくれよ。"
+どんな 用だね？<RETN>","<X1e>Tool merchant<X04>
+Welcome!
+What are you here for?<RETN>"
+"e0ff","また来てくれよ。","Come again!"
 "e11b","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e13f","どれを買うんだね？
+<RETN>","What are you buyin'?
 <RETN>"
 "e153","<X0e>だね。
 ありがとう。
 
+<RET_IL>","The <X0e>?
+Thanks.
+
 <RET_IL>"
 "e171","どれを 売るんだね？
+<RETN>","What're you sellin'?
 <RETN>"
 "e186"," Gold になるけど
 それでも いいかい？
-<RETN>"
+<RETN>"," gold.
+That okay?"
 "e1ac","そうか ･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e1be","ありがとう。
+<RETN>","Thanks.
 <RETN>"
 "e342","<X1e>ボイル<X04>
 <IF0403><JUMPe5e8><IF0194><JUMPe4bb><IF01a0><JUMPe3a6>な、なんだね あんたたち !!
@@ -56,7 +69,38 @@
 
 内緒だ。ハハハ<SET01aa><END>
 <LOCe5e8><CLEAR0403>あんたがた 他人の持ち物を
-勝手に のぞくなよな。"
+勝手に のぞくなよな。","<X1e>Boyle<X04>
+<IF0403><JUMPe5e8><IF0194><JUMPe4bb><IF01a0><JUMPe3a6>What are you thinking?!
+Just walking into some complete
+stranger's house!<SET01a9><END>
+<LOCe3a6><IF01a6><JUMPe4bb><SET01a6>Ah, so you're messengers from
+Queen Claire?
+
+<IF_NOT01a9><JUMPe417>Sorry for being so curt earlier.
+
+<LOCe417>The name's Boyle. I'm a dragon
+rancher.
+
+Dragons in these parts only lay
+once every hundred years. But mine<IF01a8><JUMPe51c>look like they're due.<END>
+<LOCe4bb><IF01a8><JUMPe4db>Wonder when I'll get that egg.<END>
+<LOCe4db>Ah, hello again.
+Listen! At long last, my dragons
+<LOCe51c>have laid an egg.
+
+That means I can make dragoncloth.
+
+<CH0>
+Dragoncloth?<WAIT>
+What's that?
+
+<X1e>Boyle<X04>
+What, you mean you don't know?<WAIT>
+You really don't know?<WAIT>
+Well, dragoncloth is...
+
+...my secret. Ha ha ha!<SET01aa><END>
+<LOCe5e8><CLEAR0403>Don't go peeping at other people'sstuff!!"
 "e61b","<CALLebb0><IF0172><JUMPe628><CALLeb5d><END>
 <LOCe628><IF01a0><JUMPea2f><SET01a0><CALLeb5d>
 
@@ -118,17 +162,91 @@
 埋めてしまうのじゃ。
 
 まあ、秘密の場所といっても
-犬のことじゃから すぐにわかるがな。<SET01ad>"
+犬のことじゃから すぐにわかるがな。<SET01ad>","<CALLebb0><IF0172><JUMPe628><CALLeb5d><END>
+<LOCe628><IF01a0><JUMPea2f><SET01a0><CALLeb5d>
+
+<CH0>
+No... Queen Claire said we should
+come see you.
+
+<CALLebb0>Oh, the Queen!
+Well, what did you want with me?
+
+<CH3>
+She said 'er old nanny might know
+somethin' 'bout Agnija.
+
+<CALLebb0>My, what a rude fellow!
+
+Well, no matter. What's your
+interest in Agnija, then? What
+would you do if I told you?
+
+<CH0>
+We think that this Agnija might bewho's behind the monsters all overthe world.
+
+<CALLebb0>What?! You mean Agnija is
+returning to this land?!
+
+<CH3>
+Don't know 'bout returnin', but
+that bastard's the one runnin'
+the show.
+
+<CALLebb0>And there goes that uncouth fellowagain!
+
+<CH1>
+Our apologies, madam.
+Gail... just shut up.
+
+<CALLebb0>Agnija, you see, is an evil god
+who leads the world to ruin.
+
+Long ago, our ancestors, under thesway of a dark power, brought ruinto the world. And from the midst
+of that darkness came Agnija.
+
+But the Goddess Freya led those
+people who were yet free of
+darkness to this land.
+
+And, with the power of Lord
+Joshua, She guards it still
+against the might of Agnija.
+
+<CH1>
+Thank you very much for your help.<END>
+<LOCea2f><IF_NOT01af><JUMPea86>My little Todd's usually out this
+time of day, burying his favorite
+bones or something.<END>
+<LOCea86>See my Todd over there?
+Isn't he adorable?
+
+He loves round things, you know.
+Anything he finds, he carries off
+to his secret spot.
+
+Not that a dog can keep anything
+secret for long, mind you.<SET01ad>"
 "eb5d","おや？ 見かけない 人たちじゃな。
 どうせ 怪物のボスでも 探しにきた
-賞金稼ぎじゃろ？<RET_IL>"
-"ebb0","<X1e>シンシア<X04><RETN>"
+賞金稼ぎじゃろ？<RET_IL>","Haven't seen you all around here
+before. I suppose you're out for
+the bounty on the monster boss?<RET_IL>
+"
+"ebb0","<X1e>シンシア<X04><RETN>","<X1e>Cynthia<X04><RETN>"
 "ebbb","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
 "ebf3","<X1e>トッド<X04>
 Ｚ ｚ ｚ ･ ･ ･<IF_NOT01af><JUMPec7c><SET01ac><PAGE>
 <CH1>
 こんな所で のんきに 昼寝などして
 犬というのは 平和で いいですな。
-ここに 骨でも埋めてあるのでしょう。<LOCec7c>"
+ここに 骨でも埋めてあるのでしょう。<LOCec7c>","<X1e>Todd<X04>
+Zzz...<IF_NOT01af><JUMPec7c><SET01ac><PAGE>
+<CH1>
+Asleep out here without a care...
+A dog's life is so calm. He may
+even have a bone buried there.<LOCec7c>"

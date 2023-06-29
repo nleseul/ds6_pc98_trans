@@ -68,8 +68,7 @@ I know the feeling! The call of
 a bounty!
 Why don't we try working together?
 
-I'll let you have a place to stay,
-and when you get the bounty, I'll
+I'll let you have a place to stay,and when you get the bounty, I'll
 take a 3% cut.
 There we go! It's a deal!
 
@@ -80,8 +79,7 @@ the monsters yet?
 <LOCe4ea><IF0408><JUMPe54c><IF0409><JUMPe54c><LOCe4f6>Hurry up and beat the head 
 monster! And don't forget about
 my cut! Heh heh heh...<END>
-<LOCe54c><SET0400>
-Oh, sorry! I wasn't paying
+<LOCe54c><SET0400>Oh, sorry! I wasn't paying
 attention. Please, please! Rest
 all you like."
 "e590","<X1e>女<X04>

@@ -232,7 +232,7 @@
 なんでもない !!","<SET0172><CH0>
 Are you the Queen?
 
-<X1e>クレア王妃<X04>
+<X1e>Queen Claire<X04>
 Who might you be?
 
 <CH0>
@@ -338,7 +338,7 @@ The very same.
 He had a scheme to usurp the
 throne of Farleyn.
 
-He assassinated King Aswel, and
+He assassinated King Asuel, and
 tried to do the same to Prince
 Selios.
 
@@ -414,7 +414,6 @@ somewhere that leads up there?
 
 <X1e>Queen Claire<X04>
 No, nothing.
-いいえ、ありません。
 
 <CH0>
 We're going to have to think of
