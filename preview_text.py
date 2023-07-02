@@ -143,12 +143,12 @@ class Model:
         self._config = configfile['DEFAULT']
 
         self._party_info = [
-            [ { 'name': "Selios", 'leader_index': 0 } ],
-            [ { 'name': "Runan", 'leader_index': 1 } ],
-            [ { 'name': "Roh", 'leader_index': 2 }, { 'name': "Sonia", 'leader_index': 4 } ],
-            [ { 'name': "Gail", 'leader_index': 3 } ]
+            [ { 'name': "Selios", 'text_index': 0 } ],
+            [ { 'name': "Runan", 'text_index': 1 } ],
+            [ { 'name': "Roh", 'text_index': 2 }, { 'name': "Sonia", 'text_index': 4 } ],
+            [ { 'name': "Gail", 'text_index': 3 } ]
         ]
-        self._current_leader_index = 1
+        self._current_leader_index = 0
         self._roh_in_party = False
 
         self.load_sector(sector_key)
@@ -275,12 +275,14 @@ class Model:
                 loc += 5
             
             elif current_input[loc:].startswith("<LEADER"):
+                leader_info = self.get_character_info(self._current_leader_index)
+
                 loc += 7
-                call_addr = current_input[loc + self._current_leader_index*5:loc + self._current_leader_index*5 + 4]
+                call_addr = current_input[loc + leader_info['text_index']*5:loc + leader_info['text_index']*5 + 4]
                 loc += 25
 
                 current_line += "\033[93m"
-                current_line += self.get_character_info(self._current_leader_index)['name']
+                current_line += leader_info['name']
                 current_line += "\033[0m"
                 self._formatted_translation[-1].append(current_line)
                 current_line = ""
