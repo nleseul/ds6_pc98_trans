@@ -62,7 +62,76 @@
 さあ、おしゃべりは もうおしまい。
 たっぷりと かわいがって
 あげましょう。<WAIT>
-お前たち おどき !!"
+お前たち おどき !!","<X1e>Sylphie<X04>
+Oh, we have guests!
+Come and dance with me!
+
+<X1c>All the men take on a vacant
+expression the moment they meet
+Sylphie's eyes.<X04>
+
+<ASMe7c4><CH2>
+Your Highness? Runan? Gail?
+What's going on?!
+
+<CH1>
+I-I can't control my body.
+
+<X1e>Sylphie<X04>
+Hee hee! It didn't take long for
+my skills to affect you.
+
+Oh, you brought a woman with you?
+Well, I'll take care of her
+eventually. Lord Beramis would
+expect no less.
+
+But first, why don't I tell you
+a secret?
+Do you know what kingdom's
+treasure is?
+
+<CH1>
+Y-You mean the Gilmoran Prism?
+
+<X1e>Sylphie<X04>
+Ooh, you're clever!
+That's why I came here. To get
+the Prism.
+
+But it didn't take long! Hee hee!
+That king didn't resist at all!
+He handed it right over!
+
+<CH1>
+You hoodwinked him with your
+feminine wiles!
+
+<X1e>Sylphie<X04>
+""Hoodwinked""? That sounds so
+disreputable. It was compensation
+for a dance! Hee hee!
+
+<CH2>
+I don't buy that excuse for a
+second. Give it back!
+
+<X1e>Sylphie<X04>
+Oh, hush! What is a whelp like
+you going to do about it?
+
+But, if you're so eager to die
+immediately, I am happy to help.
+
+You just missed the giant eagle
+carrying the Prism. It's already
+on its way to Lord Beramis.
+Hee hee!
+
+Well, that's enough conversation.
+I'll be sure to shower you with
+all the attention you deserve.<WAIT>
+Now, kneel!"
 "e7d2","<X1e>アクダム<X04>
 ウグググ、またしても またしても !!しかし あの女の役目は もう終わった。
 
@@ -101,25 +170,75 @@
 おぼえは ないわ。<WAIT>
 いいな、必ずひとりで 来いよ !!
 
-<X1c>アクダムはワプ２の呪文を唱えた。<X04>"
+<X1c>アクダムはワプ２の呪文を唱えた。<X04>","<X1e>Achdam<X04>
+Urrgh!! Every single time!
+Well, I didn't have any further
+use for that woman anyway.
+
+<LEADERea9f,eac6,ea9f,eb09,eb2c>
+
+<X1e>Achdam<X04>
+Wah ha ha! Idiot!
+Didn't you notice this girl here?
+
+<LEADEReb51,eb85,eb51,eba9,ebdf>
+
+<X1e>Achdam<X04>
+Wah ha ha! I appreciate the
+compliment.
+
+But you know, we really can't keepgoing around and around like this
+forever. Why don't we settle it
+once and for all?
+
+<LEADERec0d,ec27,ec0d,ec45,ec5f>
+
+<X1e>Achdam<X04>
+Now, now. It's no good to rush
+these things.
+
+If you want the princess back,
+bring the Gilmoran Star to the
+Lee Grotto.<WAIT>
+Just you, Selios. Naturally.
+
+<LEADERec7d,ec8d,ec7d,ec9b,ecaf>
+
+<X1e>Achdam<X04>
+Look who's talking! It's been
+four against one, every time!!
+
+You've never seen me call you
+a coward.<WAIT>
+Whatever. Remember, come alone.
+
+<X1c>Achdam casts the spell of Warp2.<X04>"
 "ea9f","アクダム !!
-今度こそは 逃がさないぞ !!<RET_IL>"
+今度こそは 逃がさないぞ !!<RET_IL>","Achdam!!
+You won't get away this time!<RET_IL>"
 "eac6","アクダム !!
 あなたの 悪運も これまで
-かんねんして もらいましょう。<RET_IL>"
-"eb09","アクダム !! もう 逃がしゃしねぇ !!<RET_IL>"
+かんねんして もらいましょう。<RET_IL>","Achdam!!
+Your time is up. Prepare yourself!<RET_IL>"
+"eb09","アクダム !! もう 逃がしゃしねぇ !!<RET_IL>","This is it, Achdam!! No more
+runnin'!<RET_IL>"
 "eb2c","アクダム !!
-もう 逃げられませんよ !!<RET_IL>"
-"eb51","あっ !! ひょっとして ディーナ姫 !!ウクゥ、卑怯な !!<RET_IL>"
+もう 逃げられませんよ !!<RET_IL>","Achdam!!
+We won't let you get away again!<RET_IL>"
+"eb51","あっ !! ひょっとして ディーナ姫 !!ウクゥ、卑怯な !!<RET_IL>","Is that... Princess Dina?!
+Ugh! You coward!<RET_IL>"
 "eb85","あっ !! ディーナ姫 !!
-ひ、卑怯な !!<RET_IL>"
-"eba9","あっ !! ひょっとして ディーナ姫 !!てめえ !! 卑怯な !!<RET_IL>"
-"ebdf","あっ !! ひょっとして ディーナ姫 !!ひ、卑怯 !!<RET_IL>"
-"ec0d","望むところだ !! 行くぞ !!<RET_IL>"
-"ec27","望むところです !! 来なさい !!<RET_IL>"
-"ec45","望むところだ !! 行くぜ !!<RET_IL>"
-"ec5f","望むところだわ !! 来なさい !!<RET_IL>"
-"ec7d","クゥ、卑怯な !!<RET_IL>"
-"ec8d","ひ、卑怯な !!<RET_IL>"
-"ec9b","てめえ !! 卑怯な !!<RET_IL>"
-"ecaf","ひ、卑怯 !!<RET_IL>"
+ひ、卑怯な !!<RET_IL>","That's... Princess Dina!!
+What cowardice!<RET_IL>"
+"eba9","あっ !! ひょっとして ディーナ姫 !!てめえ !! 卑怯な !!<RET_IL>","That's gotta be Princess Dina!
+You rotten, stinking coward!!<RET_IL>"
+"ebdf","あっ !! ひょっとして ディーナ姫 !!ひ、卑怯 !!<RET_IL>","Is that... Princess Dina?!
+You coward!<RET_IL>"
+"ec0d","望むところだ !! 行くぞ !!<RET_IL>","Any time! Bring it on!<RET_IL>"
+"ec27","望むところです !! 来なさい !!<RET_IL>","Whenever you like. I'm ready!<RET_IL>"
+"ec45","望むところだ !! 行くぜ !!<RET_IL>","No prob! Let's go!!<RET_IL>"
+"ec5f","望むところだわ !! 来なさい !!<RET_IL>","We're ready any time!<RET_IL>"
+"ec7d","クゥ、卑怯な !!<RET_IL>","Ugh!! Coward!<RET_IL>"
+"ec8d","ひ、卑怯な !!<RET_IL>","C-Coward!!<RET_IL>"
+"ec9b","てめえ !! 卑怯な !!<RET_IL>","You cowardly piece of shit!!<RET_IL>"
+"ecaf","ひ、卑怯 !!<RET_IL>","C-Coward!!<RET_IL>"
