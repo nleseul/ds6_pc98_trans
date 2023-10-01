@@ -1,8 +1,10 @@
-"dc30","ﾌﾗﾜｰﾘｻﾞｰﾄﾞＡ<RET_IL>"
-"dc70","ﾌﾗﾜｰﾘｻﾞｰﾄﾞＢ<RET_IL>"
-"dcb0","ﾌﾗﾜｰﾘｻﾞｰﾄﾞＣ<RET_IL>"
-"ddc7","ﾌﾗﾜｰﾘｻﾞｰﾄﾞの群れが現れた。<RETN>"
-"dde2","<X08><X02>は逃げ出した。<RET_IL>"
-"ddf3","<X0a>"
+"dc30","ﾌﾗﾜｰﾘｻﾞｰﾄﾞＡ<RET_IL>","Flower Lizard A<RET_IL>"
+"dc70","ﾌﾗﾜｰﾘｻﾞｰﾄﾞＢ<RET_IL>","Flower Lizard B<RET_IL>"
+"dcb0","ﾌﾗﾜｰﾘｻﾞｰﾄﾞＣ<RET_IL>","Flower Lizard C<RET_IL>"
+"ddc7","ﾌﾗﾜｰﾘｻﾞｰﾄﾞの群れが現れた。<RETN>","A nest of flower lizards appears.<RETN>"
+"dde2","<X08><X02>は逃げ出した。<RET_IL>","<X0a><X02> runs away.<RET_IL>"
+"ddf3","<X0a>","<X0a>"
 "ddf4","は 毒液を吐いた !!<X0a>
-<CONT><X02>は 毒におかされた !!<X0a>"
+<CONT><X02>は 毒におかされた !!<X0a>","spits a poisonous
+fluid!<X0a>
+<CONT><X02> is poisoned!<X0a>"

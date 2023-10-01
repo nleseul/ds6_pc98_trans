@@ -9,6 +9,8 @@ if __name__ == '__main__':
     sector_key_str = sys.argv[1]
     match = re.search("^([0-9a-fA-F]{2})\.([0-9a-fA-F]{2})\.([0-9a-fA-F]{2})$", sector_key_str)
     sector_key = (int(match.group(1), base=16), int(match.group(2), base=16), int(match.group(3), base=16))
+
+    packing_strategy = sys.argv[2] if len(sys.argv) > 2 else None
     
     configfile = configparser.ConfigParser(interpolation=configparser.ExtendedInterpolation())
     configfile.read("ds6_patch.conf")
@@ -35,10 +37,11 @@ if __name__ == '__main__':
 
         data_length = sector_info['sector_length'] * len(sector_info['sector_addresses'])
         translation_count = len([t for t in trans.values() if 'translation' in t])
+        space_at_end_length = (base_addr + data_length - sector_info['space_at_end_length'] + 1, base_addr + data_length - 1) if sector_info['space_at_end_length'] > 0 else None
         print(f"Translated {translation_count}/{len(event_list)} events ({100 * translation_count / len(event_list)}%)")
 
         encoded_translations = encode_translations(event_list, trans)
-        relocations = relocate_events(event_list, encoded_translations, (base_addr + data_length - sector_info['space_at_end_length'] + 1, base_addr + data_length - 1))
+        relocations = relocate_events(event_list, encoded_translations, space_at_end_length, packing_strategy)
         reference_changes = update_references(event_list, relocations, encoded_translations)
 
         for event_addr, event_info in event_list.items():

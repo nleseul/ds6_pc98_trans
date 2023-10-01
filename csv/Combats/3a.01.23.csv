@@ -1,8 +1,9 @@
-"dc30","ベラミス<RET_IL>"
-"dc41","<X08><X0e>を持っていた。<X0a>"
+"dc30","ベラミス<RET_IL>","Beramis<RET_IL>"
+"dc41","<X08><X0e>を持っていた。<X0a>","<X08>It was carrying an <X0e>.<X0a>"
 "de46","<X08>ソルディスの モンスターは すべて
 逃げ出した。
-ソルディス王国を解放しました。<X0d>"
+ソルディス王国を解放しました。<X0d>","<X08>All the monsters in Soldythe flee!The Kingdom of Soldythe is
+liberated!!<X0d>"
 "de9e","<X1e>ベラミス<X04>
 フッフッフッ !!
 怖じ気づいたようだな。
@@ -10,7 +11,8 @@
 
 <RET_IL>"
 "dee9","ソルディスのボス
-ベラミスとの対決だ !!<RETN>"
+ベラミスとの対決だ !!<RETN>","A showdown with Beramis, the boss
+of the monsters in Soldythe!!<RETN>"
 "df10","は催眠術を使った !!<X0a>"
 "df24","は毒針を使った !!<X0a>"
 "df36","は不敵な笑みを浮かべている。<X0a>"

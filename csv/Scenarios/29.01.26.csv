@@ -1,18 +1,28 @@
 "e166","<X0b>たちは <X0e>を
-見つけました。<RETN>"
+見つけました。<RETN>","<X0b>'s party found the <X0e>.<RETN>"
 "e2a8","      第４章　魅せられた国王<N>
 
                 完
-"
+","   Chapter IV: The Enchanted King<N>
+
+               FIN"
 "e47e","<CH1>
 それでは 王子、我々は バズヌーンに戻っております。
-お気をつけて ください。"
+お気をつけて ください。","<CH1>
+I suppose we should return to
+Vasnune now, your Highness. Pleasetake care."
 "e4cc","<CH0>
 一人じゃ 心細いな ･ ･ ･
 
 でも アートス国王の前で
 大見栄を きってしまったからな。
-しかたない 行くだけ 行ってみよう。"
+しかたない 行くだけ 行ってみよう。","<CH0>
+It feels awful doing this alone...
+
+But what else can I do after
+putting on a brave show for King
+Arthos?
+Might as well see this through."
 "e542","<X1e>アクダム<X04>
 よく来たな セリオス。
 本当にひとりで 来るとは バカな奴よ。
@@ -29,7 +39,24 @@
 砂漠に ･ ･ ･ なんてことを ･ ･ ･
 
 アクダム 今までの
-悪事の清算を してやる 覚悟しろ !!"
+悪事の清算を してやる 覚悟しろ !!","<X1e>Achdam<X04>
+I see you made it here, Selios.
+And you actually came alone?
+Idiot.
+
+<CH0>
+Stop wasting time! Where's
+Princess Dina?
+
+<X1e>Achdam<X04>
+Heh heh heh... Princess Dina?<WAIT>
+Guess I dropped her in the desert.She's probably dying around now.
+
+<CH0>
+The desert?! You...!
+
+You're going to pay for everythingyou've done, Achdam!
+Prepare yourself!!"
 "e66c","<X1e>ベラミス<X04>
 グワッハッハッハ !!
 お前が セリオスという小僧か。
@@ -62,7 +89,40 @@
 さて、おしゃべりは おしまいだ !!
 アグニージャさま 第２の下僕
 智将ベラミスさまが あの世へ
-送ってやるわ。"
+送ってやるわ。","<X1e>Beramis<X04>
+Guahahaha!!
+So you're that Selios kid?
+I'm impressed that you survived.
+
+But your time is about to run out.
+
+Oh! You must be wondering, why
+didn't I help Achdam? Well, I'll
+let you ponder my grand plan, on
+your way to hell.
+
+Didn't you also wonder why Sylphiestayed in the castle, even after
+acquiring the Gilmoran Prism?
+
+Exactly! Her true task was to makesure Achdam didn't run away until
+you showed up at the castle.
+
+Achdam has the Tear.
+You have the Star.
+
+You and Achdam fight it out. One
+of you finishes off the other.
+Then I eliminate the weakened
+survivor, and take both stones!
+
+You see it now, right? You and
+Achdam both played out your roles
+precisely as I planned!
+
+But enough talk! Beramis the
+Strategist, second among Lord
+Agnija's servants, will send you
+to your grave!"
 "e94e","<CH3>
 そうは、問屋が おろさねーぜ !!
 
@@ -93,8 +153,39 @@
 <X1e>ベラミス<X04>
 こうなっては 仕方がない。
 きさまら まとめて
-あの世へ 送ってやる !!"
+あの世へ 送ってやる !!","<CH3>
+Well, that an' 5G'd buy ya a bag
+o' shit.
+
+<CH0>
+Gail?!
+Sonia! Runan!
+
+<CH2>
+I'm glad to see you're okay, your
+Highness.
+
+<CH1>
+You are Beramis?
+Did you really think we would justsit around patiently?
+
+<X1e>Beramis<X04>
+D-Damn you!!
+You were not supposed to be here!
+
+That was the plan of Beramis the
+Strategist!!
+
+<CH3>
+What kinda idiot are you?!
+Even Achdam knew better than that.
+
+<X1e>Beramis<X04>
+So be it.
+I will send you all to your gravestogether!"
 "eb0a","<X1e>ベラミス<X04>
 グワッハッハ やはり 来おったな。
 お前らは 必ず ここへ 戻ってくると
-思って 待っていたのだ。"
+思って 待っていたのだ。","<X1e>Beramis<X04>
+Guahaha!! You've returned, just asI expected. I knew you would come
+back, and I waited!"

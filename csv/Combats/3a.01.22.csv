@@ -1,16 +1,22 @@
-"dc30","手下Ａ<RET_IL>"
-"dc70","アクダム<RET_IL>"
-"dcb0","手下Ｂ<RET_IL>"
-"dcc1","<X08><X02>は逃げ出した。<RET_IL>"
-"dcd2","<X0a>"
+"dc30","手下Ａ<RET_IL>","Henchman A<RET_IL>"
+"dc70","アクダム<RET_IL>","Achdam<RET_IL>"
+"dcb0","手下Ｂ<RET_IL>","Henchman B<RET_IL>"
+"dcc1","<X08><X02>は逃げ出した。<RET_IL>","<X08><X02> runs away.<RET_IL>"
+"dcd2","<X0a>","<X0a>"
 "dcd3","しかし、入口はふさがれ
 逃げ道はなかった !!
+
+<RET_IL>","But the entrance is blocked, and
+there's nowhere to run!
 
 <RET_IL>"
 "ddd0","アクダムとの対決だ。
 と、その時 セリオスの背後から
 怪しい もやが 流れ込んできた。
-全ての 呪文は 封じられた !!<RETN>"
+全ての 呪文は 封じられた !!<RETN>","You confront Achdam!
+Suddenly, a strange mist flows in
+from behind Selios. All spells
+are blocked!<RETN>"
 "de3e","<CALLdfe7>い、いったい 何が起こったのだ !!
 じゅ、呪文が封じられているとは !!
 
@@ -22,6 +28,17 @@
 <CALLdfe7>ウウウウウ !!
 こうなっては しかたがない。
 呪文なしで勝負だ !!
+
+<RET_IL>","<CALLdfe7>W-What's going on?
+M-My spells aren't working!
+
+<X02> runs away!<WAIT>
+<CALLdcd3><X02> uses a warp wing.<WAIT>
+<X02> forgot that warp wings don'twork inside caves.
+
+<CALLdfe7>Uggghhhhhh!!
+If that's how it has to be, fine.
+We'll fight without magic!
 
 <RET_IL>"
 "df25","<CALLdfe7>セ、セリオス。<WAIT>
@@ -36,5 +53,17 @@
 アグニージャには  ･ ･ ･<WAIT>
 気 ･ を ･ 付 ･ け ･ ろ ･ ･ ･<CLEAR0401>
 
+<RET_IL>","<CALLdfe7>S-Selios...
+Y-You've gotten stronger...
+
+But...<WAIT>
+Don't expect... beating me...<WAIT>
+to keep... the world...<WAIT>
+safe...
+
+Se... li... os...<WAIT>
+...beware...<WAIT>
+... ...Agni... ja...<CLEAR0401>
+
 <RET_IL>"
-"dfe7","<X1e>アクダム<X04><RETN>"
+"dfe7","<X1e>アクダム<X04><RETN>","<X1e>Achdam<X04><RETN>"

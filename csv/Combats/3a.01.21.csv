@@ -1,12 +1,18 @@
-"dc30","シルフィ<RET_IL>"
+"dc30","シルフィ<RET_IL>","Sylphie<RET_IL>"
 "dda0","<X1e>シルフィ<X04>
 ホッホッホッ、愚かなこと、
 わたしから 逃げられると
 思っているのね。
 
+<RET_IL>","<X1e>Sylphie<X04>
+Hee hee! Oh, you fools!
+Do you think you can run from me?
+
 <RET_IL>"
 "ddf0","シルフィが 襲ってきた。
-シルフィは 両手を 高々とかざした、すると 男たちは混乱してしまった !!<RET_IL>"
-"de4d","<X02>は 踊っている。<X0a>"
-"de5e","<X02>は ますます混乱した !!<X0a>"
-"de76","<X02>は 混乱してしまった !!<X0a>"
+シルフィは 両手を 高々とかざした、すると 男たちは混乱してしまった !!<RET_IL>","Sylphie attacks!
+Sylphie raises her arms, and the
+men become confused.<RET_IL>"
+"de4d","<X02>は 踊っている。<X0a>","<X02> is dancing.<X0a>"
+"de5e","<X02>は ますます混乱した !!<X0a>","<X02> becomes even more confused!<X0a>"
+"de76","<X02>は 混乱してしまった !!<X0a>","<X02> is confused!<X0a>"

@@ -1,7 +1,10 @@
-"dc30","ｻﾝﾄﾞｲｰﾀｰＡ<RET_IL>"
-"dc70","ｻﾝﾄﾞｲｰﾀｰＢ<RET_IL>"
-"ddac","サンドイーターが２匹 現れた。<RETN>"
-"ddca","<X02>は呪文を跳ね返した !!<X0a>"
+"dc30","ｻﾝﾄﾞｲｰﾀｰＡ<RET_IL>","Sand Eater A<RET_IL>"
+"dc70","ｻﾝﾄﾞｲｰﾀｰＢ<RET_IL>","Sand Eater B<RET_IL>"
+"ddac","サンドイーターが２匹 現れた。<RETN>","A pair of sand eaters appears.<RETN>"
+"ddca","<X02>は呪文を跳ね返した !!<X0a>","The spell bounces off of
+<X02>!<X0a>"
 "dde1","は砂を吐いた !!<X0a>
 <CONT><X02>の目に入ってしまった !!
-すばやさが <RET_IL>"
+すばやさが <RET_IL>","spits sand!<X0a>
+<CONT>It gets in <X02>'s eyes!!
+Speed is reduced by<RET_IL>"

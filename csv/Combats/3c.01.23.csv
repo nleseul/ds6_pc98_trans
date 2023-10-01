@@ -1,12 +1,14 @@
-"dc30","ﾌﾗﾜｰﾘｻﾞｰﾄﾞ<RET_IL>"
+"dc30","ﾌﾗﾜｰﾘｻﾞｰﾄﾞ<RET_IL>","Flower Lizard<RET_IL>"
 "dc70","オディノンＡ<RET_IL>"
 "dcb0","オディノンＢ<RET_IL>"
 "de03","フラワーリザードとオディノンが
 襲ってきた !!<RETN>"
-"de30","<X08><X02>は逃げ出した。<RET_IL>"
-"de41","<X0a>"
+"de30","<X08><X02>は逃げ出した。<RET_IL>","<X0a><X02> runs away.<RET_IL>"
+"de41","<X0a>","<X0a>"
 "de42","は 毒液を吐いた !!<X0a>
-<CONT><X02>は 毒におかされた !!<X0a>"
+<CONT><X02>は 毒におかされた !!<X0a>","spits a poisonous
+fluid!<X0a>
+<CONT><X02> is poisoned!<X0a>"
 "de6b","は胞子をまきちらした。<X0a>
 <CONT><X0b>は 一斉に はなを
 つまんだ。<X0a>"

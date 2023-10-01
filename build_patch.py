@@ -157,7 +157,7 @@ def encode_translations(event_list, translated_text):
     return encoded_translations
 
 
-def relocate_events(event_list, encoded_translations, empty_space, packing_strategy='first'):
+def relocate_events(event_list, encoded_translations, empty_space=None, packing_strategy='first'):
 
     relocations = {}
 
@@ -166,8 +166,9 @@ def relocate_events(event_list, encoded_translations, empty_space, packing_strat
     for event_addr, event_info in event_list.items():
         if event_info['is_relocatable']:
             space_pool.add_space(event_addr, event_addr + event_info['length'] - 1)
-        
-    space_pool.add_space(empty_space[0], empty_space[1])
+    
+    if empty_space is not None:
+        space_pool.add_space(empty_space[0], empty_space[1])
 
     total_space_required = sum([len(encoded_translations[event_addr]['encoded']) for event_addr in event_list])
     print(f"Requires {total_space_required}/{space_pool.total_available_space} bytes available")
@@ -219,6 +220,7 @@ def update_references(event_list, relocations, encoded_translations):
 
 
 def patch_sector(patch, sector_addresses, addr, base_addr, data):
+    orig_length = len(data)
     chunk_index = (addr - base_addr) // 0x400
     chunk_offset = (addr - base_addr) % 0x400
     disk_addr = sector_addresses[chunk_index] + chunk_offset
@@ -228,7 +230,12 @@ def patch_sector(patch, sector_addresses, addr, base_addr, data):
         patch.add_record(disk_addr, data[:current_end_addr - disk_addr])
         data = data[current_end_addr - disk_addr:]
         chunk_index += 1
-        disk_addr = None if chunk_index >= len(sector_addresses) else sector_addresses[chunk_index]
+        if len(data) == 0:
+            pass
+        elif chunk_index >= len(sector_addresses):
+            raise Exception(f"Patch data of length {orig_length:x} starting at {addr:04x} cannot fit into the available sectors!")
+        else:
+            disk_addr = None if chunk_index >= len(sector_addresses) else sector_addresses[chunk_index]
 
 
 def event_disk_patch_opening(event_disk_patch):
@@ -757,7 +764,8 @@ def scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk):
         encoded_translations = encode_translations(scenario_events, trans)
 
         data_length = scenario_info['sector_length'] * len(scenario_info['sector_addresses'])
-        relocations = relocate_events(scenario_events, encoded_translations, (0xe000 + data_length - scenario_info['space_at_end_length'] + 1, 0xe000 + data_length - 1), packing_strategy)
+        empty_space = (0xe000 + data_length - scenario_info['space_at_end_length'] + 1, 0xe000 + data_length - 1) if scenario_info['space_at_end_length'] > 0 else None
+        relocations = relocate_events(scenario_events, encoded_translations, empty_space, packing_strategy)
         reference_changes = update_references(scenario_events, relocations, encoded_translations)
 
         for translation_addr, translation in encoded_translations.items():
@@ -784,7 +792,8 @@ def scenario_disk_patch_combats(scenario_disk_patch, scenario_disk):
         encoded_translations = encode_translations(combat_events, trans)
 
         data_length = combat_info['sector_length'] * len(combat_info['sector_addresses'])
-        relocations = relocate_events(combat_events, encoded_translations, (0xdc00 + data_length - combat_info['space_at_end_length'] + 1, 0xe000 + data_length - 1))
+        empty_space = (0xdc00 + data_length - combat_info['space_at_end_length'] + 1, 0xdc00 + data_length - 1) if combat_info['space_at_end_length'] > 0 else None
+        relocations = relocate_events(combat_events, encoded_translations, empty_space)
         reference_changes = update_references(combat_events, relocations, encoded_translations)
 
         for translation_addr, translation in encoded_translations.items():

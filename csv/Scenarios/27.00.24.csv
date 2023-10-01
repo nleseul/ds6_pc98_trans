@@ -128,18 +128,157 @@
 外は王子ひとりでは 危険すぎます。<END>
 <LOCeb11><X1e>アートス国王<X04>
 なかなか 頼もしい王子だ。
-くれぐれも 気をつけるのだぞ。"
+くれぐれも 気をつけるのだぞ。","<IF0173><JUMPeb11><SET0173><X1e>King Arthos<X04>
+I am truly in your debt, Prince
+Selios. You have my thanks.
+
+I have heard about your father,
+King Asuel. To my sorrow.
+
+But what is it that brings you
+all the way to Soldythe?
+
+<CH0>
+I followed my father's murderer
+here from Farleyn.
+
+When we got here, a woman named
+Sylphie was trying to seduce Your
+Majesty and your soldiers, and
+take the Gilmoran Prism from you.
+
+<X1e>King Arthos<X04>
+I did invite a traveling dancer
+called Sylphie into the castle to
+perform for us.
+
+<CH0>
+And after that, she used her
+powers to control all of you.
+
+<X1e>King Arthos<X04>
+Hmm. I remember nothing else.
+Not after seeing the dance.
+
+<CH1>
+Your Majesty, where might the
+Gilmoran Prism be?
+
+<X1e>King Arthos<X04>
+Oh, Prince Aerion? Have you come
+to my kingdom as well?
+
+The Gilmoran Prism? It is always
+on my person. Right here.
+
+<X1c>Arthos reaches into his robes.<WAIT>
+His face immediately blanches.<X04>
+
+<X1e>King Arthos<X04>
+I-It's gone!!
+The Gilmoran Prism is missing!
+
+<CH1>
+Just as I expected.
+You were tricked into giving it tothat Sylphie woman.
+
+<X1e>King Arthos<X04>
+What?!
+
+That stone... Together with the
+Tear from Farleyn and the Star
+from Lanoura, they have the power
+to bring the world to ruin.
+
+Our ancestors knew the secret of
+utilizing these stones. But
+surely no one today could draw
+forth that power!
+
+<CH2>
+There is someone, your Majesty.
+
+<X1e>King Arthos<X04>
+What? Someone able to use the
+Gilmoran stones? Who might that
+be?
+
+<CH3>
+Agnija. God of Destruction.
+
+<X1e>King Arthos<X04>
+Agnija?!
+The god of destruction from the
+legends?
+
+<CH1>
+It seems so, although we do not
+yet know its true nature.
+
+<X1e>King Arthos<X04>
+I see. So Agnija is real...
+
+<CH2>
+But, first of all, what are we
+going to do about Princess Dina?
+
+<X1e>King Arthos<X04>
+Dina?!
+Has something happened to Dina?
+
+<CH0>
+Achdam kidnapped her.
+
+<X1e>King Arthos<X04>
+Achdam?! Surely you can't mean...
+
+So much is happening.
+My head is spinning...
+
+<CH0>
+Achdam's the one we followed here
+to avenge my father.
+
+When the monsters attacked
+Farleyn, he took advantage of
+the confusion to assassinate my
+father.
+
+Every time we've had him cornered,he's managed to get away.
+Here, too...
+
+I'm going to the Lee Grotto next,
+to get Princess Dina back. So
+please don't be concerned.
+
+<CH1>
+Your Highness. We will accompany
+you to the Grotto. It's too
+dangerous to travel alone.<END>
+<LOCeb11><X1e>King Arthos<X04>
+I feel I can place my trust in
+you. Please, stay safe."
 "eb58","<X1e>兵士<X04>
 あの シルフィという 踊り子に
-あやつられていたのか。"
+あやつられていたのか。","<X1e>Soldier<X04>
+Were we being controlled by
+that dancer, Sylphie?"
 "eb93","<X1e>兵士<X04>
 王子さま、必ず、必ず ディーナ姫を
 救い出してください。
-お願いします。"
+お願いします。","<X1e>Soldier<X04>
+I beg of you, Prince Selios. 
+Please rescue Princess Dina!"
 "ebe0","<X1e>兵士<X04>
 おれは 始めから あのシルフィという踊り子が あやしいと 思っていたんだ。<WAIT>
-ほ、本当だぞ !!"
+ほ、本当だぞ !!","<X1e>Soldier<X04>
+I was suspicious of that Sylphie
+from the beginning.<WAIT>
+I-I was! Truly!"
 "ec3e","<X1e>兵士<X04>
 おっ セリオス王子さま あなたが
 ディーナ姫の いいなずけですか。<WAIT>
-お目にかかれて 光栄でございます。"
+お目にかかれて 光栄でございます。","<X1e>Soldier<X04>
+Oh, Princess Dina is your
+Highness' betrothed?<WAIT>
+It is an honor to meet you."
