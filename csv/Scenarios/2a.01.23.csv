@@ -1,42 +1,62 @@
-"e14e","<X08>どの 呪文が 欲しいのじゃな？<RETN>"
-"e16c","誰の 呪文の書に 書き込むのじゃな？<RET_IL>"
-"e18f","どこに 書き込むのじゃな？<RETN>"
-"e1a9","どれどれ、書き込むとしようか。<X0a>"
+"e14e","<X08>どの 呪文が 欲しいのじゃな？<RETN>","<X08>Which spell do you wish?<RETN>"
+"e16c","誰の 呪文の書に 書き込むのじゃな？<RET_IL>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e18f","どこに 書き込むのじゃな？<RETN>","Where shall I scribe it?<RETN>"
+"e1a9","どれどれ、書き込むとしようか。<X0a>","Do you wish me to scribe anything
+more?<X0a>"
 "e1de","また、必要になったら
 いつでも 来るがよい。
-悪用だけは せんようにな。"
+悪用だけは せんようにな。","Should you have any further needs,you may always come to me."
 "e241","<X1e>武器屋<X04>
 いらっしゃいませ。
-ここは武器と防具の店ですが<RETN>"
-"e278","また来てくださいね。"
+ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
+Welcome! My shop sells weapons
+and armor."
+"e278","また来てくださいね。","Come again!"
 "e2b8","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは 道具の店ですが
-どんな ご用ですか？<RETN>"
-"e2fe","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e2fe","また来てくださいね。","Come again!"
 "e31e","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e342","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e35c","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e381","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e39c"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e3c8","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e3e1","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e504","<X1e>男<X04>
 うーん どうしよう。<WAIT>
 貯金を 全部おろせば 買えるかな。<WAIT>
-でもなー ちょっと高いよなー。"
+でもなー ちょっと高いよなー。","<X1e>Man<X04>
+Hmm, what to do?<WAIT>
+I could withdraw all my savings...<WAIT>
+But, then again, at that price..."
 "e55c","<X1e>男<X04>
 <IF01f0><JUMPe62b>ファエトの村に 行った時に 頭が
 おかしいみたいな考古学者に
@@ -47,7 +67,17 @@
 さっさと 帰ってきたけどね。<END>
 <LOCe62b>おお あんたが ゲイル３世だろ？
 聞いたぜ あのバケモノを
-退治してくれたんだってな。"
+退治してくれたんだってな。","<X1e>Man<X04>
+<IF01f0><JUMPe62b>I met a nutty archaeologist when
+I went out to the village of Faet.
+
+He was muttering weird things
+and looking everywhere for
+something or other he'd lost.
+I came home as soon as I could.<END>
+<LOCe62b>Oh, you're Gail the 3rd?
+I heard about you getting rid of
+those monsters."
 "e67d","<X1e>男<X04>
 <IF01f0><JUMPe74a>コルクスの町のそばには
 水晶の塔という 不思議な建物が
@@ -61,7 +91,19 @@
 見に行ってみようと 思ってるんだ。<END>
 <LOCe74a>さっき 変なじいさんが来て
 ゲイル３世が バケモノを退治したと
-言い回っていたぞ。"
+言い回っていたぞ。","<X1e>Man<X04>
+<IF01f0><JUMPe74a>There's a strange building called
+the Crystal Tower outside the
+town of Colx.
+
+That Tower shines brilliantly
+when the sunlight hits it.
+
+I think I'll try to take a girl
+to see it sometime.<END>
+<LOCe74a>A strange old man was here
+earlier, going on about Gail the
+3rd getting rid of the monsters."
 "e799","<X1e>女<X04>
 <IF01f0><JUMPe8e5>あなたたち この辺の 人じゃないね？ファンガスという町には
 行かないほうが いいわよ。
@@ -79,7 +121,27 @@
 <CH2>
 ゲイル、あんた 珍しいこと 言うのね。<LOCe8e4><END>
 <LOCe8e5>ゲイル３世ってどんな人なのかしら？一度 顔を見てみたいと思うの
-きっと 素敵な人よ。"
+きっと 素敵な人よ。","<X1e>Woman<X04>
+<IF01f0><JUMPe8e5>You're not from around here, are
+you? You should stay away from
+a town called Fangath.
+
+It's called ""the thieves' town.""
+As you'd expect from the name,
+it's a lawless place full of
+thieves.
+
+And it's an especially bad idea
+to bring a girl there, I think.<IF01e2><JUMPe8e4>
+
+<CH3>
+Yeah, I think so too.
+
+<CH2>
+How uncharacteristic of you, Gail!<LOCe8e4><END>
+<LOCe8e5>I'd love to meet this ""Gail the
+3rd"" at least once. I'm sure he's
+a wonderful person!"
 "e937","<X1e>女<X04>
 <IF01f0><JUMPe9f8>ファンガスの町では 盗賊の
 バザールというのが 開かれるの。
@@ -89,7 +151,16 @@
 きっと あそこで 売られている物は
 どっかから 盗んできた物よ。<END>
 <LOCe9f8>ファンガスの町から来たおじいさんが自分の孫が モレストンを救ったと
-言って 自慢してたわよ。"
+言って 自慢してたわよ。","<X1e>Woman<X04>
+<IF01f0><JUMPe9f8>There's a place called the
+""thieves' bazaar"" open in Fangath.
+
+That bazaar is full of rare goods
+at bargain prices. No doubt it's
+all stolen from somewhere.<END>
+<LOCe9f8>That old man from Fangath was so
+proud to say that his grandson
+had saved Moreston."
 "ea52","<X1e>女<X04>
 あの 話のできなかった娘でしょ？
 なんか急に 自分は お姫さまだって
@@ -101,7 +172,18 @@
 
 それよりさあ あの男 さっきから
 ずっと うろうろしてるの
-もう すっごく 気持ち悪くって。"
+もう すっごく 気持ち悪くって。","<X1e>Woman<X04>
+So, that girl who couldn't talk?
+Suddenly, she just announces
+she's a princess.
+
+I wonder what she was thinking.
+Kind of a weird girl. Yeah, like,
+I'd be a princess too, if I could.
+
+Anyway, that guy? He's been
+wandering around for a while now.
+I'm getting kinda uncomfortable."
 "eb68","<X1e>奴隷商人<X04>
 はいはい もう この娘だけだよ。
 
@@ -124,7 +206,31 @@
 
 <CH3>
 えっ なんのことだよ。
-おれは 何も 言っちゃいねえよ。"
+おれは 何も 言っちゃいねえよ。","<X1e>Slave merchant<X04>
+Step right up! I've just got this
+one girl left.
+
+<CH0>
+Where are the other girls?
+
+<X1e>Slave merchant<X04>
+Other girls?
+
+Well, I sold one in Richelle.
+Then, that shady old bigwig from
+Fangath bought the rest. Looking
+for something special, are you?
+
+<CH3>
+A shady old bigwig from Fangath?!
+That old fart...
+
+<CH0>
+Someone you know, Gail?
+
+<CH3>
+Huh? What're you talkin' about?
+I didn't say nothin'!"
 "ecde","<X1e>老人<X04>
 やあ 若者たちよ。
 自慢じゃないが わしは レス５の
@@ -144,12 +250,37 @@
 年じゃのう。<END>
 <LOCee17>やはり 若者じゃなあ
 自分のふところぐらいは いつも
-調べておくように しなされ。"
-"ee65","1000 Gold で どうじゃな？<ASMee83><X08><RET_IL>"
+調べておくように しなされ。","<X1e>Old man<X04>
+Hello there, youngsters!
+Don't mean to brag, but I can use
+the Res5 spell.
+
+<IF_NOT0408><JUMPedb0><CALLee65><IF0400><JUMPedcc><ASMeed0><IF0400><JUMPee17><X1c>The old man casts the spell of
+Res5.<X0c0901>
+<X04>
+
+<ASMee93><IF0400><JUMPed76><ASMeeb5><JUMPedb0><LOCed76><IF0401><JUMPed9a>But nothing happens.
+
+<JUMPedf9><LOCed9a><X1a>Not enough MP!<X04>
+
+<JUMPedf9><LOCedb0>Come on back if you need anything
+else!<END>
+<LOCedcc>How about that. And here I thoughtI could do it.<END>
+<LOCedf9>Mmmm...<WAIT>
+Must be getting on, you know.<END>
+<LOCee17>Ah, young people!
+Always keep any eye on your
+pocketbooks, you hear?"
+"ee65","1000 Gold で どうじゃな？<ASMee83><X08><RET_IL>","How's 1000 gold sound?<ASMee83><X08><RET_IL>"
 "eeed","<X1e>老人<X04>
 おぬしたち よくぞ まいられた。
 入口の所にいる じいさんに 呪文を
 教えたら 悪用しおってな。
 
 おぬしたち 呪文を悪用せぬなら
-教えてやろう。"
+教えてやろう。","<X1e>Old man<X04>
+Please, come in! That old man nearthe entrance has been misusing thespells I taught him.
+
+Should you not misuse them, I
+will gladly teach you spells as
+well."

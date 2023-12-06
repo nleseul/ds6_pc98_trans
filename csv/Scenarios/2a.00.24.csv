@@ -1,37 +1,58 @@
 "e264","<X1e>武器屋<X04>
 いらっしゃいませ。
-ここは武器と防具の店ですが<RETN>"
-"e29b","また来てくださいね。"
+ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
+Welcome! My shop sells weapons
+and armor."
+"e29b","また来てくださいね。","Come again!"
 "e2d9","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは 道具の店ですが
-どんな ご用ですか？<RETN>"
-"e31f","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome!
+This is a tool shop.
+What would you like?<RETN>"
+"e31f","また来てくださいね。","Come again!"
 "e33f","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e363","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e37d","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e3a2","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e3bd"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e3e9","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e402","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e4ca","<X1e>男<X04>
 <IF0405><JUMPe52b><IF0404><JUMPe50f>なんか文句でも あんのかよ？
 金も 持ってねえくせに。<END>
 <LOCe50f><SET0405>危ねえな 気をつけろい !!<END>
 <LOCe52b>目の前 チョロチョロしやがってよ
-なんか文句でも あんのかよ？"
+なんか文句でも あんのかよ？","<X1e>Man<X04>
+<IF0405><JUMPe52b><IF0404><JUMPe50f>What's yer problem?!
+Not like ya got any money!!<END>
+<LOCe50f><SET0405>Watch where yer goin'!!<END>
+<LOCe52b>Yer tha one lollygaggin' in front
+o' me! Ya got somethin' ta say?!"
 "e567","<X1e>男<X04>
 今まで 働いて 貯めた 貯金を
 全部 使ってしまいました。
@@ -43,7 +64,19 @@
 <LOCe61e><SET0400>
 
 そんなことより あなたたち
-わたしの家で 休んでいきなさい。"
+わたしの家で 休んでいきなさい。","<X1e>Man<X04>
+I used up all the money I've ever
+saved, but I don't have any
+regrets.
+
+The slave merchant?
+He's gone by now.
+He'd probably be up around
+Nasulle by now, I guess?<IF0408><JUMPe61e><IF0409><JUMPe61e><END>
+<LOCe61e><SET0400>
+
+First of all, though, you should
+have a rest here."
 "e65c","<X1e>男<X04>
 漁師のトーマスの娘さんが
 バケモノに さらわれたんです。
@@ -55,13 +88,31 @@
 
 まだ生きていれば いいけど
 バケモノどもに さらわれたんじゃ
-もう今ごろは ･ ･ ･"
+もう今ごろは ･ ･ ･","<X1e>Man<X04>
+Thomas the fisherman's daughter
+has been kidnapped by monsters.
+She was such a sweet girl...
+
+From what the merchants from Colx
+are saying, the leader of the
+monsters survives by drinking
+human blood.
+
+I hope she's still alive.
+But, after being kidnapped by
+monsters..."
 "e761","<X1e>男<X04>
 この町には スリが いるんですよ。
 だから もう家の外には 出ないことにしたんです。
 
 せっかく ルドラのハリーさんの所に
-大凧を 買いに行こうとしてたのに。"
+大凧を 買いに行こうとしてたのに。","<X1e>Man<X04>
+Pickpockets, in town!
+I'm never leaving my house again!
+
+I'd just made up my mind to go
+buy one of those big kites from
+Harry in Rudra, too."
 "e7fa","<X1e>男<X04>
 あいつさあ 女奴隷を 買ったんだぜ。それがさ、泣かせる話でよう。
 
@@ -85,7 +136,33 @@
 彼女を 自由にしてあげたんだと。
 
 こんな、盗人ばっかりの 世の中で
-泣かせてくれる 話じゃねーか。"
+泣かせてくれる 話じゃねーか。","<X1e>Man<X04>
+That guy bought 'imself a slave
+girl. Now there's a story as ta
+make ya cry.
+
+Been workin an' savin' all 'is
+life, so as ta open 'imself a
+shop.
+
+Worked all the jobs no one else
+wanted, with ne'er one single
+grumble, all ta get that shop.
+
+Includin' cleanin' up after them
+slavers' feasts, when they was in
+town lately.
+
+An' that's where 'e wound up
+hearin' that girl's whole story.
+<PAGE>
+'E couldn't bear to hear it!
+So 'e spent all 'is savin's so as
+ta buy 'er ta freedom.
+
+World's full o' thieves, an' then
+ya hear a story like that.
+Makes ya cry, don't it?"
 "e9e8","<X1e>女<X04>
 私は 奴隷商人に 連れられて
 ラヌーラから やって来ました。
@@ -95,7 +172,16 @@
 
 この ご恩は 一生かけて お返しする
 つもりです。
-"
+","<X1e>Woman<X04>
+I was brought here from Lanoura
+by the slave merchant.
+
+I was about to be sold to a rich
+man from Fangath, but then this
+man rescued me.
+
+I plan to spend my life repaying
+him for his kindness."
 "eab9","<X1e>女<X04>
 この国の いろいろな所で 若い娘が
 バケモノに さらわれているらしいの。
@@ -103,9 +189,20 @@
 この町でも 漁師のトーマスさんの
 娘さんが さらわれてしまったのよ。
 私は 無視されちゃったみたい
-どうせ おばさんですからね。"
+どうせ おばさんですからね。","<X1e>Woman<X04>
+It sounds like young women are
+being kidnapped by monsters all
+over Moreston.
+
+Even in this very town, they took
+Thomas's daughter.
+They skipped over me, though! I
+guess I'm not young anymore, huh?"
 "eb7d","<X1e>トーマス<X04>
-娘が ･ ･ ･ ･ ･ ･ ･"
+娘が ･ ･ ･ ･ ･ ･ ･","<X1e>Thomas<X04>
+My daughter..."
 "eb9b","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
