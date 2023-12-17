@@ -46,6 +46,9 @@ def load_translations_csv(filename):
     trans = {}
     with open(filename, 'r', encoding='utf8', newline='') as csv_in:
         for row in csv.reader(csv_in, quoting=csv.QUOTE_ALL):
+            if row[0] == "*":
+                continue
+
             data = { 'original': row[1] }
             if len(row) > 2:
                 data['translation'] = row[2]
@@ -53,6 +56,14 @@ def load_translations_csv(filename):
     return trans
 
     
+def load_notes_csv(filename):
+    with open(filename, 'r', encoding='utf8', newline='') as csv_in:
+        for row in csv.reader(csv_in, quoting=csv.QUOTE_ALL):
+            if row[0] == "*":
+                return row[1]
+    return None
+
+
 EVENT_CODE_INFO = {
     0x00: { 'length': 1, 'terminator': True }, # Terminator
     0x01: { 'length': 1 }, # Newline

@@ -19,6 +19,9 @@ if __name__ == '__main__':
 
                 csv_out = csv.writer(open(filepath, 'w', encoding='utf8', newline=''), quoting=csv.QUOTE_ALL)
 
+                if 'note' in file_object:
+                    csv_out.writerow([ "*", file_object['note'] ])
+
                 for context, info in csv_translations.items():
                     index = file_object['indexIds'][info['original']]
                     translation = None

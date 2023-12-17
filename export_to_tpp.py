@@ -52,10 +52,14 @@ if __name__ == '__main__':
 
                 file_object = get_file_object(tpp_object, filepath, "DS6 CSV")
                 csv_translations = load_translations_csv(filepath)
+                notes = load_notes_csv(filepath)
 
                 file_object['indexIds'] = { }
                 file_object['data'] = []
                 file_object['context'] = []
+
+                if notes is not None:
+                    file_object['note'] = notes
 
                 for context, info in csv_translations.items():
                     add_translation(file_object, context, info['original'], None if 'translation' not in info else info['translation'])
