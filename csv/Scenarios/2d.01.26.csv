@@ -16,7 +16,23 @@
 どこに連れていったのじゃ？
 
 もうラルフさんから 古代遺跡の話が
-聞けないと思うと さみしくてな。"
+聞けないと思うと さみしくてな。","<X1e>Mayor<X04>
+<IF01d0><JUMPe438>Y'all look like travelers.
+
+That old archaeologist, Ralph,
+in my house knows an awful lot
+about ancient ruins.
+
+So he's got a bunch of fascinatingstories to tell.
+
+But these days, he just goes on
+about some ""Golden Card""
+that he lost, and doesn't talk
+about ruins much anymore.<END>
+<LOCe438>Where've y'all taken Ralph to?
+
+It's awful lonesome here without
+his stories about ancient ruins."
 "e4ad","<X1e>老人<X04>
 昔はわしも 旅の勇者だったのじゃ。
 いろいろな町で 困っている人々を
@@ -24,7 +40,14 @@
 
 わしが もっと若かったら
 バケモノなど ひとひねりじゃ
-ふぉっ ふぉっ ふぉ ･ ･ ･"
+ふぉっ ふぉっ ふぉ ･ ･ ･","<X1e>Old man<X04>
+I used to be a traveling hero
+m'self. Goin' from town to town,
+helpin' people...
+
+You can bet I'd have these
+monsters handled if'n I was
+younger! Ha ha!"
 "e55c","<X1e>おじいさん<X04>
 <IF0407><JUMPe5cf>ウォホッホッ
 うちの コロに吠えられとるのぉ、
@@ -50,7 +73,35 @@
 
 そんなことより、あんたがた
 ずいぶん 疲れておるようじゃな。
-わしの家で 休んでいきなされ。"
+わしの家で 休んでいきなされ。","<X1e>Pa<X04>
+<IF0407><JUMPe5cf>Oh-ho! Y'all've really got our
+Fido makin' a racket!
+
+Fido! Calm down, boy!<SET0406><SET0407><END>
+<LOCe5cf>Look what a good boy Fido is!
+He always listens to what I tell
+him. Don't you, boy?
+
+He likes me better'n he likes Ma
+or anyone else, he does.
+
+Dogs can always tell good folks
+from bad, y'know. Just like that
+old codger in LaFaune says.
+
+What?! You've never heard of
+LaFaune Forest? Really?
+Well, that stinks...
+
+Well, that is in another world,
+after all. Guess y'all wouldn't
+have been there.
+Just forget I said anything.<IF0408><JUMPe751><IF0409><JUMPe751><END>
+<LOCe751><SET0400>
+
+More importantly, y'all look
+awful tired. Go on, have a rest
+at our place."
 "e7ae","<X1e>老人<X04>
 お前さんたち まさか 水晶の塔に
 行くんじゃ なかろうな？
@@ -70,16 +121,40 @@
 <X1e>老人<X04>
 何 それは本当か？
 それじゃ もう わしの役目も
-終わってしまった ようじゃの。"
+終わってしまった ようじゃの。","<X1e>Old man<X04>
+Y'all're probably headin' for thatCrystalspire, ain't ya?
+
+<IF01f0><JUMPe897>It looks all nice an' sparkly fromoutside... but it's all fake!
+
+You go in... but then you can
+never come back out again! It's
+hell in there, I tell ya!
+Gives me the willies...<END>
+<LOCe897><X1e>Old man<X04>
+It looks all nice an' sparkly...
+<CH0>
+No, it's safe to go there now.
+
+<X1e>Old man<X04>
+What? Really?!
+Well, guess there's no need for
+me, then!"
 "e937","<X1e>老婆<X04>
 あんたがた 旅人のようじゃな。
 
 もし コルクスの町に 行ったら
 わしの 友人のジーラばあさんに
-よろしく 伝えておくれ。"
+よろしく 伝えておくれ。","<X1e>Old woman<X04>
+You folks look like travelers.
+
+If you should be headin' down to
+Colx, could you give my regards tomy old friend Jira?"
 "e9af","<X1e>おばあさん<X04>
 私たち夫婦には 子供がいないんです。だから、このコロが 息子代わり
-なんですよ。"
+なんですよ。","<X1e>Ma<X04>
+The two of us never had any 
+children. So Fido's like a son
+to us."
 "ea0a","<X1e>ラルフ<X04>
 <IF01d0><JUMPec91>ああ ･ ･ ･ 困った ･ ･ ･ 黄金 ･ ･ ･カード ･ ･ ･ どこに ･ ･ ･<IF01f7><JUMPea5b><END>
 <LOCea5b><SET01d0><PAGE>
@@ -120,7 +195,55 @@
 早速 行こうじゃないか。<END>
 <LOCec91>遅かったな 待ってたんだぞ。
 さあ 気を取り直して 早く
-行こうじゃないか。"
+行こうじゃないか。","<X1e>Ralph<X04>
+<IF01d0><JUMPec91>Ugh... Darn it...
+Where'd that... Golden... Card...
+get to?<IF01f7><JUMPea5b><END>
+<LOCea5b><SET01d0><PAGE>
+<CH0>
+Is this your Golden Card?
+
+<ASMecd9><X1e>Ralph<X04>
+Yes! That's it! That's it!!
+
+<X1c>Handed over the Golden Card.<X0c0301><X04>
+
+<X1e>Ralph<X04>
+What a relief! Thanks a bunch!
+
+This card is an ancient artifact.
+And I've established that it must
+have been used in the
+Crystalspire.
+
+I've got to go there right away.
+Thanks again!
+
+<CH3>
+Hey, hold up, doc!
+That place's full of monsters!
+You oughta stay here.
+
+<X1e>Ralph<X04>
+No, I'll be fine.
+
+That's not important. I can't juststay here when there's something
+to investigate.
+
+<CH1>
+If you are that resolute, we are
+also interested in the Spire.
+Let us accompany you.
+
+<X1e>Ralph<X04>
+Oh, really?
+Well, in that case, let's be off
+right away.<END>
+<LOCec91>You took your time getting here.
+Well, gather your wits, and let's
+be off."
 "ece9","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
