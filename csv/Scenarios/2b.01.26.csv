@@ -1,3 +1,4 @@
+"*","Gail's house (Gail escapes)"
 "e390","<CH3>
 さてと うるせえ奴は 消えたな。<WAIT>
 ちょっと 頼みが あるんだ。
@@ -78,11 +79,94 @@
 <CH3>
 ま、まあ まあ そんな古いことは
 忘れちまおうぜ。
-さあ、出発だ !!"
+さあ、出発だ !!","<CH3>
+Finally, that pain in the ass is
+gone. <WAIT>
+I wanted to ask y'all a favor.
+
+I heard from the old man earlier
+that my old friend Hans is now thePresident of Moreston.
+
+And it sounds like he's plannin'
+to wipe out the monsters here.
+Sorry to ask, but he could prob'lyuse a hand.
+
+<CH0>
+Hmm, I see.
+Runan? Sonia? What do you think?
+
+<CH1>
+There are monsters prowling aroundhere. We should liberate it.
+
+<CH2>
+Yeah, we can't just leave people
+who are suffering.
+
+<CH0>
+Of course. But...
+Won't it be difficult with just
+the three of us?
+
+<CH1>
+Your Highness is not usually so
+hesitant. What's the matter?
+
+<CH2>
+Yeah, your Highness. Why are you
+having second thoughts suddenly?
+
+<CH3>
+What're y'all all worked up about?
+
+Who said only the three of you
+should go? Why not just ask me
+along?
+
+<CH0>
+Gail?!
+
+<CH3>
+There's no way in hell I'm takin'
+over from that old fart.
+
+<CH2>
+...I guess there really is no
+arguing with blood.
+
+<CH0>
+Why didn't you just say so
+from the beginning, Gail?
+
+Okay. Runan, Sonia, Gail...
+Let's go!
+
+<CH2>
+So, Gail...
+Turns out you're the heir to some
+fortune, huh?
+
+Back when we first learned who
+Runan is, weren't you complaining
+about being surrounded by princes?
+
+<CH1>
+Now that you mention it, I do
+remember something like that.
+
+<CH0>
+Yeah, me too.
+
+<CH3>
+Aw, c'mon! Can't we just put the
+past behind us?
+Anyway, let's head out."
 "e854","<X1e>盗賊<X04>
 ３世さま お出かけですかい？
 ゲイルさまが 戻るまでには
-帰ってくるように してくだせえ。"
+帰ってくるように してくだせえ。","<X1e>Thief<X04>
+Goin' out, Third?
+Try an' be back before the big
+Gail comes home."
 "e8b1","<X1e>盗賊<X04>
 お坊ちゃんが 家出をするのに
 抜け道を 作ってあげたのが
@@ -91,17 +175,36 @@
 もう 親分に さんざん
 しぼられちまいましたよ。
 <IF0408><JUMPe947><IF0409><JUMPe947><END>
-<LOCe947><SET0400>あっ どうぞ 休んでいってください。"
+<LOCe947><SET0400>あっ どうぞ 休んでいってください。","<X1e>Thief<X04>
+The boss found out about that
+escape hole I made for ya, ya
+know.
+
+I got chewed out big time for
+that.
+<IF0408><JUMPe947><IF0409><JUMPe947><END>
+<LOCe947><SET0400>Oh, go ahead an' rest here."
 "e96d","<X1e>娘<X04>
 あっ、こっ こんにちは。
 今度 ゲイル３世さまの 身の回りの
-お世話を させてください。"
+お世話を させてください。","<X1e>Girl<X04>
+H-Hello, m'lord. I'll be seeing
+to your needs too now. Please
+let me know if you need anything."
 "e9c5","<X1e>娘<X04>
 この家は 大金持ちだから
 おこづかいを たくさん くれるのよ。
 
 今日は もう仕事は 無いから
-洋服でも 買いに行こうかしら。"
+洋服でも 買いに行こうかしら。","<X1e>Girl<X04>
+The boss is very wealthy, so I
+always have plenty of cash.
+
+There's no more work to do today,
+so I might go shopping for
+dresses."
 "ea3e","<CH3>
 なつかしいな 昔 ここから
-逃げ出したんだぜ。"
+逃げ出したんだぜ。","<CH3>
+Oh, yeah. This's where I escaped
+back then."

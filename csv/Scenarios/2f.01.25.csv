@@ -2,7 +2,11 @@
 "e244","<X0b>は石碑の前で祈りました。
 
 さっきの石像の 笑い声が 聞こえた
-ような気がしました。<X0c0301>"
+ような気がしました。<X0c0301>","<X0b> prayed at the marker.
+
+It sounds faintly like the cursed
+statue might be laughing."
 "e297","<X0b>は 宝箱を開けました。
-宝箱の中には<RET_IL>"
-"e2bb","<X0e>が入っていました。<RETN>"
+宝箱の中には<RET_IL>","<X0b> opened the chest.
+There was a <RET_IL>"
+"e2bb","<X0e>が入っていました。<RETN>","<X0e> inside.<RETN>"

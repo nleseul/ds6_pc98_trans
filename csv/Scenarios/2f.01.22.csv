@@ -33,19 +33,61 @@
 もう あきらめて ついてこい。
 
 <CH3>
-うるせえな 今 行くところだ。"
+うるせえな 今 行くところだ。","<X1e>The Great Thief Gail<X04>
+<IF0406><JUMPe6dc><IF0405><JUMPe593><CLEAR0404>Ha ha ha! Would you look at that!
+Even after I warned you!
+
+It's written right there on the
+sign that you shouldn't touch the
+treasure!<IF_NOT0208><JUMPe547>
+
+Now, put it back where you got it,and I'll let you out.<END>
+<LOCe547> And just putting it backwon't save you!
+
+Hang on a minute, and I'll let
+you out.<END>
+<LOCe593><CLEAR0405><SET020e>I've told you time and time again,but you never understand! You
+never stay focused!
+
+<IF_NOT0209><JUMPe67c><CLEAR0209><ASMe72b>Even if you did get my treasure,
+it doesn't count if you get stuck
+in here afterwards! Hand it over.
+
+<X1c>Gave back the <X04><X0e><X1c>.<X0c0301><X04>
+
+<LOCe67c>Now, then, Third. A promise is
+a promise. I can't let you off
+the hook.
+
+<CH3>
+Okay, old fart...<END>
+<LOCe6dc><CLEAR0406>What are you waiting for?
+Just give it up and come along.
+
+<CH3>
+Shut up. I'm comin'."
 "e733","<X0b>は 石碑を読みました。
 
 
 『この部屋の宝に触れるべからず
-                   大盗賊 ゲイル』"
+                   大盗賊 ゲイル』","<X0b> reads the marker.
+
+""The treasure in this room is
+ not to be touched.
+        --The Great Thief Gail"""
 "e78d","<X0b>は 石碑を読みました。
 
 
 『この回廊を走るべからず
-               　　大盗賊 ゲイル』"
+               　　大盗賊 ゲイル』","<X0b> reads the marker.
+
+""There is to be no running in
+ these halls.
+        --The Great Thief Gail"""
 "e7e1","<X0b>は 宝箱を開けました。
-宝箱の中には<RET_IL>"
-"e805","<X0e>が入っていました。<RETN>"
+宝箱の中には<RET_IL>","<X0b> opened the chest.
+There was a <RET_IL>"
+"e805","<X0e>が入っていました。<RETN>","<X0e> inside.<RETN>"
 "e819","<X0b>は<X0e>を
-もとに戻しました。<X0c0301>"
+もとに戻しました。<X0c0301>","<X0b> put the <X0e>
+back where it came from.<X0c0301>"

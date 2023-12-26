@@ -1,3 +1,4 @@
+"*","Gail's house (After Wolf's Maw)"
 "e017","<CH0>
 どうだった ゲイル？
 
@@ -98,4 +99,104 @@
 行きましょうか。
 
 <X1e>ディーナ姫<X04>
-すみません お願いします。"
+すみません お願いします。","<CH0>
+How'd it go, Gail?
+
+<CH3>
+<IF_NOT020b><JUMPe36f><CLEAR0209><ASMe67a>Check it out! I got it!
+See, fartface? This is your
+treasure, ain't it?
+
+<X1c>Handed over the <X04><X0e><X1c>.<X0c0301><X04>
+
+<CALL0001>I'd expect no less from my
+grandson! Can't argue with blood,
+eh?
+
+<CH3>
+So I'm off the hook now, right?
+
+<CALL0001>I am a man of my word.
+
+<CH3>
+Great. I'm done here, then. Let's
+get back to Soldythe.
+
+<CALL0001>Hold up! Where do you think you'regoing? The third Great Thief
+Gail needs to run this town!
+
+You're not going to bum around
+with these chumps forever!
+
+<CH3>
+You just said I'm off the hook,
+fartface!!
+
+<CALL0001>You are!<WAIT>
+For that big hole!
+
+<CH3>
+You dirty, rotten, stinking sack
+of...!!
+
+<CH1>
+You've been outwitted, Gail. You
+didn't confirm in advance what wasbeing forgiven.
+
+<CH3>
+... ...
+
+<CH2>
+You jumped to conclusions, and
+got burned.
+
+<CALL0001>See how it works now, Third?
+Now, don't dig any more holes!
+
+<CH1>
+<JUMPe427><LOCe36f>Didn't work out.
+Sorry, everyone. I guess this
+is it.
+
+Like I promised, I'll stay here
+and take over from the old man
+as the third Gail.
+
+<X1c>The Great Thief Gail is grinning
+for some reason.<X04>
+
+<CH1>
+I'm sorry to hear that.
+<LOCe427>Thank you for all your help, Gail.
+
+<CH0>
+We'll take Princess Dina back on
+our own, then.
+
+<CH3>
+Hold on!
+Let these rookies deal with it.
+
+Hey, old man, what do you think?
+Should I go with the rookies?
+Or do you wanna do it?
+
+<CALL0001>I'll do it. You stay here.
+
+I know what you're thinking.
+You're not running off again.
+
+<CH3>
+Yeah, you got me. You win.
+
+Well, there y'all go. Don't worry
+about Princess Dina.
+Guess that's all for today. Go
+take it easy for a while.
+
+<CALL0001>Yes, indeed. Now, then, Princess
+Dina. Shall we be off?
+
+<X1e>Princess Dina<X04>
+Of course. Excuse me, everyone.<END>
+<LOC0001><X1e>The Great Thief Gail<X04><RETN>"

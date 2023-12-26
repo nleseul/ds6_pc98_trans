@@ -1,19 +1,29 @@
 "*","Fangath?"
 "e1fa","<X1e>盗賊<X04>
-お坊っちゃん ここは ワプ屋です。<RETN>"
+お坊っちゃん ここは ワプ屋です。<RETN>","<X1e>Thief<X04>
+Hey, l'il boss! I got a warp
+wing shop here.<RETN>"
 "e23d","<X1e>盗賊<X04>
 お坊っちゃん ダイヤシリーズは
 ぜひとも そろえてください。
 
-<RET_IL>"
-"e284","また いつでも来てくだせえ。"
+<RET_IL>","<X1e>Thief<X04>
+Did ya get the whole Diamond
+set yet, l'il boss?"
+"e284","また いつでも来てくだせえ。","Come again!"
 "e2ca","これ以上 持てないようですぜ。
+
+<RET_IL>","You can't carry no more.
 
 <RET_IL>"
 "e2e9","何が必要ですかい？
+<RETN>","What're ya lookin' for?
 <RETN>"
 "e2fd","<X0e>ですね
 はいはい どうぞ。
+
+<RET_IL>","The <X0e>?
+Here ya go!
 
 <RET_IL>"
 "e3df","<CH3>
@@ -39,7 +49,29 @@
 <CH3>
 うーん<WAIT>
 しかたない ディーナ姫のためだ。
-よし みんな ついてこい。<ASMe2a0>"
+よし みんな ついてこい。<ASMe2a0>","<CH3>
+I'll wait here. Y'all go on ahead.
+
+<CH0>
+What's the matter, Gail?
+
+<CH3>
+Nothin'! There's just folks here
+I don't wanna run into. I'll
+just wait here.
+
+Princess Dina's probably in that
+mansion in the back.
+
+<CH0>
+How do you know?
+If you know this town, you should
+come with us.
+
+<CH3>
+Ugh... dammit!<WAIT>
+It's for Princess Dina.
+All right, c'mon.<ASMe2a0>"
 "e53a","<IF01e3><JUMPe6f5><SET01e3><X1e>盗賊<X04>
 おや ゲイル坊ちゃんじゃ？
 おれですよ、昔 遊び友達だった
@@ -99,7 +131,63 @@
 
 <ASMe95d><IF0402><JUMPe946>坊ちゃん 持てないようですよ。
 <END>
-<LOCe946><X0e><X1c>をもらいました。<X0c0301><X04>"
+<LOCe946><X0e><X1c>をもらいました。<X0c0301><X04>","<IF01e3><JUMPe6f5><SET01e3><X1e>Thief<X04>
+L'il Gail? That you?
+'s me! Yer ol' buddy Hall!
+
+<CH3>
+Oh! Crybaby Hall? Didn't recognizeya, with ya scowlin' like the resto' these thugs.
+
+And haven't I told ya over an'
+over ta quit callin' me ""l'il""?
+
+<X1e>Hall<X04>
+Oh... but you are the l'il boss!
+Ain't ya, l'il boss?
+
+What've you been up to, after ya
+disappeared all of a sudden?
+
+<CH3>
+Oh, this an' that.
+What about here? Everyone doin'
+okay?
+
+<X1e>Hall<X04>
+Yup, thankfully.
+
+Oh! Did ya hear?
+<JUMPe6fe><LOCe6f5><X1e>Hall<X04>
+<LOCe6fe>Hans, out in Colx, is our
+President now! Ain't that
+hilarious?
+
+<IF_NOT01e4><JUMPe7f0>Oh, the Golden Card? I sure made
+a steal on that! Sold it to some
+guy in Colx.
+
+I've seen the guy around Colx
+before.
+
+<LOCe7f0><IF01e7><JUMPe8d0>By the way, l'il boss. Wouldn't
+ya think Sleepweed'd be in demand?<IF01ea><JUMPe854>I'm tryin' to sell it now, but I
+haven't made a single sale yet.<SET01ea><JUMPe85d><LOCe854>I still haven't made a single
+sale.<LOCe85d><IF01f2><JUMPe87d><END>
+
+<LOCe87d>
+
+<SET01e7><CH3>
+We did run into that insomniac in
+Colx, didn't we? Hey, Hall, I'll
+take a Sleepweed.
+
+<LOCe8d0><X1e>Hall<X04>
+Sure thing, l'il boss!
+Since the stuff doesn't sell, I'llgive it to you on the house.
+
+<ASMe95d><IF0402><JUMPe946>But it doesn't look like you've
+got space for it.<END>
+<LOCe946><X1c>Received <X04><X0e><X1c>.<X0c0301><X04>"
 "e975","<X1e>盗賊<X04>
 <SET01e4>さっきまで バザールで 金色の
 カードを 売ってたんだ。
@@ -110,35 +198,65 @@
 もう売れちまったんだと。
 
 失敗したよ ホールに 言って
-予約しておけば よかったんだよな。"
+予約しておけば よかったんだよな。","<X1e>Thief<X04>
+<SET01e4>Saw a Golden Card for sale at the
+Bazaar a while back.
+
+It was awful pretty, so I ran to
+grab some money. But by the time
+I got back, it'd already sold.
+
+Guess I screwed up. Shoulda asked
+Hall to hold it for me, I s'pose."
 "ea61","<X1e>盗賊<X04>
 あっ お坊ちゃん。やっと 親分の後を継ぐことに なったそうですね？
-期待してますぜ ３代目。"
+期待してますぜ ３代目。","<X1e>Thief<X04>
+I hear ya finally agreed ta take
+over here, l'il boss! 
+I'm ready for the ""Third"" era!"
 "eac0","<X1e>盗賊<X04>
 あ、坊ちゃん。
 また こいつの ホラ話が
 始まっちゃいましたよ。
 
 こいつが １番弟子のわけ
-ないですよね。"
+ないですよね。","<X1e>Thief<X04>
+Hey, l'il boss. This guy's makin'
+up stories again.
+
+Ain't no way a loser like him's
+anyone's best student."
 "eb2b","<X1e>盗賊<X04>
 坊ちゃん ここには 手くせの
 悪い奴が 多いですから
-気をつけたほうが いいですよ。"
+気をつけたほうが いいですよ。","<X1e>Thief<X04>
+Lotsa folks with wanderin' fingers'round here, l'il boss. Best to
+keep your wits about you."
 "eb81","<X1e>盗賊<X04>
 坊ちゃん、ダイヤの武器や防具は
 もう 買いましたか？
 
 この辺りには 火を使う バケモノは
 いないから 十分 役にたつと
-思いますよ。"
+思いますよ。","<X1e>Thief<X04>
+You buy your Diamond gear yet,
+l'il boss?
+
+Ain't no monsters 'round here thatuse fire, so I find it awful
+handy."
 "ec04","<X1e>盗賊<X04>
 おいらは 大盗賊 ゲイルさまの
 １番弟子だ。
 
 ゲイルさまの 次に 腕がいいんだ。
 狼の口の仕掛けなんか おいらには
-子供だましさ。"
+子供だましさ。","<X1e>Thief<X04>
+'m tha Great Thief Gail's best
+student!
+
+'m like tha boss's right-hand!
+Them traps in the Wolf's Maw
+ain't nothin' ta me!"
 "ec85","<X1e>盗賊<X04>
 この家は 昔 旅人の宿チェーンに
 加盟していて、旅の勇者たちを泊めて高い宿代を 取っていたんです。
@@ -149,14 +267,32 @@
 
 ずいぶん お疲れの ようですね。
 どうぞ お泊まりください。
-もちろん お金なんか いりませんよ。<SET0400><LOCedd0>"
+もちろん お金なんか いりませんよ。<SET0400><LOCedd0>","<X1e>Thief<X04>
+This used to be part of an inn
+franchise. Every traveling hero
+would pay well to sleep here.
+
+But now that everyone uses Warp
+to go home for the night, inns
+have gone out of fashion, so I
+had to close up.<IF0408><JUMPed71><IF_NOT0409><JUMPedd0><LOCed71>
+
+You all seem rather tired. Go
+ahead and stay the night here.
+No need to pay me, of course!<SET0400><LOCedd0>"
 "edd1","<X1e>盗賊<X04>
 坊ちゃん、ダイヤの装備には
 お気をつけくださいね。
 
 ダイヤは 火に 弱いですから
 フラムでも使われたら、跡形もなく
-燃えちゃいますからね。"
+燃えちゃいますからね。","<X1e>Thief<X04>
+Usin' Diamond equipment, l'il
+boss? Take care with it, now!
+
+Diamond is weak against fire, so
+if anything hits it with Flam,
+it'll all go up in smoke!"
 "ee5d","<X1e>バーテン<X04>
 坊ちゃん、申し訳ないんですが
 武器を持った人には 酒は
@@ -164,7 +300,15 @@
 
 ハンスさんが 大統領になってから
 法律が 変わったんですよ。
-「飲むなら持つな、持つなら飲むな」ってね。"
+「飲むなら持つな、持つなら飲むな」ってね。","<X1e>Bartender<X04>
+Sorry, l'il boss. I can't serve
+drinks ta anyone carryin' weapons.
+
+Now that Hans is President,
+there's these new ""knifin' under
+the influence"" laws, y'know."
 "ef15","<X1e>神父<X04>
 ヒック おー 暇だ 暇だ ･ ･ ･
-なんか おもしれえこと ねえのかよ。"
+なんか おもしれえこと ねえのかよ。","<X1e>Priest<X04>
+Hic... Bored, bored, bored!
+Nothin' fun ever happens here!"

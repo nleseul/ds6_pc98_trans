@@ -1,4 +1,4 @@
-"*","Fangath (Finding Dina)"
+"*","Gail's house (Finding Dina)"
 "e359","<CALLeb92>おい その女奴隷を よこしな !!
 
 <CH1>
@@ -10,9 +10,22 @@
 
 <CALLeb99>この大盗賊の ゲイルさまに 逆らうとどうなるか 教えてやれ。
 
-<CALLeb92>へい 親分。"
+<CALLeb92>へい 親分。","<CALLeb92>Hey!! Let that slave girl go!
+
+<CH1>
+Absolutely not!!
+This woman is no slave girl!
+
+<CALLeb92>What? If you know what's good fer
+ya, you'd better let 'er go.
+
+<CALLeb99>Show them what happens to folks
+who cross the Great Thief Gail.
+
+<CALLeb92>You got it, boss."
 "e42e","<CH3>
-やめろ クソじじい !!"
+やめろ クソじじい !!","<CH3>
+Cut it out, old fart!"
 "e446","<CALLeb99>３世 !?
 
 <CH3>
@@ -104,11 +117,109 @@
 
 おい ３世を 狼の口まで送っていけ。それから お前は ３世の仲間を
 家の中に 案内しろ。
-わしは ちょっと 散歩に行く。"
+わしは ちょっと 散歩に行く。","<CALLeb99>Third?!
+
+<CH3>
+Don't call me ""third,"" fartface!!
+I got nothin' to do with ya!
+
+<CALLeb99>Ha ha ha! Welcome back!
+Come on inside, and you can fill
+me in on everything.
+
+<CH3>
+There's no more ta fill in!!
+You do know who this is, right?
+She's Princess Dina of Soldythe!
+
+<CALLeb99>What? A princess?!
+No wonder she can't dust worth
+a damn.
+
+<CH3>
+Princesses don't dust, you
+dumbass!!
+
+Look, she was kidnapped in
+Soldythe and sold to a slave
+merchant, and then you bought 'er.
+
+Just send 'er back to Soldythe.
+I expect there's a reward for
+whoever finds 'er.
+
+<CALLeb99>What? Really?
+Okay, want me to send some of
+the rookies to bring her?
+
+<CH3>
+Nah, you can't trust 'em. We'll
+take her back.
+
+<CALLeb99>You are the third Great Thief
+Gail! You need to take charge
+here! You can't just run off!
+
+<CH3>
+I'm not the third nothin'!!
+How many times do I gotta
+tell ya?!
+
+I'm only here 'cause o' the
+Princess! Not to be some kinda
+petty thief!
+
+<CALLeb99>Ugh, you're just like Junior...
+
+Digging that huge hole and running
+off like that... To this day, it
+still hasn't been repaired!
+
+Let me tell you about why your
+father left.
+
+<CH3>
+You think I care about that?! He
+didn't wanna go around picking
+pockets, huh? Well, I'm with him.
+
+<CALLeb99>Exactly! The moment you were born,he announced he had something elsehe wanted to do, and left.
+
+If he'd just taken over from me
+like he should have, we could be
+living without a care in the
+world...
+
+Now, then, Third. I have a
+treasure in the Wolf's Maw. If you
+can get it, you're off the hook.
+
+You'll remember all the traps in
+that cave, of course.
+
+<CH3>
+Yeah, of course. Those traps're
+nothin'. Fine, I'll go get yer
+treasure.
+
+Sorry, Selios. I've got to go out
+for a bit, so just wait here.
+
+<CALLeb99>Okay, show me what you can do.
+Naturally, I'll have to seal your
+spells and take your Warp Wings.
+
+Take Third to the Wolf's Maw. And
+see to his friends' accommodationshere.
+I'm going out for a stroll."
 "eb5d","<CH1>
 ディーナ姫 !!
 
 <X1e>ディーナ姫<X04>
-エリオンさま 助けて !!"
-"eb92","<X1e>盗賊<X04><RETN>"
-"eb99","<X1e>大盗賊 ゲイル<X04><RETN>"
+エリオンさま 助けて !!","<CH1>
+Princess Dina!
+
+<X1e>Princess Dina<X04>
+Prince Aerion! Help me!!"
+"eb92","<X1e>盗賊<X04><RETN>","<X1e>Thief<X04><RETN>"
+"eb99","<X1e>大盗賊 ゲイル<X04><RETN>","<X1e>The Great Thief Gail<X04><RETN>"

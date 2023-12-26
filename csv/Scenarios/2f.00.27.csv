@@ -1,14 +1,23 @@
 "*","Wolf's maw"
 "e5cb","<X1e>盗賊<X04>
 ここは 私有地だ。
-勝手に入ると 大統領に訴えるぞ。"
+勝手に入ると 大統領に訴えるぞ。","<X1e>Thief<X04>
+This is private property.
+If you barge in here, the Great
+Thief'll take notice."
 "e604","<X1e>盗賊<X04>
 お坊ちゃん このたいまつを
 お持ちください。
 
 <CH3>
 ああ<WAIT>
-おめえは ここで待ってろよ。"
+おめえは ここで待ってろよ。","<X1e>Thief<X04>
+Here ya go, l'il boss. Take this
+torch.
+
+<CH3>
+Yup.<WAIT>
+Just wait here."
 "e65a","<X1e>盗賊<X04>
 お坊ちゃん 降参するんですかい？<IF_NOT0209><JUMPe6f7><SET020b>
 
@@ -25,7 +34,18 @@
 
 この洞窟内にある 泉の石碑に 祈りをささげると 呪いが とけるのです。
 もし 助けてくれたら 洞窟内を
-案内しましょう。"
+案内しましょう。","<X1e>Thief<X04>
+Givin' up, l'il boss?<IF_NOT0209><JUMPe6f7><SET020b>
+
+<CH3>
+Don't be stupid. Look here.
+
+<X1e>Thief<X04>
+Hey, that's great, l'il boss!
+I knew ya could do it!
+Let's head back to Fangath.<LOCe6f7><END>
+
+<CONT>"
 "e6f8","<X1e>石像<X04>
 <SET020c>私は この洞窟の主です。
 呪いをかけられて このような姿に
@@ -33,11 +53,22 @@
 
 この洞窟内にある 泉の石碑に 祈りをささげると 呪いが とけるのです。
 もし 助けてくれたら 洞窟内を
-案内しましょう。"
+案内しましょう。","<X1e>Statue<X04>
+<SET020c>I am the guardian of this cave.
+I have been cursed and changed
+into the form you see.
+
+If you pray at the spring marker
+in the cave, the curse will be
+lifted. Help me, and I will guide
+you through the cave."
 "e7c0","<X1e>石像<X04>
 ありがとう
 これで やっと 呪いが とけました。
-それでは 洞窟内を 案内しましょう。"
+それでは 洞窟内を 案内しましょう。","<X1e>Statue<X04>
+Thank you. The curse is lifted.
+Now, let me guide you through the
+cave."
 "e817","<X1e>大盗賊 ゲイル<X04>
 <SET020a>ハッハッハ バカな奴め。
 こんなことだろうと思ったわい
@@ -55,7 +86,25 @@
 <X1e>大盗賊 ゲイル<X04>
 そりゃあ たのしみだわい。
 せいぜい がんばることじゃな。
-ハッハッハ ･ ･ ･ "
+ハッハッハ ･ ･ ･ ","<X1e>The Great Thief Gail<X04>
+<SET020a>Ha ha ha!! You silly boy!
+You actually bought that story!
+You're completely hopeless!
+
+<CH3>
+There's nothin' silly about it,
+fartface! I was just tryin' to
+help someone!
+
+Not that I'd have helped if I
+knew it was you.
+Now fuck off.
+
+<X1e>The Great Thief Gail<X04>
+This is so much fun!
+C'mon, keep at it, kid!
+Ha ha ha..."
 "e98a","<X0b>は 宝箱を開けました。
-宝箱の中には<RET_IL>"
-"e9ae","<X0e>が入っていました。<RETN>"
+宝箱の中には<RET_IL>","<X0b> opened the chest.
+There was a <RET_IL>"
+"e9ae","<X0e>が入っていました。<RETN>","<X0e> inside.<RETN>"
