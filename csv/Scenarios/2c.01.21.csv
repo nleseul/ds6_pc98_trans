@@ -50,13 +50,67 @@
 解放されたと 聞く。
 
 私も大統領だ へなちょこ王子さま
-なんかには 負けてられないよ。"
+なんかには 負けてられないよ。","<X1e>Hans<X04>
+<IF01fa><JUMPe66e><SET01fa>I am President Hans of Moreston.
+Who might you be?
+
+<CH3>
+Ya don't gotta be so formal, Hans.It's me. Gail.
+
+<X1e>Hans<X04>
+Gail! It's been a while!
+Hey, I finally got to be
+President!
+
+<CH3>
+Yeah, I heard. Good for you.
+You always said you were gonna
+be President when you grew up.
+
+<X1e>Hans<X04>
+Yeah, absolutely. The country's
+been having problems lately,
+though. All these kidnappings.
+
+I've looked into the cause, and itseems to be the work of some
+monster called Beziel.
+
+And I've determined that this
+Beziel is in the Crystalspire.
+
+Our preparations to go to the
+Crystalspire are underway as we
+speak.
+
+<CH3>
+We'll help out, then.
+
+<X1e>Hans<X04>
+Thanks, but we can't involve
+civilians like you. Leave the
+matter to us.
+
+<CH3>
+Civilians, huh?
+Well, guess we'll leave it to you,then.<END>
+<LOCe66e>I'll soon have Moreston as
+peaceful as the rest of the world.
+
+I've heard about the great deeds
+of the prince who liberated the
+other nations from monsters.
+
+I'm a President! I'm not gonna
+let some blue-blooded kid outdo
+me."
 "e737","<X1e>兵士<X04>
 民間人は じゃまだ。
-あっちへ行っていろ。"
+あっちへ行っていろ。","<X1e>Soldier<X04>
+No civilians in here. Get out."
 "e767","<X1e>兵士<X04>
 我々が 出動すれば バケモノなんて
-ひとひねりさ。"
+ひとひねりさ。","<X1e>Soldier<X04>
+Once we mobilize, we'll make shortwork of those monsters."
 "e79e","<IF_NOT01e2><JUMPe767><X1e>兵士<X04>
 お前ら 今まで おれたちが ただ飯を
 食っていると 思ってただろ。
@@ -65,7 +119,15 @@
 堤防作りぐらいしか してないと
 思ってただろ。
 
-おれには わかるんだ。なんせ 兵士になる前は おれも そう思ってたからな。"
+おれには わかるんだ。なんせ 兵士になる前は おれも そう思ってたからな。","<IF_NOT01e2><JUMPe767><X1e>Soldier<X04>
+You probably figured we'd been
+eating free meals.
+
+And that all the army does is
+build levees after a rainstorm.
+
+I get it. That's what I thought
+too, before I became a soldier."
 "e87c","<X1e>ジーラ<X04>
 <IF01f4><JUMPe93a>うちの息子が 不眠症なんじゃ。
 
@@ -75,7 +137,18 @@
 おかげで いつも寝不足じゃわい。
 ふぁーあ 眠い 眠い。<END>
 <LOCe93a>ありがとう 旅の方、これで わしも
-ゆっくりと 寝ることが できるわい。"
+ゆっくりと 寝ることが できるわい。","<X1e>Jira<X04>
+<IF01f4><JUMPe93a>My son's got insomnia.
+
+At night, he can't get himself to
+sleep, so he comes over to me and
+asks me to put 'im to bed.
+
+So that means I never get enough
+sleep either!
+Yawn... so tired!<END>
+<LOCe93a>Thanks, traveler. Now I can
+finally get some sleep m'self."
 "e97e","<X1e>男<X04>
 <IF01f4><JUMPeab7><IF01f3><JUMPea97><IF0402><JUMPe9ce><SET01f2>やあ なんの用だ ？
 最近 不眠症で ずっと寝てないんだ。<END>
@@ -94,25 +167,59 @@
 <LOCeac7><SET0400>
 
 お前らも 寝てみろよ 頭が
-すっきりするぞ。"
+すっきりするぞ。","<X1e>Man<X04>
+<IF01f4><JUMPeab7><IF01f3><JUMPea97><IF0402><JUMPe9ce><SET01f2>Hey, what's up?
+I've had insomnia lately, so I
+haven't slept in a while.<END>
+<LOCe9ce>Huh? What's this? Sleepweed?!<WAIT>
+This'll actually put me to sleep?
+Well, okay, lemme try a bit.
+
+<ASMeb27><SET01f3><SET0404><X1c>Handed over the <X04><X0e><X1c>.<X0c0301><X04>
+
+Eww! It's so bitter...
+Oh, but I think it is making me
+feel sleepy.<END>
+<LOCea97><SET01f4>I feel so much better now!
+<CALLeaf5><END>
+<LOCeab7><CALLeaf5><IF0408><JUMPeac7><IF0409><JUMPeac7><END>
+<LOCeac7><SET0400>
+
+Get some sleep! You'll feel much
+better afterwards."
 "eaf5","やっぱり 人間にとって
-一番大切なのは 睡眠だよな。<RET_IL>"
+一番大切なのは 睡眠だよな。<RET_IL>","Sleep really is people's most
+important need.<RET_IL>"
 "eb2f","<X1e>男<X04>
-なっ 頭が すっきりしただろ？"
+なっ 頭が すっきりしただろ？","<X1e>Man<X04>
+Well? Don't you feel better now?"
 "eb51","<X1e>補佐官<X04>
 <IF_NOT01e2><JUMPeba2>大統領は 勇敢な方です。
 きっと バケモノを 退治して
 くださいます。<END>
 <LOCeba2>大統領は ただ今 外出中です。
-また、おこしください。"
+また、おこしください。","<X1e>Aide<X04>
+<IF_NOT01e2><JUMPeba2>The President is a great man.
+I have no doubt he will eliminate
+the monsters.<END>
+<LOCeba2>The President is currently away.
+Please come back another time."
 "ebd6","<X1e>役人<X04>
 兵士たちは はしゃいでいるけど
 兵隊が 出動するとなると いろいろと手続きが 必要なんだ。
 
-ああ、忙しい 忙しい。"
+ああ、忙しい 忙しい。","<X1e>Clerk<X04>
+The soldiers are excited, but
+mobilizing the army requires a
+lot of paperwork.
+
+Busy, busy, busy..."
 "ec49","<X1e>役人<X04>
 ここは 大統領専用の寝室だ
-むやみに 立ち入ってはならん。"
+むやみに 立ち入ってはならん。","<X1e>Clerk<X04>
+This is the President's private
+bedroom. Please don't just wander
+in on a whim."
 "ec88","<X1e>役人<X04>
 ふぅ ･ ･ ･ お役所仕事も 疲れるよ。こうやって 一日中 ボーっと
 してなけりゃ ならないんだもんな。
@@ -125,14 +232,32 @@
 いくら 人手が足りなくても いくら
 自分が暇でも 決して他人の仕事は
 手伝わないんだ。役所ってのは
-そういった所なんだよ。"
+そういった所なんだよ。","<X1e>Clerk<X04>
+Yawn... Bureaucracy is exhausting.I have to sit here just staring
+at the wall all day.
+
+What? Help the guy behind me?
+No, that wouldn't do.
+Division of responsibility is verystrict in the government.
+
+Even if we're understaffed, even
+if we have free time, we don't
+take over other people's work.
+That's civil service."
 "edc9","<X1e>役人<X04>
 ここの お役所は 男女差別が
 ひどいのよ。
 
 あたしなんか いつも お茶くみばかりさせられてるの。
 まったく、頭にきちゃうわ。
-男と女、どちらが えらいって言うの。"
+男と女、どちらが えらいって言うの。","<X1e>Clerk<X04>
+The gender discrimination here
+is awful!
+
+All they have me do is serve tea!
+It burns me up!
+Which of us is the stronger sex,
+huh?"
 "ee6a","<X1e>女<X04>
 まったく 役人って 融通が
 きかないわよね。
@@ -140,14 +265,28 @@
 町の道具屋さんで お野菜を売って
 くれるように 頼みに行ったのに
 管轄外だって言って 相手にして
-くれないのよ。"
+くれないのよ。","<X1e>Woman<X04>
+Bureaucrats are so inflexible!
+
+I asked to buy some vegetables
+at the tool merchant, but they
+said it was outside of their
+purview and wouldn't help me."
 "ef04","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
 "ef3c","<X1e>道具屋<X04>
 お客さん、すみませんねえ。
 うちの道具は お役所が みんな
 買い占めちゃったんですよ。
 
 次の入荷は いつになるのか
-わかりませんねえ。"
+わかりませんねえ。","<X1e>Tool merchant<X04>
+I'm very sorry, but all my
+stock has already been purchased
+by the state.
+
+I don't know when the next
+delivery will arrive."
