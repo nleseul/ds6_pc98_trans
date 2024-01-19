@@ -1,18 +1,31 @@
+"*","Fangath (Gail injured)"
 "e1a5","<X1e>盗賊<X04>
-お坊っちゃん ここは ワプ屋です。<RETN>"
+お坊っちゃん ここは ワプ屋です。<RETN>","<X1e>Thief<X04>
+Hey, l'il boss! I got a warp
+wing shop here.<RETN>"
 "e1e8","<X1e>盗賊<X04>
 お坊っちゃん ダイヤシリーズは
 ぜひとも そろえてください。
 
+<RET_IL>","<X1e>Thief<X04>
+Did ya get the whole Diamond
+set yet, l'il boss?
+
 <RET_IL>"
-"e22f","また いつでも来てくだせえ。"
+"e22f","また いつでも来てくだせえ。","Come again!"
 "e253","これ以上 持てないようですぜ。
+
+<RET_IL>","You can't carry no more.
 
 <RET_IL>"
 "e272","どれが 必要ですかい？
+<RETN>","What're ya lookin' for?
 <RETN>"
 "e289","<X0e>ですね
 はいはい どうぞ。
+
+<RET_IL>","The <X0e>?
+Here ya go!
 
 <RET_IL>"
 "e35f","<X1e>ホール<X04>
@@ -27,33 +40,65 @@
 
 <ASMe45a><IF0402><JUMPe443>坊ちゃん 持てませんよ。
 <END>
-<LOCe443><X0e><X1c>をもらいました。<X0c0301><X04>"
+<LOCe443><X0e><X1c>をもらいました。<X0c0301><X04>","<X1e>ホール<X04>
+<IF01e8><JUMPe3dc>We got a big problem, l'il boss!
+The big boss got 'imself hurt!
+
+Better get to the mansion, quick!<END>
+<LOCe3dc>
+Sleepweed, comin' right up!
+Since the stuff doesn't sell, I'llgive it to you on the house.
+
+<ASMe45a><IF0402><JUMPe443>But it doesn't look like you
+got space for it.
+<END>
+<LOCe443><X1c>Received <X04><X0e><X1c>.<X0c0301><X04>"
 "e472","<X1e>盗賊<X04>
 <IF01e8><JUMPe4ca>お坊ちゃん
 ゲイルさまが ケガを したんですよ。何を のんびりしてるんですか。<END>
 <LOCe4ca>ゲイルさまの ケガは たいしたことがないそうですね？
-よかったですね  お坊ちゃん。"
+よかったですね  お坊ちゃん。","<X1e>Thief<X04>
+<IF01e8><JUMPe4ca>L'il boss!!
+How can you just stand around
+here, when the boss is hurt?<END>
+<LOCe4ca>The boss isn't hurt that bad?
+Glad ta hear it, l'il boss!"
 "e51a","<X1e>盗賊<X04>
 あっ お坊ちゃん。やっと 親分の後を継ぐことに なったそうですね？
-期待してますぜ ３代目。"
+期待してますぜ ３代目。","<X1e>Thief<X04>
+I hear ya finally agreed ta take
+over here, l'il boss! 
+I'm ready for the ""Third"" era!"
 "e579","<X1e>盗賊<X04>
 あ、坊ちゃん。
 また こいつの ホラ話が
 始まっちゃいましたよ。
 
 水晶の塔に ５階なんか あるわけ
-ないですよね。"
+ないですよね。","<X1e>Thief<X04>
+Hey, l'il boss. This guy's makin'
+up stories again.
+
+The Crystalspire don't even got
+a 5th floor!"
 "e5eb","<X1e>盗賊<X04>
 坊ちゃん ここには 手くせの
 悪い奴が 多いですから
-気をつけたほうが いいですよ。"
+気をつけたほうが いいですよ。","<X1e>Thief<X04>
+Lotsa folks with wanderin' fingers'round here, l'il boss. Best to
+keep your wits about you."
 "e641","<X1e>盗賊<X04>
 坊ちゃん、ダイヤの武器や防具は
 もう 買いましたか？
 
 この辺りには 火を使う バケモノは
 いないから 十分 役にたつと
-思いますよ。"
+思いますよ。","<X1e>Thief<X04>
+You buy your Diamond gear yet,
+l'il boss?
+
+Ain't no monsters 'round here thatuse fire, so I find it awful
+handy."
 "e6c4","<X1e>盗賊<X04>
 この間 ひとりで 水晶の塔に
 行ったんですよ。
@@ -67,7 +112,20 @@
 おいらは、お宝は 沢山持ってるから
 そのままにして おきましたよ。
 
-ほ、ほんとですよ。"
+ほ、ほんとですよ。","<X1e>Thief<X04>
+I went up to the Crystalspire on
+my own a while back.
+
+I'd always thought there was just
+4 floors, but there's actually a
+5th floor.
+
+A floor heapin' full o' treasure.<WAIT>
+What happened to that treasure?
+Well, I figured, I got a lot o'
+treasure already, so I left it.
+
+N-No, I'm not pullin' your leg!"
 "e7d6","<X1e>盗賊<X04>
 この家は 昔 旅人の宿チェーンに
 加盟していて、旅の勇者たちを泊めて高い宿代を 取っていたんです。
@@ -78,13 +136,30 @@
 
 ずいぶん お疲れのようですね。
 どうぞ お泊まりください。
-もちろん お金なんか いりませんよ。<SET0400><LOCe920>"
+もちろん お金なんか いりませんよ。<SET0400><LOCe920>","<X1e>Thief<X04>
+This used to be part of an inn
+franchise. Every traveling hero
+would pay well to sleep here.
+
+But now that everyone uses Warp
+to go home for the night, inns
+have gone out of fashion, so I
+had to close up.<IF0408><JUMPed71><IF_NOT0409><JUMPedd0><LOCed71>
+
+You all seem rather tired. Go
+ahead and stay the night here.
+No need to pay me, of course!<SET0400><LOCedd0>"
 "e921","<X1e>盗賊<X04>
 これは ゲイル３世さま。
 あまり外に 出歩かないでくださいよ。
 
 あなたに もしものことが あったら
-大変ですからね。"
+大変ですからね。","<X1e>Thief<X04>
+Hey, l'il boss. Try not to walk
+around outside too much, okay?
+
+It would be dreadful if somethin'
+happened to ya."
 "e996","<X1e>バーテン<X04>
 坊ちゃん、申し訳ないんですが
 武器を持った人には 酒は
@@ -92,7 +167,15 @@
 
 ハンスさんが 大統領になってから
 法律が 変わったんですよ。
-「飲むなら持つな、持つなら飲むな」ってね。"
+「飲むなら持つな、持つなら飲むな」ってね。","<X1e>Bartender<X04>
+Sorry, l'il boss. I can't serve
+drinks ta anyone carryin' weapons.
+
+Now that Hans is President,
+there's these new ""knifin' under
+the influence"" laws, y'know."
 "ea4e","<X1e>神父<X04>
 ヒック おー 暇だ 暇だ ･ ･ ･
-なんか おもしれえこと ねえのかよ。"
+なんか おもしれえこと ねえのかよ。","<X1e>Priest<X04>
+Hic... Bored, bored, bored!
+Nothin' fun ever happens here!"

@@ -9,7 +9,9 @@ wing shop here.<RETN>"
 
 <RET_IL>","<X1e>Thief<X04>
 Did ya get the whole Diamond
-set yet, l'il boss?"
+set yet, l'il boss?
+
+<RET_IL>"
 "e284","また いつでも来てくだせえ。","Come again!"
 "e2ca","これ以上 持てないようですぜ。
 
@@ -182,10 +184,10 @@ Colx, didn't we? Hey, Hall, I'll
 take a Sleepweed.
 
 <LOCe8d0><X1e>Hall<X04>
-Sure thing, l'il boss!
+Sleepweed, comin' right up!
 Since the stuff doesn't sell, I'llgive it to you on the house.
 
-<ASMe95d><IF0402><JUMPe946>But it doesn't look like you've
+<ASMe95d><IF0402><JUMPe946>But it doesn't look like you
 got space for it.<END>
 <LOCe946><X1c>Received <X04><X0e><X1c>.<X0c0301><X04>"
 "e975","<X1e>盗賊<X04>
