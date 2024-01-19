@@ -1,3 +1,4 @@
+"*","Gail's house (Gail injured)"
 "e135","<X1e>大盗賊 ゲイル<X04>
 <IF01e8><JUMPe287><SET01e8>おお ３世か。
 ディーナ姫を 送っていく途中で
@@ -16,29 +17,63 @@
 後のことは おれたちに まかしときな。<END>
 <LOCe287>３世
 お前は 本当に 頼りになる奴だな
-早く わしの後を継いでくれよ。"
+早く わしの後を継いでくれよ。","<X1e>The Great Thief Gail<X04>
+<IF01e8><JUMPe287><SET01e8>Oh... Third?
+We were on our way to deliver
+Dina, when a monster attacked.
+
+No matter how much we attacked it,we couldn't land a hit.
+
+We wore ourselves out, and before
+we knew it, the Princess was gone.Absolutely pathetic...
+
+<CH3>
+...Nothin' an old fart like you
+coulda done.
+We'll take it from here.<END>
+<LOCe287>Third...
+You turned out so reliable.
+Hurry up and take my place!"
 "e2c9","<X1e>盗賊<X04>
 ３世さま 申し訳ありません。
 おれが ゲイルさまの 代わりに
-なってれば よかったんです。"
+なってれば よかったんです。","<X1e>Thief<X04>
+I'm awful sorry, Third.
+Wish it coulda been me instead of
+the boss."
 "e325","<X1e>盗賊<X04>
 <IF01e8><JUMPe353>３世さま 早く ゲイルさまの所へ。<END>
 <LOCe353>３世さま、相手は まるで 幻のような奴だそうです。
-くれぐれも お気をつけください。"
+くれぐれも お気をつけください。","<X1e>Thief<X04>
+<IF01e8><JUMPe353>Third! Hurry and see the boss!<END>
+<LOCe353>That monster we fought was like a
+ghost.
+Third... Please, be careful!"
 "e3a4","<X1e>盗賊<X04>
 <IF01e8><JUMPe408>あっ やっと帰ってきましたね。
 ゲイルさまが バケモノに 襲われて
 ケガを なさったんです。<END>
 <LOCe408>お坊ちゃん 大盗賊 ゲイルさまの
 ことは心配いりません。
-おれらに まかせてください。"
+おれらに まかせてください。","<X1e>Thief<X04>
+<IF01e8><JUMPe408>You're finally home!
+The boss was attacked by monsters
+and wounded.<END>
+<LOCe408>Don't worry about Gail. We'll
+take care of him here."
 "e45a","<X1e>娘<X04>
 あっ、こっ こんにちは。
 今度 ゲイル３世さまの 身の回りの
-お世話を させてください。"
+お世話を させてください。","<X1e>Girl<X04>
+H-Hello, m'lord. I'll be seeing
+to your needs too now. Please
+let me know if you need anything."
 "e4b2","<X1e>娘<X04>
 今日も 仕事が 無いから
-靴でも 買いに行こうかしら。"
+靴でも 買いに行こうかしら。","<X1e>Girl<X04>
+There's still no work to do today.Maybe I'll shop for shoes..."
 "e4ea","<CH3>
 なつかしいな 昔 ここから
-逃げ出したんだぜ。"
+逃げ出したんだぜ。","<CH3>
+Oh, yeah. This's where I escaped
+back then."
