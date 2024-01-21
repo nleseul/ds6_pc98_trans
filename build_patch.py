@@ -512,27 +512,94 @@ def program_disk_patch_asm(program_disk_patch, nasm_path):
         ret
     ''')
     
-    # Bits of code used to draw the modifying descriptions for overworld
-    # location names.
-    patch_asm(program_disk_patch, nasm_path, 0xa11e, 0xa, '''
-        mov dl, 0x57 ; W
-        jnc short 0xa128
-        mov dl, 0x45 ; E
+    # This routine decides what text to use in the overworld based on where
+    # you are relative to the nearest location entrance.
+    patch_asm(program_disk_patch, nasm_path, 0xa112, 0x6b, '''
+        ; At this point, di contains a pointer to the coordinates of the nearest location, and
+        ; [0xa185] and [0xa187] are the coordinates of the player position.
+
+        ; Calculate the x delta
+        xor bp,bp
+        xor dx,dx
+        mov ax,word [di]
+        sub ax,word [0xa185]
+        jz save_x_delta
+        mov dl,0x57 ; "W"
+        jnc save_x_delta
+        mov dl,0x45 ; "E"
         neg ax
-    ''')
-    patch_asm(program_disk_patch, nasm_path, 0xa133, 0xa, '''
-        mov dh, 0x4e ; N
-        jnc short 0xa13d
-        mov dh, 0x53 ; S
+    save_x_delta:
+        mov bx,ax
+
+        ; Calculate the y delta
+        mov ax,word [di + 0x2]
+        sub ax,word [0xa187]
+        jz save_y_delta
+        mov dh,0x4e ; "N"
+        jnc save_y_delta
+        mov dh,0x53 ; "S"
         neg ax
-    ''')
-    patch_asm(program_disk_patch, nasm_path, 0xa164, 0x3, '''
-        mov al, dh
+    save_y_delta:
+        mov cx,ax
+
+        mov di,0x41bd ; Target buffer
+
+        ; Check if both absolute deltas are < 5. Use the "Close to" string if so.
+        mov si,0x5ae6 ; Pointer to "Close to" string
+        cmp bx,0x5
+        jnc check_y_delta
+        cmp cx,0x5
+        jc output_buffer
+
+    check_y_delta:
+        mov si,0x5aea ; Pointer to "...of..." string
+        mov ax,bx
+        shr ax,1
+        cmp cx,ax
+        jbe check_x_delta
+        mov al,dh
+        stosb
+
+    check_x_delta:
+        mov ax,cx
+        shr ax,1
+        cmp bx,ax
+        jbe output_buffer
+        mov al,dl
+        stosb
+
+    output_buffer:
+        lodsb
+        cmp ax,0
+        jz done
+        stosb
+        jmp output_buffer
+
+    done:
+         ; Padding to make sure it renders fully
+        mov al,0x20
+        stosb
+        mov al,0x6
         stosb
     ''')
-    patch_asm(program_disk_patch, nasm_path, 0xa173, 0x3, '''
-        mov al, dl
-        stosb
+
+    # Switch the order of outputs in the places that build a concatenated overworld location.
+    patch_asm(program_disk_patch, nasm_path, 0x830a, 0x12, '''
+        mov di,0x68a4
+        mov si,0x41bd
+        call 0x893c
+
+        mov si,0x087d
+        call 0x6f64
+        call 0x893c
+    ''')
+    patch_asm(program_disk_patch, nasm_path, 0x7242, 0xf, '''
+        mov si,0x41bd
+        call 0x893c
+
+        mov si,0x087d
+        call 0x6f64
+        call 0x893c
     ''')
 
     # Clear out some unnecessary text concatenation used by the Hyper 2000/Hyper 660 item code.
@@ -546,7 +613,7 @@ def program_disk_patch_combat_text(program_disk_patch):
     battle_text_pool.add_space(0xbf97, 0xbfff)
 
     battle_text_translations = [
-        { 'orig_addr': 0x41bd, 'orig_length': 0x5,  'translation': "   of <RET_IL>", 'references': [ 0x724c, 0x8317, 0xa140 ] },
+        { 'orig_addr': 0x41bd, 'orig_length': 0x5,  'translation': "                   ", 'references': [ 0x7243, 0x830e, 0xa13c ] },
         { 'orig_addr': 0x57e1, 'orig_length': 0x4,  'translation': "<X02> falls <RET_IL>", 'references': [ 0xa4b5 ] },
         { 'orig_addr': 0x57e5, 'orig_length': 0x4,  'translation': "\non <X02>.<RETN>", 'references': [ 0xa7ce ] },
         { 'orig_addr': 0x57e9, 'orig_length': 0x4,  'translation': "<X02>'s <RET_IL>", 'references': [ 0xa735 ] },
@@ -604,8 +671,8 @@ def program_disk_patch_combat_text(program_disk_patch):
         { 'orig_addr': 0x5acc, 'orig_length': 0xc,  'translation': "Speed <JUMP58cc>", 'references': [ 0x9e6d ] },
         { 'orig_addr': 0x5ad8, 'orig_length': 0xc,  'translation': "Luck <JUMP58cc>", 'references': [ 0x9e73 ] },
         { 'orig_addr': 0x5ae4, 'orig_length': 0x2,  'translation': "<X05><RET_IL>", 'references': [ 0x9e81 ] },
-        { 'orig_addr': 0x5ae6, 'orig_length': 0x4,  'translation': "Near", 'references': [ 0xa14c ] },
-        { 'orig_addr': 0x5aea, 'orig_length': 0x4,  'translation': " at ", 'references': [ 0xa143 ] },
+        { 'orig_addr': 0x5ae6, 'orig_length': 0x4,  'translation': "Near ", 'references': [ 0xa13f ] },
+        { 'orig_addr': 0x5aea, 'orig_length': 0x4,  'translation': " of ", 'references': [ 0xa14c ] }, # Unused "at entrance" text
         { 'orig_addr': 0x6bb6, 'orig_length': 0x6,  'translation': "Left <X1f>", 'references': [ 0x6b87 ] }, # Needs to be exactly 6 bytes
         { 'orig_addr': 0x6bbc, 'orig_length': 0xe,  'translation': "<X1a>Unconscious  ", 'references': [ 0x6b70 ] }, # Needs to be exactly 14 bytes
         { 'orig_addr': 0x7152, 'orig_length': 0xd,  'translation': "<X0e> obtained.", 'references': [ 0x7111 ] },
@@ -699,6 +766,7 @@ def program_disk_patch_combat_text(program_disk_patch):
                 program_disk_patch.add_record(ref_addr - 0x4000 + 0x13e10, int.to_bytes(reloc_addr, 2, 'little'))
     
     print(f"Remaining battle text space: {battle_text_pool.total_available_space} bytes, largest block: {battle_text_pool.largest_available_space} bytes")
+    battle_text_pool.dump()
     print()
 
 
