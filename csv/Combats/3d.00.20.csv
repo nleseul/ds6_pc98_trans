@@ -1,5 +1,6 @@
-"dc30","ﾊｲ=ｱｷﾞｰﾙＡ<RET_IL>"
-"dc70","ﾊｲ=ｱｷﾞｰﾙＢ<RET_IL>"
-"de09","ハイ＝アギールの群れが現れた。<RETN>"
+"dc30","ﾊｲ=ｱｷﾞｰﾙＡ<RET_IL>","High Agiel A<RET_IL>"
+"dc70","ﾊｲ=ｱｷﾞｰﾙＢ<RET_IL>","High Agiel B<RET_IL>"
+"de09","ハイ＝アギールの群れが現れた。<RETN>","A pair of high agiel appear.<RETN>"
 "de28","は 首を伸ばして
-<X02>に かみついた !!<X0a>"
+<X02>に かみついた !!<X0a>"," nimbly extends its
+neck and bites at <X02>!<X0a>"

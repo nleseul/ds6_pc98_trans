@@ -1,9 +1,10 @@
-"dc30","アギールＡ<RET_IL>"
-"dc70","アギールＢ<RET_IL>"
-"dcb0","アギールＣ<RET_IL>"
-"de0a","アギールの群れが現れた。<RETN>"
+"dc30","アギールＡ<RET_IL>","Agiel A<RET_IL>"
+"dc70","アギールＢ<RET_IL>","Agiel B<RET_IL>"
+"dcb0","アギールＣ<RET_IL>","Agiel C<RET_IL>"
+"de0a","アギールの群れが現れた。<RETN>","A troop of agiel appears!<RETN>"
 "de23","は すばやく首を伸ばして
-<X02>に かみついた !!<X0a>"
-"de4d","アギールは３匹で 武器をかかげた。<X0a>"
-"de6f","アギールは２匹で 武器をかかげた。<X0a>"
-"de91","青白い光が ほとばしる !!<X0a>"
+<X02>に かみついた !!<X0a>"," nimbly extends its neck
+and bites at <X02>!<X0a>"
+"de4d","アギールは３匹で 武器をかかげた。<X0a>","All 3 agiel raise their weapons.<X0a>"
+"de6f","アギールは２匹で 武器をかかげた。<X0a>","Both agiel raise their weapons.<X0a>"
+"de91","青白い光が ほとばしる !!<X0a>","A blast of pale light emerges!<X0a>"

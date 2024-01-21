@@ -1,7 +1,8 @@
-"dc30","ｽｶﾙﾌｧﾝｸﾞＡ<RET_IL>"
-"dc70","ｽｶﾙﾌｧﾝｸﾞＢ<RET_IL>"
-"dcb0","ハイ＝アギール<RET_IL>"
+"dc30","ｽｶﾙﾌｧﾝｸﾞＡ<RET_IL>","Skullfang A<RET_IL>"
+"dc70","ｽｶﾙﾌｧﾝｸﾞＢ<RET_IL>","Skullfang B<RET_IL>"
+"dcb0","ハイ＝アギール<RET_IL>","High Agiel<RET_IL>"
 "de31","スカルファングが現れた。
-ハイ＝アギールも一緒だ !!<RETN>"
+ハイ＝アギールも一緒だ !!<RETN>","A pair of skullfangs appear.
+They are joined by a high agiel!<RETN>"
 "de64","は 首を伸ばして
-<X02>に かみついた !!<X0a>"
+<X02>に かみついた !!<X0a>"," nimbly extends its neckand bites at <X02>!<X0a>"

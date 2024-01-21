@@ -1,11 +1,15 @@
-"dc30","ファントム<RET_IL>"
-"dc70","アギールＡ<RET_IL>"
-"dcb0","アギールＢ<RET_IL>"
-"de63","ファントムとアギールが現れた。<RETN>"
-"de82","は すばやく 首を伸ばして<X02>に かみついた !!<X0a>"
-"deac","アギールは２匹で 武器をかかげた。<X0a>"
-"dece","青白い光が ほとばしる !!<X0a>"
+"dc30","ファントム<RET_IL>","Phantom<RET_IL>"
+"dc70","アギールＡ<RET_IL>","Agiel A<RET_IL>"
+"dcb0","アギールＢ<RET_IL>","Agiel B<RET_IL>"
+"de63","ファントムとアギールが現れた。<RETN>","A phantom and agiel appear.<RETN>"
+"de82","は すばやく 首を伸ばして<X02>に かみついた !!<X0a>"," nimbly extends its neck
+and bites at <X02>!<X0a>"
+"deac","アギールは２匹で 武器をかかげた。<X0a>","Both agiel raise their weapons.<X0a>"
+"dece","青白い光が ほとばしる !!<X0a>","A blast of pale light emerges!<X0a>"
 "dee7","は<X02>の回りを
 飛び回った !!<X0a>
 <CONT><X02>は 激しい 悪感に おそわれ
-すばやさが <RET_IL>"
+すばやさが <RET_IL>"," flies in circles around
+<X02>!<X0a>
+<CONT>Intense dread pierces <X02>!
+<X02>'s speed decreases by <RET_IL>"

@@ -10,10 +10,15 @@ liberated!!<X0d>"
 怖じ気づいたようだな。
 しかし、逃しはせんぞ !!
 
+<RET_IL>","<X1e>Beramis<X04>
+Ha ha ha ha!!
+Lost your nerve, have you?
+But you can't escape!
+
 <RET_IL>"
 "dee9","ソルディスのボス
 ベラミスとの対決だ !!<RETN>","A showdown with Beramis, the boss
 of the monsters in Soldythe!!<RETN>"
-"df10","は催眠術を使った !!<X0a>"
-"df24","は毒針を使った !!<X0a>"
-"df36","は不敵な笑みを浮かべている。<X0a>"
+"df10","は催眠術を使った !!<X0a>"," uses hypnosis!<X0a>"
+"df24","は毒針を使った !!<X0a>"," fires a poison needle!<X0a>"
+"df36","は不敵な笑みを浮かべている。<X0a>"," grins fearlessly.<X0a>"

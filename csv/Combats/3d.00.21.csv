@@ -1,5 +1,7 @@
-"dc30","ﾀﾞｰｸｿﾙｼﾞｬｰＡ<RET_IL>"
-"dc70","ﾀﾞｰｸｿﾙｼﾞｬｰＢ<RET_IL>"
-"dda7","ダークソルジャーが現れた。<RETN>"
+"dc30","ﾀﾞｰｸｿﾙｼﾞｬｰＡ<RET_IL>","Dark Soldier A<RET_IL>"
+"dc70","ﾀﾞｰｸｿﾙｼﾞｬｰＢ<RET_IL>","Dark Soldier B<RET_IL>"
+"dda7","ダークソルジャーが現れた。<RETN>","A pair of dark soldiers appear!<RETN>"
 "ddc2","その時 <X02>のタテが
-光を放ち 攻撃を跳ね返した !!<X0a>"
+光を放ち 攻撃を跳ね返した !!<X0a>","But then, <X0a>'s shield
+emits light and deflects the
+attack!<X0a>"

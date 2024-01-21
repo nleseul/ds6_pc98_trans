@@ -1,7 +1,10 @@
-"dc30","ファントムＡ<RET_IL>"
-"dc70","ファントムＢ<RET_IL>"
-"ddbc","ファントムの群れが現れた。<RETN>"
+"dc30","ファントムＡ<RET_IL>","Phantom A<RET_IL>"
+"dc70","ファントムＢ<RET_IL>","Phantom B<RET_IL>"
+"ddbc","ファントムの群れが現れた。<RETN>","A pair of phantoms appear!<RETN>"
 "ddd7","は<X02>の回りを
 飛び回った !!<X0a>
 <CONT><X02>は 激しい 悪感に おそわれ
-すばやさが <RET_IL>"
+すばやさが <RET_IL>"," flies in circles around
+<X02>!<X0a>
+<CONT>Intense dread pierces <X02>!
+<X02>'s speed decreases by <RET_IL>"
