@@ -1,26 +1,40 @@
+"*","Colx (After rescuing Hans)"
 "e1a9","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは 道具の店ですが
-どんな ご用ですか？<RETN>"
-"e1ef","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e1ef","また来てくださいね。","Come again!"
 "e20f","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e233","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e24d","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e272","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e28d"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e2b9","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e2d2","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e398","<X1e>ハンス<X04>
 <IF01f7><JUMPe8cb><IF01f6><JUMPe7fe><SET01f6>ゲイル 本当に助かったよ。
@@ -87,21 +101,92 @@
 
 <X0e><X1c>を 受け取りました。<X0c0301><X04><END>
 <LOCe8cb>早く バジールを倒してくれ。
-こうしてる間にも 若い娘が ･ ･ ･"
+こうしてる間にも 若い娘が ･ ･ ･","<X1e>Hans<X04>
+<IF01f7><JUMPe8cb><IF01f6><JUMPe7fe><SET01f6>Thanks again, Gail. You remember
+how I said that young women are
+being kidnapped here?
+
+It's the work of their leader, a
+monster called Beziel. We think
+this Beziel needs the blood of
+young women to survive.
+
+We ran into Beziel on the way to
+the <CALL0002>. We couldn't landa blow on it. It was like fightinga ghost.
+
+So I think it was a projection.
+Which means the real Beziel must
+be somewhere in the <CALL0002>.
+
+We searched the <CALL0002> for
+its real body. We found a door in
+the basement that we couldn't openby any means.
+
+There's got to be something behindthat door. Gail, I bet you could
+open that door easy.
+
+When the soldiers are prepared,
+would you be willing to come to
+the <CALL0002> with us?
+
+<CH3>
+Hans... I get what you're sayin',
+but you've already gotten in the
+way too much.
+
+We'll go take care o' this Beziel
+for you.
+
+However ya look at it, we're the
+best soldiers ya got. Right, 
+Prince?
+
+<CH0>
+Yeah, he's right, <CALL0001> Hans.
+We'll handle this for you.
+
+<X1e>Hans<X04>
+I suppose.
+
+Well, regardless, my soldiers and
+I will need rest to recover our
+HP. So this works out.
+I'll leave it to you, Gail.
+
+Oh, by the way.
+<LOCe7fe>We got this from the monsters we
+defeated in the <CALL0002>.
+
+<ASMe907><IF01f7><JUMPe877>Do something about your inventory,and I'll let you have it.<END>
+<LOCe877>I'll let you have it. It may have
+something to do with the spire.
+
+<X1c>Received the <X04><X0e><X1c>.<X0c0301><X04><END>
+<LOCe8cb>Please defeat Beziel soon!
+Until you do, those young women..."
 "e91a","<X1e>兵士<X04>
 危ないところを 助けていただいて
 ありがとうございました。
 
 はじめて 会った時から ただ者では
-ないと 思ってましたよ。"
+ないと 思ってましたよ。","<X1e>Soldier<X04>
+Thanks for getting us out of a
+rough spot.
+
+I knew from the start that you
+aren't just ordinary people."
 "e993","<X1e>兵士<X04>
 我々の代わりに バジールを
 倒してくれるんだって ？
-気をつけてくれよ。"
+気をつけてくれよ。","<X1e>Soldier<X04>
+You're going to fight Beziel for
+us? Be careful!"
 "e9df","<X1e>兵士<X04>
 やっぱり おれたちは 大雨の時の
 堤防作りを していたほうが
-よさそうだな。"
+よさそうだな。","<X1e>Soldier<X04>
+I knew we should have stuck to
+building levees after rainstorms."
 "ea2e","<X1e>ジーラ<X04>
 わしは 古くから伝わる伝説を
 知っているのじゃ。
@@ -124,16 +209,46 @@
 なくなったのじゃ。
 
 もう１つ 水晶の塔は 古代文明の
-遺跡なのじゃ。"
+遺跡なのじゃ。","<X1e>Jira<X04>
+I know a legend that's been passeddown from long ago. I want to
+share it with you.
+
+The gods once dwelt in this world
+in the Age of Light.
+
+But a day came when the demon
+Agnija suddenly appeared.
+A dark light veiled the world,
+and the gods fled to the heavens.
+
+But in time, the Age of Darkness
+too would have its end. The gods
+who had fled placed people like
+themselves upon the earth.
+
+And to them, the gods foretold thereturn of Agnija, and the coming
+of the heroes. Never again will
+Agnija lay waste to the world.
+
+And you should also know that the
+<CALL0002> is a remnant of that
+ancient culture."
 "ec3c","<X1e>男<X04>
 やっぱり 人間にとって
 一番大切なのは 睡眠だよな。<IF0408><JUMPec7f><IF0409><JUMPec7f><END>
 <LOCec7f><SET0400>
 
 お前らも 寝てみろよ 頭が
-すっきりするぞ。"
+すっきりするぞ。","<X1e>Man<X04>
+Sleep really is people's most
+important need.<IF0408><JUMPe753><IF0409><JUMPe753><END>
+<LOCe753><SET0400>
+
+Get some sleep! You'll feel much
+better afterwards."
 "ecad","<X1e>男<X04>
-なっ 頭が すっきりしただろ？"
+なっ 頭が すっきりしただろ？","<X1e>Man<X04>
+Well? Don't you feel better now?"
 "eccf","<X1e>男<X04>
 <IF01f7><JUMPed21>ありがとうございました。
 でも 何もお礼が できないんです
@@ -142,28 +257,54 @@
 
 でも このカードを持っていると
 ろくなことが ないからな。
-おれは もういらないよ。"
+おれは もういらないよ。","<X1e>Man<X04>
+<IF01f7><JUMPed21>Thank you for everything.
+I'm so sorry I can't do anything
+to repay you.<END>
+<LOCed21>Oh, that's my Golden Card!!
+
+But carrying that Card around
+doesn't seem like a good idea.
+I don't need it anymore."
 "ed90","<X1e>補佐官<X04>
 ハンス大統領でさえ 危険な目に
 あうなんて 相当手ごわい
-バケモノなんだな。"
+バケモノなんだな。","<X1e>Aide<X04>
+Only a truly dreadful monster
+could threaten even <CALL0001>
+Hans."
 "ede2","<X1e>役人<X04>
 大統領が帰ってきたら 仕事がへると
 思ったのに 全然変わらないんだ。
-今日も残業だよ。"
+今日も残業だよ。","<X1e>Clerk<X04>
+I hoped with <CALL0001> Hans back,
+there'd be less to do, but nothinghas changed! Overtime, again!"
 "ee3c","<X1e>役人<X04>
 ここは 大統領専用の寝室だ
-むやみに立ち入っては ならん。"
+むやみに立ち入っては ならん。","<X1e>Clerk<X04>
+This is the <CALL0001>'s private
+bedroom. Please don't just wander
+in on a whim."
 "ee7b","<X1e>役人<X04>
 ふぅ ･ ･ ･ お役所仕事も 疲れるよ。こうやって 一日中 ボーっと
-してなけりゃ ならないんだもんな。"
+してなけりゃ ならないんだもんな。","<X1e>Clerk<X04>
+Yawn... Bureaucracy is exhausting.I have to sit here just staring
+at the wall all day."
 "eee1","<X1e>役人<X04>
 ハンス大統領が 無事に帰ってきて
-本当によかったわ。"
+本当によかったわ。","<X1e>Clerk<X04>
+I'm so glad <CALL0001> Hans is
+back safely."
 "ef1b","<X1e>女<X04>
 ハンス大統領は もう少しで 命を
 落とすところだったんですって。
-でも 無事でよかったわ。"
+でも 無事でよかったわ。","<X1e>Woman<X04>
+They say the <CALL0001> came very
+close to losing his life. I'm
+glad he's safe."
 "ef76","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled.<END>
+<LOC0001>President<RET_IL><LOC0002>Crystalspire<RET_IL>"

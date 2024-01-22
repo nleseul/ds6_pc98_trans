@@ -1,33 +1,51 @@
+"*","Colx (After Hans leaves)"
 "e1db","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは 道具の店ですが
-どんな ご用ですか？<RETN>"
-"e221","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e221","また来てくださいね。","Come again!"
 "e241","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e265","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e27f","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e2a4","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e2bf"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e2eb","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e304","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e497","<X1e>バケモノ<X04>
 お前らだな おれたちの 邪魔を
 していると いうのは。
 
 丁度いい。お前らを 片づけて
-宝石を頂こうか。"
+宝石を頂こうか。","<X1e>Monster<X04>
+You! You're the ones interfering!
+
+This is perfect. We'll wipe you
+out and take the gems."
 "e502","<X1e>ジーラ<X04>
 わしは 古くから伝わる伝説を
 知っているのじゃ。
@@ -50,20 +68,53 @@
 なくなったのじゃ。
 
 もう１つ 水晶の塔は 古代文明の
-遺跡なのじゃ。"
+遺跡なのじゃ。","<X1e>Jira<X04>
+I know a legend that's been passeddown from long ago. I want to
+share it with you.
+
+The gods once dwelt in this world
+in the Age of Light.
+
+But a day came when the demon
+Agnija suddenly appeared.
+A dark light veiled the world,
+and the gods fled to the heavens.
+
+But in time, the Age of Darkness
+too would have its end. The gods
+who had fled placed people like
+themselves upon the earth.
+
+And to them, the gods foretold thereturn of Agnija, and the coming
+of the heroes. Never again will
+Agnija lay waste to the world.
+
+And you should also know that the
+Crystalspire is a remnant of that
+ancient culture."
 "e710","<X1e>男<X04>
 やっぱり 人間にとって
 一番大切なのは 睡眠だよな。<IF0408><JUMPe753><IF0409><JUMPe753><END>
 <LOCe753><SET0400>
 
 お前らも 寝てみろよ 頭が
-すっきりするぞ。"
+すっきりするぞ。","<X1e>Man<X04>
+Sleep really is people's most
+important need.<IF0408><JUMPe753><IF0409><JUMPe753><END>
+<LOCe753><SET0400>
+
+Get some sleep! You'll feel much
+better afterwards."
 "e781","<X1e>男<X04>
-なっ 頭が すっきりしただろ？"
+なっ 頭が すっきりしただろ？","<X1e>Man<X04>
+Well? Don't you feel better now?"
 "e7a3","<X1e>男<X04>
 ありがとうございました。
 でも 何もお礼が できないんです
-ごめんなさい。"
+ごめんなさい。","<X1e>Man<X04>
+Thank you for everything.
+I'm so sorry I can't do anything
+to repay you."
 "e7ef","<X1e>男<X04>
 ど、どうも ありがとうございました
 おかげで 命だけは 助かりました。
@@ -96,36 +147,84 @@
 バケモノですからね。
 
 それにしても 本当に
-ありがとうございました。"
+ありがとうございました。","<X1e>Man<X04>
+T-Thank you! Thank you so much!
+You saved my life!
+
+<LEADERea52,ea7c,ea52,eaaa,eadb>
+
+<X1e>Man<X04>
+I'm not really sure...
+
+I bought a Golden Card in Fangath
+a while ago. And then those guys
+suddenly appeared, demanding that
+I hand over the Card.
+
+I was telling them there's no way
+I'd give up something I just paid
+70,000 gold for, and stuff like
+that.
+
+And right then is when you all
+showed up.
+
+But they grabbed the Card from me!I paid so much for it...
+
+But it's not worth my life, so I
+have to let it go. Those were
+monsters, after all.
+
+No matter what, I'm truly gratefulfor your help."
 "ea52","どうして バケモノなんかに
-襲われたんだ ？<RET_IL>"
+襲われたんだ ？<RET_IL>","Why were monsters attacking you?<RET_IL>"
 "ea7c","どうして バケモノなんかに
-襲われたんですか ？<RET_IL>"
+襲われたんですか ？<RET_IL>","Why would monsters be attacking
+you?<RET_IL>"
 "eaaa","おめえ 何したんだ ？
-バケモノになんか 襲われて。<RET_IL>"
+バケモノになんか 襲われて。<RET_IL>","What's goin' on? Why the monsters?<RET_IL>"
 "eadb","なんで バケモノなんかに
-襲われたの ？<RET_IL>"
+襲われたの ？<RET_IL>","Why were you being attacked by
+monsters?<RET_IL>"
 "eb01","<X1e>補佐官<X04>
 きみきみ ハンス大統領に 何か用でもあるのかね？
 
 残念だが ハンス大統領は バケモノの討伐に出られた。
-しばらくは 戻らないだろう。<SET01f5>"
+しばらくは 戻らないだろう。<SET01f5>","<X1e>Aide<X04>
+Do you gentlemen have business
+with President Hans?
+
+I'm afraid the President is out
+dealing with the monsters, and maybe away for some time."
 "eb8b","<X1e>役人<X04>
 もう、なんで わざわざ 大統領が
 バケモノを 退治しに行くんだろう。
 
 おかげで こんなに たくさんの仕事がたまっちゃって 大変だよ。
-今日も残業しなくちゃ。"
+今日も残業しなくちゃ。","<X1e>Clerk<X04>
+Why is the President out
+exterminating monsters?
+
+The paperwork is piling up here!
+I have to work overtime again
+today!"
 "ec26","<X1e>役人<X04>
 ここは 大統領専用の寝室だ
-むやみに立ち入っては ならん。"
+むやみに立ち入っては ならん。","<X1e>Clerk<X04>
+This is the President's private
+bedroom. Please don't just wander
+in on a whim."
 "ec65","<X1e>役人<X04>
 ふぅ ･ ･ ･ お役所仕事も 疲れるよ。こうやって 一日中 ボーっと
-してなけりゃ ならないんだもんな。"
+してなけりゃ ならないんだもんな。","<X1e>Clerk<X04>
+Yawn... Bureaucracy is exhausting.I have to sit here just staring
+at the wall all day."
 "eccb","<X1e>役人<X04>
 ハンス大統領に もしものことが
 あったら どうしましょう。
-無事に帰ってくれば いいけど。"
+無事に帰ってくれば いいけど。","<X1e>Clerk<X04>
+I don't know what we'll do if
+anything happens to the President.I hope he comes back safely."
 "ed28","<X1e>女<X04>
 役人から 聞いたんだけどさ
 この国では 若い娘が たくさん
@@ -137,7 +236,21 @@
 
 普通、大統領や王子さまって
 バケモノ退治なんて 危険なことは
-自分からは しないわよね。"
+自分からは しないわよね。","<X1e>Woman<X04>
+I heard from the clerks that a
+lot of young women are being
+kidnapped in Moreston.
+
+And that President Hans is
+personally leading soldiers to
+subdue the monsters.
+
+I don't think Presidents or
+Princes normally do dangerous
+things like subduing monsters
+themselves, do they?"
 "ee1a","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."

@@ -8,19 +8,32 @@
 きさまらの 言うことなど きけるか。<END>
 <LOCe6ff><CLEAR0406>んっ お前らだな アグニージャさまにはむかっている 愚か者は。
 宝石は頂いてやる 覚悟しろ !!<END>
-<LOCe75b><CLEAR0401>宝石を手に入れるまで 逃がさんぞ !!"
-"e781","<CLEAR0405><LEADERe790,e7e2,e790,e837,e869>"
+<LOCe75b><CLEAR0401>宝石を手に入れるまで 逃がさんぞ !!","<X1e>Monster<X04>
+<IF0406><JUMPe6ff><IF0401><JUMPe75b>Give us the Card now, if you know
+what's good for you!
+
+<X1e>Soldier<X04>
+Shut up! You think we'd take
+orders from you?!<END>
+<LOCe6ff><CLEAR0406>Huh? It's those fools who are
+opposing Lord Agnija! We'll take
+the gems now! Take this!!<END>
+<LOCe75b><CLEAR0401>We're not letting you escape with
+the gems!!"
+"e781","<CLEAR0405><LEADERe790,e7e2,e790,e837,e869>","<CLEAR0405><LEADERe790,e7e2,e790,e837,e869>"
 "e790","あれっ !? あそこに いるのは
 ハンス大統領じゃないかな。
-早く 助けに 行かなくちゃ。<RET_IL>"
+早く 助けに 行かなくちゃ。<RET_IL>","Is that President Hans over there?We'd better go help him!<RET_IL>"
 "e7e2","王子、あそこに いるのは
 ハンス大統領では ないでしょうか。
-早く 助けて あげましょう。<RET_IL>"
+早く 助けて あげましょう。<RET_IL>","Your Highness, I think that may bePresident Hans. We should hurry tohis aid.<RET_IL>"
 "e837","おっ ハンスじゃねえか。
-早く 助けてやらねえとな。<RET_IL>"
+早く 助けてやらねえとな。<RET_IL>","Hey, is that Hans? We'd better
+go help 'im.<RET_IL>"
 "e869","あらっ!? あそこにいるのは
 ハンス大統領じゃないかしら。
-早く 助けてあげなくちゃ。<RET_IL>"
+早く 助けてあげなくちゃ。<RET_IL>","Look! Isn't that President Hans?
+We have to go help him!<RET_IL>"
 "e8ba","<X1e>ハンス 大統領<X04>
 ありがとう、おかげで助かりました。あなたがたは いったい ･ ･ ･
 ただの 民間人では なさそうですね。
@@ -59,4 +72,45 @@
 一緒に コルクスに 来てくれよ。
 
 <CH3>
-わかってるって。"
+わかってるって。","<X1e>President Hans<X04>
+Thank you for your help.
+But... who are you? You don't
+seem like simple civilians.
+
+<CH1>
+We've neglected to introduce
+ourselves. My name is Runan, of
+Lanoura.
+
+<CH0>
+I'm Selios, from Farleyn.
+
+<CH2>
+And I'm Sonia from Farleyn.
+
+<X1e>President Hans<X04>
+Selios...?
+!!
+
+Would that make you the same
+Prince Selios who has been 
+liberating the world from
+monsters?
+
+<CH3>
+Not just some civilian, huh?
+
+<X1e>Hans<X04>
+I apologize for rudely jumping
+to conclusions.
+
+It looks as though I've
+underestimated these monsters.
+
+Hey, Gail.
+We have wounded, and I want to
+discuss this further. Can we
+head back to Colx?
+
+<CH3>
+Yeah, sure."
