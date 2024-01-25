@@ -1,3 +1,4 @@
+"*","Colx (conversation with Ralph and Hans)"
 "e0c7","<X1e>ハンス<X04>
 そうか 奴の実体の元へ 行くには
 銀の筒という物が 必要なのか。
@@ -127,4 +128,134 @@
 <LOCe9ef><X0e><X1c>を もらいました。<X0c0301><X04>
 
 <IF01ef><JUMPea2e>３世 忘れるな 静かに歩くんだぞ。
-<LOCea2e>さあ 早く バジールを倒してこい。"
+<LOCea2e>さあ 早く バジールを倒してこい。","<X1e>Hans<X04>
+I see. So we need some kind of
+silver pipe to reach its true
+body.
+
+But that pipe is already in
+Beziel's possession. It seems
+our hands are tied.
+
+<CH3>
+Yeah, I'm stumped on this one.
+
+<CH0>
+Oh! What about the big kite?
+
+<CH1>
+Even if we caught an air current
+with the kite, I doubt it could
+lift us 1000 meters high.
+
+<CH0>
+So there's nothing we can do?
+
+<X1e>Ralph<X04>
+...Wait!...<WAIT>
+It said that the Lupo Building uses the
+same device.
+
+Lupo Building...<WAIT>
+Lupo... lupine...<WAIT>
+""Lupus"" means ""wolf"".<WAIT>
+A silver tube that makes sound...
+
+...silver tube...<WAIT>
+...silver... flute...?<WAIT>
+That's it!! That has to be it!
+
+<CH1>
+Do you know of such a thing?
+
+<X1e>Ralph<X04>
+There is a tower inside the Wolf'sMaw. And the treasure of that
+tower should be a Silver Flute.
+
+<CH3>
+The Wolf's Maw?!
+How'd you know about...<WAIT>
+Could you be... Gail Junior?
+
+<X1e>Ralph<X04>
+I suppose there was a time when
+I was called that, yes.<WAIT>
+But that was a long time ago.
+
+I have nothing whatsoever to do
+with the Great Thief Gail now.
+I'm simply an archaeologist.
+
+<CH3>
+Dad... it's me. Gail the Third.
+
+<X1e>Ralph<X04>
+Oh... Third?!
+What are you doing here, then?
+
+<CH3>
+I told the old fart that I'd nevertake over for 'im, and left home
+for a while.
+
+Then these guys had business in
+Fangath, so I had to come back
+with 'em.
+<PAGE>
+He told me he'd let me go if I gotthe treasure in the Wolf's Maw, soI went for it.
+
+<IF_NOT020b><JUMPe5d8>And even though I got it, the old
+fart tricked me...<JUMPe637><LOCe5d8>But, sad to say, I couldn't get
+it. So I got roped into stayin'
+an' takin over from 'im.<LOCe637>
+
+<X1e>Ralph<X04>
+Ha ha ha ha!
+Third... that treasure was the
+Silver Flute!
+
+Did you think your grandfather hasan ear for music? That Flute is
+his most prized possession!
+
+It was back when I was still
+called Gail Junior.
+
+We were expanding the cave to hidemore of the old man's treasures
+when we ran across an ancient
+ruin.
+
+He said that the ruin was exactly
+the kind of place he was looking
+for.
+
+And we happened across that
+Silver Flute on the very top of
+the tower.
+
+He was so happy. He repaired all
+the old traps like new and kept
+the Flute preserved in its
+original location.
+
+That was when I took an interest
+in ancient ruins, and told the oldman I was going to leave to becomean archaeologist.
+
+<IF01ef><JUMPe93c>You said you weren't able to reachthe top of the tower? How very
+careless.
+<PAGE>
+The doorway leading to the stairs
+closes in response to sound. You
+need to walk quietly, one step at
+a time, so it stays open.
+
+<SPLITe93c><LOCe93c>Oh, and as you saw, this Card
+functions as a key. Simply insert
+it into the device, and the door
+will open.
+
+<ASMea4f><IF01f8><JUMPe9ef>Do something about your inventory
+so I can give you the Card.<END>
+<LOCe9ef><X1c>Received the <X04><X0e><X1c>.<X0c0301><X04>
+
+<IF01ef><JUMPea2e>Third, you mustn't forget!
+Walk quietly!
+<LOCea2e>Now, go take care of Beziel!"

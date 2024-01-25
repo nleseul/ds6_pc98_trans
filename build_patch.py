@@ -149,10 +149,25 @@ def encode_translations(event_list, translated_text):
         original_encoded, original_references, original_locators = encode_event(event_info['text'])
             
         if context in translated_text and 'translation' in translated_text[context]:
-            translation_encoded, translation_references, translation_locators = encode_event(translated_text[context]['translation'])
-            encoded_translations[event_addr] = { 'encoded': translation_encoded, 'references': translation_references, 'locators': translation_locators }
+            translation = translated_text[context]['translation']
+
+            splits = translation.split("<SPLIT")
+            split_addrs = []
+
+            for split_index in range(len(splits)):
+                if split_index == 0:
+                    split_addrs.append(event_addr)
+                else:
+                    split_addrs.append(int(splits[split_index][:4], base=16))
+                    splits[split_index] = splits[split_index][5:]
+                    splits[split_index - 1] += f"<JUMP{split_addrs[split_index]:04x}>"
+
+            last_addr = None
+            for split, split_addr in zip(splits, split_addrs):
+                translation_encoded, translation_references, translation_locators = encode_event(split)
+                encoded_translations[split_addr] = { 'encoded': translation_encoded, 'references': translation_references, 'locators': translation_locators, 'orig_event_addr': event_addr }
         else:
-            encoded_translations[event_addr] = { 'encoded': original_encoded, 'references': original_references, 'locators': original_locators }
+            encoded_translations[event_addr] = { 'encoded': original_encoded, 'references': original_references, 'locators': original_locators, 'orig_event_addr': event_addr }
 
     return encoded_translations
 
@@ -170,28 +185,28 @@ def relocate_events(event_list, encoded_translations, empty_space=None, packing_
     if empty_space is not None:
         space_pool.add_space(empty_space[0], empty_space[1])
 
-    total_space_required = sum([len(encoded_translations[event_addr]['encoded']) for event_addr in event_list])
+    total_space_required = sum([len(encoded_translations[trans_addr]['encoded']) for trans_addr in encoded_translations])
     print(f"Requires {total_space_required}/{space_pool.total_available_space} bytes available")
 
-    for event_addr, event_info in event_list.items():
-        translation_info = encoded_translations[event_addr]
+    for translation_addr, translation_info in encoded_translations.items():
+        event_info = event_list[translation_info['orig_event_addr']]
 
         if not event_info['is_relocatable']:
-            if event_addr in [0xdc30, 0xdc70, 0xdcb0, 0xdcf0]:
+            if translation_addr in [0xdc30, 0xdc70, 0xdcb0, 0xdcf0]:
                 if len(translation_info['encoded']) > 0x10:
-                    raise Exception(f"Encoded text for enemy name at {event_addr:04x} is too long! original={event_info['length']} bytes; new={len(translation_info['encoded'])} bytes")
+                    raise Exception(f"Encoded text for enemy name at {translation_addr:04x} is too long! original={event_info['length']} bytes; new={len(translation_info['encoded'])} bytes")
             elif len(translation_info['encoded']) > event_info['length']:
-                raise Exception(f"Encoded text for non-relocatable event at {event_addr:04x} is too long! original={event_info['length']} bytes; new={len(translation_info['encoded'])} bytes")
+                raise Exception(f"Encoded text for non-relocatable event at {translation_addr:04x} is too long! original={event_info['length']} bytes; new={len(translation_info['encoded'])} bytes")
             continue
 
         try:
             space_addr = space_pool.take_space(len(translation_info['encoded']), packing_strategy)
-            relocations[event_addr] = space_addr
+            relocations[translation_addr] = space_addr
         except Exception:            
-            raise Exception(f"No space found to relocate event {event_addr:04x}")
+            raise Exception(f"No space found to relocate event {translation_addr:04x}")
 
         for locator_orig_addr, locator_new_offset in translation_info['locators'].items():
-            locator_new_addr = relocations[event_addr] + locator_new_offset
+            locator_new_addr = relocations[translation_addr] + locator_new_offset
             relocations[locator_orig_addr] = locator_new_addr
 
     print()

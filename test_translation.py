@@ -47,6 +47,14 @@ if __name__ == '__main__':
         for event_addr, event_info in event_list.items():
             if event_addr in relocations:
                 print(f"Event {event_addr:04x} relocated to {relocations[event_addr]:04x}")
+
+                for translation_addr, translation_info in encoded_translations.items():
+                    if translation_info['orig_event_addr'] == event_addr and translation_addr != event_addr:
+                        if translation_addr in relocations:
+                            print(f"  New event {translation_addr:04x} split out and relocated to {relocations[translation_addr]:04x}")
+                        else:
+                            print(f"  New event {translation_addr:04x} split out, but not relocated")
+
                 for locator_addr, locator_offset in encoded_translations[event_addr]['locators'].items():
                     print(f"  Locator at {locator_addr:04x} relocated to {relocations[locator_addr]:04x}")
                 for ref_info in event_info['references']:
