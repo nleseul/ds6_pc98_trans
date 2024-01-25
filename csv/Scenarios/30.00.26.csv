@@ -1,9 +1,9 @@
 "*","Crystalspire basement"
-"e1ff","<X1e>ラルフ<X04><RETN>"
-"e208","<CALLe1ff>おっと あとは 頼んだぞ。"
-"e224","<CALLe1ff>ひえっ 助けてくれ。"
-"e23b","<CALLe1ff>うわっ こりゃ強そうだ。"
-"e256","<CALLe1ff>こんな奴ら たいしたことないぜ。"
+"e1ff","<X1e>ラルフ<X04><RETN>","<X1e>Ralph<X04><RETN>"
+"e208","<CALLe1ff>おっと あとは 頼んだぞ。","<CALLe1ff>Oh, my! I'll let you handle this."
+"e224","<CALLe1ff>ひえっ 助けてくれ。","<CALLe1ff>Aiee! Help!"
+"e23b","<CALLe1ff>うわっ こりゃ強そうだ。","<CALLe1ff>Oh, these seem quite strong!"
+"e256","<CALLe1ff>こんな奴ら たいしたことないぜ。","<CALLe1ff>These guys aren't important!"
 "e4fd","<IF0400><JUMPe50f><IF0401><JUMPe533><IF0402><JUMPe579><LOCe50f><CLEAR0400><X1e>ラルフ<X04>
 ちょっと 待っててくれ。<END>
 <LOCe533><CLEAR0401><X1e>ラルフ<X04>
@@ -69,20 +69,90 @@
 
 <X1e>ラルフ<X04>
 なになに、これと同じエレベーターがウルフ・ビルにも あると 書いて
-あるぞ。"
-"ea93","<LEADERea9f,ea9f,ea9f,eaac,ea9f>"
-"ea9f","ラルフさん !<RET_IL>"
-"eaac","おっさん !<RET_IL>"
-"eab7","<LEADEReac3,eac3,eac3,ead5,eafd>"
-"eac3","きさま 覚悟しろ !<RET_IL>"
+あるぞ。","<IF0400><JUMPe50f><IF0401><JUMPe533><IF0402><JUMPe579><LOCe50f><CLEAR0400><X1e>Ralph<X04>
+Wait just a moment.<END>
+<LOCe533><CLEAR0401><X1e>Ralph<X04>
+Aha! I knew it! This Card
+functions much like a key.<END>
+<LOCe579><CLEAR0402><SET0406><X1e>Ralph<X04>
+Now, to read some of these ancientdocuments. They seem quite worn.
+
+Hmm. This seems like an unusually
+colorful document.
+
+  ""Visit the Crystal Aquarium!""
+What could this ""aquarium"" be?
+""Aqua,"" meaning ""water""...
+A place to keep water? Or fish?
+
+""You, too, can ride the Elevator
+ of Light!""
+What could that be?
+
+""Let this first-in-the-world
+ marvel guide you to the viewing
+ aquarium on the highest floor!""
+
+""This miracle of modern science
+ uses localized antigravity to
+ carry you 1000 meters high to a 
+ hovering platform!""
+
+Hmm. I don't understand some of
+this ancient jargon.
+Is that all it says?
+
+This document seems much less
+detailed than others I've seen.
+
+!....
+
+H-Here it is! An operation manual
+for the Elevator of Light.
+This explains it all in simple
+language.
+
+It seems this Elevator operates inresponse to particular aural
+frequencies.
+
+And by pressing a button on an
+activation device called a
+""remote,"" the necessary sounds
+can be produced.
+
+<CH3>
+Hey, doc. A ""remote""? What's that?
+
+<X1e>Ralph<X04>
+Well, it's certainly a conveniencedevice used by ancient people.
+Apart from that, I'm not sure.
+
+Oh, here. They've drawn a picture
+of a ""remote.""
+
+<CH3>
+Just looks like a regular silver
+tube.
+
+<X1e>Ralph<X04>
+Hmm. And it says that the Lupo
+Building uses the same sort of
+Elevator."
+"ea93","<LEADERea9f,ea9f,ea9f,eaac,ea9f>","<LEADERea9f,ea9f,ea9f,eaac,ea9f>"
+"ea9f","ラルフさん !<RET_IL>","Ralph!<RET_IL>"
+"eaac","おっさん !<RET_IL>","Doc!<RET_IL>"
+"eab7","<LEADEReac3,eac3,eac3,ead5,eafd>","<LEADEReac3,eac3,eac3,ead5,eafd>"
+"eac3","きさま 覚悟しろ !<RET_IL>","You!! Take this!<RET_IL>"
 "ead5","てめえ よくも やりやがったな
-覚悟しろ !<RET_IL>"
-"eafd","よくもやったわね 覚悟なさい !<RET_IL>"
-"eb1b","<LEADEReb27,eb3d,eb27,eb4b,eb5b>"
-"eb27","あれっ どうしたんだ？<RET_IL>"
-"eb3d","むっ なぜだ？<RET_IL>"
-"eb4b","なんだ こりゃ？<RET_IL>"
-"eb5b","あらっ 何これ？<RET_IL>"
+覚悟しろ !<RET_IL>","Glad ya could join us!
+Take this!!<RET_IL>"
+"eafd","よくもやったわね 覚悟なさい !<RET_IL>","Decided to show yourself, huh?
+Take this!<RET_IL>"
+"eb1b","<LEADEReb27,eb3d,eb27,eb4b,eb5b>","<LEADEReb27,eb3d,eb27,eb4b,eb5b>"
+"eb27","あれっ どうしたんだ？<RET_IL>","Huh? What happened?<RET_IL>"
+"eb3d","むっ なぜだ？<RET_IL>","W-What?<RET_IL>"
+"eb4b","なんだ こりゃ？<RET_IL>","What the hell?!<RET_IL>"
+"eb5b","あらっ 何これ？<RET_IL>","Oh! What...?<RET_IL>"
 "eb6b","<X1e>バジール<X04>
 ハッハッハ<WAIT>
 このおれに 攻撃などしても ムダだ。
@@ -108,13 +178,42 @@
 伝えるがいい。
 
 いずれ 改めて あいさつに
-行ってやるとな。"
+行ってやるとな。","<X1e>Beziel<X04>
+Ha ha ha!<WAIT>
+It's pointless to attack me!
+
+Now, let me guess what you're
+thinking.
+<PAGE>
+You think this is just a 
+projection, and that my real body
+must elsewhere. On the highest
+floor of this tower, perhaps?
+
+Ha ha ha!
+Your minds are an open book to me!Just as you imagine, my real body
+is on the highest floor.
+
+And the activation device for the
+Elevator of Light is in its
+possession.
+
+Therefore, my real body is foreverbeyond your reach. Now, return to
+town, and explain this to your
+President.
+
+I will greet him again soon
+enough."
 "ed88","<LEADERedc9,ede1,edc9,edfb,ee0f>
 
 <X1e>ラルフ<X04>
 へ ･ ･ 平気だ。
-皮袋の中に ワプの羽がある。"
-"edc9","大丈夫かい ラルフさん。<RET_IL>"
-"ede1","大丈夫ですか ラルフさん。<RET_IL>"
-"edfb","大丈夫か おっさん。<RET_IL>"
-"ee0f","大丈夫 ラルフさん。<RET_IL>"
+皮袋の中に ワプの羽がある。","<LEADERedc9,ede1,edc9,edfb,ee0f>
+
+<X1e>Ralph<X04>
+I-I'll be fine.
+I have a Warp Feather in my bag."
+"edc9","大丈夫かい ラルフさん。<RET_IL>","Are you all right?<RET_IL>"
+"ede1","大丈夫ですか ラルフさん。<RET_IL>","Are you all right, Ralph?<RET_IL>"
+"edfb","大丈夫か おっさん。<RET_IL>","You okay, doc?<RET_IL>"
+"ee0f","大丈夫 ラルフさん。<RET_IL>","Ralph! Are you all right?<RET_IL>"
