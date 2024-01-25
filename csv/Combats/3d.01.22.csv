@@ -1,6 +1,7 @@
-"dc30","岩石魔人Ａ<RET_IL>"
-"dc70","岩石魔人Ｂ<RET_IL>"
-"ddaa","岩石魔人が現れた。<RETN>"
+"dc30","岩石魔人Ａ<RET_IL>","Bouldergeist A<RET_IL>"
+"dc70","岩石魔人Ｂ<RET_IL>","Bouldergeist B<RET_IL>"
+"ddaa","岩石魔人が現れた。<RETN>","A pair of bouldergeists appear.<RETN>"
 "ddbd","は 岩の破片を
-飛ばした !!<X0a>"
-"ddd7","しかし <X02>には 当らなかった。<X0a>"
+飛ばした !!<X0a>"," hurls a chunk
+of rock!<X0a>"
+"ddd7","しかし <X02>には 当らなかった。<X0a>","But it misses <X02>.<X0a>"
