@@ -241,8 +241,8 @@ ancient culture."
 お前らも 寝てみろよ 頭が
 すっきりするぞ。","<X1e>Man<X04>
 Sleep really is people's most
-important need.<IF0408><JUMPe753><IF0409><JUMPe753><END>
-<LOCe753><SET0400>
+important need.<IF0408><JUMPec7f><IF0409><JUMPec7f><END>
+<LOCec7f><SET0400>
 
 Get some sleep! You'll feel much
 better afterwards."
@@ -263,9 +263,8 @@ I'm so sorry I can't do anything
 to repay you.<END>
 <LOCed21>Oh, that's my Golden Card!!
 
-But carrying that Card around
-doesn't seem like a good idea.
-I don't need it anymore."
+But I'd really rather not carry
+that thing around anymore."
 "ed90","<X1e>補佐官<X04>
 ハンス大統領でさえ 危険な目に
 あうなんて 相当手ごわい

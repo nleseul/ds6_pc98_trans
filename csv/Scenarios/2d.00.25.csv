@@ -1,26 +1,40 @@
+"*","Colx (after going to Crystalspire with Ralph)"
 "e1a2","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは 道具の店ですが
-どんな ご用ですか？<RETN>"
-"e1e8","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e1e8","また来てくださいね。","Come again!"
 "e208","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e22c","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e246","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e26b","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e286"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e2b2","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e2cb","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e399","<X1e>ラルフ<X04>
 <IF01f8><JUMPe458>さっきも 見たように カギの役目を
@@ -34,23 +48,40 @@
 <LOCe458><IF0209><JUMPe4a6><IF01ef><JUMPe485>３世 忘れるな 静かに歩くんだぞ。
 <LOCe485>さあ 早く バジールを倒してこい。<END>
 <LOCe4a6>おお それが例の 銀の筒だ !!
-早く バジールを 倒してこい。"
+早く バジールを 倒してこい。","<X1e>Ralph<X04>
+<IF01f8><JUMPe458>Just as you saw earlier, this actsas a key. If you insert it into
+that device, the door will open.
+
+<ASMe4df><IF01f8><JUMPe440>Do something about your bags, so Ican give you the Card.<END>
+<LOCe440><X1c>Received the <X04><X0e><X1c>.<X0c0301><X04>
+
+<LOCe458><IF0209><JUMPe4a6><IF01ef><JUMPe485>Remember, Third. Walk slowly!
+<LOCe485>Now, hurry and defeat Beziel.<END>
+<LOCe4a6>Yes, that's it! That's the silver
+tube! Quickly, now! Defeat Beziel!"
 "e4f2","<X1e>ハンス<X04>
 ゲイル お前の親父さんには
 しばらく ここに いてもらうから
 心配するな。
 
-必ず あのバジールを 倒してくれ。"
+必ず あのバジールを 倒してくれ。","<X1e>Hans<X04>
+Don't worry, Gail. We'll see to
+your dad for now.
+
+You need to defeat Beziel!"
 "e562","<X1e>兵士<X04>
 危ないところを 助けていただいて
-ありがとうございました。"
+ありがとうございました。","<CALL0002>Thanks for getting us out of a
+rough spot."
 "e5a2","<X1e>兵士<X04>
 我々の代わりに バジールを
 倒してくれるんだって？
-気をつけてくれよ。"
+気をつけてくれよ。","<CALL0002>You're going to fight Beziel for
+us? Be careful!"
 "e5ed","<X1e>兵士<X04>
 とにかく バジールには
-気をつけてください。"
+気をつけてください。","<CALL0002>Don't let your guard down against
+Beziel!"
 "e61f","<X1e>ジーラ<X04>
 わしは 古くから伝わる伝説を
 知っているのじゃ。
@@ -73,16 +104,48 @@
 なくなったのじゃ。
 
 もう１つ 水晶の塔は 古代文明の
-遺跡なのじゃ。"
+遺跡なのじゃ。","<X1e>Jira<X04>
+I know a legend that's been passeddown from long ago. I want to
+share it with you.
+
+The gods once dwelt in this world
+in the Age of Light.
+
+But a day came when the demon
+Agnija suddenly appeared.
+A dark light veiled the world,
+and the gods fled to the heavens.
+
+But in time, the Age of Darkness
+too would have its end. The gods
+who had fled placed people like
+themselves upon the earth.
+
+And to them, the gods foretold thereturn of Agnija, and the coming
+of the heroes. Never again will
+Agnija lay waste to the world.
+
+And you should also know that the
+Crystalspire is a remnant of that
+ancient culture.<END>
+<LOC0001><X1e>Clerk<X04><RETN>
+<LOC0002><X1e>Soldier<X04><RETN>"
 "e82d","<X1e>男<X04>
 やっぱり 人間にとって
 一番大切なのは 睡眠だよな。<IF0408><JUMPe870><IF0409><JUMPe870><END>
 <LOCe870><SET0400>
 
 お前らも 寝てみろよ 頭が
-すっきりするぞ。"
+すっきりするぞ。","<X1e>Man<X04>
+Sleep really is people's most
+important need.<IF0408><JUMPe870><IF0409><JUMPe870><END>
+<LOCe870><SET0400>
+
+Get some sleep! You'll feel much
+better afterwards."
 "e89e","<X1e>男<X04>
-なっ 頭が すっきりしただろ？"
+なっ 頭が すっきりしただろ？","<X1e>Man<X04>
+Well? Don't you feel better now?"
 "e8c0","<X1e>男<X04>
 <ASMe985><IF0404><JUMPe915>ありがとうございました。
 でも 何もお礼が できないんです
@@ -91,28 +154,47 @@
 
 でも このカードを持っていると
 ろくなことが ないからな。
-おれは もう いらないよ。"
+おれは もう いらないよ。","<X1e>Man<X04>
+<ASMe985><IF0404><JUMPe915>Thank you for everything.
+I'm so sorry I can't do anything
+to repay you.<END>
+<LOCe915>Oh, that's my Golden Card!!
+
+But I'd really rather not carry
+that thing around anymore."
 "e99e","<X1e>補佐官<X04>
 ハンス大統領でさえ 危険な目に
 あうなんて 相当手ごわい
-バケモノなんだな。"
+バケモノなんだな。","<X1e>Aide<X04>
+Only a truly dreadful monster
+could threaten even President
+Hans."
 "e9f0","<X1e>役人<X04>
 大統領が帰ってきたら 仕事がへると
 思ったのに 全然変わらないんだ。
-今日も残業だよ。"
+今日も残業だよ。","<CALL0001>I hoped with President Hans back,
+there'd be less to do, but nothinghas changed! Overtime, again!"
 "ea4a","<X1e>役人<X04>
 あの方のことは ご心配なく
-私どもに お任せください。"
+私どもに お任せください。","<CALL0001>Please leave him to us. There's
+no need to be concerned."
 "ea85","<X1e>役人<X04>
 ふぅ ･ ･ ･ お役所仕事も 疲れるよ。こうやって 一日中 ボーっと
-してなけりゃ ならないんだもんな。"
+してなけりゃ ならないんだもんな。","<CALL0001>Yawn... Bureaucracy is exhausting.I have to sit here just staring
+at the wall all day."
 "eaeb","<X1e>役人<X04>
 ハンス大統領が 無事に帰ってきて
-本当によかったわ。"
+本当によかったわ。","<CALL0001>I'm so glad President Hans is
+back safely."
 "eb25","<X1e>女<X04>
 ハンス大統領は もう少しで 命を
 落とすところだったんですって。
-でも 無事でよかったわ。"
+でも 無事でよかったわ。","<X1e>Woman<X04>
+They say the President came very
+close to losing his life. I'm
+glad he's safe."
 "eb80","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
