@@ -2,7 +2,9 @@
 "e54c","       第５章　妖しき光の塔<N>
 
                 完
-"
+","Chapter V: The Tower of Light<N>
+
+               FIN"
 "e705","<CH0>
 あっ これがラルフさんの言ってた
 やつだ 早く上ろう。
@@ -13,19 +15,33 @@
 
 <CH2>
 そうよ また人質にでも されたら
-大変よ。"
-"e79e","<X0c0701><LEADERe7ad,e7e2,e7ad,e823,e872>"
+大変よ。","<CH0>
+That's exactly what Ralph said
+would happen! Let's head up.
+
+<CH1>
+Your Highness. Finding Princess
+Dina should come first.
+
+<CH2>
+Yeah, we can't let her be used
+as a hostage again."
+"e79e","<X0c0701><LEADERe7ad,e7e2,e7ad,e823,e872>","<X0c0701><LEADERe7ad,e7e2,e7ad,e823,e872>"
 "e7ad","あれっ!?
 カードが戻ってきてしまった。
-なんでだろう？<RET_IL>"
+なんでだろう？<RET_IL>","Huh? The card came back out.
+What's going on?<RET_IL>"
 "e7e2","おやっ!?
 カードが戻ってきてしまったぞ。
-何種類かあるのだろうか？<RET_IL>"
+何種類かあるのだろうか？<RET_IL>","What? The card seems to have come
+out again. Maybe there are varioustypes of lock?<RET_IL>"
 "e823","なんだよ これ !?
-カードが戻ってきちまったじゃねーかおやじに だまされたのかな。<RET_IL>"
+カードが戻ってきちまったじゃねーかおやじに だまされたのかな。<RET_IL>","What the hell? It just came back
+out. Is Dad just makin' stuff up?<RET_IL>"
 "e872","あらっ!?
 カードが戻ってきちゃったわ。
-どうしたのかしら？<RET_IL>"
+どうしたのかしら？<RET_IL>","Huh? The card came back out.
+I wonder why?<RET_IL>"
 "e8ab","<IF0402><JUMPe971><CH3>
 やっぱり いやがった !!
 
@@ -64,4 +80,44 @@
 宝石の使い道は 知らないほうが
 いいだろう。
 ちょうどいい 使い道を知らぬなら
-今のうちに 始末してくれよう。"
+今のうちに 始末してくれよう。","<IF0402><JUMPe971><CH3>
+Ha! Found the bastard!
+
+Huh?! Is he dead?
+
+<CH1>
+His soul must be outside of his
+body.
+
+<CH3>
+You think so? Then we'd better
+take care of 'im before it comes
+back.
+
+<RET_IL><LOCe971><X1e>Beziel<X04>
+Not so fast!
+
+I'm quite impressed that you made
+it up here.
+
+But, your luck ends now.
+
+Hand over the jewels peacefully.
+Why fight an impossible battle?
+
+<CH0>
+Why would anyone just give them
+to you?
+
+<CH1>
+What exactly do you want with
+them?
+
+<X1e>Beziel<X04>
+What?! You've been holding onto
+them all this time without knowinghow to use them? Ha ha ha...
+
+I suppose it's best if you don't
+know.
+Which makes this the perfect time
+to dispose of you."

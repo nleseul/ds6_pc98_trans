@@ -1,3 +1,4 @@
+"*","Outside Crystalspire; sending Dina home"
 "e15a","<CH0>
 それじゃ ロー、ディーナ姫のことを
 頼むぞ。ぼくたちは まだ やることが残っているんだ。
@@ -15,4 +16,23 @@
 
 <X1e>ポム<X04>
 ハハハ
-おれがいるから 安心しなよ。"
+おれがいるから 安心しなよ。","<CH0>
+Okay, Roh, we'll leave Princess
+Dina with you now. There's no
+more we can do.
+
+<X1e>Roh<X04>
+Thanks, Highness. I'll take it
+from here.
+Shall we go, Princess?
+
+<CH3>
+And don't you try anything funny,
+Roh! She's a Princess, after all.
+
+<X1e>Roh<X04>
+D-Don't be ridiculous, Gail!
+
+<X1e>Pomm<X04>
+Ha ha ha! Don't worry.
+I'll be there too."

@@ -1,13 +1,16 @@
-"dc30","バジール実体<RET_IL>"
-"dc70","バジール幻体<RET_IL>"
-"dc81","<X08>モレストン共和国を 解放しました。<X0d>"
-"dca4","<X08><X0e>を持っていた。<X0a>"
-"dcc1","は 実体に戻った !!<X0a>"
+"*","Beziel boss fight"
+"dc30","バジール実体<RET_IL>","Beziel's body<RET_IL>"
+"dc70","バジール幻体<RET_IL>","Beziel's soul<RET_IL>"
+"dc81","<X08>モレストン共和国を 解放しました。<X0d>","<X08>The Republic of Moreston has been
+liberated!<X0d>"
+"dca4","<X08><X0e>を持っていた。<X0a>","<X08>It had a <X0e>.<X0a>"
+"dcc1","は 実体に戻った !!<X0a>"," returns to its body!<X0a>"
 "dcd4","の攻撃は むなしく 空を
-切っただけだった !!<X0a>"
-"de6e","バジールとの対決だ !!<RETN>"
+切っただけだった !!<X0a>","'s attack cuts uselessly through
+the air!<X0a>"
+"de6e","バジールとの対決だ !!<RETN>","You confront Beziel!<RETN>"
 "de84","しかし、<X02>は
-すばやく身をかわした !!<X0a>"
+すばやく身をかわした !!<X0a>","But <X02> evades nimbly.<X0a>"
 "dea8","<X02>
 そ、そんな !!<WAIT>
 この俺が ･ ･ ･<WAIT>
@@ -20,5 +23,18 @@
 世界の破滅を ･ ･ ･<WAIT>
 食い止めることは ･ ･ ･<WAIT>
 で ･ ･ ･ き ･ ･ ･ ぬ ･ ･ ･
+
+<RET_IL>","<X02>
+W-What?!<WAIT>
+To be defeated...<WAIT>
+By mere humans...<WAIT>
+But...<WAIT>
+If Lord Agnija...<WAIT>
+Completes the weapon...<WAIT>
+No mere human...<WAIT>
+Will be able...<WAIT>
+To stand in the way...<WAIT>
+Of the end...<WAIT>
+Of... the... world...
 
 <RET_IL>"

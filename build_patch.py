@@ -820,7 +820,10 @@ def scenario_disk_patch_misc(scenario_disk_patch):
             
     scenario_disk_patch.add_record(0x5d438, b"  \x87\x55     The Silent Spell     ")
     scenario_disk_patch.add_record(0x88782, b"  \x87\x56    The Mark of Kings     ")
-    scenario_disk_patch.add_record(0xa1770, b"  \x87\x57    The Enchanted King    ")
+    scenario_disk_patch.add_record(0xa1772, b"  \x87\x57    The Enchanted King    ")
+    scenario_disk_patch.add_record(0xb749a, b"  \x87\x58    The Tower of Light    ")
+    scenario_disk_patch.add_record(0xd0f3e, b"  \x87\x59   The Heroes of Legend   ")
+
 
     # Scenario 20.00.20 (pirate minigame)
     scenario_disk_patch.add_record(0x90b63, b"\x30") # Number of wins are changed to a half-width digit.
