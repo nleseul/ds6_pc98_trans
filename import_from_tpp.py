@@ -14,16 +14,19 @@ if __name__ == '__main__':
                 filepath = os.path.join(root, filename)
                 print(filepath)
 
-                file_object = tpp_object['project']['files'][filepath]
+                # File names in TPP will always use forward slashes as path separators.
+                file_object = tpp_object['project']['files'][filepath.replace(os.sep, "/")]
                 csv_translations = load_translations_csv(filepath)
 
-                csv_out = csv.writer(open(filepath, 'w', encoding='utf8', newline=''), quoting=csv.QUOTE_ALL)
+                csv_out = csv.writer(open(filepath, 'w', encoding='utf8', newline=''), quoting=csv.QUOTE_ALL, lineterminator=os.linesep)
 
                 if 'note' in file_object:
                     csv_out.writerow([ "*", file_object['note'] ])
 
                 for context, info in csv_translations.items():
-                    index = file_object['indexIds'][info['original']]
+                    # TPP always uses Windows line endings.
+                    tpp_original_text = info['original'].replace(os.linesep, "\r\n")
+                    index = file_object['indexIds'][tpp_original_text]
                     translation = None
                     for candidate_index, candidate_translation in enumerate(file_object['data'][index]):
                         if candidate_index > 0 and candidate_translation is not None:
@@ -31,7 +34,8 @@ if __name__ == '__main__':
                     if translation is None:
                         csv_out.writerow([ context, info['original']])
                     else:
-                        csv_out.writerow([ context, info['original'], translation ])
+                        # CSVs always use line endings from the local environment.
+                        csv_out.writerow([ context, info['original'], translation.replace("\r\n", os.linesep) ])
 
                     if 'parameters' in file_object and index < len(file_object['parameters']) and file_object['parameters'][index] is not None:
                         for parameter in file_object['parameters'][index]:
