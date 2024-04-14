@@ -1,3 +1,4 @@
+"*","Gail's house (Chapter 6)"
 "e19f","<X1e>大盗賊 ゲイル<X04>
 <IF01eb><JUMPe3f4><IF023f><JUMPe237><IF0220><JUMPe202>３世 何を モタモタしてるのだ？
 早く行かないと 船に乗り遅れるぞ。<END>
@@ -49,24 +50,84 @@
 
 セリオス、
 こんな奴 相手してられねえよ。
-早く 行こうぜ。"
+早く 行こうぜ。","<X1e>The Great Thief Gail<X04>
+<IF01eb><JUMPe3f4><IF023f><JUMPe237><IF0220><JUMPe202>Quit lollygagging, Third!
+Hurry up, or you'll miss the boat!<END>
+<LOCe202>If you don't defeat Agnija soon,
+we might miss our chance.<END>
+<LOCe237>What is it, Third?
+
+<CH3>
+Check it out, old man!
+Know what this is?<WAIT>
+This's a Sword of Light!
+
+<X1e>The Great Thief Gail<X04>
+You don't say!
+Well, I knew it would take an heirof mine to find it.
+
+Now, you'll finally be able to
+defeat Agnija.
+
+<IF01d3><JUMPe3ce><CH3>
+Hey, gramps.
+
+Where's this Agnija at, anyway?
+
+<X1e>The Great Thief Gail<X04>
+Beats me.
+
+<CH3>
+Dammit, old fart!!
+
+<X1e>The Great Thief Gail<X04>
+<LOCe3ce>Mmm. That's a nice-looking sword.<WAIT>
+<SET01eb><LOCe3f4>Hey, Third?
+
+<CH3>
+What?
+
+<X1e>The Great Thief Gail<X04>
+After you take care of Agnija,
+let me have that sword.
+
+<CH3>
+... ...
+<WAIT>
+Same greedy old fart as always.
+
+No use talking to this bastard,
+Selios. Let's go."
 "e4ac","<X1e>盗賊<X04>
 ３世さま 一日も早く お戻りになり
-ゲイルさまの 後を継いでください。"
+ゲイルさまの 後を継いでください。","<X1e>Thief<X04>
+Please come back as soon as you
+can, Third! And take over as
+our boss!"
 "e4f6","<X1e>盗賊<X04>
 ３世さま
-お身体には 気をつけてください。"
+お身体には 気をつけてください。","<X1e>Thief<X04>
+Please be careful, Third!"
 "e526","<X1e>盗賊<X04>
 <IF0408><JUMPe575><IF0409><JUMPe575>お坊ちゃん 早く ゲイルさまの
 長年の お志を お継ぎください。<END>
 <LOCe575><SET0400>あっ お坊ちゃん。
-さあ どうぞ 休んでいってください。"
+さあ どうぞ 休んでいってください。","<X1e>Thief<X04>
+<IF0408><JUMPe575><IF0409><JUMPe575>Please keep the boss's dreams
+alive!<END>
+<LOCe575><SET0400>Hey, l'il boss. Go ahead and have
+a rest here."
 "e5ad","<X1e>娘<X04>
 あっ ３世さま
-おケガを なさらないよう 祈ってます早く 戻ってきてくださいね。"
+おケガを なさらないよう 祈ってます早く 戻ってきてくださいね。","<X1e>Girl<X04>
+I will be praying for your safety.Please return soon, m'lord."
 "e5fe","<X1e>娘<X04>
 あらっ ３世さま。
-ご一緒に 買物でも行きませんか？"
+ご一緒に 買物でも行きませんか？","<X1e>Girl<X04>
+Maybe you'd like to come shopping
+with me, m'lord?"
 "e635","<CH3>
 なつかしいな 昔 ここから
-逃げ出したんだぜ。"
+逃げ出したんだぜ。","<CH3>
+Oh, yeah. This's where I escaped
+back then."

@@ -1,26 +1,42 @@
+"*","Fangath (Chapter 6)"
 "e152","<X1e>盗賊<X04>
-お坊っちゃん ここは ワプ屋です。<RETN>"
+お坊っちゃん ここは ワプ屋です。<RETN>","<X1e>Thief<X04>
+Hey, l'il boss! I got a warp
+wing shop here.<RETN>"
 "e195","<X1e>盗賊<X04>
 お坊っちゃん ダイヤシリーズは
 ぜひとも そろえてください。
 
+<RET_IL>","<X1e>Thief<X04>
+Did ya get the whole Diamond
+set yet, l'il boss?
+
 <RET_IL>"
-"e1dc","また いつでも来てくだせえ。"
+"e1dc","また いつでも来てくだせえ。","Come again!"
 "e200","これ以上 持てないようですぜ。
+
+<RET_IL>","You can't carry no more.
 
 <RET_IL>"
 "e21f","どれが 必要ですかい？
+<RETN>","What're ya lookin' for?
 <RETN>"
 "e236","<X0e>ですね
 はいはい どうぞ。
 
+<RET_IL>","The <X0e>?
+Here ya go!
+
 <RET_IL>"
 "e330","<X1e>ホール<X04>
 あっ 坊ちゃん どうしたんですか？
-何か忘れ物でも ･ ･ ･"
+何か忘れ物でも ･ ･ ･","<X1e>Hall<X04>
+What's up, l'il boss?
+Forget somethin'?"
 "e36f","<X1e>ジャック<X04>
 やあ お坊ちゃん
-がんばってくだせえ。"
+がんばってくだせえ。","<X1e>Jack<X04>
+Hey, l'il boss! Good luck!"
 "e39f","<X1e>盗賊<X04>
 あっ お坊ちゃん
 <IF023f><JUMPe42d>ジャグリに 行くそうですね？
@@ -29,21 +45,37 @@
 とんでもねえ奴らが 多いから
 気をつけてくだせえよ。<END>
 <LOCe42d>いつになったら ゲイルさまの後を
-継ぐんですか？"
+継ぐんですか？","<X1e>Thief<X04>
+Hey, l'il boss.
+<IF023f><JUMPe42d>Headin' to Jagri? It's a penal
+colony out in the boonies.
+
+Bunch of rotten folks out there,
+so keep yer wits about ya.<END>
+<LOCe42d>When're ya gonna take over here?"
 "e45c","<X1e>盗賊<X04>
 あっ お坊ちゃん。
 また こいつのホラ話が
-始まっちゃいましたよ。"
+始まっちゃいましたよ。","<X1e>Thief<X04>
+Hey, l'il boss. This guy's makin'
+up stories again."
 "e4a2","<X1e>盗賊<X04>
 坊ちゃん ここには 手くせの
 悪い奴が 多いですから
-気をつけたほうが いいですよ。"
+気をつけたほうが いいですよ。","<X1e>Thief<X04>
+Lotsa folks with wanderin' fingers'round here, l'il boss. Best to
+keep your wits about you."
 "e4f8","<X1e>盗賊<X04>
 坊ちゃん、ダイヤの武器や防具は
 もう 買いましたか？
 
 ダイヤの武器や防具は 強いけど
-火には弱いから 気をつけてください。"
+火には弱いから 気をつけてください。","<X1e>Thief<X04>
+You buy your Diamond gear yet,
+l'il boss?
+
+It's awful strong, but it's weak
+against fire, so watch out."
 "e574","<X1e>盗賊<X04>
 あっ お坊ちゃん
 おいらは 昔 ジャグリに 流された
@@ -51,22 +83,34 @@
 
 でも おいらは ジャグリのボスに
 のし上がって あの辺 一帯を
-治めていたんですよ。"
+治めていたんですよ。","<X1e>Thief<X04>
+Did you know I did time in Jagri
+once, l'il boss?
+
+But I worked my way up, and beforelong I was running the whole
+place."
 "e610","<X1e>盗賊<X04>
 あっ お坊ちゃん
 お休みになるんだったら
-お屋敷のほうが いいと思いますよ。"
+お屋敷のほうが いいと思いますよ。","<X1e>Thief<X04>
+If you need somewhere to rest, themanor is probably a better place."
 "e660","<X1e>盗賊<X04>
 こいつら 坊ちゃんの 命の恩人だと
 言って ここに居座ってるんですけど
-本当なんですかい？"
+本当なんですかい？","<X1e>Thief<X04>
+Did these guys really save yer
+life, l'il boss? They've been
+hangin' out here for a while."
 "e6bd","<X1e>ロー<X04>
 よう ゲイル。
-ここは 居心地がいいな 気に入ったぜ。"
+ここは 居心地がいいな 気に入ったぜ。","<X1e>Roh<X04>
+Heya, Gail. It sure is comfy here.I could get to like it."
 "e6f7","<X1e>ポム<X04>
 今度は 大盗賊 ゲイルさまの
 弟子になって どんなカギでも
-開けられるように 特訓してるんだ。"
+開けられるように 特訓してるんだ。","<X1e>Pomm<X04>
+I'm now the Great Thief Gail's
+apprentice. I'm going to learn howto open any lock in the world."
 "e757","<X1e>ハリー<X04>
 やあ きみたち。
 ぼくは 今度 空飛ぶ風船というのを
@@ -74,9 +118,21 @@
 
 あの 大凧は 高い所からじゃなくちゃだめだったけど 今度は 地上から
 空に上がっていく やつなんだよ。
-また 完成したら 乗せてあげるね。"
+また 完成したら 乗せてあげるね。","<X1e>Harry<X04>
+Hey, guys.
+I'm thinking about the way
+balloons float now.
+
+You need a high place to use a
+kite, but a balloon can fly
+anywhere. I'll give you a ride if
+I can work something out."
 "e824","<X1e>バーテン<X04>
-坊ちゃん 酒は だめですよ。"
+坊ちゃん 酒は だめですよ。","<X1e>Bartender<X04>
+Drinkin's no good for ya, l'il
+boss."
 "e84a","<X1e>神父<X04>
 ヒック おー 暇だ 暇だ ･ ･ ･
-なんか おもしれえこと ねえのかよ。"
+なんか おもしれえこと ねえのかよ。","<X1e>Priest<X04>
+Hic... Bored, bored, bored!
+Nothin' fun ever happens here!"

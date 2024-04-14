@@ -163,6 +163,177 @@
 ちっ 覚えてやがったのか
 ほらよ。
 
-<ASMec36><X0e><X1c>を渡しました。<X0c0301><X04>"
-"ec3e","<X1e>大盗賊 ゲイル<X04><RETN>"
-"ec4e","アグニージャ<RET_IL>"
+<ASMec36><X0e><X1c>を渡しました。<X0c0301><X04>","<CALLec3e><SET01e9>Even I couldn't beat Beziel, but
+you did it. You've gotten strong,
+Third.
+
+<CH3>
+Cut the crap. Not that hard for
+a monster to beat up an old fart.
+
+<CALLec3e>Can't you shut up and listen when
+someone's trying to have a
+serious conversation?
+
+Do you think I started out wantingto become a thief?
+Ever hear the name ""<CALLec4e>""?
+
+Long ago, in my youth, I was
+exploring the Wolf's Maw, and
+I ran across those buried ruins.
+
+And within the ruins, I found
+some ancient documents. That's
+how I first learned that <CALLec4e>
+exists.
+
+<CH3>
+Hold up, gramps.
+You know about <CALLec4e>?!
+
+<CALLec3e>What?! You already know?!
+
+<CH3>
+Just the name...<WAIT>
+All right, gramps. Tell us what
+you know about <CALLec4e>.
+
+<CALLec3e>The destruction of the ancient
+civilization seems to have been
+the work of <CALLec4e>.
+
+An evil monster, more powerful
+than you can possibly imagine.
+
+The ancient documents said that
+if a new civilization ever rises,
+<CALLec4e> will return and destroy
+the world.
+
+It's rather upsetting to learn
+that the world might get
+destroyed, you know.
+
+I didn't tell anyone else about
+this. I resolved to destroy <CALLec4e>on my own. But, I figured, I'd
+need some funds first.
+
+Can't do much without money in
+this world, after all. And what's
+the fastest way to get money?
+Steal it!
+
+And when I started in the thievingbusiness, it turned out it was
+more fun than I expected! Ha ha!
+Two birds, one stone!
+
+Junior, or Ralph or whatever, was
+far too goody-goody to understand,of course. I told him all about
+<CALLec4e> right after you were born.
+
+He couldn't accept thievery, not
+even to save the world. Said he'd
+prove that he could defeat <CALLec4e>
+in his own way.
+
+And then he stormed out.
+
+<CH3>
+Huh. How about that.
+
+<CALLec3e>If you won't take over as boss,
+Third, will you at least take overthe fight against <CALLec4e>?
+
+<CH3>
+Sure is a pain listenin' to old
+folks ramble on.
+
+All you're sayin' is, we need to
+go beat <CALLec4e>, right?
+
+<CALLec3e>Mmm-hmm! That's my grandson!
+But, it won't be as simple as
+saying the words.
+
+This is a monster with power
+unlike anything you've ever
+faced.
+
+There is said to be only one
+weapon that can defeat it.
+The Sword of Light.
+
+<CH3>
+Sword of Light, huh?
+So where can we get one?
+
+<CALLec3e>Hell if I know!
+You want a silver platter too?
+
+<CH3>
+Damn cranky old fart!
+
+<CH2>
+Oh, please don't argue, you two.
+Like grandfather, like son, I
+guess.
+
+<CH3>
+Don't compare me to him!!
+
+<CH0>
+Gail, is this really the time to
+argue about it?
+
+<CH3>
+...Fine. Sorry.
+
+<CALLec3e>Maybe there's something in Jagri.
+That place is full of old ruins,
+so it wouldn't surprise me.
+
+Even if the Sword isn't there,
+you might still find a hint or
+two.
+
+<CH3>
+Right. So, go to Jagri?
+
+<CALLec3e>Right, for the Sword. But, you'll
+need something else to unlock its
+power, according to the records.
+
+I have no clue what that means.
+That's something else you'll have
+to investigate.
+
+I've got high hopes for you,
+Third. Go defeat <CALLec4e>, and
+make me the world's proudest
+grandpa. Wah ha ha!
+
+<CH3>
+Hah! And now comes the bullshit.
+
+<JUMP0001>"
+"ec3e","<X1e>大盗賊 ゲイル<X04><RETN>","<X1e>The Great Thief Gail<X04><RETN>"
+"ec4e","アグニージャ<RET_IL>","Agnija<RET_IL><LOC0001><CALLec3e>There's a guy named Jack whose
+stint is ending. Hall's taking a
+boat from Richelle to meet him.
+
+He just left, so you should be
+able to catch up. Take the boat
+from Richelle to Jagri with him.
+
+<CH3>
+Right, right.
+Okay, Prince, let's head to Jagri.
+
+<CALLec3e>Hold on, hold on! Third, why
+don't I take that flute from you?
+It is my favorite treasure!
+
+<CH3>
+Hah! Of course he'd remember that.Take it.
+
+<ASMec36><X1c>Handed over the <X04><X0e><X1c>.<X0c0301><X04>"
