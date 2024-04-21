@@ -245,9 +245,13 @@ class Model:
                 else:
                     pass
             
-            elif current_input[loc:].startswith("<JUMP"):
-                call_addr = current_input[loc+5:loc+9]
-                loc += 10
+            elif current_input[loc:].startswith("<JUMP") or current_input[loc:].startswith("<SPLIT"):
+                if current_input[loc:].startswith("<JUMP"):
+                    call_addr = current_input[loc+5:loc+9]
+                    loc += 10
+                elif current_input[loc:].startswith("<SPLIT"):
+                    call_addr = current_input[loc+6:loc+10]
+                    loc += 11
             
                 if current_conditional_result != False:
                     locator_info = self._locators[call_addr]
@@ -260,12 +264,15 @@ class Model:
                 call_addr = current_input[loc+5:loc+9]
                 loc += 10
 
-                call_stack.append( { 'key': current_key, 'loc': loc } )
+                if call_addr in self._locators:
+                    call_stack.append( { 'key': current_key, 'loc': loc } )
 
-                locator_info = self._locators[call_addr]
-                current_key = locator_info['key']
-                current_input = self._get_raw_translation(current_key)
-                loc = locator_info['loc']
+                    locator_info = self._locators[call_addr]
+                    current_key = locator_info['key']
+                    current_input = self._get_raw_translation(current_key)
+                    loc = locator_info['loc']
+                else:
+                    current_line += "<?????>"
             
             elif current_input[loc:].startswith("<ASM"):
                 loc += 4

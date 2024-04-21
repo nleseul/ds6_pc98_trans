@@ -66,4 +66,7 @@ if __name__ == '__main__':
             if event_addr in encoded_translations:
                 translation_info = encoded_translations[event_addr]
                 for offset, target_addr in translation_info['references']:
-                    print(f"  Reference to {target_addr:04x} at offset {offset:x} updated to {relocations[target_addr]:04x}")
+                    if target_addr in relocations:
+                        print(f"  Reference to {target_addr:04x} at offset {offset:x} updated to {relocations[target_addr]:04x}")
+                    else:
+                        print(f"  Reference to {target_addr:04x} at offset {offset:x} was not updated")

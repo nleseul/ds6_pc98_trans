@@ -12,7 +12,6 @@ if __name__ == '__main__':
         for filename in files:
             if filename.endswith('.csv'):
                 filepath = os.path.join(root, filename)
-                print(filepath)
 
                 file_object = tpp_object['project']['files'][filepath]
                 csv_translations = load_translations_csv(filepath)

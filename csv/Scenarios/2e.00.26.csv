@@ -1,11 +1,20 @@
-"*","Ft. Pheen"
+"*","Ft. Pheen (Meeting Jack)"
 "e267","<X1e>ホール<X04>
 あのー 番兵さん。
 今日釈放の予定の人は まだですか？
 
 <X1e>兵士<X04>
 今日は まだ 誰も出てきていないぞ。<WAIT>
-おっ 都合よく ひとり来たじゃないか。"
+おっ 都合よく ひとり来たじゃないか。","<CALL0002>'Scuse me, sir.
+Have they let out the people
+scheduled for release today yet?
+
+<CALL0003>No, there hasn't been anyone yet
+today.<WAIT>
+Oh, you might be just in time.<END>
+<LOC0001><X1e>Jack<X04><RETN>
+<LOC0002><X1e>Hall<X04><RETN>
+<LOC0003><X1e>Soldier<X04><RETN>"
 "e2f3","<X1e>ジャック<X04>
 おお ホールじゃねえか。
 よく 迎えに来てくれたな。
@@ -30,7 +39,26 @@
 
 <X1e>兵士<X04>
 確かに今日までだな。
-よし 通っていいぞ。"
+よし 通っていいぞ。","<CALL0001>Hey, is that you, Hall?
+You here to pick me up?
+
+<CALL0002>You're late, Jack! I've been
+waitin' a long time!
+
+<CALL0001>Ha ha! Sorry, kid!<WAIT>
+<ASMe481>Hey, guard! Number 893. My time's
+up today.
+
+<CALL0003>Let me see your arm.<WAIT>
+Prisoner #893?<WAIT>
+#893... That'd make you Jack?
+
+<CALL0001>Yup, that's me.
+Sent from Moreston.
+
+<CALL0003>Everything seems to be in order
+for your release today.
+You're free to go."
 "e493","<X1e>ホール<X04>
 兄き 元気そうですね。
 大盗賊 ゲイルさまが 船の手配を
@@ -62,4 +90,32 @@
 
 <X1e>ホール<X04>
 はい ジャック兄き。
-坊ちゃん 気をつけてくださいね。"
+坊ちゃん 気をつけてくださいね。","<CALL0002>You look like you're doin' well,
+Jack. The boss arranged for a
+boat for ya.
+
+And look here! The l'il boss is
+here with me!
+
+<CALL0001>Oh, hey, l'il boss! Haven't seen
+ya for a bit. What're ya doin'
+in Jagri?
+
+<CH3>
+Lookin' for a Sword of Light.
+You ever hear of it?
+
+<CALL0001>Can't say I have, no.
+
+Dran's out in Gilmore. Maybe ya
+should try askin' around there?
+
+Anyway, l'il boss. Got a lot to
+do m'self, so I'd better take
+my ride back home now. Take care
+o' yourself!
+
+C'mon, Hall!
+
+<CALL0002>You got it, Jack!
+Good luck, l'il boss!"

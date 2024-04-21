@@ -1,49 +1,49 @@
-*,Richelle (Chapter 6?),
-e22c,"<X1e>武器屋<X04>
+"*","Richelle (Chapter 6?)"
+"e22c","<X1e>武器屋<X04>
 いらっしゃいませ。
 ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
 Welcome! My shop sells weapons
 and armor."
-e263,また来てくださいね。,Come again!
-e2a1,"<X1e>道具屋<X04>
+"e263","また来てくださいね。","Come again!"
+"e2a1","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは 道具の店ですが
 どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
 Welcome!
 This is a tool shop.
 What would you like?<RETN>"
-e2e7,また来てくださいね。,Come again!
-e307,"おや？これ以上持てないようですね。
+"e2e7","また来てくださいね。","Come again!"
+"e307","おや？これ以上持てないようですね。
 
 <RET_IL>","You don't have any room for it.
 
 <RET_IL>"
-e32b,"どれを買ってくれますか？
+"e32b","どれを買ってくれますか？
 <RETN>","What would you like to buy?
 <RETN>"
-e345,"<X0e>だね。
+"e345","<X0e>だね。
 どうも ありがとう。
 
 <RET_IL>","The <X0e>?
 Thank you very much!
 
 <RET_IL>"
-e36a,"どれを 売ってくれますか？
+"e36a","どれを 売ってくれますか？
 <RETN>","What would you like to sell?
 <RETN>"
-e385," Gold になるけど
+"e385"," Gold になるけど
 それでも よろしいですか？
 <RETN>"," gold.
 Will that be okay?"
-e3b1,"それは残念です･･･ ･･･。
+"e3b1","それは残念です･･･ ･･･。
 
 <RETN>","That's too bad...
 
 <RETN>"
-e3ca,"どうも ありがとうございます。
+"e3ca","どうも ありがとうございます。
 <RETN>","Thank you very much.
 <RETN>"
-e4ce,"<X1e>ホール<X04>
+"e4ce","<X1e>ホール<X04>
 <IF01b0><JUMPe60b><SET01b0>あ 坊ちゃん 待ってたんですよ。
 <PAGE>
 さっき 大盗賊 ゲイルさまから
@@ -77,13 +77,13 @@ around, l'il boss.
 
 Do ya wanna see Jack get mad at
 me? C'mon, get on board!"
-e681,"<X1e>男<X04>
+"e681","<X1e>男<X04>
 ラヌーラから来た ジェルマンって
 いう奴から 金を ごっそりと
 スッてやったぜ。","<X1e>Man<X04>
 I got a bunch of money off some
 guy called Jelman from Lanoura."
-e6d2,"<X1e>男<X04>
+"e6d2","<X1e>男<X04>
 なぜか わからないんですが
 ジェルマンという人が お金を
 たくさん おいていったんです。
@@ -131,20 +131,20 @@ luckiest guy in the world!<IF0408><JUMPe920><IF0409><JUMPe920><END>
 
 Anyway, why don't you all have
 a rest here?"
-e95a,"<X1e>男<X04>
+"e95a","<X1e>男<X04>
 漁師のトーマスさんは
 神父になって 悩める人々を
 救うと言っていたぞ。","<X1e>Man<X04>
 Thomas, the fisherman, said he's
 going to become a priest and help
 the troubled."
-e9a3,"<X1e>男<X04>
+"e9a3","<X1e>男<X04>
 ずっと前の スリは いったい誰が
 犯人だったんだろう？","<X1e>Man<X04>
 Who could have been responsible
 for all the pickpocketing before?
 "
-e9dc,"<X1e>男<X04>
+"e9dc","<X1e>男<X04>
 あいつさあ 店を始めようとして
 貯めた金を 全部使って 女奴隷を
 助けてやったんだ。
@@ -187,7 +187,7 @@ So 'e ended up doublin' what 'e
 An' 'ere's me, workin' and
 workin', ne'er turnin' tha
 slightest profit!"
-ebd7,"<X1e>女<X04>
+"ebd7","<X1e>女<X04>
 私たち 結婚することに なったんです。
 
 ちょっと前までは 私ほど 不幸な娘はいないだろうと 世の中を 恨んで
@@ -198,7 +198,7 @@ anyone really be this happy?
 Not long ago, I was angry at
 everything, thinking no girl couldbe as miserable as me. Life's
 funny, isn't it?"
-ec88,"<X1e>女<X04>
+"ec88","<X1e>女<X04>
 さっき 大盗賊 ゲイルが来て
 バケモノが いなくなったって
 言ってたのよ。
@@ -211,7 +211,7 @@ gone.
 
 I haven't seen any monsters
 lately, now that I think of it."
-ed07,"<X1e>トーマス<X04>
+"ed07","<X1e>トーマス<X04>
 <CALLed4c>
 
 こうやって言えば いいんですよね
@@ -220,9 +220,9 @@ ed07,"<X1e>トーマス<X04>
 
 Is that the right thing to say,
 Father?"
-ed41,"<X1e>神父<X04>
+"ed41","<X1e>神父<X04>
 <CALLed4c>","<X1e>Priest<X04>
 <CALLed4c>"
-ed4c,"困ったことが あったら 何なりと
+"ed4c","困ったことが あったら 何なりと
 私に 話しなさい。<RET_IL>","Please speak with me whenever
 you are troubled.<RET_IL>"

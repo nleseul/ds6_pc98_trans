@@ -1,27 +1,46 @@
+"*","Ft. Pheen"
 "e16b","<X1e>何でも屋<X04>
 いらっしゃい ここは何でも屋だ。
 
 刑期があけて 故郷に戻るには
 ワプがいちばん。 ジャグリ名物の
-武器も お土産にもってこいだ。<RETN>"
-"e1f0","また 悪いことして来いよ。"
+武器も お土産にもってこいだ。<RETN>","<X1e>Merchant<X04>
+Welcome! I sell a little of
+everything.
+
+Warp wings are the best way home
+after you've served your time.
+And don't forget your souvenir
+equipment!<RETN>"
+"e1f0","また 悪いことして来いよ。","Come again after your next crime!"
 "e218","おや？これ以上持てないみたいだな。
+
+<RET_IL>","You haven’t got room for it.
 
 <RET_IL>"
 "e23c","どれを買うんだ？
+<RETN>","What'll it be?
 <RETN>"
 "e24e","<X0e>だな。
 
+<RET_IL>","The <X0e>, huh?
+
 <RET_IL>"
 "e25f","どれを 売ってくれるんだ？
+<RETN>","What're you selling?
 <RETN>"
 "e27a"," Gold にしかならないな
 それでも いいかい？
+<RETN>"," gold.
+That all right?
 <RETN>"
 "e2a6","ひやかしは やめてくれ。
 
+<RETN>","No window-shopping!
+
 <RETN>"
 "e2bf","もっと 売ってくれよ。
+<RETN>","Just shout when you got more!
 <RETN>"
 "e396","<X1e>兵士<X04>
 しかし お前も 変わった奴だな。
@@ -34,7 +53,14 @@
 つけやしねえさ。
 
 このジャグリのほうが
-おれにゃ 向いてるんだよ ヘッヘッヘ。"
+おれにゃ 向いてるんだよ ヘッヘッヘ。","<CALL0001>You crazy? I said, you're free to
+leave Jagri.
+
+<X1e>Boris<X04>
+Yeah, yeah, an' go home, an' go
+work some honest job, right?
+
+Nah, I'm thinkin' Jagri's the lifefer me. Heh heh heh..."
 "e47f","<X1e>兵士<X04>
 本当に 変わった奴だな。
 
@@ -57,7 +83,26 @@
 
 <CH1>
 ゲイル むきに ならなくても
-わかってるさ。"
+わかってるさ。","<CALL0001>He really must be crazy.
+
+<CALL0001>Well, he doesn't really have any
+skills apart from picking locks.
+
+That's what landed him in Jagri
+in the first place, of course.
+
+<CALL0001>Ha ha ha!
+I guess you're right.
+
+<CH3>
+They got no right to say stuff
+like that!
+
+Can't stand it when bastards like
+that look down on locksmithin'.
+
+<CH1>
+I can see why that would frustrateyou."
 "e5d5","<X1e>兵士<X04>
 <IF0223><JUMPe8da><IF_NOT0222><JUMPe60b>だから ワイロだと言ってるだろ。
 
@@ -105,7 +150,53 @@
 それを探しに来たのか？
 もし見つかったら 一度見せてくれよ。<END>
 <LOCe93d>お前ら ジャグリに 入りたいなんて
-ほんとに 変な奴だな。"
+ほんとに 変な奴だな。","<CALL0001><IF0223><JUMPe8da><IF_NOT0222><JUMPe60b>Well? Have you reconsidered?
+
+<JUMPe6e7><LOCe60b><SET0222>What? You want to go into Jagri?
+Only people who have committed
+a crime are allowed in.
+
+But I could be persuaded not to
+think about that too hard.
+If you make it worth my while.
+
+<CH3>
+Ha! Guards an' officials. Same
+the world over. Rotten bastards,
+every one.
+
+<LOCe6e7><CH1>
+Which government do you represent?
+
+<CALL0001>What do you mean? You planning to
+report this to Flart? Well, then
+I definitely won't let you pass.
+
+<CH2>
+Oh, let it go, Runan. Let's just
+bribe him for now.
+
+<CH0>
+Yeah, I feel bad for him. He's
+stuck guarding a place like this.
+
+Let's just give him <ASMe974>
+gold, okay?
+
+<X1c>Offer him <CALL4156> gold?<X04><ASMe994><X08><IF0223><JUMPe862><X1e>Soldier<X04>
+I see. Well, you can't enter
+Jagri, and that's final.<END>
+<LOCe862><CALL0001>What? For me?
+
+Well, come and go as you like.
+I'll inform the guards up ahead
+that the inspectors have arrived
+in Jagri.<END>
+<LOCe8da><IF023f><JUMPe93d>No, I've never heard of a Sword
+of Light. If you find one, let
+me have a look at it.<END>
+<LOCe93d>What kind of nutcase actually
+wants to go into Jagri?"
 "e9a8","<IF_NOT0223><JUMPea41><X1e>兵士<X04>
 これは これは 視察団さまですな。
 
@@ -119,10 +210,24 @@
 腕に書いてないじゃないか。
 
 どうせ脱走でも しようと
-してるんだろう。"
+してるんだろう。","<IF_NOT0223><JUMPea41><CALL0001>Inspectors! Welcome to Jagri!
+
+I'm here from Soldythe. Is there
+any way you could persaude the
+king to let me return?<END>
+<LOCea41><CALL0001>Who are you? What's your number?
+Did the mark wear off?
+There's nothing on your arm.
+
+Escapees, I'm sure."
 "eac2","<IF_NOT0223><JUMPea41><X1e>兵士<X04>
 私は ウォンリークの兵士です。
-ジェストンさまはお元気でしょうか？"
+ジェストンさまはお元気でしょうか？","<IF_NOT0223><JUMPea41><CALL0001>I'm from Wonliech.
+Is Duke Jestonn well?<END>
+<LOC0001><X1e>Soldier<X04><RETN>
+<LOC0002><X1e>Fortune Teller<X04><RETN>
+<LOC0003><X1e>Old man<X04><RETN>
+<LOC0004><X1e>Old woman<X04><RETN>"
 "eb10","<X1e>老人<X04>
 わしら夫婦は ここにいる兵士さんの
 お世話をしている者じゃ。
@@ -133,7 +238,15 @@
 <X1e>老婆<X04>
 ええ おじいさん。
 <LOCeb95>お若いの 何か外国のおもしろい話を
-聞かせてください。"
+聞かせてください。","<CALL0003>Us two, we help out the soldiers
+here.
+
+Ain't much to do here, is there,
+missy?
+
+<CALL0004>Sure ain't, hubby.
+<LOCeb95>You young folk care to tell us
+somethin' about the outside?"
 "ebca","<X1e>老婆<X04>
 <IF01ae><JUMPeb95>あんたがた ドラゴンという生き物を
 知ってなさるか？
@@ -149,7 +262,19 @@
 <X1e>老人<X04>
 そうじゃな ばあさん。
 かわいそうになあ 早く親が
-見つかれば いいのじゃが ･ ･ ･"
+見つかれば いいのじゃが ･ ･ ･","<CALL0004><IF01ae><JUMPeb95>You folks ever hear o' what they
+call a dragon?
+
+I seen one flyin' about a bunch.
+Musta got lost from its parents,
+I reckon.
+
+We know a dragon cry when we hear
+one, don't we, hubby?
+
+<CALL0003>Sure do, missy.
+Hope that poor thing can find
+its parents soon..."
 "ecfb","<X1e>老人<X04>
 せっかく釈放されたのじゃが
 刑期が あまりに長かったもので
@@ -167,7 +292,21 @@
 ギルモアの地下に 古代遺跡があり
 そこから いろいろな物が
 発見されるのじゃよ
-その中にあるかも しれんな。<LOCee33>"
+その中にあるかも しれんな。<LOCee33>","<CALL0003>I'm finally free!
+But after all these years, I
+plumb forgot how to cast Warp.<IF023f><JUMPee33>
+
+And what brings y'all here?
+
+<CH0>
+Have you heard of the Sword of
+Light?
+
+<CALL0003>Sword of Light...
+Nope, can't say I have.
+
+There's all kinds of things in theold ruins under Gilmore, though.
+Maybe it's in there?<LOCee33>"
 "ee34","<X1e>占い師<X04>
 ムムムッ お若いの 待ちなされ。
 見たところ 何かを お探しの
@@ -193,4 +332,25 @@
 光の剣は 見つからんじゃろう。<END>
 <LOCefa5><CH3>
 もう 何も 探しちゃいねえよ。
-いかさまジジイ !!"
+いかさまジジイ !!","<CALL0002>Oh... I see it! You young folk...
+you are searching for something!
+Am I right?
+
+<IF023f><JUMPefa5><CH0>
+We're looking for the Sword of
+Light.
+
+<CALL0002>Mmm, I see. What you seek...<WAIT>
+<SPLIT0010><LOC0010>...lies to the east.
+Look to the east!
+
+<CH3>
+You for real, old man?
+
+<CALL0002>Mmm, it is unmistakable.<WAIT>
+Wait! I meant south! South!<WAIT>
+Or perhaps... north? No, west!
+
+Seek not the Sword of Light, youngfolk! For you may never find it!<END>
+<LOCefa5><CH3>
+Not anymore, you old swindler."
