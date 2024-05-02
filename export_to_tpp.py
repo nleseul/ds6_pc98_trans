@@ -13,13 +13,14 @@ def create_blank_tpp(project_name):
     return tpp_object
 
 def get_file_object(tpp_object, file_name, format):
-    if file_name not in tpp_object['project']['files']:
-        tpp_object['project']['files'][file_name] = { 'data': [], 'context': [], 'indexIds': {}, 'originalFormat': format }
+    normalized_name = file_name.replace(os.sep, "/")
+
+    if normalized_name not in tpp_object['project']['files']:
+        tpp_object['project']['files'][normalized_name] = { 'data': [], 'context': [], 'indexIds': {}, 'originalFormat': format }
 
     if 'selectedId' not in tpp_object['project']:
-        tpp_object['project']['selectedId'] = file_name
-
-    return tpp_object['project']['files'][file_name]
+        tpp_object['project']['selectedId'] = normalized_name
+    return tpp_object['project']['files'][normalized_name]
 
 def add_translation(file_object, context, original, translation):
     if original not in file_object['indexIds']:
@@ -62,6 +63,8 @@ if __name__ == '__main__':
                     file_object['note'] = notes
 
                 for context, info in csv_translations.items():
-                    add_translation(file_object, context, info['original'], None if 'translation' not in info else info['translation'])
+                    # TPP always uses Windows line endings.
+                    add_translation(file_object, context, info['original'].replace(os.linesep, "\r\n"), 
+                        None if 'translation' not in info else info['translation'].replace(os.linesep, "\r\n"))
 
-    json.dump(tpp_object, open('ds6.trans', 'w+', encoding='utf8'))
+    json.dump(tpp_object, open('ds6.trans', 'w+', encoding='utf8'), ensure_ascii=False)
