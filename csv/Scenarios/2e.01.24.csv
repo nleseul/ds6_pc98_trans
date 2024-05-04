@@ -13,17 +13,41 @@
 このゴードンさまの物だ ドルカスに
 そう言っておけ !!<END>
 <LOCe36d>何度来ても 同じことだ この遺跡から出る物は 誰にも渡さん。
-ドルカスに そう言っておけ !!"
+ドルカスに そう言っておけ !!","<CALL0001><IF0231><JUMPe36d><SET0231>Who are you people? New blood?
+
+<CH0>
+We're looking for the Sword of
+Light. We heard there are ancient
+ruins underground near here.
+
+<CALL0001>More of Drucas's people?
+
+Everything that comes out of thoseruins belongs to me! Go tell that
+to Drucas!<END>
+<LOCe36d>For the zillionth time, I won't
+let anyone take anything from the
+ruins. Tell that to Drucas!"
 "e3c4","<X1e>ドルカス<X04>
 今日は おとなしく帰るが
 あきらめたわけじゃ ねえからな。
 覚えておけよ !!
 
 <X1e>ゴードン<X04>
-何度来ても 同じだ さっさと うせな。"
+何度来ても 同じだ さっさと うせな。","<CALL0002>That's enough for today, but I'm
+not letting this go. Count on
+it!
+
+<CALL0001>I'm not changing my mind! Beat it!<END>
+<LOC0001><X1e>Gordon<X04><RETN>
+<LOC0002><X1e>Drucas<X04><RETN>
+<LOC0003><X1e>Gordon's henchman<X04><RETN>
+<LOC0004><X1e>Drucas's henchman<X04><RETN>
+<LOC0010>Sword of Light<RET_IL>"
 "e446","<X1e>ドルカス<X04>
 なんだ てめえは ゴードンの手下か？今に見てろって ゴードンの野郎に
-言っておけ !!"
+言っておけ !!","<CALL0002>What? You with Gordon?
+Tell him that I'll show him! Just
+watch me!"
 "e4a1","<X1e>ドラン<X04>
 <IF0233><JUMPe683><SET0233>あれっ お坊ちゃん !?
 お坊ちゃんじゃないですか？
@@ -50,13 +74,45 @@
 何かあったら知らせます。<END>
 <LOCe683>あっ お坊ちゃん
 まだ それらしい情報はありません。
-もう少し待ってください。"
+もう少し待ってください。","<X1e>Dran<X04>
+<IF0233><JUMPe683><SET0233>Oh! Is that you, l'il boss?
+It's me, Dran.
+
+<CH3>
+We've been lookin' for ya, Dran.
+Heard from Jack that you were
+out here.
+
+<X1e>Dran<X04>
+Did you get caught pickin'
+pockets?
+
+<CH3>
+Don't be stupid. I don't do that
+kinda thing. We're lookin' for a
+<CALL0010>.
+
+<X1e>Dran<X04>
+I've never heard of it.
+Right now, I'm working with the
+boss of this place, named Gordon.
+
+Let me ask around a bit,
+discreetly. I'll let ya know if I
+find anything out.<END>
+<LOCe683>Hey, l'il boss. I haven't found
+anything about it yet. Just give
+me a bit longer, okay?"
 "e6ce","<X1e>ゴードンの手下<X04>
 お前ら 新入りだな？
 
 ジャグリのボス ゴードンさまの
 許しがないと この中には
-入れねえんだ。"
+入れねえんだ。","<CALL0003>New blood, huh?
+
+Gordon runs this place, and no
+one gets in here without his
+say-so."
 "e738","<X1e>学者<X04>
 お前ら 見たことのない顔だな？
 
@@ -80,7 +136,33 @@
 
 <CH2>
 あたしも そう思うわ。
-なんか うろたえてるもんね。"
+なんか うろたえてるもんね。","<X1e>Scholar<X04>
+Now, those are some faces I don't
+recognize.
+
+I'm a scholar. I committed a
+deliberate crime so I could do
+archaeological research in Jagri.
+
+<CH0>
+A scholar? So do you know about
+the <CALL0010>?
+
+<X1e>Scholar<X04>
+S-<CALL0010>?<WAIT>
+... ...<WAIT>
+Well, it's certainly...
+
+It's certainly amazing, isn't it?
+I-I know all about it!
+
+<CH3>
+Doesn't know a damn thing, huh?
+
+<CH2>
+Yeah, I get that feeling too.
+He seems pretty embarassed about
+it."
 "e8a2","<X1e>ゴードンの手下<X04>
 ドルカスって奴は このジャグリの
 ボスのゴードンさまに 対抗する
@@ -88,11 +170,18 @@
 
 さっきは この辺の 地下にある
 遺跡から 出てくる 宝の利益を
-半分よこすように 言ってきたんだ。<LOCe965>"
+半分よこすように 言ってきたんだ。<LOCe965>","<CALL0003>A guy named Drucas is the boss's
+biggest rival around here.<IF_NOT0230><JUMPe965>
+
+He was demanding half the profits
+from the buried treasure around
+here a while ago.<LOCe965>"
 "e966","<X1e>ゴードンの手下<X04>
 ボリスの野郎 今日で刑期が
 あけるって言ってやがった。 
-おれも早くソルディスに帰りてえよ。"
+おれも早くソルディスに帰りてえよ。","<CALL0003>That damn Boris! He says they're
+gonna let 'im out today. I wanna
+go home to Soldythe too!"
 "e9d0","<X1e>ゴードンの手下<X04>
 <IF0405><JUMPec1f><SET0405>お前ら 新入りだな？
 ここのしきたりを 教えてやろう。
@@ -126,7 +215,41 @@
 教会の左側が ゴードンさまで
 右側がドルカスの ナワバリだ。<END>
 <LOCec1f>おい 新入り ゴードンさまの所に
-あいさつに 行ったのか？"
+あいさつに 行ったのか？","<CALL0003><IF0405><JUMPec1f><SET0405>New blood, right?
+Let me tell you how things are
+around here.
+
+To start off, go see Gordon. He's
+the one who runs Jagri.
+There's also a thug called Drucas
+who you should stay away from.
+
+The church is the edge of his
+turf, so don't cross it.<WAIT>
+Get it? Don't cross the church?
+
+<CH0>
+Ha ha ha ha...
+
+<X1c>The other three stare icily at
+Selios.<X04>
+
+<CH1>
+Something amusing, your Highness?
+
+<CH3>
+C'mon, that was awful.
+
+<CALL0003>Oh, give it time. After 25 years
+in here, you'll find that kind of
+thing hilarious.
+
+Anyway, if you go Father than...<WAIT>
+...I mean, farther than<WAIT>
+the church, that's Drucas's turf.
+Gordon's is on the left here.<END>
+<LOCec1f>You new bloods been to see Gordon
+yet?"
 "ec56","<CH0>
 なあ 光の剣を知らないか？
 
@@ -154,7 +277,34 @@
 <X1c>男は怒り出して なぐりかかりました。<X04>
 
 <CH0>
-あーあ リュナンのせいだ。"
+あーあ リュナンのせいだ。","<CH0>
+Hey, do you know anything about a
+<CALL0010>?
+
+<CALL0004><N>
+
+<PAGE>
+<CH3>
+You deaf or somethin'?
+
+<CALL0004><N>
+
+<PAGE>
+<CH2>
+I think he's ignoring us.
+
+<CH1>
+It's best to ask politely.
+Excuse me, sir. Do you happen to
+know anything about a Sword of...
+
+<CALL0004>Fuck off, asshole!!
+
+<X1c>The man goes into a rage and
+throws a punch at Runan.<X04>
+
+<CH0>
+Well, Runan's done it now."
 "ed83","<X1e>ドルカスの手下<X04>
 よう 新入り。
 ここのしきたりを 教えてやるぜ。
@@ -164,7 +314,17 @@
 あいさつに 行くこったな。
 
 あと ゴードンって野郎がいるが
-あいつは ウソつきだ 気をつけな。"
+あいつは ウソつきだ 気をつけな。","<CALL0004>Hey, new blood!
+Let me tell you how things are
+around here.
+
+Drucas is the man in charge. You
+should go introduce yourself to
+him first.
+
+There's also a conniving con-man
+named Gordon around, so keep your
+wits about you."
 "ee53","<X1e>神父<X04>
 <IF0232><JUMPee8d><SET0232>おや あなたがた ジャグリは
 初めてですね？
@@ -180,4 +340,19 @@
 ならないのです。おわかりですか？
 
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+<IF0232><JUMPee8d><SET0232>This must be your first time in
+Jagri, I suppose?
+
+<LOCee8d>There are ruins under the village
+of Gilmore.
+
+Those candlesticks are made from
+the stuff that's been found there.
+
+I came to minister to criminals.
+Criminals need to know the true
+love of the gods more than anyone.Surely you agree?
+
+Please speak with me whenever
+you are troubled."
