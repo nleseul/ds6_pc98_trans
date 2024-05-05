@@ -1,3 +1,4 @@
+"*","Gilmore (after seeing Boris at Pheen)"
 "e16e","<X1e>ゴードン<X04>
 <IF0237><JUMPe3bc>何度来ても 同じことだ この遺跡から出る物は 誰にも渡さん。
 ドルカスに そう言っておけ !!<IF_NOT0238><JUMPe3bb><SET0237>
@@ -28,7 +29,40 @@
 <CH3>
 だから 言ったじゃねえか ドルカスをだましたほうが よかったんだよ。<LOCe3bb><END>
 <LOCe3bc>おれを だますなら もっとましな
-ウソを 考えることだな。"
+ウソを 考えることだな。","<X1e>Gordon<X04>
+<IF0237><JUMPe3bc>For the zillionth time, I won't
+let anyone take anything from the
+ruins. Tell that to Drucas!<IF_NOT0238><JUMPe3bb><SET0237>
+
+<CH0>
+No, wait! Listen!
+<PAGE>
+Drucas is going to sneak into the
+underground ruins by digging a
+hole from the old Jagri mines.
+Look at this.
+
+<ASMe3f3><X1c>Handed over the <X04><X0e><X1c>.<X0c0301><X04>
+
+<X1e>Gordon<X04>
+What?! Why would you be telling
+me this?
+
+You must be with Drucas! Trying tosneak into the ruins while I run
+off to the mine!
+
+Did you really think someone like
+me would fall for such a blatant
+trick?
+
+<CH1>
+That seems to have backfired.
+
+<CH3>
+Told ya we shoulda just used
+Drucas.<LOCe3bb><END>
+<LOCe3bc>You'll need better lies if you
+want to fool me."
 "e3fb","<X1e>ドルカス<X04>
 <SET0236>おお お前ら １日 ３０Gold で
 鉱山を掘らねえか？
@@ -39,7 +73,18 @@
 
 ジャグリの廃坑の奥には でっかい
 鉱脈が眠ってるんだぜ。
-最後に笑うのはこのドルカスさまだぜヒッヒッヒ。"
+最後に笑うのはこのドルカスさまだぜヒッヒッヒ。","<X1e>Drucas<X04>
+<SET0236>You wanna make 30 gold a day
+workin' the mines?
+
+That scheming Gordon won't split
+the treasure, so I've found my
+own way to make a livin'.
+
+There's a huge ore vein in that
+old mine. So who's gonna get the
+last laugh? Me!!
+Heh heh heh..."
 "e4e8","<X1e>ドラン<X04>
 <IF0235><JUMPe5f8><SET0235>あっ お坊ちゃん
 ドルカスが 手下たちを 連れて
@@ -62,10 +107,36 @@
 
 ドルカスの手下の中に 仲間を１人
 もぐり込ませましたから 何か
-聞き出せると思います。"
+聞き出せると思います。","<X1e>Dran<X04>
+<IF0235><JUMPe5f8><SET0235>L'il boss! Drucas just went off
+toward the old Jagri mines with
+his boys.
+
+<CH3>
+Old Jagri mines?
+
+<X1e>Dran<X04>
+Yup. Wonder what they're doin' in
+there.
+
+I've got a guy who infiltrated
+their group. Maybe he'll learn
+somethin'.
+
+<CH3>
+Okay. Sounds good.<END>
+<LOCe5f8>
+Drucas just went off toward the
+old Jagri mines with his boys.
+
+I've got a guy who infiltrated
+their group. I bet he'll learn
+somethin'."
 "e68b","<X1e>ゴードンの手下<X04>
 お前ら しつこいな。
-さては ドルカスの手下だな？"
+さては ドルカスの手下だな？","<X1e>Gordon's henchman<X04>
+You're awful stubborn.
+And probably with Drucas."
 "e72a","<IF023b><JUMPe87c><X1e>学者<X04>
 おれは古代のことを研究するために
 わざわざ悪いことをして ジャグリに
@@ -108,7 +179,51 @@
 それじゃ 何しに来たんだ こいつは？
 
 <CH1>
-手がかりが なくなってしまったな。"
+手がかりが なくなってしまったな。","<IF023b><JUMPe87c><X1e>Scholar<X04>
+I'm a scholar. I committed a
+deliberate crime so I could do
+archaeological research in Jagri.
+
+<CH0>
+A scholar? So do you know about
+the Sword of Light?
+
+<X1e>Scholar<X04>
+S-Sword of Light?<WAIT>
+... ...<WAIT>
+Well, it's certainly...
+
+It's certainly amazing, isn't it?
+I-I know all about it!
+
+<CH3>
+Doesn't know a damn thing, huh?
+
+<CH2>
+Yeah, I get that feeling too.
+He seems pretty embarassed about
+it.<END>
+<LOCe87c><CH0>
+Since you're a scholar, can you
+tell us what's written in this
+book?
+
+<X1e>Scholar<X04>
+T-This book!!
+Was it in the ruins?
+
+But if I could read these, then
+I wouldn't have left them all
+over the ruins, now would I?
+
+I found them a long time ago, but
+I couldn't read them.
+
+<CH3>
+What's he even doin' here, then?
+
+<CH1>
+It seems we've lost this lead."
 "e9ed","<X1e>ゴードンの手下<X04>
 ドルカスって奴は このジャグリの
 ボスのゴードンさまに 対抗する
@@ -116,10 +231,18 @@
 
 さっきは この辺の 地下にある
 遺跡から 出てくる 宝の利益を
-半分よこすように 言ってきたんだ。"
+半分よこすように 言ってきたんだ。","<X1e>Gordon's henchman<X04>
+A guy named Drucas is the boss's
+biggest rival around here.
+
+He was demanding half the profits
+from the buried treasure around
+here a while ago.<LOCe965>"
 "eaab","<X1e>ゴードンの手下<X04>
 おい 新入り ゴードンさまの所に
-あいさつに 行ったのか？"
+あいさつに 行ったのか？","<X1e>Gordon's henchman<X04>
+You new bloods been to see Gordon
+yet?"
 "eaf3","<X1e>神父<X04>
 <IF0232><JUMPeb2d><SET0232>おや あなたがた ジャグリは
 初めてですね？
@@ -135,7 +258,22 @@
 ならないのです。おわかりですか？
 
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+<IF0232><JUMPeb2d><SET0232>This must be your first time in
+Jagri, I suppose?
+
+<LOCeb2d>There are ruins under the village
+of Gilmore.
+
+Those candlesticks are made from
+the stuff that's been found there.
+
+I came to minister to criminals.
+Criminals need to know the true
+love of the gods more than anyone.Surely you agree?
+
+Please speak with me whenever
+you are troubled."
 "ec2f","<IF0404><JUMPedfd><CH0>
 何だこれは ･ ･ ･ 地図じゃないか !!
 
@@ -166,4 +304,36 @@
 
 <LOCedfd><ASMee48><IF0238><JUMPee2f><SET0404><CH3>
 そうか じゃあ 持ち物をへらそうぜ。<END>
-<LOCee2f><X0e><X1c>を手に入れました。<X0c0301><X04>"
+<LOCee2f><X0e><X1c>を手に入れました。<X0c0301><X04>","<IF0404><JUMPedfd><CH0>
+What's this? ...A map!
+
+<CH2>
+It looks like a map of Jagri.
+That old mine, and Gilmore, are
+marked with X's.
+
+<CH1>
+And the X's are connected with a
+straight line.
+...Oh! Your Highness!
+
+Drucas must be digging a hole to
+the ruins beneath Gilmore from
+that mine.
+
+<CH3>
+Huh. So let's make nice with them,and have them take us along.
+
+<CH2>
+What are you talking about?
+
+<CH0>
+Wouldn't it be a lot simpler to
+tell Gordon about this?
+
+<CH1>
+I also think that would be best.
+
+<LOCedfd><ASMee48><IF0238><JUMPee2f><SET0404><CH3>
+Right. Well, let's clear our bags.<END>
+<LOCee2f><X1c>Obtained the <X04><X0e><X1c>.<X0c0301><X04>"

@@ -1,3 +1,4 @@
+"*","Jagri mine shaft"
 "e2fd","<X1e>ドルカス<X04>
 <SET0244>おい ボリス。
 本当に開けられるのか？
@@ -7,7 +8,15 @@
 おれに 開けられねえ カギなんか
 ねえんだ。
 
-黙って見てろ !!"
+黙って見てろ !!","<X1e>Drucas<X04>
+<SET0244>Hey, Boris... you sure you can
+open this?
+
+<X1e>Boris<X04>
+Jus' like I's kept tellin' ya,
+there ain't no lock I can't open.
+
+Now shut it an' watch!"
 "e395","<X1e>ドルカス<X04>
 バ バカ 何やってんだ !!
 爆薬を使えば おれにだって
@@ -20,14 +29,32 @@
 <X1e>ドルカス<X04>
 ふざけるな !!
 こんなの ３０ Goldで 十分だ。<WAIT>
-行くぞ !!"
+行くぞ !!","<X1e>Drucas<X04>
+W-What the hell?!
+Even I coulda opened that with
+blast powder!
+
+<X1e>Boris<X04>
+Well, let's just head in.
+Like ya promised, I'm takin'
+half tha loot.
+
+<X1e>Drucas<X04>
+Don't be a moron!
+30 gold is plenty for that!<WAIT>
+C'mon!"
 "e463","<X1e>ドルカスの手下<X04>
-本当に 鉱脈なんか あるのかねえ？"
+本当に 鉱脈なんか あるのかねえ？","<X1e>Drucas's henchman<X04>
+Ore veins, here? Really?"
 "e495","<X1e>ドルカスの手下<X04>
-30 Gold じゃ やってられねえよな。"
+30 Gold じゃ やってられねえよな。","<X1e>Drucas's henchman<X04>
+30 gold! How'm I s'posed ta keep
+this up?!"
 "e4c8","<X1e>ドルカスの手下<X04>
 うわっ びっくりしたな。<WAIT>
-ドルカスさまかと 思ったぜ。"
+ドルカスさまかと 思ったぜ。","<X1e>Drucas's henchman<X04>
+Whoa! You startled me!<WAIT>
+I thought you were Drucas!"
 "e50d","<X1e>ドランの仲間<X04>
 おお お前ら ドランの知り合いだろ？
 
@@ -36,4 +63,12 @@
 もう少し待っててくれ。<END>
 <LOCe587><SET0240>さっきまで ドルカスとボリスが
 来ていてな 何かヒソヒソと
-話していたぜ。"
+話していたぜ。","<X1e>Dran's mole<X04>
+Oh, you're friends of Dran?
+
+<IF0232><JUMPe587>I'll let you know if anything
+changes. Just give it a bit
+longer.<END>
+<LOCe587><SET0240>Drucas and Boris were here just a
+minute ago, whispering about
+something."
