@@ -1,3 +1,4 @@
+"*","Jagri ruins"
 "e2ab","<X1e>ボリス<X04>
 おい ドルカス。
 どこに宝があるんだ？
@@ -18,14 +19,36 @@
 残りの男どもは頼んだぜ。
 
 <X1e>ドルカス<X04>
-ボリス てめえ ふざけるんじゃねえ。"
+ボリス てめえ ふざけるんじゃねえ。","<CALL0003>Yo, Drucas, where's the treasure?
+
+<CALL0002>I don't see anything here.
+Let's check another room.
+
+<CH0>
+Stop! We know what you're up to.
+
+<ASMe3fc><CALL0002>Huh? And what're you gonna do
+about it? Hey, Boris.
+Throw 'em out.
+
+<CALL0003>Sure! I'll get the girl.
+You take care o' the men.
+
+<CALL0002>Are you kiddin' me?"
 "e418","<X1e>ゴードン<X04>
 <SET0239>待ちやがれ ドルカス。
 何か でかい音がしたから来てみりゃ
 これだぜ。
 
 <ASMe4a1>おい おめえら ドルカスとボリスを
-町から たたき出せ。"
+町から たたき出せ。","<CALL0001><SET0239>Stop right there, Drucas!
+I came to check out a loud noise,
+and this is what I find.
+
+<ASMe4a1>Boys, throw Drucas and Boris outtatown.<END>
+<LOC0001><X1e>Gordon<X04><RETN>
+<LOC0002><X1e>Drucas<X04><RETN>
+<LOC0003><X1e>Boris<X04><RETN>"
 "e4bd","<X1e>ゴードン<X04>
 <SET023a>お前ら うたがって悪かったな。
 ドランから いろいろと 聞いたぜ。
@@ -40,7 +63,20 @@
 
 <X1e>ドラン<X04>
 お坊ちゃん 光の剣とやらが
-見つかりゃ いいですね。"
+見つかりゃ いいですね。","<CALL0001><SET023a>Sorry I didn't trust you. Dran
+explained everything to me. You
+want to search the ruins, right?
+
+Well, knock yourselves out.
+
+Not much left in these ruins now,
+though. And I don't remember
+finding anything like that weapon
+you're looking for.
+
+<X1e>Dran<X04>
+Hope you can find that Sword of
+Light, l'il boss!"
 "e5f3","<IF0404><JUMPe662><CH0>
 おい ちょっと この本を見てくれ !!
 
@@ -55,4 +91,19 @@
 
 <ASMe6fb><IF023b><JUMPe6e2><SET0404><CH2>
 そうね でも 持ち物が多すぎるわよ。<END>
-<LOCe6e2><X0e><X1c>を手に入れました。<X0c0301><X04>"
+<LOCe6e2><X0e><X1c>を手に入れました。<X0c0301><X04>","<IF0404><JUMPe662><CH0>
+Hey, look at this book!
+
+<CH3>
+Can't read the writing. Looks
+full o' weapon pictures, though.
+
+<SPLITe662><LOCe662><CH1>
+There was a scholar in Gilmore,
+wasn't there? We should take it
+and ask him to read it for us.
+
+<ASMe6fb><IF023b><JUMPe6e2><SET0404><CH2>
+Yeah, but we're carrying too much
+right now.<END>
+<LOCe6e2><X1c>Obtained the <X04><X0e><X1c>.<X0c0301><X04>"
