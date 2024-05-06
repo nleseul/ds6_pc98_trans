@@ -36,7 +36,7 @@ if __name__ == '__main__':
                 continue
 
             with open(f"csv/Scenarios/{format_sector_key(scenario_key)}.csv", 'w+', encoding='utf8', newline='') as csv_out:
-                csv_writer = csv.writer(csv_out, quoting=csv.QUOTE_ALL)
+                csv_writer = csv.writer(csv_out, quoting=csv.QUOTE_ALL, lineterminator=os.linesep)
                 for start_addr, event_info in scenario_events.items():
                     csv_writer.writerow([f"{start_addr:04x}", event_info['text']])
         print()
@@ -54,7 +54,7 @@ if __name__ == '__main__':
                 continue
 
             with open(f"csv/Combats/{format_sector_key(combat_key)}.csv", 'w+', encoding='utf8', newline='') as csv_out:
-                csv_writer = csv.writer(csv_out, quoting=csv.QUOTE_ALL)
+                csv_writer = csv.writer(csv_out, quoting=csv.QUOTE_ALL, lineterminator=os.linesep)
                 for start_addr, event_info in combat_events.items():
                     csv_writer.writerow([f"{start_addr:04x}", event_info['text']])
         print()
@@ -69,7 +69,7 @@ if __name__ == '__main__':
     
         print("Extracting opening text...")
         with open("csv/Opening.csv", 'w+', encoding='utf8', newline='') as csv_out:
-            csv_writer = csv.writer(csv_out, quoting=csv.QUOTE_ALL)
+            csv_writer = csv.writer(csv_out, quoting=csv.QUOTE_ALL, lineterminator=os.linesep)
 
             opening_string = ""
             opening_string_count = 0
@@ -98,3 +98,12 @@ if __name__ == '__main__':
                             break
                     opening_string += string_bytes.decode('shift-jis')
                     opening_string += "\n"
+
+        print("Extracting ending text...")
+        with open("csv/Ending.csv", "w+", encoding='utf8', newline='') as csv_out:
+            csv_writer = csv.writer(csv_out, quoting=csv.QUOTE_ALL, lineterminator=os.linesep)
+            for ending_info in get_ending_strings():
+                event_disk.seek(0x14a10 + ending_info['addr'])
+                ending_string = read_ending_string(event_disk)
+
+                csv_writer.writerow([f"{ending_info['addr']:04x}", ending_string])

@@ -1502,3 +1502,43 @@ def extract_combat_events(scenario_disk, combat_key, combat_info):
             events[block.start_addr] = event_info
             
     return events
+
+
+def get_ending_strings():
+	return [
+		{ 'addr': 0x7496, 'references': [ 0x7227 ] },
+		{ 'addr': 0x76f6, 'references': [ 0x724f ] },
+		{ 'addr': 0x77b0, 'references': [ 0x7269 ] },
+		{ 'addr': 0x795e, 'references': [ 0x7286 ] },
+		{ 'addr': 0x7a17, 'references': [ 0x72a9 ] },
+		{ 'addr': 0x7a71, 'references': [ 0x72da ] },
+		{ 'addr': 0x7a97, 'references': [ 0x741e, 0x7421 ] }
+	]
+
+
+def read_ending_string(in_file):
+	full_string = ""
+
+	try:
+		while True:
+			next_byte = in_file.peek()[0]
+			if next_byte == 0x00:
+				full_string += "\n"
+				in_file.read(1)
+			elif next_byte == 0x01:
+				full_string += "<P>"
+				in_file.read(1)
+			elif next_byte == 0x02:
+				full_string += "\n\n"
+				in_file.read(1)
+			elif next_byte == 0x1f or next_byte == 0xbf or next_byte is None:
+				break
+			elif next_byte < 0x80 or (next_byte >= 0xa1 and next_byte <= 0xdf):
+				full_string += in_file.read(1).decode('shift-jis')
+			else:
+				full_string += in_file.read(2).decode('shift-jis')
+	except Exception as e:
+		print(f"Failed to decode something at position {in_file.tell():x}")
+		print(e)
+
+	return full_string
