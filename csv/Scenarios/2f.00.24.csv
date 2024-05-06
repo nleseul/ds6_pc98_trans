@@ -1,4 +1,8 @@
-"e0f6","<X08>目的の『光の剣』を 手に入れました。"
+"*","Gilmore (after Drucas ejected)"
+"e0f6","<X08>目的の『光の剣』を 手に入れました。","<X08>Your quest for the Swords of Lightis over!<END>
+<LOC0001><X1e>Gordon's henchman<X04><RETN>
+<LOC0002><X1e>Priest<X04><RETN>
+<LOC0003>candlesticks<RET_IL>"
 "e18d","<X1e>ゴードン<X04>
 <IF023d><JUMPe25e><IF023c><JUMPe1d7>おお お前ら なにか
 おもしろい物でも 見つかったか？<END>
@@ -8,17 +12,29 @@
 
 そうか じゃ また何かしょく台の
 代わりになる物を探さねえとな ･ ･ ･<WAIT>
-<SET023d><LOCe25e>持っていけ ドロボウ !!"
+<SET023d><LOCe25e>持っていけ ドロボウ !!","<X1e>Gordon<X04>
+<IF023d><JUMPe25e><IF023c><JUMPe1d7>Find anything interesting?<END>
+<LOCe1d7>What? The church's <CALL0003>?
+That's what you were looking for?
+
+I see. But, finding something
+else to replace 'em...<WAIT>
+<SET023d><LOCe25e>Take 'em. Thief!"
 "e27d","<X1e>ドラン<X04>
 <IF023f><JUMPe2b3>あっ お坊ちゃん
 何か見つかりましたか？<END>
 <LOCe2b3>とうとう 見つかったんですか
 少しでも お坊ちゃんの
-手助けができて うれしいですぜ。"
+手助けができて うれしいですぜ。","<X1e>Dran<X04>
+<IF023f><JUMPe2b3>Find anything yet, l'il boss?<END>
+<LOCe2b3>Ya finally found 'em?
+I'm happy I could help ya out a
+bit, l'il boss."
 "e305","<X1e>ゴードンの手下<X04>
 やあ あんたたちの おかげで
 ドルカスの野郎の 悪だくみが
-わかって 助かったよ。"
+わかって 助かったよ。","<CALL0001>Thanks to you, we put a stop to
+Drucas's tricks!"
 "e363","<IF01d1><JUMPe36f><IF023b><JUMPe4c1><LOCe36f><X1e>学者<X04>
 おれは古代のことを研究するために
 わざわざ悪いことをして ジャグリに
@@ -63,17 +79,68 @@
 <CH1>
 手がかりが なくなってしまったな。<END>
 <LOCe632>今は 古代文字の勉強を
-しているところだ。"
+しているところだ。","<IF01d1><JUMPe36f><IF023b><JUMPe4c1><LOCe36f><X1e>Scholar<X04>
+I'm a scholar. I committed a
+deliberate crime so I could do
+archaeological research in Jagri.
+
+<IF01d1><JUMPe632><CH0>
+A scholar? So do you know about
+the Sword of Light?
+
+<X1e>Scholar<X04>
+S-Sword of Light?<WAIT>
+... ...<WAIT>
+Well, it's certainly...
+
+It's certainly amazing, isn't it?
+I-I know all about it!
+
+<CH3>
+Doesn't know a damn thing, huh?
+
+<CH2>
+Yeah, I get that feeling too.
+He seems pretty embarassed about
+it.<END>
+<LOCe4c1><CH0>
+Since you're a scholar, can you
+tell us what's written in this
+book?
+
+<X1e>Scholar<X04>
+T-This book!!
+Was it in the ruins?
+
+But if I could read these, then
+I wouldn't have left them all
+over the ruins, now would I?
+
+I found them a long time ago, but
+I couldn't read them.
+
+<CH3>
+What's he even doin' here, then?
+
+<CH1>
+It seems we've lost this lead.<END>
+<LOCe632>I'm just about to start studying
+ancient writing."
 "e65b","<X1e>ゴードンの手下<X04>
 ドルカスと手下たちを ギルモアから
 追放したんだ。今ごろ どこかで
-野宿でも してるんじゃないかな。"
+野宿でも してるんじゃないかな。","<CALL0001>We kicked Drucas and his rabble
+out of Gilmore. They're prob'ly
+roughin' it in the woods now."
 "e6cc","<X1e>ゴードンの手下<X04>
 ドルカスたちが いなくなったから
 空き家が増えたんだ。
 
 そのうち おれも家に入れるように
-なるだろう。"
+なるだろう。","<CALL0001>There are a lot more empty houses
+now, with Drucas's people gone.
+
+Maybe I'll get my own house now?"
 "e73f","<X1e>神父<X04>
 <IF023f><JUMPe814><IF01d1><JUMPe887><IF0232><JUMPe785><SET0232>おや あなたがた ジャグリは
 初めてですね？
@@ -106,7 +173,40 @@
 
 <CH3>
 この神父は ウソつきだな。
-困ったことが あるから 言ってるのに。"
+困ったことが あるから 言ってるのに。","<CALL0002><IF023f><JUMPe814><IF01d1><JUMPe887><IF0232><JUMPe785><SET0232>This must be your first time in
+Jagri, I suppose?
+
+<LOCe785>There are ruins under the village
+of Gilmore.
+
+Those <CALL0003> are made from
+the stuff that's been found there.
+
+I came to minister to criminals.
+<LOCe814>Criminals need to know the true
+love of the gods more than anyone.Surely you agree?
+
+Please speak with me whenever
+you are troubled.<END>
+<LOCe887><SET023c>Please speak with me whenever
+you are troubled.
+
+<CH0>
+Excuse me, Father. Do you suppose
+we could have these <CALL0003>?
+
+<CALL0002>Oh, but that is such a cruel
+request.
+
+Those <CALL0003> were donated
+by Gordon, as a symbol of his
+deep faith. Would you trample his
+wishes so callously?
+
+<CH3>
+This priest's a damn liar.
+So much for ""speak to me when
+you're troubled."""
 "e9e2","<X1e>神父<X04>
 ゴードンが 別の物を探すから いいと言ったのですか。<WAIT>
 あの ゴードンが ･ ･ ･
@@ -124,4 +224,21 @@
 光のようなものが 伸びて
 光の剣が完成しました。
 
-<X1e>光の剣<X04>を 手に入れました。<X0c0301><ASMeb64>"
+<X1e>光の剣<X04>を 手に入れました。<X0c0301><ASMeb64>","<CALL0002>Gordon said he would search for
+something else?<WAIT>
+Oh, Gordon...
+
+Truly a sign of one who knows the
+true love of the gods! I am
+nothing if not reasonable.
+
+<X0b> receives a pair of
+<X1e><CALL0003><X04>.<X0c0301><PAGE>
+<ASMeb82>The <X1e>Gilmoran Star<X04> and the <X1e>GilmoranTear<X04> each fit cleanly into one of
+the <X1e><CALL0003><X04>.
+
+Something like light extends from
+the ends of the <CALL0003>.
+The Swords of Light are complete!
+
+Obtained the <X1e>Swords of Light<X04>.<X0c0301><ASMeb64>"
