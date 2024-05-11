@@ -1,8 +1,11 @@
-"dc30","アグニージャ<RET_IL>"
-"dc41","アグニージャは炎のブレスを吐いた。<X0a>"
-"dc64","<X08>戦いに 勝利しました。<RETN>"
+"dc30","アグニージャ<RET_IL>","Agnija<RET_IL>"
+"dc41","アグニージャは炎のブレスを吐いた。<X0a>","Agnija breathes fire!<X0a>"
+"dc64","<X08>戦いに 勝利しました。<RETN>","<X08>You have won the battle.<RETN>"
 "dc81","<X02>は大きくはばたいた !!<X0a>
-<CONT>は 風圧で吹き飛ばされた。<X0a>"
-"de87","アグニージャが現れた。<RETN>"
+<CONT>は 風圧で吹き飛ばされた。<X0a>","<X02>'s massive wings flap!<X0a>
+<CONT> is blown away by the
+strong wind.<X0a>"
+"de87","アグニージャが現れた。<RETN>","Agnija appears.<RETN>"
 "de9e","炎に触れた<X0e>は
-跡形もなく燃えてしまった !!<X0a>"
+跡形もなく燃えてしまった !!<X0a>","The <X0e> catches fire,
+and burns away without a trace!<X0a>"

@@ -1,6 +1,8 @@
 "e28f","<X08>    終章  そして英雄たちの伝説<N>
 
-                完<RET_IL>"
+                完<RET_IL>","<X08> Chapter VI: The Heroes of Legend<N>
+
+               FIN<RET_IL>"
 "e385","<CALLe7d5>ついに ここまで来たか
 人間の若者たちよ。
 
@@ -36,7 +38,44 @@
 
 <CALLe7d5>知らないまま 葬ってやるのも
 情けというもの。<WAIT>
-ゆくぞ !"
+ゆくぞ !","<CALLe7d5>Young humans... have you at last
+reached this place?
+
+Never did I expect that mere
+humans could come so far.
+
+I have protected this world for
+longer than you can possibly
+imagine.
+
+It was I who destroyed the ancientcivilization that prospered here
+long ages ago.<WAIT>
+But history repeats.
+
+If only I had simply destroyed
+humanity completely then...
+
+You would call me ""god of
+destruction""? ""Root of evil""?
+All I seek is to preserve this
+world.
+
+This time, I will weed out the
+seeds of humanity once and for
+all!
+
+<CH0>
+We won't let that happen!
+
+<CALLe7d5>Why? It was you humans who
+awakened me.
+
+<CH0>
+What do you mean?
+
+<CALLe7d5>To send you to your graves
+unknowing will be a mercy.<WAIT>
+Come!"
 "e63a","<X08><CALLe7d5>ふっふっふっ、愚かな奴らよ。
 この私が お前たち人間ごときに
 やられると思ってか !!
@@ -47,10 +86,22 @@
 
 その程度の力で この私を倒そうなど
 身の程 知らずも はなはだしい。
-命あるうちに ここから去るがいい。"
+命あるうちに ここから去るがいい。","<X08><CALLe7d5>Ha ha ha... Fools!
+You thought that mere humans coulddefeat me?
+
+What you defeated was my shadow.
+This battle was a test of your
+strength.
+
+So foolish of you to challenge me,with such paltry strength. Begone,while you still have your lives."
 "e745","<ASMe7b7><IF02ab><JUMPe783><CH3>
 なんだ このカギは !?
 こんなの 見たことも ねえぞ。<END>
 <LOCe783><X0e>で 扉に触れると
-みるみる 扉が溶けていきました。<X0c0301>"
-"e7d5","<X1e>アグニージャ<X04><RETN>"
+みるみる 扉が溶けていきました。<X0c0301>","<ASMe7b7><IF02ab><JUMPe783><CH3>
+This lock...
+Never seen anything like it.<END>
+<LOCe783>You touch the door with the
+<X0e>.
+It swiftly melts away.<X0c0301>"
+"e7d5","<X1e>アグニージャ<X04><RETN>","<X1e>Agnija<X04><RETN>"

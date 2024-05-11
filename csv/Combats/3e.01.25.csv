@@ -1,12 +1,17 @@
-"dc30","アグニージャ<RET_IL>"
-"dc41","アグニージャは炎のブレスを吐いた。<X0a>"
+"dc30","アグニージャ<RET_IL>","Agnija<RET_IL>"
+"dc41","アグニージャは炎のブレスを吐いた。<X0a>","Agnija breathes fire!<X0a>"
 "dc81","<X02>は大きくはばたいた !!<X0a>
-<CONT>は 風圧で吹き飛ばされた。<X0a>"
+<CONT>は 風圧で吹き飛ばされた。<X0a>","<X02>'s massive wings flap!<X0a>
+<CONT> is blown away by the
+strong wind.<X0a>"
 "dcc1","<X0e>では<X02>には
-ダメージを与えられない !!<X0a>"
-"deed","アグニージャだ !!<RETN>"
+ダメージを与えられない !!<X0a>","The <X0e> cannot damage
+<X02>!<X0a>"
+"deed","アグニージャだ !!<RETN>","Agnija!!<RETN>"
 "deff","<X08>イベントディスクをドライブ１に
 セットして【RETURN】キーを
-押してください。"
+押してください。","<X08>Insert the Event Disk into Drive
+1, and press the [RETURN] key."
 "df4b","炎に触れた<X0e>は
-跡形もなく燃えてしまった !!<X0a>"
+跡形もなく燃えてしまった !!<X0a>","The <X0e> catches fire,
+and burns away without a trace!<X0a>"
