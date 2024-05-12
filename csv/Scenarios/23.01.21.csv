@@ -3,48 +3,44 @@
 ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
 Welcome! My shop sells weapons
 and armor."
-"e14e","また来てくださいね。","You don't have any room for it.
-
-<RET_IL>"
+"e14e","また来てくださいね。","Come again!"
 "e18f","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは道具の店ですが
-どんなご用ですか？<RETN>","What would you like to buy?
-<RETN>"
-"e1d3","また来てくださいね。","You don't have any room for it.
+どんなご用ですか？<RETN>","<X1e>Tool merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e1d3","また来てくださいね。","Come again!"
+"e1f3","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
-"e1f3","おや？これ以上持てないようですね。
+"e217","どれを買ってくれますか？
+<RETN>","What would you like to buy?
+<RETN>"
+"e231","<X0e>だね。
+どうも ありがとう。
 
 <RET_IL>","The <X0e>?
 Thank you very much!
 
 <RET_IL>"
-"e217","どれを買ってくれますか？
-<RETN>","What would you like to sell?
-<RETN>"
-"e231","<X0e>だね。
-どうも ありがとう。
-
-<RET_IL>"," gold.
-Will that be okay?"
 "e256","どれを売ってくれますか？
-<RETN>","That's too bad...
-
+<RETN>","What would you like to sell?
 <RETN>"
 "e270"," Gold になるけど
 それでも よろしいですか？
-<RETN>","Thank you very much.
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e29c","それは残念です･･･ ･･･。
 
-<RETN>","<X1e>Weapon merchant<X04>
-Welcome! My shop sells weapons
-and armor."
-"e2b5","どうも ありがとうございます。
-<RETN>","You don't have any room for it.
+<RETN>","That's too bad...
 
-<RET_IL>"
+<RETN>"
+"e2b5","どうも ありがとうございます。
+<RETN>","Thank you very much.
+<RETN>"
 "e369","<X1e>男<X04>
 これは これは エリオンさま。
 去年 税が払えなくて 娘を奴隷商人に売ってしまいました。
@@ -52,8 +48,7 @@ and armor."
 これからは 税金を 安くしてくれる
 そうですが 娘は もう帰ってこない
 でしょう ･ ･ ･。","<X1e>Man<X04>
-Oh, Prince Aerion! When I couldn't
-pay my taxes last year, I sold my
+Oh, Prince Aerion! When I couldn'tpay my taxes last year, I sold my
 daughter to a slave merchant.
 
 The taxes may be lower now, but I
@@ -71,8 +66,8 @@ Welcome, Prince Aerion! I was
 just saying that your Highness hasdone everything we hoped for.
 
 When will your Highness be taking
-the throne soon? The townsfolk
-seem quite eager for it."
+the throne? The townsfolk seem
+quite eager for it."
 "e4dc","<X1e>女<X04>
 この町の娘たちは みんな奴隷商人に
 売られてしまいましたわ ･ ･ ･。
@@ -242,7 +237,7 @@ Excuse me. We'll take one.
 
 <X1e>Barkeep<X04>
 <LOCeb8b>That will be 1000 Gold per bottle.Is that okay?
-<ASMecdb><IF_NOT0400><JUMPec04><ASMecf2><IF_NOT0400><JUMPecaf><SET0121><ASMed02><X1c>Bought <X0e><X1c>.<X0c0301><X04><END>
+<ASMecdb><IF_NOT0400><JUMPec04><ASMecf2><IF_NOT0400><JUMPecaf><SET0121><ASMed02><X1c>Bought <X04><X0e><X1c>.<X0c0301><X04><END>
 <LOCebe7>Your bags look pretty full.<END>
 <LOCec04>
 
