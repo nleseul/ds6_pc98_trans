@@ -30,13 +30,14 @@ if __name__ == '__main__':
                     for candidate_index, candidate_translation in enumerate(file_object['data'][index]):
                         if candidate_index > 0 and candidate_translation is not None:
                             translation = candidate_translation
+
+                    if 'parameters' in file_object and index < len(file_object['parameters']) and file_object['parameters'][index] is not None:
+                        for parameter in file_object['parameters'][index]:
+                            if parameter['contextStr'] == context and len(parameter['translation']) > 0:
+                                translation = parameter['translation']
+
                     if translation is None:
                         csv_out.writerow([ context, info['original']])
                     else:
                         # CSVs always use line endings from the local environment.
                         csv_out.writerow([ context, info['original'], translation.replace("\r\n", os.linesep) ])
-
-                    if 'parameters' in file_object and index < len(file_object['parameters']) and file_object['parameters'][index] is not None:
-                        for parameter in file_object['parameters'][index]:
-                            if parameter['contextStr'] == context and len(parameter['translation']) > 0:
-                                raise Exception(f"Unsupported context-specific translation of text at {context}!")
