@@ -941,15 +941,21 @@ if __name__ == '__main__':
 
     print(f"{config['OutputEventDiskSource']} -> {config['OutputEventDisk']}")
     os.makedirs(os.path.dirname(config['OutputEventDisk']), exist_ok=True)
-    with open(config['OutputEventDiskSource'], 'rb') as event_disk_in, open(config['OutputEventDisk'], 'w+b') as event_disk_out:
-        event_disk_out.write(event_disk_patch.apply(event_disk_in.read()))
+    with open(config['OutputEventDiskSource'], 'rb') as event_disk_in:
+        disk_bytes = event_disk_in.read()
+    with open(config['OutputEventDisk'], 'w+b') as event_disk_out:
+        event_disk_out.write(event_disk_patch.apply(disk_bytes))
 
     print(f"{config['OutputProgramDiskSource']} -> {config['OutputProgramDisk']}")
     os.makedirs(os.path.dirname(config['OutputProgramDisk']), exist_ok=True)
-    with open(config['OutputProgramDiskSource'], 'rb') as program_disk_in, open(config['OutputProgramDisk'], 'w+b') as program_disk_out:
-        program_disk_out.write(program_disk_patch.apply(program_disk_in.read()))
+    with open(config['OutputProgramDiskSource'], 'rb') as program_disk_in:
+        disk_bytes = program_disk_in.read()
+    with open(config['OutputProgramDisk'], 'w+b') as program_disk_out:
+        program_disk_out.write(program_disk_patch.apply(disk_bytes))
 
     print(f"{config['OutputScenarioDiskSource']} -> {config['OutputScenarioDisk']}")
     os.makedirs(os.path.dirname(config['OutputScenarioDisk']), exist_ok=True)
-    with open(config['OutputScenarioDiskSource'], 'rb') as scenario_disk_in, open(config['OutputScenarioDisk'], 'w+b') as scenario_disk_out:
-        scenario_disk_out.write(scenario_disk_patch.apply(scenario_disk_in.read()))
+    with open(config['OutputScenarioDiskSource'], 'rb') as scenario_disk_in:
+        disk_bytes = scenario_disk_in.read()
+    with open(config['OutputScenarioDisk'], 'w+b') as scenario_disk_out:
+        scenario_disk_out.write(scenario_disk_patch.apply(disk_bytes))
