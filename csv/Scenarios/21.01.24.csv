@@ -191,7 +191,7 @@ the key when you found it?
 
 <LOCea01><JUMPefd1>
 <LOCec3f>I feel awful bad for all that."
-"ec62","これは これは<CALLefd1>。<RETN>","Prince Aerion<RET_IL>"
+"ec62","これは これは<CALLefd1>。<RETN>","our Highness<RET_IL>"
 "ec82","<X1e>女<X04>
 <IF0103><JUMPee5f><IF0107><JUMPedc7><IF0106><JUMPed32><SET0105><CALLee99><CALLefd1>の おかげで
 町に戻れましたわ。
@@ -255,7 +255,7 @@ to the royals after all.
 <ASMec75><SET0104>Should've taken y<CALLec62> at
 your word. Sorry for all the fuss.Here you go.
 
-<X1c>Received the <X04><X1c>.<X0c0301><X04>"
+<X1c>Received the <X04><X0e><X1c>.<X0c0301><X04>"
 "eeff","<X1e>老人<X04>
 <CALLefd1>たちの おかげで
 また港に 戻ることができました。
