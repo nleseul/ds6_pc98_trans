@@ -1,3 +1,4 @@
+"*","Pirate Isle, chapter 4"
 "e27c","<CALLeedf><IF00dd><JUMPebc6><IF00dc><JUMPeb4a><IF00db><JUMPe52a><ASMec72><IF_NOT0401><JUMPec25><CALLec29>
 
 クンクン、このにおいは !?<WAIT>
@@ -135,32 +136,191 @@
 ボアードさん、ありがとう。
 
 <CALLeedf>ナンノ なんの。 ポリ ポリ<END>
+<LOCec25><CALLec29>","<CALLeedf><IF00dd><JUMPebc6><IF00dc><JUMPeb4a><IF00db><JUMPe52a><ASMec72><IF_NOT0401><JUMPec25><CALLec29>
+
+Sniff... That smell!<WAIT>
+Are ya hidin' tha good stuff?!
+
+<CH3>
+Knew ya'd know right away just
+from the smell, Buald.
+
+<CALLeedf>T-That's rum!
+C'mon, Gail, lemme have some!
+
+<CH3>
+Of course. Brought it for you,
+after all.
+
+<ASMec8e><SET00db><X1c>Handed over the <X04><X0e><X1c>.<X0c0301><X04>
+
+<CALLeedf>Ah! Nothin' like havin' friends.
+
+Say, where'd ya find this stuff?
+
+<CH3>
+The bar in Selis.
+
+<CALLeedf>Selis?
+Wasn't it o'errun by monsters?
+
+Y-Ya mean the monsters're gone?!
+
+<CH1>
+That's correct. Not a single one
+remains in the Kingdom of Lanoura.
+
+<CALLeedf>Ya don't say! Well, thanks fer
+lettin' me know. I'll send someoneta buy some rum right away.
+
+<ASMec96><LOCe52a><SET00dc><SET00dd>Huh, ya wiped those monsters out?
+That's impressive.
+Where're ya off ta next?
+
+<CH1>
+We don't know. We intended to
+continue to Soldythe, but the
+Border Cave is impassable.
+
+<CH0>
+Achdam's trail is cut off after
+Wonliech.
+
+<CH2>
+Maybe all we can do is head back
+to Farleyn for now.
+
+<CH3>
+Maybe we should. Be nice to see
+it again.
+
+<CH0>
+No!!
+I can't go home until I've beaten
+Achdam. I swore a vow!
+
+<CH2>
+I guess that's true.
+What should we do, then?
+
+<CH1>
+I have no doubt that Achdam came
+to Lanoura.
+
+We also know that my brother Flartwas unable to flee to Soldythe
+because of the cave-in at the
+Border Cave.
+
+However, there has never been a
+single cave-in there previously.
+
+The cave-in happened exactly when
+we were on our way to Lanoura. In
+other words, we must assume that
+it happened when Achdam arrived.
+
+<CH2>
+So the cave-in could have been
+Achdam's work?
+
+I think it's highly likely.
+Achdam's the only person who wouldbenefit from making the cave
+impassable.
+
+<CH0>
+Then there's a strong chance
+that Achdam is in Soldythe.
+
+<CH1>
+Yes. So, one way or another, we
+want to go to Soldythe.
+
+<CALLeedf>So yer sayin' ya'd like
+ta go through the Border Cave?
+
+<CH3>
+Right. Maybe if we had some
+gunpowder... !!
+
+<X1c>Buald is grinning ear to ear.<X04>
+
+<CALLeedf>If ya had some gunpowder?<WAIT>
+Who do ya think I am?!<WAIT>
+Where do ya think we are?!
+
+This whole place reeks o'
+gunpowder!
+
+<CH3>
+Of course. Pirates.
+All right, we'll help ourselves.
+
+<CALLeedf>One barrel fer one bottle o' rum!
+That's the rate. No arguin'.
+
+<CH3>
+Hah, just one barrel? 
+All right, fine.
+
+<CALLeedf><JUMPebc6><LOCeb4a><ASMec72><IF_NOT0401><JUMPeb94>What? More gunpowder?
+<ASMec84><X08><IF_NOT00dd><JUMPeb94><X1c>Handed over the <X04><X0e><X1c>.<X0c0301><X04>
+
+<JUMPebc6><LOCeb94>If ya want more, you'll have ta
+trade some rum fer it!<END>
+<LOCebc6>Pick it up in the armory.
+In there, on the right.
+
+<CH2>
+Thank you so much, Buald.
+
+<CALLeedf>I-It's no problem! Hee hee...<END>
 <LOCec25><CALLec29>"
 "ec29","くそー、イライラするなー !!<WAIT>
 お前らの顔なんか 見たくもねぇ !!
-出ていけ !!<RET_IL>"
+出ていけ !!<RET_IL>","Dammit, I'm pissed!!<WAIT>
+An' I don't wanna see yer faces!
+Now sod off!!<RET_IL>"
 "ecac","<X1e>海賊<X04>
 <IF00db><JUMPed08>ワ、わりーな
 船長に あんたたちとは 口をきいちゃいけないって 言われているんだ。<END>
 <LOCed08>いやー、船長のきげんが なおって
-助かったよ。"
+助かったよ。","<X1e>Pirate<X04>
+<IF00db><JUMPed08>S-Sorry. The cap'n said we wasn't
+s'posed ta speak ta you.<END>
+<LOCed08>Wow! The cap'n's in a better mood
+now."
 "ed35","<X1e>海賊<X04>
 よう 客人、
-おれと ゲームで 勝負しねーか。<RETN>"
+おれと ゲームで 勝負しねーか。<RETN>","<X1e>Pirate<X04>
+Welcome, guests!
+Care to play a game?<RETN>"
 "ed67","<X08>そうか、じゃあ しょうがねえな。
-いつでも来なよ 相手になってやるぜ。"
+いつでも来なよ 相手になってやるぜ。","<X08>No prob! Come back and play
+any time!"
 "edac","<IF_NOT00dd><JUMPecac><X1e>海賊<X04>
 船長の許可を もらってきたって？
 <ASMee5c><IF0401><JUMPee1c><CLEAR00dd>わかった、ほらよ 持っていきな。<WAIT>
 <X0e><X1c>をもらいました。<X0c0301><X04><END>
 <LOCee1c>いくら 許可をもらってきたって
-持てねーもんは しょうがねーよな。"
+持てねーもんは しょうがねーよな。","<IF_NOT00dd><JUMPecac><X1e>Pirate<X04>
+Ya get the cap'n's permission?
+<ASMee5c><IF0401><JUMPee1c><CLEAR00dd>All right, here ya go.<WAIT>
+<X1c>Received <X04><X0e><X1c>.<X0c0301><X04><END>
+<LOCee1c>No matter what the cap'n says,
+ya can't hold any more."
 "ee74","<IF_NOT00db><JUMPecac><X1e>海賊<X04>
 <IF0408><JUMPeec0><IF0409><JUMPeec0>やあ 客人 元気そうだな？
 疲れたら いつでも来なよ。<END>
-<LOCeec0><SET0400>さあ ゆっくり休んでくんな。"
-"eedf","<X1e>ボアード<X04><RETN>"
+<LOCeec0><SET0400>さあ ゆっくり休んでくんな。","<IF_NOT00db><JUMPecac><X1e>Pirate<X04>
+<IF0408><JUMPeec0><IF0409><JUMPeec0>How ya feelin', guests?
+If yer tired, ya can always take
+a rest here.<END>
+<LOCeec0><SET0400>Okay, rest well!"
+"eedf","<X1e>ボアード<X04><RETN>","<X1e>Buald<X04><RETN>"
 "eeea","<X1e>ミラルダ<X04>
-なんだね、まだ何か用があるのかい。"
+なんだね、まだ何か用があるのかい。","<X1e>Miralda<X04>
+Don't need anything else, do you?"
 "ef18","<X1e>神父<X04>
-なんだ 用がねえのに 話しかけるな !"
+なんだ 用がねえのに 話しかけるな !","<X1e>Priest<X04>
+If ya don't need anything,
+don't bug me!"
