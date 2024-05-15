@@ -1,8 +1,10 @@
-"dc30","オディノンＡ<RET_IL>"
-"dc70","オディノンＢ<RET_IL>"
-"dcb0","オディノンＣ<RET_IL>"
-"ddb8","オディノンの群れが現れた。<RETN>"
+"dc30","オディノンＡ<RET_IL>","Odinon A<RET_IL>"
+"dc70","オディノンＢ<RET_IL>","Odinon B<RET_IL>"
+"dcb0","オディノンＣ<RET_IL>","Odinon C<RET_IL>"
+"ddb8","オディノンの群れが現れた。<RETN>","A cluster of odinons appear.<RETN>"
 "ddd3","は胞子をまきちらした。<X0a>
 <CONT><X0b>は 一斉に はなを
-つまんだ。<X0a>"
-"de53","誰も 胞子を吸い込まなかった。<X0a>"
+つまんだ。<X0a>"," scatters spores.<X0a>
+<CONT><X0b> all hold their
+noses.<X0a>"
+"de53","誰も 胞子を吸い込まなかった。<X0a>","No one inhales the spores.<X0a>"
