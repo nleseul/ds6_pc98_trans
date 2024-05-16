@@ -2,7 +2,7 @@
 "dc70","ファイアーモス<RET_IL>","Fire Moth<RET_IL>"
 "de3e","サラマンダーとファイアーモスが
 現れた !!<RETN>","A salamander and a fire moth
-appear!"
+appear!<RETN>"
 "de67","は炎を吐いた。<X0a>
 <CONT><X02>の目の前に火柱が立った !!<X0a>"," breathes fire.<X0a>
 <CONT>A plume of flame rises in front
