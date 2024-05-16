@@ -1,13 +1,16 @@
-"dc30","ﾃﾞﾓﾝｺﾞｰｽﾄ Ａ<RET_IL>"
-"dc70","ダークリッチ<RET_IL>"
-"dcb0","ﾃﾞﾓﾝｺﾞｰｽﾄ Ｂ<RET_IL>"
-"dcf0","ﾃﾞﾓﾝｺﾞｰｽﾄ Ｃ<RET_IL>"
+"dc30","ﾃﾞﾓﾝｺﾞｰｽﾄ Ａ<RET_IL>","Demon Ghost A<RET_IL>"
+"dc70","ダークリッチ<RET_IL>","Dark Lich<RET_IL>"
+"dcb0","ﾃﾞﾓﾝｺﾞｰｽﾄ Ｂ<RET_IL>","Demon Ghost B<RET_IL>"
+"dcf0","ﾃﾞﾓﾝｺﾞｰｽﾄ Ｃ<RET_IL>","Demon Ghost C<RET_IL>"
 "de32","デモンゴーストを従えた、
-ダークリッチが現れた。<RETN>"
+ダークリッチが現れた。<RETN>","A dark lich appears, accompanied
+by demon ghosts.<RETN>"
 "de62","は ﾃﾞﾓﾝｺﾞｰｽﾄを
-召喚した。<X0a>"
-"de7c","<X02>は召喚に応えた。<X0a>"
+召喚した。<X0a>"," summons a demon ghost.<X0a>"
+"de7c","<X02>は召喚に応えた。<X0a>","<X02> answers the summons.<X0a>"
 "de8e","しかし、ﾃﾞﾓﾝｺﾞｰｽﾄは応えなかった。<X0a>
-<CONT><X02>は、カッとなった。<X0a>"
+<CONT><X02>は、カッとなった。<X0a>","But no demon ghosts respond.<X0a>
+<CONT><X02> is furious.<X0a>"
 "deeb","は凍るような息を
-吐いた !!<X0a>"
+吐いた !!<X0a>"," breathes freezing
+breath!<X0a>"

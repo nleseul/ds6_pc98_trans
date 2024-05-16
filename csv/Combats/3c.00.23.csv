@@ -1,7 +1,7 @@
 "dc30","ｼﾞｬｲｱﾝﾄ ｴｲﾌﾟＡ<RET_IL>","Giant Ape A<RET_IL>"
 "dc70","インプ<RET_IL>","Imp<RET_IL>"
 "dcb0","ｼﾞｬｲｱﾝﾄ ｴｲﾌﾟＢ<RET_IL>","Giant Ape B<RET_IL>"
-"de5c","ジャイアント エイプの群れだ !!<RETN>","A troop of giant apes!!<RETN>"
+"de5c","ジャイアント エイプの群れだ !!<RETN>","Giant apes and imps!!<RETN>"
 "de94","の攻撃を受けた<X02>は
 体がしびれてきた。<X0a>
 <CONT><X02>は眠ってしまった !!<X0a>","'s attack leaves <X02>'s
@@ -10,11 +10,11 @@ body feeling numb.<X0a>
 "dece","は身も凍るような
 叫び声をあげた !!<X0a>
 <CONT>その声を聞いた<X02>は恐怖で
-防御力が <RET_IL>","lets out a
+防御力が <RET_IL>"," lets out a
 bone-chilling cry!<X0a>
 <CONT>Upon hearing it, <X02> is
 terrified!
 Defense is reduced by <RET_IL>"
 "df20","は目にもとまらぬ
-パンチをくりだした !!<X0a>","throws a punch too
+パンチをくりだした !!<X0a>"," throws a punch too
 fast for the eye to follow!<X0a>"

@@ -1,5 +1,5 @@
-"dc30","バルガー<RET_IL>"
-"dda7","バルガーが現れた。<RETN>"
-"ddba","は急降下攻撃をした !!<X0a>"
+"dc30","バルガー<RET_IL>","Valgar<RET_IL>"
+"dda7","バルガーが現れた。<RETN>","A valgar appears!<RETN>"
+"ddba","は急降下攻撃をした !!<X0a>"," swoops down and attacks!<X0a>"
 "ddd0","しかし、<X02>は
-ひらりと 身をかわした !!<X0a>"
+ひらりと 身をかわした !!<X0a>","But <X02> dodges nimbly.<X0a>"

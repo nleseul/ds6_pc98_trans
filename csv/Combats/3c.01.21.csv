@@ -2,9 +2,11 @@
 "dc70","アジイＢ<RET_IL>","Aji'i B<RET_IL>"
 "dcb0","アジイＣ<RET_IL>","Aji'i C<RET_IL>"
 "ddcf","アジイが現れた。<RETN>","A band of aji'i appear!<RETN>"
-"dde0","は様子を見ている。<X0a>"
-"ddf3","は<X02>に<RET_IL>"
+"dde0","は様子を見ている。<X0a>","　watches and waits.<X0a>"
+"ddf3","は<X02>に<RET_IL>"," casts <RET_IL>"
 "ddf9","を唱えた。<X0a>
-<CONT>しかし、<RET_IL>"
-"de34","は暇なので眠くなってきた。<X0a>"
-"de4f","は眠ってしまった。<X0a>"
+<CONT>しかし、<RET_IL>"," on <X02>.<X0a>
+<CONT>But <RET_IL>"
+"de34","は暇なので眠くなってきた。<X0a>"," is getting sleepy
+with nothing to do.<X0a>"
+"de4f","は眠ってしまった。<X0a>"," falls asleep.<X0a>"

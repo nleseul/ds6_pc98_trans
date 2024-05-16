@@ -1,9 +1,13 @@
-"dc30","サラマンダー<RET_IL>"
-"dc70","ファイアーモス<RET_IL>"
+"dc30","サラマンダー<RET_IL>","Salamander<RET_IL>"
+"dc70","ファイアーモス<RET_IL>","Fire Moth<RET_IL>"
 "de3e","サラマンダーとファイアーモスが
-現れた !!<RETN>"
+現れた !!<RETN>","A salamander and a fire moth
+appear!"
 "de67","は炎を吐いた。<X0a>
-<CONT><X02>の目の前に火柱が立った !!<X0a>"
+<CONT><X02>の目の前に火柱が立った !!<X0a>"," breathes fire.<X0a>
+<CONT>A plume of flame rises in front
+of <X02>!<X0a>"
 "de91","は熱いリンプンを
-ふりまいた !!<X0a>"
-"deb0","<X02>は助けを呼んだ !!<X0a>"
+ふりまいた !!<X0a>"," scatters its red-hot
+scales!<X0a>"
+"deb0","<X02>は助けを呼んだ !!<X0a>","<X02> calls for help!<X0a>"

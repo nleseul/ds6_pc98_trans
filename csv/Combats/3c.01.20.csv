@@ -5,6 +5,6 @@
 <X02>!<X0a>"
 "dde1","は砂を吐いた !!<X0a>
 <CONT><X02>の目に入ってしまった !!
-すばやさが <RET_IL>","spits sand!<X0a>
+すばやさが <RET_IL>"," spits sand!<X0a>
 <CONT>It gets in <X02>'s eyes!!
 Speed is reduced by<RET_IL>"
