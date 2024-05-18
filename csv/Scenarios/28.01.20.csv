@@ -1,40 +1,61 @@
+"*","Rudra - Chapter 4 (after dragon hatching scene)"
 "e122","<X1e>賢者<X04>
 わしは 多くの人に 呪文を
-教えるためにおる。<X0d>"
-"e155","<X08>どの 呪文を 書き込むかね？<RETN>"
-"e171","誰の 呪文の書に 書き込むかね？<RETN>"
-"e190","どこに 書き込むかね？<RETN>"
-"e1a6","では、書き込むとしよう。<X0a>"
+教えるためにおる。<X0d>","<X1e>Sage<X04>
+I am here to teach spells to as
+many people as I can.<X0d>"
+"e155","<X08>どの 呪文を 書き込むかね？<RETN>","<X08>Which spell do you want?<RETN>"
+"e171","誰の 呪文の書に 書き込むかね？<RETN>","Whose spellbook should I
+scribe it in?<RETN>"
+"e190","どこに 書き込むかね？<RETN>","Where should I scribe it?<RETN>"
+"e1a6","では、書き込むとしよう。<X0a>","Okay, I'll scribe it.<X0a>"
 "e1cd","また、必要になったら
-いつでも 来なさい。"
+いつでも 来なさい。","Should you have any further needs,you may always come to me."
 "e21b","<X1e>武器屋<X04>
 プラチナの剣は いいよー。
 この光具合を 見てみなよ。
 
-<RET_IL>"
-"e259","まいど。"
+<RET_IL>","<X1e>Weapon merchant<X04>
+Platinum Swords are amazing!
+Just look at how the light hits
+them!"
+"e259","まいど。","Thanks."
 "e28c","<X1e>道具屋<X04>
 へい、らっしゃい。道具屋だよ。
-売るのかい 買うのかい？<RETN>"
-"e2cc","よろしく。"
+売るのかい 買うのかい？<RETN>","<X1e>Tool merchant<X04>
+C'mon in! This is a tool shop.
+You buyin' or sellin'?"
+"e2cc","よろしく。","Much appreciated!"
 "e2e2","あんたら もう持てねーじゃん。
+
+<RET_IL>","Not much room for it there.
 
 <RET_IL>"
 "e301","どれを買うね？
+<RETN>","What are you buyin'?
 <RETN>"
 "e311","<X0e>だね。
 まいどあり。
 
+<RET_IL>","The <X0e>?
+Thanks!
+
 <RET_IL>"
 "e32f","どれを 売るね？
+<RETN>","What are you sellin'?
 <RETN>"
 "e340"," Gold になるけど
 いいかい？
+<RETN>","gold.
+How's that?
 <RETN>"
 "e35d","そうか しかたねーな。
 
+<RETN>","Too bad.
+
 <RETN>"
 "e374","まいどあり。
+<RETN>","Thanks!
 <RETN>"
 "e47c","<X1e>ハリー<X04>
 <IF0176><JUMPe938><IF0192><JUMPe8fa><SET0192>どうしたんです？ そんなに慌てて。
@@ -121,11 +142,105 @@
 
 <X1e>ハリー<X04>
 なんの、なんの。
+","<X1e>Harry<X04>
+<IF0176><JUMPe938><IF0192><JUMPe8fa><SET0192>What's going on? You're in such
+a hurry.
+
+Don't tell me you got the dragon
+cloth!
+
+<CH3>
+Stand down, knave! Surely you
+must know this cloth!
+
+<X1e>Harry<X04>
+I-Is that...?
+
+<CH3>
+The dragon cloth itself deigns
+appear before us!
+
+<X1e>Harry<X04>
+Aieeee!!
+F-Forgive me, lord of Mito...
+I did not know!
+
+<CH1>
+Gail, what are you doing?
+
+<CH2>
+And Harry's joining in too...
+
+<CH3>
+Sorry, sorry.<WAIT>
+Always wanted to try that.
+
+<X1e>Harry<X04>
+Oh, I must've gotten carried away.
+
+<CH1>
+I suppose we should reconsider
+our assessment of Harry.
+
+<ASMe9cc><X1c>Gave the dragon cloth to Harry.<X0c0301><X04>
+
+<X1e>Harry<X04>
+Ha ha...
+Anyway, I'm amazed you got this.
+And so much of it!
+
+With this amount, I can make as
+many kites as I want.
+
+<CH3>
+Really?<WAIT>
+Then let a hundred thousand be
+made!!
+
+<X1e>Harry<X04>
+... ... ...
+
+<CH1>
+You're acting somewhat strangely,
+Gail. Are you feeling feverish?
+
+<X1e>Harry<X04>
+Okay, I'll make a kite as fast
+as I can. Head to the Vane Tower
+and wait for me.
+
+<CH3>
+What, you're not comin' with us?
+How do we know you're not gonna
+run off with the cloth?!
+
+<CH1>
+That's enough, Gail.<WAIT>
+All right, Harry. We'll wait
+for you there.<END>
+<LOCe8fa>You'll just be in the way here,
+so go on ahead of me.<END>
+<LOCe938>Oh, hello again.
+That was an amazing flight!
+
+I really can't believe it flew
+like that on the first try.
+
+<CH0>
+Thank you, Harry.
+
+<X1e>Harry<X04>
+Don't worry about it.
 "
 "e9d9","<X1e>女<X04>
 <IF0400><JUMPea27>ここの船は モレストン共和国まで
 行ってるの しばらく 戻らないわよ。<END>
-<LOCea27>あら 船だったら 出航したばかりよ。ついてないわね。"
+<LOCea27>あら 船だったら 出航したばかりよ。ついてないわね。","<X1e>Woman<X04>
+<IF0400><JUMPea27>A ship leaves here for the
+Republic of Moreston. It's been
+a while since it's come back.<END>
+<LOCea27>The boat? it just left.
+Too bad, right?"
 "ea5a","<X1e>女<X04>
 <IF0176><JUMPeace>ハリーさんて おもしろい人よ。
 
@@ -144,13 +259,41 @@
 
 飛ぶために いちいち 高い所に
 登るんだったら、まっすぐ目的地に
-向かったほうが 早いわよね。"
+向かったほうが 早いわよね。","<X1e>Woman<X04>
+<IF0176><JUMPeace>Harry is a strange guy.
+
+He can't stand chestnuts!
+How could anyone hate something
+so delicious?<END>
+<LOCeace>I heard Harry finished his big
+kite.
+
+He's happy now that he's flown
+over Vasnune Castle.
+<PAGE>
+I don't know what the point is,
+though. It's not like you can
+fly away like a bird with it.
+
+If you have to climb to somewhere
+high up every time, it's still
+faster to just go straight to
+wherever you're going."
 "ebd8","<X1e>老人<X04>
 昔は モレストン共和国まで 国境の
 山を越えて 行っていたのじゃ。
 
 今では 船という乗り物が
-できたおかげで 便利になりおった。"
+できたおかげで 便利になりおった。","<X1e>Old man<X04>
+We used to climb the mountains to
+cross over the border into the
+Republic of Moreston.
+
+But it's a lot more convenient
+today, now that we have these
+boat things."
 "ec58","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
