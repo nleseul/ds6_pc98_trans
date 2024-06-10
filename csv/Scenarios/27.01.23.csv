@@ -1,3 +1,4 @@
+"*","Vasnune Castle 2F - Chapter 5/6"
 "e25a","<X1e>アートス国王<X04>
 <IF0215><JUMPe3d6><IF0175><JUMPe376>セリオス王子、ご苦労であった。
 ところで ディーナは？
@@ -55,7 +56,61 @@
 やっぱりか。
 
 <CH1>
-王子、大目に見てあげましょう。"
+王子、大目に見てあげましょう。","<X1e>King Arthos<X04>
+<IF0215><JUMPe3d6><IF0175><JUMPe376>Well done, Prince Selios.
+But where is Dina?
+
+<CH0>
+...Well...
+
+<CH1>
+Perhaps I should be the one to
+explain.
+
+Your Majesty, it seems that
+Achdam abandoned Princess Dina in
+the middle of the desert.
+
+<X1e>King Arthos<X04>
+W-What?!
+Dina...<END>
+<LOCe376>I apologize for burdening you
+with these matters, Prince Selios.
+
+Please do what you can to see thatDina returns safely.<END>
+<LOCe3d6><IF0404><JUMPe589><SET0404>Thank you for everything, Prince
+Selios. The traveler named Roh
+brought Dina here on your behalf.
+
+And I understand that he also
+saved all your lives? He has my
+gratitude for that as well.
+
+<CH0>
+Did he...?
+<PAGE>
+<CH1>
+Undoubtedly. He must have
+stretched the truth somewhat.
+<PAGE>
+Has Roh caused any trouble for
+your Majesty?
+
+<X1e>King Arthos<X04>
+N-No, not at all.
+The important thing is that Dina
+is home safely.<END>
+<LOCe589>No, do not be concerned.
+Who is this Roh, by the way?
+
+He said that he is very well-knownin Farleyn.
+
+<CH0>
+He did?
+
+<CH1>
+Perhaps we should let the matter
+drop, your Highness."
 "e62d","<X1e>砂漠の商人<X04>
 こっ、国王さま !!<WAIT>
 ディ、ディーナ姫が !!
@@ -101,18 +156,74 @@
 
 <X1e>アートス国王<X04>
 おお そうしてくれるか。
-やはり 頼もしい王子だな。"
+やはり 頼もしい王子だな。","<X1e>Desert Merchant<X04>
+Y-Your Majesty!!<WAIT>
+D-Dina...!
+
+<X1e>King Arthos<X04>
+Please, compose yourself and
+speak.
+
+<X1e>Desert Merchant<X04>
+I've found Princess Dina.
+
+<X1e>King Arthos<X04>
+What?! Where is she?
+
+<X1e>Desert Merchant<X04>
+There was a slave merchant who
+came to the town of E'me. One of
+his girls was the princess.
+
+<X1e>King Arthos<X04>
+Why did you not bring her with
+you?
+
+<X1e>Desert Merchant<X04>
+She seemed to have lost her
+memory, and was unable to speak...
+
+But there's no doubt that she
+looked like the Princess.
+
+<X1e>King Arthos<X04>
+I see. Thank you for bringing thisinformation.
+
+<X1e>Desert Merchant<X04>
+E-Excuse me, your Majesty.
+The reward?
+
+<X1e>King Arthos<X04>
+Yes, of course.
+Queen Claire is on the floor
+below. She will attend to that.
+
+<CH0>
+I'll go to E'me and find Dina,
+your Majesty.
+
+<X1e>King Arthos<X04>
+Will you?
+A most reliable Prince, indeed."
 "e931","<X1e>兵士<X04>
 セリオスさま ご結婚なされたら
 こちらに いらっしゃるのですか
-それとも ファーレーンですか？"
+それとも ファーレーンですか？","<X1e>Soldier<X04>
+When your Highness is married,
+will you be living here? Or in
+Farleyn?"
 "e992","<X1e>兵士<X04>
 いっそのこと ２国が合併して
 ファルディスという国でも
-作られたら いかがでしょう？"
+作られたら いかがでしょう？","<X1e>Soldier<X04>
+What if our lands were to unite
+into the kingdom of Faldythe?"
 "e9ea","<X1e>兵士<X04>
 私たちが 頼りないばかりに ･ ･ ･
-申し訳ございません。"
+申し訳ございません。","<X1e>Soldier<X04>
+We've been nothing but
+unreliable... I apologize."
 "ea26","<X1e>兵士<X04>
 王子さまは ファーレーンでは
-きっと 人気者でしょうな。"
+きっと 人気者でしょうな。","<X1e>Soldier<X04>
+Your Highness must be very popularin Farleyn."

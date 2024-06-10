@@ -1,25 +1,43 @@
+"*","Vasnune Castle 1F (After Sylphie fight)"
 "e165","<X1e>賢者<X04>
 わしは この国一の賢者じゃ。
-そなたたちに 呪文を授けよう。<X0d>"
-"e1a6","<X08>どの 呪文を 書き込むかね？<RETN>"
-"e1c2","誰の 呪文の書に 書き込むかね？<RETN>"
-"e1e1","どこに 書き込むかね？<RETN>"
-"e1f7","では、書き込むとしよう。<X0a>"
+そなたたちに 呪文を授けよう。<X0d>","<X1e>Sage<X04>
+I am the wisest sage in Soldythe.
+Shall I teach you any spells?<X0d>"
+"e1a6","<X08>どの 呪文を 書き込むかね？<RETN>","<X08>Which spell do you wish?<RETN>"
+"e1c2","誰の 呪文の書に 書き込むかね？<RETN>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e1e1","どこに 書き込むかね？<RETN>","Where shall I scribe it?<RETN>"
+"e1f7","では、書き込むとしよう。<X0a>","Do you wish me to scribe anything
+more?<X0a>"
 "e21e","また、必要になったら
-いつでも 来なさい。"
+いつでも 来なさい。","Should you have any further needs,you may always come to me."
 "e2a4","<X1e>クレア王妃<X04>
 事情は 大体 わかっております。
 お父上のかたきを 討てますよう、
-お祈りしておりますわ。"
+お祈りしておりますわ。","<X1e>Queen Claire<X04>
+I am aware of the situation.
+I pray that you will be able to
+avenge your father."
 "e307","<X1e>侍女<X04>
 クレアさまは 本当は ディーナ姫の
 ことを 心配して おいでなのよ。
 
 でも、王子さまに負担をかけないようにって あんなに無理をなされて ･ ･ 
 
-お願いです、ディーナ姫を救い出してください。"
+お願いです、ディーナ姫を救い出してください。","<X1e>Maid<X04>
+Queen Claire is really quite
+worried about Princess Dina.
+
+But she's going out of her way to
+avoid burdening your Highness withthe matter.
+
+Please, rescue the Princess soon!"
 "e3c0","<X1e>兵士<X04>
 やあ はずかしい クレアさまに
-怒られて しまいましたよ。"
+怒られて しまいましたよ。","<X1e>Soldier<X04>
+I'm so ashamed! I've gone and
+made the queen angry."
 "e3fe","<X1e>兵士<X04>
-私も 侍女に 怒られて しまいました。"
+私も 侍女に 怒られて しまいました。","<X1e>Soldier<X04>
+And I've got the maid angry at me."

@@ -150,15 +150,16 @@ Don't tell me you got the dragon
 cloth!
 
 <CH3>
-Stand down, knave! Surely you
-must know this cloth!
+On your knees! Can your eyes not
+see this cloth?
 
 <X1e>Harry<X04>
 I-Is that...?
 
 <CH3>
-The dragon cloth itself deigns
-appear before us!
+It is the noble cloth of the
+dragon that deigns to appear
+before you!
 
 <X1e>Harry<X04>
 Aieeee!!
@@ -239,7 +240,7 @@ Don't worry about it.
 <IF0400><JUMPea27>A ship leaves here for the
 Republic of Moreston. It's been
 a while since it's come back.<END>
-<LOCea27>The boat? it just left.
+<LOCea27>The boat? It just left.
 Too bad, right?"
 "ea5a","<X1e>女<X04>
 <IF0176><JUMPeace>ハリーさんて おもしろい人よ。

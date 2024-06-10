@@ -1,12 +1,17 @@
+"*","Vasnune Castle 1F - Chapter 5/6"
 "e170","<X1e>賢者<X04>
 わしは この国一の賢者じゃ。
-そなたたちに 呪文を授けよう。<X0d>"
-"e1b1","<X08>どの 呪文を 書き込むかね？<RETN>"
-"e1cd","誰の 呪文の書に 書き込むかね？<RETN>"
-"e1ec","どこに 書き込むかね？<RETN>"
-"e202","では、書き込むとしよう。<X0a>"
+そなたたちに 呪文を授けよう。<X0d>","<X1e>Sage<X04>
+I am the wisest sage in Soldythe.
+Shall I teach you any spells?<X0d>"
+"e1b1","<X08>どの 呪文を 書き込むかね？<RETN>","<X08>Which spell do you wish?<RETN>"
+"e1cd","誰の 呪文の書に 書き込むかね？<RETN>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e1ec","どこに 書き込むかね？<RETN>","Where shall I scribe it?<RETN>"
+"e202","では、書き込むとしよう。<X0a>","Do you wish me to scribe anything
+more?<X0a>"
 "e229","また、必要になったら
-いつでも 来なさい。"
+いつでも 来なさい。","Should you have any further needs,you may always come to me."
 "e2c5","<X1e>クレア王妃<X04>
 <IF0215><JUMPe333>どうか ディーナを 連れ戻して
 ください。
@@ -23,24 +28,52 @@
 
 もし どこかで 会うようなことが
 あったら あの方たちにも お礼を
-言っておいてください。"
+言っておいてください。","<X1e>Queen Claire<X04>
+<IF0215><JUMPe333>Please bring Princess Dina home
+somehow.
+
+It seems I cannot rely upon my
+own soldiers.<END>
+<LOCe333>Welcome. Thank you all for your
+efforts.
+
+That Dina has returned home safelyis all thanks to you. Oh, and
+Roh and his companions as well.
+
+If you should meet them again,
+please convey my gratitude to
+them."
 "e428","<X1e>侍女<X04>
 セリオスさまでしたら きっと
 ディーナ姫と お似合いですよ。
-結婚式が 楽しみねえ。"
+結婚式が 楽しみねえ。","<X1e>Maid<X04>
+I think your Highness and PrincessDina are a fine match. I look
+forward to your wedding!"
 "e47f","<X1e>兵士<X04>
 <IF0215><JUMPe4bb>またまた クレアさまに
 怒られてしまいましたよ。<END>
 <LOCe4bb>セリオスさま ご苦労さまでした。
 本来なら 私たちが 行かなければ
-ならないものを ･ ･ ･"
+ならないものを ･ ･ ･","<X1e>Soldier<X04>
+<IF0215><JUMPe4bb>Queen Claire is still angry with
+me.<END>
+<LOCe4bb>Thank you, Prince Selios.
+For doing what we should have
+been doing..."
 "e50f","<X1e>兵士<X04>
 セリオスさまは ファーレーンで
 どのような教育を お受けに
 なられたのですか？
 
 今度 お時間があったら ぜひとも
-お教えください。"
+お教えください。","<X1e>Soldier<X04>
+May I ask what training your
+Highness was given in Farleyne?
+
+Please tell me about it, when
+time permits."
 "e591","<X1e>ディーナ姫<X04>
 エリオンさま それに セリオスさま
-どうも ありがとうございました。"
+どうも ありがとうございました。","<X1e>Princess Dina<X04>
+Thank you, Prince Aerion.
+And Prince Selios."

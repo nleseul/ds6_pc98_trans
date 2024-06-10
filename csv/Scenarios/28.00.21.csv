@@ -1,29 +1,44 @@
+"*","E'me (Chapter 5/6)"
 "e08a","<X1e>武器屋<X04>
 いらっしゃい。
-ここは武器と防具の店だが<RETN>"
-"e0bb","また来いよな。"
+ここは武器と防具の店だが<RETN>","<X1e>Weapon merchant<X04>
+Welcome! This is a weapon shop.<RETN>"
+"e0bb","また来いよな。","Come again!"
 "e0f4","<X1e>道具屋<X04>
 いらっしゃい。
 ここは 道具の店だが
-どんな 用なんだ？<RETN>"
-"e132","また来いよな。"
+どんな 用なんだ？<RETN>","<X1e>Tool Merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e132","また来いよな。","Come again!"
 "e14c","おや？これ以上持てないようだな。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e16e","どれを買うんだ？
+<RETN>","What would you like to buy?
 <RETN>"
 "e180","<X0e>だね。
 ありがとうよ。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e1a0","どれを 売るんだ？
+<RETN>","What would you like to sell?
 <RETN>"
 "e1b3"," Gold になるけど いいかい？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e1d0","それは残念だ ･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e1e8","ありがとうよ。
+<RETN>","Thank you very much.
 <RETN>"
 "e25b","<X1e>男<X04>
 まいったな ラヌーラに行っても
@@ -46,7 +61,31 @@
 行ったんじゃないか。
 
 なんてったって あそこには
-お得意さんが いるからな ヘッヘッヘ。<LOCe3c6>"
+お得意さんが いるからな ヘッヘッヘ。<LOCe3c6>","<X1e>Man<X04>
+I give up. I went to Lanoura, but
+I couldn't find a single slave.<IF01e1><JUMPe3c6><SET0182><PAGE>
+<CH1>
+I said as much.
+But, more importantly, have you
+seen Princess Dina?
+
+<X1e>Man<X04>
+Princess Dina?<WAIT>
+Never heard of 'er.
+
+<CH2>
+Where did that slave merchant
+on the other side of town go?
+
+<X1e>Man<X04>
+Oh, that guy? Probably went
+somewhere in the Republic of
+Moreston, I expect.
+
+No shortage of customers there!
+Heh heh...<LOCe3c6>"
 "e3c7","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."

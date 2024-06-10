@@ -1,39 +1,58 @@
+"*","Rudra - Chapter 5/6"
 "e278","<X1e>賢者<X04>
 わしは 多くの人に 呪文を
-教えるためにおる。<X0d>"
-"e2ab","<X08>どの 呪文を 書き込むかね？<RETN>"
-"e2c7","誰の 呪文の書に 書き込むかね？<RETN>"
-"e2e6","どこに 書き込むかね？<RETN>"
-"e2fc","では、書き込むとしよう。<X0a>"
+教えるためにおる。<X0d>","<X1e>Sage<X04>
+I am here to teach spells to as
+many people as I can.<X0d>"
+"e2ab","<X08>どの 呪文を 書き込むかね？<RETN>","<X08>Which spell do you want?<RETN>"
+"e2c7","誰の 呪文の書に 書き込むかね？<RETN>","Whose spellbook should I
+scribe it in?<RETN>"
+"e2e6","どこに 書き込むかね？<RETN>","Where should I scribe it?<RETN>"
+"e2fc","では、書き込むとしよう。<X0a>","Okay, I'll scribe it.<X0a>"
 "e323","また、必要になったら
-いつでも 来なさい。"
+いつでも 来なさい。","Should you have any further needs,you may always come to me."
 "e371","<X1e>武器屋<X04>
 いらっしゃいませ。
-ここは武器と防具の店ですが<RETN>"
-"e3a8","また来てくださいね。"
+ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
+Welcome! My shop sells weapons
+and armor."
+"e3a8","また来てくださいね。","Come again!"
 "e3e7","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは 道具の店ですが
-どんな ご用ですか？<RETN>"
-"e42d","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e42d","また来てくださいね。","Come again!"
 "e44d","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e471","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e48b","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e4b0","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e4cb"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e4f7","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e510","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e69e","<X1e>ハリー<X04>
 やあ きみたちが 実験してくれたんで大凧を 売ることにしたんだよ。
@@ -43,43 +62,86 @@
 <LOCe741><SET0400>
 
 きみたち 疲れているようだね
-少し 休んでいきなよ。"
+少し 休んでいきなよ。","<X1e>Harry<X04>
+Hey! Thanks to your experiment,
+I've started selling my kites.
+
+And there are so many people here
+to buy them! I've never been so
+busy, thanks to you!<IF0408><JUMPe741><IF0409><JUMPe741><END>
+<LOCe741><SET0400>
+
+You seem pretty tired.
+Go ahead and rest a bit."
 "e777","<X1e>女<X04>
 <IF0221><JUMPe7e2><IF01f0><JUMPe820><IF0182><JUMPe7c1>あら 船だったら 出航したばかりよ。ついてないわね。<END>
 <LOCe7c1>あら やっと 船に間にあったのね。
 <LOCe7e2>あの船は モレストン共和国の
 リシェールの港まで 行っているの。<END>
 <LOCe820>あら、船？ 船ならファンガスの
-大金持ちが しばらく借りていったわ。本当に ついてないわね。"
+大金持ちが しばらく借りていったわ。本当に ついてないわね。","<X1e>Woman<X04>
+<IF0221><JUMPe7e2><IF01f0><JUMPe820><IF0182><JUMPe7c1>The boat? It just left.
+Too bad, right?<END>
+<LOCe7c1>Oh, you finally caught the boat.
+<LOCe7e2>It's heading to Richelle, a port
+in the Republic of Moreston.<END>
+<LOCe820>The boat? A rich man from Fangath
+is renting it right now. Too bad,
+right?"
 "e879","<X1e>女<X04>
 <IF01e1><JUMPe8ce>私ねぇ ハリーさんと
 結婚したいなーって 思うの。
 あの人って きっと天才よ。<END>
 <LOCe8ce>発明家の ハリーさんが どこかに
 行っちゃったのよ。
-まさか 空から落ちて ･ ･ ･"
+まさか 空から落ちて ･ ･ ･","<X1e>Woman<X04>
+<IF01e1><JUMPe8ce>I'm thinking about marrying Harry!He's certainly a genius.<END>
+<LOCe8ce>Harry the inventor went off
+somewhere.
+Maybe he fell out of the sky...?"
 "e91a","<X1e>老人<X04>
 昔は モレストン共和国まで 国境の
 山を越えて 行っていたのじゃ。
 
 今では 船という乗り物が
-できたおかげで 便利になりおった。"
+できたおかげで 便利になりおった。","<X1e>Old man<X04>
+We used to climb the mountains to
+cross over the border into the
+Republic of Moreston.
+
+But it's a lot more convenient
+today, now that we have these
+boat things."
 "e99a","<X1e>男<X04>
 おい おい !!
 順番抜かしは ずるいぞ。
 
 <X1e>ハリー<X04>
-あっ いいんだよ この人たちは。"
+あっ いいんだよ この人たちは。","<X1e>Man<X04>
+Hey! Hey!
+No fair cutting in line!
+
+<X1e>Harry<X04>
+Oh, no, they're fine."
 "e9ec","<X1e>男<X04>
 誰だって 空を飛んでみたいよ。
-空が飛べるんなら 500000Gold なんて安いもんだよな。"
+空が飛べるんなら 500000Gold なんて安いもんだよな。","<X1e>Man<X04>
+So anyone can fly through the
+air, huh? 500000 gold's a cheap
+price for that."
 "ea42","<X1e>男<X04>
 いつになったら できるんだろうな。
-もう いらいらするなー。"
+もう いらいらするなー。","<X1e>Man<X04>
+I wonder how long this's gonna
+take. I'm already gettin' antsy."
 "ea81","<X1e>男<X04>
 ワタシ かわいい 召し使い
 買えなかったあるよ。
-とても ザンネンあるね。"
+とても ザンネンあるね。","<X1e>Man<X04>
+I missed out on buyin' a pretty
+maid. What rotten luck."
 "eacc","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."

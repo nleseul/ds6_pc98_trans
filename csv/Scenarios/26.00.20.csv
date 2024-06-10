@@ -1,26 +1,40 @@
+"*","Vasnune (after Sylphie fight)"
 "e1f0","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは 道具のお店よ
-どんな ご用なの？<RETN>"
-"e232","また来てね。"
+どんな ご用なの？<RETN>","<X1e>Tool merchant<X04>
+Welcome! This is a tool shop.
+What do you need?<RETN>"
+"e232","また来てね。","Come again!"
 "e24a","あら？これ以上持てないみたいよ。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e26c","どれを買ってくれるの？
+<RETN>","What would you like to buy?
 <RETN>"
 "e284","<X0e>ね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e2a7","どれを 売ってくれるの？
+<RETN>","What would you like to sell?
 <RETN>"
 "e2c0"," Gold になるけど
 それでも よろしくて？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e2e8","それは残念だわ･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e301","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e41d","<CH1>
 <CLEAR0174>王子、アクダムは？
@@ -36,7 +50,22 @@
 
 <CH3>
 何やってんだよ。
-さあ セリオス、早く 行こうぜ。"
+さあ セリオス、早く 行こうぜ。","<CH1>
+<CLEAR0174>What happened with Achdam, your
+Highness?
+
+<CH0>
+I still haven't beaten him.
+
+<CH2>
+What are you doing, then?
+
+<CH0>
+Umm... well, I'm...
+
+<CH3>
+What're you talkin' about?
+C'mon, Prince. Go get 'im!"
 "e4b5","<X1e>商人<X04>
 <IF0160><JUMPe613><SET0160><SET0401>おや？ あんたがたは 賞金稼ぎだね？
 
@@ -56,10 +85,38 @@
 
 <LOCe64e><IF0408><JUMPe6b0><IF0409><JUMPe6b0><LOCe65a>早く 怪物のボスを倒してくださいね。そうそう 分けまえも お忘れなく。
 へっ へっへ ･ ･ ･<END>
-<LOCe6b0><SET0400>あっ これは 気がつきませんでした。ささっ どうぞ お休みください。"
+<LOCe6b0><SET0400>あっ これは 気がつきませんでした。ささっ どうぞ お休みください。","<X1e>Merchant<X04>
+<IF0160><JUMPe613><SET0160><SET0401>Oh, you must be here for the
+bounty!
+
+You've heard, right? The king is
+awarding a bounty to any hero
+who can chase the monsters out
+of the kingdom.
+
+I know the feeling! The call of
+a bounty!
+Why don't we try working together?
+
+I'll let you have a place to stay,and when you get the bounty, I'll
+take a 3% cut.
+There we go! It's a deal!
+
+<JUMPe64e><LOCe613><IF0401><JUMPe65a><SET0401>Hey, how's the bounty hunting
+going? Did you find the leader of
+the monsters yet?
+
+<LOCe64e><IF0408><JUMPe6b0><IF0409><JUMPe6b0><LOCe65a>Hurry up and beat the head 
+monster! And don't forget about
+my cut! Heh heh heh...<END>
+<LOCe6b0><SET0400>Oh, sorry! I wasn't paying
+attention. Please, please! Rest
+all you like."
 "e6f4","<X1e>男<X04>
 女房が 怒っちゃって
-家に 入れてくれないんですよ。"
+家に 入れてくれないんですよ。","<X1e>Man<X04>
+My wife is so mad she won't let
+me in the house."
 "e72b","<X1e>女<X04>
 あなたたち 知ってる？
 ハリーさんが とうとう
@@ -67,18 +124,32 @@
 
 さっき お城の屋上に 大きな凧が
 降りてくるのを 見たのよ。
-あれは きっと ハリーさんよ。"
+あれは きっと ハリーさんよ。","<X1e>Woman<X04>
+Have you heard? Harry finally
+managed to fly through the air!
+
+I saw a big kite land on the
+roof of the castle a while ago.
+That must have been him!"
 "e7c4","<X1e>女<X04>
-なんかね 砂漠の奴隷商人が スッゴイ美人を 連れていたんですって。"
+なんかね 砂漠の奴隷商人が スッゴイ美人を 連れていたんですって。","<X1e>Woman<X04>
+Hey, I heard that the desert slavemerchant had an amazingly
+beautiful woman with him."
 "e809","<X1e>女<X04>
 もう あんな バカ亭主は 家に
-入れてやらないんだから。"
+入れてやらないんだから。","<X1e>Woman<X04>
+There's no way I'm letting such anidiot back in my house."
 "e843","<X1e>女<X04>
 やっと 町の男の人たちが
-帰ってきたみたいね。"
+帰ってきたみたいね。","<X1e>Woman<X04>
+It looks like all the men are
+finally home."
 "e875","<X1e>女<X04>
 道具屋さんは だんなさんが
 帰ってきたのに これからは ずっと
-奥さんが お店をやるそうよ。"
+奥さんが お店をやるそうよ。","<X1e>Woman<X04>
+I think the woman at the tool shopis going to keep running it, even
+though her husband's home now."
 "e8d1","<X1e>神父<X04>
-私は 女性に興味など ございません。"
+私は 女性に興味など ございません。","<X1e>Priest<X04>
+I have no interest in women."
