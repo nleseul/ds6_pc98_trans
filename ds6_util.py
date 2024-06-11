@@ -1506,13 +1506,13 @@ def extract_combat_events(scenario_disk, combat_key, combat_info):
 
 def get_ending_strings():
 	return [
-		{ 'addr': 0x7496, 'references': [ 0x7227 ] },
-		{ 'addr': 0x76f6, 'references': [ 0x724f ] },
-		{ 'addr': 0x77b0, 'references': [ 0x7269 ] },
-		{ 'addr': 0x795e, 'references': [ 0x7286 ] },
-		{ 'addr': 0x7a17, 'references': [ 0x72a9 ] },
-		{ 'addr': 0x7a71, 'references': [ 0x72da ] },
-		{ 'addr': 0x7a97, 'references': [ 0x741e, 0x7421 ] }
+		{ 'addr': 0x7496, 'references': [ 0x7228 ] },
+		{ 'addr': 0x76f6, 'references': [ 0x7250 ] },
+		{ 'addr': 0x77b0, 'references': [ 0x726a ] },
+		{ 'addr': 0x795e, 'references': [ 0x7287 ] },
+		{ 'addr': 0x7a17, 'references': [ 0x72aa ] },
+		{ 'addr': 0x7a71, 'references': [ 0x72db ] },
+		{ 'addr': 0x7a97, 'references': [ 0x741f ], 'is_scrolling': True }
 	]
 
 

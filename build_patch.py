@@ -296,13 +296,63 @@ def event_disk_patch_opening(event_disk_patch):
     event_disk_patch.add_record(0x1b572, encoded_opening)
 
 
+def event_disk_patch_ending(event_disk_patch):
+    ending_text_pool = SpacePool()
+    ending_text_pool.add_space(0x7496, 0x7ac9)
+
+    initial_available_space = ending_text_pool.total_available_space
+
+    ending_strings = get_ending_strings()
+
+    ending_trans = load_translations_csv("csv/Ending.csv")
+
+    for string_info in ending_strings:
+        key = f"{string_info['addr']:04x}"
+        info = ending_trans[key]
+        is_scrolling = False if 'is_scrolling' not in string_info else string_info['is_scrolling']
+
+        encoded_bytes = b''
+        text = info['translation'] if 'translation' in info else info['original']
+
+        while len(text) > 0:
+            if text.startswith("<P>"):
+                encoded_bytes += b'\x01'
+                text = text[3:]
+            elif not is_scrolling and text.startswith("\n\n"):
+                encoded_bytes += b'\x02'
+                text = text[2:]
+            elif text.startswith("\n"):
+                encoded_bytes += b'\x00'
+                text = text[1:]
+            else:
+                encoded_bytes += text[0:1].encode('shift-jis')
+                text = text[1:]
+
+        encoded_bytes += b'\x1f'
+
+        new_addr = ending_text_pool.take_space(len(encoded_bytes))
+        #print(f"Ending text {string_info['addr']:04x} relocated to {new_addr:04x}")
+
+        event_disk_patch.add_record(new_addr + 0x14a10, encoded_bytes)
+        for ref_addr in string_info['references']:
+            event_disk_patch.add_record(ref_addr + 0x14a10, new_addr.to_bytes(2, byteorder='little'))
+
+
+    print(f"Ending: {initial_available_space - ending_text_pool.total_available_space}/{initial_available_space} bytes")
+    print()
+
+
 def event_disk_patch_misc(event_disk_patch):
     # Original text: 
     # プログラムディスクをドライブ１に
     # シナリオディスクを　ドライブ２に
     # セットして【RETURN】キーを
     # 押してください。
-    event_disk_patch.add_record(0x1a667, b"Insert the Program Disk into\x01drive 1 and the Scenario Disk\x01into drive 2, then press the\x01\x81\x79RETURN\x81\x7a key.\x0d\x0d\x00")
+    event_disk_patch.add_record(0x5c56 + 0x14a10, b"\x08Insert the Program Disk into\x01drive 1 and the Scenario Disk\x01into drive 2, then press the\x01\x81\x79RETURN\x81\x7a key.\x0d\x0d\x00")
+
+    # Reduce the timer length used to display characters in the ending, to
+    # increase the text speed.
+    event_disk_patch.add_record(0x7ad9 + 0x14a10, b'\x03')
 
 
 def program_disk_patch_asm(program_disk_patch, nasm_path):
@@ -905,6 +955,7 @@ if __name__ == '__main__':
 
     # Build the event disk
     event_disk_patch_opening(event_disk_patch)
+    event_disk_patch_ending(event_disk_patch)
     event_disk_patch_misc(event_disk_patch)
 
     # Build the program disk
