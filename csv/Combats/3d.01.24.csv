@@ -1,7 +1,9 @@
-"dc30","ﾃﾞｽ･ｶﾞｰﾃﾞｨｱﾝＡ<RET_IL>"
-"dc70","ﾃﾞｽ･ｶﾞｰﾃﾞｨｱﾝＢ<RET_IL>"
-"dcb0","ﾃﾞｽ･ｶﾞｰﾃﾞｨｱﾝＣ<RET_IL>"
-"dd99","デス・ガーディアンが現れた。<RETN>"
+"dc30","ﾃﾞｽ･ｶﾞｰﾃﾞｨｱﾝＡ<RET_IL>","<CALL0010>A<RET_IL>"
+"dc70","ﾃﾞｽ･ｶﾞｰﾃﾞｨｱﾝＢ<RET_IL>","<CALL0010>B<RET_IL>"
+"dcb0","ﾃﾞｽ･ｶﾞｰﾃﾞｨｱﾝＣ<RET_IL>","<CALL0010>C<RET_IL>"
+"dd99","デス・ガーディアンが現れた。<RETN>","Death guardians appear!<RETN>"
 "ddb6","は 冷たい手で
-<X02>に 触れた。<X0a>"
-"ddd1","は殴りかかった !!<X0a>"
+<X02>に 触れた。<X0a>"," touches <X02>
+with its cold hand.<X0a>"
+"ddd1","は殴りかかった !!<X0a>"," throws a punch!<X0a>
+<LOC0010>Death Guardian <RET_IL>"

@@ -1,11 +1,16 @@
-"dc30","ｽﾃｨﾝｸﾞ･ﾋﾞｰﾄﾙ♀<RET_IL>"
-"dc70","ゴルド<RET_IL>"
-"dcb0","ｽﾃｨﾝｸﾞ･ﾋﾞｰﾄﾙ♂<RET_IL>"
+"dc30","ｽﾃｨﾝｸﾞ･ﾋﾞｰﾄﾙ♀<RET_IL>","Sting Beetle ♀<RET_IL>"
+"dc70","ゴルド<RET_IL>","Gord<RET_IL>"
+"dcb0","ｽﾃｨﾝｸﾞ･ﾋﾞｰﾄﾙ♂<RET_IL>","Sting Beetle ♂<RET_IL>"
 "de08","スティング・ビートルのペアと
-ゴルドが現れた。<RETN>"
+ゴルドが現れた。<RETN>","A pair of sting beetles and a
+gord appear.<RETN>"
 "de36","は鼻から毒の潮を噴いた !!<X0a>
-<CONT><X02>は毒におかされた !!<X0a>"
+<CONT><X02>は毒におかされた !!<X0a>"," exhales a sea of poison from
+its nose!<X0a>
+<CONT><X02> is ravaged by poison!<X0a>"
 "de65","は <X02>の首に
-かみつき 血を吸った !!<X0a>"
+かみつき 血を吸った !!<X0a>"," latches onto
+<X02>'s neck and sucks blood!<X0a>"
 "de87","<X1e>ゴルド<X04>は あまりの寒さに 冬が
-来たのかと 勘違いした。<X0a>"
+来たのかと 勘違いした。<X0a>","The extreme cold makes <X1e>Gord<X04> think
+the winter has come.<X0a>"

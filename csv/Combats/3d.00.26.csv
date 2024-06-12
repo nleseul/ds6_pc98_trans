@@ -1,12 +1,15 @@
-"dc30","ﾊﾞｰｽﾄﾊｳﾝﾄﾞＡ<RET_IL>"
-"dc70","ﾊﾞｰｽﾄﾊｳﾝﾄﾞＢ<RET_IL>"
-"dcb0","アギール<RET_IL>"
-"de56","アギールが現れた。<RETN>"
+"dc30","ﾊﾞｰｽﾄﾊｳﾝﾄﾞＡ<RET_IL>","Basthound A<RET_IL>"
+"dc70","ﾊﾞｰｽﾄﾊｳﾝﾄﾞＢ<RET_IL>","Basthound B<RET_IL>"
+"dcb0","アギール<RET_IL>","Agiel<RET_IL>"
+"de56","アギールが現れた。<RETN>","An agiel appears.<RETN>"
 "de69","は すばやく首を伸ばして
-<X02>に かみついた !!<X0a>"
-"de93","<X02>は<X1e>ﾊﾞｰｽﾄﾊｳﾝﾄﾞ<X04>を呼んだ。<X0a>"
-"dead","<X02>が 駆けつけた。<X0a>"
+<X02>に かみついた !!<X0a>"," nimbly extends its neck
+and bites at <X02>!<X0a>"
+"de93","<X02>は<X1e>ﾊﾞｰｽﾄﾊｳﾝﾄﾞ<X04>を呼んだ。<X0a>","<X02> calls for <X1e>basthounds<X04>.<X0a>"
+"dead","<X02>が 駆けつけた。<X0a>","<X02> rushes in!<X0a>"
 "debe","は<X02>の血を見て
 興奮した。<X0a>
-<CONT>すばやさが 1 ﾎﾟｲﾝﾄ アップした !!<X0a>"
-"def8","は噛みついた !!<X0a>"
+<CONT>すばやさが 1 ﾎﾟｲﾝﾄ アップした !!<X0a>"," is excited by the
+sight of <X02>'s blood.<X0a>
+<CONT>Speed increases by 1 point!<X0a>"
+"def8","は噛みついた !!<X0a>"," bites!<X0a>"

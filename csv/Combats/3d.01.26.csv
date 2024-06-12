@@ -1,10 +1,12 @@
 "dc30","ブラカマン<RET_IL>","Brakaman<RET_IL>"
-"dc70","岩石魔人<RET_IL>","Bouldergeist<RET_IL>"
-"de14","ブラカマンと岩石魔人が現れた。<RETN>","A brakaman and a bouldergeist
+"dc70","岩石魔人<RET_IL>","Stone Spirit<RET_IL>"
+"de14","ブラカマンと岩石魔人が現れた。<RETN>","A brakaman and a stone spirit
 appear.<RET_IL>"
 "de33","の杖が 不思議な光を
 放った !!<X0a>
-<CONT><X02>は何も考えられなくなった。<X0a>"
+<CONT><X02>は何も考えられなくなった。<X0a>","'s staff emits a strange
+light!<X0a>
+<CONT><X02>'s mind goes blank.<X0a>"
 "de6d","は 岩の破片を
 飛ばした !!<X0a>"," hurls a chunk
 of rock!<X0a>"
