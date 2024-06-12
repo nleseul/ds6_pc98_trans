@@ -1,25 +1,39 @@
+"*","Caur (Chapter 6)"
 "e0b2","<X1e>道具屋<X04>
 いらっしゃい。
-どんな 用だね？<RETN>"
-"e0da","また来てくれよ。"
+どんな 用だね？<RETN>","<X1e>Tool merchant<X04>
+Welcome!
+What are you here for?<RETN>"
+"e0da","また来てくれよ。","Come again!"
 "e0f6","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e11a","どれを買うんだね？
+<RETN>","What are you buyin'?
 <RETN>"
 "e12e","<X0e>だね。
 ありがとう。
 
+<RET_IL>","The <X0e>?
+Thanks.
+
 <RET_IL>"
 "e14c","どれを 売るんだね？
+<RETN>","What're you sellin'?
 <RETN>"
 "e161"," Gold になるけど
 それでも いいかい？
-<RETN>"
+<RETN>"," gold.
+That okay?"
 "e187","そうか ･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e199","ありがとう。
+<RETN>","Thanks.
 <RETN>"
 "e365","<X1e>ボイル<X04>
 <IF01ae><JUMPe37a><IF01f0><JUMPe3e5><LOCe37a>暇が あったら、ちょくちょく
@@ -51,13 +65,43 @@
 
 だから あのドラゴンも その音を
 頼りに あんたがたを 探し出せる
-はずだ。"
+はずだ。","<X1e>Boyle<X04>
+<IF01ae><JUMPe37a><IF01f0><JUMPe3e5><LOCe37a>Whenever you have the chance, be
+sure to come visit.
+
+A dragon should see its parents
+once in a while! Ha ha!<END>
+<LOCe3e5>That dragon has been out wanderingaround a lot lately.
+<IF0220><JUMPe42e>I wonder what it's doing?<END>
+<LOCe42e>
+
+I wonder if it's out looking for
+you. I'm sure it misses you!
+
+<ASMe5e0><IF01ae><JUMPe4ec>I've got something special to giveto you, so clean up your bags.<END>
+<LOCe4ec>This is something very special
+that I'm going to give you.
+
+<X1c>Received the <X04><X0e><X1c>.<X0c0301><X04>
+
+If you use this Dragon Flute,
+it'll make a sound that only
+dragons can hear.
+
+So the dragon will be able to
+find you wherever you are based
+on that sound."
 "e5f3","<X1e>シンシア<X04>
 さすがは クレアさまの
 お使いを されるだけの ことは
-あるのう。"
+あるのう。","<X1e>Cynthia<X04>
+I expect you're here on behalf of
+Queen Claire?"
 "e63c","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
 "e674","<X1e>トッド<X04>
-Ｚ ｚ ｚ ･ ･ ･"
+Ｚ ｚ ｚ ･ ･ ･","<X1e>Todd<X04>
+Zzz..."
