@@ -837,7 +837,7 @@ def program_disk_patch_combat_text(program_disk_patch):
 
 def program_disk_patch_misc(program_disk_patch):
     # Miscellaneous program disk text
-    program_disk_patch.add_record(0x117a3, b"  \x87\x54  The Prince's Departure  ")
+    program_disk_patch.add_record(0x117a3, b" \x87\x54  The Prince's Departure   ")
     program_disk_patch.add_record(0x11940, ("Selios".encode('shift-jis') + b'\x06').ljust(0x10, b'\x00'))
     program_disk_patch.add_record(0x11980, ("Runan".encode('shift-jis') + b'\x06').ljust(0x10, b'\x00'))
     program_disk_patch.add_record(0x119c0, ("Roh".encode('shift-jis') + b'\x06').ljust(0x10, b'\x00'))
@@ -864,15 +864,23 @@ def program_disk_patch_misc(program_disk_patch):
 
     program_disk_patch.add_record(0x1bb89, b" Fight   Spell   Guard\x01 Use     Weapon  Auto\x01 Stats   Run\x07\x00\x00\x00\x00")
 
+    # Status effect display table
+    program_disk_patch.add_record(0xa9a + 0x13e10, b'\x82\x77') # Poison - Full-width "X"
+    program_disk_patch.add_record(0xa9e + 0x13e10, b'\x82\x79') # Sleep - Full-width "Z"
+    program_disk_patch.add_record(0xaa2 + 0x13e10, b'\x81\x48') # Confusion - Full width question mark
+    program_disk_patch.add_record(0xaa6 + 0x13e10, b'\x81\x63') # Silence - Full-width ellipsis
+    program_disk_patch.add_record(0xaaa + 0x13e10, b'\x81\x73') # Reflect - Full-width double left angle bracket
+    program_disk_patch.add_record(0xaae + 0x13e10, b'\x83\xa6') # Defend - Full-width capital theta
+
 
 def scenario_disk_patch_misc(scenario_disk_patch):
     scenario_disk_patch.add_record(0x79c66, b"Sonia\x06          ")
             
-    scenario_disk_patch.add_record(0x5d438, b"  \x87\x55     The Silent Spell     ")
-    scenario_disk_patch.add_record(0x88782, b"  \x87\x56    The Mark of Kings     ")
-    scenario_disk_patch.add_record(0xa1772, b"  \x87\x57    The Enchanted King    ")
-    scenario_disk_patch.add_record(0xb749a, b"  \x87\x58    The Tower of Light    ")
-    scenario_disk_patch.add_record(0xd0f3e, b"  \x87\x59   The Heroes of Legend   ")
+    scenario_disk_patch.add_record(0x5d438, b" \x87\x55     The Silent Spell      ")
+    scenario_disk_patch.add_record(0x88782, b" \x87\x56     The Mark of Kings     ")
+    scenario_disk_patch.add_record(0xa1772, b" \x87\x57    The Enchanted King     ")
+    scenario_disk_patch.add_record(0xb749a, b" \x87\x58    The Tower of Light     ")
+    scenario_disk_patch.add_record(0xd0f3e, b" \x87\x59 Into the Legend of Heroes ")
 
 
     # Scenario 20.00.20 (pirate minigame)
