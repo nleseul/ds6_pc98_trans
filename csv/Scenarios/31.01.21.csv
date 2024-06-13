@@ -1,3 +1,4 @@
 "e2b9","<X0b>は 宝箱を開けました。
-宝箱の中には<RET_IL>"
-"e2dd","<X0e>が入っていました。<RETN>"
+宝箱の中には<RET_IL>","<X0b> opened the chest.
+There was a <RET_IL>"
+"e2dd","<X0e>が入っていました。<RETN>","<X0e> inside.<RETN>"
