@@ -1,9 +1,11 @@
-"dc30","グルムＡ<RET_IL>"
-"dc70","グルムＢ<RET_IL>"
-"de21","グルムが現れた。<RETN>"
+"dc30","グルムＡ<RET_IL>","Grum A<RET_IL>"
+"dc70","グルムＢ<RET_IL>","Grum B<RET_IL>"
+"de21","グルムが現れた。<RETN>","Grums appear.<RETN>"
 "de32","は<X02>に 恐ろしい
 幻影を見せた。<X0a>
-<CONT><X02>は恐怖で混乱してしまった。<X0a>"
+<CONT><X02>は恐怖で混乱してしまった。<X0a>"," shows a frightening vision
+to <X02>.<X0a>
+<CONT><X02> is terrified and confused.<X0a>"
 "de6c","<X02>は不気味に ゆらゆら
-揺れている。<X0a>"
-"de8e","<X02>は かき消された。<X0a>"
+揺れている。<X0a>","<X02> wavers eerily.<X0a>"
+"de8e","<X02>は かき消された。<X0a>","<X02> vanishes.<X0a>"

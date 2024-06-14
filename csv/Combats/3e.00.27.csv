@@ -1,11 +1,14 @@
-"dc30","殺人魚Ａ<RET_IL>"
-"dc70","ダルディア<RET_IL>"
-"dcb0","殺人魚Ｂ<RET_IL>"
-"dee8","ダルディアと殺人魚が現れた。<RETN>"
-"df05","は 奇妙な かおりの花粉をふりまいた。<X0a>"
+"dc30","殺人魚Ａ<RET_IL>","Killer Fish A<RET_IL>"
+"dc70","ダルディア<RET_IL>","Daldia<RET_IL>"
+"dcb0","殺人魚Ｂ<RET_IL>","Killer Fish B<RET_IL>"
+"dee8","ダルディアと殺人魚が現れた。<RETN>","A daldia and some killer fish
+appear.<RETN>"
+"df05","は 奇妙な かおりの花粉をふりまいた。<X0a>"," scatters its odd-smelling
+pollen.<X0a>"
 "df2a","は <X02>に トゲを
-突き刺し 血を吸った !!<X0a>"
-"df4f","ダルディアの花の部分が破裂した !!<X0a>"
-"df71","は<X02>に飛びかかった。<X0a>"
+突き刺し 血を吸った !!<X0a>"," pricks <X02> with its
+thorns and drains blood!<X0a>"
+"df4f","ダルディアの花の部分が破裂した !!<X0a>","The daldia's flowers burst!<X0a>"
+"df71","は<X02>に飛びかかった。<X0a>"," leaps at <X02>.<X0a>"
 "df85","カミソリのように 鋭い胸びれが
-<X02>を 切りさいた !!<X0a>"
+<X02>を 切りさいた !!<X0a>","Razor-sharp fins slice at <X02>!<X0a>"

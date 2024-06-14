@@ -1,9 +1,11 @@
-"dc30","ｻﾝﾀﾞｰｽﾈｰｶｰＡ<RET_IL>"
-"dc70","ｻﾝﾀﾞｰｽﾈｰｶｰＢ<RET_IL>"
-"dda6","サンダースネーカーの群れが現れた。<RET_IL>"
-"ddc9","<X08><X02>は逃げ出した。<RET_IL>"
-"ddda","<X0a>"
+"dc30","ｻﾝﾀﾞｰｽﾈｰｶｰＡ<RET_IL>","Thundersnaker A<RET_IL>"
+"dc70","ｻﾝﾀﾞｰｽﾈｰｶｰＢ<RET_IL>","Thundersnaker B<RET_IL>"
+"dda6","サンダースネーカーの群れが現れた。<RET_IL>","A pair of thundersnakers appear.<RET_IL>"
+"ddc9","<X08><X02>は逃げ出した。<RET_IL>","<X08><X02> runs away.<RET_IL>"
+"ddda","<X0a>","<X0a>"
 "dddb","しかし <X02>のウロコで
 武器が滑ってしまった。<X0a>
 <CONT><X02>は ダメージを
-受けなかった。<X0a>"
+受けなかった。<X0a>","But the weapon slips off of
+<X02>'s scales.<X0a>
+<CONT><X02> takes no damage.<X0a>"

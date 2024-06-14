@@ -1,11 +1,13 @@
-"dc30","ガーバインＡ<RET_IL>"
-"dc70","ガーバインＢ<RET_IL>"
-"de5d","ガーバインが現れた。<RETN>"
-"de72","<X02>は やみに かくれた。<X0a>"
-"de88","<X02>は 突然攻撃を受けた !!<RETN>"
+"dc30","ガーバインＡ<RET_IL>","Garvine A<RET_IL>"
+"dc70","ガーバインＢ<RET_IL>","Garvine B<RET_IL>"
+"de5d","ガーバインが現れた。<RETN>","Garvines appear.<RETN>"
+"de72","<X02>は やみに かくれた。<X0a>","<X02> hides in the shadows.<X0a>"
+"de88","<X02>は 突然攻撃を受けた !!<RETN>","<X02> is struck by surprise!<RETN>"
 "dea0","は<X02>に 居場所を
-見抜かれた !!<X0a>"
-"debd","は 姿を現した。<X0a>"
-"decd","剣が空を切る音がした。<X0a>"
+見抜かれた !!<X0a>"," gets spotted by <X02>!<X0a>"
+"debd","は 姿を現した。<X0a>"," is revealed.<X0a>"
+"decd","剣が空を切る音がした。<X0a>","A blade swishes through the air.<X0a>"
 "dee4","炎の剣に触れた<X0e>は
-跡形もなく燃えてしまった !!<X0a>"
+跡形もなく燃えてしまった !!<X0a>","The flaming sword sets the
+<X0e> on fire, and it
+burns away without a trace!<X0a>"

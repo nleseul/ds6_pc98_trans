@@ -1,14 +1,22 @@
-"dc30","ジャーデインＡ<RET_IL>"
-"dc70","ザグリス<RET_IL>"
-"dcb0","ジャーデインＢ<RET_IL>"
-"dcf0","ｼﾞｬｰﾃﾞｲﾝｿﾞﾝﾋﾞA<RET_IL>"
-"de8c","ザグリスがジャーデインを引き連れて挑んできた。<RETN>"
+"*",""
+"dc30","ジャーデインＡ<RET_IL>","<CALL0010>A<RET_IL>"
+"dc70","ザグリス<RET_IL>","Zagrith<RET_IL>"
+"dcb0","ジャーデインＢ<RET_IL>","<CALL0010>B<RET_IL>"
+"dcf0","ｼﾞｬｰﾃﾞｲﾝｿﾞﾝﾋﾞA<RET_IL>","<CALL0010>Zombie A<RET_IL>"
+"de8c","ザグリスがジャーデインを引き連れて挑んできた。<RETN>","A zagrith, flanked by jardeins,
+challenges you.<RETN>
+<LOC0010>Jardein <RET_IL>"
 "debb","は<X02>の骸に赤い薬をふりかけた。<X0a>
 <CONT><X02>はゾンビとなって
-よみがえった。<X0a>"
+よみがえった。<X0a>"," sprinkles a red medicine
+over <X02>'s corpse.<X0a>
+<CONT><X02> returns as a zombie.<X0a>"
 "defa","は<X02>にハンマーを
-投げつけた !!<RETN>"
+投げつけた !!<RETN>"," hurls a hammer at
+<X02>!<RETN>"
 "df18","ハンマーはブーメランのように
-<X1e>ザグリス<X04>の手元に戻った。<X0a>"
+<X1e>ザグリス<X04>の手元に戻った。<X0a>","The hammer returns like a
+boomerang to <X1e>Zagrith<X04>'s hand.<X0a>"
 "df50","は目つぶしの砂を
-まいた。<RETN>"
+まいた。<RETN>"," scatters
+blinding powder.<RETN>"

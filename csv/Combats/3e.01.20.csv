@@ -1,11 +1,14 @@
-"dc30","アージバルＡ<RET_IL>"
-"dc70","アージバルＢ<RET_IL>"
-"ddf7","アージバルが現れた。<RETN>"
+"dc30","アージバルＡ<RET_IL>","Arjival A<RET_IL>"
+"dc70","アージバルＢ<RET_IL>","Arjival B<RET_IL>"
+"ddf7","アージバルが現れた。<RETN>","Arjivali appear.<RETN>"
 "de0c","は かん高い 叫び声を
 あげた。<X0a>
-<CONT><X02>は恐怖で混乱してしまった。<X0a>"
-"de46","<X02>は かき消された。<X0a>"
+<CONT><X02>は恐怖で混乱してしまった。<X0a>"," screeches horribly.<X0a>
+<CONT><X02> is terrified and confused.<X0a>"
+"de46","<X02>は かき消された。<X0a>","<X02> vanishes.<X0a>"
 "de59","は<X02>の魂を
-吸い取った !!<X0a>"
+吸い取った !!<X0a>"," drains away <X02>'s
+soul!<X0a>"
 "de71","の死のカマが
-青白く光った !!<X0a>"
+青白く光った !!<X0a>","'s deathly scythe 
+glows white!<X0a>"
