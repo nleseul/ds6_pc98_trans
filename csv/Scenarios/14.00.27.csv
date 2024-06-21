@@ -1,4 +1,7 @@
 "e0c9","<X1e>兵士<X04>
 これは 王子さま。
 <IF0400><JUMPe101>お出かけでございますか？<END>
-<LOCe101>お帰りなさいませ。"
+<LOCe101>お帰りなさいませ。","<X1e>Soldier<X04>
+Your Highness!
+<IF0400><JUMPe101>Are you leaving the city?<END>
+<LOCe101>Welcome back!"

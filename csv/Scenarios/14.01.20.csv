@@ -3,45 +3,78 @@
 
 ご立派に成長なされた 王子さまに
 私の呪文などは 必要ないとは
-思いますが、<RETN>"
-"e290","お役にたてる 呪文が ございますか？<RET_IL>"
-"e2b3","誰の 呪文の書に 書き込みますか？<RETN>"
-"e2d4","どこに 書き込みますか？<RETN>"
+思いますが、<RETN>","<X1e>Sage<X04>
+Oh, your Highness! Welcome!
+
+I expect that your Highness has
+grown beyond my simple spells.
+But, nonetheless...<RETN>"
+"e290","お役にたてる 呪文が ございますか？<RET_IL>","What spell is of use to you?<RET_IL>"
+"e2b3","誰の 呪文の書に 書き込みますか？<RETN>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e2d4","どこに 書き込みますか？<RETN>","Where shall I scribe it?<RETN>"
 "e2ec","こんな呪文でも 必要になりましたら
-いつでも おこしください。"
+いつでも おこしください。","Whatever spell you need, you may
+always come to me."
 "e3f5","<X1e>女<X04>
 ここは調理場です。
 昼食は 王子さまの 大好きな
 ビーフシチューです。
 
 王子さまのために 腕に
-よりをかけて 料理いたします。"
+よりをかけて 料理いたします。","<X1e>Woman<X04>
+This is the kitchen. I'm making
+your Highness's favorite beef
+stew for lunch.
+
+For my Prince's sake, I'll work
+as hard as I can!"
 "e471","<X1e>女<X04>
 階段の下は 食料の倉庫に
-なっております。"
+なっております。","<X1e>Woman<X04>
+Below here is the food
+storehouse."
 "e49f","<X1e>兵士<X04>
 おや、セリオス王子。
-町へ お出かけですか？"
+町へ お出かけですか？","<X1e>Soldier<X04>
+Your Highness! Are you leaving?"
 "e4d1","<X1e>兵士<X04>
 王子の おかげで ベルガの鉱山も
-活気を 取り戻してきたそうです。"
+活気を 取り戻してきたそうです。","<X1e>Soldier<X04>
+Thanks to your Highness, Belga
+Mine is thriving again."
 "e517","<X1e>兵士<X04>
 ここは 地下牢への入口です。
 中に入られても おもしろいものは
-何も ございませんよ。"
+何も ございませんよ。","<X1e>Soldier<X04>
+This is the entrance to the
+dungeon. It's probably nothing
+of interest to your Highness."
 "e570","<X1e>兵士<X04>
 これは、王子さま。
-この 財宝室に 何か ご用ですか？"
+この 財宝室に 何か ご用ですか？","<X1e>Soldier<X04>
+Does your Highness need something
+from the treasure room?"
 "e5aa","<X1e>兵士<X04>
 これは セリオス王子。
-お元気そうで 何よりです。"
+お元気そうで 何よりです。","<X1e>Soldier<X04>
+I'm pleased to see that your
+Highness is well."
 "e5e1","<X1e>兵士<X04>
 王子さま、また一段と成長された
-ようですね。"
+ようですね。","<X1e>Soldier<X04>
+Your Highness seems to have grown
+even more since I saw you last."
 "e614","<X1e>兵士<X04>
 王子さまが 旅をなさっている間に
 この国も かつての 豊かさを
 取り戻しつつあります。
 
 王子さま、そろそろ 旅も 終わりに
-なされては いかがですか。"
+なされては いかがですか。","<X1e>Soldier<X04>
+While your Highness has been
+traveling, we have been restoring
+the kingdom's former prosperity.
+
+Perhaps your Highness's journey
+will come to an end soon?"

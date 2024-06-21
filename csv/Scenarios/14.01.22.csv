@@ -1,13 +1,20 @@
 "e10a","<X0b>は 宝箱を開けました。
-宝箱の中には<RET_IL>"
-"e12e","<X0e>が入っていました。<RETN>"
+宝箱の中には<RET_IL>","<X0b> opened the treasure chest.
+There was a <RET_IL>"
+"e12e","<X0e>が入っていました。<RETN>","<X0e> inside.<RETN>"
 "e142","<X0b>は 宝箱を もう一度
 調べてみました。
 
-やっぱり 何も見つかりませんでした。"
+やっぱり 何も見つかりませんでした。","<X0b> checked inside the
+treasure chest again.
+
+But it was still empty."
 "e233","<X1e>兵士<X04>
 王子さま、ここは 地下牢で
-ございます。あなたさまのような方がいらっしゃる所では ございません。"
+ございます。あなたさまのような方がいらっしゃる所では ございません。","<X1e>Soldier<X04>
+This is a dungeon, your Highness.
+Surely there is nothing here to
+interest one such as yourself."
 "e298","<X1e>兵士<X04>
 <IF0400><JUMPe39d><IF002c><JUMPe2dc><SET002c>おや、王子さま。
 ここは 財宝室で ございます。
@@ -21,8 +28,24 @@
 か、かまいませんが
 <LOCe39d>わ、私は これから
 この 財宝室で いったい 何を
-守ったら いいのでしょう !?"
+守ったら いいのでしょう !?","<X1e>Soldier<X04>
+<IF0400><JUMPe39d><IF002c><JUMPe2dc><SET002c>Oh, your Highness!
+This is the treasure room.
+
+<LOCe2dc><ASMe3e6><IF0401><JUMPe358>Everything in this room is now
+yours, your Highness.
+<PAGE>
+Please take whatever you may need.<END>
+<LOCe358>Y-your Highness?
+You've taken... e-everything?!
+<PAGE>
+<LOCe39d>N-not that it's a problem, but...
+W-what am I supposed to guard
+now??"
 "e3f3","<X1e>兵士<X04>
 おや、王子さま。
 ここは 武器庫で ございますが
-青銅の剣なんか いりませんよね。"
+青銅の剣なんか いりませんよね。","<X1e>Soldier<X04>
+Oh, your Highness! This is the
+armory. But I expect you don't
+need any copper swords."

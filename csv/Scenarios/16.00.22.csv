@@ -1,56 +1,92 @@
 "e12c","<X1e>道具屋<X04>
 おや 王子さま いらっしゃいませ。
 ここは道具の店ですが
-どんな ごようですか？<RETN>"
-"e181","また来てくださいね。"
+どんな ごようですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome, your Highness!
+This is a tool shop.
+What would you like?<RETN>"
+"e181","また来てくださいね。","Come again!"
 "e1a6","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e1ca","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e1e4","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e201","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e21c"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e248","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e261","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e39e","<X1e>神父<X04>
 おや、セリオス王子さま。
 お久しぶりで ございます。
 
 お困りの時には いつでも
-私の所へ 来てくださいませ。"
+私の所へ 来てくださいませ。","<X1e>Priest<X04>
+Oh, Prince Selios!
+It has been a while.
+
+When you are troubled, you may
+always come to me."
 "e40c","<X1e>農夫<X04>
-いんやぁ、やっぱす平和がいいなぁ。"
+いんやぁ、やっぱす平和がいいなぁ。","<X1e>Farmer<X04>
+Nothin' in the world like peace."
 "e436","<X1e>農夫<X04>
 あっ、これは王子さま。
 私も だいぶ 畑仕事になれて
 きました。
 
 この平和が いつまでも 続くと
-いいですね。"
+いいですね。","<X1e>Farmer<X04>
+Oh, your Highness! I've really
+gotten accustomed to life as a
+farmer.
+
+I hope these peaceful days never
+end."
 "e4a4","<X1e>男<X04>
 これは これは、王子さま。
-いらっしゃいませ。"
+いらっしゃいませ。","<X1e>Man<X04>
+Welcome, your Highness."
 "e4d6","<X1e>女<X04>
 まあ、王子さま !! いろいろな国で
 ご活躍なされている そうですね。
 
 国中の 若い女たちの間では
 王子さまの おうわさで
-もちきりですわ。"
+もちきりですわ。","<X1e>Woman<X04>
+Oh, your Highness! I've heard of
+your many deeds in other lands.
+
+You're all the talk among the
+young women of Farleyn."
 "e55d","<X1e>女<X04>
 何も おもてなし できませんが
-ごゆっくり していってください。"
+ごゆっくり していってください。","<X1e>Woman<X04>
+We don't have much to offer your
+Highness, but please make yourselfat home."
 "e59f","<X1e>やぎ<X04>
-めえぇぇぇぇ。"
+めえぇぇぇぇ。","<X1e>Goat<X04>
+Me-e-e-e-e..."
 "e5b5","<X1e>にわとり<X04>
-こけっ〜 !?"
+こけっ〜 !?","<X1e>Chicken<X04>
+Bok! Bokaaw!"

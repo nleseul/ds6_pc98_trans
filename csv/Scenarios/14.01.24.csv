@@ -15,11 +15,30 @@
 すべては、エリオンさま、ゲイル殿
 ソニアの助けが あってのことです。
 これからも 決して そのことを
-忘れてはなりません。"
+忘れてはなりません。","<X1e>Felicia<X04>
+I heard about what you did in
+Soldythe from Queen Claire,
+Selios.
+
+I thank Freya for granting me
+such a fine son.
+I'm certain your late father is
+overjoyed as well.
+
+But don't let it go to your head.
+You couldn't have done it all
+by yourself.
+
+You had help from Prince Aerion,
+and Gail, and Sonia with
+everything. Don't ever forget
+that."
 "e2f5","<X1e>フェリシア<X04>
 セリオス !!
 あなたは まだ その悪いくせが
-なおらないのですか？"
+なおらないのですか？","<X1e>Felicia<X04>
+Selios!! Haven't you grown out
+of those bad habits yet?"
 "e340","<X1e>アロン<X04>
 王子さま、また 一段と ご立派な
 勇者に 成長なされましたな。
@@ -30,21 +49,41 @@
 
 <CH1>
 アロン殿 今までどおり リュナンと
-お呼びください。"
+お呼びください。","<X1e>Alon<X04>
+Your Highness has become a most
+splendid hero.
+
+Runan... I mean, Prince Aerion.
+Please forgive my many rudenesses
+when I was unaware of your
+Highness's heritage.
+
+<CH1>
+Please, Alon.
+Call me Runan, as you always have."
 "e41c","<X1e>兵士<X04>
 王子さま お帰りなさい。
 王子さまは ファーレーンの
-誇りで ございます。"
+誇りで ございます。","<X1e>Soldier<X04>
+Welcome home, your Highness!
+You are the pride of Farleyn."
 "e469","<X1e>兵士<X04>
 さすが 王子さまですね。
 
 ウォンリークに続き ラヌーラ、
 そして ソルディスのモンスターまで
-倒してしまったとは。"
+倒してしまったとは。","<X1e>Soldier<X04>
+A true prince indeed!
+
+After Wonliech, Your Highness has
+gone on to defeat the monsters in
+Lanoura and Soldythe."
 "e4dd","<X1e>兵士<X04>
 王子さま、お帰りなさいませ。
 ソルディスでの ご活躍を
-聞きましたよ。"
+聞きましたよ。","<X1e>Soldier<X04>
+Welcome home! I have heard of
+your Highness's deeds in Soldythe."
 "e528","<X1e>兵士<X04>
 王子さま、フェリシアさまは 毎日
 王子さまのために フレイアさまに
@@ -53,4 +92,11 @@
 亡き国王さまの かたき討ちも
 果たされたことですし
 そろそろ 王位につかれては
-いかがですか。"
+いかがですか。","<X1e>Soldier<X04>
+Queen Felicia prays to Freya
+daily out of concern for your
+Highness.
+
+Will it be long before you avenge
+your late father and return to
+take the throne?"

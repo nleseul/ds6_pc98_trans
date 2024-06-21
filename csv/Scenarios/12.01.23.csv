@@ -2,33 +2,50 @@
 "e085","<X1e>道具屋<X04>
 おや 王子さま いらっしゃいませ。
 ここは道具屋ですが
-どんな ご用ですか？<RETN>"
-"e0d6","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome, your Highness!
+This is a tool shop.
+What would you like?<RETN>"
+"e0d6","また来てくださいね。","Come again!"
 "e103","<X1e>武器屋<X04>
 おや 王子さま いらっしゃいませ。
-ここは武器と防具の店ですが<RETN>"
-"e148","また来てくださいね。"
+ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
+Welcome, your Highness!
+My shop sells weapons and armor."
+"e148","また来てくださいね。","Come again!"
 "e16b","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e18f","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e1a9","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e1ce","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e1e9"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e215","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e22e","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e38a","あっ、これは 王子さま。
-ごきげん うるわしゅうございます。"
+ごきげん うるわしゅうございます。","Your Highness!
+It's a pleasure to meet you."
 "e3c4","<X1e>老人<X04>
 これは これは 王子さま。
 ついにアクダムを倒しアスエルさまのかたきを 討たれたそうですね。
@@ -43,16 +60,42 @@
 <X1e>老人<X04>
 さようで ございますか。
 では、一日も早い お帰りを
-お待ちしております。"
+お待ちしております。","<X1e>Old man<X04>
+Your Highness! I understand you
+have at last defeated Achdam and
+avenged King Asuel?
+
+I assume your Highness will be
+taking the throne with no further
+hesitation?
+
+<CH0>
+No, I still have things I need
+to do.
+
+<X1e>Old man<X04>
+Oh, I see. I will look forward
+to your Highness's swift return,
+then."
 "e4df","<X1e>男<X04>
 これは これは 王子さま。
-ついにアクダムを倒しアスエルさまのかたきを 討たれたそうですね。"
+ついにアクダムを倒しアスエルさまのかたきを 討たれたそうですね。","<X1e>Man<X04>
+Your Highness! I understand you
+have at last defeated Achdam and
+avenged King Asuel?"
 "e53d","<X1e>男<X04>
 これは これは 王子さま。
-ついにアクダムを倒しアスエルさまのかたきを 討たれたそうですね。"
+ついにアクダムを倒しアスエルさまのかたきを 討たれたそうですね。","<X1e>Man<X04>
+Your Highness! I understand you
+have at last defeated Achdam and
+avenged King Asuel?"
 "e59b","<X1e>兵士<X04>
 セリオス王子さまは ファーレーンの
-誇りでございます。"
+誇りでございます。","<X1e>Soldier<X04>
+You are the pride of Farleyn,
+Prince Selios!"
 "e5d7","<X1e>ラウエル<X04>
 セリオス王子さま、お元気そうで
-なによりでございます。"
+なによりでございます。","<X1e>Rauel<X04>
+I am glad to see that your
+Highness is well."
