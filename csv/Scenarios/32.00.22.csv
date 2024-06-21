@@ -1,9 +1,16 @@
-"e41a","<X0e>が入っていました。<RETN>"
+"e41a","<X0e>が入っていました。<RETN>","<X0e> inside.<RETN>"
 "e42e","<CALLe458>不思議な<CALLe45d>
 
 <JUMPe470><LOCe440><CALLe458>不思議な<CALLe45d>
 
-<CALLe470> また<RET_IL>"
-"e458","<X0b>は <RET_IL>"
-"e45d","宝箱を開けました。<RETN>"
-"e470","宝箱の中には<RET_IL>"
+<CALLe470> また<RET_IL>","<CALLe458>strange
+<CALLe45d>
+
+<CALLe470>a <RET_IL>
+<LOCe440><CALLe458>strange
+<CALLe45d>
+
+<CALLe470>another <RET_IL>"
+"e458","<X0b>は <RET_IL>","<X0b> opened the <RET_IL>"
+"e45d","宝箱を開けました。<RETN>","chest.<RETN>"
+"e470","宝箱の中には<RET_IL>","There was <RET_IL>"
