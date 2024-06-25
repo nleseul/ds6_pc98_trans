@@ -1,10 +1,8 @@
 "e189","<X1e>武器屋<X04>
 いらっしゃいませ。
 ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
-Welcome! Can I interest you in
-an iron spear?
-
-<RET_IL>"
+Welcome! This shop shells
+weapons and armor.<RETN>"
 "e1c0","また来てくださいね。","Come again!"
 "e1ff","<X1e>道具屋<X04>
 いらっしゃいませ。

@@ -1,31 +1,48 @@
 "e189","<X1e>武器屋<X04>
 いらっしゃいませ。
-ここは武器と防具の店ですが<RETN>"
-"e1c0","また来てくださいね。"
+ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
+Welcome! This shop shells
+weapons and armor.<RETN>"
+"e1c0","また来てくださいね。","Come again!"
 "e1ff","<X1e>道具屋<X04>
 いらっしゃいませ。
 洞窟に行くなら たいまつとワプの羽、この辺の人は みんな持ってますよ。
 
-どんな ご用ですか？<RETN>"
-"e274","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool merchant<X04>
+Welcome! People around here alwayscarry torches and warp feathers
+whenever they go into caves.
+
+How can I help you?<RETN>"
+"e274","また来てくださいね。","Come again!"
 "e295","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e2b9","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e2d3","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e2f8","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e313"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e33f","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e358","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e404","<X1e>男<X04>
 あんたたち 聞いたかい。
@@ -33,17 +50,31 @@
 なんでも ファーレーンの 王子さまがこの国から 怪物たちを 追い出して
 くださったそうだ。
 
-ほんとに えらい人だよなあ。"
+ほんとに えらい人だよなあ。","<X1e>Man<X04>
+Have you heard?
+<PAGE>
+The Prince of Farleyn somehow
+drove all the monsters out of
+Wonliech.
+
+What an amazing person."
 "e494","<X1e>老人<X04>
 ファーレーンのセリオス王子さまは
 お父上のかたきを 討たれたそうじゃ。
 
 あんたらも こんな所でブラブラして
 おらんで 少しは セリオスさまを
-見習ったら どうじゃ。ん。"
+見習ったら どうじゃ。ん。","<X1e>Old man<X04>
+I understand that Prince Selios ofFarleyn has avenged his father's
+death.
+
+You kids should try to be a littlemore like that Prince, instead of
+loitering around here."
 "e53b","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
 "e573","<X1e>男<X04>
 <IF0408><JUMPe613><IF0409><JUMPe613>子供を 助けていただいて 本当に
 ありがとうございました。
@@ -56,8 +87,21 @@
 
 ずいぶんと お疲れのようですね。
 狭い家では ございますが、
-ゆっくり お休みくださいませ。<SET0401>"
+ゆっくり お休みくださいませ。<SET0401>","<X1e>Man<X04>
+<IF0408><JUMPe613><IF0409><JUMPe613>Thank you so much for saving
+the children.
+<PAGE>
+My son will be happy to see that
+you're here. Please come any time!<END>
+<LOCe613>Oh, welcome! Come in,
+come in!
+
+You seem quite tired. This isn't
+a big house, but please make
+yourself at home.<SET0401>"
 "e69c","<X1e>子供<X04>
 <IF0402><JUMPe6cd>あっ、お兄ちゃんだ !
 いらっしゃい。<END>
-<LOCe6cd>お兄ちゃん また来てね。"
+<LOCe6cd>お兄ちゃん また来てね。","<X1e>Child<X04>
+<IF0402><JUMPe6cd>Oh, hi! Come in!<END>
+<LOCe6cd>Come back soon!"
