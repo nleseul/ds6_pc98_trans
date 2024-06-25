@@ -1,66 +1,108 @@
 "e1ce","<X1e>賢者<X04>
 わしは この国の人々に
-呪文を授けるのが 役目じゃ。<X0d>"
-"e207","<X08>どの 呪文が 欲しいのじゃな？<RETN>"
-"e225","誰の 呪文の書に 書き込むのじゃな？<RET_IL>"
-"e248","どこに 書き込むのじゃな？<RETN>"
-"e262","どれどれ、書き込むとしようか。<X0a>"
+呪文を授けるのが 役目じゃ。<X0d>","<X1e>Sage<X04>
+It is my duty to teach spells
+to the people of this kingdom.<X0d>"
+"e207","<X08>どの 呪文が 欲しいのじゃな？<RETN>","<X08>Which spell do you wish?<RETN>"
+"e225","誰の 呪文の書に 書き込むのじゃな？<RET_IL>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e248","どこに 書き込むのじゃな？<RETN>","Where shall I scribe it?<RETN>"
+"e262","どれどれ、書き込むとしようか。<X0a>","Do you wish me to scribe anything
+more?<X0a>"
 "e297","また、必要になったら
-いつでも 来るがよい。"
+いつでも 来るがよい。","Should you have any further needs,you may always come to me."
 "e2e5","<X1e>やみの商人<X04>
 へっへっへ、いらっしゃい。
 今度は まじめな商売ですぜ。
 
+<RET_IL>","<X1e>Shady merchant<X04>
+Heh heh heh... welcome!
+I'm doing honest business now.
+
 <RET_IL>"
 "e32a","おっと これ以上持てないようだぜ。
 
+<RET_IL>","Ah, but you can't carry any more!
+
 <RET_IL>"
 "e34d","何が欲しいんですかい？
+<RETN>","See anything you like?
 <RETN>"
 "e365","<X0e>ですかい。
 ほら ほんとに持ってるだろ。
 
+<RET_IL>","Ah, the <X0e>?
+Let me see if I indeed have one.
+
 <RET_IL>"
-"e38e","また、来てくれよな。"
+"e38e","また、来てくれよな。","Come again!"
 "e3bb","<X1e>武器屋<X04>
 おや 王子さま お元気そうで
-なによりでございます。<RETN>"
-"e3f6","また おいでください。"
+なによりでございます。<RETN>","<X1e>Weapon merchant<X04>
+Your Highness seems well!<RETN>"
+"e3f6","また おいでください。","Come again!"
 "e437","<X1e>道具屋<X04>
 おや 王子さま お元気そうで
-なによりでございます。<RETN>"
-"e485","また おいでください。"
+なによりでございます。<RETN>","<X1e>Tool merchant<X04>
+Your Highness seems well!<RETN>"
+"e485","また おいでください。","Come again!"
 "e4a6","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e4ca","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e4e4","<X0e>ですね。
 ありがとう ございます。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e50f","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e52a"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e556","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e56f","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e618","<X1e>女<X04>
 王子さまの おかげで この町も
-もとの 平和な 港町に戻りましたわ。本当に ありがとうございます。"
+もとの 平和な 港町に戻りましたわ。本当に ありがとうございます。","<X1e>Woman<X04>
+It's all thanks to your Highness
+that life in our port is back to
+normal. Thank you for everything!"
 "e67a","<X1e>男<X04>
 王子さま、町の はずれにいた
 あの やみ屋なんですけど。
 
 あいつ 釈放されたみたいで 今度は
-なんか変なものを 売っていますよ。"
+なんか変なものを 売っていますよ。","<X1e>Man<X04>
+Remember that shady merchant
+outside town?
+
+It seems that he's been released,
+and now he's selling a lot of
+weird stuff."
 "e6f8","<X1e>宿の主人<X04>
 <IF0409><JUMPe742><IF0408><JUMPe742>これは王子さま。
 お元気そうで 何よりでございます。<END>
 <LOCe742><SET0401>おや、王子さま。
 今晩も お泊まりですか？
-ごゆっくり お休みください。"
+ごゆっくり お休みください。","<X1e>Innkeeper<X04>
+<IF0409><JUMPe742><IF0408><JUMPe742>Welcome, your Highness!
+I am happy to see that you are
+well.<END>
+<LOCe742><SET0401>Welcome, your Highness!
+Will you be staying tonight?
+Please enjoy your stay."

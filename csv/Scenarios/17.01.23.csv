@@ -76,7 +76,8 @@ away a while ago."
 今晩も お泊まりですか？
 ごゆっくり お休みください。","<X1e>Innkeeper<X04>
 <IF0409><JUMPe673><IF0408><JUMPe673>Welcome, your Highness!
-I am happy to see that you are well.<END>
+I am happy to see that you are
+well.<END>
 <LOCe673><SET0401>Welcome, your Highness!
 Will you be staying tonight?
 Please enjoy your stay."

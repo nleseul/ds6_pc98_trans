@@ -36,13 +36,13 @@ Back again, are you?<RETN>"
 確か、黒いマントをきた男だったな。マントが青白く光っていて、
 どことなく うさんくさい 奴だった。","Ah, the <X0e>?
 <PAGE>
-But, I'm afraid that's already
-sold.
+I'm afraid I sold that just a
+moment ago.
 
-Who bought it? I suppose it was
-the man in the black cloak.
-His cloak had a pale glow, and
-he seemed rather shady."
+Who bought it? That man in the
+black cloak, I suppose. His cloak
+glowed with a pale blue light.
+Quite a suspicious person."
 "e4e7","わりーな、今日は何もないんだ。
 <JUMPe509><LOCe509>また、来てくれよな。","Ah, I'm afraid I haven't got
 anything today!
@@ -159,7 +159,8 @@ we'll sail for Rondo immediately."
 今晩も お泊まりですか？
 ごゆっくり お休みください。","<X1e>Innkeeper<X04>
 <X120904><JUMPeab4><X120804><JUMPeab4>Welcome, your Highness!
-I am happy to see that you are well.
+I am happy to see that you are
+well.
 <END>
 <LOCeab4><X140104>Welcome, your Highness!
 Will you be staying tonight?
