@@ -172,7 +172,7 @@ class Model:
         condition_set = set()
         for key in self._key_list:
             loc = 0
-            current_text = self._trans[key]['translation'].replace("\r", "")
+            current_text = self._get_raw_translation(key)
             while True:
                 loc = current_text.find("<IF", loc)
                 if loc < 0:
@@ -191,7 +191,7 @@ class Model:
             self._locators[key] = { 'key': key, 'loc': 0}
 
             loc = 0
-            current_text = self._trans[key]['translation'].replace("\r", "")
+            current_text = self._get_raw_translation(key)
             while True:
                 loc = current_text.find("<LOC", loc)
                 if loc < 0:
@@ -328,7 +328,7 @@ class Model:
                 if len(call_stack) > 0:
                     return_info = call_stack.pop()
                     current_key = return_info['key']
-                    current_input = self._trans[current_key]['translation'].replace("\r", "")
+                    current_input = self._get_raw_translation(current_key)
                     loc = return_info['loc']
                 else:
                     break
@@ -340,7 +340,7 @@ class Model:
                 if len(call_stack) > 0:
                     return_info = call_stack.pop()
                     current_key = return_info['key']
-                    current_input = self._trans[current_key]['translation'].replace("\r", "")
+                    current_input = self._get_raw_translation(current_key)
                     loc = return_info['loc']
                 else:
                     break
@@ -457,7 +457,10 @@ class Model:
 
             
     def _get_raw_translation(self, key):
-        return self._trans[key]['translation'].replace("\r", "")
+        trans_info = self._trans[key]
+        current_text = trans_info['translation'] if 'translation' in trans_info else trans_info['original']
+        current_text = current_text.replace("\r", "")
+        return current_text
     
 
 def curses_main(screen, argv):
