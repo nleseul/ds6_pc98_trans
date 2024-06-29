@@ -1,9 +1,11 @@
-"e173","<X08>どの 呪文が 欲しいのじゃな？<RETN>"
-"e191","誰の 呪文の書に 書き込むのじゃな？<RET_IL>"
-"e1b4","どこに 書き込むのじゃな？<RETN>"
-"e1ce","どれどれ、書き込むとしようか。<X0a>"
+"e173","<X08>どの 呪文が 欲しいのじゃな？<RETN>","<X08>Which spell do you wish?<RETN>"
+"e191","誰の 呪文の書に 書き込むのじゃな？<RET_IL>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e1b4","どこに 書き込むのじゃな？<RETN>","Where shall I scribe it?<RETN>"
+"e1ce","どれどれ、書き込むとしようか。<X0a>","Do you wish me to scribe anything
+more?<X0a>"
 "e203","また、必要になったら
-いつでも 来るがよい。"
+いつでも 来るがよい。","Should you have any further needs,you may always come to me."
 "e2e8","<CALLe4b2>わしは 戦いの呪文を いくつか
 知っておる。その呪文を 皆に
 伝えるのが わしの務めなのじゃ。
@@ -21,12 +23,28 @@
 教えてあげなさいよ おじいさん。
 
 <CALLe4b2>仕方がない、
-呪文を 教えてしんぜよう。<X0d>"
+呪文を 教えてしんぜよう。<X0d>","<CALLe4b2>I know some combat spells, and
+it's my duty to teach them to
+people.
+
+Used to make people play games
+against me before I'd teach 'em...
+
+But Duke Jestonn found out, and
+got mad at me for ""behavior 
+unbecoming of a sage""..
+
+<CALLe4c3>Oh, don't go on like that, dear!
+Just teach them their spells.
+
+<CALLe4b2>Fine, fine. I'll teach 'em.<X0d>"
 "e463","<CALLe4c3>おやおや 珍しい。
 こんな人里離れた いおりに
-お客さんが お見えになるなんて。"
-"e4b2","<X1e>頑固そうな老人<X04><RETN>"
-"e4c3","<X1e>やさしそうな おばあさん<X04><RETN>"
+お客さんが お見えになるなんて。","<CALLe4c3>Oh my! Now there's a rare sight!
+We don't get many visitors so
+far from civilization."
+"e4b2","<X1e>頑固そうな老人<X04><RETN>","<X1e>Stubborn old man<X04><RETN>"
+"e4c3","<X1e>やさしそうな おばあさん<X04><RETN>","<X1e>Kindly old woman<X04><RETN>"
 "e4dd","<X1e>オレア<X04>
 これは、これは。
 こんな 寂しい所に よく まいられた。
@@ -34,10 +52,20 @@
 わしは いくつかの呪文を 知っておるその呪文を 皆に伝えるのが
 わしの務めじゃ。
 
+<RET_IL>","<X1e>Orea<X04>
+Welcome, welcome! It's a pleasure
+to have visitors way out here.
+
+I know a few spells, and it's my
+duty to teach them to people.
+
 <RET_IL>"
 "e569","<X1e>老人<X04>
 あんな 親不孝者の息子など
-のたれ死んでしまえば いいのじゃ。"
+のたれ死んでしまえば いいのじゃ。","<X1e>Old man<X04>
+Miserable excuse for a son!
+He'll end up dead in a ditch
+somewhere, and good riddance!"
 "e5ac","<X1e>おばあさん<X04>
 まあ 皆さん おそろいで
 よく おこしに なられました。
@@ -45,13 +73,24 @@
 ポムは また 冒険に出てしまったの
 ですよ。
 まったく あの子ったら じっと
-してられないのですから ･ ･ ･。"
+してられないのですから ･ ･ ･。","<X1e>Old woman<X04>
+Oh, my! Welcome, all of you!
+
+Pomm has gone off adventuring
+again.
+That child really just can't stay
+still."
 "e653","<X1e>ロエル<X04>
 お前たち、何事も あきらめては
 ならんぞ。
 
 あきらめずに 努力を重ねておれば
-必ず 道は開けるものじゃ。"
+必ず 道は開けるものじゃ。","<X1e>Loell<X04>
+No matter what, you mustn't
+give up!
+
+As long as you persist, the way
+will surely open for you."
 "e6bf","<X1e>バーバラ<X04>
 <IF0408><JUMPe6d6><IF_NOT0409><JUMPe73f><LOCe6d6>おや、ずいぶん疲れておるようじゃなこのばばに まかせなされ。
 
@@ -59,14 +98,27 @@
 
 <ASM70c5><LOCe73f>エリオンさま、早く 王位に
 おつきになり 国民を 安心させて
-くださいませ。"
+くださいませ。","<X1e>Barbara<X04>
+<IF0408><JUMPe6d6><IF_NOT0409><JUMPe73f><LOCe6d6>Oh, you seem quite tired. Let
+me take care of that.
+
+<X1c>Barbara casts the spell of Res5.<X0c0901><X04>
+
+<ASM70c5><LOCe73f>Please, Prince Aerion. Take the
+throne soon, and ease the people'sworries."
 "e787","<CH3>
 おい、なんか 変なもんが あるぞ。
 
 <CH2>
 キャ !! 気持ち悪い !!
 
-<X1c><CH3>は <RET_IL>"
+<X1c><CH3>は <RET_IL>","<CH3>
+Hey, there's somethin' weird here.
+
+<CH2>
+Eww! Gross!!
+
+<X1c><CH3> found the <RET_IL>"
 "e7cb","<X0e>を
-見つけました。<RETN>"
+見つけました。<RETN>","<X0e>.<RETN>"
 "e7de","<X1f><RET_IL>"
