@@ -1,11 +1,17 @@
 "e107","<X1e>武器屋<X04>
 いらっしゃいませ。
-ここは武器と防具の店ですが<RETN>"
-"e13e","また来てくださいね。"
+ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
+Welcome! My shop sells weapons
+and armor.<RETN>"
+"e13e","また来てくださいね。","Come again!"
 "e162","<X1e>道具屋<X04>
 いらっしゃい たいまつと ワプの羽はいかがですか？
 
-どんな ご用ですか？<RETN>"
+どんな ご用ですか？<RETN>","<X1e>Tool merchant<X04>
+Welcome! Looking for torches and
+warp feathers?
+
+How can I help you?<RETN>"
 "e1b8","<X1e>道具屋<X04>
 いらっしゃいませ。
 あらわしの鈴は いかがでしょうか？
@@ -21,26 +27,53 @@
 一度 使ったら やめられなく
 なってしまいますよ。
 
-どんな ご用ですか？<RETN>"
-"e330","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool merchant<X04>
+Welcome!
+Do you need any Reveal Chimes?
+
+If you use several of them at
+once, the effects last longer. So
+people around here like to buy
+a whole year's worth at once.
+
+At minimum, I think I'd recommend
+that you use at least 10 of them.
+
+But be careful; they can be
+addictive. You might not be able
+to stop using them once you start!
+
+How can I help you?<RETN>"
+"e330","また来てくださいね。","Come again!"
 "e34d","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e371","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e38b","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e3b0","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e3cb"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e3f7","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e410","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e4e6","<X1e>フォルス<X04>
 <CLEAR0401><IF0408><JUMPe500><IF_NOT0409><JUMPe54f><LOCe500>だいぶ お疲れのようですね。
@@ -55,7 +88,20 @@
 良くなって 出ていきました。<END>
 <LOCe628>町の人々は いろいろな うわさ話を
 しておりますぞ。あなたがたが
-天から降りてきたとか なんとか。"
+天から降りてきたとか なんとか。","<X1e>Foless<X04>
+<CLEAR0401><IF0408><JUMPe500><IF_NOT0409><JUMPe54f><LOCe500>You seem very tired. Please rest
+here for the night.<SET0401><END>
+<LOCe54f><IF008d><JUMPe628><SET008d>It took so long for you to get
+back that I went to Riezel to see
+my brother myself.
+
+It sounds like the Prince of
+Farleyn has saved Wonliech. And
+Roh recovered and left a while
+ago.<END>
+<LOCe628>People in town are telling a lot
+of stories about you. Saying you
+descended from heaven and such."
 "e686","<X1e>老人<X04>
 <IF_NOT008d><JUMPe86c>こ、これは 私のような者に 神さまがお言葉を おかけくださるとは
 あ、ありがとうございます。
@@ -65,7 +111,17 @@
 
 外にいる じいさんが
 あなたがたが 天から降りてくるのを
-見たと 自慢しておりましたぞ。"
+見たと 自慢しておりましたぞ。","<X1e>Old man<X04>
+<IF_NOT008d><JUMPe86c>F-For divine beings to speak
+unto one such as me...!
+I'll be eternally grateful!
+
+What? You're not...?
+I'm being foolish again!
+
+That old man outside claimed
+he saw you fall from the heavens.
+He must have been exaggerating."
 "e779","<X1e>老人<X04>
 <IF_NOT008d><JUMPe86c>この国から モンスターを追い払って
 くださったそうですな。
@@ -79,7 +135,18 @@
 神の子なのかも しれん。
 フム、きっと そうじゃ。<END>
 <LOCe86c>突然 モンスターどもが いなくなってしまったのじゃ。
-いったい どうなっておるのじゃろう。"
+いったい どうなっておるのじゃろう。","<X1e>Old man<X04>
+<IF_NOT008d><JUMPe86c>It looks like you've driven the
+monsters from Wonliech!
+Thank you!
+
+Surely you must be messengers
+sent here by Freya!
+
+No, I suppose you're newborn gods
+yourselves! Yes, that must be it!<END>
+<LOCe86c>All the monsters are gone
+suddenly! What happened?"
 "e8c3","<X1e>女<X04>
 <IF008d><JUMPe91e>突然 モンスターが いなくなって
 しまったのよ。
@@ -93,7 +160,22 @@
 
 えっ？ 違うの？
 でも、おじいさんが
-そう 言いふらしてたわよ。"
+そう 言いふらしてたわよ。","<X1e>Woman<X04>
+<IF008d><JUMPe91e>All the monsters are gone
+suddenly! What happened?<END>
+<LOCe91e>Wait... I've heard of you!
+You're the ones who drove
+the monsters out of Wonliech!
+
+And you're also messengers
+from the Goddess! I never
+realized...!
+
+What? You're not?
+But that's what the old
+man was telling everyone!"
 "e9ff","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."

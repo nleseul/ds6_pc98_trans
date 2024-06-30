@@ -1,30 +1,45 @@
 "e11d","<X1e>武器屋<X04>
 いらっしゃいませ。
-ここは武器と防具の店ですが<RETN>"
-"e154","また来てくださいね。"
+ここは武器と防具の店ですが<RETN>","<X1e>Weapon merchant<X04>
+Welcome! My shop sells weapons
+and armor.<RETN>"
+"e154","また来てくださいね。","Come again!"
 "e194","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは 道具の店ですが
-どんな ご用ですか？<RETN>"
-"e1da","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e1da","また来てくださいね。","Come again!"
 "e1fc","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e220","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e23a","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e25f","どれを 売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e27a"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e2a6","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e2bf","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e356","<X1e>兵士<X04>
 セリオス王子さま、ソルディスまで
@@ -32,35 +47,71 @@
 
 さすがは フェリシアさまの
 ご子息さま ですね。
-我々も 鼻が高いです。"
+我々も 鼻が高いです。","<X1e>Soldier<X04>
+I understand that your Highness
+has gone to the aid of Soldythe
+as well.
+
+You truly are the son of Queen
+Felicia. You bring honor to us
+as well."
 "e3e0","<X1e>女<X04>
 セリオス王子さま、ソルディスまで
 お救いに なられたそうですね。
 
 さすがは フェリシアさまの
 ご子息さま ですわね。
-私も 鼻が高いですわ。"
+私も 鼻が高いですわ。","<X1e>Woman<X04>
+I understand that your Highness
+has gone to the aid of Soldythe
+as well.
+
+You truly are the son of Queen
+Felicia. You bring honor to us
+as well."
 "e46a","<X1e>男<X04>
 セリオス王子さま、ソルディスまで
 お救いに なられたそうですね。
 
 さすがは フェリシアさまの
 ご子息さま ですね。
-私も 鼻が高いです。"
+私も 鼻が高いです。","<X1e>Man<X04>
+I understand that your Highness
+has gone to the aid of Soldythe
+as well.
+
+You truly are the son of Queen
+Felicia. You bring honor to us
+as well."
 "e4f0","<X1e>男<X04>
 セリオス王子さま、ソルディスまで
 お救いに なられたそうですね。
 
 さすがは フェリシアさまの
 ご子息さま ですね。
-私も 鼻が高いです。"
+私も 鼻が高いです。","<X1e>Man<X04>
+I understand that your Highness
+has gone to the aid of Soldythe
+as well.
+
+You truly are the son of Queen
+Felicia. You bring honor to us
+as well."
 "e576","<X1e>エリック<X04>
 セリオス王子さま、ソルディスまで
 お救いに なられたそうですな。
 
 さすがは フェリシアさまの
 ご子息さまじゃ。
-"
+","<X1e>Eric<X04>
+I understand that your Highness
+has gone to the aid of Soldythe
+as well.
+
+You are indeed the son of Queen
+Felicia."
 "e5ec","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."

@@ -242,8 +242,7 @@ A-Absoutely.
 外にいる じいさんが
 あなたがたが 天から降りてくるのを
 見たと 自慢しておりましたぞ。","<X1e>Old man<X04>
-<IF_NOT008d><JUMPed62>
-F-For divine beings to speak
+<IF_NOT008d><JUMPed62>F-For divine beings to speak
 unto one such as me...!
 I'll be eternally grateful!
 
@@ -270,7 +269,7 @@ He must have been exaggerating."
 <IF_NOT008d><JUMPed62>It looks like you've driven the
 monsters from Wonliech!
 Thank you!
-<PAGE>
+
 Surely you must be messengers
 sent here by Freya!
 
