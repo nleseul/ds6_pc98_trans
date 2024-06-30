@@ -22,8 +22,7 @@ Prince Selios!"
 知らぬこととはいえ ご無礼の数々
 お許しください。<END>
 <LOCe584>だいぶ お疲れのようで ございますねゆっくり お休みください。<SET0401>","<X1e>Captain<X04>
-<IF00ad><JUMPe6c0><IF0408><JUMPe584><IF0409><JUMPe584><CLEAR0401>
-Oh! Welcome back, Prince Selios!
+<IF00ad><JUMPe6c0><IF0408><JUMPe584><IF0409><JUMPe584><CLEAR0401>Oh! Welcome back, Prince Selios!
 
 I received word from Riezel.
 I wish your Highness had informed
