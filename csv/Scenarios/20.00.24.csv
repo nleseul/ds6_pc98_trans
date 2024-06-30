@@ -8,21 +8,46 @@
 <CH2>
 ボアードさん、ありがとう。
 
-<CALLe4de>ナンノ なんの。 ポリ ポリ"
+<CALLe4de>ナンノ なんの。 ポリ ポリ","<CALLe4de><IF00dd><JUMPe2bc><ASMe31b><IF_NOT0401><JUMPe289>What? More gunpowder?
+<ASMe32d><X08><IF_NOT00dd><JUMPe289><X1c>Handed over the <X04><X0e><X1c>.<X0c0301><X04>
+
+<JUMPe2bc><LOCe289>If ya want more gunpowder, you'll
+have ta trade some rum fer it!<END>
+<LOCe2bc>Pick it up in the armory.
+In there, on the right.
+
+<CH2>
+Thank you so much, Buald.
+
+<CALLe4de>I-It's no problem! Hee hee..."
 "e33f","<X1e>海賊<X04>
 いやー、船長のきげんが なおって
-助かったよ。"
+助かったよ。","<X1e>Pirate<X04>
+Wow! The cap'n's in a better mood
+now."
 "e373","<IF_NOT00dd><JUMPe33f><X1e>海賊<X04>
 船長の許可をもらってきたって ？
 <ASMe423><IF0401><JUMPe3e3><CLEAR00dd>わかった、ほらよ 持っていきな。<WAIT>
 <X0e><X1c>をもらいました。<X0c0301><X04><END>
 <LOCe3e3>いくら 許可をもらってきたって
-持てねーもんは しょうがねーよな。"
+持てねーもんは しょうがねーよな。","<IF_NOT00dd><JUMPe33f><X1e>Pirate<X04>
+Ya get the cap'n's permission?
+<ASMe423><IF0401><JUMPe3e3><CLEAR00dd>All right, here ya go.<WAIT>
+<X1c>Received <X04><X0e><X1c>.<X0c0301><X04><END>
+<LOCe3e3>No matter what the cap'n says,
+ya can't hold any more."
 "e43b","<X1e>海賊<X04>
 <IF0408><JUMPe467><IF0409><JUMPe467>やあ 客人 元気そうだな？<END>
-<LOCe467><SET0400>さあ ゆっくり休んでくんな。"
+<LOCe467><SET0400>さあ ゆっくり休んでくんな。","<X1e>Pirate<X04>
+<IF0408><JUMPe467><IF0409><JUMPe467>How ya feelin', guests?
+If yer tired, ya can always take
+a rest here.<END>
+<LOCe467><SET0400>Okay, rest well!"
 "e486","<X1e>ミラルダ<X04>
-なんだね、まだ何か用があるのかい。"
+なんだね、まだ何か用があるのかい。","<X1e>Miralda<X04>
+Don't need anything else, do you?"
 "e4b4","<X1e>神父<X04>
-なんだ 用がねえのに 話しかけるな !"
-"e4de","<X1e>ボアード<X04><RETN>"
+なんだ 用がねえのに 話しかけるな !","<X1e>Priest<X04>
+If ya don't need anything,
+don't bug me!"
+"e4de","<X1e>ボアード<X04><RETN>","<X1e>Buald<X04><RETN>"
