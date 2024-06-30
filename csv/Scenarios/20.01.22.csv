@@ -1,45 +1,78 @@
 "e19e","<X1e>道具屋<X04>
 いらっしぇーまし、
-ここは道具屋ですけんど？<RETN>"
-"e1d3","あんりがとう ごぜーました。"
+ここは道具屋ですけんど？<RETN>","<X1e>Tool merchant<X04>
+How ya doin'?
+This yere's a tool shop.<RETN>"
+"e1d3","あんりがとう ごぜーました。","Thankees muchly!"
 "e1fa","これ以上持てないようですけんど。
+
+<RET_IL>","Ya cain't carry na more!
 
 <RET_IL>"
 "e21c","どれを買うだか？
+<RETN>","Whatcha buyin'?
 <RETN>"
 "e22e","<X0e>だね。
 あんりがとう。
 
+<RET_IL>","That thar <X0e>?
+Thankees!
+
 <RET_IL>"
 "e24e","どれを売るだ？
+<RETN>","Whatcha sellin'?
 <RETN>"
 "e25e"," Gold になるけんど
 それでも ええか？
+<RETN>","golds.
+How's about it?
 <RETN>"
 "e284","そんか しかたあんめぇ。
 
+<RETN>","Welp, that's too bad, then.
+
 <RETN>"
 "e29d","あんりがとう。
+<RETN>","Thankees!
 <RETN>"
 "e32c","<X1e>海賊<X04>
 <IF0408><JUMPe381><IF0409><JUMPe381>やあ 客人 元気そうだな？
 疲れたら 遠慮せずに
 いつでも来てくれよ。<END>
-<LOCe381><SET0400>さあ ゆっくり休んでくんな。"
+<LOCe381><SET0400>さあ ゆっくり休んでくんな。","<X1e>Pirate<X04>
+<IF0408><JUMPe381><IF0409><JUMPe381>Looks like you're doing well!
+When you get tired, don't
+hesitate to come back here.<END>
+<LOCe381><SET0400>Okay, have a good rest!"
 "e3a0","<X1e>漁師<X04>
 怪物たちが いなくなって また 魚が
 沢山 とれるように なったんだぜ。
-でも おれは シーラス１本ねらいさ。"
+でも おれは シーラス１本ねらいさ。","<X1e>Fisherman<X04>
+Good fishing here now, with the
+monsters gone. I'm still anglin'
+for a shillath myself."
 "e40d","<X1e>情報屋 トミー<X04>
 この国から モンスターが
 いなくなったのは いいんだけど。
 
 村の情報屋 トミーとしては
 ちょっと 寂しいかな。
-しかたない、また漁師にでも戻るか。"
+しかたない、また漁師にでも戻るか。","<X1e>Tommy, information broker<X04>
+I'm glad that the monsters are
+gone from Lanoura, of course.
+
+But no one in town really needs
+Tommy the information broker now.
+Maybe I should just go back to
+fishing."
 "e4a8","<X1e>老人<X04>
 急にモンスターがいなくなりおった。これはきっと エリオンさまが
-この国をお救いくださったのじゃ。"
+この国をお救いくださったのじゃ。","<X1e>Old man<X04>
+The monsters suddenly vanished!
+Prince Aerion must have come to
+save the kingdom."
 "e50e","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."

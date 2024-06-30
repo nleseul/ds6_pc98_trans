@@ -1,45 +1,76 @@
 "e19e","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは道具の店ですが
-どんな ご用ですか？<RETN>"
-"e1e3","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e1e3","また来てくださいね。","Come again!"
 "e203","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e227","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e241","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e266","どれを売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e280"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e2ac","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e2c5","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e363","<X1e>海賊<X04>
 <IF0408><JUMPe3b7><IF0409><JUMPe3b7>やあ客人 元気そうだな？
 疲れたら 遠慮せずに
 いつでも来てくれよ。<END>
-<LOCe3b7><SET0400>さあ ゆっくり休んでくんな。"
+<LOCe3b7><SET0400>さあ ゆっくり休んでくんな。","<X1e>Pirate<X04>
+<IF0408><JUMPe37b><IF0409><JUMPe37b>Looks like you're doing well!
+When you get tired, don't
+hesitate to come back here.<END>
+<LOCe37b><SET0400>Okay, have a good rest!"
 "e3d6","<X1e>漁師<X04>
 怪物たちが いなくなって また 魚が
 沢山 とれるように なったんだぜ。
-でも おれは シーラス１本ねらいさ。"
+でも おれは シーラス１本ねらいさ。","<X1e>Fisherman<X04>
+Good fishing here now, with the
+monsters gone. I'm still anglin'
+for a shillath myself."
 "e443","<X1e>情報屋 トミー<X04>
 なあ なあ なあ なあ
 
 これは未確認情報なんだが
 エリオンさまが 今度はソルディスの
-怪物を 退治したそうだぜ。"
+怪物を 退治したそうだぜ。","<X1e>Tommy, information broker<X04>
+Hey! Hey! Hey!
+
+This is unconfirmed information,
+but I hear that Prince Aerion has
+now eliminated the monsters in
+Soldythe!"
 "e4bc","<X1e>老人<X04>
 急に モンスターが いなくなりおった。これはきっと エリオンさまが
-この国をお救いくださったのじゃ。"
+この国をお救いくださったのじゃ。","<X1e>Old man<X04>
+The monsters suddenly vanished!
+Prince Aerion must have come to
+save the kingdom."
 "e524","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."
