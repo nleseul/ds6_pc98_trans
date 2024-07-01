@@ -897,6 +897,10 @@ def scenario_disk_patch_misc(scenario_disk_patch):
     scenario_disk_patch.add_record(0x90b75, b"\x90") # Skip only one byte when the number of wins is 1.
     scenario_disk_patch.add_record(0x90d19, b" HP\x00 Attack\x00 Defense\x00 Speed\x00 Left\x00\x00\x00\x00\x00")
 
+    # Combat 3c.00.26 (Dark Lich/Demon Ghost)
+    scenario_disk_patch.add_record(0x101386, b"\x17") # Change the offset of the summoned demon ghost's letter.
+    scenario_disk_patch.add_record(0x101390, b"\x40") # Change the base value of the summoned ghost's letter to reflect half-width characters.
+
 
 def scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk):
     scenario_directory = get_scenario_directory(scenario_disk)
