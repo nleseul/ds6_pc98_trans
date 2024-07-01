@@ -1,52 +1,82 @@
 "e29e","<X1e>賢者<X04>
 これは、これはエリオン殿。
-呪文が 必要なのかな？<X0d>"
-"e2d6","<X08>どの 呪文を 書き込むかね？<RETN>"
-"e2f2","誰の 呪文の書に 書き込むかね？<RETN>"
-"e311","どこに 書き込むかね？<RETN>"
-"e327","では、書き込むとしよう。<X0a>"
-"e34e","必要になったら いつでも 来なさい。"
+呪文が 必要なのかな？<X0d>","<X1e>Sage<X04>
+Ah, Prince Aerion!
+Are you needing any spells?<X0d>"
+"e2d6","<X08>どの 呪文を 書き込むかね？<RETN>","<X08>Which spell do you want?<RETN>"
+"e2f2","誰の 呪文の書に 書き込むかね？<RETN>","Whose spellbook should I
+scribe it in?<RETN>"
+"e311","どこに 書き込むかね？<RETN>","Where should I scribe it?<RETN>"
+"e327","では、書き込むとしよう。<X0a>","Want me to scribe anything else?<X0a>"
+"e34e","必要になったら いつでも 来なさい。","Come see me anytime you need to."
 "e390","<X1e>武器屋<X04>
 いらっしゃい 水晶の杖なんか
 いかがでしょうか？
 
+<RET_IL>","<X1e>Weapon merchant<X04>
+Welcome! Need a Crystal Staff?
+
 <RET_IL>"
-"e3c9","また来てくれよ。"
+"e3c9","また来てくれよ。","Come again!"
 "e406","<X1e>道具屋<X04>
 らっしゃい、道具の店だぜ。
-どんな用だい？<RETN>"
-"e439","またどうぞ。"
+どんな用だい？<RETN>","<X1e>Tool merchant<X04>
+Come in! I've got your tools.
+Whatcha need?<RETN>"
+"e439","またどうぞ。","Come back, y'hear?"
 "e451","なんだ 持てねえじゃん。
+
+<RET_IL>","You can't hold no more!
 
 <RET_IL>"
 "e46a","どれを買うね？
+<RETN>","Whatcha buyin'?
 <RETN>"
 "e47a","<X0e>だね。
 まいどあり。
 
+<RET_IL>","The <X0e>?
+Thanks a bunch!
+
 <RET_IL>"
 "e498","どれを売るね？
+<RETN>","Whatcha sellin'?
 <RETN>"
 "e4a8"," Gold になるけど？
-<RETN>"
+<RETN>"," gold.
+How's that?"
 "e4bc","そうか。
+
+<RETN>","Okay.
 
 <RETN>"
 "e4c6","まいどあり。
+<RETN>","Thanks!
 <RETN>"
 "e5ac","<X1e>漁師<X04>
 エ、エリオンさま。
-な、なんとかして くだせー。"
+な、なんとかして くだせー。","<X1e>Fisherman<X04>
+P-Prince Aerion!
+Y-You have to help me!"
 "e5e2","<X1e>女<X04>
 エリオンさま、うちのバカ亭主が
 さんざん ご迷惑を おかけしまして
 申し訳ございません。
 
 今回のことで 愛想をつかしまして、
-ナッシュにいる私の姉とも相談したのですが、別れることに しましたわ。"
+ナッシュにいる私の姉とも相談したのですが、別れることに しましたわ。","<X1e>Woman<X04>
+I apologize for all the trouble
+my idiot husband caused for your
+Highness.
+
+I'm fed up with him. I talked to
+my sister in Nashieu, and I've
+decided that I'm leaving him."
 "e6a2","<X1e>女<X04>
 私の夫は 船長ですの。
-また 船の運航が 出来るようになってとても 喜んでいますわ。"
+また 船の運航が 出来るようになってとても 喜んでいますわ。","<X1e>Woman<X04>
+My husband is a ship captain.
+I'm so glad he can sail again."
 "e6f7","<X1e>老人<X04>
 エリオンさまたちの おかげで
 また港に 戻ることができました。
@@ -54,4 +84,11 @@
 
 お疲れの時は いつでも
 おこしください。<END>
-<LOCe76e><SET0400>どうぞ お好きなだけ お休みください。"
+<LOCe76e><SET0400>どうぞ お好きなだけ お休みください。","<X1e>Old man<X04>
+I am home again because of you!
+<IF0408><JUMPe76e><IF0409><JUMPe76e>
+
+Please, come here whenever
+you are weary.<END>
+<LOCe76e><SET0400>Please, rest as long as you
+wish."

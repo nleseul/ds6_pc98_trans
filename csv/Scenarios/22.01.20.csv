@@ -3,39 +3,62 @@
 うちの銀製品は 評判いいですよ。
 特におすすめは 銀の杖ですね。
 
+<RET_IL>","<X1e>Weapon merchant<X04>
+Welcome! Our silver products are
+famous. I especially recommend
+the Silver Staff.
+
 <RET_IL>"
-"e1fa","また来てくださいね。"
+"e1fa","また来てくださいね。","Come again!"
 "e23b","<X1e>道具屋<X04>
 いらっしゃいませ。
 ここは道具の店です
-どんな ご用ですか？<RETN>"
-"e27e","また来てくださいね。"
+どんな ご用ですか？<RETN>","<X1e>Tool Merchant<X04>
+Welcome! This is a tool shop.
+What would you like?<RETN>"
+"e27e","また来てくださいね。","Come again!"
 "e29f","おや？これ以上持てないようですね。
+
+<RET_IL>","You don't have any room for it.
 
 <RET_IL>"
 "e2c3","どれを買ってくれますか？
+<RETN>","What would you like to buy?
 <RETN>"
 "e2dd","<X0e>だね。
 どうも ありがとう。
 
+<RET_IL>","The <X0e>?
+Thank you very much!
+
 <RET_IL>"
 "e302","どれを売ってくれますか？
+<RETN>","What would you like to sell?
 <RETN>"
 "e31c"," Gold になるけど
 それでも よろしいですか？
-<RETN>"
+<RETN>"," gold.
+Will that be okay?"
 "e348","それは残念です･･･ ･･･。
+
+<RETN>","That's too bad...
 
 <RETN>"
 "e361","どうも ありがとうございます。
+<RETN>","Thank you very much.
 <RETN>"
 "e3fd","<X1e>兵士<X04>
-エリオンさま、いらっしゃいませ。"
+エリオンさま、いらっしゃいませ。","<X1e>Soldier<X04>
+Welcome, Prince Aerion."
 "e425","<X1e>兵士<X04>
-エリオンさま、いらっしゃいませ。"
+エリオンさま、いらっしゃいませ。","<X1e>Soldier<X04>
+Welcome, Prince Aerion."
 "e44d","<X1e>兵士<X04>
 もう外には バケモノなど いないのになんで 私は 門番を していなきゃ
-いけないんでしょうね？"
+いけないんでしょうね？","<X1e>Soldier<X04>
+If there aren't any more monsters
+outside, why do I have to keep
+guarding this gate?"
 "e4ad","<X1e>兵士<X04>
 エリオンさま、私の願いを 聞いては
 もらえませんか？
@@ -43,7 +66,16 @@
 町の外から 怪物が いなくなったのでリストンさまに家に帰らしてほしいと頼んだのですが どうしても 帰らせてもらえません。
 
 エリオンさまから 頼んでみては
-いただけませんでしょうか。"
+いただけませんでしょうか。","<X1e>Soldier<X04>
+I have a request for your
+Highness, if you don't mind.
+
+I've asked Count Liston to let
+me return home, now that there areno more monsters, but he refused
+my request.
+
+Maybe he would reconsider if the
+request came from your Highness?"
 "e595","<X1e>女<X04>
 ねえ、聞いて 聞いて。
 私の妹は ヨルドの港の 漁師と
@@ -53,7 +85,17 @@
 
 私 はじめから思っていたのよ
 この結婚は 間違ってるって。
-ねっ やっぱりそうだったでしょ。"
+ねっ やっぱりそうだったでしょ。","<X1e>Woman<X04>
+Listen, listen!
+My sister married that fisherman
+in Yold Harbor, right?
+
+But she's completely sick of him,
+and decided to leave him.
+
+I knew all along that their
+marriage was a mistake! Didn't
+I say as much?"
 "e675","<X1e>男<X04>
 あ、エリオンさま。
 ようこそ、おいでくださいました。
@@ -65,12 +107,27 @@
 それ以来 屋敷に こもったきり
 出てこないんですよ。
 まあ この国の人間は みんな
-憎んでますからね。"
+憎んでますからね。","<X1e>Man<X04>
+Prince Aerion! Thank you for
+coming here.
+
+I've heard that all the fishermen
+who had to sell their daughters topay taxes are calling for Liston'shead.
+
+He's shut himself up in the manor,and doesn't dare to leave.
+Everyone in the kingdom hates him
+now."
 "e762","<X1e>老人<X04>
 <IF0408><JUMPe7a9><IF0409><JUMPe7a9>疲れたら いつでも いらしてください。歓迎しますよ。
 <END>
 <LOCe7a9><SET0400><SET0401>どうぞ ゆっくりと お休みください。この家に ベッドがあるのも
-あなたがたの おかげですから。"
+あなたがたの おかげですから。","<X1e>Old man<X04>
+<IF0408><JUMPe7a9><IF0409><JUMPe7a9>You're always welcome here. Stop
+by any time you're tired!<END>
+<LOCe7a9><SET0400><SET0401>Please, make yourselves at home!
+It's thanks to you that I've stillgot a bed at all!"
 "e809","<X1e>神父<X04>
 困ったことが あったら 何なりと
-私に 話しなさい。"
+私に 話しなさい。","<X1e>Priest<X04>
+Please speak with me whenever
+you are troubled."

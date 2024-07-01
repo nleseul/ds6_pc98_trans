@@ -1,9 +1,11 @@
-"e152","<X08>どの 呪文が 欲しいのじゃ？<RETN>"
-"e16e","誰の 呪文の書に 書き込むのじゃな？<RET_IL>"
-"e191","どこに 書き込むのじゃな？<RETN>"
-"e1ab","どれどれ、書き込むとしようか。<X0a>"
+"e152","<X08>どの 呪文が 欲しいのじゃ？<RETN>","<X08>Which spell do you wish?<RETN>"
+"e16e","誰の 呪文の書に 書き込むのじゃな？<RET_IL>","Into whose spellbook shall I
+scribe it?<RETN>"
+"e191","どこに 書き込むのじゃな？<RETN>","Where shall I scribe it?<RETN>"
+"e1ab","どれどれ、書き込むとしようか。<X0a>","Do you wish me to scribe anything
+more?<X0a>"
 "e1e0","また、必要になったら
-いつでも 来るがよい。"
+いつでも 来るがよい。","Should you have any further needs,you may always come to me."
 "e2a3","<X1e>リストン<X04>
 これは これは エリオンさま。
 私は これから どうしたら
@@ -15,14 +17,29 @@
 
 娘たちが すべて戻ってくれば、
 人々の 怒りも 少しは おさまる
-でしょう。"
+でしょう。","<X1e>Liston<X04>
+Prince Aerion! Welcome!
+Oh, what am I going to do...?
+
+<CH1>
+To begin with, you need to somehowre-purchase the women who people
+sold to pay their taxes.
+
+If all those women are brought
+home, then people's anger may
+abate somewhat."
 "e392","<X1e>兵士<X04>
 エリオンさま、内緒の話ですけど
 私は あの人を 守る気なんて
 ないんですよ。
 
 あの人を守ったりしたら それこそ
-村八分に されてしまいますからね。"
+村八分に されてしまいますからね。","<X1e>Soldier<X04>
+Please don't tell anyone this,
+your Highness. But, I don't reallyfeel like protecting that man.
+
+If I protect him, that'll be
+enough to get me ostracized."
 "e424","<X1e>兵士<X04>
 はぁぁ
 
@@ -34,48 +51,98 @@
 いやぁ、私がね リストン卿の兵士を
 している もんだから、
 
-息子が 近所の子供たちに 仲間外れにされている らしいんだ。"
+息子が 近所の子供たちに 仲間外れにされている らしいんだ。","<X1e>Soldier<X04>
+Sigh...
+
+<CH1>
+Is something wrong? It sounded
+like you were sighing.
+
+<X1e>Soldier<X04>
+No, it's just... Well, I'm workingfor Count Liston.
+
+And I think all the children in
+town have stopped being friends
+with my son."
 "e4d7","<X1e>兵士<X04>
 なんとか ここを抜け出して、
 家に帰りたいと 思っているのですが
-なかなか そうも いかなくて ･ ･ ･。"
+なかなか そうも いかなくて ･ ･ ･。","<X1e>Soldier<X04>
+Sometimes I think about sneaking
+away and going home... but I
+guess I shouldn't."
 "e53f","<X1e>兵士<X04>
 この屋敷は 危なくて しょうが
 ないですよ。
 
 昨日も リストン卿の散歩の通り道に
 毒蛇が 置かれていて、危うく
-大変なことに なるところでした。"
+大変なことに なるところでした。","<X1e>Soldier<X04>
+How can we stay safe in this
+manor?
+
+Yesterday, Count Liston was out
+for a walk, and someone left a
+poisonous snake in his path. It
+could have ended very badly."
 "e5ce","<X1e>兵士<X04>
 エリオンさま、リストン卿は 中で
-ございます。"
+ございます。","<X1e>Soldier<X04>
+Count Liston is inside, your
+Highness."
 "e602","<X1e>兵士<X04>
 今 ここを 逃げ出したりしたら、
 きっと 家を取り上げられてしまう
-だろうな、どうしたらいいんだ ･ ･ ･"
+だろうな、どうしたらいいんだ ･ ･ ･","<X1e>Soldier<X04>
+If I deserted now, I'm sure my
+house would be taken away.
+What can I do...?"
 "e66b","<X1e>兵士<X04>
 これは、エリオンさま。
 なんでも リストン卿は 毒が怖くて
-食事もまともにとらないそうですよ。"
+食事もまともにとらないそうですよ。","<X1e>Soldier<X04>
+Hello, Prince Aerion.
+
+I've heard that Count Liston is
+so scared of poison that he hasn'teven been eating properly."
 "e6cd","<X1e>兵士<X04>
 リストン卿は もうだめだな。
 一日中 おびえながら くらして
 いるからな。
 
 誰かが 直接 手を下さなくても
-きっと 発狂しちまうよ。"
+きっと 発狂しちまうよ。","<X1e>Soldier<X04>
+I'm not sure if there's any hope
+for the Count. He's living in
+terror constantly.
+
+Even if no one raises a hand
+against him, he'll probably go
+mad from it."
 "e74f","<X1e>兵士<X04>
 あ !! 私は兵士ですよ !!
-決して リストンを ねらう者などではないですよ !!"
+決して リストンを ねらう者などではないですよ !!","<X1e>Soldier<X04>
+No!! I'm a soldier!
+I'm not one of those people after
+Liston!"
 "e79e","<X1e>兵士<X04>
 夜中になると すごい叫び声が
 聞こえるんです。
 
 リストン卿が 悪い夢を 見ているん
-でしょうね。"
+でしょうね。","<X1e>Soldier<X04>
+I've been hearing someone
+screaming at night.
+
+Maybe Count Liston is having
+bad dreams."
 "e807","<X1e>賢者<X04>
 わしは リストンさまに呼ばれて
 来ておるのじゃ。
 あなたがたにも 呪文を授けよう。
+
+<RET_IL>","<X1e>Sage<X04>
+I was called here by Count Liston.But I can teach spells to you as
+well.
 
 <RET_IL>"

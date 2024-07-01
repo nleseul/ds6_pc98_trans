@@ -1,12 +1,15 @@
 "e18e","<X1e>賢者<X04>
 これは、これはエリオン殿。
-呪文が 必要なのかな？<X0d>"
-"e1c6","<X08>どの 呪文を 書き込むかね？<RETN>"
-"e1e2","誰の 呪文の書に 書き込むかね？<RETN>"
-"e201","どこに 書き込むかね？<RETN>"
-"e217","では、書き込むとしよう。<X0a>"
+呪文が 必要なのかな？<X0d>","<X1e>Sage<X04>
+Ah, <CALL0002>!
+Are you needing any spells?<X0d>"
+"e1c6","<X08>どの 呪文を 書き込むかね？<RETN>","<X08>Which spell do you want?<RETN>"
+"e1e2","誰の 呪文の書に 書き込むかね？<RETN>","Whose spellbook should I
+scribe it in?<RETN>"
+"e201","どこに 書き込むかね？<RETN>","Where should I scribe it?<RETN>"
+"e217","では、書き込むとしよう。<X0a>","Okay, I'll scribe it.<X0a>"
 "e23e","また、必要になったら
-いつでも 来なさい。"
+いつでも 来なさい。","Should you have any further needs,you may always come to me."
 "e2f0","<X1e>フラート<X04>
 <IF01f0><JUMPe37a>おお エリオン、<CALLe7d8>は
 奴隷として 売られた 娘たちを
@@ -24,44 +27,92 @@
 兵士は兵士で 給料を 払えなく
 なったら さっさと やめていって
 しまうし ･ ･ ･<WAIT>
-これから どうしたら いいのじゃ。"
+これから どうしたら いいのじゃ。","<X1e>Flart<X04>
+<IF01f0><JUMPe37a>Oh, <CALL0003>! <CALL0001> said he was
+going to go buy back those girls
+who were sold as slaves.
+
+He's becoming a fairly prudent guytoo.<END>
+<LOCe37a>Oh, blast it! <CALL0001> went and
+bought those slave girls back for
+twice what they were sold for.
+
+Now the treasury's empty, and
+the kingdom is deep in debt
+besides.
+
+All the soldiers are going to stopworking if we can't pay their
+salary...<WAIT>
+What are we supposed to do?"
 "e47b","<X1e>パウエル<X04>
 <IF01f0><JUMPe4de>エ、エリオンさま。
 どうか 早く お戻りください。
 このままでは ラヌーラ王国が ･ ･ ･<END>
 <LOCe4de>だから あれほど 言ったのです。
 フラートさまは 極端で ･ ･ ･<WAIT>
-ううっ また 胃が ･ ･ ･"
+ううっ また 胃が ･ ･ ･","<X1e>Powell<X04>
+<IF01f0><JUMPe4de>P-<CALL0002>.
+Please return as soon as you can.
+At this rate, Lanoura will...<END>
+<LOCe4de>This is why I asked what I did.
+King Flart has brought us to...<WAIT>
+Ugh... my stomach...!"
 "e530","<X1e><CALLe7d8><X04>
 どうだ エリオン。
 買い戻してきた 娘たちだ。
 
 美人の娘が たくさん いるだろう？
 でも やっぱり ディーナ姫も
-すてがたいなぁ。"
+すてがたいなぁ。","<X1e><CALLe7d8><X04>
+Well, <CALL0003>? These are the
+girls we re-purchased.
+
+Beautiful, aren't they?
+Yet, how can I simply cast away
+Princess Dina?"
 "e5af","<X1e>侍女<X04>
 あら エリオンさま。
 今日は エリオンさまの 大好きな
-ビーフカレーで ございます。"
-"e605","さまも 懲りない人だ。"
+ビーフカレーで ございます。","<X1e>Maid<X04>
+Why, <CALL0002>! I'm making
+your favorite beef curry tonight."
+"e605","さまも 懲りない人だ。","never seems to
+learn."
 "e61b","<X1e>兵士<X04>
 <CALLe7d8><IF01f0><JUMPe605>さまは 売られてしまった
-娘たちを 買い戻しに 行かれました。"
+娘たちを 買い戻しに 行かれました。","<X1e>Soldier<X04>
+<CALLe7d8> <IF01f0><JUMPe605>has gone to buy
+back the girls who were sold
+as slaves."
 "e666","<X1e>兵士<X04>
 <CALLe7d8><IF01f0><JUMPe605>さまも 今回のことで
 少しは しっかり してくだされば
-いいのですが ･ ･ ･"
+いいのですが ･ ･ ･","<X1e>Soldier<X04>
+<CALLe7d8> <IF01f0><JUMPe605>will be a little
+more reliable this time, I hope."
 "e6bc","<X1e>娘<X04>
 家に帰れるなんて 夢のようです。
 <CALLe7d8>さまって 
-すばらしい方なんですね。"
+すばらしい方なんですね。","<X1e>Girl<X04>
+Returning home is like a dream!
+<CALLe7d8> is such a wonderful
+person."
 "e707","<X1e>娘<X04>
 よその国って 豊かで おいしいものがいっぱい あるんですね。
 
 奴隷の食事でも にわとりの
 丸焼きなんて しょっ中でした。
-おかげで こんなに 太っちゃったわ。"
+おかげで こんなに 太っちゃったわ。","<X1e>Girl<X04>
+Other lands are full of such rich
+foods.
+
+Even as a slave, I had roast 
+chicken for every meal. I've
+gained so much weight!"
 "e7a1","<X1e>娘<X04>
 いろいろな経験が できて
-人生の勉強に なりました。"
-"e7d8","ジェルマン<RET_IL>"
+人生の勉強に なりました。","<X1e>Girl<X04>
+After all these experiences, I've
+learned a lot about life."
+"e7d8","ジェルマン<RET_IL>","Prince <LOC0001>Jelman<RET_IL>
+<LOC0002>Prince <LOC0003>Aerion<RET_IL>"
