@@ -707,6 +707,7 @@ def program_disk_patch_combat_text(program_disk_patch):
         { 'orig_addr': 0x58e0, 'orig_length': 0xb,  'translation': "decreases by <RET_IL>", 'references': [ ] },
         { 'orig_addr': 0x58eb, 'orig_length': 0x10, 'translation': "<X02> recovers.<X0a>", 'references': [ 0xa545, 0xb85a ] }, # Refers to revival.
         { 'orig_addr': 0x58fb, 'orig_length': 0x1b, 'translation': "All spells are blocked.<X0a>", 'references': [ 0xa50f ] },
+        { 'orig_addr': 0x5916, 'orig_length': 0x12, 'translation': "<X02> is surrounded\nby light.<X0a>", 'references': [ 0xa51b ] },
         { 'orig_addr': 0x5928, 'orig_length': 0x15, 'translation': "<X02> is poisoned!!<X0a>", 'references': [ 0xa4d5 ] },
         { 'orig_addr': 0x593d, 'orig_length': 0x17, 'translation': "<X02>'s spells are\nblocked!<X0a>", 'references': [ 0xa49b ] },
         { 'orig_addr': 0x5954, 'orig_length': 0xf,  'translation': "<X02> is confused!<X0a>", 'references': [ 0xa4a8 ] },
@@ -717,7 +718,7 @@ def program_disk_patch_combat_text(program_disk_patch):
         { 'orig_addr': 0x59a0, 'orig_length': 0x28, 'translation': "This will bring you back to\n<CALL087d>. Is that okay?<RETN>", 'references': [ 0xa634, 0xaaeb ] },
         { 'orig_addr': 0x59c8, 'orig_length': 0x7,  'translation': " attacks!<RETN>", 'references': [ 0x99ca, 0xbdf8 ] },
         { 'orig_addr': 0x59cf, 'orig_length': 0x4,  'translation': "<X02> takes <RET_IL>", 'references': [ 0x9c55 ] },
-        { 'orig_addr': 0x59d3, 'orig_length': 0xe,  'translation': " damage!<X0a>", 'references': [ 0x9c5b ] },
+        { 'orig_addr': 0x59d3, 'orig_length': 0xe,  'translation': "\ndamage!<X0a>", 'references': [ 0x9c5b ] },
         { 'orig_addr': 0x59e1, 'orig_length': 0x7,  'translation': "Critical hit!!<RETN>", 'references': [ 0x9c4a ] },
         { 'orig_addr': 0x59e8, 'orig_length': 0xe,  'translation': "A dire blow!!<RETN>", 'references': [ 0x9c4f ] },
         { 'orig_addr': 0x59f6, 'orig_length': 0x7,  'translation': "But <RET_IL>", 'references': [ 0x9bff ] },
@@ -742,7 +743,9 @@ def program_disk_patch_combat_text(program_disk_patch):
         { 'orig_addr': 0x5aea, 'orig_length': 0x4,  'translation': " of ", 'references': [ 0xa14c ] }, # Unused "at entrance" text
         { 'orig_addr': 0x6bb6, 'orig_length': 0x6,  'translation': "Left <X1f>", 'references': [ 0x6b87 ] }, # Needs to be exactly 6 bytes
         { 'orig_addr': 0x6bbc, 'orig_length': 0xe,  'translation': "<X1a>Unconscious  ", 'references': [ 0x6b70 ] }, # Needs to be exactly 14 bytes
+        { 'orig_addr': 0x7121, 'orig_length': 0x31, 'translation': "<WAIT>\nBut you can't carry any more.\nWhat will you discard?<RETN>", 'references': [ 0x70f7 ] },
         { 'orig_addr': 0x7152, 'orig_length': 0xd,  'translation': "<X0e> obtained.", 'references': [ 0x7111 ] },
+        { 'orig_addr': 0x7160, 'orig_length': 0x14, 'translation': "Left the <X0e> behind.", 'references': [ 0x7100 ] },
         { 'orig_addr': 0x8257, 'orig_length': 0x2e, 'translation': "Strength<END>\nIntellect<END>\nSpeed<END>\nLuck<END>\nAttack<END>\nDefense", 'references': [ 0x8204 ] },
         { 'orig_addr': 0x853a, 'orig_length': 0x5,  'translation': "'s party<RET_IL>", 'references': [ 0x852f ] },
         { 'orig_addr': 0x9f1b, 'orig_length': 0x17, 'translation': "<X08>Which statistic will you enhance?<RETN>", 'references': [ 0x9ecd ] },
