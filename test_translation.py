@@ -23,17 +23,20 @@ if __name__ == '__main__':
         if sector_key in scenario_directory:
             print(f"Reading scenario {format_sector_key(sector_key)}...")
             sector_info = scenario_directory[sector_key]
-            event_list = extract_scenario_events(scenario_disk, sector_key, sector_info)
+            event_list, global_refs = extract_scenario_events(scenario_disk, sector_key, sector_info)
             trans = load_translations_csv(f"csv/Scenarios/{format_sector_key(sector_key)}.csv")
             base_addr = 0xe000
         elif sector_key in combat_directory:
             print(f"Reading combat {format_sector_key(sector_key)}...")
             sector_info = combat_directory[sector_key]
-            event_list = extract_combat_events(scenario_disk, sector_key, sector_info)
+            event_list, global_refs = extract_combat_events(scenario_disk, sector_key, sector_info)
             trans = load_translations_csv(f"csv/Combats/{format_sector_key(sector_key)}.csv")
             base_addr = 0xdc00
         else:
             raise Exception(f"Sector key {format_sector_key(sector_key)} is neither a scenario nor a combat.")
+
+        for global_ref in global_refs:
+            print(f"Global ref: {global_ref['source_addr']:04x} -> {global_ref['target_addr']:04x}{' (Event)' if 'is_event' in global_ref and global_ref['is_event'] else ''}")
 
         data_length = sector_info['sector_length'] * len(sector_info['sector_addresses'])
         translation_count = len([t for t in trans.values() if 'translation' in t])

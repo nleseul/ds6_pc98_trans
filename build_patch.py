@@ -677,6 +677,8 @@ def program_disk_patch_combat_text(program_disk_patch):
     battle_text_pool = SpacePool()
     battle_text_pool.add_space(0xbf97, 0xbfff)
 
+    battle_text_relocations = {}
+
     battle_text_translations = [
         { 'orig_addr': 0x41bd, 'orig_length': 0x5,  'translation': "                   ", 'references': [ 0x7243, 0x830e, 0xa13c ] },
         { 'orig_addr': 0x57e1, 'orig_length': 0x4,  'translation': "<X02> falls <RET_IL>", 'references': [ 0xa4b5 ] },
@@ -809,6 +811,7 @@ def program_disk_patch_combat_text(program_disk_patch):
         if 'encoded' in battle_text_info:
             if 'orig_addr' in battle_text_info:
                 print(f"Relocating battle text from {battle_text_info['orig_addr']:04x} to {battle_text_info['new_addr']:04x}")
+                battle_text_relocations[battle_text_info['orig_addr']] = battle_text_info['new_addr']
             else:
                 print(f"Adding new battle text at {battle_text_info['new_addr']:04x}")
             encoded = battle_text_info['encoded']
@@ -826,6 +829,7 @@ def program_disk_patch_combat_text(program_disk_patch):
         else:
             reloc_addr = locator_addr_map[battle_text_info['orig_addr']]
             print(f"Relocating locator from {battle_text_info['orig_addr']:04x} to {reloc_addr:04x}")
+            battle_text_relocations[battle_text_info['orig_addr']] = reloc_addr
 
             for ref_addr in battle_text_info['references']:
                 program_disk_patch.add_record(ref_addr - 0x4000 + 0x13e10, int.to_bytes(reloc_addr, 2, 'little'))
@@ -833,6 +837,8 @@ def program_disk_patch_combat_text(program_disk_patch):
     print(f"Remaining battle text space: {battle_text_pool.total_available_space} bytes, largest block: {battle_text_pool.largest_available_space} bytes")
     battle_text_pool.dump()
     print()
+
+    return battle_text_relocations
 
 
 def program_disk_patch_misc(program_disk_patch):
@@ -892,13 +898,13 @@ def scenario_disk_patch_misc(scenario_disk_patch):
 def scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk):
     scenario_directory = get_scenario_directory(scenario_disk)
     for scenario_key, scenario_info in scenario_directory.items():
-        scenario_events = extract_scenario_events(scenario_disk, scenario_key, scenario_info)
+        scenario_events, scenario_global_refs = extract_scenario_events(scenario_disk, scenario_key, scenario_info)
 
         if len(scenario_events) == 0:
             continue
 
         print(f"Translating scenario {format_sector_key(scenario_key)}...")
-        
+
         if scenario_key in [(0x21, 0x01, 0x24), (0x24, 0x00, 0x24), (0x2f, 0x00, 0x24)]:
             packing_strategy = 'smallest'
         else:
@@ -921,17 +927,22 @@ def scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk):
         for ref_addr, new_value in reference_changes.items():
             patch_sector(scenario_disk_patch, scenario_info['sector_addresses'], ref_addr, 0xe000, int.to_bytes(new_value, length=2, byteorder='little'))
 
+        for global_ref in scenario_global_refs:
+            if global_ref['target_addr'] in battle_text_relocations:
+                print(f" Global ref {global_ref['target_addr']:04x} referenced from {global_ref['source_addr']:04x} is being relocated to {battle_text_relocations[global_ref['target_addr']]:04x}")
+                raise Exception("Relocation of global refs in scenarios is not currently implemented.")
 
-def scenario_disk_patch_combats(scenario_disk_patch, scenario_disk):
+
+def scenario_disk_patch_combats(scenario_disk_patch, scenario_disk, battle_text_relocations):
     combat_directory = get_combat_directory(scenario_disk)
     for combat_key, combat_info in combat_directory.items():
-        combat_events = extract_combat_events(scenario_disk, combat_key, combat_info)
+        combat_events, combat_global_refs = extract_combat_events(scenario_disk, combat_key, combat_info)
 
         if len(combat_events) == 0:
             continue
 
         print(f"Translating combat {format_sector_key(combat_key)}...")
-        
+
         trans = load_translations_csv(f"csv/Combats/{format_sector_key(combat_key)}.csv")
         encoded_translations = encode_translations(combat_events, trans)
 
@@ -948,6 +959,10 @@ def scenario_disk_patch_combats(scenario_disk_patch, scenario_disk):
 
         for ref_addr, new_value in reference_changes.items():
             patch_sector(scenario_disk_patch, combat_info['sector_addresses'], ref_addr, 0xdc00, int.to_bytes(new_value, length=2, byteorder='little'))
+
+        for global_ref in combat_global_refs:
+            if global_ref['target_addr'] in battle_text_relocations:
+                patch_sector(scenario_disk_patch, combat_info['sector_addresses'], global_ref['source_addr'], 0xdc00, int.to_bytes(battle_text_relocations[global_ref['target_addr']], length=2, byteorder='little'))
 
 
 if __name__ == '__main__':
@@ -969,7 +984,7 @@ if __name__ == '__main__':
     # Build the program disk
     program_disk_patch_misc(program_disk_patch)
     program_disk_patch_asm(program_disk_patch, config['NasmPath'])
-    program_disk_patch_combat_text(program_disk_patch)
+    battle_text_relocations = program_disk_patch_combat_text(program_disk_patch)
     patch_data_table(program_disk_patch, "csv/Items.csv", 0x1491f, 14, 20)
     patch_data_table(program_disk_patch, "csv/Spells.csv", 0x15243, 8, 11)
     patch_data_table(program_disk_patch, "csv/Locations.csv", 0x1538d, 12, 12)
@@ -979,7 +994,7 @@ if __name__ == '__main__':
 
     with open(config['OriginalScenarioDisk'], 'rb') as scenario_disk:
         scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk)
-        scenario_disk_patch_combats(scenario_disk_patch, scenario_disk)
+        scenario_disk_patch_combats(scenario_disk_patch, scenario_disk, battle_text_relocations)
 
 
     # Create patch files

@@ -437,7 +437,9 @@ class StandardEventCodeHook(CodeHook):
                     current_block = block_pool.get_block(registers[X86_REG_SI]['continue_from_addr'], EventBlock)
                     current_block.set_continuation_extent(registers[X86_REG_SI]['value'])
             else:
-                print(f"TODO: Log global event at {event_addr:04x}?")
+                global_event_link = Link(registers[X86_REG_SI]['source_addr'], registers[X86_REG_SI]['value'])
+                global_event_link.connect_blocks(current_block, None)
+                current_block.add_global_reference(registers[X86_REG_SI]['source_addr'], registers[X86_REG_SI]['value'], is_event=True)
         
         else:
             print(registers)
@@ -647,6 +649,7 @@ class Block:
         self._incoming_links = []
         self._outgoing_links = []
         self._internal_references = []
+        self._global_references = []
 
         self._incoming_link_path_index = []
         self._link_paths = []
@@ -745,6 +748,18 @@ class Block:
         
     def get_internal_references(self):
         for ref in self._internal_references:
+            yield ref
+
+    def add_global_reference(self, source_addr, dest_addr, **kwargs):
+        ref = { 'source_addr': source_addr, 'dest_addr': dest_addr }
+
+        for key, value in kwargs.items():
+            ref[key] = value
+
+        self._global_references.append(ref)
+
+    def get_global_references(self):
+        for ref in self._global_references:
             yield ref
     
     def contains(self, addr):
@@ -896,8 +911,8 @@ class CodeBlock(Block):
                             link = Link(instruction.address + 1, destination, source_instruction_addr=instruction.address, execution_context=registers.copy())
 
                             if (destination < self._base_addr or destination >= self._base_addr + len(self._data)):
-                                #print(f"TODO: Maybe log global jump to {destination:04x} from {instruction.address:04x}")
                                 link.connect_blocks(self, None)
+                                self.add_global_reference(instruction.address + 1, destination)
                             else:
                                 link.connect_blocks(self, block_pool.get_block(destination, CodeBlock))
                         else:
@@ -922,6 +937,7 @@ class CodeBlock(Block):
 
                         if (destination < self._base_addr or destination >= self._base_addr + len(self._data)):
                             link.connect_blocks(self, None)
+                            self.add_global_reference(instruction.address + 1, destination)
                         else:
                             target_block = block_pool.get_block(destination, CodeBlock)
                             link.connect_blocks(self, block_pool.get_block(destination, CodeBlock))
@@ -1002,6 +1018,7 @@ class EventBlock(Block):
                         link = Link(instruction['addr'] + 1, arg, source_instruction_addr=instruction['addr'])
                         if (arg < self._base_addr or arg >= self._base_addr + len(self._data)):
                             link.connect_blocks(self, None)
+                            self.add_global_reference(instruction['addr'] + 1, arg)
                         else:
                             link.connect_blocks(self, block_pool.get_block(arg, EventBlock))
 
@@ -1010,6 +1027,7 @@ class EventBlock(Block):
                         link = Link(instruction['addr'] + 1, arg, source_instruction_addr=instruction['addr'])
                         if (arg < self._base_addr or arg >= self._base_addr + len(self._data)):
                             link.connect_blocks(self, None)
+                            self.add_global_reference(instruction['addr'] + 1, arg)
                         else:
                             link.connect_blocks(self, block_pool.get_block(arg, CodeBlock))
 
@@ -1019,6 +1037,7 @@ class EventBlock(Block):
                             link = Link(instruction['addr'] + ref_index*2 + 1, arg, source_instruction_addr=instruction['addr'])
                             if (arg < self._base_addr or arg >= self._base_addr + len(self._data)):
                                 link.connect_blocks(self, None)
+                                self.add_global_reference(instruction['addr'] + ref_index*2 + 1, arg)
                             else:
                                 link.connect_blocks(self, block_pool.get_block(arg, EventBlock))
         
@@ -1026,6 +1045,7 @@ class EventBlock(Block):
                 link = Link(jump_source + 1, jump_target, source_instruction_addr=jump_source)
                 if (jump_target < self._base_addr or arg >= self._base_addr + len(self._data)):
                     link.connect_blocks(self, None)
+                    self.add_global_reference(jump_source + 1, jump_target)
                 else:
                     link.connect_blocks(self, block_pool.get_block(jump_target, EventBlock))
 
@@ -1405,6 +1425,7 @@ def extract_scenario_events(scenario_disk, scenario_key, scenario_info):
     
     # Organize and format all the events we found.
     events = {}
+    global_refs = []
 
     for block in blocks:
         if isinstance(block, EventBlock):
@@ -1425,7 +1446,10 @@ def extract_scenario_events(scenario_disk, scenario_key, scenario_info):
 
             events[block.start_addr] = event_info
 
-    return events
+        for global_ref in block.get_global_references():
+            global_refs.append( { 'source_addr': global_ref['source_addr'], 'target_addr': global_ref['dest_addr'], 'is_event': 'is_event' in global_ref and global_ref['is_event']} )
+
+    return events, global_refs
 
 def extract_combat_events(scenario_disk, combat_key, combat_info):
 
@@ -1481,6 +1505,7 @@ def extract_combat_events(scenario_disk, combat_key, combat_info):
     blocks = explore(combat_data, 0xdc00, entry_points, combat_code_hooks + global_code_hooks)
     
     events = {}
+    global_refs = []
 
     for block in blocks:
         if isinstance(block, EventBlock):
@@ -1500,8 +1525,11 @@ def extract_combat_events(scenario_disk, combat_key, combat_info):
                 event_info['references'].append( { 'source_addr': internal_ref['source_addr'], 'target_addr': internal_ref['dest_addr'], 'source_event_addr': block.start_addr } )
 
             events[block.start_addr] = event_info
+
+        for global_ref in block.get_global_references():
+            global_refs.append( { 'source_addr': global_ref['source_addr'], 'target_addr': global_ref['dest_addr'], 'is_event': 'is_event' in global_ref and global_ref['is_event']} )
             
-    return events
+    return events, global_refs
 
 
 def get_ending_strings():
