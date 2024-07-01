@@ -233,7 +233,7 @@ any time!"
 "ec1b","<CALLeebf>よう 客人、ここには 武器とか
 爆薬が 沢山あるから 気をつけて
 くれよ。","<CALLeebf>Be careful in here, guests! It's
-packed with arms and gunpowder."
+packed with arms and explosives."
 "ec63","<CALLeebf><IF0408><JUMPeca4><IF0409><JUMPeca4>やあ客人 元気そうだな？
 疲れたら いつでも来なよ。<END>
 <LOCeca4><SET0400>さあ ゆっくり休んでくんな。","<CALLeebf><IF0408><JUMPeca4><IF0409><JUMPeca4>How ya feelin', guests?

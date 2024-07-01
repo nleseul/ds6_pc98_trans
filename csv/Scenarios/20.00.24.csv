@@ -8,11 +8,12 @@
 <CH2>
 ボアードさん、ありがとう。
 
-<CALLe4de>ナンノ なんの。 ポリ ポリ","<CALLe4de><IF00dd><JUMPe2bc><ASMe31b><IF_NOT0401><JUMPe289>What? More gunpowder?
+<CALLe4de>ナンノ なんの。 ポリ ポリ","<CALLe4de><IF00dd><JUMPe2bc><ASMe31b><IF_NOT0401><JUMPe289>What? More black powder?
 <ASMe32d><X08><IF_NOT00dd><JUMPe289><X1c>Handed over the <X04><X0e><X1c>.<X0c0301><X04>
 
-<JUMPe2bc><LOCe289>If ya want more gunpowder, you'll
-have ta trade some rum fer it!<END>
+<JUMPe2bc><LOCe289>If ya want more black powder,
+you'll have ta trade some rum fer
+it!<END>
 <LOCe2bc>Pick it up in the armory.
 In there, on the right.
 

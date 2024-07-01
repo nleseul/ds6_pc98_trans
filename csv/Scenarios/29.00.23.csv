@@ -117,7 +117,7 @@ That okay?"
 た、頼んだぜ。必ず ドラゴンの卵を
 見つけ出してくれよ !!","<X1e>Boyle<X04>
 <IF01a4><JUMPe953><IF01ab><JUMPe6db><IF0194><JUMPe444><LOCe444>What?! You want some of my
-dragon cloth?! You're joking!
+dragoncloth?! You're joking!
 Don't you know what it's worth?
 
 <IF0195><JUMPe510>Fifteen million gold!
@@ -183,7 +183,7 @@ I mean... please! Help me!
 
 Please find my dragon egg.
 Just find the egg, and I'll make
-you all the dragon cloth you want!
+you all the dragoncloth you want!
 
 Or... even better!
 <LOCe953>The last of my leftover dragon
@@ -224,7 +224,7 @@ Zzz..."
 <IF01a4><JUMPead4>Your Highness! Surely you are not
 considering stealing other
 people's belongings?<JUMPeb18><LOCead4>Your Highness! Surely you are not
-considering breaking our agreementand stealing the dragon cloth?<LOCeb18>
+considering breaking our agreementand stealing the dragoncloth?<LOCeb18>
 
 <CH3>
 We're gonna have to rethink thingsif ya do stuff like that, Prince.

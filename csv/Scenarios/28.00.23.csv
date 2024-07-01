@@ -146,10 +146,10 @@ Caur, one of Boyle's dragons has
 laid an egg.
 
 Boyle's happy because he can make
-dragon cloth with it. Does that
+dragoncloth with it. Does that
 mean anything to you?
 
-<CALLf003>Dragon cloth, huh? I've never
+<CALLf003>Dragoncloth, huh? I've never
 heard of it.
 
 Oh, maybe there's something about
@@ -170,7 +170,7 @@ second; let me check.<SET0405>"
 だから たとえ <CALLf00c>の布が
 出来ても そう簡単には
 分けてくれないと 思いますよ。","<IF0407><JUMPea7f><SET0195>How'd it go? Is he going to share
-any dragon cloth?
+any dragoncloth?
 
 According to the book, the price
 right before a dragon lays can go
@@ -231,7 +231,8 @@ to share that cloth."
 in here!
 Hmm... now, let me see...
 
-Dragon cloth. Made in the Soldytheregion from the down of dragons
+Dragoncloth. Made in the Soldythe
+region from the down of dragons
 aged less than a year.
 
 Exceptionally thin and light, but
@@ -242,7 +243,7 @@ to both water and air.
 These qualities make it useful as
 a lining for robes or armors.
 
-Due to the impermeability of robesmade from dragon cloth, they are
+Due to the impermeability of robesmade from dragoncloth, they are
 known to be effective at blocking
 spells such as Flam and Hure.
 

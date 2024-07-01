@@ -146,8 +146,8 @@ How's that?
 <IF0176><JUMPe938><IF0192><JUMPe8fa><SET0192>What's going on? You're in such
 a hurry.
 
-Don't tell me you got the dragon
-cloth!
+Don't tell me you got the
+dragoncloth!
 
 <CH3>
 On your knees! Can your eyes not
@@ -183,7 +183,7 @@ Oh, I must've gotten carried away.
 I suppose we should reconsider
 our assessment of Harry.
 
-<ASMe9cc><X1c>Gave the dragon cloth to Harry.<X0c0301><X04>
+<ASMe9cc><X1c>Gave the dragoncloth to Harry.<X0c0301><X04>
 
 <X1e>Harry<X04>
 Ha ha...

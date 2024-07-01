@@ -51,7 +51,7 @@ He's so cruel!<RET_IL>"
 "e5d2","<CALLef89>よう 客人、ここには 武器とか
 爆薬が 沢山あるから 気をつけて
 くれよ。","<CALLef89>Be careful in here, guests! It's
-packed with arms and gunpowder."
+packed with arms and explosives."
 "e61a","<CALLef89><IF0408><JUMPe65c><IF0409><JUMPe65c>やあ 客人 元気そうだな？
 疲れたら いつでも来なよ。<END>
 <LOCe65c><SET0400>さあ ゆっくり休んでくんな。","<CALLef89><IF0408><JUMPe65c><IF0409><JUMPe65c>How ya feelin', guests?

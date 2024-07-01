@@ -240,16 +240,17 @@ ta go through the Border Cave?
 
 <CH3>
 Right. Maybe if we had some
-gunpowder... !!
+black powder... !!
 
 <X1c>Buald is grinning ear to ear.<X04>
 
-<CALLeedf>If ya had some gunpowder?<WAIT>
+<CALLeedf>
+If ya had some black powder?<WAIT>
 Who d'ya think I am?!<WAIT>
 Where d'ya think we are?!
 
 This whole place reeks o'
-gunpowder!
+black powder!
 
 <CH3>
 Of course. Pirates.
@@ -262,11 +263,12 @@ That's the rate. No arguin'.
 Hah, just one barrel? 
 All right, fine.
 
-<CALLeedf><JUMPebc6><LOCeb4a><ASMec72><IF_NOT0401><JUMPeb94>What? More gunpowder?
+<CALLeedf><JUMPebc6><LOCeb4a><ASMec72><IF_NOT0401><JUMPeb94>What? More black powder?
 <ASMec84><X08><IF_NOT00dd><JUMPeb94><X1c>Handed over the <X04><X0e><X1c>.<X0c0301><X04>
 
-<JUMPebc6><LOCeb94>If ya want more gunpowder, you'll
-have ta trade some rum fer it!<END>
+<JUMPebc6><LOCeb94>If ya want more black powder,
+you'll have ta trade some rum fer
+it!<END>
 <LOCebc6>Pick it up in the armory.
 In there, on the right.
 
