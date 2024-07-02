@@ -910,6 +910,9 @@ def scenario_disk_patch_misc(scenario_disk_patch):
     scenario_disk_patch.add_record(0x10782a, b"\x4d")
     scenario_disk_patch.add_record(0x107838, b"\x4d")
 
+    # Combat 3d.00.23 (Beziel)
+    scenario_disk_patch.add_record(0x105059, b"\x36") # Change where the name is truncated when the two parts of the boss merge.
+
 
 def scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk):
     scenario_directory = get_scenario_directory(scenario_disk)
