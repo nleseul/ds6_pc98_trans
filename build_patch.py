@@ -901,6 +901,10 @@ def scenario_disk_patch_misc(scenario_disk_patch):
     scenario_disk_patch.add_record(0x101386, b"\x17") # Change the offset of the summoned demon ghost's letter.
     scenario_disk_patch.add_record(0x101390, b"\x40") # Change the base value of the summoned ghost's letter to reflect half-width characters.
 
+    # Combat 3c.00.27 (Dark Lich x3) - Appends an apostrophe to a duplicated combatant
+    scenario_disk_patch.add_record(0x101f99, bytes([0x90] * 10)) # Skip some conversion of full-width letter to half-width letter
+    scenario_disk_patch.add_record(0x101fa5, b"\x3b")            # Change the index where the apostrophe is written
+
 
 def scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk):
     scenario_directory = get_scenario_directory(scenario_disk)
