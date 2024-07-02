@@ -16,7 +16,7 @@ def get_file_object(tpp_object, file_name, format):
     normalized_name = file_name.replace(os.sep, "/")
 
     if normalized_name not in tpp_object['project']['files']:
-        tpp_object['project']['files'][normalized_name] = { 'data': [], 'context': [], 'indexIds': {}, 'originalFormat': format }
+        tpp_object['project']['files'][normalized_name] = { 'data': [], 'context': [], 'parameters': [], 'indexIds': {}, 'originalFormat': format }
 
     if 'selectedId' not in tpp_object['project']:
         tpp_object['project']['selectedId'] = normalized_name
@@ -27,6 +27,7 @@ def add_translation(file_object, context, original, translation):
         file_object['indexIds'][original] = len(file_object['indexIds'])
         file_object['data'].append( [ "" ] )
         file_object['context'].append( [ ] )
+        file_object['parameters'].append( [ ] )
     text_index = file_object['indexIds'][original]
     
     file_object['data'][text_index][0] = original
@@ -37,7 +38,7 @@ def add_translation(file_object, context, original, translation):
         file_object['data'][text_index].append(translation)
     else:
         if file_object['data'][text_index][1] != translation:
-            raise Exception("Unhandled context-specific translation!")
+            file_object['parameters'][text_index].append( { 'contextStr': context, 'translation': translation } )
 
 if __name__ == '__main__':
     
@@ -58,6 +59,7 @@ if __name__ == '__main__':
                 file_object['indexIds'] = { }
                 file_object['data'] = []
                 file_object['context'] = []
+                file_object['parameters'] = []
 
                 if notes is not None:
                     file_object['note'] = notes
