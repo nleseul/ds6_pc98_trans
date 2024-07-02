@@ -905,6 +905,11 @@ def scenario_disk_patch_misc(scenario_disk_patch):
     scenario_disk_patch.add_record(0x101f99, bytes([0x90] * 10)) # Skip some conversion of full-width letter to half-width letter
     scenario_disk_patch.add_record(0x101fa5, b"\x3b")            # Change the index where the apostrophe is written
 
+    # Combat 3d.01.21 (Skullfang x2/High Agiel) - Ends intro text early when a combatant is absent.
+    # We just have to hope that this text doesn't get relocated later.
+    scenario_disk_patch.add_record(0x10782a, b"\x4d")
+    scenario_disk_patch.add_record(0x107838, b"\x4d")
+
 
 def scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk):
     scenario_directory = get_scenario_directory(scenario_disk)
