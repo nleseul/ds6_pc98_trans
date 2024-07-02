@@ -913,6 +913,11 @@ def scenario_disk_patch_misc(scenario_disk_patch):
     # Combat 3d.00.23 (Beziel)
     scenario_disk_patch.add_record(0x105059, b"\x36") # Change where the name is truncated when the two parts of the boss merge.
 
+    # Combat 3e.01.22 (Zagrith/Jardein) - Duplicates a dead jardein as a zombie
+    scenario_disk_patch.add_record(0x10c384, b"\x33")           # Location where it reads the letter of the dead one
+    scenario_disk_patch.add_record(0x10c385, bytes([0x90] * 4)) # Skip conversion of full-width letter to half-width letter
+    scenario_disk_patch.add_record(0x10c390, b"\x0a")           # Length of the zombie's name for copying (not counting letter or terminator)
+
 
 def scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk):
     scenario_directory = get_scenario_directory(scenario_disk)
