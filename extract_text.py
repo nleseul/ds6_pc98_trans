@@ -30,7 +30,7 @@ if __name__ == '__main__':
         
         for scenario_key, scenario_info in scenario_directory.items():
             print(f"\r{format_sector_key(scenario_key)}", end='')
-            scenario_events = extract_scenario_events(scenario_disk, scenario_key, scenario_info)
+            scenario_events, scenario_global_refs = extract_scenario_events(scenario_disk, scenario_key, scenario_info)
 
             if len(scenario_events) == 0:
                 continue
@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
         for combat_key, combat_info in combat_directory.items():
             print(f"\r{format_sector_key(combat_key)}", end='')
-            combat_events = extract_combat_events(scenario_disk, combat_key, combat_info)
+            combat_events, combat_global_refs = extract_combat_events(scenario_disk, combat_key, combat_info)
 
             if len(combat_events) == 0:
                 continue
