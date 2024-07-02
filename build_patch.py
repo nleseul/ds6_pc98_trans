@@ -918,6 +918,11 @@ def scenario_disk_patch_misc(scenario_disk_patch):
     scenario_disk_patch.add_record(0x10c385, bytes([0x90] * 4)) # Skip conversion of full-width letter to half-width letter
     scenario_disk_patch.add_record(0x10c390, b"\x0a")           # Length of the zombie's name for copying (not counting letter or terminator)
 
+    # Combat 3e.01.23 (Dark Mage/Fire Crab)
+    scenario_disk_patch.add_record(0x10af00, b"Fire Crab B\x06") # Name for the replacement crabs; not found by the normal battle extractor
+    scenario_disk_patch.add_record(0x10af74, b"\x36")            # Adjust the size of the copied data to include the new name
+    scenario_disk_patch.add_record(0x10af81, b"\x41")            # Change the base value to a half-width letter
+
 
 def scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk):
     scenario_directory = get_scenario_directory(scenario_disk)
