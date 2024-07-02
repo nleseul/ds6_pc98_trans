@@ -436,6 +436,8 @@ class StandardEventCodeHook(CodeHook):
                 else:
                     current_block = block_pool.get_block(registers[X86_REG_SI]['continue_from_addr'], EventBlock)
                     current_block.set_continuation_extent(registers[X86_REG_SI]['value'])
+
+                    registers[X86_REG_SI]['value'] = disassembly[-1]['addr'] + disassembly[-1]['length']
             else:
                 global_event_link = Link(registers[X86_REG_SI]['source_addr'], registers[X86_REG_SI]['value'])
                 global_event_link.connect_blocks(current_block, None)

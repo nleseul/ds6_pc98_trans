@@ -2,7 +2,8 @@
 "dc70","デスクラブＢ<RET_IL>","Death Crab B<RET_IL>"
 "dcb0","タルコス<RET_IL>","Talcoth<RET_IL>"
 "dd77","しかし<X02>は<RETN>
-<CONT>の攻撃をハサミで受け止めた。<X0a>","But <X02> blocks<RETN>
+<CONT>の攻撃をハサミで受け止めた。<X0a>
+<CONT><X02>はダメージを受けなかった。<X0a>","But <X02> blocks<RETN>
 <CONT>'s attack with its pincers!<X0a>
 <CONT><X02> takes no damage.<X0a>"
 "de4e","デスクラブとタルコスが現れた。<RETN>","A nest of death crabs and a

@@ -14,5 +14,7 @@ warts on its back.<X0a>
 "debc","<X02>が現れた。<X0a>","<X02> appears.<X0a>"
 "dec8","しかし 誰も現れなかった。<X0a>","But no one comes.<X0a>"
 "dee2","は 糸を吐いた。<X0a>
-<CONT><X02>のすばやさが <RET_IL>"," shoots webbing.<X0a>
-<CONT><X02>'s speed is reduced by <RET_IL>"
+<CONT><X02>のすばやさが <RET_IL>
+<CONT>下がった !!<X0a>","shoots webbing.<X0a>
+<CONT><X02>'s speed is reduced by <RET_IL>
+<CONT>!<X0a>"

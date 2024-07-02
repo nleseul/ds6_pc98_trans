@@ -12,7 +12,15 @@ fluid!<X0a>
 <CONT><X02> is poisoned!<X0a>"
 "de6b","は胞子をまきちらした。<X0a>
 <CONT><X0b>は 一斉に はなを
-つまんだ。<X0a>"," scatters spores.<X0a>
+つまんだ。<X0a>
+<CONT><X02>は吸い込んでしまった !!<X0a>
+<CONT><X02>頭がクラクラしてきた。<X0a>
+<CONT><X02>の素早さが <RET_IL>
+<CONT>下がった !!<X0a>"," scatters spores.<X0a>
 <CONT><X0b> all hold their
-noses.<X0a>"
+noses.<X0a>
+<CONT><X02> breathes in!<X0a>
+<CONT><X02>'s head starts to spin.<X0a>
+<CONT><X02>Selios's speed decreases by <RET_IL>
+<CONT>!<X0a>"
 "dee9","誰も 胞子を吸い込まなかった。<X0a>","No one inhales the spores.<X0a>"

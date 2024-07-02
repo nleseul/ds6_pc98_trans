@@ -9,7 +9,10 @@ and bites at <X02>!<X0a>"
 "dee7","は<X02>の回りを
 飛び回った !!<X0a>
 <CONT><X02>は 激しい 悪感に おそわれ
-すばやさが <RET_IL>"," flies in circles around
+すばやさが <RET_IL>
+<CONT> ﾎﾟｲﾝﾄ 下がった !!<X0a>"," flies in circles around
 <X02>!<X0a>
 <CONT>Intense dread pierces <X02>!
-<X02>'s speed decreases by <RET_IL>"
+<X02>'s speed decreases by <RET_IL>
+<CONT>
+points!<X0a>"

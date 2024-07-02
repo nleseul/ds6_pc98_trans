@@ -9,8 +9,12 @@ by demon ghosts.<RETN>"
 召喚した。<X0a>"," summons a demon ghost.<X0a>"
 "de7c","<X02>は召喚に応えた。<X0a>","<X02> answers the summons.<X0a>"
 "de8e","しかし、ﾃﾞﾓﾝｺﾞｰｽﾄは応えなかった。<X0a>
-<CONT><X02>は、カッとなった。<X0a>","But no demon ghosts respond.<X0a>
-<CONT><X02> is furious.<X0a>"
+<CONT><X02>は、カッとなった。<X0a>
+<CONT>怒りで<X02>の攻撃力が
+100 ﾎﾟｲﾝﾄ あがった。<X0a>","But no demon ghosts respond.<X0a>
+<CONT><X02> is furious.<X0a>
+<CONT>Rage increases <X02>'s attack
+power by 100 points.<X0a>"
 "deeb","は凍るような息を
 吐いた !!<X0a>"," breathes freezing
 breath!<X0a>"

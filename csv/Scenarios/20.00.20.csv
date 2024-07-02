@@ -57,9 +57,11 @@ All right, let's go!
 "e625","なんだ いらねーのか。<RETN>","What? Ya don't even need it?<RETN>"
 "e63b","１<RET_IL>
 <CONT>連勝だから
-賞品は <X0e><RET_IL>","9 win<RET_IL>
+賞品は <X0e><RET_IL>
+<CONT>もう一度やるかい。<RETN>","9 win<RET_IL>
 <CONT>s, ye've won the
-<X0e><RET_IL>"
+<X0e><RET_IL>
+<CONT>Ya wanna go again?<RETN>"
 "e652","もう一度やるかい。<RETN>","Wanna go again?<RETN>"
 "e665","いやー まいった まいった
 あんたには とてもかなわねーや。
