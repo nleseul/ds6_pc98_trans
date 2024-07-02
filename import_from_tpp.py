@@ -25,16 +25,20 @@ if __name__ == '__main__':
                 for context, info in csv_translations.items():
                     # TPP always uses Windows line endings.
                     tpp_original_text = info['original'].replace(os.linesep, "\r\n")
-                    index = file_object['indexIds'][tpp_original_text]
                     translation = None
-                    for candidate_index, candidate_translation in enumerate(file_object['data'][index]):
-                        if candidate_index > 0 and candidate_translation is not None:
-                            translation = candidate_translation
+                    if tpp_original_text not in file_object['indexIds']:
+                        print(f"WARNING: Text starting with \"{tpp_original_text[:10]}\" in file \"{filepath}\" was not found in the TPP file.")
+                    else:
+                        index = file_object['indexIds'][tpp_original_text]
 
-                    if 'parameters' in file_object and index < len(file_object['parameters']) and file_object['parameters'][index] is not None:
-                        for parameter in file_object['parameters'][index]:
-                            if parameter['contextStr'] == context and len(parameter['translation']) > 0:
-                                translation = parameter['translation']
+                        for candidate_index, candidate_translation in enumerate(file_object['data'][index]):
+                            if candidate_index > 0 and candidate_translation is not None:
+                                translation = candidate_translation
+
+                        if 'parameters' in file_object and index < len(file_object['parameters']) and file_object['parameters'][index] is not None:
+                            for parameter in file_object['parameters'][index]:
+                                if parameter['contextStr'] == context and len(parameter['translation']) > 0:
+                                    translation = parameter['translation']
 
                     if translation is None:
                         csv_out.writerow([ context, info['original']])
