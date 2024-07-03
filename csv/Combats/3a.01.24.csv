@@ -3,7 +3,8 @@
 "dcb0","毒大ガエルＣ<RET_IL>","Venomous Frog C<RET_IL>"
 "dcf0","蜒KエルＡ<RET_IL>","<RET_IL>"
 "dde1","毒大ガエルの群れが現れた。<RETN>","A band of huge venomous frogs
-appears!<RETN>"
+appears!
+(Is this used??)<RETN>"
 "ddfc","は 背中のイボから
 混乱の毒を出した。<X0a>
 <CONT><X02>は混乱してしまった !!<X0a>"," secretes
