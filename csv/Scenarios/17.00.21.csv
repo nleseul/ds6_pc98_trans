@@ -36,13 +36,13 @@ Back again, are you?<RETN>"
 確か、黒いマントをきた男だったな。マントが青白く光っていて、
 どことなく うさんくさい 奴だった。","Ah, the <X0e>?
 <PAGE>
-But, I'm afraid that's already
-sold.
+I'm afraid I sold that just a
+moment ago.
 
-Who bought it? I suppose it was
-the man in the black cloak.
-His cloak had a pale glow, and
-he seemed rather shady."
+Who bought it? That man in the
+black cloak, I suppose. His cloak
+glowed with a pale blue light.
+Quite a suspicious person."
 "e4bc","わりーな、今日は何もないんだ。
 <JUMPe4de><LOCe4de>また、来てくれよな。","Ah, I'm afraid I haven't got
 anything today!
@@ -123,8 +123,9 @@ slightly fewer monsters now..."
 "e891","<X1e>男<X04>
 これは 単なる ウワサなんですがね
 ベルガの鉱山の 司令官は レベル１１だって もっぱらの評判ですよ。","<X1e>Man<X04>
-This is only rumor, of course. TheCommandant of Belga Mine being
-level 11 is sheer speculation."
+The Commandant of Belga Mine?
+He's Level 11? No, that's just a
+rumor. Sheer speculation!"
 "e8f7","<X1e>船長<X04>
 なんだね、あんたたちは。
 私の所に来たって 船は出ないよ !!

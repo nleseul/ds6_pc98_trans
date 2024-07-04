@@ -118,12 +118,11 @@ of Crus! Head to Crus!! "
 You the guys who rescued us?
 
 <CH0>
-Yeah. And we're going to work witheveryone to take this kingdom
+Yeah. And we're going to work withall of you to take this kingdom
 back from Achdam.
 
 <X1e>Prisoner<X04>
-So who exactly're you supposed
-to be, then?
+So who does that make you, then?
 
 <CH2>
 Oh, you don't know? This right
@@ -145,9 +144,9 @@ Great Thief Gail?
 
 <CH3>
 W-what?! That's a hell of a
-mistake to make!
+mistake to make.
 
-These parts're full of Gails!
+This world's full o' Gails!
 
 <CH2>
 Highness, can't we just forget
@@ -172,18 +171,18 @@ crap from you!
 <CH0>
 If it's that important to you, I
 don't mind. Just try to get along
-with Roh.
+with Ro.
 
 <CH3>
 Got it.
-Hey, Roh. Nice to meet you.
+Hey, Ro. Nice to meet you.
 
 <CH3><X1c> joined the party.<X0c0301><X04>"
 "ea21","<CH3>
 おいおい
 もう鉱山なんか こりごりだぜ。","<CH3>
-I've had enough of these mines
-already."
+C'mon!
+I'm already sick o' those mines."
 "ea4b","<X1e>神父<X04>
 <IF0046><JUMPeb08><SET0046>まさか 王子さまが この町へ
 おこしに なっていたとは

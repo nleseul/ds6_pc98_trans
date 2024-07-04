@@ -107,7 +107,7 @@ Will that be okay?"
 もし、お疲れになられましたら
 いつでも おこしください。
 <CLEAR0401>","<X1e>Foless<X04>
-<IF0089><JUMPe70a><SET0089>I'll take care of Roh here until
+<IF0089><JUMPe70a><SET0089>I'll take care of Ro here until
 his wounds heal.
 
 <CH0>
@@ -124,7 +124,7 @@ You think maybe he ran off to
 Riezel, Prince?
 
 <X1e>Foless<X04>
-Oh, by the way...
+Oh...
 If you do go to Riezel, there is
 something I'd like to ask.
 
@@ -218,7 +218,7 @@ you are troubled."
 
 <X0e><X1c>を もらいました。<X0c0301><X04><END>
 <LOCec4c>いい物を あげるから 持ち物を
-減らしてこいよ。","<X1e>Roh<X04>
+減らしてこいよ。","<X1e>Ro<X04>
 I'm not playing around!
 I can't come with you, no mattter
 how much you beg.<IF008e><JUMPebf2><END>

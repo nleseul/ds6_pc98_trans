@@ -224,7 +224,7 @@ this time too!"
 ","<CALLeebf>What the hell?! Where's my
 damn luck today?!"
 "eb84","<CALLeebf>よう 客人、
-おれと ゲームで 勝負しねーか。<RETN>","<CALLeebf>Welcome, guests!
+おれと ゲームで 勝負しねーか。<RETN>","<CALLeebf>Welcome, mates!
 Care to play a game?<RETN>"
 "ebb2","<X08>そうか、じゃあ しょうがねえな。
 いつでも来なよ 相手になってやるぜ。","<X08>No prob! Come back and play
@@ -232,11 +232,11 @@ any time!"
 "ebf7","<CALLeebf>さあさあ、どんどん かけてくれ !!","<CALLeebf>C'mon, c'mon! Just a l'il more!"
 "ec1b","<CALLeebf>よう 客人、ここには 武器とか
 爆薬が 沢山あるから 気をつけて
-くれよ。","<CALLeebf>Be careful in here, guests! It's
+くれよ。","<CALLeebf>Be careful in here, mates! It's
 packed with arms and explosives."
 "ec63","<CALLeebf><IF0408><JUMPeca4><IF0409><JUMPeca4>やあ客人 元気そうだな？
 疲れたら いつでも来なよ。<END>
-<LOCeca4><SET0400>さあ ゆっくり休んでくんな。","<CALLeebf><IF0408><JUMPeca4><IF0409><JUMPeca4>How ya feelin', guests?
+<LOCeca4><SET0400>さあ ゆっくり休んでくんな。","<CALLeebf><IF0408><JUMPeca4><IF0409><JUMPeca4>How ya feelin', mates?
 If yer tired, ya can always take
 a rest here.<END>
 <LOCeca4><SET0400>Okay, rest well!"

@@ -85,14 +85,14 @@ Highness earlier is a winner!<LOCe502>
 R-Really?!
 
 <CALLe76b>And the grand prize?<WAIT>
-90000000 gold!!<WAIT>
+90,000,000 gold!!<WAIT>
 More than you could carry!
 
 <CH2>
 That's amazing!
 
 <CALLe76b>And your Highness's ticket is
-the 4th prize one, for 50000 gold.Congratulations!
+the 4th prize one, for 50,000 gold.Congratulations!
 
 <IF_NOT0095><JUMPe613>What? You threw it away?<WAIT>
 Oh, I'm sorry to hear that. It
@@ -105,7 +105,7 @@ Well, whatever.
 <CH1>
 That grand prize was too good to
 be true.<WAIT>
-<X1c>Received 50000 gold.<X0c0301><X04><ASMe748><END>
+<X1c>Received 50,000 gold.<X0c0301><X04><ASMe748><END>
 <LOCe6c0>There will be another lottery nextyear. <IF_NOT0095><JUMPe721>If you buy a ticket, please
 don't throw it away this time.<END>
 <LOCe721>I hope your Highness wins

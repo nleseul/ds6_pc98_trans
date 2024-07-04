@@ -80,12 +80,12 @@ Go ahead and rest a bit."
 リシェールの港まで 行っているの。<END>
 <LOCe820>あら、船？ 船ならファンガスの
 大金持ちが しばらく借りていったわ。本当に ついてないわね。","<X1e>Woman<X04>
-<IF0221><JUMPe7e2><IF01f0><JUMPe820><IF0182><JUMPe7c1>The boat? It just left.
+<IF0221><JUMPe7e2><IF01f0><JUMPe820><IF0182><JUMPe7c1>The ship? It just left.
 Too bad, right?<END>
-<LOCe7c1>Oh, you finally caught the boat.
+<LOCe7c1>Oh, you finally caught the ship.
 <LOCe7e2>It's heading to Richelle, a port
 in the Republic of Moreston.<END>
-<LOCe820>The boat? A rich man from Fangath
+<LOCe820>The ship? A rich man from Fangath
 is renting it right now. Too bad,
 right?"
 "e879","<X1e>女<X04>
@@ -127,7 +127,7 @@ Oh, no, they're fine."
 誰だって 空を飛んでみたいよ。
 空が飛べるんなら 500000Gold なんて安いもんだよな。","<X1e>Man<X04>
 So anyone can fly through the
-air, huh? 500000 gold's a cheap
+air, huh? 500,000 gold's a cheap
 price for that."
 "ea42","<X1e>男<X04>
 いつになったら できるんだろうな。

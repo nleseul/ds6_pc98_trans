@@ -26,16 +26,16 @@ with Achdam.<RET_IL>"
 モンスターたちは アクダムと一緒に
 逃げてしまいました。<RET_IL>","Ah, Mayor Foless. I'm glad to see
 you're unharmed. We've driven off
-the monsters and Achdam.<RET_IL>"
+the monsters, and Achdam.<RET_IL>"
 "e3a6","じいさん、大丈夫か。
 モンスターどもは アクダムと一緒に
 逃げちまったぜ。<RET_IL>","You all right down here?
-The monsters are gone now. And
+The monsters're gone now. And
 so's Achdam.<RET_IL>"
 "e3ee","<CH3>
 おい、あそこに 倒れているのは
 ローじゃないか !!","<CH3>
-Hey, isn't that Roh on the ground
+Hey, isn't that Ro on the ground
 over there?"
 "e421","<X1e>フォルス<X04>
 お知り合いでしたか。
@@ -108,19 +108,19 @@ brutal torture.
 <CH3>
 Ugh... He's covered in wounds!!
 
-<X1e>Roh<X04>
+<X1e>Ro<X04>
 Ughh... Runan? Gail? Highness?
 
 <CH0>
-Roh... my pendant?
+Ro... my pendant?
 
-<X1e>Roh<X04>
+<X1e>Ro<X04>
 Your pendant... Achdam took it.
 
 <CH1>
-But why did you do it, Roh?
+But why did you do it, Ro?
 
-<X1e>Roh<X04>
+<X1e>Ro<X04>
 You were looking for the spell of
 Sylis, weren't you?
 
@@ -130,8 +130,8 @@ spell that stops people from usingspells.
 If you used it, what would I do incombat? Without spells... I'm
 useless.
 
-Remember what happened in Farleyn!We fought that Commandant... I...
-I couldn't do a thing.
+Remember what happened in Farleyn!We fought that Commandant... and 
+there wasn't a thing I could do.
 
 Besides, I got tired of traveling
 around and fighting monsters!
@@ -144,7 +144,7 @@ I stole the pendant so I could
 sell it for cash. I destroyed
 Sylis. And I headed for Riezel.
 
-Buut, I came through Maschun,
+Buut, I came through Maschunn,
 and Achdam captured me.
 And here I am.
 
@@ -155,6 +155,6 @@ in Farleyn. Lived in leisure...
 Come on. Let's head upstairs
 and treat his wounds."
 "e892","マスクーンの町を モンスターから
-解放し、再び 平和を 取り戻しました。<X0d>","The town of Maschun has been
+解放し、再び 平和を 取り戻しました。<X0d>","The town of Maschunn has been
 liberated from monsters. Peace
 has been restored!<X0d>"

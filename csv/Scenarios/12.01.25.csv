@@ -21,16 +21,16 @@ come from? What's your name?
 
 <ASMe404><X1e>Selios<X04>
 My name is Selios. I've come a
-long way from the town of Eluasta.<X120700><JUMPe35f>
+long way from the town of Eluasta.<IF0007><JUMPe35f>
 Let me pass.<JUMPe37d><LOCe35f>
 
 Let me pass. I need to see Achdam.<LOCe37d>
 
 <X1e>Soldier<X04>
 Selios... the Prince?!
-<X120700><JUMPe3dc>Stop making stupid jokes and run
+<IF0007><JUMPe3dc>Stop making stupid jokes and run
 along. The castle is closed today.<END>
-<LOCe3dc><X141200><ASMe411>J-just wait here a moment,
+<LOCe3dc><SET0012><ASMe411>J-just wait here a moment,
 please..."
 "e417","<X1e>兵士<X04>
 まもなく 迎えの者が まいります。

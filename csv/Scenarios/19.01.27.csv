@@ -5,7 +5,7 @@ Why the long faces? What happened?"
 "e24f","<X1e>兵士<X04>
 マスクーンの町を 解放したって？
 本当かい、それは。","<X1e>Soldier<X04>
-Maschun has been liberated?
+Maschunn has been liberated?
 That's incredible!"
 "e289","<X1e>隊長<X04>
 <IF009e><JUMPe2ea><SET009e><IF0408><JUMPe2a5><IF_NOT0409><JUMPe341><LOCe2a5>マスクーンを 解放したんだって？
@@ -15,12 +15,12 @@ That's incredible!"
 <LOCe32b>休んでいくがいい。<SET0400><END>
 <LOCe341>マスクーンを 解放したんだってな。
 ともかく、無事で 何よりだった。<CLEAR0400>","<X1e>Captain<X04>
-<IF009e><JUMPe2ea><SET009e><IF0408><JUMPe2a5><IF_NOT0409><JUMPe341><LOCe2a5>You've liberated Maschun? You
+<IF009e><JUMPe2ea><SET009e><IF0408><JUMPe2a5><IF_NOT0409><JUMPe341><LOCe2a5>You've liberated Maschunn? You
 must be exhausted. Please
 <JUMPe32b><LOCe2ea><IF0408><JUMPe2f6><IF_NOT0409><JUMPe341><LOCe2f6>Oh, welcome back! As always,
 please <LOCe32b>rest as long as you like.<SET0400><END>
 <LOCe341>I understand you've liberated
-Maschun. I'm glad you're safe.<CLEAR0400>"
+Maschunn. I'm glad you're safe.<CLEAR0400>"
 "e386","<X1e>兵士<X04>
 ここは ヨルドの港への 定期船の
 乗り場なんだが ･ ･ ･

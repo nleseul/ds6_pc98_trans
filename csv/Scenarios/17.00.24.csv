@@ -36,13 +36,13 @@ Back again, are you?<RETN>"
 確か、黒いマントをきた男だったな。マントが青白く光っていて、
 どことなく うさんくさい 奴だった。","Ah, the <X0e>?
 <PAGE>
-But, I'm afraid that's already
-sold.
+I'm afraid I sold that just a
+moment ago.
 
-Who bought it? I suppose it was
-the man in the black cloak.
-His cloak had a pale glow, and
-he seemed rather shady."
+Who bought it? That man in the
+black cloak, I suppose. His cloak
+glowed with a pale blue light.
+Quite a suspicious person."
 "e532","わりーな、今日は何もないんだ。
 <JUMPe554><LOCe554>また、来てくれよな。","Ah, I'm afraid I haven't got
 anything today!
@@ -258,7 +258,7 @@ Hey, d'ya think it could've been
 that Gail guy, maybe?
 
 <CH1>
-R-Roh? You're awake?
+R-Ro? You're awake?
 
 <CH2>
 What d'ya think? Should we wake

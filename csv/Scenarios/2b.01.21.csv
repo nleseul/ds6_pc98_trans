@@ -130,7 +130,7 @@ me in on everything.
 <CH3>
 There's no more ta fill in!!
 You do know who this is, right?
-She's Princess Dina of Soldythe!
+She's <CALL0001> of Soldythe!
 
 <CALLeb99>What? A princess?!
 No wonder she can't dust worth
@@ -171,8 +171,10 @@ petty thief!
 
 <CALLeb99>Ugh, you're just like Junior...
 
-Digging that huge hole and runningoff like that... To this day, it
-still hasn't been repaired!
+And that hole over there you made
+when you ran off? It still hasn't
+been repaired to this day, you
+know.
 
 Let me tell you about why your
 father left.
@@ -215,9 +217,10 @@ I'm going out for a stroll."
 
 <X1e>ディーナ姫<X04>
 エリオンさま 助けて !!","<CH1>
-Princess Dina!
+<CALL0001>!
 
-<X1e>Princess Dina<X04>
-Prince Aerion! Help me!!"
+<X1e><CALL0001><X04>
+Prince Aerion! Help me!!<END>
+<LOC0001>Princess Dina<RET_IL>"
 "eb92","<X1e>盗賊<X04><RETN>","<X1e>Thief<X04><RETN>"
 "eb99","<X1e>大盗賊 ゲイル<X04><RETN>","<X1e>The Great Thief Gail<X04><RETN>"

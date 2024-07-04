@@ -40,7 +40,7 @@ ya can't hold any more."
 "e43b","<X1e>海賊<X04>
 <IF0408><JUMPe467><IF0409><JUMPe467>やあ 客人 元気そうだな？<END>
 <LOCe467><SET0400>さあ ゆっくり休んでくんな。","<X1e>Pirate<X04>
-<IF0408><JUMPe467><IF0409><JUMPe467>How ya feelin', guests?
+<IF0408><JUMPe467><IF0409><JUMPe467>How ya feelin', mates?
 If yer tired, ya can always take
 a rest here.<END>
 <LOCe467><SET0400>Okay, rest well!"

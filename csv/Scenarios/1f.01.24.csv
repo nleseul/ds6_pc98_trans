@@ -220,12 +220,12 @@ other words, we must assume that
 it happened when Achdam arrived.
 
 <CH2>
-So the cave-in could have been
-Achdam's work?
+So in other words, it was Achdam'swork?
 
-I think it's highly likely.
-Achdam's the only person who wouldbenefit from making the cave
-impassable.
+I think that's very possible.
+Apart from Achdam, there's no one
+who would benefit from making the
+cave impassable.
 
 <CH0>
 Then there's a strong chance
@@ -294,7 +294,7 @@ now."
 "ed35","<X1e>海賊<X04>
 よう 客人、
 おれと ゲームで 勝負しねーか。<RETN>","<X1e>Pirate<X04>
-Welcome, guests!
+Welcome, mates!
 Care to play a game?<RETN>"
 "ed67","<X08>そうか、じゃあ しょうがねえな。
 いつでも来なよ 相手になってやるぜ。","<X08>No prob! Come back and play
@@ -314,7 +314,7 @@ ya can't hold any more."
 <IF0408><JUMPeec0><IF0409><JUMPeec0>やあ 客人 元気そうだな？
 疲れたら いつでも来なよ。<END>
 <LOCeec0><SET0400>さあ ゆっくり休んでくんな。","<IF_NOT00db><JUMPecac><X1e>Pirate<X04>
-<IF0408><JUMPeec0><IF0409><JUMPeec0>How ya feelin', guests?
+<IF0408><JUMPeec0><IF0409><JUMPeec0>How ya feelin', mates?
 If yer tired, ya can always take
 a rest here.<END>
 <LOCeec0><SET0400>Okay, rest well!"

@@ -7,11 +7,11 @@
 <IF009c><JUMPe247>That ill-mannered guy? He left
 early this morning.<END>
 <LOCe247>Welcome back! I see you found thatguy who brought you here from
-Maschun."
+Maschunn."
 "e290","<X1e>兵士<X04>
 ついに マスクーンも モンスターに
-襲われたか ･ ･","Even Maschun's under attack by
-monsters now..."
+襲われたか ･ ･","So they finally attacked
+Maschunn..."
 "e2c7","<X1e>隊長<X04>
 <IF0402><JUMPe381><IF0408><JUMPe2e0><IF_NOT0409><JUMPe32b><LOCe2e0>んっ おお、お前たちか。
 いいとも いいとも 好きなだけ
@@ -34,14 +34,14 @@ monsters now..."
 <IF0402><JUMPe381><IF0408><JUMPe2e0><IF_NOT0409><JUMPe32b><LOCe2e0>Hm? Oh, it's you guys. 
 Of course, you can stay here
 as long as you like.<SET0400><END>
-<LOCe32b>I want to go to Maschun, but I
+<LOCe32b>I want to go to Maschunn, but I
 have to protect the fort. What 
 to do...?<CLEAR0400><END>
 <LOCe381>Oh, you're finally awake!
 
 <CH0>
 Do you happen know where our
-friend Roh went?!
+friend Ro went?!
 
 <X1e>Captain<X04>
 What's got you all excited? That
@@ -94,13 +94,13 @@ you are troubled."
 Maschun... Our town... save us!
 
 <X1e>Captain<X04>
-If we go to Maschun now, then
+If we go to Maschunn now, then
 the monsters may strike at this
 fort next.
 
 What to do...?<END>
 <LOCe612>These people put their lives on
-the line for Maschun!
+the line for Maschunn!
 
 How long are you going to wait to
 help us, Captain?"
@@ -151,10 +151,10 @@ help us, Captain?"
 私のせいで とんだことに なって
 しまったみたいで 申し訳ありません。","<IF_NOT0402><JUMPe919><CH0>
 E-excuse me!
-Roh hasn't been here, has he?
+Ro hasn't been here, has he?
 
 <X1e>Tool merchant<X04>
-Roh? That would be the man in the
+Ro? That would be the man in the
 cloak, correct?
 
 I saw him this morning. I gave
@@ -211,10 +211,10 @@ mistake. I'm very sorry."
 リュナン、ローを探すんだ !!","<CH1>
 Your Highness, you need to wake
 up.
-Roh is gone!
+Ro is gone!
 
 <CH0>
-...Roh? Gone?
+...Ro? Gone?
 Where did he go?!
 
 <CH1>
@@ -225,4 +225,4 @@ looked everywhere.
 <CH0>
 Oh no!!
 The Gilmoran Tear is gone!!
-Runan, we need to find Roh!"
+Runan, we need to find Ro!"

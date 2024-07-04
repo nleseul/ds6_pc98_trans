@@ -79,7 +79,7 @@ with these matters, Prince Selios.
 
 Please do what you can to see thatDina returns safely.<END>
 <LOCe3d6><IF0404><JUMPe589><SET0404>Thank you for everything, Prince
-Selios. The traveler named Roh
+Selios. The traveler named Ro
 brought Dina here on your behalf.
 
 And I understand that he also
@@ -93,7 +93,7 @@ Did he...?
 Undoubtedly. He must have
 stretched the truth somewhat.
 <PAGE>
-Has Roh caused any trouble for
+Has Ro caused any trouble for
 your Majesty?
 
 <X1e>King Arthos<X04>
@@ -101,7 +101,7 @@ N-No, not at all.
 The important thing is that Dina
 is home safely.<END>
 <LOCe589>No, do not be concerned.
-Who is this Roh, by the way?
+Who is this Ro, by the way?
 
 He said that he is very well-knownin Farleyn.
 

@@ -849,7 +849,7 @@ def program_disk_patch_misc(program_disk_patch):
     program_disk_patch.add_record(0x117a3, b" \x87\x54  The Prince's Departure   ")
     program_disk_patch.add_record(0x11940, ("Selios".encode('shift-jis') + b'\x06').ljust(0x10, b'\x00'))
     program_disk_patch.add_record(0x11980, ("Runan".encode('shift-jis') + b'\x06').ljust(0x10, b'\x00'))
-    program_disk_patch.add_record(0x119c0, ("Roh".encode('shift-jis') + b'\x06').ljust(0x10, b'\x00'))
+    program_disk_patch.add_record(0x119c0, ("Ro".encode('shift-jis') + b'\x06').ljust(0x10, b'\x00'))
     program_disk_patch.add_record(0x11a00, ("Gail".encode('shift-jis') + b'\x06').ljust(0x10, b'\x00'))
 
     program_disk_patch.add_record(0xab7a - 0x4000 + 0x13e10, b"  HELL  \x00  Hard  \x00 Normal \x00  Easy  \x00")

@@ -240,7 +240,7 @@ Don't worry about it.
 <IF0400><JUMPea27>A ship leaves here for the
 Republic of Moreston. It's been
 a while since it's come back.<END>
-<LOCea27>The boat? It just left.
+<LOCea27>The ship? It just left.
 Too bad, right?"
 "ea5a","<X1e>女<X04>
 <IF0176><JUMPeace>ハリーさんて おもしろい人よ。

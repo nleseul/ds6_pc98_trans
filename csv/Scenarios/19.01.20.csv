@@ -7,7 +7,7 @@
 <IF007a><JUMPe320>Welcome to Fort Larfa.
 Make yourselves at home!<END>
 <LOCe320>As much as I want to help
-Maschun... What would happen to
+Maschunn... What would happen to
 this fort without our protection?"
 "e37c","<X1e>兵士<X04>
 <IF007a><JUMPe49a>この砦の北には 大きな島があり
@@ -37,8 +37,8 @@ A guy who says he's the grandson
 of the sage who invented healing
 magic lives alone on the island
 north of here.<END>
-<LOCe49a>Even Maschun's under attack by
-monsters now..."
+<LOCe49a>So they finally attacked
+Maschunn..."
 "e4ca","<X1e>隊長<X04>
 <CLEAR0400><IF0408><JUMPe4e0><IF_NOT0409><JUMPe52b><LOCe4e0>んっ おお、お前たちか。
 いいとも いいとも 好きなだけ
@@ -54,7 +54,7 @@ as long as you like.<SET0400><END>
 <LOCe52b><IF007a><JUMPe577>Please, stop by any time you're
 tired from battle. Think of this
 place as an inn.<END>
-<LOCe577>I want to go to Maschun, but I
+<LOCe577>I want to go to Maschunn, but I
 have to protect the fort. What 
 to do...?"
 "e5ca","<X1e>兵士<X04>
@@ -98,15 +98,15 @@ you are troubled."
 
 困ったものだ ･ ･ ･","<X1e>Old man<X04>
 <IF0078><JUMPe776><IF007a><JUMPe747>Hah... hahh.. H... Help us!
-Maschun... under attack by
+Maschunn... under attack by
 monsters!!<END>
 <LOCe747>Hah... hahh... 
 No time... Let me through!<END>
 <LOCe776>Please, Captain!
-Maschun... Our town... save us!
+Maschunn... Our town... save us!
 
 <X1e>Captain<X04>
-If we go to Maschun now, then
+If we go to Maschunn now, then
 the monsters may strike at this
 fort next.
 
@@ -124,7 +124,7 @@ What to do...?"
 襲われている という町でも 見物に
 行ってみようかな。<LOCe93d>","<X1e>Pomm<X04>
 I went all the way to the Tower
-of Guenn, but there was a weird
+of Guenn, but there was a strange
 lock I couldn't get past.
 
 If not for that lock, I'd be able

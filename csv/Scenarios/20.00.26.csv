@@ -41,10 +41,10 @@ How's about it?
 疲れたら 遠慮せずに
 いつでも来てくれよ。<END>
 <LOCe450><SET0400>さあ ゆっくり休んでくんな。","<X1e>Pirate<X04>
-<IF0408><JUMPe450><IF0409><JUMPe450>Looks like you're doing well!
-When you get tired, don't
+<IF0408><JUMPe450><IF0409><JUMPe450>Ahoy, mates! Ya look well!
+When ya get tired, don't
 hesitate to come back here.<END>
-<LOCe450><SET0400>Okay, have a good rest!"
+<LOCe450><SET0400>Okay, sleep well!"
 "e46f","<X1e>海賊<X04>
 よう、兄弟。元気か？
 
@@ -57,7 +57,7 @@ hesitate to come back here.<END>
 How's it goin', bro?
 
 Take good care o' these people.
-Honored guests of the cap'n, so
+Best mates o' the cap'n, so
 don't let nothin' happen to 'em!
 
 <ASMe52e>This here's our hideout in Suil.

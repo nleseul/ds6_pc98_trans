@@ -135,23 +135,23 @@ What are we going to do?"
 じゃ 行こうぜ 王子さま。
 ワプ２ってのは 塔の中じゃ
 使えねえんだ。","<CH0>
-Roh!
+Ro!
 
 <CALL0002>Oh, is that you, Highness? What
 could have brought you to a place
 like this?
 
 <CH1>
-Roh, what are you doing?
+Ro, what are you doing?
 Is that Pomm and Harry with you?
 
-<CALL0001>There's nothing too unusual about
+<CALL0001>There's nothing too strange about
 it.
 
 I heard from a traveler that
 there's a tower made of crystal inthe Republic of Moreston.
 
-I talked it over with Roh, and
+I talked it over with Ro, and
 before long, we'd decided to head
 there.
 
@@ -203,7 +203,7 @@ Hey! Why don't we have them handlethe Princess?
 <CH0>
 Yeah, that sounds good.
 
-Hey, Roh!
+Hey, Ro!
 This is Princess Dina of Soldythe.
 
 If you're going to Soldythe,
@@ -224,7 +224,7 @@ jump.
 Shall we head outside, Highness?
 It's no use casting Warp 2 inside
 a tower.<END>
-<LOC0001><X1e>Pomm<X04><RETN><LOC0002><X1e>Roh<X04><RETN><LOC0003><X1e>Harry<X04><RETN>"
+<LOC0001><X1e>Pomm<X04><RETN><LOC0002><X1e>Ro<X04><RETN><LOC0003><X1e>Harry<X04><RETN>"
 "ebc9","<X1e>バケモノ<X04>
 ふんっ ばかめ !!
 まんまとわなに はまりおって
