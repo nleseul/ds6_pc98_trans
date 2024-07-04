@@ -8,15 +8,16 @@
 <P>狭いこともあって、これといった特産物のない貧しい国だった。
 <P>しかし、そこに住む人々は少々の貧しい生活をものともせず、
 <P>心優しきアスエル王の統治のもと、平和な日々を過ごしていた。
-<P><P>","A long time ago--or perhaps in the distant future...
-<P>Regardless, it was a time when the people of the verdant world
-<P>of Iselhassa lived in harmony with the blessings of nature.
-<P>
-Near the center of Iselhassa, one island called Romwoll and a
-<P>smaller island called Sarthuai made up the kingdom of Farleyn.
-<P>It was a poor kingdom with little land and no notable livestock.
-<P>But its people took their simple lives in stride, and under the
-<P>reign of their kind king Asuel, they passed their days in peace.
+<P><P>","A long time ago... or was it in the distant future?
+<P>Either way, there was a fertile world called Isilartha,
+<P>whose people lived and thrived amid its natural abundance.
+
+<P>In the center of Isilartha, the island of Romwoll and the
+<P>and the much smaller island Sarthuai made up the kingdom
+<P>of Farleyn. It was a poor nation, with little land and
+<P>no exports of note. But its people lived their meager
+<P>lives with few complaints. Under the reign of their
+<P>kind king Asuel, they passed their days in peace.
 <P><P>"
 "2","ところがある晩、予告なしの異変が首都ルディアを襲った。
 <P>モンスターたちが大挙して城に攻め込んできたのだ。
@@ -28,16 +29,16 @@ Near the center of Iselhassa, one island called Romwoll and a
 追い払われてしまう。
 <P>重大な危機を脱し、人々は歓喜するが、それはすぐにおさまってしまう。
 <P>国王アスエルがモンスターに殺害されたと知らされたからである。
-<P><P>","Its capital city of Rudia had no warning when tragedy struck.
-<P>Monsters gathered in force and stormed the castle.
-<P>The attack came at night, and the castle gates had somehow
-<P>been left unbarred. The inexperienced soldiers in the castle
-<P>were drawn into a chaotic melee.
-<P>But as dawn broke and the monsters' numbers began to dwindle,
-they were able to drive off the invaders.
-<P>The people rejoiced at the hard-won victory, but their
-celebrations shortly abated.
-<P>For they soon learned that King Asuel had been killed.
+<P><P>","One night, unforseen tragedy struck its capital of Rudia.
+<P>A horde of monsters easily stormed the castle, through
+<P>gates which had somehow been left unbarred.
+<P>The castle soldiers, who had never before seen a monster,
+<P>were taken by surprise and drawn into a pitched melee.
+<P>But they held their own until daybreak, and the attackers
+were dispersed.
+
+<P>The people celebrated the end of the danger.
+<P>Until they learned that King Asuel was dead.
 <P><P>"
 "3","この時、世継ぎのセリオス王子は、わずか６歳。
 <P>ただ一人、アスエル王の最後をみとったという側近のアクダムは、
@@ -48,11 +49,13 @@ celebrations shortly abated.
 <P>養育されることになった。
 <P>
 　　　　　　　それから約１０年の歳月が流れた。
-","Prince Selios, the heir to the throne, was only six years old.
-<P>Achdam, the king's close advisor, proclaimed that the dying
-<P>king had named him regent until the young prince came of age.
+","The king's heir, Prince Selios, was only six years old.
+<P>Chancellor Achdam, the only witness to Asuel's death,
+<P>announced that the dying king had named him regent
+<P>until the prince's coronation at the age of sixteen.
+
+<P>Until then, the young prince would be raised in
+<P>the village of Eluasta, on Sarthuai Isle.
 <P>
-Until he reached the age of sixteen, Prince Selios was sent
-<P>away, to be raised in the town of Eluasta on Sarthuai Island.
-<P>
-                 And so ten years passed..."
+            And so ten years passed...
+"
