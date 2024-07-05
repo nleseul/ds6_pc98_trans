@@ -942,7 +942,7 @@ def scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk):
 
         print(f"Translating scenario {format_sector_key(scenario_key)}...")
 
-        if scenario_key in [(0x21, 0x01, 0x24), (0x24, 0x00, 0x24), (0x2f, 0x00, 0x24)]:
+        if scenario_key in [(0x21, 0x01, 0x24), (0x24, 0x00, 0x24), (0x2d, 0x01, 0x23), (0x2f, 0x00, 0x24)]:
             packing_strategy = 'smallest'
         else:
             packing_strategy = 'first'
