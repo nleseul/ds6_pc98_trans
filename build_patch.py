@@ -1,6 +1,7 @@
 ﻿import configparser
 import ips_util
 import os
+from ds6_gfx_util import *
 from ds6_util import *
 from tempfile import NamedTemporaryFile
 
@@ -253,6 +254,19 @@ def patch_sector(patch, sector_addresses, addr, base_addr, data):
             disk_addr = None if chunk_index >= len(sector_addresses) else sector_addresses[chunk_index]
 
 
+def patch_image(patch, start_addr, available_size, image_file_name, draw_position, magic_offset):
+    planes = load_bitplanes_from_image_file(image_file_name)
+
+    encoded_image = encode_bitplanes(planes, draw_position, magic_offset)
+
+    if len(encoded_image) > available_size:
+        raise Exception(f"Image loaded from {image_file_name} was encoded to a buffer of {len(encoded_image)} bytes, which does not fit in the available space of {available_size} bytes.")
+    print(f"Image {image_file_name} used {len(encoded_image)}/{available_size} bytes available.")
+
+    patch.add_record(start_addr, encoded_image)
+
+
+
 def event_disk_patch_opening(event_disk_patch):
     # Opening text
     opening_trans = load_translations_csv("csv/Opening.csv")
@@ -343,6 +357,10 @@ def event_disk_patch_ending(event_disk_patch):
 
 
 def event_disk_patch_misc(event_disk_patch):
+
+    # Temporary hack to force it to boot to the setup menu; do not build with this enabled.
+    #event_disk_patch.add_record(0x5a52 + 0x14a10, b'\xe9\x0d\x00')
+
     # Original text: 
     # プログラムディスクをドライブ１に
     # シナリオディスクを　ドライブ２に
@@ -844,6 +862,11 @@ def program_disk_patch_combat_text(program_disk_patch):
     return battle_text_relocations
 
 
+def program_disk_patch_gfx(program_disk_patch):
+    patch_image(program_disk_patch, 0x2ea10, 0x1000, "gfx/Program/function_bar.png", (0, 0), 0xc000)
+    print()
+
+
 def program_disk_patch_misc(program_disk_patch):
     # Miscellaneous program disk text
     program_disk_patch.add_record(0x117a3, b" \x87\x54  The Prince's Departure   ")
@@ -1021,6 +1044,7 @@ if __name__ == '__main__':
     # Build the program disk
     program_disk_patch_misc(program_disk_patch)
     program_disk_patch_asm(program_disk_patch, config['NasmPath'])
+    program_disk_patch_gfx(program_disk_patch)
     battle_text_relocations = program_disk_patch_combat_text(program_disk_patch)
     patch_data_table(program_disk_patch, "csv/Items.csv", 0x1491f, 14, 20)
     patch_data_table(program_disk_patch, "csv/Spells.csv", 0x15243, 8, 11)
