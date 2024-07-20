@@ -1125,6 +1125,10 @@ def program_disk_patch_misc(program_disk_patch):
     program_disk_patch.add_record(0xaaa + 0x13e10, b'\x81\x73') # Reflect - Full-width double left angle bracket
     program_disk_patch.add_record(0xaae + 0x13e10, b'\x83\xa6') # Defend - Full-width capital theta
 
+    # Change the counters used for slow/normal text scroll speed.
+    program_disk_patch.add_record(0x85b7 - 0x4000 + 0x13e10, b"\x01") # Added to the counter on slow speed
+    program_disk_patch.add_record(0x85bc - 0x4000 + 0x13e10, b"\x02") # Base counter used on normal speed
+
 
 def scenario_disk_patch_misc(scenario_disk_patch):
     scenario_disk_patch.add_record(0x79c66, b"Sonia\x06          ")
