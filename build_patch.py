@@ -254,10 +254,10 @@ def patch_sector(patch, sector_addresses, addr, base_addr, data):
             disk_addr = None if chunk_index >= len(sector_addresses) else sector_addresses[chunk_index]
 
 
-def patch_image(patch, start_addr, available_size, image_file_name, draw_position, magic_offset):
+def patch_image(patch, start_addr, available_size, image_file_name, draw_position, magic_offset = 0):
     planes = load_bitplanes_from_image_file(image_file_name)
 
-    encoded_image = encode_bitplanes(planes, draw_position, magic_offset)
+    encoded_image = encode_bitplanes(planes, draw_position, magic_offset) + b"\x00"
 
     if len(encoded_image) > available_size:
         raise Exception(f"Image loaded from {image_file_name} was encoded to a buffer of {len(encoded_image)} bytes, which does not fit in the available space of {available_size} bytes.")
@@ -265,6 +265,7 @@ def patch_image(patch, start_addr, available_size, image_file_name, draw_positio
 
     patch.add_record(start_addr, encoded_image)
 
+    return len(encoded_image)
 
 
 def event_disk_patch_opening(event_disk_patch):
@@ -353,6 +354,12 @@ def event_disk_patch_ending(event_disk_patch):
 
 
     print(f"Ending: {initial_available_space - ending_text_pool.total_available_space}/{initial_available_space} bytes")
+    print()
+
+
+def event_disk_patch_gfx(event_disk_patch):
+    first_segment_length = patch_image(event_disk_patch, 0x11610, 0x2400, "gfx/Event/boot_screen_0.png", (10, 48))
+    patch_image(event_disk_patch, 0x11610 + first_segment_length, 0x2400 - first_segment_length, "gfx/Event/boot_screen_1.png", (10, 200))
     print()
 
 
@@ -1253,6 +1260,7 @@ if __name__ == '__main__':
     # Build the event disk
     event_disk_patch_opening(event_disk_patch)
     event_disk_patch_ending(event_disk_patch)
+    event_disk_patch_gfx(event_disk_patch)
     event_disk_patch_misc(event_disk_patch)
 
     # Build the program disk
