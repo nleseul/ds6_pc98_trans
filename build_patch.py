@@ -46,7 +46,7 @@ class SpacePool:
 
         best_index = None
         best_rating = None
-        
+
         for span_index, span in enumerate(self._available_spans):
             if span['end'] - span['start'] + 1 >= length:
                 if strategy == 'smallest':
@@ -55,11 +55,11 @@ class SpacePool:
                     span_rating = span['end'] - span['start'] + 1 - length
                 else:
                     span_rating = -span_index # First
-        
+
                 if best_rating is None or span_rating > best_rating:
                     best_rating = span_rating
                     best_index = span_index
-        
+
         if best_index is not None:
             span = self._available_spans[best_index]
             addr = span['start']
@@ -68,7 +68,7 @@ class SpacePool:
                 del self._available_spans[best_index]
         else:
             raise Exception(f"Unable to find {length} bytes of space! Total available: {self.total_available_space} bytes; largest available: {self.largest_available_space} bytes")
-   
+
         return addr
 
     def dump(self):
@@ -103,7 +103,7 @@ def patch_menu(patch, base_addr, items, max_length, references):
         raise Exception(f"Not enough space to patch menu at {base_addr:04x}! available={max_length} bytes; used={len(patch_data)} bytes")
 
     patch.add_record(base_addr - 0x4000 + 0x13e10 + 4, patch_data.ljust(max_length - 4, b'\x00'))
-    
+
     for offset, ref_addr in zip(offsets, references):
         if ref_addr is not None:
             patch.add_record(ref_addr - 0x4000 + 0x13e10, int.to_bytes(base_addr + offset + 1, length=2, byteorder='little'))
@@ -137,7 +137,7 @@ def patch_asm(patch, nasm_path, base_addr, max_length, asm_code):
 
     if len(encoded) > max_length:
         raise Exception(f"Not enough space to patch asm code at {base_addr}! available={max_length} bytes; used={len(encoded)} bytes")
-    
+
     patch.add_record(base_addr - 0x4000 + 0x13e10, encoded.ljust(max_length, b'\x90'))
 
 
@@ -148,7 +148,7 @@ def encode_translations(event_list, translated_text):
     for event_addr, event_info in event_list.items():
         context = f"{event_addr:04x}"
         original_encoded, original_references, original_locators = encode_event(event_info['text'])
-            
+
         if context in translated_text and 'translation' in translated_text[context]:
             translation = translated_text[context]['translation']
 
@@ -182,7 +182,7 @@ def relocate_events(event_list, encoded_translations, empty_space=None, packing_
     for event_addr, event_info in event_list.items():
         if event_info['is_relocatable']:
             space_pool.add_space(event_addr, event_addr + event_info['length'] - 1)
-    
+
     if empty_space is not None:
         space_pool.add_space(empty_space[0], empty_space[1])
 
@@ -203,7 +203,7 @@ def relocate_events(event_list, encoded_translations, empty_space=None, packing_
         try:
             space_addr = space_pool.take_space(len(translation_info['encoded']), packing_strategy)
             relocations[translation_addr] = space_addr
-        except Exception:            
+        except Exception:
             raise Exception(f"No space found to relocate event {translation_addr:04x}")
 
         for locator_orig_addr, locator_new_offset in translation_info['locators'].items():
@@ -211,7 +211,7 @@ def relocate_events(event_list, encoded_translations, empty_space=None, packing_
             relocations[locator_orig_addr] = locator_new_addr
 
     print()
-            
+
     return relocations
 
 
@@ -231,7 +231,7 @@ def update_references(event_list, relocations, encoded_translations):
         for ref_info in event_info['references']:
             if ref_info['target_addr'] in relocations and 'source_event_addr' not in ref_info:
                 reference_changes[ref_info['source_addr']] = relocations[ref_info['target_addr']]
-                    
+
     return reference_changes
 
 
@@ -240,7 +240,7 @@ def patch_sector(patch, sector_addresses, addr, base_addr, data):
     chunk_index = (addr - base_addr) // 0x400
     chunk_offset = (addr - base_addr) % 0x400
     disk_addr = sector_addresses[chunk_index] + chunk_offset
-            
+
     while len(data) > 0:
         current_end_addr = min(disk_addr + len(data), sector_addresses[chunk_index] + 0x400)
         patch.add_record(disk_addr, data[:current_end_addr - disk_addr])
@@ -277,7 +277,7 @@ def event_disk_patch_opening(event_disk_patch):
             text = opening_info['translation']
         else:
             text = opening_info['original']
-        
+
         while len(text) > 0:
             if text.startswith("<P>"):
                 encoded_opening += b'\x01'
@@ -291,16 +291,16 @@ def event_disk_patch_opening(event_disk_patch):
             else:
                 encoded_opening += text[0:1].encode('shift-jis')
                 text = text[1:]
-        
+
         if encoded_opening[-1] != 0x00:
             encoded_opening += b'\x00'
-        
+
         if opening_index == 2:
             encoded_opening += b'\x03'
         else:
             encoded_opening += b'\x02'
-        
-    
+
+
     if len(encoded_opening) > 0x585:
         raise Exception(f"Opening text is too long! {len(encoded_opening)}/{0x585} bytes")
     else:
@@ -361,12 +361,226 @@ def event_disk_patch_misc(event_disk_patch):
     # Temporary hack to force it to boot to the setup menu; do not build with this enabled.
     #event_disk_patch.add_record(0x5a52 + 0x14a10, b'\xe9\x0d\x00')
 
-    # Original text: 
-    # プログラムディスクをドライブ１に
-    # シナリオディスクを　ドライブ２に
-    # セットして【RETURN】キーを
-    # 押してください。
-    event_disk_patch.add_record(0x5c56 + 0x14a10, b"\x08Insert the Program Disk into\x01drive 1 and the Scenario Disk\x01into drive 2, then press the\x01\x81\x79RETURN\x81\x7a key.\x0d\x0d\x00")
+    utility_text_translations = [
+        # Menu options are 6 bytes.
+        { 'orig_addr': 0x4edd, 'orig_length': 0xd, 'translation': " Yes <END>\n No" },
+
+        #   は じ め か ら 冒 険 す る
+        # 冒  険  の  続  き  を  す  る
+        # シナリオディスクのバックアップ
+        # セ ー ブ デ ー タ ー の 消 去
+        # オプションボードの使用制限設定
+        #  ゲーム進行に関する設定の変更"
+        { 'orig_addr': 0x5b99, 'orig_length': 0xbd, 'translation':
+            " Begin a new adventure<END>\n" +
+            " Continue an adventure<END>\n" +
+            " Back up a Scenario Disk<END>\n" +
+            " Erase save data<END>\n" +
+            " Disable expansion boards<END>\n" +
+            " Change gameplay settings" },
+
+        # Original text:
+        # プログラムディスクをドライブ１に
+        # シナリオディスクを　ドライブ２に
+        # セットして【RETURN】キーを
+        # 押してください。
+        { 'orig_addr': 0x5c56, 'orig_length': 0x70, 'translation':
+            "<X08>Insert the Program Disk into\n" +
+            "drive 1 and the Scenario Disk\n" +
+            "into drive 2, then press the\n" +
+            "【RETURN】 key.<X0d><X0d>" },
+
+        # Original text:
+        # ドライブ１にシナリオディスクを
+        # ドライブ２に新しいディスクを
+        # セットしてください。
+        # よろしいですか？
+        { 'orig_addr': 0x5dfc, 'orig_length': 0x66, 'translation':
+            "Insert the Scenario Disk into\n" +
+            "drive 1 and a blank disk into\n" +
+            "drive 2. Ready?<X0c0301><RETN>"},
+
+        # Original text:
+        # バックアップ中です。
+        # しばらく お待ちください。
+        { 'orig_addr': 0x5e62, 'orig_length': 0x30, 'translation': "<X08>Creating backup.\nPlease wait...<RETN>" },
+
+        # Original text:
+        # バックアップが終りました。
+        { 'orig_addr': 0x5e92, 'orig_length': 0x1f, 'translation': "<X08>Backup complete.<X0c0301><X0d>" },
+
+        # Original text:
+        # ドライブ１にイベントディスクを
+        # セットして 【RETURN】キーを
+        # 押してください。
+        { 'orig_addr': 0x5eb1, 'orig_length': 0x4d, 'translation':
+            "<X08>Insert the Event Disk into drive\n" +
+            "1, then press the 【RETURN】\n"
+            "key." },
+
+        # Original text:
+        # バックアップを中止します。
+        # (Note that this needs to jump to the middle of the next message (originally 0x5f35).
+        #  Keep the jump address accurate; it's not currently updated automatically.)
+        { 'orig_addr': 0x5efe, 'orig_length': 0x1d, 'translation': "<X08>Failed to write to disk.\n<JUMP5f36>" },
+
+        # Original text:
+        # 読み込みに失敗しました。
+        # バックアップを中止します。
+        # バックアップを続けますか？
+        { 'orig_addr': 0x5f1b, 'orig_length': 0x55, 'translation':
+            "<X08>Failed to read from disk.\n" +
+            "<LOC5f36>Backup cancelled.<X0c0701><PAGE>\n" +
+            "Retry backup?<RETN>" },
+
+        # Original text:
+        # このコマンドはシナリオディスク中の
+        # セーブ領域をフォーマットします。
+        # すべてのセーブデーターが消去されて
+        # しまいますので ご注意下さい。
+        #
+        # セーブデーターを消去したいシナリオ
+        # ディスクをドライブ２にセットして
+        # 【RETURN】キーを押してください。
+        #
+        # セーブデーターを消去しますか？
+        # (Note that the final segment of this text seems to be unused.)
+        { 'orig_addr': 0x5fbb, 'orig_length': 0x108, 'translation':
+            "This command will format the\n" +
+            "save area on a Scenario Disk.\n" +
+            "Use with caution; all save data\n" +
+            "on the disk will be deleted.<X0d>\n" +
+            "<CONT><X08>Insert the Scenario Disk from\n" +
+            "which you want to delete save data" +
+            "into drive 2 and press the\n" +
+            "【RETURN】 key.<X0d>\n" +
+            "<CONT><X08>Delete save data?<RETN>" },
+
+        # Original text:
+        # このディスク中にあった すべての
+        # セーブデーターは 消去されました。
+        { 'orig_addr': 0x60c3, 'orig_length': 0x43, 'translation': "All save data on the disk has\nbeen deleted.<X0d>" },
+
+        # Original text:
+        # 書き込みに失敗しました。
+        { 'orig_addr': 0x6106, 'orig_length': 0x1d, 'translation': "<X08>Failed to write to disk.<X0c0701>" },
+
+        # Original text:
+        # データーの消去を中止しました。
+        { 'orig_addr': 0x6123, 'orig_length': 0x23, 'translation': "<X08>Data deletion cancelled.<X0c0701>" },
+
+        # Original text:
+        # キャッシュディスク及びＢＧＭに
+        # 使用するハードの制限を設定します。
+        #
+        # 設定するシナリオディスクを
+        # ドライブ２にセットして
+        # 【RETURN】キ?[を押してください。
+        { 'orig_addr': 0x6224, 'orig_length': 0x96, 'translation':
+            "<X08>This will configure limits on\n" +
+            "cache disk and BGM hardware.\n\n" +
+            "Insert the Scenario Disk to\n" +
+            "configure into drive 2, then\n" +
+            "press the 【RETURN】 key." },
+
+        # Original text:
+        # 【８】【２】で項目を選択して下さい。
+        # 【RETURN】【４】【６】で変更します。
+        # 【ＥＳＣ】で設定を中止します。
+        { 'orig_addr': 0x62ba, 'orig_length': 0x69, 'translation':
+            "<X08>Select an option with 【8】【2】.\n" +
+            "Change with 【RETURN】【4】【6】.\n" +
+            "Press 【ESC】 to cancel.\n<RET_IL>" },
+
+        # Original text:
+        # 使用するメモリー上限
+        #   １６ 色 ボ ー ド
+        # ＧＶ−ＲＡＭ裏バンク
+        # I･Oﾊﾞﾝｸ方式 増設 RAM
+        # Ｆ Ｍ 音 源 ボ ー ド
+        #   セ ー ブ 後 設 定 を 終 る
+        { 'orig_addr': 0x6323, 'orig_length': 0x84, 'translation':
+            "Memory use limit<END>\n" +
+            "16 color board<END>\n" +
+            "GV-RAM back buffer<END>\n" +
+            "I/O expansion RAM<END>\n" +
+            "FM sound board<END>\n" +
+            "       Save and exit" },
+        { 'orig_addr': 0x63a7, 'orig_length': 0x1b, 'translation': "256K    <END>\n384K    <END>\n512K    "}, # 9 bytes per option
+        { 'orig_addr': 0x63c2, 'orig_length': 0x9,  'translation': "Auto" },
+        { 'orig_addr': 0x63cb, 'orig_length': 0x9,  'translation': "Disable" },
+
+        # Original text:
+        # 読み込みに失敗しました。
+        # オプションボ?[ド設定を中止します。
+        { 'orig_addr': 0x63d5, 'orig_length': 0x40, 'translation': "<X08>Failed to read from disk.\nConfiguration cancelled.<X0c0701>" },
+
+        # Original text:
+        # 書き込みに失敗しました。
+        { 'orig_addr': 0x6415, 'orig_length': 0x1b, 'translation': "<X08>Failed to write to disk.\n" },
+
+        # Original text:
+        # ハード設定を書き込みました。
+        { 'orig_addr': 0x6430, 'orig_length': 0x21, 'translation': "<X08>Configuration saved.<X0c0301>"},
+
+        # Original text:
+        # 設定するシナリオディスクを
+        # ドライブ２にセットして
+        # 【RETURN】キーを押してください。
+        { 'orig_addr': 0x6519, 'orig_length': 0x54, 'translation':
+            "<X08>Insert the Scenario Disk to\n" +
+            "configure into drive 2, then\n" +
+            "press the 【RETURN】 key." },
+
+        # Original text:
+        # 【８】【２】で項目を選択して下さい。
+        # 【RETURN】【４】【６】で変更します。
+        # 【ＥＳＣ】で設定を中止します。
+        { 'orig_addr': 0x656d, 'orig_length': 0x69, 'translation':
+            "<X08>Select an option with 【8】【2】.\n" +
+            "Change with 【RETURN】【4】【6】.\n" +
+            "Press 【ESC】 to cancel.\n<RET_IL>" },
+
+        # Original text:
+        # ゲーム進行
+        # ﾌｧﾝｸｼｮﾝ表示
+        #  セーブ後設定を終る
+        { 'orig_addr': 0x65d6, 'orig_length': 0x2e, 'translation': "Difficulty<END>\nFunction keys<END>\n   Save and exit" },
+
+        # (Note that the difficulty strings need to be 9 bytes. They're terminated early for spacing purposes.)
+        { 'orig_addr': 0x6604, 'orig_length': 0x24, 'translation': "HELL<X00>    Hard<X00>    Normal<X00>  Easy" },
+        { 'orig_addr': 0x6628, 'orig_length': 0x5, 'translation': "Show" },
+        { 'orig_addr': 0x662d, 'orig_length': 0x7, 'translation': "Hide" },
+
+        # Original text:
+        # 読み込みに失敗しました。
+        # ゲーム設定を中止します。
+        { 'orig_addr': 0x6635, 'orig_length': 0x36, 'translation': "<X08>Loading failed.\nCancelling game configuration.<X0c0701>" },
+
+        # Original text:
+        # 書き込みに失敗しました。
+        { 'orig_addr': 0x666b, 'orig_length': 0x1b, 'translation': "<X08>Saving failed.\n" },
+
+        # Original text:
+        # ゲーム設定を書き込みました。
+        { 'orig_addr': 0x6686, 'orig_length': 0x21, 'translation': "<X08>Game configuration saved.<X0c0301>" },
+    ]
+
+    for utility_text_info in utility_text_translations:
+        encoded, _, _ = encode_event(utility_text_info['translation'])
+
+        if len(encoded) > utility_text_info['orig_length']:
+            raise Exception(f"Utility text at {utility_text_info['orig_addr']:04x} of length {len(encoded)}" +
+                            f" is too long for the available space of {utility_text_info['orig_length']} bytes.")
+
+        event_disk_patch.add_record(utility_text_info['orig_addr'] + 0x14a10, encoded)
+
+    # Tweak the assembly code for the "game options" menu so the headers have a little more
+    # space (and the option values have a little less space).
+    event_disk_patch.add_record(0x64f1 + 0x14a10, b"\x0e") # Offset of the option value for "difficulty"
+    event_disk_patch.add_record(0x64f8 + 0x14a10, b"\x72") # Reduce the offset to the next line to compensate
+    event_disk_patch.add_record(0x650d + 0x14a10, b"\x0e") # Offset of the option value for "function keys"
+    event_disk_patch.add_record(0x6514 + 0x14a10, b"\x72") # Reduce the offset to the next line to compensate
 
     # Reduce the timer length used to display characters in the ending, to
     # increase the text speed.
@@ -383,7 +597,7 @@ def program_disk_patch_asm(program_disk_patch, nasm_path):
         stosb
         inc di
     ''')
-    
+
     # Modify the first bit of spell/item text to use the passed-in SI instead of just "wa."
     patch_asm(program_disk_patch, nasm_path, 0xa798, 0x21, '''
         mov al,[0x417e]
@@ -423,7 +637,7 @@ def program_disk_patch_asm(program_disk_patch, nasm_path):
         cmp al,[di]
         jz orig_a7d1
         mov si,0x57e5
-        
+
     orig_a7d1:
         and al,al
         jmp 0x8559
@@ -495,9 +709,9 @@ def program_disk_patch_asm(program_disk_patch, nasm_path):
         push cx
         push ax
         pushf
-        
+
         mov cx, 0x00
-    
+
     loop:
         lodsb
         cmp al,0x20
@@ -515,17 +729,17 @@ def program_disk_patch_asm(program_disk_patch, nasm_path):
     handle_char:
         mov [0x896f], cl
         call 0x8a49
-        
+
         test cx, 1
         jz skip_stuff
-        
+
         call 0x8b07
         inc di
-        
+
     skip_stuff:
         inc cx
         jmp loop
-        
+
     done:
         popf
         pop ax
@@ -533,10 +747,10 @@ def program_disk_patch_asm(program_disk_patch, nasm_path):
         pop dx
         ret
     ''')
-    
+
     # Stealing the last byte of the above routine for a local variable.
     program_disk_patch.add_record(0x896f - 0x4000 + 0x13e10, b'\x00')
-    
+
     # This is a helper function used by the compressed text to load each
     # glyph from the font ROM.
     patch_asm(program_disk_patch, nasm_path, 0x8a49, 0x50, '''
@@ -544,7 +758,7 @@ def program_disk_patch_asm(program_disk_patch, nasm_path):
         push dx
         push cx
         push bx
-    
+
         mov dl, al
         mov dh, 0x09
         mov al, 00001011b
@@ -557,7 +771,7 @@ def program_disk_patch_asm(program_disk_patch, nasm_path):
         mov dl, 0x20
         mov cx, 0x10
         mov bl, 0x0
-        
+
     row_loop:
         push cx
         mov al, dl
@@ -566,19 +780,19 @@ def program_disk_patch_asm(program_disk_patch, nasm_path):
         mov bh, al
         mov al, dl
         mov cx, 0x8
-        
+
     split_loop:
         rol bx, 1
         rcl ah, 1
         rol bx, 1
         rcl al, 1
         loop split_loop
-        
+
         or al, ah
-        
+
         test byte [0x896f], 1
         jz skip_stuff
-        
+
         shr al, 4
         or al, [di]
     skip_stuff:
@@ -594,7 +808,7 @@ def program_disk_patch_asm(program_disk_patch, nasm_path):
         pop di
         ret
     ''')
-    
+
     # This routine decides what text to use in the overworld based on where
     # you are relative to the nearest location entrance.
     patch_asm(program_disk_patch, nasm_path, 0xa112, 0x6b, '''
@@ -783,8 +997,8 @@ def program_disk_patch_combat_text(program_disk_patch):
         { 'orig_addr': 0xb431, 'orig_length': 0x7,  'translation': "Auto  <END>\nManual", 'references': [ 0xb383 ] },
         { 'orig_addr': 0xb51c, 'orig_length': 0x48, 'translation': " Auto battle<END>\n Auto heal<END>\n Atk spells<END>\n Heal spells<END>\n Heal items<END>\n All members", 'references': [ 0xb4a8 ] },
         { 'orig_addr': 0xb564, 'orig_length': 0xe,  'translation': "On    <END>\nOff   ", 'references': [ 0xb4b3, 0xb4c6 ] }, # These should be exactly 7 bytes?
-        { 'orig_addr': 0xb572, 'orig_length': 0x10, 'translation': "Used  <END>\nNot used", 'references': [ 0xb4d9, 0xb4ec, 0xb4f2 ] }, 
-        { 'orig_addr': 0xb582, 'orig_length': 0xe,  'translation': "Same  <END>\nSeparate", 'references': [ 0xb501 ] }, 
+        { 'orig_addr': 0xb572, 'orig_length': 0x10, 'translation': "Used  <END>\nNot used", 'references': [ 0xb4d9, 0xb4ec, 0xb4f2 ] },
+        { 'orig_addr': 0xb582, 'orig_length': 0xe,  'translation': "Same  <END>\nSeparate", 'references': [ 0xb501 ] },
         { 'orig_addr': 0xb701, 'orig_length': 0x16, 'translation': "<X08>Victory!<RETN>", 'references': [ 0xb6dd ] },
         { 'orig_addr': 0xb717, 'orig_length': 0x11, 'translation': "<X08>The enemy dropped <X0e>.<X0a>", 'references': [ 0xb6d4 ] },
         { 'orig_addr': 0xb794, 'orig_length': 0x13, 'translation': "Gained <RET_IL> EP.<RETN>", 'references': [ 0xb75a ] },
@@ -800,17 +1014,17 @@ def program_disk_patch_combat_text(program_disk_patch):
         { 'orig_addr': 0xbe74, 'orig_length': 0x18, 'translation': "<X02> takes a defensive stance.<X0a>", 'references': [ 0xbe4f ] },
         { 'orig_addr': 0xbef3, 'orig_length': 0x10, 'translation': "<X0b> ran away.<RETN>", 'references': [ 0xbee2 ] },
     ]
-    
+
     for battle_text_info in battle_text_translations:
         if 'orig_length' in battle_text_info:
             battle_text_pool.add_space(battle_text_info['orig_addr'], battle_text_info['orig_addr'] + battle_text_info['orig_length'] - 1)
 
-    
+
     battle_text_translations.sort(key=lambda info: 0 if 'translation' not in info else len(info['translation']), reverse=True)
 
     battle_text_pool.dump()
-            
-            
+
+
     locator_addr_map = {}
     for battle_text_info in battle_text_translations:
         if 'translation' in battle_text_info:
@@ -826,7 +1040,7 @@ def program_disk_patch_combat_text(program_disk_patch):
 
             for locator, offset in current_locators.items():
                 locator_addr_map[locator] = addr + offset
-            
+
     for battle_text_info in battle_text_translations:
 
         if 'encoded' in battle_text_info:
@@ -836,7 +1050,7 @@ def program_disk_patch_combat_text(program_disk_patch):
             else:
                 print(f"Adding new battle text at {battle_text_info['new_addr']:04x}")
             encoded = battle_text_info['encoded']
-            
+
             if 'internal_references' in battle_text_info:
                 for internal_ref in battle_text_info['internal_references']:
                     if internal_ref[1] in locator_addr_map:
@@ -854,7 +1068,7 @@ def program_disk_patch_combat_text(program_disk_patch):
 
             for ref_addr in battle_text_info['references']:
                 program_disk_patch.add_record(ref_addr - 0x4000 + 0x13e10, int.to_bytes(reloc_addr, 2, 'little'))
-    
+
     print(f"Remaining battle text space: {battle_text_pool.total_available_space} bytes, largest block: {battle_text_pool.largest_available_space} bytes")
     battle_text_pool.dump()
     print()
@@ -883,15 +1097,15 @@ def program_disk_patch_misc(program_disk_patch):
     patch_menu(program_disk_patch, 0xa9c5,
         [ " Buy", " Sell" ], 0x1a, [ ] )
 
-    patch_menu(program_disk_patch, 0xab1f, 
+    patch_menu(program_disk_patch, 0xab1f,
         [ " Previous town", " Restart battle", " Load a save" ], 0x3c, [ None, None, None ] )
-    
+
     patch_menu(program_disk_patch, 0xafb7,
         [ " Spell", " Item", " Equip", " Drop", " Stats", " Other", " Leader" ], 0x36,
         [ 0xb0f4,   0xb12d,  0xb14f,   0xb182,  0xb18e,   None,     0xb1a2 ] )
 
-    patch_menu(program_disk_patch, 0xb1e6, 
-        [ " Save", " Load", " System", " Combat" ], 0x2c, 
+    patch_menu(program_disk_patch, 0xb1e6,
+        [ " Save", " Load", " System", " Combat" ], 0x2c,
         [ 0xb213,  0xb235,  0xb2f6,    0xb44b])
 
     program_disk_patch.add_record(0x1bb89, b" Fight   Spell   Guard\x01 Use     Weapon  Auto\x01 Stats   Run\x07\x00\x00\x00\x00")
@@ -907,7 +1121,7 @@ def program_disk_patch_misc(program_disk_patch):
 
 def scenario_disk_patch_misc(scenario_disk_patch):
     scenario_disk_patch.add_record(0x79c66, b"Sonia\x06          ")
-            
+
     scenario_disk_patch.add_record(0x5d438, b" \x87\x55     The Silent Spell      ")
     scenario_disk_patch.add_record(0x88782, b" \x87\x56     The Mark of Kings     ")
     scenario_disk_patch.add_record(0xa1772, b" \x87\x57    The Enchanted King     ")
@@ -969,7 +1183,7 @@ def scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk):
             packing_strategy = 'smallest'
         else:
             packing_strategy = 'first'
-        
+
         trans = load_translations_csv(f"csv/Scenarios/{format_sector_key(scenario_key)}.csv")
         encoded_translations = encode_translations(scenario_events, trans)
 
