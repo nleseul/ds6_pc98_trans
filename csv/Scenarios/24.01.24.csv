@@ -34,7 +34,8 @@ Damn it!! No way this'll open.
 
 <RET_IL>"
 "e2bd","<X0b>は<X0e>を使って
-扉を開けました。<SET0143>","<X0b> used the <X0e>to open the door.<SET0143>"
+扉を開けました。<SET0143>","<X0b> used the
+<X0e> to open the door.<SET0143>"
 "e523","<X0b>は 宝箱を開けました。
 宝箱の中には<RET_IL>","<X0b> opened the chest.
 There was a <RET_IL>"

@@ -77,8 +77,7 @@ waiting!
 
 <IF009f><JUMPe4d3>You see, I saved a lottery ticket
 for your Highness. And, would you
-believe? It's a winner!!<JUMPe502><LOCe4d3>
-The lottery ticket I gave your
+believe? It's a winner!!<JUMPe502><LOCe4d3>The lottery ticket I gave your
 Highness earlier is a winner!<LOCe502>
 
 <CH0>
@@ -92,7 +91,8 @@ More than you could carry!
 That's amazing!
 
 <CALLe76b>And your Highness's ticket is
-the 4th prize one, for 50,000 gold.Congratulations!
+the 4th prize one, for 50,000
+gold. Congratulations!
 
 <IF_NOT0095><JUMPe613>What? You threw it away?<WAIT>
 Oh, I'm sorry to hear that. It
