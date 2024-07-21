@@ -27,7 +27,7 @@ Maschunn..."
 休んでいくがいい。<SET0400><END>
 <LOCe525>マスクーンの町には 行きたいが
 ここの 警備も しなければならないし困ったものだ ･ ･ ･<CLEAR0400>","<X1e>Captain<X04>
-<IF0009b><JUMPe4da><IF0408><JUMPe4da><IF_NOT0409><JUMPe525><LOCe4da>Hm? Oh, it's you guys. 
+<IF009b><JUMPe4da><IF0408><JUMPe4da><IF_NOT0409><JUMPe525><LOCe4da>Hm? Oh, it's you guys. 
 Of course, you can stay here
 as long as you like.<SET0400><END>
 <LOCe525>I want to go to Maschunn, but I
