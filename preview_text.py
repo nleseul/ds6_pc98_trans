@@ -23,7 +23,7 @@ class Pane:
 class TextPreviewPane(Pane):
     def __init__(self, model, x, y, width, height):
         super().__init__(model, x, y, width, height)
-        
+
         self._display_page = 0
 
     def handle_input(self):
@@ -61,10 +61,10 @@ class TextPreviewPane(Pane):
 class ConditionListPane(Pane):
     def __init__(self, model, x, y, width, height):
         super().__init__(model, x, y, width, height)
-        
+
         self._focus_index = 0
 
-    
+
     def handle_input(self):
         ch = super().handle_input()
 
@@ -78,7 +78,7 @@ class ConditionListPane(Pane):
 
         return ch
 
-        
+
     def draw(self, is_focused):
         self._win.clear()
 
@@ -87,8 +87,8 @@ class ConditionListPane(Pane):
         for condition_index, condition_info in enumerate(self._model.condition_list):
             if self._focus_index == condition_index:
                 self._win.addstr(1 + condition_index, 1, ">")
-            culour.addstr(self._win, 1 + condition_index, 3, ("\033[94m" if not condition_info['used_in_current_line'] else "") + 
-                          condition_info['condition'] + "\033[0m")
+            culour.addstr(self._win, 1 + condition_index, 3, ("\033[94m" if not condition_info['used_in_current_line'] else "") +
+                          f"{condition_info['condition']:04x}" + "\033[0m")
             if condition_info['state']:
                 self._win.addstr(1 + condition_index, 8, "*")
 
@@ -98,7 +98,7 @@ class ConditionListPane(Pane):
 class ActiveLeaderPane(Pane):
     def __init__(self, model, x, y, width, height):
         super().__init__(model, x, y, width, height)
-        
+
         self._focus_index = 0
 
 
@@ -153,7 +153,7 @@ class Model:
 
         self.load_sector(sector_key)
 
-    
+
     def load_sector(self, sector_key):
         self._sector_key = sector_key
         with open(self._config['OriginalScenarioDisk'], 'rb') as scenario_disk:
@@ -169,51 +169,42 @@ class Model:
 
         self._key_list = list(self._trans.keys())
 
+        self._locators = {}
         condition_set = set()
         for key in self._key_list:
-            loc = 0
+            key_addr = int(key, base=16)
             current_text = self._get_raw_translation(key)
-            while True:
-                loc = current_text.find("<IF", loc)
-                if loc < 0:
-                    break
-                else:
-                    if current_text[loc+3:loc+7] == "_NOT":
-                        loc += 4
-                    condition_set.add(current_text[loc+3:loc+7])
-                    loc += 8
+
+            encoded_event, _, locators = encode_event(current_text)
+            locators[key_addr] = 0
+
+            for locator_addr, locator_event_offset in locators.items():
+                self._locators[locator_addr] = { 'key': key_addr, 'offset': locator_event_offset }
+
+                instructions = disassemble_event(encoded_event, key_addr, key_addr + locator_event_offset)
+                for instruction in instructions:
+                    if 'code' in instruction and instruction['code'] in [0x11, 0x12]:
+                        condition_set.add(int.from_bytes(instruction['data'], byteorder='little'))
 
         self._condition_list = [ { 'condition': cond, 'state': False } for cond in sorted(condition_set) ]
         self._focused_condition_index = 0
 
-        self._locators = {}
-        for key in self._key_list:
-            self._locators[key] = { 'key': key, 'loc': 0}
-
-            loc = 0
-            current_text = self._get_raw_translation(key)
-            while True:
-                loc = current_text.find("<LOC", loc)
-                if loc < 0:
-                    break
-                else:
-                    self._locators[current_text[loc+4:loc+8]] = { 'key': key, 'loc': loc }
-                    loc += 9
-                
         self.load_translation(0)
 
 
     def load_translation(self, index):
         self._display_index = index
         self._displayed_key = self._key_list[self._display_index]
-        
+
         self._formatted_translation = [ [] ]
 
         current_line = ""
         current_key = self._displayed_key
-        
+        current_key_addr = int(current_key, base=16)
+
         current_input = self._get_raw_translation(current_key)
-        loc = 0
+        encoded_input, _, _ = encode_event(current_input)
+        event_iter = iter(disassemble_event(encoded_input, current_key_addr, current_key_addr))
 
         current_conditional_result = None
 
@@ -222,187 +213,116 @@ class Model:
 
         call_stack = []
 
-        while loc < len(current_input):
-            if current_input[loc:].startswith("<X"):
-                hex_bytes = ""
-                loc += 2
-                while current_input[loc] != ">":
-                    hex_bytes += current_input[loc]
-                    loc += 1
-                loc += 1
-            
-                value = int(hex_bytes, base=16)
-                if value == 0x06 or value == 0x0a or value == 0x0d:
-                    break
-                elif value == 0x04:
-                    current_line += "\033[0m"
-                elif value == 0x1c:
-                    current_line += "\033[92m"
-                elif value == 0x1e:
-                    current_line += "\033[93m"
-                elif value == 0x0e:
-                    current_line += "Leather Shield"
-                else:
-                    pass
-            
-            elif current_input[loc:].startswith("<JUMP") or current_input[loc:].startswith("<SPLIT"):
-                if current_input[loc:].startswith("<JUMP"):
-                    call_addr = current_input[loc+5:loc+9]
-                    loc += 10
-                elif current_input[loc:].startswith("<SPLIT"):
-                    call_addr = current_input[loc+6:loc+10]
-                    loc += 11
-            
-                if current_conditional_result != False:
-                    locator_info = self._locators[call_addr]
-                    current_key = locator_info['key']
-                    current_input = self._get_raw_translation(current_key)
-                    loc = locator_info['loc']
-                current_conditional_result = None
-        
-            elif current_input[loc:].startswith("<CALL"):
-                call_addr = current_input[loc+5:loc+9]
-                loc += 10
+        while True:
+            instruction = next(event_iter, None)
 
-                if call_addr in self._locators:
-                    call_stack.append( { 'key': current_key, 'loc': loc } )
-
-                    locator_info = self._locators[call_addr]
-                    current_key = locator_info['key']
-                    current_input = self._get_raw_translation(current_key)
-                    loc = locator_info['loc']
-                else:
-                    current_line += "<?????>"
-            
-            elif current_input[loc:].startswith("<ASM"):
-                loc += 4
-                if current_input[loc:].startswith("_NORET"):
-                    loc += 6
-                    break
-                loc += 5
-            
-            elif current_input[loc:].startswith("<LEADER"):
-                leader_info = self.get_character_info(self._current_leader_index)
-
-                loc += 7
-                call_addr = current_input[loc + leader_info['text_index']*5:loc + leader_info['text_index']*5 + 4]
-                loc += 25
-
-                current_line += "\033[93m"
-                current_line += leader_info['name']
-                current_line += "\033[0m"
-                self._formatted_translation[-1].append(current_line)
-                current_line = ""
-
-                call_stack.append( { 'key': current_key, 'loc': loc } )
-
-                locator_info = self._locators[call_addr]
-                current_key = locator_info['key']
-                current_input = self._get_raw_translation(current_key)
-                loc = locator_info['loc']
-                
-            elif current_input[loc:].startswith("<IF"):
-                loc += 3
-                inverted = False
-                if current_input[loc:].startswith("_NOT"):
-                    inverted = True
-                    loc += 4
-                flag = current_input[loc:loc+4]
-                loc += 5
-
-                for condition in self._condition_list:
-                    if condition['condition'] == flag:
-                        condition['used_in_current_line'] = True
-                        current_conditional_result = condition['state']
-                        break
-        
-            elif current_input[loc:].startswith("<CLEAR"):
-                flag = int(current_input[loc+6:loc+10], base=16)
-                loc += 11
-            
-            elif current_input[loc:].startswith("<SET"):
-                flag = int(current_input[loc+4:loc+8], base=16)
-                loc += 9
-            
-            elif current_input[loc:].startswith("<RET_IL>"):
-                if len(call_stack) > 0:
-                    return_info = call_stack.pop()
-                    current_key = return_info['key']
-                    current_input = self._get_raw_translation(current_key)
-                    loc = return_info['loc']
-                else:
-                    break
-            
-            elif current_input[loc:].startswith("<RETN>"):
-                self._formatted_translation[-1].append(current_line)
-                current_line = ""
-            
-                if len(call_stack) > 0:
-                    return_info = call_stack.pop()
-                    current_key = return_info['key']
-                    current_input = self._get_raw_translation(current_key)
-                    loc = return_info['loc']
-                else:
-                    break
-            
-            elif current_input[loc:].startswith("<CH"):
-                character_index = int(current_input[loc+3:loc+4])
-                loc += 5
-                current_line += "\033[93m"
-                current_line += self.get_character_info(character_index)['name']
-                current_line += "\033[0m"
-            
-            elif current_input[loc:].startswith("<LOC"):
-                loc += 9
-            
-            elif current_input[loc:].startswith("<N>\n"):
-                self._formatted_translation[-1].append(current_line)
-                current_line = ""
-                loc += 4
-            
-            elif current_input[loc:].startswith("<WAIT>\n"):
-                self._formatted_translation[-1].append(current_line)
-                current_line = ""
-                loc += 7
-            
-            elif current_input[loc:].startswith("<PAGE>\n"):
-                self._formatted_translation[-1].append(current_line)
-                current_line = ""
-                self._formatted_translation.append([])
-                loc += 7
-            
-            elif current_input[loc:].startswith("<END>\n"):
+            if instruction is None:
                 break
-            
-            elif current_input[loc:].startswith("<"):
-                raise Exception("Unknown tag " + current_input[loc:loc+10] + "!")
-
-            elif current_input[loc:].startswith("\n\n"):
-                loc += 2
-                self._formatted_translation[-1].append(current_line)
-                current_line = ""
-                self._formatted_translation.append([])
-
-            elif current_input[loc:].startswith('\n'):
-                loc += 1
-                self._formatted_translation[-1].append(current_line)
-                current_line = ""
-
+            elif 'text' in instruction:
+                current_line += instruction['text']
             else:
-                current_line = current_line + current_input[loc]
-                loc += 1
+                code = instruction['code']
+                data = instruction['data']
+                if code == 0x00: # End
+                    break
+                elif code == 0x01: # Newline
+                    self._formatted_translation[-1].append(current_line)
+                    current_line = ""
+                elif code == 0x05: # New page
+                    self._formatted_translation[-1].append(current_line)
+                    current_line = ""
+                    self._formatted_translation.append([])
+                elif code == 0x08: # Clear window
+                    pass
 
-            if len(re.sub("\033\[[0-9]+m", "", current_line)) >= 34:
-                self._formatted_translation[-1].append(current_line)
-                current_line = ""
+                # Colors
+                elif code == 0x04: # Reset color
+                    current_line += "\033[0m"
+                elif code == 0x1c: # Green
+                    current_line += "\033[92m"
+                elif code == 0x1e: # Yellow
+                    current_line += "\033[93m"
+
+                # Text insertion codes
+                elif code == 0x09: # Insert character name
+                    character_index = int.from_bytes(data, byteorder='little')
+                    current_line += "\033[93m"
+                    current_line += self.get_character_info(character_index)['name']
+                    current_line += "\033[0m"
+                elif code == 0x0e: # Insert item name
+                    current_line += "\033[93m"
+                    current_line += "Leather Shield"
+                    current_line += "\033[0m"
+
+                # Control flow
+                elif code in [0x06, 0x07, 0x0a, 0x0d]: # Return, return with newline, two other return codes
+                    if code == 0x07:
+                        self._formatted_translation[-1].append(current_line)
+                        current_line = ""
+
+                    if len(call_stack) > 0:
+                        return_info = call_stack.pop()
+                        current_key = return_info['key']
+                        event_iter = return_info['iter']
+                    else:
+                        break
+                elif code == 0x0f: # Jump
+                    call_addr = int.from_bytes(data, byteorder='little')
+
+                    if current_conditional_result != False:
+                        locator_info = self._locators[call_addr]
+                        instruction_list = self._get_translation_instructions(locator_info['key'], locator_info['offset'])
+                        event_iter = iter(instruction_list)
+                    current_conditional_result = None
+                elif code == 0x10: # Call
+                    call_addr = int.from_bytes(data, byteorder='little')
+
+                    locator_info = self._locators[call_addr]
+                    call_stack.append( { 'key': current_key, 'iter': event_iter } )
+                    instruction_list = self._get_translation_instructions(locator_info['key'], locator_info['offset'])
+                    event_iter = iter(instruction_list)
+
+                elif code == 0x11 or code == 0x12: # If (negated), if
+                    inverted = code == 0x11
+                    flag = int.from_bytes(data, byteorder='little')
+
+                    for condition in self._condition_list:
+                        if condition['condition'] == flag:
+                            condition['used_in_current_line'] = True
+                            current_conditional_result = (not condition['state'] if inverted else condition['state'])
+                            break
+                elif code == 0x16: # Call based on current leader
+                    leader_info = self.get_character_info(self._current_leader_index)
+
+                    call_addr = int.from_bytes(data[leader_info['text_index']*2:leader_info['text_index']*2 + 2], byteorder='little')
+
+                    current_line += "\033[93m"
+                    current_line += leader_info['name']
+                    current_line += "\033[0m"
+                    self._formatted_translation[-1].append(current_line)
+                    current_line = ""
+
+                    locator_info = self._locators[call_addr]
+                    call_stack.append( { 'key': current_key, 'iter': event_iter } )
+                    instruction_list = self._get_translation_instructions(locator_info['key'], locator_info['offset'])
+                    event_iter = iter(instruction_list)
+
+                elif code in [0x0c, 0x13, 0x14, 0x15]: # Play sound, clear flag, set flag, call asm routine
+                    pass
+                else:
+                    current_line += f"<X{instruction['code']:02x}{instruction['data'].hex()}>"
+
+            while len(re.sub("\033\[[0-9]+m", "", current_line)) >= 34:
+                self._formatted_translation[-1].append(current_line[0:34])
+                current_line = current_line[34:]
 
             if len(self._formatted_translation[-1]) >= 4:
                 self._formatted_translation.append([])
-    
+
         if len(current_line) > 0:
             self._formatted_translation[-1].append(current_line)
 
-    
+
     @property
     def display_index(self):
         return self._display_index
@@ -416,8 +336,8 @@ class Model:
     @property
     def key_count(self):
         return len(self._key_list)
-            
-            
+
+
     @property
     def formatted_translation(self):
         return self._formatted_translation
@@ -455,24 +375,31 @@ class Model:
         else:
             return self._party_info[character_index][0]
 
-            
+
     def _get_raw_translation(self, key):
         trans_info = self._trans[key]
         current_text = trans_info['translation'] if 'translation' in trans_info else trans_info['original']
         current_text = current_text.replace("\r", "")
         return current_text
-    
+
+
+    def _get_translation_instructions(self, translation_key, event_offset):
+        translation = self._get_raw_translation(f"{translation_key:04x}")
+        encoded, _, _ = encode_event(translation)
+        instruction_list = disassemble_event(encoded, translation_key, translation_key + event_offset)
+        return instruction_list
+
 
 def curses_main(screen, argv):
 
     sector_key_str = argv[0]
     match = re.search("^([0-9a-fA-F]{2})\.([0-9a-fA-F]{2})\.([0-9a-fA-F]{2})$", sector_key_str)
     sector_key = (int(match.group(1), base=16), int(match.group(2), base=16), int(match.group(3), base=16))
-    
+
     model = Model(sector_key)
 
     panes = [
-        TextPreviewPane(model, 2, 1, 36, 8), 
+        TextPreviewPane(model, 2, 1, 36, 8),
         ConditionListPane(model, 40, 1, 10, 20),
         ActiveLeaderPane(model, 60, 1, 12, 20)]
     focused_pane_index = 0
@@ -486,7 +413,7 @@ def curses_main(screen, argv):
 
         focused_pane = panes[focused_pane_index]
         ch = focused_pane.handle_input()
-        
+
         if ch == ord('\t'):
             focused_pane_index = (focused_pane_index + 1) % len(panes)
         elif ch == ord('q'):
