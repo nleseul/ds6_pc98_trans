@@ -9,14 +9,14 @@ def get_sector_info_nfd0(disk_image):
     disk_image.seek(0)
     if disk_image.read(0xe) != b'T98FDDIMAGE.R0':
         raise Exception("Unexpected disk format!")
-    
+
     disk_image.seek(0x110)
-    
+
     header_size = int.from_bytes(disk_image.read(0x4), byteorder='little')
     disk_image.read(0x1) # Write protect
     head_count = disk_image.read(0x1)[0]
     sector_size = None
-    
+
     data_block_index = 0
     for data_block_header_index in range(163 * 26): # Hardcoded in data format
         disk_image.seek(0x120 + data_block_header_index * 0x10)
@@ -26,19 +26,19 @@ def get_sector_info_nfd0(disk_image):
         head_index = disk_image.read(0x1)[0]
         sector_index = disk_image.read(0x1)[0]
         sector_size_this_block = 0x80 << disk_image.read(0x1)[0]
-        
+
         if sector_size is None:
             sector_size = sector_size_this_block
         else:
             if sector_size_this_block != sector_size:
                 raise Exception("Sector size mismatch!")
-        
+
         start_addr = header_size + data_block_index*sector_size
-        
+
         sector_list.append( { 'cylinder': cylinder_index, 'head': head_index, 'sector': sector_index, 'size': sector_size, 'start_addr': start_addr } )
-    
+
         data_block_index += 1
-        
+
     return sector_list
 
 
@@ -55,7 +55,7 @@ def load_translations_csv(filename):
             trans[row[0]] = data
     return trans
 
-    
+
 def load_notes_csv(filename):
     with open(filename, 'r', encoding='utf8', newline='') as csv_in:
         for row in csv.reader(csv_in, quoting=csv.QUOTE_ALL):
@@ -88,18 +88,18 @@ EVENT_CODE_INFO = {
     0x14: { 'length': 3 }, # ...
     0x15: { 'length': 3 }, # Assembly call
     0x16: { 'length': 11 }, # Multiple calls? Based on leader?
-    
+
     0x1a: { 'length': 1 },
     0x1c: { 'length': 1 },
     0x1e: { 'length': 1 },
     0x1f: { 'length': 1 },
-    
+
 }
-    
+
 def disassemble_event(scenario_data, base_addr, start_addr, continuation_extent_end_addr=None):
     addr = start_addr - base_addr
     instructions = []
-    
+
     jumps = set()
 
     while True:
@@ -109,19 +109,19 @@ def disassemble_event(scenario_data, base_addr, start_addr, continuation_extent_
             # Split up text if a jump lands in the middle of a block of text.
             if len(instructions) > 0 and 'text' in instructions[-1]:
                 instructions.append( { 'addr': addr+base_addr, 'text': "" } )
-        
+
         if scenario_data[addr] < 0x20:
             code = scenario_data[addr]
-            
+
             if code not in EVENT_CODE_INFO:
                 raise Exception(f"Unknown code {scenario_data[addr]:02x} at {addr+base_addr:03x}!")
-            
+
             code_info = EVENT_CODE_INFO[code]
-            
+
             instructions.append( { 'addr': addr+base_addr, 'code': code, 'data': scenario_data[addr+1:addr+1+code_info['length'] - 1], 'length': code_info['length'] } )
-            
+
             addr += code_info['length']
-            
+
             if code == 0x0f:
                 jumps.add(int.from_bytes(instructions[-1]['data'], byteorder='little'))
             elif code == 0x15: # ASM call
@@ -139,8 +139,8 @@ def disassemble_event(scenario_data, base_addr, start_addr, continuation_extent_
         else:
             if len(instructions) == 0 or 'text' not in instructions[-1]:
                 instructions.append( { 'addr': addr+base_addr, 'text': "" } )
-        
-            try:        
+
+            try:
                 if scenario_data[addr] >= 0xe0: # Kanji block above 0xe0 is two bytes each.
                     instructions[-1]['text'] += scenario_data[addr:addr+2].decode('shift-jis')
                     addr += 2
@@ -156,7 +156,7 @@ def disassemble_event(scenario_data, base_addr, start_addr, continuation_extent_
             except UnicodeDecodeError as e:
                 print(f"Unable to interpret SJIS sequence {scenario_data[addr:addr+2].hex()} at {addr+base_addr:04x} while disassembling event at {start_addr:04x}")
                 raise e
-                
+
     return instructions
 
 
@@ -164,128 +164,151 @@ def encode_event(text, max_length = None):
     encoded = bytearray()
     references = []
     locators = {}
-    
+
     terminated = False
 
     text = text.replace("\r", "")
-    
+
     while len(text) > 0:
-    
+
         terminated = False
-        
+
         if text.startswith("\n<CONT>"):
             current_encoded_bytes = b''
             text = text[7:]
             continue
-            
-        current_encoded_bytes = None
-    
-        if text.startswith("<X"):
-            hex_bytes = ""
-            text = text[2:]
-            while text[0] != ">":
-                hex_bytes += text[0]
-                text = text[1:]
-            text = text[1:]
-            
-            current_encoded_bytes = bytes.fromhex(hex_bytes)
-            if current_encoded_bytes[0] == 0x06 or current_encoded_bytes[0] == 0x0a or current_encoded_bytes[0] == 0x0d:
-                terminated = True
-            
-        elif text.startswith("<JUMP"):
-            call_addr = int(text[5:9], base=16)
-            text = text[10:]
-            references.append((len(encoded) + 1, call_addr))
-            current_encoded_bytes = b'\x0f' + int.to_bytes(call_addr, length=2, byteorder='little')
-            
-            if len(text) == 0:
-                terminated = True
-        
-        elif text.startswith("<CALL"):
-            call_addr = int(text[5:9], base=16)
-            text = text[10:]
-            references.append((len(encoded) + 1, call_addr))
-            current_encoded_bytes = b'\x10' + int.to_bytes(call_addr, length=2, byteorder='little')
-            
-        elif text.startswith("<ASM"):
-            text = text[4:]
-            if text.startswith("_NORET"):
-                text = text[6:]
-                terminated = True
-            asm_addr = int(text[:4], base=16)
-            text = text[5:]
-            current_encoded_bytes = b'\x15' + int.to_bytes(asm_addr, length=2, byteorder='little')
-            
-        elif text.startswith("<LEADER"):
-            text = text[7:]
-            current_encoded_bytes = b'\x16'
-            for ref_index in range(5):
-                call_addr = int(text[0:4], base=16)
-                references.append((len(encoded) + ref_index*2 + 1, call_addr))
-                current_encoded_bytes += int.to_bytes(call_addr, 2, 'little')
-                text = text[5:]
-                
-        elif text.startswith("<IF_NOT"):
-            flag = int(text[7:11], base=16)
-            text = text[12:]
-            current_encoded_bytes = b'\x11' + int.to_bytes(flag, length=2, byteorder='little')
-            
-        elif text.startswith("<IF"):
-            flag = int(text[3:7], base=16)
-            text = text[8:]
-            current_encoded_bytes = b'\x12' + int.to_bytes(flag, length=2, byteorder='little')
-        
-        elif text.startswith("<CLEAR"):
-            flag = int(text[6:10], base=16)
-            text = text[11:]
-            current_encoded_bytes = b'\x13' + int.to_bytes(flag, length=2, byteorder='little')
-            
-        elif text.startswith("<SET"):
-            flag = int(text[4:8], base=16)
-            text = text[9:]
-            current_encoded_bytes = b'\x14' + int.to_bytes(flag, length=2, byteorder='little')
-            
-        elif text.startswith("<RET_IL>"):
-            text = text[8:]
-            current_encoded_bytes = b'\x06'
-            terminated = True
-            
-        elif text.startswith("<RETN>"):
-            text = text[6:]
-            current_encoded_bytes = b'\x07'
-            terminated = True
-            
-        elif text.startswith("<CH"):
-            current_encoded_bytes = b'\x09' + int.to_bytes(int(text[3:4]), length=1, byteorder='little')
-            text = text[5:]
-            
-        elif text.startswith("<LOC"):
-            loc_addr = int(text[4:8], base=16)
-            loc_offset = len(encoded)
-            locators[loc_addr] = loc_offset
-            current_encoded_bytes = b''
-            text = text[9:]
-            
-        elif text.startswith("<N>\n"):
-            current_encoded_bytes = b'\x01'
-            text = text[4:]
-            
-        elif text.startswith("<WAIT>\n"):
-            current_encoded_bytes = b'\x03'
-            text = text[7:]
 
-        elif text.startswith("<PAGE>\n"):
-            current_encoded_bytes = b'\x05'
-            text = text[7:]
-            
-        elif text.startswith("<END>\n"):
-            current_encoded_bytes = b'\x00'
-            text = text[6:]
-            
-        elif text.startswith("<"):
-            raise Exception("Unknown tag " + text[:10] + "!")
-            
-        
+        current_encoded_bytes = None
+
+        if text.startswith("<"):
+            tag_end_loc = text.find(">")
+            if tag_end_loc < 0:
+                raise Exception(f"Tag starting at {text[:10]} does not seem to be closed.")
+            tag_contents = text[1:tag_end_loc]
+            text = text[tag_end_loc + 1:]
+
+            if tag_contents.startswith("X"):
+                hex_bytes = ""
+                tag_contents = tag_contents[1:]
+                while len(tag_contents) > 0:
+                    hex_bytes += tag_contents[0]
+                    tag_contents = tag_contents[1:]
+
+                current_encoded_bytes = bytes.fromhex(hex_bytes)
+                if current_encoded_bytes[0] in [0x06, 0x07, 0x0a, 0x0d]:
+                    terminated = True
+
+            elif tag_contents.startswith("JUMP"):
+                if len(tag_contents) != 8:
+                    raise Exception(f"Tag <{tag_contents}> has the incorrect data length.")
+                call_addr = int(tag_contents[4:8], base=16)
+                references.append((len(encoded) + 1, call_addr))
+                current_encoded_bytes = b'\x0f' + int.to_bytes(call_addr, length=2, byteorder='little')
+
+                if len(text) == 0:
+                    terminated = True
+
+            elif tag_contents.startswith("CALL"):
+                if len(tag_contents) != 8:
+                    raise Exception(f"Tag <{tag_contents}> has the incorrect data length.")
+                call_addr = int(tag_contents[4:8], base=16)
+                references.append((len(encoded) + 1, call_addr))
+                current_encoded_bytes = b'\x10' + int.to_bytes(call_addr, length=2, byteorder='little')
+
+            elif tag_contents.startswith("ASM"):
+                if tag_contents.startswith("ASM_NORET"):
+                    if len(tag_contents) != 13:
+                        raise Exception(f"Tag <{tag_contents}> has the incorrect data length.")
+                    asm_addr = int(tag_contents[9:13], base=16)
+                    terminated = True
+                else:
+                    if len(tag_contents) != 7:
+                        raise Exception(f"Tag <{tag_contents}> has the incorrect data length.")
+                    asm_addr = int(tag_contents[3:7], base=16)
+                current_encoded_bytes = b'\x15' + int.to_bytes(asm_addr, length=2, byteorder='little')
+
+            elif tag_contents.startswith("LEADER"):
+                if len(tag_contents) != 30:
+                    raise Exception(f"Tag <{tag_contents}> has the incorrect data length.")
+                current_encoded_bytes = b'\x16'
+                for ref_index in range(5):
+                    call_addr = int(tag_contents[6 + ref_index*5:6 + ref_index*5 + 4], base=16)
+                    references.append((len(encoded) + ref_index*2 + 1, call_addr))
+                    current_encoded_bytes += int.to_bytes(call_addr, 2, 'little')
+
+            elif tag_contents.startswith("IF_NOT"):
+                if len(tag_contents) != 10:
+                    raise Exception(f"Tag <{tag_contents}> has the incorrect data length.")
+                flag = int(tag_contents[6:10], base=16)
+                current_encoded_bytes = b'\x11' + int.to_bytes(flag, length=2, byteorder='little')
+
+            elif tag_contents.startswith("IF"):
+                if len(tag_contents) != 6:
+                    raise Exception(f"Tag <{tag_contents}> has the incorrect data length.")
+                flag = int(tag_contents[2:6], base=16)
+                current_encoded_bytes = b'\x12' + int.to_bytes(flag, length=2, byteorder='little')
+
+            elif tag_contents.startswith("CLEAR"):
+                if len(tag_contents) != 9:
+                    raise Exception(f"Tag <{tag_contents}> has the incorrect data length.")
+                flag = int(tag_contents[5:9], base=16)
+                current_encoded_bytes = b'\x13' + int.to_bytes(flag, length=2, byteorder='little')
+
+            elif tag_contents.startswith("SET"):
+                if len(tag_contents) != 7:
+                    raise Exception(f"Tag <{tag_contents}> has the incorrect data length.")
+                flag = int(tag_contents[3:7], base=16)
+                current_encoded_bytes = b'\x14' + int.to_bytes(flag, length=2, byteorder='little')
+
+            elif tag_contents == "RET_IL":
+                current_encoded_bytes = b'\x06'
+                terminated = True
+
+            elif tag_contents == "RETN":
+                current_encoded_bytes = b'\x07'
+                terminated = True
+
+            elif tag_contents.startswith("CH"):
+                if len(tag_contents) != 3:
+                    raise Exception(f"Tag <{tag_contents}> has the incorrect data length.")
+                current_encoded_bytes = b'\x09' + int.to_bytes(int(tag_contents[2:3]), length=1, byteorder='little')
+
+            elif tag_contents.startswith("LOC"):
+                if len(tag_contents) != 7:
+                    raise Exception(f"Tag <{tag_contents}> has the incorrect data length.")
+                loc_addr = int(tag_contents[3:7], base=16)
+                loc_offset = len(encoded)
+                locators[loc_addr] = loc_offset
+                current_encoded_bytes = b''
+
+            elif tag_contents == "N":
+                current_encoded_bytes = b'\x01'
+                if text[0] != '\n':
+                    raise Exception("<N> tag must be followed by a newline!")
+                text = text[1:]
+
+            elif tag_contents == "WAIT":
+                current_encoded_bytes = b'\x03'
+                if text[0] != '\n':
+                    raise Exception("<WAIT> tag must be followed by a newline!")
+                text = text[1:]
+
+            elif tag_contents == "PAGE":
+                current_encoded_bytes = b'\x05'
+                if text[0] != '\n':
+                    raise Exception("<PAGE> tag must be followed by a newline!")
+                text = text[1:]
+
+            elif tag_contents == "END":
+                current_encoded_bytes = b'\x00'
+                if text[0] != '\n':
+                    raise Exception("<END> tag must be followed by a newline!")
+                text = text[1:]
+
+            else:
+                raise Exception(f"Unknown tag <{tag_contents}>!")
+
+
         elif text.startswith("\n\n"):
             current_encoded_bytes = b'\x05'
             text = text[2:]
@@ -295,7 +318,7 @@ def encode_event(text, max_length = None):
         else:
             current_encoded_bytes = text[0].encode(encoding='shift-jis')
             text = text[1:]
-        
+
         if not terminated and max_length is not None and len(encoded) + len(current_encoded_bytes) > max_length - 1:
             print("Text is too long! Truncating.")
             break
@@ -303,10 +326,10 @@ def encode_event(text, max_length = None):
             raise Exception("Terminated text is too long!")
         else:
             encoded += current_encoded_bytes
-            
+
     if not terminated:
         encoded += b'\x00'
-    
+
     return encoded, references, locators
 
 
@@ -349,19 +372,19 @@ class EmptyHook(CodeHook):
 class HardcodedValueHook(CodeHook):
     def __init__(self, addr):
         self._addr = addr
-        
+
     def should_handle(self, instruction):
         return self._addr == instruction.address
-        
+
     def generate_links(self, instruction, block_pool, current_block, registers):
         if not instruction.id == X86_INS_MOV or not instruction.operands[0].type == CS_OP_REG or not instruction.operands[0].reg == X86_REG_SI or not instruction.operands[1].type == CS_OP_IMM:
             raise Exception(f"Invalid instruction at hardcoded hook address! {instruction.mnemonic} {instruction.op_str}")
-        
+
         addr = instruction.operands[1].imm
         link = Link(instruction.address + 1, addr)
         link.connect_blocks(current_block, block_pool.get_block(addr, EventBlock))
 
-        
+
 class CallWithoutReturnCodeHook(CodeHook):
     def __init__(self, addr):
         self._addr = addr
@@ -394,7 +417,7 @@ class WorldMapTableCodeHook(CodeHook):
         if X86_REG_SI in registers and X86_REG_CX in registers:
             table_address = registers[X86_REG_SI]['value'] # X86_REG_SI
             table_size = registers[X86_REG_CX]['value'] # X86_REG_CX
-        
+
             table_address -= 0xe000
             for _ in range(table_size):
                 jump_address = int.from_bytes(block_pool.data[table_address+0x8:table_address+0xa], byteorder='little')
@@ -423,15 +446,15 @@ class StandardEventCodeHook(CodeHook):
             if event_addr >= current_block.base_addr and event_addr < current_block.base_addr + len(block_pool.data):
 
                 disassembly = disassemble_event(block_pool.data, current_block.base_addr, registers[X86_REG_SI]['value'])
-        
+
                 if 'source_addr' in registers[X86_REG_SI]:
 
                     event_link = Link(registers[X86_REG_SI]['source_addr'], registers[X86_REG_SI]['value'])
                     event_link.connect_blocks(current_block, block_pool.get_block(registers[X86_REG_SI]['value'], EventBlock))
-            
+
                     registers[X86_REG_SI]['continue_from_addr'] = registers[X86_REG_SI]['value']
                     registers[X86_REG_SI]['value'] = disassembly[-1]['addr'] + disassembly[-1]['length']
-            
+
                     del registers[X86_REG_SI]['source_addr']
                 else:
                     current_block = block_pool.get_block(registers[X86_REG_SI]['continue_from_addr'], EventBlock)
@@ -442,7 +465,7 @@ class StandardEventCodeHook(CodeHook):
                 global_event_link = Link(registers[X86_REG_SI]['source_addr'], registers[X86_REG_SI]['value'])
                 global_event_link.connect_blocks(current_block, None)
                 current_block.add_global_reference(registers[X86_REG_SI]['source_addr'], registers[X86_REG_SI]['value'], is_event=True)
-        
+
         else:
             print(registers)
             raise Exception(f"No known event address for event call at {instruction.address:04x}")
@@ -467,20 +490,20 @@ class PointerTableHook(CodeHook):
                 instruction.operands[0].value.imm == self._addr
         else:
             return instruction.address == self._addr
-            
+
     def get_next_ip(self, instruction):
         if self._is_call:
             return super().get_next_ip(instruction)
         else:
             return self._next_ip
-        
+
     def generate_links(self, instruction, block_pool, current_block, registers):
         if self._address_register is not None:
             table_addr = registers[self._address_register]['value']
         else:
             table_addr = self._table_addr
-        
-    
+
+
         for table_entry_index in range(self._length):
             table_entry_addr = table_addr + table_entry_index*self._stride + self._pointer_offset
             event_addr = int.from_bytes(block_pool.data[table_entry_addr - 0xe000:table_entry_addr + 2 - 0xe000], byteorder='little')
@@ -488,7 +511,7 @@ class PointerTableHook(CodeHook):
                 event_link = Link(table_entry_addr, event_addr)
                 event_link.connect_blocks(current_block, block_pool.get_block(event_addr, self._block_type))
 
-                
+
 class NpcTable6d38CodeHook(CodeHook):
     def should_handle(self, instruction):
         if (X86_GRP_CALL in instruction.groups or X86_GRP_JUMP in instruction.groups) and instruction.operands[0].type == CS_OP_IMM:
@@ -554,7 +577,7 @@ class AlternateCombatStartTextCodeHook(CodeHook):
 class Scenario_11_00_24_FakeWorldMapTable(CodeHook):
     def should_handle(self, instruction):
         return instruction.address == 0xe14f
-    
+
     def get_next_ip(self, instruction):
         return 0xe168
 
@@ -615,7 +638,7 @@ class Link:
     def source_instruction_addr(self):
         return self._source_instruction_addr
 
-    @property 
+    @property
     def execution_context(self):
         return self._execution_context
 
@@ -647,7 +670,7 @@ class Block:
         self._base_addr = base_addr
         self._start_addr = start_addr
         self._length = None
-        
+
         self._incoming_links = []
         self._outgoing_links = []
         self._internal_references = []
@@ -657,29 +680,29 @@ class Block:
         self._link_paths = []
 
         self._explore()
-        
+
     def __str__(self):
         str = f"<{type(self).__name__} {self._start_addr:04x}"
-        
+
         if self._length is not None:
             str += f"~{self.end_addr:04x}"
-            
+
         str += f", {len(self._incoming_links)} incoming, {len(self._outgoing_links)} outgoing>"
-        
+
         return str
-    
+
     @property
     def base_addr(self):
         return self._base_addr
-    
+
     @property
     def start_addr(self):
         return self._start_addr
-        
+
     @property
     def end_addr(self):
         return None if self._length is None else self._start_addr + self._length - 1
-        
+
     @property
     def length(self):
         return self._length
@@ -695,7 +718,7 @@ class Block:
     @property
     def is_relocatable(self):
         return False not in [link.source_addr is not None for link in self._incoming_links]
-    
+
     def expand(self, addr):
         if addr >= self._start_addr + self._length:
             self._length = addr - self._entry_addr + 1
@@ -708,16 +731,16 @@ class Block:
 
     def link(self, block_pool):
         raise NotImplementedError("Implement this in a subclass!")
-    
+
     def _context_is_equivalent(self, c1, c2):
         raise NotImplementedError("Implement this in a subclass!")
-    
+
     def move_start_addr(self, new_addr):
         self._start_addr = new_addr
         self._length = None
 
         self._explore()
-    
+
     def connect_incoming_link(self, link):
 
         link_key = (link.target_addr, link.execution_context)
@@ -739,15 +762,15 @@ class Block:
 
     def connect_outgoing_link(self, link):
         self._outgoing_links.append(link)
-    
+
     def add_internal_reference(self, source_addr, dest_addr, **kwargs):
         ref = { 'source_addr': source_addr, 'dest_addr': dest_addr }
-        
+
         for key, value in kwargs.items():
             ref[key] = value
-            
+
         self._internal_references.append(ref)
-        
+
     def get_internal_references(self):
         for ref in self._internal_references:
             yield ref
@@ -763,13 +786,13 @@ class Block:
     def get_global_references(self):
         for ref in self._global_references:
             yield ref
-    
+
     def contains(self, addr):
         if self._length is None:
             return addr == self._start_addr
         else:
             return addr >= self._start_addr and addr <= self.end_addr
-        
+
     def get_incoming_links(self):
         for link in self._incoming_links:
             yield link
@@ -777,22 +800,22 @@ class Block:
     def get_outgoing_links(self):
         for link in self._outgoing_links:
             yield link
-    
+
 class CodeBlock(Block):
     def dump(self):
         disassembler = Cs(CS_ARCH_X86, CS_MODE_16)
         disassembler.detail = True
         disasm_iter = disassembler.disasm(self._data[self.start_addr - self.base_addr:], self.start_addr)
 
-        done = False        
+        done = False
         while not done:
             instruction = next(disasm_iter)
-            
+
             if True in [isinstance(in_link, Link) and instruction.address == in_link.target_addr for in_link in self._incoming_links]:
                 print("--> ", end='')
             else:
                 print("    ", end='')
-            
+
             hook_found = False
             for hook in self._hooks:
                 if hook.should_handle(instruction):
@@ -813,26 +836,26 @@ class CodeBlock(Block):
 
                 if self.end_addr is None or instruction.address + instruction.size > self.end_addr:
                     done = True
-            
+
             if True in [isinstance(out_link, Link) and out_link.source_instruction_addr is not None and instruction.address == out_link.source_instruction_addr for out_link in self._outgoing_links]:
                 print("--> ", end='')
             else:
                 print("    ", end='')
-            
+
             print()
 
         if self.end_addr is None:
             print("    (Unexplored)")
-            
+
         print()
-    
+
     def _explore(self):
         disassembler = Cs(CS_ARCH_X86, CS_MODE_16)
         disassembler.detail = True
-    
+
         disasm_iter = disassembler.disasm(self._data[self._start_addr - self._base_addr:], self._start_addr)
         next_ip = None
-    
+
         done = False
         while not done:
             instruction = next(disasm_iter)
@@ -870,18 +893,18 @@ class CodeBlock(Block):
             link_path_info = self._link_paths[link_path]
             if 'is_linked' in link_path_info:
                 continue
-            
+
             link_target_addr = link.target_addr
-    
+
             disasm_iter = disassembler.disasm(self._data[link_target_addr - self._base_addr:], link_target_addr)
             next_ip = None
-    
+
             registers = link.execution_context.copy()
 
             done = False
             while not done:
                 instruction = next(disasm_iter)
-        
+
                 hook_found = False
                 for hook in self._hooks:
                     if hook.should_handle(instruction):
@@ -899,13 +922,13 @@ class CodeBlock(Block):
 
                 if not hook_found:
                     next_ip = instruction.address + instruction.size
-                    
+
                     (_, written_regs) = instruction.regs_access()
                     for r in written_regs:
                         if r in registers:
                             del registers[r]
-        
-        
+
+
                     if X86_GRP_JUMP in instruction.groups: # X86_GRP_JUMP
                         if instruction.operands[0].type == CS_OP_IMM:
                             destination = instruction.operands[0].value.imm
@@ -919,7 +942,7 @@ class CodeBlock(Block):
                                 link.connect_blocks(self, block_pool.get_block(destination, CodeBlock))
                         else:
                             print(f"Jump to non-immediate address from {instruction.address:04x}!!")
-                
+
                         if instruction.id == X86_INS_JMP or instruction.id == X86_INS_LJMP:
                             break
                     elif instruction.id == X86_INS_LOOP:
@@ -943,14 +966,14 @@ class CodeBlock(Block):
                         else:
                             target_block = block_pool.get_block(destination, CodeBlock)
                             link.connect_blocks(self, block_pool.get_block(destination, CodeBlock))
-                        
+
                         # Subroutine calls might do anything, so nuke everything we know about the registers at this point.
                         for r in list(registers.keys()):
                             del registers[r]
-            
+
                     elif X86_GRP_RET in instruction.groups:
                         done = True
-            
+
                     elif instruction.id == X86_INS_MOV and instruction.operands[0].type == CS_OP_REG and instruction.operands[1].type == CS_OP_IMM:
                         reg_id = instruction.operands[0].value.reg
                         value = instruction.operands[1].value.imm
@@ -958,7 +981,7 @@ class CodeBlock(Block):
 
             link_path_info['is_linked'] = True
 
-    
+
 class EventBlock(Block):
     def __init__(self, data, hooks, base_addr, start_addr):
         self._continuation_extent_end_addr = None
@@ -971,29 +994,29 @@ class EventBlock(Block):
                 print("--> ", end='')
             else:
                 print("    ", end='')
-            
+
             print(f"{instruction['addr']:04x}  ", end='')
-            
+
             if 'text' in instruction:
                 print(instruction['text'], end='')
             else:
                 print(f"{instruction['code']:02x} {instruction['data'].hex()} ", end='')
-                
+
             if True in [not isinstance(out_link, Link) and 'source_addr' in out_link and instruction['addr'] == out_link['source_addr'] for out_link in self._outgoing_links]:
                 print("--> ", end='')
             else:
                 print("    ", end='')
-            
+
             print()
         print()
-    
-    
+
+
     def _explore(self):
         for instruction in disassemble_event(self._data, self.base_addr, self.start_addr, self._continuation_extent_end_addr):
             pass
 
         self._length = instruction['addr'] + instruction['length'] - self._start_addr
-        
+
     def link(self, block_pool):
         for link, link_path in zip(self._incoming_links, self._incoming_link_path_index):
             link_path_info = self._link_paths[link_path]
@@ -1002,14 +1025,14 @@ class EventBlock(Block):
 
             link_target_addr = link.target_addr
             execution_context = link.execution_context
-    
+
             jump_map = {}
-    
+
             for instruction in disassemble_event(self._data, self.base_addr, self.start_addr, 0):
                 if instruction['addr'] in jump_map:
                     self.add_internal_reference(jump_map[instruction['addr']] + 1, instruction['addr'], source_instruction_addr=jump_map[instruction['addr']])
                     del jump_map[instruction['addr']]
-    
+
                 if 'code' in instruction:
                     code = instruction['code']
                     if code == 0x0f: # Jump
@@ -1042,7 +1065,7 @@ class EventBlock(Block):
                                 self.add_global_reference(instruction['addr'] + ref_index*2 + 1, arg)
                             else:
                                 link.connect_blocks(self, block_pool.get_block(arg, EventBlock))
-        
+
             for jump_target, jump_source in jump_map.items():
                 link = Link(jump_source + 1, jump_target, source_instruction_addr=jump_source)
                 if (jump_target < self._base_addr or arg >= self._base_addr + len(self._data)):
@@ -1051,19 +1074,19 @@ class EventBlock(Block):
                 else:
                     link.connect_blocks(self, block_pool.get_block(jump_target, EventBlock))
 
-                            
+
             link_path_info['is_linked'] = True
-        
+
     def format_string(self, scenario_data):
         out = ""
-        
+
         jumps = set()
 
         external_locators = set()
         for link in self._incoming_links:
             external_locators.add(link.target_addr)
 
-        
+
         for instruction in disassemble_event(scenario_data, self.base_addr, self.start_addr, self._continuation_extent_end_addr):
             if instruction['addr'] in jumps:
                 jumps.remove(instruction['addr'])
@@ -1072,12 +1095,12 @@ class EventBlock(Block):
             elif instruction['addr'] in external_locators:
                 if len(out) > 0:
                     out += f"<LOC{instruction['addr']:04x}>"
-        
+
             if 'text' in instruction:
                 out += instruction['text']
             else:
                 code = instruction['code']
-                
+
                 if code == 0x00:
                     if instruction['addr'] + 1 < self.end_addr:
                         out += "<END>\n"
@@ -1120,9 +1143,9 @@ class EventBlock(Block):
                     out += f"<SET{arg:04x}>"
                 elif code == 0x15: # ASM call
                     arg = int.from_bytes(instruction['data'], byteorder='little')
-                    
+
                     no_return = instruction['addr'] + 3 > self.end_addr
-                    
+
                     out += "<ASM{0}{1:04x}>".format("_NORET" if no_return else "", arg)
                 elif code == 0x16: # Call based on party member (includes name)
                     out += "<LEADER"
@@ -1137,9 +1160,9 @@ class EventBlock(Block):
 
                 if 'continue' in instruction:
                     out += "\n<CONT>"
-                
+
         return out
-    
+
     def set_continuation_extent(self, extent_end_addr):
         if self._continuation_extent_end_addr is None or self._continuation_extent_end_addr < extent_end_addr:
             self._continuation_extent_end_addr = extent_end_addr
@@ -1166,7 +1189,7 @@ class BlockPool:
     @property
     def data(self):
         return self._data
-        
+
     def get_block(self, addr, block_class):
         for block in self._blocks:
             if block.contains(addr):
@@ -1183,7 +1206,7 @@ class BlockPool:
                 block.move_start_addr(new_block.start_addr)
                 return block
 
-        
+
         self._blocks.append(new_block)
         return new_block
 
@@ -1200,21 +1223,21 @@ class BlockPool:
         for block in self._blocks:
             if not block.is_linked:
                 yield block
-    
+
 
 def explore(data, base_addr, entry_points, hooks):
     block_pool = BlockPool(data, base_addr, hooks)
 
     for entry_point in entry_points:
         block = block_pool.get_block(entry_point['target_addr'], EventBlock if 'is_event' in entry_point else CodeBlock)
-        
+
         link = Link(entry_point['source_addr'] if 'source_addr' in entry_point else None, entry_point['target_addr'])
         link.connect_blocks(None, block)
 
 
     while True:
         should_continue = False
-        
+
         unlinked_blocks = list(block_pool.get_unlinked_blocks())
         for block in unlinked_blocks:
             block.link(block_pool)
@@ -1225,40 +1248,40 @@ def explore(data, base_addr, entry_points, hooks):
 
     block_list = list(block_pool.get_blocks())
     block_list.sort(key=lambda block: block.start_addr)
-    
-    return block_list    
+
+    return block_list
 
 
 def format_sector_key(sector_key):
     return f"{sector_key[0]:02x}.{sector_key[1]:02x}.{sector_key[2]:02x}"
-        
+
 def get_scenario_directory(scenario_disk):
     disk_sectors = get_sector_info_nfd0(scenario_disk)
-    
+
     disk_sectors.sort(key=lambda sector_info: (sector_info['cylinder'] << 16) + (sector_info['head'] << 8) + sector_info['sector'])
-    
+
     scenario_directory = {}
-    
+
     sector_index = 256
     while sector_index < 809:
         sector_info = disk_sectors[sector_index]
-        
+
         scenario_key = (sector_info['cylinder'], sector_info['head'], sector_info['sector'])
         scenario_info = { 'sector_length': sector_info['size'], 'sector_addresses' : [ sector_info['start_addr'] ] }
-        
+
         scenario_disk.seek(sector_info['start_addr'])
         scenario_disk.read(6)
         chunk_count = scenario_disk.read(1)[0]
         sector_index += 1
-        
+
         if scenario_key == (0x20, 0x00, 0x20):
             chunk_count = 2
         elif scenario_key == (0x26, 0x01, 0x22):
             chunk_count = 3
-        
+
         if chunk_count > 10:
             raise Exception("Unexpectedly high chunk count in scenario data!")
-            
+
 
         for _ in range(chunk_count):
             scenario_info['sector_addresses'].append(disk_sectors[sector_index]['start_addr'])
@@ -1274,24 +1297,24 @@ def get_scenario_directory(scenario_disk):
                 space_at_end_length += 1
             if sector_loc >= 0:
                 break
-            
+
         scenario_info['space_at_end_length'] = space_at_end_length
-        
+
         scenario_directory[scenario_key] = scenario_info
-    
+
     return scenario_directory
 
 def get_combat_directory(scenario_disk):
     disk_sectors = get_sector_info_nfd0(scenario_disk)
-    
+
     disk_sectors.sort(key=lambda sector_info: (sector_info['cylinder'] << 16) + (sector_info['head'] << 8) + sector_info['sector'])
-    
+
     combat_directory = {}
-    
+
     sector_index = 896
     while sector_index < 1006:
         sector_info = disk_sectors[sector_index]
-        
+
         combat_key = (sector_info['cylinder'], sector_info['head'], sector_info['sector'])
 
         space_at_end_length = 0
@@ -1301,25 +1324,25 @@ def get_combat_directory(scenario_disk):
         while sector_loc >= 0 and sector_data[sector_loc] == 0:
             sector_loc -= 1
             space_at_end_length += 1
-        
-        combat_directory[combat_key] = { 
-            'sector_length': sector_info['size'], 
+
+        combat_directory[combat_key] = {
+            'sector_length': sector_info['size'],
             'sector_addresses': [ sector_info['start_addr'] ],
             'space_at_end_length': space_at_end_length
         }
-        
+
         sector_index += 1
-    
+
     return combat_directory
-    
+
 def extract_scenario_events(scenario_disk, scenario_key, scenario_info):
     scenario_data = b''
     for sector_addr in scenario_info['sector_addresses']:
         scenario_disk.seek(sector_addr)
         scenario_data += scenario_disk.read(scenario_info['sector_length'])
-    
+
     # First step is to find all the asm entry points in the scenario.
-    # All scenarios have entry points at e000 and e003. There's also 
+    # All scenarios have entry points at e000 and e003. There's also
     # additional entry point data at e008 in most scenarios, but it
     # varies whether the data there is actual asm code or a list of
     # pointers to code blocks. So there's some elaborate trial-and-error
@@ -1329,21 +1352,21 @@ def extract_scenario_events(scenario_disk, scenario_key, scenario_info):
     entry_points.append( { 'target_addr': 0xe000 } )
     if scenario_key != (0x20, 0x00, 0x20) and scenario_key != (0x26, 0x01, 0x22):
         entry_points.append( { 'target_addr': 0xe003 } )
-    
+
     third_entry_point_offset = 0x8
-    
+
     if scenario_key != (0x20, 0x00, 0x20) and scenario_key != (0x26, 0x01, 0x22):
         possible_entry_point_table = False
         possible_assembly_code = False
-        
+
         # Assembly codes - cmp, xchg, mov, mov, mov, ret, mov, call, jmp, test
         if scenario_data[third_entry_point_offset] in [0x80, 0x94, 0xa0, 0xb8, 0xbe, 0xc3, 0xc6, 0xe8, 0xe9, 0xf6]:
             possible_assembly_code = True
         if (scenario_data[third_entry_point_offset + 1] >= 0xe0 and scenario_data[third_entry_point_offset + 1] <= 0xe0 + (len(scenario_data) >> 8))\
                 or scenario_data[third_entry_point_offset + 1] == 0x96:
             possible_entry_point_table = True
-            
-        
+
+
         if not possible_entry_point_table and not possible_assembly_code:
             raise Exception("Don't know what to do with third entry point!!")
         elif possible_entry_point_table and possible_assembly_code:
@@ -1352,7 +1375,7 @@ def extract_scenario_events(scenario_disk, scenario_key, scenario_info):
                 possible_assembly_code = False
             else:
                 raise Exception(f"{format_sector_key(scenario_key)} e008 is ambiguous!!")
-        
+
         if possible_assembly_code:
             entry_points.append( { 'target_addr': third_entry_point_offset + 0xe000 } )
         elif possible_entry_point_table:
@@ -1370,19 +1393,19 @@ def extract_scenario_events(scenario_disk, scenario_key, scenario_info):
                         raise Exception("No e008 entry points found for non-overworld scenario {0:06x}".format(scenario_start_addr))
                     break
                 table_addr += 2
-    
+
     # Decide what hooks we need to process this scenario during disassembly.
     # All scenarios have a standard set of hooks. Some scenarios have
     # specific hooks for custom behavior.
-                
-    global_code_hooks = [ 
+
+    global_code_hooks = [
         StandardEventCodeHook(),
-        NpcTable6d38CodeHook(), 
+        NpcTable6d38CodeHook(),
         NpcTable6e5cCodeHook(),
         PointerTableHook(EventBlock, True, 0xa95a, 3, 2, 0, address_register=X86_REG_BX), # Three event pointers, then a pointer to shop contents?
         PointerTableHook(EventBlock, True, 0xa9df, 4, 2, 0, address_register=X86_REG_BX),
     ]
-                
+
     scenario_code_hooks = []
     if scenario_key == (0x10, 0x00, 0x20):
         scenario_code_hooks.append(WorldMapTableCodeHook())
@@ -1420,19 +1443,19 @@ def extract_scenario_events(scenario_disk, scenario_key, scenario_info):
         scenario_code_hooks.append(PointerTableHook(EventBlock, False, 0xe084, 4, 2, 0, table_addr=0xe08d))
     elif scenario_key == (0x30, 0x00, 0x26):
         scenario_code_hooks.append(PointerTableHook(EventBlock, False, 0xe1ee, 4, 2, 0, table_addr=0xe1f7))
-    
+
     # Now, explore the asm code, using the hooks to discover any event blocks it
     # happens to trigger.
     blocks = explore(scenario_data, 0xe000, entry_points, scenario_code_hooks + global_code_hooks)
-    
+
     # Organize and format all the events we found.
     events = {}
     global_refs = []
 
     for block in blocks:
         if isinstance(block, EventBlock):
-            event_info = { 
-                'text': block.format_string(scenario_data), 
+            event_info = {
+                'text': block.format_string(scenario_data),
                 'length': block.length,
                 'is_relocatable': block.is_relocatable,
                 'references': []
@@ -1442,7 +1465,7 @@ def extract_scenario_events(scenario_disk, scenario_key, scenario_info):
                 event_info['references'].append( { 'source_addr': link.source_addr, 'target_addr': link.target_addr, } )
                 if link.source_block is not None and isinstance(link.source_block, EventBlock):
                     event_info['references'][-1]['source_event_addr'] = link.source_block.start_addr
-            
+
             for internal_ref in block.get_internal_references():
                 event_info['references'].append( { 'source_addr': internal_ref['source_addr'], 'target_addr': internal_ref['dest_addr'], 'source_event_addr': block.start_addr } )
 
@@ -1459,9 +1482,9 @@ def extract_combat_events(scenario_disk, combat_key, combat_info):
     for sector_addr in combat_info['sector_addresses']:
         scenario_disk.seek(sector_addr)
         combat_data += scenario_disk.read(combat_info['sector_length'])
-    
 
-    global_code_hooks = [ 
+
+    global_code_hooks = [
         StandardEventCodeHook(),
         AlternateCombatStartTextCodeHook(),
         EmptyHook(0x681b, True),
@@ -1478,7 +1501,7 @@ def extract_combat_events(scenario_disk, combat_key, combat_info):
         combat_code_hooks.append(EmptyHook(0xdd5e, False, 0xdd63)) # Same pattern
     elif combat_key == (0x3e, 0x01, 0x22):
         combat_code_hooks.append(EmptyHook(0xdd56, False, 0xdd65)) # Long push/pop block that doesn't appear to do anything significant
-        
+
     entry_points = []
     for entry_addr in [0xdd0c, 0xdd0f, 0xdd12, 0xdd15]:
         entry_points.append( { 'target_addr': entry_addr } )
@@ -1500,19 +1523,19 @@ def extract_combat_events(scenario_disk, combat_key, combat_info):
         for enemy_entry_point_index in range(4):
             enemy_entry_point_addr = 0x120 + enemy_index*0x8 + enemy_entry_point_index*0x2
             entry_points.append( { 'target_addr': int.from_bytes(combat_data[enemy_entry_point_addr:enemy_entry_point_addr+2], byteorder='little'), 'source_addr': enemy_entry_point_addr } )
-        
-        
+
+
     entry_points.append( { 'target_addr': int.from_bytes(combat_data[0x104:0x106], byteorder='little'), 'source_addr': 0xdd04, 'is_event': True } )
-        
+
     blocks = explore(combat_data, 0xdc00, entry_points, combat_code_hooks + global_code_hooks)
-    
+
     events = {}
     global_refs = []
 
     for block in blocks:
         if isinstance(block, EventBlock):
-            event_info = { 
-                'text': block.format_string(combat_data), 
+            event_info = {
+                'text': block.format_string(combat_data),
                 'length': block.length,
                 'is_relocatable': block.is_relocatable,
                 'references': []
@@ -1530,7 +1553,7 @@ def extract_combat_events(scenario_disk, combat_key, combat_info):
 
         for global_ref in block.get_global_references():
             global_refs.append( { 'source_addr': global_ref['source_addr'], 'target_addr': global_ref['dest_addr'], 'is_event': 'is_event' in global_ref and global_ref['is_event']} )
-            
+
     return events, global_refs
 
 
