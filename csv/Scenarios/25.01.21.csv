@@ -120,7 +120,7 @@ obtain it, it would mean the end
 of the world!
 
 I-If only I could enter the
-Dragonsegg, inform Lord Joshua of
+dragonsegg, inform Lord Joshua of
 the danger, and entreat him to
 stop sending the cosmic power...
 
@@ -128,7 +128,7 @@ stop sending the cosmic power...
 
 <X1e>Barbara<X04>
 Yes, every year I enter the
-Dragonsegg during Dragonsfete.
+dragonsegg during Dragonsfete.
 But now, I cannot.
 
 <LEADERed49,ed67,ed49,ed88,edc6>
@@ -136,7 +136,7 @@ But now, I cannot.
 <X1e>Barbara<X04>
 Sigh... This is something you mustnot tell anyone. It is a secret myfamily has kept for generations.
 
-To enter a Dragonsegg requires a
+To enter a dragonsegg requires a
 jewel called the <CALL0001>.
 
 But because I could not pay last
@@ -146,7 +146,7 @@ Tear from me.
 
 Only when the <CALL0001> is
 returned to me can I enter
-the Dragonsegg.
+the dragonsegg.
 
 <LEADERede6,ee52,ede6,eebf,ef3d>
 
@@ -166,7 +166,7 @@ me take care of that.
 as soon as possible!<END>
 <LOCe6e2>A while ago, one of Liston's men
 came here with the <CALL0001>. 
-Now we can enter the Dragonsegg.
+Now we can enter the dragonsegg.
 
 Shall we go?
 
@@ -182,7 +182,7 @@ good idea for you to come...
 Oh, Prince Aerion. Looking out
 for a poor old lady, are you?
 
-But getting to the Dragonsegg is
+But getting to the dragonsegg is
 a trifling matter.
 Let me show you the strength
 that comes with age!
@@ -211,9 +211,9 @@ you, Prince Aerion.
 
 Never reveal the secret of the
 Dragon Tear, or the way of
-entering a Dragonsegg.
+entering a dragonsegg.
 
-The Dragonseggs are sacred
+The dragonseggs are sacred
 places where Lord Joshua's
 will is revealed.
 
@@ -281,7 +281,7 @@ called the Sanctum.<RET_IL>"
 year during Dragonsfete.<RET_IL>"
 "ecc6","<CALLed14>いるじゃ
 ないですか。<RET_IL>","<CALLed14>But surely you enter the
-Dragonsegg each Dragonsfete.<RET_IL>"
+dragonsegg each Dragonsfete.<RET_IL>"
 "ecdf","<CALLed14>いるそうじゃないですか。<RET_IL>","<CALLed14>I thought you entered it every
 year during Dragonsfete.<RET_IL>"
 "ecfb","<CALLed14>るって
