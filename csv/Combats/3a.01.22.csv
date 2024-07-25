@@ -30,8 +30,8 @@ are blocked!<RETN>"
 こうなっては しかたがない。
 呪文なしで勝負だ !!
 
-<RET_IL>","<CALLdfe7>W-What's going on?
-M-My spells aren't working!
+<RET_IL>","<CALLdfe7>W-what's going on?
+M-my spells aren't working!
 
 <X02> runs away!<WAIT>
 <CALLdcd3><X02> uses a warp wing.<WAIT>
@@ -56,7 +56,7 @@ We'll fight without magic!
 気 ･ を ･ 付 ･ け ･ ろ ･ ･ ･<CLEAR0401>
 
 <RET_IL>","<CALLdfe7>S-Selios...
-Y-You've gotten stronger...
+Y-you've gotten stronger...
 
 But...<WAIT>
 Don't expect... beating me...<WAIT>

@@ -219,7 +219,7 @@ That's Prince Selios of Farleyn!
 <X1e>Foless<X04>
 L-Lady Felicia's...!
 
-F-Forgive me, your Highness.
+F-forgive me, your Highness.
 In my ignorance, I've asked
 far too much of you.
 
@@ -228,7 +228,7 @@ Don't worry about it. Could
 we see that Flam spell, please?
 
 <X1e>Foless<X04>
-A-Absoutely.
+A-absoutely.
 
 <LOCeb7b><RET_IL>"
 "eb7c","<X1e>老人<X04>
@@ -242,7 +242,7 @@ A-Absoutely.
 外にいる じいさんが
 あなたがたが 天から降りてくるのを
 見たと 自慢しておりましたぞ。","<X1e>Old man<X04>
-<IF_NOT008d><JUMPed62>F-For divine beings to speak
+<IF_NOT008d><JUMPed62>F-for divine beings to speak
 unto one such as me...!
 I'll be eternally grateful!
 

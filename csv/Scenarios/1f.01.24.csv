@@ -145,7 +145,7 @@ Are ya hidin' tha good stuff?!
 Knew ya'd know right away just
 from the smell, Buald.
 
-<CALLeedf>T-That's rum!
+<CALLeedf>T-that's rum!
 C'mon, Gail, lemme have some!
 
 <CH3>
@@ -164,7 +164,7 @@ The bar in Selis.
 <CALLeedf>Selis?
 Wasn't it o'errun by monsters?
 
-Y-Ya mean the monsters're gone?!
+Y-ya mean the monsters're gone?!
 
 <CH1>
 That's correct. Not one monster
@@ -274,7 +274,7 @@ In there, on the right.
 <CH2>
 Thank you so much, Buald.
 
-<CALLeedf>I-It's no problem! Hee hee...<END>
+<CALLeedf>I-it's no problem! Hee hee...<END>
 <LOCec25><CALLec29>"
 "ec29","くそー、イライラするなー !!<WAIT>
 お前らの顔なんか 見たくもねぇ !!
@@ -286,7 +286,7 @@ Now sod off!!<RET_IL>"
 船長に あんたたちとは 口をきいちゃいけないって 言われているんだ。<END>
 <LOCed08>いやー、船長のきげんが なおって
 助かったよ。","<X1e>Pirate<X04>
-<IF00db><JUMPed08>S-Sorry. The cap'n said we wasn't
+<IF00db><JUMPed08>S-sorry. The cap'n said we wasn't
 s'posed ta speak ta you.<END>
 <LOCed08>Wow! The cap'n's in a better mood
 now."

@@ -123,10 +123,10 @@ So you'd better let that King go!<RET_IL>"
 "e754","持ってきたわ !!
 フラート王を 解放しなさい !!<LOCe780><RET_IL>","We have it!
 Let King Flart go!<LOCe780><RET_IL>"
-"e781","ま、待ってくれ !! 今 渡す。<RET_IL>","W-Wait! We'll give it to you.<RET_IL>"
+"e781","ま、待ってくれ !! 今 渡す。<RET_IL>","W-wait! We'll give it to you.<RET_IL>"
 "e79d","お待ちなさい。渡しましょう。<RET_IL>","Don't! We'll give you the Star.<RET_IL>"
-"e7ba","ま、待て !! い、今 渡すから。<RET_IL>","W-Wait! We'll hand it over.<RET_IL>"
-"e7d8","ま、待って !! 今 渡します。<RET_IL>","W-Wait! We'll let you have it.<RET_IL>"
+"e7ba","ま、待て !! い、今 渡すから。<RET_IL>","W-wait! We'll hand it over.<RET_IL>"
+"e7d8","ま、待って !! 今 渡します。<RET_IL>","W-wait! We'll let you have it.<RET_IL>"
 "e7f4","わかった、受け取れ。<RET_IL>","Okay. Catch!<RET_IL>"
 "e809","わかりました。受け取りなさい。<RET_IL>","Very well. Take it!<RET_IL>"
 "e828","ほらよ、受け取りな。<RET_IL>","Right. Here it comes!!<RET_IL>"
@@ -137,11 +137,11 @@ Let King Flart go!<LOCe780><RET_IL>"
 
 <CALLeb91>す、すまない !!
 
-<RET_IL>","<CALLeb84>Arrghh!! C-Cowards!
+<RET_IL>","<CALLeb84>Arrghh!! C-cowards!
 
 <LEADERe895,e8db,e895,e91b,e95c>
 
-<CALLeb91>S-See you!
+<CALLeb91>S-see you!
 
 <RET_IL>"
 "e895","卑怯なのは お前のほうだ !!
@@ -171,7 +171,7 @@ chance to escape!!<RET_IL>"
 小僧どもが 笑わしてくれるわ !!
 
 ヨーシ 望みどおり
-始末してくれよう !!","<CALLeb84>D-Damn you!!
+始末してくれよう !!","<CALLeb84>D-damn you!!
 Wait!!
 
 <LEADERea25,ea71,ea25,eaba,eb07>

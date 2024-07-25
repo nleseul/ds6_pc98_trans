@@ -93,7 +93,7 @@ Do you know what kingdom's
 treasure is?
 
 <CH1>
-Y-You mean the Gilmoran Prism?
+Y-you mean the Gilmoran Prism?
 
 <X1e>Sylphie<X04>
 Ooh, you're clever!
@@ -240,6 +240,6 @@ You coward!<RET_IL>"
 "ec45","望むところだ !! 行くぜ !!<RET_IL>","No prob! Let's go!!<RET_IL>"
 "ec5f","望むところだわ !! 来なさい !!<RET_IL>","We're ready any time!<RET_IL>"
 "ec7d","クゥ、卑怯な !!<RET_IL>","Ugh!! Coward!<RET_IL>"
-"ec8d","ひ、卑怯な !!<RET_IL>","C-Coward!!<RET_IL>"
+"ec8d","ひ、卑怯な !!<RET_IL>","C-coward!!<RET_IL>"
 "ec9b","てめえ !! 卑怯な !!<RET_IL>","You cowardly piece of shit!!<RET_IL>"
-"ecaf","ひ、卑怯 !!<RET_IL>","C-Coward!!<RET_IL>"
+"ecaf","ひ、卑怯 !!<RET_IL>","C-coward!!<RET_IL>"

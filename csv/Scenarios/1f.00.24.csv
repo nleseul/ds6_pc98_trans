@@ -138,7 +138,7 @@ Calm down, Runan!!
 and he comes back to his senses.<X04>
 
 <CH1>
-F-Forgive me.
+F-forgive me.
 His rapacious attitude was
 difficult to tolerate.
 
@@ -146,8 +146,8 @@ difficult to tolerate.
 Where'd you toss out that key,
 Buald?
 
-<CALLeeb4><LOCe740>T-The key I tossed out... 
-P-Probably somewhere around Yold,
+<CALLeeb4><LOCe740>T-the key I tossed out... 
+P-probably somewhere around Yold,
 I think?<END>
 <LOCe795><IF00d5><JUMPe8d3><SET00d5><SET0404>Gail! Ya find yer key yet?
 
@@ -155,7 +155,7 @@ I think?<END>
 Ain't ya forgettin' about
 somethin', Buald?
 
-<CALLeeb4>W-Whaddaya mean?
+<CALLeeb4>W-whaddaya mean?
 
 <CH3>
 That golden key had a jewel

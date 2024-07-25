@@ -124,7 +124,7 @@ Don't you know what it's worth?
 Fifteen million!!
 
 <CH3>
-F-Fifteen... million?!
+F-fifteen... million?!
 
 <X1e>Boyle<X04>
 I sure hope you all are rich!<JUMPe5b0><LOCe510><CH3>
@@ -148,11 +148,11 @@ Well, that's not my line of work.
 No money, no cloth!
 But, maybe you'd like to go check
 on the egg with me? I won't chargeyou just to look!<SET0404><END>
-<LOCe6db><SET01a4>W-What?! No way!<WAIT>
+<LOCe6db><SET01a4>W-what?! No way!<WAIT>
 The dragon egg! It's gone!!
 
 <CH3>
-W-What?!
+W-what?!
 That sleaze Achdam musta been
 here!
 
@@ -190,7 +190,7 @@ Or... even better!
 cloth is in that box back there.
 
 Find my egg, and you can have it!
-P-Please. You have to find it!!"
+P-please. You have to find it!!"
 "ea08","<X1e>シンシア<X04>
 早く この国から バケモノどもを
 追い払ってくだされ。","<X1e>Cynthia<X04>
@@ -233,6 +233,6 @@ We're gonna have to rethink thingsif ya do stuff like that, Prince.
 I'm sure the Prince wouldn't...
 
 <CH0>
-O-Of course not! It never even
+O-of course not! It never even
 crossed my mind. 
 Come on, let's go."
