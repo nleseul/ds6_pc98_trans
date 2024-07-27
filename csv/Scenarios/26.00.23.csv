@@ -8,7 +8,7 @@ What do you need?<RETN>"
 "e20b","また来てね。","Come again!"
 "e223","おや？これ以上持てないようですね。
 
-<RET_IL>","You don't have any room for it.
+<RET_IL>","You can't carry any more.
 
 <RET_IL>"
 "e247","どれを買ってくれるの？

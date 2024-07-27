@@ -48,7 +48,7 @@ Your Highness seems well!<RETN>"
 "e485","また おいでください。","Come again!"
 "e4a6","おや？これ以上持てないようですね。
 
-<RET_IL>","You don't have any room for it.
+<RET_IL>","You can't carry any more.
 
 <RET_IL>"
 "e4ca","どれを買ってくれますか？

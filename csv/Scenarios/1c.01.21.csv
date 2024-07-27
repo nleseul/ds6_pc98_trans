@@ -47,7 +47,7 @@ How can I help you?<RETN>"
 "e330","また来てくださいね。","Come again!"
 "e34d","おや？これ以上持てないようですね。
 
-<RET_IL>","You don't have any room for it.
+<RET_IL>","You can't carry any more.
 
 <RET_IL>"
 "e371","どれを買ってくれますか？

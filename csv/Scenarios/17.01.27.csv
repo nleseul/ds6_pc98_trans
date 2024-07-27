@@ -16,7 +16,7 @@ whenever they go into caves.<RETN>"
 "e2d6","また来てくださいね。","Come again!"
 "e2f7","おや？これ以上持てないようですね。
 
-<RET_IL>","You don't have any room for it.
+<RET_IL>","You can't carry any more.
 
 <RET_IL>"
 "e31b","どれを買ってくれますか？

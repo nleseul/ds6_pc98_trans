@@ -7,7 +7,7 @@ What would you like?<RETN>"
 "e20f","また来てくださいね。","Come again!"
 "e22f","おや？これ以上持てないようですね。
 
-<RET_IL>","You don't have any room for it.
+<RET_IL>","You can't carry any more.
 
 <RET_IL>"
 "e253","どれを買ってくれますか？

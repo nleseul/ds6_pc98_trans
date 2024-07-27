@@ -68,7 +68,7 @@ What would you like?<RETN>"
 "e5f5","また来てくださいね。","Come again!"
 "e615","おや？これ以上持てないようですね。
 
-<RET_IL>","You don't have any room for it.
+<RET_IL>","You can't carry any more.
 
 <RET_IL>"
 "e639","どれを買ってくれますか？
