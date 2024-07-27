@@ -1147,6 +1147,9 @@ def scenario_disk_patch_misc(scenario_disk_patch):
     scenario_disk_patch.add_record(0x90b75, b"\x90") # Skip only one byte when the number of wins is 1.
     scenario_disk_patch.add_record(0x90d19, b" HP\x00 Attack\x00 Defense\x00 Speed\x00 Left\x00\x00\x00\x00\x00")
 
+    # Combat 39.00.21 (Dormer Bird, Scorpider x3)
+    scenario_disk_patch.add_record(0xf5798, b"\x79") # Truncation offset when only one scorpider is used.
+
     # Combat 3b.00.20 (Venomous Frog x3)
     scenario_disk_patch.add_record(0xfcbb3, b"\x40") # Change the base value of the summoned frog's letter to reflect half-width characters.
     scenario_disk_patch.add_record(0xfcbb6, b"\x3e") # Change the offset of the summoned frog's letter.
