@@ -4,7 +4,15 @@
 
 ## Applying the patch
 
-*TODO*
+The patch files are intended to be applied to NFD dumps of the game disks. Checksums for the source disks are provided below (but, for the Scenario Disk in particular, this checksum may vary depending on what save data is on the disk).
+
+| Disk          | CRC32    | SHA-1                                    |
+|---------------|----------|------------------------------------------|
+| Event Disk    | B859CBA0 | 9147706CD69BA17FCC4FFD96F28E49E348067F3B |
+| Program Disk  | A35403C1 | 0FA8CCE2FDCFDAB1FBBC0EDBB41916885418073E |
+| Scenario Disk | 63F69452 | B9B9F8BBD1B22274F8F19E50D7B240A878C8E71B |
+
+The patch files are simply distributed in IPS format. There are a plethora of IPS patching tools online, so choose your favorite for your platform. (Romhacking.net has an [easy online tool](https://www.romhacking.net/patch/).) Remember that IPS patches do not perform any error checking, so applying these patches to any file other than NFD disks with the correct sector order will likely produce garbage.
 
 ## Game manual
 
@@ -229,3 +237,9 @@ You can use e.g. `python test_translation.py 10.00.20` to attempt to process a s
 Using e.g. `python preview_text.py 10.00.20` will bring up a quick preview display that will let you confirm that the text fits the in-game dialog window correctly. Up/down arrow keys change the current page or selection. Tab navigates from the text window to the flag selection panes; space toggles a flag on and off.
 
 `python import_from_tpp.py` and `python export_to_tpp.py` will allow you to sync the translation CSVs with a Translator++ project. Running the "import" script will generate a file called "ds6.trans" in the current directory. The "export" script will write any changes made in that file back to the CSVs.
+
+## Additional notes
+
+Thanks to the [PC-98 Discord server](https://discord.gg/28FX2YMCeT) for tolerating the occasional dumb question about PC-98 hardware. Thanks to my Twitch chat for nudging me repeatedly to get this thing finished.
+
+If you appreciate this project and if you feel so inclined, I do have a donation link set up on [Ko-Fi](https://ko-fi.com/nleseul).
