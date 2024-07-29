@@ -242,4 +242,6 @@ Using e.g. `python preview_text.py 10.00.20` will bring up a quick preview displ
 
 Thanks to the [PC-98 Discord server](https://discord.gg/28FX2YMCeT) for tolerating the occasional dumb question about PC-98 hardware. Thanks to my Twitch chat for nudging me repeatedly to get this thing finished.
 
+My Japanese is still fairly medicore, so there's a reasonable chance that my interpretation of one or more lines in the game are completely wrong. If something doesn't make sense, it's probably my fault. If you want to know more about the original text of the game, you can always cross-reference the translation data files stored in the [GitHub project](https://github.com/nleseul/ds6_pc98_trans))
+
 If you appreciate this project and if you feel so inclined, I do have a donation link set up on [Ko-Fi](https://ko-fi.com/nleseul).
