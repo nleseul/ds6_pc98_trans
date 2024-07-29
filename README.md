@@ -14,6 +14,8 @@ The patch files are intended to be applied to NFD dumps of the game disks. Check
 
 The patch files are simply distributed in IPS format. There are a plethora of IPS patching tools online, so choose your favorite for your platform. (Romhacking.net has an [easy online tool](https://www.romhacking.net/patch/).) Remember that IPS patches do not perform any error checking, so applying these patches to any file other than NFD disks with the correct sector order will likely produce garbage.
 
+This release also includes a small patch for the Scenario Disk that disables some previously undocumented copy protection behavior during Chapter 4 which only seems to occur on real hardware. (If you're playing on emulator, you shouldn't need to worry about this.) The copy protection patch can be applied either before or after the Scenario Disk translation patch. Without this patch, you will basically be stuck waiting forever for a certain egg to hatch during Chapter 4.
+
 ## Game manual
 
 This is general information about how to play the game, adapted from the [original manual](https://archive.org/details/Dragon_Slayer_The_Legend_of_Heroes_Manual/) which players would have had available.
@@ -242,6 +244,8 @@ Using e.g. `python preview_text.py 10.00.20` will bring up a quick preview displ
 
 Thanks to the [PC-98 Discord server](https://discord.gg/28FX2YMCeT) for tolerating the occasional dumb question about PC-98 hardware. Thanks to my Twitch chat for nudging me repeatedly to get this thing finished.
 
-My Japanese is still fairly medicore, so there's a reasonable chance that my interpretation of one or more lines in the game are completely wrong. If something doesn't make sense, it's probably my fault. If you want to know more about the original text of the game, you can always cross-reference the translation data files stored in the [GitHub project](https://github.com/nleseul/ds6_pc98_trans))
+This game has an awful lot of text and a lot of paths to experiment with, so it's quite likely there are some minor text bugs that I haven't spotted in my testing. If you notice any bugs, they can be reported in the [GitHub project](https://github.com/nleseul/ds6_pc98_trans).
+
+My Japanese is still fairly medicore, so there's a reasonable chance that my interpretation of one or more lines in the game are completely wrong. If something doesn't make sense, it's probably my fault. If you want to compare the translation to the original game text, you can always cross-reference the translation data files stored in the aforementioned GitHub project.
 
 If you appreciate this project and if you feel so inclined, I do have a donation link set up on [Ko-Fi](https://ko-fi.com/nleseul).

@@ -1265,6 +1265,8 @@ if __name__ == '__main__':
     program_disk_patch = ips_util.Patch()
     scenario_disk_patch = ips_util.Patch()
 
+    copy_protection_patch = ips_util.Patch()
+
 
     # Build the event disk
     event_disk_patch_opening(event_disk_patch)
@@ -1288,6 +1290,9 @@ if __name__ == '__main__':
         scenario_disk_patch_scenarios(scenario_disk_patch, scenario_disk)
         scenario_disk_patch_combats(scenario_disk_patch, scenario_disk, battle_text_relocations)
 
+    # Build a simple patch that skips some copy protection behavior in scenario 28.00.23
+    copy_protection_patch.add_rle_record(0xb2888, b"\x90", 5)
+
 
     # Create patch files
     print("Creating patches...")
@@ -1300,6 +1305,10 @@ if __name__ == '__main__':
     print(config['OutputScenarioDiskPatch'])
     os.makedirs(os.path.dirname(config['OutputScenarioDiskPatch']), exist_ok=True)
     open(config['OutputScenarioDiskPatch'], 'w+b').write(scenario_disk_patch.encode())
+    print()
+    print(config['OutputCopyProtectionPatch'])
+    os.makedirs(os.path.dirname(config['OutputCopyProtectionPatch']), exist_ok=True)
+    open(config['OutputCopyProtectionPatch'], 'w+b').write(copy_protection_patch.encode())
     print()
 
     # Apply patches to disks
