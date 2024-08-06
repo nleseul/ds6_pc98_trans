@@ -1117,6 +1117,9 @@ def program_disk_patch_misc(program_disk_patch):
         [ " Save", " Load", " System", " Combat" ], 0x2c,
         [ 0xb213,  0xb235,  0xb2f6,    0xb44b])
 
+    patch_menu(program_disk_patch, 0xb948,
+        [ " Settings", " Run"], 0x13, [ ] )
+
     program_disk_patch.add_record(0x1bb89, b" Fight   Spell   Guard\x01 Use     Weapon  Auto\x01 Stats   Run\x07\x00\x00\x00\x00")
 
     # Status effect display table
